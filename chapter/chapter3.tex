@@ -2,6 +2,8 @@
 
 \section{引言}
 大部分无人车辆行驶依赖环境地图导航与感知\cite{Mattyus-Enhancing-road-maps}，这限制了无人车在未知环境中的行驶。为了解决该问题，当前许多技术利用车载传感器可以构建很大范围的地图，例如SLAM(Simultaneous Localization and Mapping) 和第二章提到的用车载Ladybug构建地图的方法。然而车载传感器仅能获取车辆周边环境信息且易被阻挡，而且在野外或灾害地区等环境中，车辆可通行区域变少。然而无人机拥有比无人车更广阔的视野，不受地面障碍物的影响，可以灵活地从空中俯视地面环境。本章介绍了应用无人机构建三维环境地图，为无人车导航提供先验信息。
+
+三维重建涉及到的内容可以分为三部分：稀疏点云的获取，点云稠密化与点云的网格渲染。其中稀疏点云的获取使用的是Structure from Motion(SfM)，在技术层面上与当前热门的Visual-SLAM(VSLAM)比较类似，只是SfM 侧重于三维重建，而SLAM侧重于实时定位，并需要预测下一时刻的位置。SfM可以分为视觉前端与优化后端，前端涉及到的是相机模型，坐标转换，特征提取与匹配以及多视图几何相关的内容，最后得到粗略的相机位姿与3D点坐标，后端涉及到的是优化前端得到的相机位姿与3D点坐标，去除错误的结果等。点云稠密使用的技术称为Multi-View Stereo(MVS)，MVS的方法很多，本文使用的是深度图融合的方法。网格渲染主要用的技术为三角剖分，网格渲染后的三维重建结果比稠密点云存储量小，更易于后续的仿真与处理。
 \section{相机模型}
 数码相机拍摄的过程中，实际上是一个光学成像的过程，这涉及到摄像机最基本的原件——透镜——的成像原理，如图~\ref{len}所示，这是最基本的透镜成像原理：$Z$是物体距透镜光心的距离，简称物距；$f$是焦距；$b$是相距，即成像平面与透镜光心的距离。三者满足式~\ref{len-equation}
 \begin{equation}
@@ -102,7 +104,6 @@ z_c \\
 
 相机在生成图片的过程中，由于成像平面由许多CCD感光元件组成，所以成像的横纵坐标是不连续的，引入像素的概念，同时也存在从图像坐标系到像素坐标系（2D到2D）的转换关系：
 \begin{equation}
-%\sideset{^a_b}{^c_d}\prod^{n}_{k=1}
 \left[\begin{array}{ccc}
 u \\
 v \\
@@ -124,10 +125,9 @@ y\prime \\
 \end{equation}
 其中，$dx$是u轴方向单像素的宽度，$dy$是v轴方向单像素的宽度，当前大部分ccd的像素宽度，$dx=dy$，只有以前老式电视机使用的是矩形ccd，导致$dx\neq dy$。$p_x,p_y$是主点（图~\ref{firstperson}）与图像左边界的距离与$p_y$ 是主点与图像上边界的距离。$s$是衡量主光轴与成像平面的倾斜程度，如果主光轴垂直于成像平面，则$s = 0$。这些参数被称作相机内参，一般可以通过查询相机手册得到包括焦距在内的相机内参。
 
-至此我们可以得到从世界坐标系到像素坐标系变化过程，如图~\ref{transform}和~\ref{transform-coordinate}
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=5.0in]{chapter3/transform.png}
+	\includegraphics[width=4.0in]{chapter3/transform.png}
 	\caption{坐标转换流程图}
 	\label{transform}
 \end{figure}
@@ -137,6 +137,7 @@ y\prime \\
 	\caption{坐标转换关系图}
 	\label{transform-coordinate}
 \end{figure}
+至此我们可以得到从世界坐标系到像素坐标系变化过程，如图~\ref{transform}和~\ref{transform-coordinate}。
 图~\ref{transform}过程用公式表达为~\ref{transform-equation}
 \begin{equation}
 %\sideset{^a_b}{^c_d}\prod^{n}_{k=1}
@@ -171,10 +172,43 @@ Z_w \\
 \right]
 \label{transform-equation}
 \end{equation}
-至此我们知道了相机成像过程中某点如何在不同坐标系下转换，从而完成摄像过程。式~\ref{transform-equation}涉及到相机参数$f,p_x,p_y$以及空间变换相关的参数（外参$R,t$），实际上在相机成像过程中除了这些参数，我们还会遇到无法线性建模的参数：像Gopro等鱼眼镜头中，我们可以看到原本直线的
-但是在实际成像过程中，相机成像存在径向畸变的问题，尤其是鱼眼镜头导致式~\ref{transform-equation}不能完全展现成像过程。所以在此介绍去除成像的径向畸变的方法。
+至此我们知道了相机成像过程中某点如何在不同坐标系下转换，从而完成摄像过程。式~\ref{transform-equation}涉及到相机参数$f,p_x,p_y$以及空间变换相关的参数（外参$R,t$），实际上在相机成像过程中除了这些参数，我们还会遇到无法线性建模的参数：像Gopro等鱼眼镜头中，我们可以看到世界中的直线不再是直线，如图。。。。
+这些弯曲的线有一些特别的特性：他们都是被关于中心扭曲的 我们称这种畸变为径向畸变。这意味着像素点是沿着从中心放射的径向成比例扭曲的。为了去除相机的畸变，需要对畸变用多项式进行建模，如式~\ref{radial-equation}。
 
+\begin{subequations}
+\label{radial-equation}
+\begin{align}
+u^{dist} &= u(1+k_1 r+k_2 r^2+ k_3 r^3 + ...)  \\
+v^{dist} &= v(1+k_1 r+k_2 r^2+ k_3 r^3 + ...)  \\
+where \quad & r^2 = u^2 + v^2
+\end{align}
+\end{subequations}
+其中，$k_1,k_2,k_3$是未知参数，需要标定才可以得到，而实际校正径向畸变时一般也只用到2个或3个参数，如图~\ref{distortion}所示，左图为存在径向畸变的图片，右图为经过校正后的图片。
+\begin{figure}[!htbp]
+	\centering
+    \subfigure{
+	\includegraphics[width=2.5in]{chapter3/radial-distortion.PNG}
+    }
+    \subfigure{
+	\includegraphics[width=2.5in]{chapter3/non-radial-distortion.PNG}
+    }
+	\caption{径向畸变的校正}
+	\label{distortion}
+\end{figure}
+
+在相机校正的过程中，实际上还需要校正图像的切向失真，这是由于摄像机安装时成像平面与透镜没有平行导致的，如果说径向畸变是坐标点距离中心点的长度放生了变化，那么切向畸变就是坐标点与中心点的水平夹角发生了变化。对切向畸变的建模如式~\ref{tangential-equation}，一般使用$p_1,p_2$两个参数。
+\begin{subequations}
+\label{tangential-equation}
+\begin{align}
+u^{dist} &= u + 2p_1 uv + p_2(r^2 + 2u^2) \\
+u^{dist} &= u + 2p_2 uv + p_1(r^2 + 2v^2) \\
+where \quad & r^2 = u^2 + v^2
+\end{align}
+\end{subequations}
+
+综上所述，本节详细介绍了相机模型与相机相关坐标系转换关系，以及相机成像的校正等相关内容，这部分属于图像处理的基础，熟悉该部分内容将为下面几节多视图几何相关内容作铺垫。
 \section{特征点提取}
+
 \section{特征点匹配}
 \section{多视图重建}
 在式~\ref{transform-equation}中，$z_c$为每个像素的深度，在单目成像时，$z_c$是未知的。所以当知道某点的世界坐标系时，可以很容易得到该点的像素坐标，但是反之无法已知像素坐标得到世界坐标。这将为我们下面
