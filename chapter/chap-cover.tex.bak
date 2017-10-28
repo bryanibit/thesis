@@ -1,0 +1,75 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                            封面
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cleardoublepage \thispagestyle{empty} \vspace{70mm}
+\noindent
+{
+\begin{flushleft}
+\wuhaozi \heiti
+{\footnotesize 中图分类号} : \ TP391.41\\
+% {\footnotesize 密级}\ldots\ldots\ldots\ldots\ldots \\
+{\footnotesize UDC 分类号} : 621.3 %\ldots\ldots\ldots\ldots\ldots
+\end{flushleft}
+}
+\quad\\
+\quad\\
+\quad\\
+
+
+%$$\text{\zihao{0} \bf 硕士学位论文}$$\\\\
+\begin{center}
+\heiti \xiaoerzi {立体视觉测量系统研究与分布式实现}
+\end{center}
+
+
+%一个字14pt 一行共102pt%
+\vspace{5cm}
+\begin{center}
+{\begin{spacing}{2}
+\xiaosanzi \heiti
+\begin{tabular}{p{8em}l@{\extracolsep{0.5em}}l}
+作~~者~~姓~~名&\underline{\hspace{30pt}李\quad浩\hspace{30pt}}\\
+学~~院~~名~~称&\underline{\hspace{15pt}自动化学院\hspace{15pt}}\\
+指~~导~~教~~师&\underline{\hspace{30pt}杨\quad毅\hspace{30pt}}\\
+答辩委员会主席&\underline{\hspace{15pt}孙长海教授\hspace{15pt}}\\
+申请学位级别&\underline{\hspace{2pt}工学硕士\hspace{2pt}}\\
+学~~科~~专~~业&\underline{\hspace{23pt}控制科学与工程\hspace{23pt}}\\
+学位授予单位&\underline{\hspace{8pt}北京理工大学\hspace{8pt}}\\
+论文答辩时间&\underline{\hspace{14pt}2018 年\ 3 月\hspace{14pt}}
+\end{tabular}
+\end{spacing}
+}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\thispagestyle{empty}
+\vspace{60mm}
+\quad\\
+\quad\\
+\quad\\
+\quad\\
+
+
+\begin{center}
+  \xiaoerzi {\textbf{Research on Stereo Vision Measurement System
+  \\ and Distributed Implementation}}
+\end{center}
+
+\vspace{5cm}
+\begin{center}
+{\begin{spacing}{2}
+\xiaosanzi
+\begin{tabular}{p{12em}p{12em}}
+Candidate Name:&\underline{\hspace{87pt}Jie Li\hspace{86pt}}\\
+School or Department:&\underline{\hspace{37pt}School of Automation\hspace{37pt}}\\
+Faculty Mentor:&\underline{\hspace{80pt}Yuan Li\hspace{79pt}}\\
+Chair, Thesis Committee:&\underline{\hspace{49pt}Prof. Xuemei Ren\hspace{49pt}}\\
+Degree Applied:&\underline{\hspace{36.5pt}Master of Engineering\hspace{36.5pt}}\\
+Major:&\underline{\hspace{42pt}Control Engineering\hspace{43pt}}\\
+Degree by:&\underline{\hspace{10.5pt}Beijing Institute of Technology\hspace{10.5pt}}\\
+The Date of Defence:&\underline{\hspace{72pt}June, 2017\hspace{72pt}}
+\end{tabular}
+\end{spacing}
+}
+\end{center}

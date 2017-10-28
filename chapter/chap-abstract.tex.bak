@@ -1,0 +1,41 @@
+\newpage
+\pagenumbering{Roman}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                中文摘要
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter*{摘要}
+
+
+随着视觉测量技术的飞速发展，基于立体视觉的测量方法凭借其快速、准确完成运动目标位姿测量的优势，逐渐成为视觉测量领域的研究热点之一。工业现场环境复杂多变，光照变化、运动目标与相机位置的相对变化及环境中相似物体的干扰等，要求视觉测量系统的标定精度更高、运动目标跟踪更准确。本文围绕基于立体视觉的分布式测量系统展开研究，通过视觉标定获得相机内外参数，对图像进行靶标特征提取与目标跟踪，达到准确测量运动目标位置与姿态的目的。
+
+根据工业现场条件，首先采用经典面阵相机标定方法得到相机内部参数，将其作为初始值；
+然后借助全站仪并根据空间解析几何关系，完成面阵相机的标定，得到相机内外参数。
+现场条件下的视觉系统标定结果存在一定误差，采用基于排序的选择算子与精英保留策略相结合的遗传算法，对经典面阵相机标定方法得到的相机内外参数进行离线标定与参数修正，提高视觉测量系统的精度。
+为了准确识别靶标，对靶标图像进行连通域分析、外接圆计算定位靶标区域；基于图像灰度直方图特征，采用粒子滤波算法，并进行位置校正，实现靶标准确跟踪。
+
+根据项目方案要求，设计了分布式视觉测量系统，一台服务器作为控制计算机，四台客户端作为执行计算机，服务器通过以太网控制客户端实现相机的同步采集工作。根据现场实验需求，在服务器与客户端两端分别进行软件设计与开发，实现控制指令和相机参数的信息传输，更好的控制相机进行图像采集工作。
+经过现场实验及实验数据分析，解算得到靶标特征点的三维坐标，计算出目标运动过程中的位姿变化情况。
+
+
+\vskip 0.3cm \textbf{关键词}：视觉测量；立体视觉；相机标定；位姿解算
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                英文摘要
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter*{Abstract}
+
+{\setlength\parindent{1em}
+With the rapid development of visual measurement technology, stereo vision measurement method which is faster and more accurate in moving target pose measurement, has gradually become one of the popular research fields. However industrial scene and environment are complex with illumination changes, the relative location changes between objects and camera and the interference of similar objects, which requires higher calibration accuracy and more accurate tracking of moving targets.
+The paper focuses on the stereo vision based distributed measurement system. The intrinsic and extrinsic parameters of the camera are obtained by camera calibration, and the target feature extraction and tracking are carried out to realize the accurate measurement of the target pose.
+
+Considering the industrial field conditions, this paper utilizes the classical plain camera calibration method to obtain the intrinsic parameters as the initial value. Then, the intrinsic and extrinsic parameters of the camera are obtained by space analytic geometry based camera calibration method.
+There are some errors in the visual system calibration results under field conditions. In order to improve the accuracy of the visual measurement system, this paper adopts the genetic algorithm based on the sorting selection operator and the elite retention strategy. In this way, the camera$'$s intrinsic and extrinsic parameters which are obtained by calibrating the classical face array camera are corrected. In order to accurately identify the target, connected component analysis and circum-circle calculation are adopted to locate the target in image. This paper use particle filter algorithm which based on image feature of gray histogram to track target in consecutive images.
+
+According to the requirements of the actual project, this paper designs a distributed visual measurement system. The system consists of one server and four clients. The server could communicate with the clients via Ethernet for synchronous video collection. In addition, considering the requirements of field experiment, the software design and development are carried out at both ends of the server and the client to achieve the communication of control command and camera acquired parameters. Through the field experiments and the experimental data analysis, the three-dimensional coordinates of the target are calculated, and the change of the target position and the target pose are finally obtained.
+
+\textbf{Keywords}:\ visual measurement; stereo vision; camera calibration; position and pose calculation
+}

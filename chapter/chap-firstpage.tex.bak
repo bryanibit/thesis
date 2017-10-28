@@ -1,0 +1,34 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                            题目
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cleardoublepage \thispagestyle{empty}
+
+	{
+		\quad\\
+		\quad\\
+		\quad\\
+		\quad\\
+		\quad\\
+		\quad\\
+		\quad\\
+		\quad\\	
+        \quad\\	
+        \quad\\	
+        \quad\\	
+		\begin{center}
+			
+				%\bf  \LARGE{靶标提取}
+				\heiti \xiaoerzi {立体视觉测量系统研究与分布式实现}
+							
+				\quad\\
+				\quad\\
+			    \quad\\
+                \quad\\
+			\heiti \xiaoerzi {李洁}
+			\quad\\
+			\quad\\
+			\songti \sihaozi{2017 年\ 6 月}
+		\end{center}
+	}
+
+\newpage \thispagestyle{empty}

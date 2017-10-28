@@ -1,0 +1,52 @@
+% \documentclass[twoside,12pt,CJK]{cctbook}
+\documentclass[12pt,a4paper,fancyhdr,hyperref,fntef,openany]{ctexbook}   %设置文档格式
+\input setup.tex
+
+%  e\overrightarrow{}
+% \allowdisplaybreaks
+
+\begin{document}
+
+\frontmatter
+
+%封面
+\input chapter/chap-firstpage
+\input chapter/chap-cover
+\input chapter/chap-name
+\input chapter/chap-shengming
+
+% 摘要
+\pagestyle{plain}
+\def\thepage{\xiaowuzi\roman{page}}
+\input chapter/chap-abstract
+
+% 目录
+% \setcounter{chapter}{0}
+{
+\titleformat{\chapter}[hang]{\vspace{-2cm}\chapterfmt}{\chaptername}{1em}{}[\vspace{-0.7cm}]
+\linespread{1.6}   % 等价于word单倍行距
+\tableofcontents
+}
+
+\clearpage  %或者newpage，新的一页
+
+
+\mainmatter
+
+% 正文
+
+ \setcounter{page}{1}
+ \setcounter{chapter}{0}
+ \def\thepage{\xiaowuzi\arabic{page}}
+\include {chapter/chapter1}
+\include {chapter/chapter2}
+\include {chapter/chapter3}
+\include {chapter/chapter4}
+\include {chapter/chapter5}
+\include {chapter/chap-sum}
+\include {chapter/chap-bibs}
+\include {chapter/chap-pubs}
+\include {chapter/chap-ack}
+
+
+\end{document}

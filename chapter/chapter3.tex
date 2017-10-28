@@ -1,0 +1,142 @@
+\chapter{基于无人机航拍图像的三维构建}
+
+\section{引言}
+大部分无人车辆行驶依赖环境地图导航与感知\cite{Mattyus-Enhancing-road-maps}，这限制了无人车在未知环境中的行驶。为了解决该问题，当前许多技术利用车载传感器可以构建很大范围的地图，例如SLAM(Simultaneous Localization and Mapping) 和第二章提到的用车载Ladybug构建地图的方法。然而车载传感器仅能获取车辆周边环境信息且易被阻挡，而且在野外或灾害地区等环境中，车辆可通行区域变少。然而无人机拥有比无人车更广阔的视野，不受地面障碍物的影响，可以灵活地从空中俯视地面环境。本章介绍了应用无人机构建三维环境地图，为无人车导航提供先验信息。
+\section{相机模型}
+数码相机拍摄的过程中，实际上是一个光学成像的过程，这涉及到摄像机最基本的原件——透镜——的成像原理，如图~\ref{len}所示，这是最基本的透镜成像原理：$Z$是物体距透镜光心的距离，简称物距；$f$是焦距；$b$是相距，即成像平面与透镜光心的距离。三者满足式~\ref{len-equation}
+\begin{equation}
+\frac{1}{f} = \frac{1}{Z} + \frac{1}{b}
+\label{len-equation}
+\end{equation}
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=5.0in]{chapter3/focal.png}
+	\caption{透镜成像原理}
+	\label{len}
+\end{figure}
+在机器视觉中，利用摄像机可以将三维场景记录在二维图形上，不同的相机模型导致不同的成像效果，比如第二章中Ladybug使用的球面成像模型，使不同相机的拼接简化为绕光心的旋转。但是常见的相机使用的模型还是小孔成像模型，如图~\ref{pinhole}所示。数码相机的镜头相当于一个凸透镜，感光元件就处在这个凸透镜的焦点附近，将焦距近似为凸透镜中心到感光元件的距离时就成为小孔成像模型。
+这可以类比为艺术家画一幅画的过程，将眼睛放在图~\ref{pinhole}光心$C$处，在物体与眼睛之间放置一个画布（图~\ref{pinhole}中虚像位置），按照光线直线传播的原则，则物体反射的光线与眼睛的连线交画布一点，如此物体可以在画布上成像。只是相机的成像在光心后面，所以说存在一个虚拟成像平面。
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=5.0in]{chapter3/pinhole.png}
+	\caption{小孔成像模型}
+	\label{pinhole}
+\end{figure}
+
+在三维空间中，物体反射的光线经过小孔形成倒立二维图像，根据其数学模型，可以得到
+\begin{equation}
+\frac{-x}{X} = \frac{f}{Z}
+\label{pinhole-equation}
+\end{equation}
+
+其中，$f$是小孔到成像平面的距离，即焦距；$Z$是物体距光心的距离，简称物距；$x$是物体在成像平面的投影长度；$X$是物体实际长度。为了简化以上模型，用图~\ref{firstperson}表示小孔成像的等价模型，其中$C$是相机中心，$P(X,Y,Z)$为空间中的3D点，$p(x,y,1)$表示3D点成像在感光元件上的点，小孔成像近似后，成像平面与相机中心的距离为焦距$f$。该图也表示了两个坐标系，分别为图像坐标系和像素坐标系，在下节中详细介绍。
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=5.0in]{chapter3/firstperson.png}
+	\caption{小孔成像等价模型}
+	\label{firstperson}
+\end{figure}
+
+\section{相关坐标系}
+从上一节知道，仅仅相机内部就存在多个坐标系，那么摄像机在空间中涉及到的坐标系转换问题将在这节详细探讨。相机成像的过程是一个3D物体显示在2D成像平面的过程，在此涉及物体，真实空间与相机三者的位置关。物体在真实空间的位置即是物体在世界坐标系中的位置坐标表达，在图~\ref{firstperson}中，$(X,Y,Z)$为3D点$P$在相机坐标系（$X_c,y_c,Z_c$）下的坐标表示，这里就存在两个三维坐标的转换，即同一个点在世界坐标系与相机坐标系下表达方式的转换关系，如式\ref{R-t-equation}
+\begin{equation}
+%\sideset{^a_b}{^c_d}\prod^{n}_{k=1}
+^{c}P = ^{c}R_w ^w P + ^c T_w
+\label{R-t-equation}
+\end{equation}
+其中$c$表示相机坐标系，$w$表示世界坐标系，$^w P$表示世界坐标系下$P$点3D坐标，$^c P$是相机坐标系下$P$点3D坐标，$^{c}R_w$和$^c T_w$分别表示由世界坐标系到相机坐标系的旋转矩阵和平移矩阵。
+
+将世界坐标系下的3D点表示为齐次坐标$(X,Y,Z,1)$，式\ref{R-t-equation}可以改写为：
+\begin{equation}
+%\sideset{^a_b}{^c_d}\prod^{n}_{k=1}
+^{c}P=\left[\begin{array}{ccc}
+^{c}R_w & ^c T_w \\
+0^{1\times 3} & 1 \\
+\end{array}
+\right]_{4\times 4}
+\left[\begin{array}{ccc}
+X_w \\
+Y_w \\
+Z_w \\
+1 \\
+\end{array}
+\right]
+\label{Rt-matrix-equation}
+\end{equation}
+其中$^{c}R_w$是$3\times 3$矩阵，三个列向量俩俩正交；$^c T_w$是$3\times 1$矩阵，代表两个坐标系原点连线的向量，$^{c}P$坐标表示为$(x_c,y_c,z_c)$。
+
+从图\ref{firstperson}中可以看到成像平面内的二维坐标系$x^\prime ,y^\prime$，该二维坐标系称为图像坐标系，可以推导相机坐标系与图像坐标系（3D到2D）变换的公式表示：
+\begin{equation}
+x\prime = f\frac{x}{z}
+\label{camera2img-equation}
+\end{equation}
+\begin{equation}
+y\prime = f\frac{y}{z}
+\label{camera2img-equation}
+\end{equation}
+改为矩阵表达形式为
+\begin{equation}
+%\sideset{^a_b}{^c_d}\prod^{n}_{k=1}
+z_c \left[\begin{array}{ccc}
+x\prime \\
+y\prime \\
+1 \\
+\end{array}
+\right]=\left[\begin{array}{cccc}
+f & 0 & 0 & 0 \\
+0 & f & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+\end{array}
+\right]
+\left[\begin{array}{ccc}
+x_c \\
+y_c \\
+z_c \\
+1 \\
+\end{array}
+\right]
+\label{camera2img-matrix-equation}
+\end{equation}
+
+相机在生成图片的过程中，由于成像平面由许多CCD感光元件组成，所以成像的横纵坐标是不连续的，引入像素的概念，同时也存在从图像坐标系到像素坐标系（2D到2D）的转换关系：
+\begin{equation}
+%\sideset{^a_b}{^c_d}\prod^{n}_{k=1}
+\left[\begin{array}{ccc}
+u \\
+v \\
+1 \\
+\end{array}
+\right]=\left[\begin{array}{ccc}
+\frac{1}{dx} & 0 & p_x \\
+0 & \frac{1}{dy} & p_y \\
+0 & 0 & 1 \\
+\end{array}
+\right]
+\left[\begin{array}{ccc}
+x\prime \\
+y\prime \\
+1 \\
+\end{array}
+\right]
+\label{camera2pixel-equation}
+\end{equation}
+其中，$dx$是u轴方向单像素的宽度，$dy$是v轴方向单像素的宽度，当前大部分ccd的像素宽度，$dx=dy$，只有以前老式电视机使用的是矩形ccd，导致$dx\neq dy$。$p_X$是主点（图~\ref{firstperson}）与图像左边界的距离与$p_y$ 是主点与图像上边界的距离。
+
+
+\section{多视图重建}
+\subsection{两视图重建}
+\subsection{2D-3D位姿求解}
+\subsection{三角定位法}
+
+
+\section{三维重建中的优化}
+\subsection{光束平差法}
+\subsection{最小化相机中心位置误差}
+
+\section{稀疏电云的渲染}
+\subsection{点云稠密化}
+\subsection{点云网格渲染（三角剖分）}
+
+\section{本章小结}

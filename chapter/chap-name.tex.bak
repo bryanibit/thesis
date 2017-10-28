@@ -1,0 +1,17 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                            题目
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage\thispagestyle{empty}
+
+	{\sanhaozi
+	{	\renewcommand\arraystretch{0.55}
+		\begin{center}
+			\heiti \sanhaozi {
+			%/SetEnglishCaption
+			\begin{tabular}{c}
+			\\\\\\\\\\\\立\\体\\视\\觉\\测\\量\\系\\统\\研\\究\\与\\分\\布\\式\\实\\现\\
+                   \\\\\\\\\\\\北\\京\\理\\工\\大\\学
+		
+			\end{tabular}	}
+			\label{tabl_overall}
+		\end{center}}}

@@ -1,0 +1,127 @@
+\chapter{基于全景图像的高精度地图构建}
+\section{引言}
+全景图像（panorama）是指水平角度包含完整360°的相机得到的二维平面图像。相对于普通单目相机，全景相机可以完整的呈现无人车周围环境。在本章节中，讨论使用全景相机构建车道级别的用于无人车行驶的高精度地图的方法。首先介绍了全景图像与定位信息的采集，而后介绍了全景相机的标定与全景图像预处理，最后阐述了如何通过全景图像构建大范围的高精度地图的方法。
+
+\section{全景图像与定位信息采集}
+为了同时采集全景图像信息与高精度定位导航系统信息，本文采用将车辆的定位信息编码为大小一定的QR code (Quick-Response code)，放置于每帧全景图像左上角位置，完成系统的信息采集任务。在此介绍一下二维码的编码与解码过程。由于全景图像的帧率为7Hz，惯性导航系统的帧率为20Hz，考虑拼接图像的精度，在没有使用硬件触发的条件下，本文采用最近邻原则，即当接受到一帧全景图像时，编码离当前时刻最近的惯性导航定位信息。由于编码的信息有时间，经纬度，方位角，偏航角与俯仰角6个整数，所以需要的编码信息量很小，本文只采用$25\times25$像素的二维码编码定位信息。
+
+QR code作为一种非常流行的矩阵式二维码，具有空间利用率高，存储数据量大，解码速度快，可以包含字符，数字等不同内容等优点。如图~\ref{qrcode}所示，二维码可分为两部分：功能区和编码区。功能区包含用于二维码定位的位置探测区域，用于校正二维码位置的校正图形区域等，在编码区中，包含数据和纠错码等。二维码的纠错级别越高，则实际存储的数据信息就越少。按照QR code的规则，可以很方便的为定位信息编码为固定像素大小的二维码，进而将该大小的区域放置在每帧全景图像的左上角，完成信息的采集过程。当回放该视频时，可以很容易地对大小固定的编码区进行解码，读取到每帧全景图对应的车辆当前的位置与角度信息等，为图像拼接做准备。
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=4.0in]{qrcode.png}
+	\caption{QR code示意图}
+	\label{qrcode}
+\end{figure}
+
+
+
+\section{全景图像处理}
+Ladybug全景相机具有6个独立的摄像头，如图~\ref{ladybug}，可以在球形坐标系下将6个相机图像实时合并为一张全景图，呈现在二维平面空间中。ladybug相机提供360°视频串流功能，可以覆盖90\%的可视球面具有图像采集、处理和校正功能。在得到Ladybug相机的全景图后，使用逆透视投影（IPM）将全景图像投影成俯视图。而后将车辆的高精度定位信息编码为二维码，放置于对应的逆透视投影得到的图片的左下角，从而完成图像与对应车体位置的采集与处理，方便后续构建大范围地图。
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=2.0in]{ladybug.jpg}
+	\caption{Ladybug全景相机}
+	\label{ladybug}
+\end{figure}
+
+由于LadyBug成像在球面坐标系中描述，IPM投影需要在车体坐标系中描述，地图拼接需要在世界坐标系中完成，在此简单介绍全景图像处理过程涉及的相关坐标系的变换关系。如图~\ref{para}所示，代表全景相机的球面坐标系与车体坐标系的关系，其中在车体坐标系中，绕自身x，y和z旋转，分别代表俯仰角，横滚角和方位角，使用道路方向形象地代表车辆的行驶方向；在全景坐标系中，球面狭缝与全景图分块成对应关系，如图中虚线箭头所示，得到的全景图的长宽，如图~\ref{raw-para}所示，图片长宽分别代表相对于车体的方位角$\mu$与俯仰角$\nu$。
+为了得到全景图像的IPM俯视图，需要标定全景相机相对于车辆的外参：俯仰角$\theta$，横滚角$\phi$和方位角$\varphi$，以及Ladybug相机光心与地面的高度$h$，同时假定车辆周围的环境与地面高度一致。现定义车体坐标系为$\{F_\omega\}=\{X_\omega,Y_\omega,Z_\omega\}$，坐标原点位于车辆后轴中点；定义全景相机坐标系为$\{F_c\}=\{X_c,Y_c,Z_c\}$；定义全景图像坐标为$\{F_i\}=\{\mu,\nu\}$。如图~\ref{para}所示，车体坐标系中任一点与全景相机坐标系中的点的对应关系为：
+\begin{equation}
+\label{coordiante relation}
+P_c = R_\phi R_\theta R^T _\varphi (P_\omega + T)
+\end{equation}
+其中
+\begin{equation}
+R_\phi=\left[\begin{array}{ccc}
+cos\phi & 0 & -sin\phi \\
+0 & 1 & 0 \\
+sin\phi & 0 & cos\phi \\
+\end{array}
+\right]
+\label{R-phi}
+\end{equation}
+
+\begin{equation}
+R_\theta=\left[\begin{array}{ccc}
+1 & 0 & 0 \\
+0 & cos\theta & sin\theta \\
+0 & -sin\theta & cos\theta \\
+\end{array}
+\right]
+\label{R-theta}
+\end{equation}
+
+\begin{equation}
+R_\varphi=\left[\begin{array}{ccc}
+cos(\varphi-\frac{\pi}{2}) & sin(\varphi-\frac{\pi}{2}) & 0 \\
+-sin(\varphi-\frac{\pi}{2}) & cos(\varphi-\frac{\pi}{2}) & 0 \\
+0 & 0 & 1 \\
+\end{array}
+\right]
+\label{R-varphi}
+\end{equation}
+
+\begin{equation}
+T=\left[\begin{array}{ccc}
+0 \\ 0 \\ -h \\
+\end{array}
+\right]
+\label{h-move}
+\end{equation}
+
+进而可以得到全景图像坐标系中的坐标$P_i = [\mu_i, \nu_i]^T$:
+\begin{equation}
+\label{p-i}
+P_i=\left[\begin{array}{ccc}
+arctan \frac{y_c}{x_c} \\ arccos \frac{z_c}{||P_c||} \\
+\end{array}
+\right]
+\end{equation}
+其中$||P_c||=\sqrt{{X_{P_C}}^2 + {X_{P_C}}^2 + {X_{P_C}}^2}$，即$P_c$的二范数。通过以上算法可以将全景图像（图~\ref{raw-para}）变换得到车体坐标系下的IPM图，显示效果如图~\ref{IPM}所示
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=5.0in]{para.png}
+	\caption{逆透视坐标变换关系}
+	\label{para}
+\end{figure}
+
+\begin{figure}[!htbp]
+	\centering
+    \subfigure{
+	\includegraphics[width=2.8in]{RAW927090958.png}
+    }
+    \subfigure{
+    \includegraphics[width=2.8in]{RAW1001103021.png}
+    }
+	\caption{基于球面坐标的全景图}
+	\label{raw-para}
+\end{figure}
+
+\begin{figure}[!htbp]
+	\centering
+    \subfigure{
+	\includegraphics[width=2.4in]{IPM927090958.png}
+    }
+    \subfigure{
+    \includegraphics[width=2.4in]{IPM1001103021.png}
+    }
+	\caption{逆透视变换结果}
+	\label{IPM}
+\end{figure}
+%\subsubsection{球面坐标系}
+%\subsubsection{世界坐标系}
+%\subsubsection{车体坐标系}
+%\subsubsection{球体相机坐标系}
+
+
+\section{地图的构建与使用}
+使用以上的方法可以得到全景图像的逆透视投影，以及每张投影图对应的此时车辆位置与方位等信息。进而我们可以得到大范围地图信息，制作大范围行驶地图，为无人车规划与感知提供先验信息。
+\subsection{图像拼接}
+图像拼接的历史可以追溯到上个世纪，使用的方法也不尽相同，总体上可以分为两类，一类是基于特征匹配的图像拼接方法，另一类是基于图片相互间位置关系的拼接方法。由于本文采用的惯性组合导航系统，在无遮挡，多路径效应较弱的空旷场地，实验精度达到$5cm$以内，所以在此本文采用基于图片之间相互位置关系的方法。具体就是将视频流中每帧逆透视投影图片按照二维码解算的航向旋转一定角度，然后按照解算的位置平移一段距离，对所有视频按照上述方法处理，最终得到完整的城区地图。
+
+对于每帧
+\subsection{基于GIS数据库生成无人车行驶地图}
+
+\section{本章小结}
