@@ -40,8 +40,140 @@
 \end{figure}
 
 \section{相关坐标系}
-从上一节知道，仅仅相机内部就存在多个坐标系，那么摄像机在空间中涉及到的坐标系转换问题将在这节详细探讨。相机成像的过程是一个3D物体显示在2D成像平面的过程，在此涉及物体，真实空间与相机三者的位置关。物体在真实空间的位置即是物体在世界坐标系中的位置坐标表达，在图~\ref{firstperson}中，$(X,Y,Z)$为3D点$P$在相机坐标系下的坐标表示
+从上一节知道，仅仅相机内部就存在多个坐标系，那么摄像机在空间中涉及到的坐标系转换问题将在这节详细探讨。相机成像的过程是一个3D物体显示在2D成像平面的过程，在此涉及物体，真实空间与相机三者的位置关。物体在真实空间的位置即是物体在世界坐标系中的位置坐标表达，在图~\ref{firstperson}中，$(X,Y,Z)$为3D点$P$在相机坐标系（$X_c,y_c,Z_c$）下的坐标表示，这里就存在两个三维坐标的转换，即同一个点在世界坐标系与相机坐标系下表达方式的转换关系，如式\ref{R-t-equation}
+\begin{equation}
+%\sideset{^a_b}{^c_d}\prod^{n}_{k=1}
+^{c}P = ^{c}R_w ^w P + ^c T_w
+\label{R-t-equation}
+\end{equation}
+其中$c$表示相机坐标系，$w$表示世界坐标系，$^w P$表示世界坐标系下$P$点3D坐标，$^c P$是相机坐标系下$P$点3D坐标，$^{c}R_w$和$^c T_w$分别表示由世界坐标系到相机坐标系的旋转矩阵和平移矩阵。
 
+将世界坐标系下的3D点表示为齐次坐标$(X,Y,Z,1)$，式\ref{R-t-equation}可以改写为：
+\begin{equation}
+%\sideset{^a_b}{^c_d}\prod^{n}_{k=1}
+^{c}P=\left[\begin{array}{ccc}
+^{c}R_w & ^c T_w \\
+0^{1\times 3} & 1 \\
+\end{array}
+\right]_{4\times 4}
+\left[\begin{array}{ccc}
+X_w \\
+Y_w \\
+Z_w \\
+1 \\
+\end{array}
+\right]
+\label{Rt-matrix-equation}
+\end{equation}
+其中$^{c}R_w$是$3\times 3$矩阵，三个列向量俩俩正交；$^c T_w$是$3\times 1$矩阵，代表两个坐标系原点连线的向量，$^{c}P$坐标表示为$(x_c,y_c,z_c)$。
+
+从图\ref{firstperson}中可以看到成像平面内的二维坐标系$x^\prime ,y^\prime$，该二维坐标系称为图像坐标系，可以推导相机坐标系与图像坐标系（3D到2D）变换的公式表示：
+\begin{equation}
+x\prime = f\frac{x}{z}
+\label{camera2img-equation}
+\end{equation}
+\begin{equation}
+y\prime = f\frac{y}{z}
+\label{camera2img-equation}
+\end{equation}
+改为矩阵表达形式为
+\begin{equation}
+%\sideset{^a_b}{^c_d}\prod^{n}_{k=1}
+z_c \left[\begin{array}{ccc}
+x\prime \\
+y\prime \\
+1 \\
+\end{array}
+\right]=\left[\begin{array}{cccc}
+f & 0 & 0 & 0 \\
+0 & f & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+\end{array}
+\right]
+\left[\begin{array}{ccc}
+x_c \\
+y_c \\
+z_c \\
+1 \\
+\end{array}
+\right]
+\label{camera2img-matrix-equation}
+\end{equation}
+
+相机在生成图片的过程中，由于成像平面由许多CCD感光元件组成，所以成像的横纵坐标是不连续的，引入像素的概念，同时也存在从图像坐标系到像素坐标系（2D到2D）的转换关系：
+\begin{equation}
+%\sideset{^a_b}{^c_d}\prod^{n}_{k=1}
+\left[\begin{array}{ccc}
+u \\
+v \\
+1 \\
+\end{array}
+\right]=\left[\begin{array}{ccc}
+\frac{1}{s_x} & s & p_x \\
+0 & \frac{1}{s_y} & p_y \\
+0 & 0 & 1 \\
+\end{array}
+\right]
+\left[\begin{array}{ccc}
+x\prime \\
+y\prime \\
+1 \\
+\end{array}
+\right]
+\label{camera2pixel-equation}
+\end{equation}
+其中，$dx$是u轴方向单像素的宽度，$dy$是v轴方向单像素的宽度，当前大部分ccd的像素宽度，$dx=dy$，只有以前老式电视机使用的是矩形ccd，导致$dx\neq dy$。$p_x,p_y$是主点（图~\ref{firstperson}）与图像左边界的距离与$p_y$ 是主点与图像上边界的距离。$s$是衡量主光轴与成像平面的倾斜程度，如果主光轴垂直于成像平面，则$s = 0$。这些参数被称作相机内参，一般可以通过查询相机手册得到包括焦距在内的相机内参。
+
+至此我们可以得到从世界坐标系到像素坐标系变化过程，如图~\ref{transform}和~\ref{transform-coordinate}
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=5.0in]{chapter3/transform.png}
+	\caption{坐标转换流程图}
+	\label{transform}
+\end{figure}
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=5.0in]{chapter3/transform-coordinate.png}
+	\caption{坐标转换关系图}
+	\label{transform-coordinate}
+\end{figure}
+图~\ref{transform}过程用公式表达为~\ref{transform-equation}
+\begin{equation}
+%\sideset{^a_b}{^c_d}\prod^{n}_{k=1}
+z_c \left[\begin{array}{ccc}
+u \\
+v \\
+1 \\
+\end{array}
+\right]=\left[\begin{array}{ccc}
+\frac{1}{s_x} & s & p_x \\
+0 & \frac{1}{s_y} & p_y \\
+0 & 0 & 1 \\
+\end{array}
+\right]
+\left[\begin{array}{cccc}
+f & 0 & 0 & 0 \\
+0 & f & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+\end{array}
+\right]
+\left[\begin{array}{ccc}
+^{c}R_w & ^c T_w \\
+0^{1\times 3} & 1 \\
+\end{array}
+\right]_{4\times 4}
+\left[\begin{array}{cccc}
+X_w \\
+Y_w \\
+Z_w \\
+1 \\
+\end{array}
+\right]
+\label{transform-equation}
+\end{equation}
+其中，$z_c$为每个像素的深度，在单目视觉里，$z_c$是未知的。至此我们知道了如何将同一个点在不同坐标系下表示的转换关系。但是在实际成像过程中，相机成像存在径向畸变的问题，导致式~\ref{transform-equation}不能完全展现成像过程。所以在此介绍去除成像的径向畸变，
+\section{特征点提取}
+\section{特征点匹配}
 \section{多视图重建}
 \subsection{两视图重建}
 \subsection{2D-3D位姿求解}
