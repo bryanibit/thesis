@@ -17,9 +17,12 @@
 \baselineskip=22pt
 
 % chapter 1
-\bibitem{1-2-1-1}
-周平, 王从军, 陈鑫. 计算机单目视觉测量系统[J]. 光电工程, 2005, 32(12):90-93.
-
+\bibitem{Mattyus-Enhancing-road-maps}
+Mattyus G, Wang S, Fidler S, et al. Enhancing Road Maps by Parsing Aerial Images Around the World[C]// IEEE International Conference on Computer Vision. IEEE, 2015:1689-1697.
+\bibitem{Lowe-DistinctiveImageFeatures}
+Lowe D G, Lowe D G. Distinctive Image Features from Scale-Invariant Keypoints[J]. International Journal of Computer Vision, 2004, 60(2):91-110.
+\bibitem{Bay-Speeded-UpRobustFeatures}
+Bay H, Ess A, Tuytelaars T, et al. Speeded-Up Robust Features (SURF)[J]. Computer Vision & Image Understanding, 2008, 110(3):346-359.
 }
 
 \end{thebibliography}

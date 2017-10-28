@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2017.10.19)  28 OCT 2017 17:35
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2017.10.19)  28 OCT 2017 23:16
 entering extended mode
 **E:/大论文/BIT_Thesis/李浩模板/Thesis.tex
 (E:/大论文/BIT_Thesis/李浩模板/Thesis.tex
@@ -820,6 +820,9 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 265.
 
 LaTeX Warning: Label `camera2img-equation' multiply defined.
 
+
+LaTeX Warning: Label `laplacian' multiply defined.
+
 ) (E:\大论文\BIT_Thesis\李浩模板\chapter/chapter4.aux)
 (E:\大论文\BIT_Thesis\李浩模板\chapter/chapter5.aux)
 (E:\大论文\BIT_Thesis\李浩模板\chapter/chapter6.aux)
@@ -1559,8 +1562,44 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 [14 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/transform-coordinate
 .png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\selfontsize' on input line 214.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\selfontsize' on input line 214.
+
+[15 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/radial-distortion.PN
+G> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/non-radial-distortion
+.PNG>]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 215.
+
+ ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\psnfss\omsptm.fd"
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 215.
+
+<figures/chapter3/global-local.jpg, id=675, 682.55pt x 202.7575pt>
+File: figures/chapter3/global-local.jpg Graphic file (type jpg)
+
+<use figures/chapter3/global-local.jpg>
+Package pdftex.def Info: figures/chapter3/global-local.jpg used on input line 2
+23.
+(pdftex.def)             Requested size: 361.34999pt x 107.3434pt.
+<<c1974.cmap>>
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\selfontsize' on input line 229.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\selfontsize' on input line 229.
+
+[16 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/global-local.jpg>]
 Package CJKpunct Info: punctuation spaces for family 'zhhei' do not exist. Use 
-family 'def' instead. on input line 226.
+family 'def' instead. on input line 259.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1573,9 +1612,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 43.
 
-[15 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/radial-distortion.PN
-G> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/non-radial-distortion
-.PNG>]
+[17]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 43.
@@ -1584,7 +1621,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 43.
 
-[16] (E:\大论文\BIT_Thesis\李浩模板\chapter/chapter4.tex
+[18] (E:\大论文\BIT_Thesis\李浩模板\chapter/chapter4.tex
 ��\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces 4\hspace {0.25em plus
  0.125em minus 0.08em}\ignorespaces \ignorespaces ��
 )
@@ -1596,7 +1633,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 44.
 
-[17
+[19
 
 
 
@@ -1611,7 +1648,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 16.
 
-[18
+[20
 
 
 
@@ -1624,7 +1661,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 18.
 
-[19]) (E:\大论文\BIT_Thesis\李浩模板\chapter/chapter6.tex
+[21]) (E:\大论文\BIT_Thesis\李浩模板\chapter/chapter6.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 5.
@@ -1633,7 +1670,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 5.
 
-[20
+[22
 
 
 ]) (E:\大论文\BIT_Thesis\李浩模板\chapter/chap-sum.tex)
@@ -1645,20 +1682,20 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 47.
 
-[21
+[23
 
 
 
-] (E:\大论文\BIT_Thesis\李浩模板\chapter/chap-bibs.tex)
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 48.
-
+] (E:\大论文\BIT_Thesis\李浩模板\chapter/chap-bibs.tex<<c1929.cmap>>)
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 48.
 
-[22
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\selfontsize' on input line 48.
+
+[24
 
 
 
@@ -1671,7 +1708,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 49.
 
-[23
+[25
 
 
 
@@ -1684,7 +1721,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 50.
 
-[24
+[26
 
 
 
@@ -1705,7 +1742,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 53.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 53.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 53.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 9E67F36976C2BADD87376E557F4B3C7C;3847.
+(rerunfilecheck)             Checksum: EA108AB221B4462EDB8080C7405613DD;3847.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1716,16 +1753,16 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 20306 strings out of 495354
- 330328 string characters out of 3182738
- 390618 words of memory out of 3000000
- 22283 multiletter control sequences out of 15000+200000
- 146975 words of font info for 418 fonts, out of 3000000 for 9000
+ 20484 strings out of 495354
+ 333871 string characters out of 3182738
+ 390970 words of memory out of 3000000
+ 22422 multiletter control sequences out of 15000+200000
+ 152627 words of font info for 437 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  42i,12n,58p,995b,1211s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/s
-imhei.ttf>{D:/Program Files (x86)/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<
-C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/sims
+<C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/s
+imhei.ttf><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simhei.ttf>{D:/Program
+ Files (x86)/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/Windows/Fonts/sims
 un.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fo
 nts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Wi
 ndows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.tt
@@ -1736,28 +1773,29 @@ imsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows
 .ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Font
 s/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Wind
 ows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc>
-<C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/sim
-hei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/F
+<C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/sim
+sun.ttc><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/F
 onts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/W
 indows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.t
 tf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/
-simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simhei.ttf><C:/Window
-s/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C
+simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simsun.ttc><C:/Window
+s/Fonts/simsun.ttc><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C
 :/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhe
 i.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fon
 ts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Win
 dows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf
-><C:/Windows/Fonts/simhei.ttf><D:/Program Files (x86)/CTEX/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmex10.pfb><D:/Program Files (x86)/CTEX/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmmi10.pfb><D:/Program Files (x86)/CTEX/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb><D:/Program Files (x86)/CTEX/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmsy10.pfb><D:/Program Files (x86)/CTEX/MiKTeX/fonts/type1/urw/sy
-mbol/usyr.pfb><D:/Program Files (x86)/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.
-pfb><D:/Program Files (x86)/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><D:/Pr
-ogram Files (x86)/CTEX/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Thesis.pdf (34 pages, 9564213 bytes).
+><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/si
+mhei.ttf><D:/Program Files (x86)/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cme
+x10.pfb><D:/Program Files (x86)/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi
+10.pfb><D:/Program Files (x86)/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10
+.pfb><D:/Program Files (x86)/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb><D:/Program Files (x86)/CTEX/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><D:/Pro
+gram Files (x86)/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><D:/Program Files
+ (x86)/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><D:/Program Files (x86)/CTE
+X/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Thesis.pdf (36 pages, 9650199 bytes).
 PDF statistics:
- 964 PDF objects out of 1000 (max. 8388607)
- 146 named destinations out of 1000 (max. 500000)
- 700 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1001 PDF objects out of 1200 (max. 8388607)
+ 157 named destinations out of 1000 (max. 500000)
+ 713 words of extra memory for PDF output out of 10000 (max. 10000000)
 
