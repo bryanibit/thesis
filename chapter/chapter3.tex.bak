@@ -225,7 +225,21 @@ SfMÊ×ÏÈÐèÒªÕÒµ½Í¼Æ¬¼¯ÖÐÁ©Á©Í¼Æ¬¼äµÄ¼¸ºÎ¹ØÏµ£¬ÕâÑù²ÅÄÜ¹ÀËãÏà»ú¼äµÄÔË¶¯Óë³ÉÏñµÄÈýÎ
 \label{global-local}
 \end{figure}
 
-ÌØÕ÷µãÌáÈ¡°üÀ¨ÌØÕ÷µã¼ì²âÓëÌØÕ÷µãÃèÊöÁ½²¿·Ö£¬ÔÚ´ËÒÔSIFTÌØÕ÷µãÎªÀý£¬¼òµ¥½éÉÜÒ»ÏÂ¼ì²â×ÓÓëÃèÊö×ÓµÄÊ¹ÓÃ·½·¨¡£¼ì²â×ÓÓÐºÜ¶à£¬Ê¹ÓÃ½Ï¶àµÄÓÐHarris Detector\cite{Harris-corner}£¬FAST Detector\cite{Rosten-FAST}
+ÌØÕ÷µãÌáÈ¡°üÀ¨ÌØÕ÷µã¼ì²âÓëÌØÕ÷µãÃèÊöÁ½²¿·Ö£¬ÔÚ´ËÒÔSIFTÌØÕ÷µãÎªÀý£¬¼òµ¥½éÉÜÒ»ÏÂ¼ì²â×ÓÓëÃèÊö×ÓµÄÊ¹ÓÃ·½·¨¡£¼ì²â×ÓÓÐºÜ¶à£¬Ê¹ÓÃ½Ï¶àµÄÓÐHarris Detector\cite{Harris-corner}£¬FAST Detector\cite{Rosten-FAST}¡£Harris¼ì²â×Ó½áºÏ±ßÔµÓë½Çµã¼ì²â·½·¨µÃµ½Í¼Ïñ²»Í¬·½ÏòµÄ×ÔÏà¹ØÏµÊý±ä»¯ÂÊ£¬ÀýÈçÇ¿¶È±ä»¯ÂÊµÈ£¬¸Ã·½·¨½«¾Ö²¿ÌØÕ÷ÃèÊöÎª¶Ô³ÆµÄ×ÔÏà¹ØÏµÊý¾ØÕó¡£Fast¼ì²â×Ó¿¼ÂÇÄ³ÏñËØÖÜÎ§Ò»¶¨´óÐ¡µÄÔ²£¬ÔºÉÏÏñËØÇ¿¶ÈÓë¸ÃÏñËØ±È½Ï£¬Èç¹û´óÓÚ»òÐ¡ÓÚÄ³Ò»ãÐÖµÔò¶¨Òå¸ÃÏñËØÎª½Çµã£¬ÕâÁ½ÖÖ¼ì²â×Ó¶Ô³ß¶È±ä»¯¶¼²»¾ßÓÐ²»±äÐÔ£¬²»ÊÊºÏÖ±½ÓÓ¦ÓÃÔÚÅÄÉã¸ß¶È²»Í¬µÄº½ÅÄÍ¼ÐÎµÄÌØÕ÷¼ì²âÖÐ¡£¶øSIFT×÷ÎªÒ»ÖÖ¾ßÓÐ³ß¶È¡¢·ÅËõ²»±ä£¬¶Ô²»Í¬¹âÏßÂ³°ôµÄÌØ¶¨£¬ºÜÊÊºÏÓ¦ÓÃÓÚ»·¾³¸´ÔÓµÄº½ÅÄÍ¼ÐÎµÄÌØÕ÷ÌØÈ¡ÓëÃèÊöÖÐ¡£SIFTÒ»°ãÊ¹ÓÃµÄÊÇDifference of Gaussian×÷Îª¼ì²â×Ó£¬Ê¹ÓÃLoweÌá³öµÄSIFT·½·¨×÷ÎªÃèÊö×Ó¡£
+
+Laplacian of Gaussian (LoG)ÊÇ¶þ½×µ¼ÊýµÄÏßÐÔ×éºÏ£¬Ò²ÊÇ¼ì²â°ßµã(blob)µÄ¼ì²â×Ó£¬¸ø³öÒ»¸öÍ¼Æ¬$I(x,y)$,³ß¶È¿Õ¼ä$L(x,y,\sigma)$ÊÇÓÉÍ¼Æ¬$I(x,y)$Óë²»Í¬´óÐ¡µÄ¸ßË¹ºË$G(x,y,\sigma)$¾í»ýµÃµ½µÄ£¬±íÊ¾Îª
+
+\begin{equation}
+L(x,y,\sigma) = G(x,y,\sigma)*I(x,y)
+\label{laplacian}
+\end{equation}
+ÆäÖÐ£¬
+\begin{equation}
+G(x,y,\sigma) = \frac{1}{2\pi \sigma ^2}e^{\frac{-(x^2 + y^2)}{2 {\sigma}^2}}
+\label{laplacian}
+\end{equation}
+
+DoG(Difference of Gaussian)ÊÇLoweÌá³öµÄÓÐÐ§¸ÄÉÆLoGËã×ÓºÄÊ±ÎÊÌâµÄÌØÐÔ
 
 
 \section{ÌØÕ÷µãÆ¥Åä}

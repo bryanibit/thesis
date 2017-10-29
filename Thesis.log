@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2017.10.19)  28 OCT 2017 23:16
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2017.10.19)  29 OCT 2017 12:26
 entering extended mode
-**E:/大论文/BIT_Thesis/李浩模板/Thesis.tex
-(E:/大论文/BIT_Thesis/李浩模板/Thesis.tex
+**thesis.tex
+(E:\大论文\BIT_Thesis\李浩模板\thesis.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
 ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\ctex\ctexbook.cls"
@@ -813,12 +813,18 @@ Package hyperref Warning: Option `bookmarks' has already been used,
 (hyperref)                setting the option has no effect on input line 265.
 
 Package hyperref Info: Option `colorlinks' set `true' on input line 265.
-) (E:\大论文\BIT_Thesis\李浩模板\Thesis.aux
+) (E:\大论文\BIT_Thesis\李浩模板\thesis.aux
 (E:\大论文\BIT_Thesis\李浩模板\chapter/chapter1.aux)
 (E:\大论文\BIT_Thesis\李浩模板\chapter/chapter2.aux)
 (E:\大论文\BIT_Thesis\李浩模板\chapter/chapter3.aux
 
 LaTeX Warning: Label `camera2img-equation' multiply defined.
+
+
+LaTeX Warning: Label `laplacian' multiply defined.
+
+
+LaTeX Warning: Label `laplacian' multiply defined.
 
 
 LaTeX Warning: Label `laplacian' multiply defined.
@@ -982,8 +988,8 @@ LaTeX Info: Redefining \Ref on input line 498.
 LaTeX Info: Redefining \ref on input line 8.
 LaTeX Info: Redefining \pageref on input line 8.
 LaTeX Info: Redefining \nameref on input line 8.
-(E:\大论文\BIT_Thesis\李浩模板\Thesis.out)
-(E:\大论文\BIT_Thesis\李浩模板\Thesis.out)
+(E:\大论文\BIT_Thesis\李浩模板\thesis.out)
+(E:\大论文\BIT_Thesis\李浩模板\thesis.out)
 \@outlinefile=\write3
 LaTeX Info: Redefining \Ref on input line 8.
 
@@ -1224,7 +1230,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 ]) [2
 
-] (E:\大论文\BIT_Thesis\李浩模板\Thesis.toc
+] (E:\大论文\BIT_Thesis\李浩模板\thesis.toc
 LaTeX Font Info:    Calculating math sizes for size <14> on input line 1.
 
 
@@ -1598,21 +1604,22 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 229.
 
 [16 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/global-local.jpg>]
-Package CJKpunct Info: punctuation spaces for family 'zhhei' do not exist. Use 
-family 'def' instead. on input line 259.
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 43.
+LaTeX Warning: Reference `nor-lap-equation' on page \selfontsize{9pt}17 undefin
+ed on input line 248.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 43.
+(hyperref)                removing `\selfontsize' on input line 262.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\selfontsize' on input line 262.
 
 [17]
+Package CJKpunct Info: punctuation spaces for family 'zhhei' do not exist. Use 
+family 'def' instead. on input line 273.
+)
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 43.
@@ -1728,7 +1735,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 53.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 53.
- (E:\大论文\BIT_Thesis\李浩模板\Thesis.aux
+ (E:\大论文\BIT_Thesis\李浩模板\thesis.aux
 (E:\大论文\BIT_Thesis\李浩模板\chapter/chapter1.aux)
 (E:\大论文\BIT_Thesis\李浩模板\chapter/chapter2.aux)
 (E:\大论文\BIT_Thesis\李浩模板\chapter/chapter3.aux)
@@ -1741,25 +1748,34 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 53.
 (E:\大论文\BIT_Thesis\李浩模板\chapter/chap-ack.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 53.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 53.
-Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: EA108AB221B4462EDB8080C7405613DD;3847.
 
+
+Package rerunfilecheck Warning: File `thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `thesis.out':
+(rerunfilecheck)             Before: 56778A9760AF1CC17103FDF41D629251;8663
+(rerunfilecheck)             After:  EA108AB221B4462EDB8080C7405613DD;3847.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.28pt have occurred.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 20484 strings out of 495354
- 333871 string characters out of 3182738
- 390970 words of memory out of 3000000
- 22422 multiletter control sequences out of 15000+200000
- 152627 words of font info for 437 fonts, out of 3000000 for 9000
+ 20506 strings out of 495354
+ 334286 string characters out of 3182738
+ 391021 words of memory out of 3000000
+ 22437 multiletter control sequences out of 15000+200000
+ 153679 words of font info for 441 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 42i,12n,58p,995b,1211s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,12n,58p,958b,1212s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/s
 imhei.ttf><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simhei.ttf>{D:/Program
  Files (x86)/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/Windows/Fonts/sims
@@ -1790,12 +1806,13 @@ x10.pfb><D:/Program Files (x86)/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi
 10.pfb><D:/Program Files (x86)/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10
 .pfb><D:/Program Files (x86)/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.
 pfb><D:/Program Files (x86)/CTEX/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><D:/Pro
-gram Files (x86)/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><D:/Program Files
- (x86)/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><D:/Program Files (x86)/CTE
-X/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Thesis.pdf (36 pages, 9650199 bytes).
+gram Files (x86)/CTEX/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><D:/Program Files 
+(x86)/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><D:/Program Files (x86)/CTEX
+/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><D:/Program Files (x86)/CTEX/MiKTeX/fo
+nts/type1/urw/times/utmri8a.pfb>
+Output written on thesis.pdf (36 pages, 9658538 bytes).
 PDF statistics:
- 1001 PDF objects out of 1200 (max. 8388607)
- 157 named destinations out of 1000 (max. 500000)
+ 1009 PDF objects out of 1200 (max. 8388607)
+ 160 named destinations out of 1000 (max. 500000)
  713 words of extra memory for PDF output out of 10000 (max. 10000000)
 
