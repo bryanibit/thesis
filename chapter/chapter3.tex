@@ -245,18 +245,57 @@ G(x,y,\sigma) = \frac{1}{2\pi \sigma ^2}e^{\frac{-(x^2 + y^2)}{2 {\sigma}^2}}
 \label{laplacian}
 \end{equation}
 
-这对于大小为$\sqrt{2\sigma}$的斑点有最强的响应，然而该算子严重依赖图像中斑点大小与用来平滑图像的高斯核大小，即大小不同的高斯核函数被用来寻找对应大小的blob。为了在一幅图像中自动检测不同大小的斑点，一种多尺度的方法被提出来\cite{Lindeberg-Feature detection}，其通过尺度不同的归一化的Laplacian算子对图片进行平滑从而在不同尺度空间找到大小不同的blob，尺度归一化的高斯核函数为式~\ref{nor-lap-equation}
+这对于大小为$\sqrt{2\sigma}$的斑点有最强的响应，然而该算子严重依赖图像中斑点大小与用来平滑图像的高斯核大小，即大小不同的高斯核函数被用来寻找对应大小的blob。为了在一幅图像中自动检测不同大小的斑点，一种多尺度的方法被提出来\cite{Lindeberg-Feature detection}，其通过尺度不同的归一化的Laplacian算子对图片进行平滑从而在不同尺度空间找到大小不同的blob，尺度归一化的高斯核函数为式~\ref{nor-lap-equation}。
 
 \begin{equation}
 {\nabla}^{2}_{norm} L(x,y,\sigma)={\sigma}^2 L_{xx}(x,y,\sigma)+L_{yy}(x,y,\sigma)
 \label{laplacian}
 \end{equation}
-大的$\sigma$对应图片的粗略特征，小$
-sigma$对应图片的精细特征。
-DoG(Difference of Gaussian)是Lowe提出的有效改善LoG算子耗时问题的特性
+大的$\sigma$对应图片的粗略特征，小$sigma$对应图片的精细特征。同时LoG算子是对称的，所以它具有blob旋转对其没有影响，但是LoG算子耗费计算资源，为了加速计算并在尺度空间检测到稳定的兴趣点，Lowe\cite{Lowe-DistinctiveImageFeatures}提出了高斯差分尺度空间，简称DoG scale-space。如式~\ref{gaussian}所示，利用不同尺度的搞死差分核函数与图像卷积生成。
+\begin{equation}
+\begin{split}
+D(x,y,\sigma) &= (G(x,y,k\sigma)-G(x,y,\sigma)*I(x,y)) \\
+&= L(x,y,k\sigma)-L(x,y,\sigma)
+\label{gaussian}
+\end{split}
+\end{equation}
 
+计算DoG的关键步骤是构建图像金字塔：对于某个图像，使用大小不同的高斯核与该图像卷积，可以得到模糊程度不同的但是图像长宽一致的图像，这些图像构成了一个八度(octave)，而后对这一系列图像进行降采样，降采样就是对octave中的图像隔行隔列采集像素，最后图像尺度(scale)变为原来大小的$\frac{1}{4}$，构成下一个octave。这样就避免了对不同尺度空间下的图像进行卷积，减少了计算。为了寻找尺度空间的极值点，在DoG尺度空间中，每个采样点要和其周围所有相邻点（8邻域中，一个像素点周围共有26个像素点）比较，若该点是极大值或者极小值则定位为兴趣点。整个过程可以用图~\ref{octave}描述。
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=5.4in]{chapter3/octave.jpg}
+\caption{图像金字塔的构建}
+\label{octave}
+\end{figure}
+
+检测到特征点后，需要定量的表示各个特征点，以为特征点匹配做准备。Lowe在其论文中提出用一个128维度的向量表示每个特征点，具体做法为：如图~\ref{siftDescriptor}，首先对每个关键点周围的$16\times 16$ 邻域内所有像素计算其梯度的幅值与方向，用直方图统计邻域像素的梯度方向，梯度直方图将$0~360^{\circ}$分为8个区间，对得到的直方图进行高斯平滑，以减少突变带来的影响。选取直方图的峰值作为该关键点处邻域梯度的主方向。所以在每个$4\times 4$的象限内，将每个像素的主方向加权到直方图的8个方向区间中的一个，计算一个梯度方向直方图，这样对于每个特征点可以形成$4\times 4 \times 8 = 128$ 维的描述子。
+
+%%在此需要插入4张sift检测的图片甚至是sift与surf特征点的比较
+
+至此基本介绍了本文使用的SIFT特征点提取的方法，详细介绍了特征的提取与描述方法，以上是使用SIFT特征点检测多张图像的结果，其中特征点主方向以及特征点的强度分别表示在图中的。。。
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=5.0in]{chapter3/siftDescriptor.jpg}
+\caption{SIFT描述子的构建}
+\label{siftDescriptor}
+\end{figure}
+
+
+%\begin{figure}
+%\includegraphics[width=5.0in]{chapter3/siftDescriptor.jpg}
+%\caption{SIFT特征点检测结果}
+%\label{sift-result}
+%\end{figure}
 
 \section{特征点匹配}
+上面提到本文使用SIFT特征点作为关键点检测的方法，特征点提取并描述后，就应该找出各个图像中以特征点为依据的关系，即每张图像中的特征点如何与其他图像的特征点进行匹配，找到相近的特征点并去除错误的匹配的特征点。特征点匹配解决航拍图像之间的数据关联问题，将无序的图片数据集建立关联关系，为下文通过图像之间的关系，计算相机位姿与还原特征点的三维坐标提供基础。很好理解，一对匹配点就是实际空间的一个点，如果将所有图片对应同一个真实点的特征点连在一起，将使数据集中所有无序图片“有序化”。相同的，如果匹配点中有大量的错误匹配，那对后续的位姿估计与还原三维坐标都产生不利影响，所以如果去除错误匹配更是至关重要的问题。下面就这两方面展开讨论。
+
+假设在图片集$I = \{I_i | i=1...N_I\}$中找到的局部特征点为$F_i=\{(x_j,f_j) | j=1...N_{F_i}\}$，其中$x_j$表示特征点位置坐标，$f_j$表示特征点描述子，如果是SIFT特征点，则$f_j$是128维向量。对于$F_i$与$F_j$的特征点匹配的方法，最简单的是使用暴力匹配，即每个$(x_j,f_j) | j=1...N_{F_i}$与$(x_j,f_j) | j=1...N_{F_j}$中特征点测量两个向量之间的距离，需要进行$N_{F_i} \times N_{F_j}$次距离比较。对于像SIFT这样的浮点描述子，一般采用欧拉距离作为衡量依据，而对于像BRIEF（ORB特征使用的描述子）二进制描述子，则一般使用汉明距离作为度量依据。
+
+%插入一张SIFT匹配的图片，对应欧拉距离那句话
+
+但是当图片长宽较大，分辨率较高时，图片特征点会很多，这时采用暴力匹配会导致效率很低，一般实际使用中采用最近邻匹配(Approximate Neighbor, ANN)的方法。
+
 \section{多视图重建}
 在式~\ref{transform-equation}中，$z_c$为每个像素的深度，在单目成像时，$z_c$是未知的。所以当知道某点的世界坐标系时，可以很容易得到该点的像素坐标，但是反之无法已知像素坐标得到世界坐标。这将为我们下面
 \subsection{两视图重建}

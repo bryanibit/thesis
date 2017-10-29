@@ -225,7 +225,7 @@ SfMÊ×ÏÈÐèÒªÕÒµ½Í¼Æ¬¼¯ÖÐÁ©Á©Í¼Æ¬¼äµÄ¼¸ºÎ¹ØÏµ£¬ÕâÑù²ÅÄÜ¹ÀËãÏà»ú¼äµÄÔË¶¯Óë³ÉÏñµÄÈýÎ
 \label{global-local}
 \end{figure}
 
-ÌØÕ÷µãÌáÈ¡°üÀ¨ÌØÕ÷µã¼ì²âÓëÌØÕ÷µãÃèÊöÁ½²¿·Ö£¬ÔÚ´ËÒÔSIFTÌØÕ÷µãÎªÀý£¬¼òµ¥½éÉÜÒ»ÏÂ¼ì²â×ÓÓëÃèÊö×ÓµÄÊ¹ÓÃ·½·¨¡£¼ì²â×ÓÓÐºÜ¶à£¬Ê¹ÓÃ½Ï¶àµÄÓÐHarris Detector\cite{Harris-corner}£¬FAST Detector\cite{Rosten-FAST}¡£Harris¼ì²â×Ó½áºÏ±ßÔµÓë½Çµã¼ì²â·½·¨µÃµ½Í¼Ïñ²»Í¬·½ÏòµÄ×ÔÏà¹ØÏµÊý±ä»¯ÂÊ£¬ÀýÈçÇ¿¶È±ä»¯ÂÊµÈ£¬¸Ã·½·¨½«¾Ö²¿ÌØÕ÷ÃèÊöÎª¶Ô³ÆµÄ×ÔÏà¹ØÏµÊý¾ØÕó¡£Fast¼ì²â×Ó¿¼ÂÇÄ³ÏñËØÖÜÎ§Ò»¶¨´óÐ¡µÄÔ²£¬ÔºÉÏÏñËØÇ¿¶ÈÓë¸ÃÏñËØ±È½Ï£¬Èç¹û´óÓÚ»òÐ¡ÓÚÄ³Ò»ãÐÖµÔò¶¨Òå¸ÃÏñËØÎª½Çµã£¬ÕâÁ½ÖÖ¼ì²â×Ó¶Ô³ß¶È±ä»¯¶¼²»¾ßÓÐ²»±äÐÔ£¬²»ÊÊºÏÖ±½ÓÓ¦ÓÃÔÚÅÄÉã¸ß¶È²»Í¬µÄº½ÅÄÍ¼ÐÎµÄÌØÕ÷¼ì²âÖÐ¡£¶øSIFT×÷ÎªÒ»ÖÖ¾ßÓÐ³ß¶È¡¢·ÅËõ²»±ä£¬¶Ô²»Í¬¹âÏßÂ³°ôµÄÌØ¶¨£¬ºÜÊÊºÏÓ¦ÓÃÓÚ»·¾³¸´ÔÓµÄº½ÅÄÍ¼ÐÎµÄÌØÕ÷ÌØÈ¡ÓëÃèÊöÖÐ¡£SIFTÒ»°ãÊ¹ÓÃµÄÊÇDifference of Gaussian×÷Îª¼ì²â×Ó£¬Ê¹ÓÃLoweÌá³öµÄSIFT·½·¨×÷ÎªÃèÊö×Ó¡£
+ÌØÕ÷µãÌáÈ¡°üÀ¨ÌØÕ÷µã¼ì²âÓëÌØÕ÷µãÃèÊöÁ½²¿·Ö£¬ÔÚ´ËÒÔSIFTÌØÕ÷µãÎªÀý£¬¼òµ¥½éÉÜÒ»ÏÂ¼ì²â×ÓÓëÃèÊö×ÓµÄÊ¹ÓÃ·½·¨¡£¼ì²â×ÓÓÐºÜ¶à£¬Ê¹ÓÃ½Ï¶àµÄÓÐHarris Detector\cite{Harris-corner}£¬FAST Detector\cite{Rosten-FAST}¡£Harris¼ì²â×Ó½áºÏ±ßÔµÓë½Çµã¼ì²â·½·¨µÃµ½Í¼Ïñ²»Í¬·½ÏòµÄ×ÔÏà¹ØÏµÊý±ä»¯ÂÊ£¬ÀýÈçÇ¿¶È±ä»¯ÂÊµÈ£¬¸Ã·½·¨½«¾Ö²¿ÌØÕ÷ÃèÊöÎª¶Ô³ÆµÄ×ÔÏà¹ØÏµÊý¾ØÕó¡£Fast¼ì²â×Ó¿¼ÂÇÄ³ÏñËØÖÜÎ§Ò»¶¨´óÐ¡µÄÔ²£¬ÔºÉÏÏñËØÇ¿¶ÈÓë¸ÃÏñËØ±È½Ï£¬Èç¹û´óÓÚ»òÐ¡ÓÚÄ³Ò»ãÐÖµÔò¶¨Òå¸ÃÏñËØÎª½Çµã£¬ÕâÁ½ÖÖ¼ì²â×Ó¶Ô³ß¶È±ä»¯¶¼²»¾ßÓÐ²»±äÐÔ£¬²»ÊÊºÏÖ±½ÓÓ¦ÓÃÔÚÅÄÉã¸ß¶È²»Í¬µÄº½ÅÄÍ¼ÐÎµÄÌØÕ÷¼ì²âÖÐ¡£¶øSIFT×÷ÎªÒ»ÖÖ¾ßÓÐ³ß¶È¡¢·ÅËõ²»±ä£¬¶Ô²»Í¬¹âÏßÂ³°ôµÄÌØ¶¨£¬ºÜÊÊºÏÓ¦ÓÃÓÚ»·¾³¸´ÔÓµÄº½ÅÄÍ¼ÐÎµÄÌØÕ÷ÌØÈ¡ÓëÃèÊöÖÐ¡£SIFTËã·¨ÓÉËÄ¸ö²½Öè×é³É£º³ß¶È¿Õ¼ä¼«Öµ¼ì²â£¬ÐËÈ¤µã£¨¹Ø¼üµã£©¶¨Î»£¬·½Ïò¼ÆËãÒÔ¼°ÐËÈ¤µãÃèÊö¡£µÚÒ»¸ö½×¶ÎÊÇÊ¹ÓÃDifference of Gaussian(DoG)È·ÈÏÇ±ÔÚµÄÐËÈ¤µã£¬ÕâÀïÊ¹ÓÃDoG´úÌæLaplacian of Gaussian (LoG)Ëã×ÓÒÔÌá¸ß¼ÆËãËÙ¶È¡£
 
 Laplacian of Gaussian (LoG)ÊÇ¶þ½×µ¼ÊýµÄÏßÐÔ×éºÏ£¬Ò²ÊÇ¼ì²â°ßµã(blob)µÄ¼ì²â×Ó£¬¸ø³öÒ»¸öÍ¼Æ¬$I(x,y)$,³ß¶È¿Õ¼ä$L(x,y,\sigma)$ÊÇÓÉÍ¼Æ¬$I(x,y)$Óë²»Í¬´óÐ¡µÄ¸ßË¹ºË$G(x,y,\sigma)$¾í»ýµÃµ½µÄ£¬±íÊ¾Îª
 
@@ -245,11 +245,55 @@ G(x,y,\sigma) = \frac{1}{2\pi \sigma ^2}e^{\frac{-(x^2 + y^2)}{2 {\sigma}^2}}
 \label{laplacian}
 \end{equation}
 
-Õâ¶ÔÓÚ´óÐ¡Îª$\sqrt{2\sigma}$µÄ°ßµãÓÐ×îÇ¿µÄÏìÓ¦£¬È»¶ø¸ÃËã×ÓÑÏÖØÒÀÀµÍ¼ÏñÖÐ°ßµã´óÐ¡ÓëÓÃÀ´Æ½»¬Í¼ÏñµÄ¸ßË¹ºË´óÐ¡£¬¼´¸ßË¹±ê×¼²î±»ÓÃÀ´¿ØÖÆÄ£ºýÆ½»¬µÄ³ß¶È¡£ÎªÁËÔÚÒ»·ùÍ¼ÏñÖÐ×Ô¶¯¼ì²â²»Í¬´óÐ¡µÄ°ßµã£¬Ò»ÖÖ¶à³ß¶ÈµÄ·½·¨±»Ìá³öÀ´\cite{Lindeberg-Feature detection}£¬ÆäÍ¨¹ýÕÒ³ß¶È¹éÒ»»¯µÄlaplacianËã×ÓÔÚ²»Í¬³ß¶È¿Õ¼äµÄ¼«Öµ´Ó¶øÕÒµ½²»Í¬´óÐ¡µÄ°ßµã
-DoG(Difference of Gaussian)ÊÇLoweÌá³öµÄÓÐÐ§¸ÄÉÆLoGËã×ÓºÄÊ±ÎÊÌâµÄÌØÐÔ
+Õâ¶ÔÓÚ´óÐ¡Îª$\sqrt{2\sigma}$µÄ°ßµãÓÐ×îÇ¿µÄÏìÓ¦£¬È»¶ø¸ÃËã×ÓÑÏÖØÒÀÀµÍ¼ÏñÖÐ°ßµã´óÐ¡ÓëÓÃÀ´Æ½»¬Í¼ÏñµÄ¸ßË¹ºË´óÐ¡£¬¼´´óÐ¡²»Í¬µÄ¸ßË¹ºËº¯Êý±»ÓÃÀ´Ñ°ÕÒ¶ÔÓ¦´óÐ¡µÄblob¡£ÎªÁËÔÚÒ»·ùÍ¼ÏñÖÐ×Ô¶¯¼ì²â²»Í¬´óÐ¡µÄ°ßµã£¬Ò»ÖÖ¶à³ß¶ÈµÄ·½·¨±»Ìá³öÀ´\cite{Lindeberg-Feature detection}£¬ÆäÍ¨¹ý³ß¶È²»Í¬µÄ¹éÒ»»¯µÄLaplacianËã×Ó¶ÔÍ¼Æ¬½øÐÐÆ½»¬´Ó¶øÔÚ²»Í¬³ß¶È¿Õ¼äÕÒµ½´óÐ¡²»Í¬µÄblob£¬³ß¶È¹éÒ»»¯µÄ¸ßË¹ºËº¯ÊýÎªÊ½~\ref{nor-lap-equation}¡£
 
+\begin{equation}
+{\nabla}^{2}_{norm} L(x,y,\sigma)={\sigma}^2 L_{xx}(x,y,\sigma)+L_{yy}(x,y,\sigma)
+\label{laplacian}
+\end{equation}
+´óµÄ$\sigma$¶ÔÓ¦Í¼Æ¬µÄ´ÖÂÔÌØÕ÷£¬Ð¡$sigma$¶ÔÓ¦Í¼Æ¬µÄ¾«Ï¸ÌØÕ÷¡£Í¬Ê±LoGËã×ÓÊÇ¶Ô³ÆµÄ£¬ËùÒÔËü¾ßÓÐblobÐý×ª¶ÔÆäÃ»ÓÐÓ°Ïì£¬µ«ÊÇLoGËã×ÓºÄ·Ñ¼ÆËã×ÊÔ´£¬ÎªÁË¼ÓËÙ¼ÆËã²¢ÔÚ³ß¶È¿Õ¼ä¼ì²âµ½ÎÈ¶¨µÄÐËÈ¤µã£¬Lowe\cite{Lowe-DistinctiveImageFeatures}Ìá³öÁË¸ßË¹²î·Ö³ß¶È¿Õ¼ä£¬¼ò³ÆDoG scale-space¡£ÈçÊ½~\ref{gaussian}ËùÊ¾£¬ÀûÓÃ²»Í¬³ß¶ÈµÄ¸ãËÀ²î·ÖºËº¯ÊýÓëÍ¼Ïñ¾í»ýÉú³É¡£
+\begin{equation}
+\begin{split}
+D(x,y,\sigma) &= (G(x,y,k\sigma)-G(x,y,\sigma)*I(x,y)) \\
+&= L(x,y,k\sigma)-L(x,y,\sigma)
+\label{gaussian}
+\end{split}
+\end{equation}
+
+¼ÆËãDoGµÄ¹Ø¼ü²½ÖèÊÇ¹¹½¨Í¼Ïñ½ð×ÖËþ£º¶ÔÓÚÄ³¸öÍ¼Ïñ£¬Ê¹ÓÃ´óÐ¡²»Í¬µÄ¸ßË¹ºËÓë¸ÃÍ¼Ïñ¾í»ý£¬¿ÉÒÔµÃµ½Ä£ºý³Ì¶È²»Í¬µÄµ«ÊÇÍ¼Ïñ³¤¿íÒ»ÖÂµÄÍ¼Ïñ£¬ÕâÐ©Í¼Ïñ¹¹³ÉÁËÒ»¸ö°Ë¶È(octave)£¬¶øºó¶ÔÕâÒ»ÏµÁÐÍ¼Ïñ½øÐÐ½µ²ÉÑù£¬½µ²ÉÑù¾ÍÊÇ¶ÔoctaveÖÐµÄÍ¼Ïñ¸ôÐÐ¸ôÁÐ²É¼¯ÏñËØ£¬×îºóÍ¼Ïñ³ß¶È(scale)±äÎªÔ­À´´óÐ¡µÄ$\frac{1}{4}$£¬¹¹³ÉÏÂÒ»¸öoctave¡£ÕâÑù¾Í±ÜÃâÁË¶Ô²»Í¬³ß¶È¿Õ¼äÏÂµÄÍ¼Ïñ½øÐÐ¾í»ý£¬¼õÉÙÁË¼ÆËã¡£ÎªÁËÑ°ÕÒ³ß¶È¿Õ¼äµÄ¼«Öµµã£¬ÔÚDoG³ß¶È¿Õ¼äÖÐ£¬Ã¿¸ö²ÉÑùµãÒªºÍÆäÖÜÎ§ËùÓÐÏàÁÚµã£¨8ÁÚÓòÖÐ£¬Ò»¸öÏñËØµãÖÜÎ§¹²ÓÐ26¸öÏñËØµã£©±È½Ï£¬Èô¸ÃµãÊÇ¼«´óÖµ»òÕß¼«Ð¡ÖµÔò¶¨Î»ÎªÐËÈ¤µã¡£Õû¸ö¹ý³Ì¿ÉÒÔÓÃÍ¼~\ref{octave}ÃèÊö¡£
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=5.4in]{chapter3/octave.jpg}
+\caption{Í¼Ïñ½ð×ÖËþµÄ¹¹½¨}
+\label{octave}
+\end{figure}
+
+¼ì²âµ½ÌØÕ÷µãºó£¬ÐèÒª¶¨Á¿µÄ±íÊ¾¸÷¸öÌØÕ÷µã£¬ÒÔÎªÌØÕ÷µãÆ¥Åä×ö×¼±¸¡£LoweÔÚÆäÂÛÎÄÖÐÌá³öÓÃÒ»¸ö128Î¬¶ÈµÄÏòÁ¿±íÊ¾Ã¿¸öÌØÕ÷µã£¬¾ßÌå×ö·¨Îª£ºÈçÍ¼~\ref{siftDescriptor}£¬Ê×ÏÈ¶ÔÃ¿¸ö¹Ø¼üµãÖÜÎ§µÄ$16\times 16$ ÁÚÓòÄÚËùÓÐÏñËØ¼ÆËãÆäÌÝ¶ÈµÄ·ùÖµÓë·½Ïò£¬ÓÃÖ±·½Í¼Í³¼ÆÁÚÓòÏñËØµÄÌÝ¶È·½Ïò£¬ÌÝ¶ÈÖ±·½Í¼½«$0~360^{\circ}$·ÖÎª8¸öÇø¼ä£¬¶ÔµÃµ½µÄÖ±·½Í¼½øÐÐ¸ßË¹Æ½»¬£¬ÒÔ¼õÉÙÍ»±ä´øÀ´µÄÓ°Ïì¡£Ñ¡È¡Ö±·½Í¼µÄ·åÖµ×÷Îª¸Ã¹Ø¼üµã´¦ÁÚÓòÌÝ¶ÈµÄÖ÷·½Ïò¡£ËùÒÔÔÚÃ¿¸ö$4\times 4$µÄÏóÏÞÄÚ£¬½«Ã¿¸öÏñËØµÄÖ÷·½Ïò¼ÓÈ¨µ½Ö±·½Í¼µÄ8¸ö·½ÏòÇø¼äÖÐµÄÒ»¸ö£¬¼ÆËãÒ»¸öÌÝ¶È·½ÏòÖ±·½Í¼£¬ÕâÑù¶ÔÓÚÃ¿¸öÌØÕ÷µã¿ÉÒÔÐÎ³É$4\times 4 \times 8 = 128$ Î¬µÄÃèÊö×Ó¡£
+
+%%ÔÚ´ËÐèÒª²åÈë4ÕÅsift¼ì²âµÄÍ¼Æ¬ÉõÖÁÊÇsiftÓësurfÌØÕ÷µãµÄ±È½Ï
+
+ÖÁ´Ë»ù±¾½éÉÜÁË±¾ÎÄÊ¹ÓÃµÄSIFTÌØÕ÷µãÌáÈ¡µÄ·½·¨£¬ÏêÏ¸½éÉÜÁËÌØÕ÷µÄÌáÈ¡ÓëÃèÊö·½·¨£¬ÒÔÉÏÊÇÊ¹ÓÃSIFTÌØÕ÷µã¼ì²â¶àÕÅÍ¼ÏñµÄ½á¹û£¬ÆäÖÐÌØÕ÷µãÖ÷·½ÏòÒÔ¼°ÌØÕ÷µãµÄÇ¿¶È·Ö±ð±íÊ¾ÔÚÍ¼ÖÐµÄ¡£¡£¡£
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=5.0in]{chapter3/siftDescriptor.jpg}
+\caption{SIFTÃèÊö×ÓµÄ¹¹½¨}
+\label{siftDescriptor}
+\end{figure}
+
+
+%\begin{figure}
+%\includegraphics[width=5.0in]{chapter3/siftDescriptor.jpg}
+%\caption{SIFTÌØÕ÷µã¼ì²â½á¹û}
+%\label{sift-result}
+%\end{figure}
 
 \section{ÌØÕ÷µãÆ¥Åä}
+ÉÏÃæÌáµ½±¾ÎÄÊ¹ÓÃSIFTÌØÕ÷µã×÷Îª¹Ø¼üµã¼ì²âµÄ·½·¨£¬ÌØÕ÷µãÌáÈ¡²¢ÃèÊöºó£¬¾ÍÓ¦¸ÃÕÒ³ö¸÷¸öÍ¼ÏñÖÐÒÔÌØÕ÷µãÎªÒÀ¾ÝµÄ¹ØÏµ£¬¼´Ã¿ÕÅÍ¼ÏñÖÐµÄÌØÕ÷µãÈçºÎÓëÆäËûÍ¼ÏñµÄÌØÕ÷µã½øÐÐÆ¥Åä£¬ÕÒµ½Ïà½üµÄÌØÕ÷µã²¢È¥³ý´íÎóµÄÆ¥ÅäµÄÌØÕ÷µã¡£ÌØÕ÷µãÆ¥Åä½â¾öº½ÅÄÍ¼ÏñÖ®¼äµÄÊý¾Ý¹ØÁªÎÊÌâ£¬½«ÎÞÐòµÄÍ¼Æ¬Êý¾Ý¼¯½¨Á¢¹ØÁª¹ØÏµ£¬ÎªÏÂÎÄÍ¨¹ýÍ¼ÏñÖ®¼äµÄ¹ØÏµ£¬¼ÆËãÏà»úÎ»×ËÓë»¹Ô­ÌØÕ÷µãµÄÈýÎ¬×ø±êÌá¹©»ù´¡¡£ºÜºÃÀí½â£¬Ò»¶ÔÆ¥Åäµã¾ÍÊÇÊµ¼Ê¿Õ¼äµÄÒ»¸öµã£¬Èç¹û½«ËùÓÐÍ¼Æ¬¶ÔÓ¦Í¬Ò»¸öÕæÊµµãµÄÌØÕ÷µãÁ¬ÔÚÒ»Æð£¬½«Ê¹Êý¾Ý¼¯ÖÐËùÓÐÎÞÐòÍ¼Æ¬¡°ÓÐÐò»¯¡±¡£ÏàÍ¬µÄ£¬Èç¹ûÆ¥ÅäµãÖÐÓÐ´óÁ¿µÄ´íÎóÆ¥Åä£¬ÄÇ¶ÔºóÐøµÄÎ»×Ë¹À¼ÆÓë»¹Ô­ÈýÎ¬×ø±ê¶¼²úÉú²»ÀûÓ°Ïì£¬ËùÒÔÈç¹ûÈ¥³ý´íÎóÆ¥Åä¸üÊÇÖÁ¹ØÖØÒªµÄÎÊÌâ¡£ÏÂÃæ¾ÍÕâÁ½·½ÃæÕ¹¿ªÌÖÂÛ¡£
+
+
+
+
+
 \section{¶àÊÓÍ¼ÖØ½¨}
 ÔÚÊ½~\ref{transform-equation}ÖÐ£¬$z_c$ÎªÃ¿¸öÏñËØµÄÉî¶È£¬ÔÚµ¥Ä¿³ÉÏñÊ±£¬$z_c$ÊÇÎ´ÖªµÄ¡£ËùÒÔµ±ÖªµÀÄ³µãµÄÊÀ½ç×ø±êÏµÊ±£¬¿ÉÒÔºÜÈÝÒ×µÃµ½¸ÃµãµÄÏñËØ×ø±ê£¬µ«ÊÇ·´Ö®ÎÞ·¨ÒÑÖªÏñËØ×ø±êµÃµ½ÊÀ½ç×ø±ê¡£Õâ½«ÎªÎÒÃÇÏÂÃæ
 \subsection{Á½ÊÓÍ¼ÖØ½¨}
