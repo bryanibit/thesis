@@ -270,7 +270,7 @@ D(x,y,\sigma) &= (G(x,y,k\sigma)-G(x,y,\sigma)*I(x,y)) \\
 
 检测到特征点后，需要定量的表示各个特征点，以为特征点匹配做准备。Lowe在其论文中提出用一个128维度的向量表示每个特征点，具体做法为：如图~\ref{siftDescriptor}，首先对每个关键点周围的$16\times 16$ 邻域内所有像素计算其梯度的幅值与方向，用直方图统计邻域像素的梯度方向，梯度直方图将$0~360^{\circ}$分为8个区间，对得到的直方图进行高斯平滑，以减少突变带来的影响。选取直方图的峰值作为该关键点处邻域梯度的主方向。所以在每个$4\times 4$的象限内，将每个像素的主方向加权到直方图的8个方向区间中的一个，计算一个梯度方向直方图，这样对于每个特征点可以形成$4\times 4 \times 8 = 128$ 维的描述子。
 
-%%在此需要插入4张sift检测的图片甚至是sift与surf特征点的比较
+%%在此需要插入4张sift检测的图片，甚至是sift与surf特征点的比较框
 
 至此基本介绍了本文使用的SIFT特征点提取的方法，详细介绍了特征的提取与描述方法，以上是使用SIFT特征点检测多张图像的结果，其中特征点主方向以及特征点的强度分别表示在图中的。。。
 \begin{figure}[!htbp]
@@ -281,20 +281,154 @@ D(x,y,\sigma) &= (G(x,y,k\sigma)-G(x,y,\sigma)*I(x,y)) \\
 \end{figure}
 
 
-%\begin{figure}
+\begin{figure}[!htbp]
+\centering
+ \subfigure{
+	\includegraphics[width=2.6in]{chapter3/testPho/1_res.png}
+    }
+ \subfigure{
+	\includegraphics[width=2.6in]{chapter3/testPho/2_res.png}
+    }
+ \subfigure{
+	\includegraphics[width=2.6in]{chapter3/testPho/3_res.png}
+    }
+ \subfigure{
+	\includegraphics[width=2.6in]{chapter3/testPho/4_res.png}
+    }
 %\includegraphics[width=5.0in]{chapter3/siftDescriptor.jpg}
-%\caption{SIFT特征点检测结果}
-%\label{sift-result}
-%\end{figure}
+\caption{SIFT特征点检测结果}
+\label{sift-result}
+\end{figure}
 
 \section{特征点匹配}
 上面提到本文使用SIFT特征点作为关键点检测的方法，特征点提取并描述后，就应该找出各个图像中以特征点为依据的关系，即每张图像中的特征点如何与其他图像的特征点进行匹配，找到相近的特征点并去除错误的匹配的特征点。特征点匹配解决航拍图像之间的数据关联问题，将无序的图片数据集建立关联关系，为下文通过图像之间的关系，计算相机位姿与还原特征点的三维坐标提供基础。很好理解，一对匹配点就是实际空间的一个点，如果将所有图片对应同一个真实点的特征点连在一起，将使数据集中所有无序图片“有序化”。相同的，如果匹配点中有大量的错误匹配，那对后续的位姿估计与还原三维坐标都产生不利影响，所以如果去除错误匹配更是至关重要的问题。下面就这两方面展开讨论。
 
 假设在图片集$I = \{I_i | i=1...N_I\}$中找到的局部特征点为$F_i=\{(x_j,f_j) | j=1...N_{F_i}\}$，其中$x_j$表示特征点位置坐标，$f_j$表示特征点描述子，如果是SIFT特征点，则$f_j$是128维向量。对于$F_i$与$F_j$的特征点匹配的方法，最简单的是使用暴力匹配，即每个$(x_j,f_j) | j=1...N_{F_i}$与$(x_j,f_j) | j=1...N_{F_j}$中特征点测量两个向量之间的距离，需要进行$N_{F_i} \times N_{F_j}$次距离比较。对于像SIFT这样的浮点描述子，一般采用欧拉距离作为衡量依据，而对于像BRIEF（ORB特征使用的描述子）二进制描述子，则一般使用汉明距离作为度量依据。
 
-%插入一张SIFT匹配的图片，对应欧拉距离那句话
+%插入一组SIFT匹配的图片，对应欧拉距离那句话
 
-但是当图片长宽较大，分辨率较高时，图片特征点会很多，这时采用暴力匹配会导致效率很低，一般实际使用中采用最近邻匹配(Approximate Neighbor, ANN)的方法。
+但是当图片长宽较大，分辨率较高时，图片特征点会很多，这时采用暴力匹配会导致效率很低，一般实际使用中采用近似最近邻(Approximate Nearest Neighbor, ANN)匹配方法。事实上，无论SIFT特征匹配还是数据库检索本质上是相同的，都是使用距离函数在高维矢量空间中寻找相近对象的过程。常用的方法试K近邻查询，设置查询点与正整数K，从另一个数据集中根据距离公式找到距离最近的K个数据，如果K=1，改方法变为最近邻查询算法。K近邻查询算法是通过构建KD-Tree或者R-Tree等实现的。在此不做详细介绍。
+
+在此简单介绍近似最近邻的快速库（Fast Library for Approximate Nearest Neighbors, FLANN），FLANN具有一种内部机制，该机制可以根据数据本身选择合适的算法来处理数据集，基于FLANN的匹配非常准确、快速。FLANN在使用的时候需要配置两个参数：indexParams和searchParams。使用FLANN时，indexParams可以选择为LinearIndex、KTreeIndex、KMeansIndex、CompositeIndex和AutotuneIndex，其中KTreeIndex灵活且可被并行处理。对于searchParams，用来指定索引树被遍历的次数，即check值，该值越大则匹配的时间越长，当然也越准确。
+
+当然即使用上面的方法，也无法保证所有的匹配都是正确的，Lowe\cite{Lowe-ObjectRecognition}在1999提出一种简单的方法可以剔除大部分的错误匹配。对于某个特征点向量，如果查询数据集中与其距离最近的特征点向量与次近的特征点向量的距离之比大于0.7，可以避免接近90\%的错误匹配，但是正确的匹配也因此变少。使用FLANN并采用Lowe提出的方法可以去掉大部分的错误匹配，如图~\ref{matches}所示。
+%\begin{figure}
+%\includegraphics[width=5.0in]{chapter3/matches.jpg}
+%\caption{FLANN匹配}
+%\label{matches}
+%\end{figure}
+
+以上提到的方法，匹配后仍然存在错误的匹配点，由于刚刚的匹配是单纯基于特征描述子的向量值，无法保证匹配的两个特征点对应相同的场景点。因此SfM使用投影几何的知识估计两张图像的特征点变换。依赖图像对的空间配置，不同投影描述图片间不同的几何关系。例如，单应性变换（又称射影变换\cite{Richard-MultipleView}）描述相机拍摄的二维图片之间纯旋转和平移变换。对极几何通过基本矩阵（Essential matrix）$E$和基础矩阵（Fundamental matrix）$F$ 描述移动相机的关系，并可以通过三焦张量扩展到三视图的关系。无论哪种变换关系，有效的变换可以满足大部分匹配点的几何关系，那么这种变换或者匹配点被认为是有效的。本文在删除错误匹配时，使用的是单应性变换，一下简单介绍一下单应性变换的详细内容。
+
+单应性又称射影变换、保线变换，与坐标系无关。映射$h$是射影变换的充要条件是：存在一个$3\times 3$非奇异矩阵$H$，使得任意一个矢量$X$表示的坐标点都满足$h(x)=HX$。即
+\begin{equation}
+\left[\begin{array}{ccc}
+x_{1}^{\prime} \\
+x_{2}^{\prime} \\
+x_{3}^{\prime} \\
+\end{array}
+\right]=\left[\begin{array}{ccc}
+h_{11} & h_{12} & h_{13} \\
+h_{21} & h_{22} & h_{23} \\
+h_{31} & h_{32} & h_{33} \\
+\end{array}\right]
+\left[\begin{array}{ccc}
+x_{1} \\
+x_{2} \\
+x_{3} \\
+\end{array}\right]
+\label{homography-equation}
+\end{equation}
+
+矩阵$H$是一个齐次矩阵，在$H$的九个元素中有八个独立比率，即交比(cross radio)$h_{11}:h_{12}:h_{13}:h_{21}:h_{22}:h_{23}:h_{31}:h_{32}:h_{33}$不会因为$H$因为乘以非零因子而变化，所以单应性变化有八个自由度，而每个二维特征点可提供2个方程，故需要解算$H$需要至少4对匹配点。已知4对匹配点，使用直接线性法解算$H$，示意图如图~\ref{homography}，已知两个视图四对匹配的特征点坐标$X_1,X_2$，求H 的过程。
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=5.0in]{chapter3/homography.png}
+\caption{单应性变换}
+\label{homography}
+\end{figure}
+线性变换表示为$X_2=HX_1$，这是齐次矢量方程，三维矢量$X_2$和$HX_1$不相等，实际可以写为$\lambda X_2 = HX_1$，线性变换可以变形为$X_2 \times HX_1=0$（矢量与自身外积为零），记为$[X_2]_\times HX_1=0$，设$h_i$为$H$的第$i$ 行，
+
+\begin{equation}
+\begin{split}
+\left[\begin{array}{ccc}
+u_2 \\
+v_2 \\
+1 \\
+\end{array}
+\right]_\times
+\left[\begin{array}{ccc}
+h_1 \\
+h_2 \\
+h_3 \\
+\end{array}\right]X_1 &=
+\left[\begin{array}{ccc}
+u_2 \\
+v_2 \\
+1 \\
+\end{array}
+\right]_\times
+\left[\begin{array}{ccc}
+h_1 X_1 \\
+h_2 X_1 \\
+h_3 X_1 \\
+\end{array}\right]=
+\left[\begin{array}{ccc}
+u_2 \\
+v_2 \\
+1 \\
+\end{array}
+\right]_\times
+\left[\begin{array}{ccc}
+X_1^T h_1^T \\
+X_1^T h_2^T \\
+X_1^T h_3^T \\
+\end{array}\right] \\
+&=
+\left[\begin{array}{ccc}
+0 & -1 & v_2 \\
+1 & 0 & -u_2 \\
+-v_2 & u_2 & 0 \\
+\end{array}\right]
+\left[\begin{array}{ccc}
+X_1^T & 0_{1\times 3} & 0_{1\times 3} \\
+0_{1\times 3} & X_1^T & 0_{1\times 3} \\
+0_{1\times 3} & 0_{1\times 3} & X_1^T \\
+\end{array}\right]
+\left[\begin{array}{ccc}
+h_1^T \\
+h_2^T \\
+h_3^T \\
+\end{array}\right]
+\end{split}
+\label{homography-tuidao-equation}
+\end{equation}
+最后一步是由线性代数的知识得到，即对3维矢量$x=(x_1,x_2,x_3)$的$3\times 3$的反对称矩阵为式~\ref{inverse-sym-equation}
+\begin{equation}
+[a]_\times=\left[\begin{array}{ccc}
+0 & -a_3 & a_2 \\
+a_3 & 0 & -a_1 \\
+-a_2 & a_1 & 0 \\
+\end{array}\right]
+\label{inverse-sym-equation}
+\end{equation}
+
+合并~\ref{homography-tuidao-equation}最后一步的前两项得到下式为
+\begin{equation}
+=\left[\begin{array}{ccc}
+0_{1\times 3} & -X_1^T & v_2 X_1^T \\
+X_1^T & 0_{1\times 3} & -u_2 X_1^T \\
+-v_2 X_1^T & u_2 X_1^T & 0_{1\times 3} \\
+\end{array}\right]
+\left[\begin{array}{ccc}
+h_1^T \\
+h_2^T \\
+h_3^T \\
+\end{array}\right]=0
+\label{inverse-sym-equation}
+\end{equation}
+
+上式简写为$Ab=0$，其中$A$为$3\times 9$矩阵，$rank(A)=2$，这是因为每队匹配点只提供两个量：$u$和$v$，$b$为$9\times 1$矩阵，由于只需要维持$b$各项的交比不变即可，所以有8个自由度，故需要4对匹配点即可在这个线性系统上获得足够的条件计算得到单应性矩阵$H$的各项。但是如果我们有很多匹配点，这时候
 
 \section{多视图重建}
 在式~\ref{transform-equation}中，$z_c$为每个像素的深度，在单目成像时，$z_c$是未知的。所以当知道某点的世界坐标系时，可以很容易得到该点的像素坐标，但是反之无法已知像素坐标得到世界坐标。这将为我们下面

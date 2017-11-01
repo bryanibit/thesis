@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2017.10.19)  29 OCT 2017 23:01
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2017.10.19)  1 NOV 2017 21:59
 entering extended mode
 **E:/大论文/BIT_Thesis/李浩模板/Thesis.tex
 (E:/大论文/BIT_Thesis/李浩模板/Thesis.tex
@@ -829,6 +829,9 @@ LaTeX Warning: Label `laplacian' multiply defined.
 
 LaTeX Warning: Label `laplacian' multiply defined.
 
+
+LaTeX Warning: Label `inverse-sym-equation' multiply defined.
+
 ) (E:\大论文\BIT_Thesis\李浩模板\chapter/chapter4.aux)
 (E:\大论文\BIT_Thesis\李浩模板\chapter/chapter5.aux)
 (E:\大论文\BIT_Thesis\李浩模板\chapter/chapter6.aux)
@@ -1647,18 +1650,90 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 282.
 
 [18 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/octave.jpg>]
+<figures/chapter3/testPho/1_res.png, id=715, 602.25pt x 181.67876pt>
+File: figures/chapter3/testPho/1_res.png Graphic file (type png)
+
+<use figures/chapter3/testPho/1_res.png>
+Package pdftex.def Info: figures/chapter3/testPho/1_res.png used on input line 
+288.
+(pdftex.def)             Requested size: 187.90244pt x 56.68298pt.
+
+<figures/chapter3/testPho/2_res.png, id=716, 602.25pt x 181.67876pt>
+File: figures/chapter3/testPho/2_res.png Graphic file (type png)
+
+<use figures/chapter3/testPho/2_res.png>
+Package pdftex.def Info: figures/chapter3/testPho/2_res.png used on input line 
+291.
+(pdftex.def)             Requested size: 187.90244pt x 56.68298pt.
+
+<figures/chapter3/testPho/3_res.png, id=717, 602.25pt x 181.67876pt>
+File: figures/chapter3/testPho/3_res.png Graphic file (type png)
+
+<use figures/chapter3/testPho/3_res.png>
+Package pdftex.def Info: figures/chapter3/testPho/3_res.png used on input line 
+294.
+(pdftex.def)             Requested size: 187.90244pt x 56.68298pt.
+
+<figures/chapter3/testPho/4_res.png, id=718, 602.25pt x 181.67876pt>
+File: figures/chapter3/testPho/4_res.png Graphic file (type png)
+
+<use figures/chapter3/testPho/4_res.png>
+Package pdftex.def Info: figures/chapter3/testPho/4_res.png used on input line 
+297.
+(pdftex.def)             Requested size: 187.90244pt x 56.68298pt.
+
+
+LaTeX Warning: File ot145.cmap not found on input line 306.
+
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 298.
+(hyperref)                removing `\selfontsize' on input line 306.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 298.
+(hyperref)                removing `\selfontsize' on input line 306.
 
-[19 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/siftDescriptor.jpg>]
+[19 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/siftDescriptor.jpg> 
+<E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/testPho/1_res.png (PNG c
+opy)> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/testPho/2_res.png 
+(PNG copy)> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/testPho/3_re
+s.png (PNG copy)> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/testPh
+o/4_res.png (PNG copy)>]
+
+LaTeX Warning: Reference `matches' on page \selfontsize{9pt}20 undefined on inp
+ut line 314.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\selfontsize' on input line 322.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\selfontsize' on input line 322.
+
+[20] <figures/chapter3/homography.png, id=736, 586.44093pt x 270.25969pt>
+File: figures/chapter3/homography.png Graphic file (type png)
+
+<use figures/chapter3/homography.png>
+Package pdftex.def Info: figures/chapter3/homography.png used on input line 346
+.
+(pdftex.def)             Requested size: 361.34999pt x 166.52419pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\selfontsize' on input line 405.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\selfontsize' on input line 405.
+
+[21 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/homography.png>]
 Package CJKpunct Info: punctuation spaces for family 'zhhei' do not exist. Use 
-family 'def' instead. on input line 312.
+family 'def' instead. on input line 446.
 )
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 43.
@@ -1667,7 +1742,16 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 43.
 
-[20] (E:\大论文\BIT_Thesis\李浩模板\chapter/chapter4.tex
+[22]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\selfontsize' on input line 43.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\selfontsize' on input line 43.
+
+[23] (E:\大论文\BIT_Thesis\李浩模板\chapter/chapter4.tex
 ��\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces 4\hspace {0.25em plus
  0.125em minus 0.08em}\ignorespaces \ignorespaces ��
 )
@@ -1679,7 +1763,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 44.
 
-[21
+[24
 
 
 
@@ -1694,7 +1778,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 16.
 
-[22
+[25
 
 
 
@@ -1707,7 +1791,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 18.
 
-[23]) (E:\大论文\BIT_Thesis\李浩模板\chapter/chapter6.tex
+[26]) (E:\大论文\BIT_Thesis\李浩模板\chapter/chapter6.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 5.
@@ -1716,7 +1800,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 5.
 
-[24
+[27
 
 
 ]) (E:\大论文\BIT_Thesis\李浩模板\chapter/chap-sum.tex)
@@ -1728,7 +1812,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 47.
 
-[25
+[28
 
 
 
@@ -1741,7 +1825,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 48.
 
-[26
+[29
 
 
 
@@ -1754,7 +1838,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 49.
 
-[27
+[30
 
 
 
@@ -1767,7 +1851,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 50.
 
-[28
+[31
 
 
 
@@ -1788,7 +1872,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 53.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 53.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 53.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: D6834FDD7C167AD8486D4BF87D780214;3847.
+(rerunfilecheck)             Checksum: 9C17F086B795EEC8FEF2C763133809BF;3847.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1802,13 +1886,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 20554 strings out of 495354
- 335274 string characters out of 3182738
- 391269 words of memory out of 3000000
- 22477 multiletter control sequences out of 15000+200000
- 153976 words of font info for 442 fonts, out of 3000000 for 9000
+ 20640 strings out of 495354
+ 337223 string characters out of 3182738
+ 392339 words of memory out of 3000000
+ 22539 multiletter control sequences out of 15000+200000
+ 154274 words of font info for 443 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 42i,15n,58p,995b,1212s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,21n,58p,995b,1213s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/s
 imhei.ttf><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simhei.ttf>{D:/Program
  Files (x86)/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/Windows/Fonts/sims
@@ -1843,9 +1927,9 @@ gram Files (x86)/CTEX/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><D:/Program Files
 (x86)/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><D:/Program Files (x86)/CTEX
 /MiKTeX/fonts/type1/urw/times/utmr8a.pfb><D:/Program Files (x86)/CTEX/MiKTeX/fo
 nts/type1/urw/times/utmri8a.pfb>
-Output written on Thesis.pdf (38 pages, 9766535 bytes).
+Output written on Thesis.pdf (41 pages, 10763493 bytes).
 PDF statistics:
- 1030 PDF objects out of 1200 (max. 8388607)
- 165 named destinations out of 1000 (max. 500000)
- 723 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1066 PDF objects out of 1200 (max. 8388607)
+ 180 named destinations out of 1000 (max. 500000)
+ 748 words of extra memory for PDF output out of 10000 (max. 10000000)
 

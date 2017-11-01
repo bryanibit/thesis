@@ -37,6 +37,17 @@ Rosten E, Drummond T. Machine learning for high-speed corner detection[J]. Compu
 
 \bibitem{Harris-corner}
 Harris C, Stephens M. A combined corner and edge detector[C]//Alvey vision conference. 1988, 15(50): 10.5244.
+
+\bibitem{Lindeberg-Feature detection}
+Lindeberg, T.: Feature detection with automatic scale selection. Int. J. Comput. Vis. 30(2),
+79¨C116 (1998)
+
+\bibitem{Lowe-ObjectRecognition}
+Lowe D G. Object Recognition from Local Scale-Invariant Features[C]// iccv. IEEE Computer Society, 1999:1150.
+
+\bibitem{Richard-MultipleView}
+Multiple View Geometry in Computer Vision Second Edition, Richard Hartley and Andrew Zisserman, Cambridge University Press, March 2004.
+
 }
 
 \end{thebibliography}
