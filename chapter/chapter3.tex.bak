@@ -340,7 +340,7 @@ x_{3} \\
 \label{homography-equation}
 \end{equation}
 
-矩阵$H$是一个齐次矩阵，在$H$的九个元素中有八个独立比率，即交比$h_{11}:h_{12}:h_{13}:h_{21}:h_{22}:h_{23}:h_{31}:h_{32}:h_{33}$不会因为$H$因为乘以非零因子而变化，所以单应性变化有八个自由度，而每个二维特征点可提供2个方程，故需要解算$H$需要至少4对匹配点。已知4对匹配点，使用直接线性法解算$H$，示意图如图~\ref{homography}，已知两个视图四对匹配的特征点坐标$X_1,X_2$，求H的过程。
+矩阵$H$是一个齐次矩阵，在$H$的九个元素中有八个独立比率，即交比(cross radio)$h_{11}:h_{12}:h_{13}:h_{21}:h_{22}:h_{23}:h_{31}:h_{32}:h_{33}$不会因为$H$因为乘以非零因子而变化，所以单应性变化有八个自由度，而每个二维特征点可提供2个方程，故需要解算$H$需要至少4对匹配点。已知4对匹配点，使用直接线性法解算$H$，示意图如图~\ref{homography}，已知两个视图四对匹配的特征点坐标$X_1,X_2$，求H 的过程。
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width=5.0in]{chapter3/homography.png}
@@ -349,10 +349,138 @@ x_{3} \\
 \end{figure}
 线性变换表示为$X_2=HX_1$，这是齐次矢量方程，三维矢量$X_2$和$HX_1$不相等，实际可以写为$\lambda X_2 = HX_1$，线性变换可以变形为$X_2 \times HX_1=0$（矢量与自身外积为零），记为$[X_2]_\times HX_1=0$，设$h_i$为$H$的第$i$ 行，
 
+\begin{equation}
+\begin{split}
+\left[\begin{array}{ccc}
+u_2 \\
+v_2 \\
+1 \\
+\end{array}
+\right]_\times
+\left[\begin{array}{ccc}
+h_1 \\
+h_2 \\
+h_3 \\
+\end{array}\right]X_1 &=
+\left[\begin{array}{ccc}
+u_2 \\
+v_2 \\
+1 \\
+\end{array}
+\right]_\times
+\left[\begin{array}{ccc}
+h_1 X_1 \\
+h_2 X_1 \\
+h_3 X_1 \\
+\end{array}\right]=
+\left[\begin{array}{ccc}
+u_2 \\
+v_2 \\
+1 \\
+\end{array}
+\right]_\times
+\left[\begin{array}{ccc}
+X_1^T h_1^T \\
+X_1^T h_2^T \\
+X_1^T h_3^T \\
+\end{array}\right] \\
+&=
+\left[\begin{array}{ccc}
+0 & -1 & v_2 \\
+1 & 0 & -u_2 \\
+-v_2 & u_2 & 0 \\
+\end{array}\right]
+\left[\begin{array}{ccc}
+X_1^T & 0_{1\times 3} & 0_{1\times 3} \\
+0_{1\times 3} & X_1^T & 0_{1\times 3} \\
+0_{1\times 3} & 0_{1\times 3} & X_1^T \\
+\end{array}\right]
+\left[\begin{array}{ccc}
+h_1^T \\
+h_2^T \\
+h_3^T \\
+\end{array}\right]
+\end{split}
+\label{homography-tuidao-equation}
+\end{equation}
+最后一步是由线性代数的知识得到，即对3维矢量$x=(x_1,x_2,x_3)$的$3\times 3$的反对称矩阵为式~\ref{inverse-sym-equation}
+\begin{equation}
+[a]_\times=\left[\begin{array}{ccc}
+0 & -a_3 & a_2 \\
+a_3 & 0 & -a_1 \\
+-a_2 & a_1 & 0 \\
+\end{array}\right]
+\label{inverse-sym-equation}
+\end{equation}
 
+合并~\ref{homography-tuidao-equation}最后一步的前两项得到下式为
+\begin{equation}
+=\left[\begin{array}{ccc}
+0_{1\times 3} & -X_1^T & v_2 X_1^T \\
+X_1^T & 0_{1\times 3} & -u_2 X_1^T \\
+-v_2 X_1^T & u_2 X_1^T & 0_{1\times 3} \\
+\end{array}\right]
+\left[\begin{array}{ccc}
+h_1^T \\
+h_2^T \\
+h_3^T \\
+\end{array}\right]=0
+\label{inverse-sym-equation}
+\end{equation}
+
+上式简写为$Ab=0$，其中$A$为$3\times 9$矩阵，$rank(A)=2$，这是因为每队匹配点只提供两个量：$u$和$v$，也可以从$A$矩阵的值看出，将$A$的第一行乘以$u_2$与第二行乘以$v_2$相加得到第三行。$b$为$9\times 1$ 矩阵，由于只需要维持$b$ 各项的交比不变即可，所以有8 个自由度，故需要4 对匹配点即可在这个线性系统上获得足够的条件计算得到单应性矩阵$H$的各项。由以上分析我们可以知道当给定的匹配点为4个时，并将$||H||=1$，方程有精确解，。但是大部分的匹配问题匹配点的数目远不止4 对，如果多于4对，那么$Ab=0$是超定的，如果所有的匹配点的位置是精确的，那么$Ab=0$的解仍然是精确的，但是通常情况匹配点中有噪声，存在错误匹配等问题，所以这时候方程存在最小二乘解（超定解）。除了零解可以忽略外，方程解可以使用SVD找到其近似解。
+
+SVD又称奇异值分解，在此不详细介绍，SVD可以将一个矩阵，无论是否满秩，均可以分解为$A=UDV^T$形式，其中$UU_T=I$和$V V_T=I$，即$U$和$V$是正交矩阵，$D$是对角阵，对角元素非负。实际上SVD可以看做特征值分解的推广，SVD在主成分分析，求解方程的最小二乘解中广泛应用。回到求解单应性变换的问题来，根据SVD求解最小二乘解的原理，可以得到：最小二乘解是$A^T A$的最小特征值的特征向量。具体讲，假设有n个匹配点，则$A$为$2n\times 9$的矩阵，且$A=UDV^T$，且$D$对角阵元素按降序排列，那么$b$是$V$的最后一列。这是由于$Ab=0$的解，即$A$的零空间，又由于$rank(A)=n-1$，所以$A$的零空间只有一个基向量，即SVD中最小特征值对应的特征向量$V$的最后一列。
+
+奇异值分解是广泛用于图像处理中的一种算法，不仅在求单应性矩阵时使用，下文亦有涉及。但是这里要介绍一种本文使用到的另一种方法——RANSAC(Random Sample Consensus)，该方法在图像领域中也广泛应用，其根本原理是使用统计原理，可以通过多次迭代估计含有噪声的数据模型的参数。RANSAC中文译为随机抽样一致性，其一般过程为从一组含有外点（噪声）的数据中随机选取数个数据，估计模型参数，然后将估计得到的模型应用于剩余的其他数据，从而得到该模型的误差，重复以上过程，直到误差达到某设定阈值或迭代次数达到设定最大次数，停止迭代，选取最优的一组模型作为最终结果。根据最终结果与事先设定的阈值可以过滤一部分外点并得到较为精确的模型。由以上内容知，估计单应性变换需要4对匹配点即可计算一个单应性变换，所以RANSAC每次选取4对匹配点迭代计算得到单应性矩阵，而后将单应性矩阵应用于剩余的匹配点，计算误差，过滤外点。如图~\ref{Homography+RANSAC}所示，其中$a,b$是仅根据SIFT描述子通过最近邻匹配过滤的结果。$c,d$是使用RANSAC方法通过单应性变换过滤的结果，从图中可以直观看出使用RANSAC可以过滤掉一部分错误的匹配，同样从表~\ref{table:matches}中也可以看出，其中对角数字表示图~\ref{Homography+RANSAC}中三张图片提取到的SIFT特征点数量，其他表格数目，例如$55/32$表示使用RANSAC方法前得到的匹配点数目，以及使用RANSAC后过滤剩下的匹配点。
+
+\begin{figure}[!htbp]
+\centering
+ \subfigure[]{
+	\includegraphics[width=2.8in]{chapter3/matches/000400_H_000415.png}
+    }
+ \subfigure[]{
+	\includegraphics[width=2.8in]{chapter3/matches/000400_H_000424.png}
+    }
+ \subfigure[]{
+	\includegraphics[width=2.8in]{chapter3/matches/000415_H_000424.png}
+    }
+ \subfigure[]{
+	\includegraphics[width=2.8in]{chapter3/matches/000400_U_000415.png}
+    }
+ \subfigure[]{
+	\includegraphics[width=2.8in]{chapter3/matches/000400_U_000424.png}
+    }
+ \subfigure[]{
+	\includegraphics[width=2.8in]{chapter3/matches/000415_U_000424.png}
+    }
+%\includegraphics[width=5.0in]{chapter3/siftDescriptor.jpg}
+\caption{RANSAC筛选的单应性变换结果}
+\label{Homography+RANSAC}
+\end{figure}
+
+\begin{table}[!htbp]
+	\caption{匹配点过滤}
+	\centering
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\diagbox[dir=SE]{\bfseries 图片名}{\bfseries 特征点}{\bfseries 图片名} & \bfseries 400 & \bfseries 415 & \bfseries 424\\
+		\hline
+%		\hline
+		\bfseries 400&  $861$&  $55/32$ & $75/46$\\
+		\hline
+		\bfseries 415 & $ 空 $ & $370$ & $19/10$ \\
+		\hline
+        \bfseries 424 & $空$ & $空$ & $599$ \\
+		\hline
+	\end{tabular}
+	\label{table:matches}
+\end{table}
+
+经过各种方法，得到的图片匹配点基本上是正确的，基于此我们可以对数据集中无序图片构建它们的关联结构，对于多张图片对应的同一个匹配点，设置统一标号，称为track。例如图片一中第125个特征点，图片二中第259个特征点，图片三中第6个特征点...匹配，实际上它们对应实际地理空间的同一个点，所以可以使用同一个track序号标记这些匹配点，这样做使整个数据集通过特征点匹配构成关联关系，为下面的多视图重建打下基础。
 
 \section{多视图重建}
-在式~\ref{transform-equation}中，$z_c$为每个像素的深度，在单目成像时，$z_c$是未知的。所以当知道某点的世界坐标系时，可以很容易得到该点的像素坐标，但是反之无法已知像素坐标得到世界坐标。这将为我们下面
+在式~\ref{transform-equation}中，$z_c$为每个像素的深度，在单目成像时，$z_c$是未知的。所以当知道某点的世界坐标系时，可以很容易得到该点的像素坐标，但是反之无法已知像素坐标得到世界坐标。所以从单张图像中无法还原场景的三维结构，所以下文介绍
 \subsection{两视图重建}
 \subsection{2D-3D位姿求解}
 \subsection{三角定位法}

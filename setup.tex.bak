@@ -3,6 +3,7 @@
 \makeatletter
 
 %%调入一些宏包
+\usepackage{dialog}
 \usepackage{amssymb, amsmath,color}
 \usepackage{fancyhdr}
 \usepackage{fancyref}
@@ -159,7 +160,7 @@
 \renewcommand\arraystretch{1.0}
 
 %%设置图表标题格式
-\usepackage{caption}
+\usepackage[justification=centering]{caption}
 \DeclareCaptionLabelSeparator{space}{~~}
 \captionsetup{labelsep=space,labelfont={small},textfont={small}}
 %\renewcommand{\captionfont}{\small\small}   %用此命令，label与text之间有：
