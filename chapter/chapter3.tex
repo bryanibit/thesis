@@ -525,7 +525,7 @@ x_2^TFx_1 &=0 \\
 \label{fundunmental-equation}
 \end{equation}
 
-基于式~\ref{fundunmental-equation}可以得到，下式
+基于式~\ref{fundunmental-equation}可以得到下式
 \begin{equation}
 \left[\begin{array}{ccc}
 u_i^1 & v_i^1 & 1
@@ -539,7 +539,6 @@ f_{31} & f_{32} & f_{33}
 u_i^1 \\
 v_i^1 \\
 1
-
 \end{array}\right] =0
 \label{fundunmental-tuidao-equation}
 \end{equation}
@@ -627,14 +626,174 @@ Y
 0 & 0 & 0 \\
 \end{matrix}\right]$所以$R$有两种可能值，这是因为$R=UYV^T$。
 
-综上通过$E$恢复旋转矩阵$R$和平移矩阵$t$有四种可能的解
+综上通过$E$恢复旋转矩阵$R$和平移矩阵$t$有四种可能的解，图~\ref{essentialfromRT}形象地显示了分解本质矩阵得到四个解的过程。保持成像平面的点（红点）不变的情况下，可以画出四种可能的情况，但是只有(a)是正确的，因为其有正深度，所以恢复旋转与平移后需要将3D点带入图中四个解中，检测该点在两个相机中的深度，即可确定$R$和$t$。实际上利用$E$的内在性质，其只有五个自由度：旋转(3)，平移(1)，相机中心(1)。但是使用五点法形式复杂，所以本文还是采用上文介绍的八点法计算旋转与平移关系。
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=5.2in]{chapter3/essentialfromRT.png}
+\caption{分解本质矩阵得到的四个解}
+\label{essentialfromRT}
+\end{figure}
+
+\subsection{三角定位法}
+在得到相机的位姿后，需要恢复匹配点的三维坐标信息，该方法称为三角测量（triangulation），三角测量时指不同视角观察同一个点的夹角，确定该点的位置。三角测量最早由高斯提出并应用于天文学中。在SfM中，我们使用三角测量估计匹配点的像素深度。
+
+小孔相机成像模型简化为$\lambda \left[\begin{array}{c}
+x_1\\
+1
+\end{array}\right]=P_1\left[\begin{array}{c}
+X_1\\
+1
+\end{array}\right]$，即$\left[\begin{array}{c}
+x_1\\
+1
+\end{array}\right]_\times P_1\left[\begin{array}{c}
+X_1\\
+1
+\end{array}\right]=0$，由于一个视图可以提供两个方程，所以只需要两个视图即可计算得到3D点坐标，但是由于噪声的影响，空间中的两视图射线不一定交于一点，所以使用两视图恢复出来的三维点坐标存在不准确的问题，所以一般情况下使用多视图进行三角测量恢复多视图匹配的3D点坐标，如图~\ref{triangulation}所示，多个视图匹配的同一个3D点在不同视图成像平面的投影为$x_1,x_2,...x_n$，这些投影点具有相同的track序号（第三章第二节末提到的定义），当从多视图中恢复3D位置坐标，该问题又归为对式~\ref{triangulation-equation}进行奇异值分解求最小二乘解的问题。由于$rank([\quad]_{3n\times 4})=2$所以对$[\quad]$进行SVD分解，$V$的最后一列就是$[\quad]$的右零空间，也就是3D点的位置坐标。
+
+三角测量的多视图必须存在平移关系，否则单纯的旋转无法使用三角测量，因为此时对极约束永远满足。在平移存在的情况下，三角测量存在不确定性，当平移很小时，射线夹角很小，计算得到的像素深度不确定性很大；但是平移太大后，图像变换会较大，导致匹配失效。所以三角测量时，需要考虑多视图夹角，也就是多视图平移大小的影响。
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=5.2in]{chapter3/triangulation.png}
+\caption{三角测量示意图}
+\label{triangulation}
+\end{figure}
+
+\begin{equation}
+\centering
+\left[\begin{array}{c}
+\left[\begin{array}{c}
+x_1\\
+1
+\end{array}\right]_\times P_1 \\
+\left[\begin{array}{c}
+x_2\\
+1
+\end{array}\right]_\times P_2 \\
+\vdots
+\end{array}\right]_{3n\times 4}
+\left[\begin{array}{c}
+X\\
+1
+\end{array}\right]_{4\times 1}=0
+\label{triangulation-equation}
+\end{equation}
 
 \subsection{2D-3D位姿求解}
-\subsection{三角定位法}
+经过以上的计算，我们可以得到初始的两视图匹配点的3D位置坐标，也就是我们通过两视图匹配关系得到场景的特征点3D位置坐标，或者称为稀疏点云，以及两视图的空间几何关系，至此我们加入第三张匹配的图片，这时就存在如何计算第三张图片对应的相机与刚刚三角测量得到的点云的空间位置关系，完成这一步才能继续增加其他图片，完成对数据集的增量式重建过程。
 
+PnP(Perspective-n-Point)是求解3D到2D点对运动的方法。新图片能被通过解决PnP问题与当前的点云模型（两视图或者多视图得到的）配准。PnP问题被用来估计相机位姿，包括未矫正相机的内参矩阵。我们知道对极几何估计2D-2D位置关系，使用八点法，但也存在纯旋转等问题。然而，如果两张图像其中一张特征点的3D位置已知，那么最小只需要三对匹配点就可以估计相机运动。特征点的3D位置可以有上文的三角测量或者深度传感器确定。3D-2D方法不需要使用对极约束，其有多种解法，直接线性方法，RANSAC或者非线性优化构建最小二乘问题并接待求解的Bundle Adjustment。
+
+\begin{equation}
+\begin{split}
+&\left[\begin{array}{ccc}
+u \\
+v \\
+1 \\
+\end{array}
+\right]_\times
+\left[\begin{array}{ccc}
+P_1 \\
+P_2 \\
+P_3 \\
+\end{array}\right]X =
+\left[\begin{array}{ccc}
+u \\
+v \\
+1 \\
+\end{array}
+\right]_\times
+\left[\begin{array}{ccc}
+P_1 X \\
+P_2 X \\
+P_3 X \\
+\end{array}\right] \\
+&=
+\left[\begin{array}{ccc}
+0 & -1 & v \\
+1 & 0 & -u \\
+-v & u & 0 \\
+\end{array}\right]
+\left[\begin{array}{ccc}
+X^T & 0_{1\times 4} & 0_{1\times 4} \\
+0_{1\times 4} & X^T & 0_{1\times 4} \\
+0_{1\times 4} & 0_{1\times 4} & X^T \\
+\end{array}\right]
+\left[\begin{array}{ccc}
+P_1^T \\
+P_2^T \\
+P_3^T \\
+\end{array}\right]\\
+&=
+\left[\begin{array}{ccc}
+0_{1\times 4} & -X^T & vX^T \\
+X^T & 0_{1\times 4} & -uX^T \\
+-vX^T & uX^T & 0_{1\times 4} \\
+\end{array}\right]
+\left[\begin{array}{ccc}
+P_1^T \\
+P_2^T \\
+P_3^T \\
+\end{array}\right]=0\\
+&Which\quad is\quad A_1b=0
+\end{split}
+\label{pnp-tuidao1-equation}
+\end{equation}
+
+下面仅介绍使用直接线性方法结合SVD分解，其他的方法与此原理相似不一一展开，首先回忆最经典的小孔成像模型$\lambda \left[\begin{array}{c}
+x_1\\
+1
+\end{array}\right]=P_1\left[\begin{array}{c}
+X_1\\
+1
+\end{array}\right]$，即$\left[\begin{array}{c}
+x_1\\
+1
+\end{array}\right]_\times P_1\left[\begin{array}{c}
+X_1\\
+1
+\end{array}\right]=0$，其中$P$为未知量，2D坐标$x$与3D坐标$X$都是已知的，参照求单应性矩阵的方法，我们可以把推导写成如式~\ref{pnp-tuidao1-equation}所示，其中$rank(A)=2$，这很容易理解，因为每对匹配点仅能提供两个方程，$A$为$3\times 12$矩阵，$b$为$12\times 1$的矩阵，所以需要至少6对匹配点才能计算得到位置关系矩阵$b$。此时等式简写为~\ref{pnp-svd-equation}的组合矩阵，其中每对3D-2D匹配点可以写成类似$A_1$的形式。此时可以对式~\ref{pnp-svd-equation}中最左边的组合矩阵运用SVD求解。对于实际中匹配点大于6对时，SVD求得的是最小二乘解。
+
+\begin{equation}
+\left[\begin{array}{c}
+A_1\\
+A_2\\
+\cdots\\
+A_6
+\end{array}\right]b = 0
+\end{equation}
+
+通过以上方法，我们可以得到矩阵$P$，由于$P=K[R|t]$，所以旋转矩阵$R=K^{-1}P_{[1:3]}$，$P_{[1:3]}$表示$P$的前三列，由于旋转阵$R$是正交矩阵，为了保证这一性质，所以旋转阵取式~\ref{main-orthogonal-equation}中$R_+$
+\begin{equation}
+\begin{split}
+&R_+ = UV^T\\
+&where\quad UDV^T=R
+\label{main-orthogonal-equation}
+\end{split}
+\end{equation}
+
+那么该如何恢复平移阵$t$呢？如式~\ref{main-scale-equation}所示，最后$P=K[R_+ t]$
+\begin{equation}
+\begin{split}
+&t=K^{-1}P_4/\sigma_1\\
+&where\quad D=diag(\sigma_1,\sigma_2,\sigma_3)\\
+&and\quad \sigma_1>\sigma_2>\sigma_3
+\label{main-scale-equation}
+\end{split}
+\end{equation}
 
 \section{三维重建中的优化}
+上面介绍了如何使用多视图几何的知识计算相机位姿与特征点的3D坐标，一般是先计算相机位姿，后计算特征点3D坐标，而本章要介绍的非线性优化的问题，将相机位姿与特征点3D位置放在一起优化，实际上SfM中structure就是指特征点3D坐标，而motion指相机位姿，但是以上内容将图像配准（image registration）和三角测量作为独立的步骤，实际上它们是紧密关联的：相机姿态的不确定将导致三角测量的不确定性，反之亦然。没有优化操作，SfM将很快离散到难以恢复的状态。本文一下介绍同时优化相机位姿与3D点坐标的常用方法，称为光束平差法(Bundle Adjustment,BA)，主要手段是最小化重投影误差。
 \subsection{光束平差法}
+BA是对相机位姿矩阵$P_c$与3D点$X_k$的非线性优化方法，其最小化重投影误差如式~\ref{repro-equation}，其中函数$f(x)$表示3D点的重投影误差，函数$\pi$是3D点在成像平面的投影的像坐标，$\rho_j$是损失函数，用来降低外点带来的影响。
+\begin{equation}
+E=arg\quad\mathop{{min}}\limits_{x} \sum_{j=1}^{k}\left \|f_j(x) \right \|
+=\sum_{j}\rho_j(\left \| \pi(P_c,X_k)-x_j \right \|_2^2)
+\label{repro-equation}
+\end{equation}
+为解决该问题，使用最多的方法是Levenberg-Marquardt\cite{Hartley-MultipleView}，该算法是解决非线性最小二乘问题的通用方法，所以选择LM解决BA问题。LM将非线性问题转变为一系列正则线性问题。设$J(x)$是$f(x)$的雅各比矩阵，则
+
+
 \subsection{最小化相机中心位置误差}
 
 \section{稀疏电云的渲染}
