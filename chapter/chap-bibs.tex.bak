@@ -46,8 +46,10 @@ Lindeberg, T.: Feature detection with automatic scale selection. Int. J. Comput.
 Lowe D G. Object Recognition from Local Scale-Invariant Features[C]// iccv. IEEE Computer Society, 1999:1150.
 
 \bibitem{Richard-MultipleView}
-Multiple View Geometry in Computer Vision Second Edition, Richard Hartley and Andrew Zisserman, Cambridge University Press, March 2004.
+Multiple View Geometry in Computer Vision Second Edition, Richard Hartley and Andrew Zisserman, Cambridge University Press, March 2004:105
 
+\bibitem{Hartley-MultipleView}
+Hartley R, Zisserman A. Multiple view geometry in computer vision[J]. Kybernetes, 2003, 30(9/10):1865 - 1872.
 }
 
 \end{thebibliography}

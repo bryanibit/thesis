@@ -785,12 +785,15 @@ A_6
 \section{三维重建中的优化}
 上面介绍了如何使用多视图几何的知识计算相机位姿与特征点的3D坐标，一般是先计算相机位姿，后计算特征点3D坐标，而本章要介绍的非线性优化的问题，将相机位姿与特征点3D位置放在一起优化，实际上SfM中structure就是指特征点3D坐标，而motion指相机位姿，但是以上内容将图像配准（image registration）和三角测量作为独立的步骤，实际上它们是紧密关联的：相机姿态的不确定将导致三角测量的不确定性，反之亦然。没有优化操作，SfM将很快离散到难以恢复的状态。本文一下介绍同时优化相机位姿与3D点坐标的常用方法，称为光束平差法(Bundle Adjustment,BA)，主要手段是最小化重投影误差。
 \subsection{光束平差法}
-BA是对相机位姿矩阵$P_c$与3D点$X_k$的非线性优化方法，其最小化重投影误差如式~\ref{repro-equation}，其中函数$\pi$是3D点在成像平面的投影的像坐标，$\rho_j$是损失函数，用来降低外点带来的影响。
+BA是对相机位姿矩阵$P_c$与3D点$X_k$的非线性优化方法，其最小化重投影误差如式~\ref{repro-equation}，其中函数$f(x)$表示3D点的重投影误差，函数$\pi$是3D点在成像平面的投影的像坐标，$\rho_j$是损失函数，用来降低外点带来的影响。
 \begin{equation}
-E=\sum_{j}\rho_j(\left \| \pi(P_c,X_k)-x_j \right \|_2^2)
+E=arg\quad\mathop{{min}}\limits_{x} \sum_{j=1}^{k}\left \|f_j(x) \right \|
+=\sum_{j}\rho_j(\left \| \pi(P_c,X_k)-x_j \right \|_2^2)
 \label{repro-equation}
 \end{equation}
-为解决该问题，使用最多的方法是Levenberg-Marquardt\cite{Hartley-MultipleView}，该算法是解决非线性最小二乘问题的通用方法，所以选择LM解决BA问题
+为解决该问题，使用最多的方法是Levenberg-Marquardt\cite{Hartley-MultipleView}，该算法是解决非线性最小二乘问题的通用方法，所以选择LM解决BA问题。LM将非线性问题转变为一系列正则线性问题。设$J(x)$是$f(x)$的雅各比矩阵，最小化重投影误差$E$
+
+$\partial$
 
 
 \subsection{最小化相机中心位置误差}
