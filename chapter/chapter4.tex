@@ -1,11 +1,37 @@
 \chapter{二维图像中的道路提取}
 
 \section{引言}
-
+最近数十年来许多方法被应用于无人地面车辆自主导航，使用地图提高定位、场景理解的方法是非常成功的。大部分无人车依靠详细路网地图导航，然后这些路网地图基本是靠手工完成的，如此限制了当前无人车辆的大范围普及。提取道路的方法被广泛的研究用于车辆导航与区域分割，这些算法对于UGV有很好的效果，然而对于UAV这些算法基本都失效。这是因为UGV的相机朝前安装而UAV相机俯视地面，UGV视野中道路在视野尽头一般收敛为消失点，针对消失点的提取道路的方法在UAV上效果较差，为了解决这一问题本文提出了使用图像二值化并结合道路拓扑关系相关内容对航拍图像进行道路提取。
 \section{图像二值化}
+本文采用最小二乘法提取道路区域得到二值化的图像。在实际工程中我们总是希望找到数据的线性关系，不幸的是对于实际数据找到这样完美的线性关系并不容易，然而最小二长发提供了一种可信赖的最小化残差方法，这展示了观测与拟合之间的差别。考虑到某区域的道路颜色特征基本一致的特点，本文采用线性最小二乘的方法拟合图像道路区域的RGB颜色特征，得到道路的二值化图。
+
+首先从UAV图片中找到一部分道路区域作为训练的样本集，如图~\ref{trainimage}中非黑色部分，再次训练集中的图片分为RGB三个通道展示在三维空间坐标系中，如图~\ref{regression}中蓝色点所示，而后最小二乘法被用于拟合这些观测值（蓝色点）为一条直线$frac{x+x_1}{a}=frac{y+y_1}{b}=frac{z}{1}$，如图~\ref{regression}中红色直线所示，最后可以计算所有观测点与拟合直线之间的平均欧式距离$D$。对于需要处理的图片，也就是测试集数据，遍历图片的每个像素，如果测试集像素与拟合直线的欧氏距离大于$3D$则将该像素赋值为零，否则赋值为一，进而得到和原图大小相同的二值图，按照这种方法进而每张UAV图片转化为二值图。
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=5.4in]{chapter4/trainimage.png}
+\caption{训练集}
+\label{trainimage}
+\end{figure}
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=5.4in]{chapter4/regression.png}
+\caption{线性回归}
+\label{regression}
+\end{figure}
 
 \section{非道路区域移除}
+通过最小二乘法我们初始的道路区域，然而这有很多的噪声和错误的道路检测，为了减少噪声和误差，本文采用数学形态学精间结果。数学形态学是关于基于拓扑的图像分析学科，基本的操作有开闭运算、俯视膨胀运算和形态学梯度等。道路有显而易见的不同于图片周围物体的形态学特征——瘦长。这些拓扑特征可以被用来消除二值图中的非道路区域，精简二值图。
 \subsection{开闭运算}
+\begin{equation}
+Open(I,K)=dilate(erode(I,k),K)
+\label{open-equation}
+\end{equation}
+\begin{equation}
+Close(I,K)=erode(dilate(I,k),K)
+\label{open-equation}
+\end{equation}
+
+
 \subsection{轮廓提取}
 
 \section{拓扑处理}

@@ -823,7 +823,7 @@ J=\frac{\partial f(x)}{\partial x}=
 \end{split}
 \end{equation}
 
-式~\ref{repro-tuidao4-equation}的推导结果称为高斯牛顿法，LM是基于高斯牛顿法，只是在迭代步长时不使用$\Delta x=(J^TJ)^{-1}J^T(b-f(x))$，而改为$\Delta x=(J^TJ+\lambda D(x)^TD(x))^{-1}J^T(b-f(x))$，其中$D(x)$是非负对角矩阵，是$J^TJ$的对角元素的平方根，也可以简写为$H_\lambda\Delta x = -J^T\nabla$，式中$H_\lambda$被称为增广Hessian矩阵。相较高斯牛顿法，LM的优点是可以动态调节$\Delta x$，当下降太快时，使用较小的$\lambda$，反之亦然。经过上面的计算我们知道实际上光束平差法是一种非线性最小二乘法，关键是如何计算$f(x)$的雅各比矩阵$J$，即$f(x)$ 的梯度，并最终计算步长$\Delta x$，直至误差$E$ 收敛至最小。下面介绍一下，BA 中针对多个相机多个3D 点使用的LM 算法计算雅各比矩阵的形式。最小化误差函数存在$6(F-1)$个运动约束和$3N-1$ 个结构约束，$F$指相机个数，$N$ 指3D点的个数，这可以理解为第一个相机为基准，所以不计入考虑，而每个相机有6 个约束条件，即旋转（3）、相机中心（3），每个3D 点都是3 个约束条件，但是缺失一个尺度，所以减去$1$。Hessian 矩阵$J^TJ$ 的维数为$6F+3N-7\times 6F+3N-7$。既然如此，由于3D 点与相机非常多，所以BA 得到的雅各比矩阵与Hessian 矩阵将非常大。如图~\ref{jagebi-shiyi}所示，两视图、同一个3D点对应的矩阵为式~\ref{jagebi}中的$J$
+式~\ref{repro-tuidao4-equation}的推导结果称为高斯牛顿法，LM是基于高斯牛顿法，只是在迭代步长时不使用$\Delta x=(J^TJ)^{-1}J^T(b-f(x))$，而改为$\Delta x=(J^TJ+\lambda D(x)^TD(x))^{-1}J^T(b-f(x))$，其中$D(x)$是非负对角矩阵，是$J^TJ$的对角元素的平方根，也可以简写为$H_\lambda\Delta x = -J^T\nabla$，式中$H_\lambda$被称为增广Hessian矩阵。相较高斯牛顿法，LM的优点是可以动态调节$\Delta x$，当下降太快时，使用较小的$\lambda$，反之亦然。经过上面的计算我们知道实际上光束平差法是一种非线性最小二乘法，关键是如何计算$f(x)$的雅各比矩阵$J$，即$f(x)$ 的梯度，并最终计算步长$\Delta x$，直至误差$E$ 收敛至最小。下面介绍一下，BA 中针对多个相机多个3D 点使用的LM 算法计算雅各比矩阵的形式。最小化误差函数存在$6(F-1)$个运动约束和$3N-1$ 个结构约束，$F$指相机个数，$N$ 指3D点的个数，这可以理解为第一个相机为基准，所以不计入考虑，而每个相机有6 个约束条件，即旋转（3）、相机中心（3），每个3D 点都是3 个约束条件，但是缺失一个尺度，所以减去$1$。Hessian 矩阵$J^TJ$ 的维数为$(6F+3N-7)\times (6F+3N-7)$。既然如此，由于3D 点与相机非常多，所以BA 得到的雅各比矩阵与Hessian 矩阵将非常大。如图~\ref{jagebi-shiyi}所示，两视图、同一个3D点对应的矩阵为式~\ref{jagebi}中的$J$
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width=5.4in]{chapter3/ba.png}
@@ -889,10 +889,10 @@ A & B\\
 0 & \bar{D}
 \end{matrix}\right]\left[\begin{matrix}
 x_1\\
-x_2 
+x_2
 \end{matrix}\right]=\left[\begin{matrix}
 b_1\\
-\bar{b}_2 
+\bar{b}_2
 \end{matrix}\right]$，其中$\bar{b_2}=b_2-CA^{-1}b_1$，至此我们可以得到一个降阶系统$\bar{D}x_2=\bar{b_2}$，求解$x_2$后，回带解算$x_1$。
 
 回到光束平差法问题中，可以得到降阶系统~\ref{reduce-system-equation}和~\ref{reduce-system2-equation}，矩阵$S=(V_\lambda-WU_\lambda^{-1}W^T)\Delta x_p$是Schur Complement。
@@ -905,11 +905,29 @@ b_1\\
 \label{reduce-system2-equation}
 \end{equation}
 
-$S$是对称正定矩阵，使用Cholesky分解可以求解式~\ref{ruduce-system-equation}。以上求解BA问题的方法之所以有效，是由于相机数量要远小于3D点数量，所以可以先求解$\Delta x_c$，在求解$\Delta x_p$。
+$S$是对称正定矩阵，使用Cholesky分解可以求解式~\ref{reduce-system-equation}。以上求解BA问题的方法之所以有效，是由于相机数量要远小于3D点数量，所以可以先求解$\Delta x_c$，再求解$\Delta x_p$。
 \subsection{最小化相机中心位置误差}
-上节介绍了如何使用Schur Complement简化线性系统，求解使重投影误差最小的$\Delta x_c,\Delta x_p$，其中涉及到的变量有旋转、相机中心（平移）、3D点坐标，而本节将介绍一种优化方法：最小化相机中心位置误差。由于从图片中，我们可以提取相机的EXIF(Exchangeable image file format)信息，从而得到相机的经纬度坐标。EXIF是由数码相机制造商在图片上标记的相机、图片等相关信息。EXIF是一种
+上节介绍了如何使用Schur Complement简化线性系统，求解使重投影误差最小的$\Delta x_c,\Delta x_p$，其中涉及到的变量有旋转、相机中心（平移）、3D点坐标，而本节将介绍一种优化方法：最小化相机中心位置误差。由于从图片中，我们可以提取相机的EXIF(Exchangeable image file format)信息，从而得到相机的经纬度坐标。EXIF是由数码相机制造商在图片、声音上标记的相机、图片、声音等相关内容的标准格式文件。EXIF包含的信息丰富，可以从中找到经纬高信息，也可以从中提取相机模型，包括焦距等，也包括相机制造厂商，甚至相机位姿等。
 
-对于同一个3D点在两视图中的左视图的相机坐标系中坐标为$X_1$，在右视图的相机坐标系中坐标为$X_2$，已知两视图相机位姿关系$R,t$，则坐标可以表示为$RX_1+t=X_2$。对于右视图相机中心这一3D点有$X_2=0$，则该点在左视图的相机坐标系中的坐标为$X_1=-R^Tt$，旋转矩阵是正交矩阵有$R^T=R^{-1}$。所以在多视图中每个视图与第一个视图的位姿关系已知为$R,t$，则这些视图对应的相机中心坐标在第一视图的相机坐标系中的坐标为$-R^Tt$。
+对于同一个3D点在两视图中的左视图的相机坐标系中坐标为$X_1$，在右视图的相机坐标系中坐标为$X_2$，已知两视图相机位姿关系$R,t$，则坐标可以表示为$RX_1+t=X_2$。对于右视图相机中心这一3D点有$X_2=0$，则该点在左视图的相机坐标系中的坐标为$X_1=-R^Tt$，旋转矩阵是正交矩阵有$R^T=R^{-1}$。所以在多视图中每个视图与第一个视图的位姿关系已知为$R_i,t_i$，则这些视图对应的相机中心坐标在第一视图的相机坐标系中的坐标为$-R_i^Tt_i$。这样我们就建立了每个视图的经纬高$pos=(Lon,Lat,High)$与相对于第一视图的位姿关系$-R_i^Tt_i$，基于此我们可以建立最小二乘问题如式~\ref{min-position-equation}。
+\begin{equation}
+E_{position}=arg\mathop{{min}}\limits_{R,t} \sum_{i=1}\left \|f_j(x) - x_j \right \|
+=\sum_{i}(\left \| -R_i^Tt_i-pos \right \|_2^2)
+\label{min-position-equation}
+\end{equation}
+
+在此不详细介绍如何解算上式，相对于最小化重投影误差的过程，该过程只调整相机相关参数，没有涉及3D点相关的调整，所以只能作为BA的辅助步骤，也可以认为这属于光束平差法的一部分，下文不再过多强调。
+
+本节介绍了基本的稀疏点云生成的过程，包括多视图几何知识从匹配点恢复结构，而后增量式的重建其他图片；在每加入一张图片时，使用BA优化相机位姿与3D点的位置，在此我加上最小化相机中心位置误差，作为BA的辅助步骤。图~\ref{BA}(b)是使用CeresSolver库迭代三次优化重投影误差的结果，初始代价函数结果为$3.483778e+01$，BA优化后的代价为$1.732320e+01$。从~\ref{BA}两张图对比可以看出BA最小化重投影误差的作用:(a) 仅使用多视图几何计算相机位姿并使用三角测量恢复3D点位置，而(b)在(a)的基础上增加BA环节，图中红色点是提取的2D特征点坐标，绿色点是3D根据相机$R,t$关系投影回成像平面的点，从中可以明显看出BA对重投影误差有改善作用，可以将误差平摊到所有点上。
+\begin{figure}[!htbp]
+\centering
+\subfigure[]{
+\includegraphics[width=5.4in]{chapter3/BA/before_small.jpg}}
+\subfigure[]{\includegraphics[width=5.4in]{chapter3/BA/after_small.jpg}
+}
+\caption{BA对比结果图}
+\label{BA}
+\end{figure}
 
 \section{稀疏电云的渲染}
 \subsection{点云稠密化}

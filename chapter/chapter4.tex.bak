@@ -1,9 +1,30 @@
-\chapter{动态车辆目标跟踪与轨迹分析}
+\chapter{二维图像中的道路提取}
 
-\section{车辆目标检测}
+\section{引言}
+最近数十年来许多方法被应用于无人地面车辆自主导航，使用地图提高定位、场景理解的方法是非常成功的。大部分无人车依靠详细路网地图导航，然后这些路网地图基本是靠手工完成的，如此限制了当前无人车辆的大范围普及。提取道路的方法被广泛的研究用于车辆导航与区域分割，这些算法对于UGV有很好的效果，然而对于UAV这些算法基本都失效。这是因为UGV的相机朝前安装而UAV相机俯视地面，UGV视野中道路在视野尽头一般收敛为消失点，针对消失点的提取道路的方法在UAV上效果较差，为了解决这一问题本文提出了使用图像二值化并结合道路拓扑关系相关内容对航拍图像进行道路提取。
+\section{图像二值化}
+本文采用最小二乘法提取道路区域得到二值化的图像。在实际工程中我们总是希望找到数据的线性关系，不幸的是对于实际数据找到这样完美的线性关系并不容易，然而最小二长发提供了一种可信赖的最小化残差方法，这展示了观测与拟合之间的差别。考虑到某区域的道路颜色特征基本一致的特点，本文采用线性最小二乘的方法拟合图像道路区域的RGB颜色特征，得到道路的二值化图。
 
-\section{车辆目标跟踪与轨迹分析}
+首先从UAV图片中找到一部分道路区域作为训练的样本集，如图~\ref{trainimage}中非黑色部分，再次训练集中的图片分为RGB三个通道展示在
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=5.4in]{chapter3/trainimage.png}
+\caption{训练集}
+\label{trainimage}
+\end{figure}
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=5.4in]{chapter3/regression.png}
+\caption{训练集}
+\label{trainimage}
+\end{figure}
 
-\section{车辆轨迹误差分析}
+\section{非道路区域移除}
+\subsection{开闭运算}
+\subsection{轮廓提取}
+
+\section{拓扑处理}
+\subsection{拓扑细化}
+\subsection{去除小枝丫}
 
 \section{本章小结}
