@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2017.10.19)  10 NOV 2017 22:32
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2017.10.19)  11 NOV 2017 22:47
 entering extended mode
 **E:/大论文/BIT_Thesis/李浩模板/Thesis.tex
 (E:/大论文/BIT_Thesis/李浩模板/Thesis.tex
@@ -2177,7 +2177,137 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 24.
 
 [40 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter4/trainimage.png> <E:/
-大论文/BIT_Thesis/李浩模板/figures/chapter4/regression.png (PNG copy)>])
+大论文/BIT_Thesis/李浩模板/figures/chapter4/regression.png (PNG copy)>]
+
+LaTeX Warning: Reference `close-equation' on page \selfontsize{9pt}41 undefined
+ on input line 25.
+
+<figures/chapter4/erosionDilation.png, id=935, 170.5572pt x 84.0741pt>
+File: figures/chapter4/erosionDilation.png Graphic file (type png)
+
+<use figures/chapter4/erosionDilation.png>
+Package pdftex.def Info: figures/chapter4/erosionDilation.png used on input lin
+e 37.
+(pdftex.def)             Requested size: 390.25755pt x 192.4003pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\selfontsize' on input line 45.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\selfontsize' on input line 45.
+
+[41 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter4/erosionDilation.png>
+] <figures/chapter4/rectangle_fix.jpg, id=948, 696.80325pt x 466.1415pt>
+File: figures/chapter4/rectangle_fix.jpg Graphic file (type jpg)
+
+<use figures/chapter4/rectangle_fix.jpg>
+Package pdftex.def Info: figures/chapter4/rectangle_fix.jpg used on input line 
+60.
+(pdftex.def)             Requested size: 375.80377pt x 251.4068pt.
+
+
+Package natbib Warning: Citation `Choi-Topological' on page \selfontsize{9pt}42
+ undefined on input line 68.
+
+
+LaTeX Warning: Reference `too' on page \selfontsize{9pt}42 undefined on input l
+ine 68.
+
+<figures/chapter4/TopoloThin.png, id=949, 1037.0745pt x 405.31425pt>
+File: figures/chapter4/TopoloThin.png Graphic file (type png)
+
+<use figures/chapter4/TopoloThin.png>
+Package pdftex.def Info: figures/chapter4/TopoloThin.png used on input line 71.
+
+(pdftex.def)             Requested size: 361.34999pt x 141.2251pt.
+
+Underfull \vbox (badness 6961) has occurred while \output is active []
+
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\selfontsize' on input line 76.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\selfontsize' on input line 76.
+
+[42 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter4/rectangle_fix.jpg>]
+<figures/chapter4/topoN.png, id=961, 454.69875pt x 454.69875pt>
+File: figures/chapter4/topoN.png Graphic file (type png)
+
+<use figures/chapter4/topoN.png>
+Package pdftex.def Info: figures/chapter4/topoN.png used on input line 85.
+(pdftex.def)             Requested size: 130.08621pt x 130.08308pt.
+
+<figures/chapter4/topocir.png, id=962, 454.69875pt x 454.69875pt>
+File: figures/chapter4/topocir.png Graphic file (type png)
+
+<use figures/chapter4/topocir.png>
+Package pdftex.def Info: figures/chapter4/topocir.png used on input line 88.
+(pdftex.def)             Requested size: 130.08621pt x 130.08308pt.
+
+<figures/chapter4/node.png, id=963, 352.9185pt x 355.3275pt>
+File: figures/chapter4/node.png Graphic file (type png)
+
+<use figures/chapter4/node.png>
+Package pdftex.def Info: figures/chapter4/node.png used on input line 91.
+(pdftex.def)             Requested size: 137.31255pt x 138.25185pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\selfontsize' on input line 97.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\selfontsize' on input line 97.
+
+[43 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter4/TopoloThin.png> <E:/
+大论文/BIT_Thesis/李浩模板/figures/chapter4/topoN.png> <E:/大论文/BIT
+_Thesis/李浩模板/figures/chapter4/topocir.png> <E:/大论文/BIT_Thesis/李
+浩模板/figures/chapter4/node.png>]
+Overfull \hbox (21.58247pt too wide) in paragraph at lines 108--109
+$\OML/ztmcm/m/it/12 P\OT1/ztmcm/m/n/12 (3\OML/ztmcm/m/it/12 ; \OT1/ztmcm/m/n/12
+ 4)\OML/ztmcm/m/it/12 ; P\OT1/ztmcm/m/n/12 (5\OML/ztmcm/m/it/12 ; \OT1/ztmcm/m/
+n/12 4)$\C19/zhsong/m/n/12/55 � \C19/zhsong/m/n/12/40  \C19/zhsong/m/n/12/49 �
+ \C19/zhsong/m/n/12/46 ! \C19/zhsong/m/n/12/40 :|\C19/zhsong/m/n/12/26 �| \C19/
+zhsong/m/n/12/64 { \C19/zhsong/m/n/12/60 � \C19/zhsong/m/n/12/38  \C19/zhsong/
+m/n/12/40 � � \C19/zhsong/m/n/12/62 u \C19/zhsong/m/n/12/40 � :$\OML/ztmcm/m/it
+/12 P\OT1/ztmcm/m/n/12 (1\OML/ztmcm/m/it/12 ; \OT1/ztmcm/m/n/12 2)\OML/ztmcm/m/
+it/12 ; P\OT1/ztmcm/m/n/12 (2\OML/ztmcm/m/it/12 ; \OT1/ztmcm/m/n/12 5)\OML/ztmc
+m/m/it/12 ; P\OT1/ztmcm/m/n/12 (5\OML/ztmcm/m/it/12 ; \OT1/ztmcm/m/n/12 6)\OML/
+ztmcm/m/it/12 ; P\OT1/ztmcm/m/n/12 (8\OML/ztmcm/m/it/12 ; \OT1/ztmcm/m/n/12 4)$
+\C19/zhsong/m/n/12/41 � \C19/zhsong/m/n/12/37 O \C19/zhsong/m/n/12/58 �$\OT1/zt
+mcm/m/n/12 3\OML/ztmcm/m/it/12 ; \OT1/ztmcm/m/n/12 1\OML/ztmcm/m/it/12 ; \OT1/z
+tmcm/m/n/12 3\OML/ztmcm/m/it/12 ; \OT1/ztmcm/m/n/12 4$|\C19/rm/m/n/12/25 "|
+ []
+
+<figures/chapter4/process/process33.jpg, id=985, 1541.76pt x 2192.19pt>
+File: figures/chapter4/process/process33.jpg Graphic file (type jpg)
+
+<use figures/chapter4/process/process33.jpg>
+Package pdftex.def Info: figures/chapter4/process/process33.jpg used on input l
+ine 114.
+(pdftex.def)             Requested size: 115.63243pt x 164.40715pt.
+
+<figures/chapter4/process/process55.jpg, id=986, 1541.76pt x 2192.19pt>
+File: figures/chapter4/process/process55.jpg Graphic file (type jpg)
+
+<use figures/chapter4/process/process55.jpg>
+Package pdftex.def Info: figures/chapter4/process/process55.jpg used on input l
+ine 117.
+(pdftex.def)             Requested size: 115.63243pt x 164.40715pt.
+
+<figures/chapter4/process/process80.jpg, id=987, 1541.76pt x 2192.19pt>
+File: figures/chapter4/process/process80.jpg Graphic file (type jpg)
+
+<use figures/chapter4/process/process80.jpg>
+Package pdftex.def Info: figures/chapter4/process/process80.jpg used on input l
+ine 121.
+(pdftex.def)             Requested size: 115.63243pt x 164.40715pt.
+)
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 44.
@@ -2186,7 +2316,19 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 44.
 
-[41] (E:\大论文\BIT_Thesis\李浩模板\chapter/chapter5.tex
+[44]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\selfontsize' on input line 44.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\selfontsize' on input line 44.
+
+[45 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter4/process/process33.jp
+g> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter4/process/process55.jpg
+> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter4/process/process80.jpg>
+] (E:\大论文\BIT_Thesis\李浩模板\chapter/chapter5.tex
 ��\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces 5\hspace {0.25em plus
  0.125em minus 0.08em}\ignorespaces \ignorespaces ��
 
@@ -2197,7 +2339,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 16.
 
-[42
+[46
 
 
 
@@ -2210,7 +2352,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 18.
 
-[43]) (E:\大论文\BIT_Thesis\李浩模板\chapter/chapter6.tex
+[47]) (E:\大论文\BIT_Thesis\李浩模板\chapter/chapter6.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 5.
@@ -2219,7 +2361,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 5.
 
-[44
+[48
 
 
 ]) (E:\大论文\BIT_Thesis\李浩模板\chapter/chap-sum.tex)
@@ -2231,7 +2373,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 47.
 
-[45
+[49
 
 
 
@@ -2244,7 +2386,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 48.
 
-[46
+[50
 
 
 
@@ -2257,7 +2399,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 49.
 
-[47
+[51
 
 
 
@@ -2270,14 +2412,17 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 50.
 
-[48
+[52
 
 
 
 ]
+
+Package natbib Warning: There were undefined citations.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 53.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 53.
- (E:\大论文\BIT_Thesis\李浩模板\Thesis.aux
+(E:\大论文\BIT_Thesis\李浩模板\Thesis.aux
 (E:\大论文\BIT_Thesis\李浩模板\chapter/chapter1.aux)
 (E:\大论文\BIT_Thesis\李浩模板\chapter/chapter2.aux)
 (E:\大论文\BIT_Thesis\李浩模板\chapter/chapter3.aux)
@@ -2291,7 +2436,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 53.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 53.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 53.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 93C28F0FC41DAE5D329E322C2CCF9AAD;3847.
+(rerunfilecheck)             Checksum: 24F4CA39A7D3E5A7BBE9B7A497DDE6A6;3847.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -2305,13 +2450,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 21805 strings out of 495354
- 354363 string characters out of 3182738
- 428914 words of memory out of 3000000
- 23558 multiletter control sequences out of 15000+200000
- 154870 words of font info for 445 fonts, out of 3000000 for 9000
+ 21919 strings out of 495354
+ 357065 string characters out of 3182738
+ 430608 words of memory out of 3000000
+ 23640 multiletter control sequences out of 15000+200000
+ 155977 words of font info for 446 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 42i,22n,58p,1682b,1216s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,22n,58p,1682b,1218s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/s
 imhei.ttf><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simhei.ttf>{D:/Program
  Files (x86)/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/Windows/Fonts/sims
@@ -2346,9 +2491,9 @@ gram Files (x86)/CTEX/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><D:/Program Files
 (x86)/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><D:/Program Files (x86)/CTEX
 /MiKTeX/fonts/type1/urw/times/utmr8a.pfb><D:/Program Files (x86)/CTEX/MiKTeX/fo
 nts/type1/urw/times/utmri8a.pfb>
-Output written on Thesis.pdf (58 pages, 21019097 bytes).
+Output written on Thesis.pdf (62 pages, 21695200 bytes).
 PDF statistics:
- 1255 PDF objects out of 1440 (max. 8388607)
- 243 named destinations out of 1000 (max. 500000)
- 838 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1321 PDF objects out of 1440 (max. 8388607)
+ 263 named destinations out of 1000 (max. 500000)
+ 883 words of extra memory for PDF output out of 10000 (max. 10000000)
 

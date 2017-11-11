@@ -36,14 +36,14 @@ Rublee E, Rabaud V, Konolige K, et al. ORB: An efficient alternative to SIFT or 
 Rosten E, Drummond T. Machine learning for high-speed corner detection[J]. Computer Vision¨CECCV 2006, 2006: 430-443.
 
 \bibitem{Harris-corner}
-Harris C, Stephens M. A combined corner and edge detector[C]//Alvey vision conference. 1988, 15(50): 10.5244.
+Harris C, Stephens M. A combined corner and edge detector[C] Alvey vision conference. 1988, 15(50): 10.5244.
 
 \bibitem{Lindeberg-Feature detection}
 Lindeberg, T.: Feature detection with automatic scale selection. Int. J. Comput. Vis. 30(2),
 79¨C116 (1998)
 
 \bibitem{Lowe-ObjectRecognition}
-Lowe D G. Object Recognition from Local Scale-Invariant Features[C]// iccv. IEEE Computer Society, 1999:1150.
+Lowe D G. Object Recognition from Local Scale-Invariant Features[C]  iccv. IEEE Computer Society, 1999:1150.
 
 \bibitem{Richard-MultipleView}
 Multiple View Geometry in Computer Vision Second Edition, Richard Hartley and Andrew Zisserman, Cambridge University Press, March 2004:105
@@ -52,4 +52,7 @@ Multiple View Geometry in Computer Vision Second Edition, Richard Hartley and An
 Hartley R, Zisserman A. Multiple view geometry in computer vision[J]. Kybernetes, 2003, 30(9/10):1865 - 1872.
 }
 
+\bibitem{Heckbert-polygonal}
+P. S. Heckbert and M. Garl, ¡°Survey of polygonal surface simplification
+algorithms,¡± 1997.
 \end{thebibliography}

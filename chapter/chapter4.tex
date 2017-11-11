@@ -22,6 +22,7 @@
 \section{非道路区域移除}
 通过最小二乘法我们初始的道路区域，然而这有很多的噪声和错误的道路检测，为了减少噪声和误差，本文采用数学形态学精间结果。数学形态学是关于基于拓扑的图像分析学科，基本的操作有开闭运算、俯视膨胀运算和形态学梯度等。道路有显而易见的不同于图片周围物体的形态学特征——瘦长。这些拓扑特征可以被用来消除二值图中的非道路区域，精简二值图。
 \subsection{开闭运算}
+在最小二乘法得到的二值图中存在许多噪声，例如小孔等，这影响了道路的完整性，本文中，开闭运算被用来移除孔洞，消除噪声，平滑道路区域。开运算是先腐蚀图片后膨胀图片的运算，而闭运算正好相反，是先膨胀后腐蚀图片，式~\ref{open-equation}和~\ref{close-equation}所示。其中二值图像的腐蚀是指选择大小一定的核函数$K$，$K$一般是方阵，则二值图像$I$被$K$腐蚀可以理解为$K$在$I$内部移动时，$K$ 的中心经过的区域即为腐蚀后的$I$的值。二值图像的膨胀是指选择大小一定的核函数$K$，$K$一般为方阵，则二值图像$I$被$K$膨胀可以理解为$K$的中心在$I$内部移动时，$K$所经过的区域。腐蚀膨胀的示意图如~\ref{erosionDilation}中左图深蓝色为腐蚀掉的像素，右图浅蓝色为膨胀后的像素。
 \begin{equation}
 Open(I,K)=dilate(erode(I,k),K)
 \label{open-equation}
@@ -31,11 +32,97 @@ Close(I,K)=erode(dilate(I,k),K)
 \label{open-equation}
 \end{equation}
 
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=5.4in]{chapter4/erosionDilation.png}
+\caption{腐蚀膨胀示意图}
+\label{erosionDilation}
+\end{figure}
+基于开闭运算的方法，道路区域被平滑，大量干扰（噪声）被移除，但是仍然存在非道路区域，像房子边缘，被错误识别为道路，由于这些区域面积较大，所以基于开闭运算的方法无法移除这些区域，所以采用以下方法去除非道路道路的干扰。
 
 \subsection{轮廓提取}
+Ramer Douglas Peucker算法（简称RDP）是由Ramer、David Douglas和Thomas Peucker提出的\cite{Heckbert-polygonal}，通过物体轮廓估计物体形状。需要移除的房子边缘被检测为满足式~\ref{houseedge1-equation}、~\ref{houseedge2-equation}与~\ref{houseedge3-equation}的轮廓，而这些被需要移除。
+\begin{equation}
+  \label{houseedge1-equation}
+  \|C-C^{\prime}\|\leq 10\% C
+\end{equation}
+\begin{equation}
+  \label{houseedge2-equation}
+  60^{\circ} \leq \theta \leq 100^{\circ}
+\end{equation}
+\begin{equation}
+  \label{houseedge3-equation}
+  \frac{L}{L^{\prime}}\leq 6 \quad or\quad \frac{L}{L^{\prime}}\geq \frac{1}{6}
+\end{equation}
+其中，$C$ 、 $C^{\prime}$代表原始轮廓与近似轮廓的周长，$\theta$代表$C^{\prime}$中每两个相邻顶点连线所成的角度。$L$和$L^{\prime}$代表$C^{\prime}$的相邻两边。按照该式可以检测到几个两个非道路区域，如~\ref{rectangles}中红色矩形所示。
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=5.2in]{chapter4/rectangle_fix.jpg}
+	\caption{轮廓检测}
+	\label{rectangles} %% label for first subfigure
+\end{figure}
+至此，我们完成了形态学滤波得到较为理想的道路区域，然而这样的道路并不适合直接应用于无人车路径规划与导航，因为UGV路径规划需要拓扑路网，下面将介绍如何从栅格道路提取道路骨架，得到拓扑路网的过程。
 
 \section{拓扑处理}
 \subsection{拓扑细化}
+栅格地图可以被简化为无人车路径规划中广泛使用的拓扑地图，这种地图有基本几何元素组成，例如节点和弧线、直线等。Choi\cite{Choi-Topological}使用拓扑细化的方法提取道路骨架，道路的宽度不会影响算法的有效性，图~\ref{too}显示了拓扑细化算法的过程，图中左边类似形态学处理后的道路区域，右边类似拓扑处理后的道路骨架，可以看出线段宽度不影响最后得到的道路骨架结果。
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=5.0in]{chapter4/TopoloThin.png}
+	\caption{拓扑细化}
+	\label{topo}
+\end{figure}
+拓扑细化的目的就是剥离像素，知道无法剥离为止，从而得到单像素构成的拓扑骨架。对于构成道路的像素是否可以剥离取决于像素的连通数，连通数的概念由式~\ref{connectivitynum-equation}和图~\ref{fig:topoN}定义。
+\begin{equation}
+\label{connectivitynum-equation}
+C=\sum(N_{k}-N_{k}N_{k+1}N_{k+2}),k=1,3,5,7,N_{9}=N_{1}
+\end{equation}
+
+\begin{figure}[!htbp]
+	\centering
+	\subfigure[8-region connectivity]{
+		\label{fig:subfig:topo1} %% label for first subfigure
+		\includegraphics[width=1.8in]{chapter4/topoN.png}}
+	\subfigure[Connectivity Example]{
+		\label{fig:subfig:topo2} %% label for first subfigure
+		\includegraphics[width=1.8in]{chapter4/topocir.png}}
+	\subfigure[Branch Example]{
+		\label{fig:pixelExample} %% label for first subfigure
+		\includegraphics[width=1.9in]{chapter4/node.png}}
+	\caption{Connectivity}
+	\label{fig:topoN}
+\end{figure}
+%$N_k$是目标像素8个邻域中的一个邻域的像素值，对于二值化图像，像素值非0即1，图~\ref{fig:subfig:topo1}表示了8邻域$N_k$的基本含义，$N_i$代表像素值，二值图像中该值非零即一，图~\ref{fig:subfig:topo2}中黑色圆形对应的像素值为1，白色为0，
+在~\ref{fig:subfig:topo1}中$N_i$表示以$N_0$为中心的8邻域中第$i$个像素大小，例如$N_1=1,N_2=0$，二值图像中像素值非0即1；根据式~\ref{connectivitynum-equation}可以计算某像素的8邻域中连通数的大小。如果一个像素的连通数等于1并且该像素不是端点（拓扑的起点或者终点），那么我们可以简化删除该像素简化拓扑关系。按照这一原则对于图~\ref{fig:subfig:topo2}，其中黑色圆形对应的像素值为1，白色为0，$N_0$的连通数$C=2$，所以$N_0$无法删除；此时如果将图~\ref{fig:subfig:topo2}的$N_6$设为1，$N_0$的连通数变为1，且$N_0$不是端点，所以$N_0$可以被移除；同样如果$N_4=N_5=N_7=N_8=0$，$N_0$不可移除，尽管$C_{N_0}=1$，但$N_0$为端点。按照拓扑细化的规则，遍历图片中所有像素，对每个像素采用拓扑细化的方法就可以得到基本的道路骨架。
+
+拓扑细化的规则虽然能够得到保持道路的连通、完整，但是同时产生冗余的小枝丫，如图~\ref{topo}所示所示，本文提出了一种从道路骨架中移除小枝丫的方法。在给出介绍之前，先定义一下连通度的概念，不同于应用于拓扑细化的连通数概念，连通度的定义如下：
+
+$(1)$ 一个像素的连通度：在8邻域中，一个像素直接与之相邻的像素个数，图~\ref{fig:subfig:topo2}中心像素的连通度是5。
+
+$(2)$ 道路骨架的端点：在8邻域中，一个像素与之相邻的像素仅一个，即连通度为1。
+
+$(3)$ 道路骨架的节点：一个像素与之相邻的像素个数大于2，例如~\ref{fig:subfig:topo2}中心像素即为拓扑的节点，换句话说像素连通度大于2。
+
+$(4)$ 枝丫的长度：从起点到最近节点的像素个数。
+
+基于以上定义，我们可以推断图~\ref{fig:pixelExample}中$P(1,2),P(2,5),P(5,6),P(8,4)$是端点，$P(3,4),P(5,4)$是道路节点，枝丫长度对于端点$P(1,2),P(2,5),P(5,6),P(8,4)$分别为$3,1,3,4$。实际道路枝丫通常较长，在~\ref{topo}中短的枝丫很显然并不属于真实道路骨架，设计逐渐增大的阈值，如果枝丫长度小于初始较小阈值，则该枝丫被移除。阈值逐渐增大，小于该阈值的枝丫被删除，直到阈值到达设定最大值，该过程结束。在图~\ref{fig:pixelExample}中，黑色点将被移除，剩下的绿点就是道路骨架。图~\ref{fig:subfig_process}展示了阈值逐渐增大过程中，拓扑路网的简化过程。
+
+\begin{figure}[!htbp]
+	\centering
+	\subfigure[Threshold=33]{
+		\label{fig:subfig:process33} %% label for first subfigure
+		\includegraphics[width=1.6in]{chapter4/process/process33.jpg}}
+	\subfigure[Threshold=55]{
+		\label{fig:subfig:process55} %% label for first subfigure
+		\includegraphics[width=1.6in]{chapter4/process/process55.jpg}}
+	%%\hspace{1in}
+	\subfigure[Threshold=80]{
+		\label{fig:subfig:process80} %% label for second subfigure
+		\includegraphics[width=1.6in]{chapter4/process/process80.jpg}}
+	\setlength{\belowcaptionskip}{10pt}\centering\caption{Branches Elimination}
+	\label{fig:subfig_process} %% label for entire figure
+\end{figure}
+
 \subsection{去除小枝丫}
 
 \section{本章小结}

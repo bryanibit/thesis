@@ -1,0 +1,62 @@
+
+% \bibliographystyle{plain}
+\bibliographystyle{GBT7714-2005NLang_Upp}
+% \bibliography{chap/references}
+%& This .bbl file has been processed by fixbbl!
+%& This .bbl file has been processed by fixbbl!
+\begin{thebibliography}{148}
+%\addtolength{\itemsep}{-1.5 em}
+\setlength{\itemsep}{-0.5pt}  % 缩小参考文献间的垂直间距
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+\providecommand{\doi}[1]{doi: #1}\else
+\providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+{\wuhaozi \songti
+\baselineskip=22pt
+
+% chapter 1
+\bibitem{Mattyus-Enhancing-road-maps}
+Mattyus G, Wang S, Fidler S, et al. Enhancing Road Maps by Parsing Aerial Images Around the World[C] IEEE International Conference on Computer Vision. IEEE, 2015:1689-1697.
+
+\bibitem{Lowe-DistinctiveImageFeatures}
+Lowe D G, Lowe D G. Distinctive Image Features from Scale-Invariant Keypoints[J]. International Journal of Computer Vision, 2004, 60(2):91-110.
+
+\bibitem{Bay-Speeded-UpRobustFeatures}
+Bay H, Ess A, Tuytelaars T, et al. Speeded-Up Robust Features (SURF)[J]. Computer Vision \& Image Understanding, 2008, 110(3):346-359.
+
+\bibitem{Rublee-ORB:Anefficient}
+Rublee E, Rabaud V, Konolige K, et al. ORB: An efficient alternative to SIFT or SURF[C] IEEE International Conference on Computer Vision. IEEE, 2012:2564-2571.
+
+\bibitem{slam14}
+高翔, 张涛等, 视觉SLAM十四讲：从理论到实践[B] 电子工业出版社, 2017-3:138
+
+\bibitem{Rosten-FAST}
+Rosten E, Drummond T. Machine learning for high-speed corner detection[J]. Computer Vision–ECCV 2006, 2006: 430-443.
+
+\bibitem{Harris-corner}
+Harris C, Stephens M. A combined corner and edge detector[C] Alvey vision conference. 1988, 15(50): 10.5244.
+
+\bibitem{Lindeberg-Feature detection}
+Lindeberg, T.: Feature detection with automatic scale selection. Int. J. Comput. Vis. 30(2),
+79–116 (1998)
+
+\bibitem{Lowe-ObjectRecognition}
+Lowe D G. Object Recognition from Local Scale-Invariant Features[C]  iccv. IEEE Computer Society, 1999:1150.
+
+\bibitem{Richard-MultipleView}
+Multiple View Geometry in Computer Vision Second Edition, Richard Hartley and Andrew Zisserman, Cambridge University Press, March 2004:105
+
+\bibitem{Hartley-MultipleView}
+Hartley R, Zisserman A. Multiple view geometry in computer vision[J]. Kybernetes, 2003, 30(9/10):1865 - 1872.
+}
+
+\bibitem{Heckbert-polygonal}
+P. S. Heckbert and M. Garl, “Survey of polygonal surface simplification
+algorithms,” 1997.
+
+\bibitem{Choi-Topological}
+C.-H. Choi, J.-B. Song, W. Chung, and M. Kim, “Topological map building based on thinning and its application to localization,” in Intelligent
+Robots and Systems, 2002. IEEE/RSJ International Conference on, vol. 1. IEEE, 2002, pp. 552–557.
+\end{thebibliography}
