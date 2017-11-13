@@ -93,8 +93,38 @@ C=\sum(N_{k}-N_{k}N_{k+1}N_{k+2}),k=1,3,5,7,N_{9}=N_{1}
 	\label{fig:topoN}
 \end{figure}
 %$N_k$是目标像素8个邻域中的一个邻域的像素值，对于二值化图像，像素值非0即1，图~\ref{fig:subfig:topo1}表示了8邻域$N_k$的基本含义，$N_i$代表像素值，二值图像中该值非零即一，图~\ref{fig:subfig:topo2}中黑色圆形对应的像素值为1，白色为0，
-在~\ref{fig:subfig:topo1}中$N_i$表示像素值，例如$N_1=1,N_2=0$，二值图像中像素值非0即1，
+在~\ref{fig:subfig:topo1}中$N_i$表示以$N_0$为中心的8邻域中第$i$个像素大小，例如$N_1=1,N_2=0$，二值图像中像素值非0即1；根据式~\ref{connectivitynum-equation}可以计算某像素的8邻域中连通数的大小。如果一个像素的连通数等于1并且该像素不是端点（拓扑的起点或者终点），那么我们可以简化删除该像素简化拓扑关系。按照这一原则对于图~\ref{fig:subfig:topo2}，其中黑色圆形对应的像素值为1，白色为0，$N_0$的连通数$C=2$，所以$N_0$无法删除；此时如果将图~\ref{fig:subfig:topo2}的$N_6$设为1，$N_0$的连通数变为1，且$N_0$不是端点，所以$N_0$可以被移除；同样如果$N_4=N_5=N_7=N_8=0$，$N_0$不可移除，尽管$C_{N_0}=1$，但$N_0$为端点。按照拓扑细化的规则，遍历图片中所有像素，对每个像素采用拓扑细化的方法就可以得到基本的道路骨架。
 
 \subsection{去除小枝丫}
+
+拓扑细化的规则虽然能够得到保持道路的连通、完整，但是同时产生冗余的小枝丫，如图~\ref{topo}所示所示，本文提出了一种从道路骨架中移除小枝丫的方法。在给出介绍之前，先定义一下连通度的概念，不同于应用于拓扑细化的连通数概念，连通度的定义如下：
+
+$(1)$ 一个像素的连通度：在8邻域中，一个像素直接与之相邻的像素个数，图~\ref{fig:subfig:topo2}中心像素的连通度是5。
+
+$(2)$ 道路骨架的端点：在8邻域中，一个像素与之相邻的像素仅一个，即连通度为1。
+
+$(3)$ 道路骨架的节点：一个像素与之相邻的像素个数大于2，例如~\ref{fig:subfig:topo2}中心像素即为拓扑的节点，换句话说像素连通度大于2。
+
+$(4)$ 枝丫的长度：从起点到最近节点的像素个数。
+
+基于以上定义，我们可以推断图~\ref{fig:pixelExample}中$P(1,2),P(2,5),P(5,6),P(8,4)$是端点，$P(3,4),P(5,4)$是道路节点，枝丫长度对于端点$P(1,2),P(2,5),P(5,6),P(8,4)$分别为$3,1,3,4$。实际道路枝丫通常较长，在~\ref{topo}中短的枝丫很显然并不属于真实道路骨架，设计逐渐增大的阈值，如果枝丫长度小于初始较小阈值，则该枝丫被移除。阈值逐渐增大，小于该阈值的枝丫被删除，直到阈值到达设定最大值，该过程结束。在图~\ref{fig:pixelExample}中，黑色点将被移除，剩下的绿点就是道路骨架。图~\ref{fig:subfig_process}展示了阈值逐渐增大过程中，拓扑路网的简化过程。
+
+\begin{figure}[!htbp]
+	\centering
+	\subfigure[Threshold=33]{
+		\label{fig:subfig:process33} %% label for first subfigure
+		\includegraphics[width=1.6in]{chapter4/process/process33.jpg}}
+	\subfigure[Threshold=55]{
+		\label{fig:subfig:process55} %% label for first subfigure
+		\includegraphics[width=1.6in]{chapter4/process/process55.jpg}}
+	%%\hspace{1in}
+	\subfigure[Threshold=80]{
+		\label{fig:subfig:process80} %% label for second subfigure
+		\includegraphics[width=1.6in]{chapter4/process/process80.jpg}}
+	\setlength{\belowcaptionskip}{10pt}\centering\caption{Branches Elimination}
+	\label{fig:subfig_process} %% label for entire figure
+\end{figure}
+
+
 
 \section{本章小结}
