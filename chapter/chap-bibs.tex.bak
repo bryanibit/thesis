@@ -16,10 +16,21 @@
 {\wuhaozi \songti
 \baselineskip=22pt
 
-% chapter 1
+% chapter 1 
 \bibitem{Mur-Artal-ORB-SLAM}
 Mur-Artal R, Montiel J M M, Tardos J D. ORB-SLAM: a versatile and accurate monocular SLAM system[J]. IEEE Transactions on Robotics, 2015, 31(5): 1147-1163.
 
+\bibitem{Engel-LSD-SLAM}
+Engel J, Schops T, Cremers D. LSD-SLAM: Large-scale direct monocular SLAM[C] European Conference on Computer Vision. Springer, Cham, 2014: 834-849.
+
+\bibitem{Zhang-LOAM}
+Zhang J, Singh S. LOAM: Lidar Odometry and Mapping in Real-time[C]//Robotics: Science and Systems. 2014, 2.
+
+\bibitem{Carrivick-Structure-from-Motion}
+Carrivick J L, Smith M W, Quincey D J. Structure from Motion in the Geosciences[M]. John Wiley \& Sons, 2016.
+
+\bibitem{Jianhua-Automated}
+Jianhua Wang, Qiming Qin, Xiucheng Yang, Jun Wang, Xin Ye, Xuebin Qin. Automated road extraction from multi-resolution images using spectral information and texture[J]. IEEE Geoscience and Remote Sensing Symposium. 2014. 533-536.
 % chapter2-last
 \bibitem{Mattyus-Enhancing-road-maps}
 Mattyus G, Wang S, Fidler S, et al. Enhancing Road Maps by Parsing Aerial Images Around the World[C] IEEE International Conference on Computer Vision. IEEE, 2015:1689-1697.
