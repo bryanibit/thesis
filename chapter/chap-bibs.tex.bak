@@ -55,4 +55,13 @@ Hartley R, Zisserman A. Multiple view geometry in computer vision[J]. Kybernetes
 \bibitem{Heckbert-polygonal}
 P. S. Heckbert and M. Garl, ¡°Survey of polygonal surface simplification
 algorithms,¡± 1997.
+
+\bibitem{Choi-Topological}
+C.-H. Choi, J.-B. Song, W. Chung, and M. Kim, ¡°Topological map building based on thinning and its application to localization,¡± in Intelligent
+Robots and Systems, 2002. IEEE/RSJ International Conference on, vol. 1. IEEE, 2002, pp. 552¨C557.
+
+\bibitem{Mattyus-Enhancing}
+G. Mattyus, S. Wang, S. Fidler, and R. Urtasun, ¡°Enhancing road maps
+by parsing aerial images around the world,¡± in IEEE International
+Conference on Computer Vision, 2015, pp. 1689¨C1697.
 \end{thebibliography}

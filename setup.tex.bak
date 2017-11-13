@@ -2,8 +2,9 @@
 
 \makeatletter
 
-%%µ÷ÈëÒ»Ð©ºê°ü
-\usepackage{dialog}
+%%ï¿½ï¿½ï¿½ï¿½Ò»Ð©ï¿½ï¿½ï¿½ï¿½
+%\usepackage{ctex}
+\usepackage{diagbox}
 \usepackage{amssymb, amsmath,color}
 \usepackage{fancyhdr}
 \usepackage{fancyref}
@@ -14,26 +15,26 @@
 \usepackage{pifont}
 \usepackage{times}
 \usepackage{mathptmx}
-\usepackage{setspace}  %Ê¹ÓÃ¼ä¾àºê°ü
-\DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}  %¶¨ÒåÐÂ×ÖÌå  %mathpzc??
+\usepackage{setspace}  %Ê¹ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+\DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}  %ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  %mathpzc??
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                                Ò³Ãæ¡¢Ò³Ã¼Ò³½Å
+%                                Ò³ï¿½æ¡¢Ò³Ã¼Ò³ï¿½ï¿½
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%Ò³Ãæ´óÐ¡ÉèÖÃ
+%%Ò³ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½
 %\usepackage[top=3.5cm,bottom=3cm,left=2.7cm,right=2.7cm,headheight=1cm,footskip=0.7cm]{geometry}
 %\usepackage[top=3.5cm,bottom=2.5cm,left=2.7cm,right=2.7cm,headheight=2.5cm,footskip=1.8cm]{geometry}
 \usepackage[top=3.7cm,bottom=3cm,left=2.7cm,right=2.7cm,headheight=1cm,footskip=1.1cm]{geometry}
 
-%%Ò³Ã¼Ò³½Å
+%%Ò³Ã¼Ò³ï¿½ï¿½
 \pagestyle{plain}
 \fancypagestyle{plain}{%
-	\fancyhf{} % Çå¿Õµ±Ç°ÉèÖÃ
-	\renewcommand{\headrulewidth}{0.7pt} % Ò³Ã¼ÓëÕýÎÄÖ®¼äµÄË®Æ½Ïß´ÖÏ¸
+	\fancyhf{} % ï¿½ï¿½ï¿½Õµï¿½Ç°ï¿½ï¿½ï¿½ï¿½
+	\renewcommand{\headrulewidth}{0.7pt} % Ò³Ã¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö®ï¿½ï¿½ï¿½ï¿½Ë®Æ½ï¿½ß´ï¿½Ï¸
 	\renewcommand{\footrulewidth}{0pt}
 	\lhead{}
-	\chead{\zihao{5}\songti ±±¾©Àí¹¤´óÑ§Ë¶Ê¿Ñ§Î»ÂÛÎÄ}
+	\chead{\zihao{5}\songti ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ§Ë¶Ê¿Ñ§Î»ï¿½ï¿½ï¿½ï¿½}
 	\rhead{}
 	\lfoot{}
 	\cfoot{\xiaowuzi\thepage}
@@ -44,10 +45,10 @@
 %                                  Ä¿Â¼
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%ÓÃtitletocºê°ü¶¨ÒåÄ¿Â¼¸ñÊ½
+%%ï¿½ï¿½titletocï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½Ê½
 \usepackage{titletoc}
 
-%%ÉèÖÃÄ¿Â¼ÀïÕÂ½Ú±êÌâ¸ñÊ½
+%%ï¿½ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½ï¿½Â½Ú±ï¿½ï¿½ï¿½ï¿½ï¿½Ê½
 \def\tocchapterfmt{\songti\sihaozi}
 \def\tocsectionfmt{\songti\xiaosizi}
 \def\tocsubsectionfmt{\songti\xiaosizi}
@@ -60,26 +61,26 @@
 %\titlecontents{subsubsection}[4em]{\tocsubsubsectionfmt} {\thecontentslabel\quad}{} {\mydotfill\contentspage}
 
 
-%%ÓÃtocbibindºê°ü×Ô¶¯½«²Î¿¼ÎÄÏ×¡¢Ë÷Òý¡¢±í¸ñÄ¿Â¼ºÍÍ¼ÐÎÄ¿Â¼µÈ±êÌâ¼°ÆäËùÔÚ¼ÓÈëÄ¿Â¼
+%%ï¿½ï¿½tocbibindï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½Î¿ï¿½ï¿½ï¿½ï¿½×¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½Í¼ï¿½ï¿½Ä¿Â¼ï¿½È±ï¿½ï¿½â¼°ï¿½ï¿½ï¿½ï¿½ï¿½Ú¼ï¿½ï¿½ï¿½Ä¿Â¼
 %\usepackage{tocbibind}
 \usepackage[nottoc]{tocbibind}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                                ÕÂ½Ú
+%                                ï¿½Â½ï¿½
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%ÓÃtitlesecºê°ü¶¨ÒåÕÂ½Ú±êÌâ¸ñÊ½
+%%ï¿½ï¿½titlesecï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â½Ú±ï¿½ï¿½ï¿½ï¿½ï¿½Ê½
 \usepackage{titlesec}
 
-%%±£´æÔ­ÕÂ½ÚÃüÁî
+%%ï¿½ï¿½ï¿½ï¿½Ô­ï¿½Â½ï¿½ï¿½ï¿½ï¿½ï¿½
 \let\oldchapter=\chapter
 \let\oldsection=\section
 \let\oldsubsection=\subsection
 %\let\oldsubsubsection=\subsubsection
 
 \iffalse
-%%ÉèÖÃÕÂ½Ú±àºÅÀàÐÍ
+%%ï¿½ï¿½ï¿½ï¿½ï¿½Â½Ú±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 \def\thechapter{\arabic{chapter}}
 \def\thesection{\thechapter.\arabic{section}}
 \def\thesubsection{\thesection.\arabic{subsection}}
@@ -87,13 +88,13 @@
 %\def\thesubsubsection{\thechapter.\thesection.\thesubsection.\arabic{subsubsection}}
 \fi
 
-%%ÖØ¶¨ÒåÕÂ½Ú±êÌâ¸ñÊ½
-\def\chaptername{µÚ~\thechapter~ÕÂ}
+%%ï¿½Ø¶ï¿½ï¿½ï¿½ï¿½Â½Ú±ï¿½ï¿½ï¿½ï¿½ï¿½Ê½
+\def\chaptername{ï¿½ï¿½~\thechapter~ï¿½ï¿½}
 \def\sectionname{\thesection}
 \def\subsectionname{\thesubsection}
 %\def\subsubsectionname{\thesubsubsection}
 
-%%ÉèÖÃÕÂ½Ú±êÌâ¸ñÊ½
+%%ï¿½ï¿½ï¿½ï¿½ï¿½Â½Ú±ï¿½ï¿½ï¿½ï¿½ï¿½Ê½
 \def\chapterfmt{\centering\sanhaozi\heiti\bfseries}
 \def\sectionfmt{\heiti\sihaozi\bfseries}
 \def\subsectionfmt{\heiti\xiaosizi\bfseries}
@@ -105,10 +106,10 @@
 %\titleformat{\subsubsection}[hang]{\subsubsectionfmt}{\subsubsectionname}{1em}{}
 
 
-%%Èç¹ûÓÃctexbook£¬ÉèÖÃÏàÓ¦ÕÂ½Ú±êÌâ¸ñÊ½
+%%ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ctexbookï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½Â½Ú±ï¿½ï¿½ï¿½ï¿½ï¿½Ê½
 \ifx\CTEXsetup\undefined%
 \else%
-\CTEXsetup[name={µÚ,ÕÂ},number={~\arabic{chapter}~},format+={\chapterfmt}]{chapter}
+\CTEXsetup[name={ï¿½ï¿½,ï¿½ï¿½},number={~\arabic{chapter}~},format+={\chapterfmt}]{chapter}
 % \CTEXsetup[name={},number={},format={\sectionfmt}]{section}
 % \CTEXsetup[name={},number={},format={\subsectionfmt}]{subsection}
 % \CTEXsetup[name={},number={},format={\subsubsectionfmt}]{subsubsection}
@@ -116,10 +117,10 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                        ²Î¿¼ÎÄÏ×GBT7714-2005NLang
+%                        ï¿½Î¿ï¿½ï¿½ï¿½ï¿½ï¿½GBT7714-2005NLang
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage{ccmap}
+%\usepackage{ccmap}
 \usepackage{pdflscape}
 \usepackage{array}
 \newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp}
@@ -127,21 +128,21 @@
 \newcolumntype{R}[1]{>{\PreserveBackslash\raggedleft}p{#1}}
 \newcolumntype{L}[1]{>{\PreserveBackslash\raggedright}p{#1}}
 \usepackage{enumerate}
-%\usepackage[numbers,square,sort]{natbib} %Êý×Ö£¬·½À¨ºÅ£¬ÉÏ±ê£¬ÅÅÐòÓëÑ¹Ëõ
+%\usepackage[numbers,square,sort]{natbib} %ï¿½ï¿½ï¿½Ö£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å£ï¿½ï¿½Ï±ê£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¹ï¿½ï¿½
 \usepackage[numbers,sort&compress]{natbib}
 \usepackage{hypernat}
 
-%%ÊµÏÖÉÏ±ê¼ÓÀ¨ºÅµÄÒýÓÃ·½Ê½
+%%Êµï¿½ï¿½ï¿½Ï±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Åµï¿½ï¿½ï¿½ï¿½Ã·ï¿½Ê½
 \usepackage{hypernat}
 \let\oldcite\cite
 \renewcommand{\cite}[1]{\textsuperscript{\textsuperscript{\oldcite{#1}}}}
 \let\citeayt\cite
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                                       Í¼±í
+%                                       Í¼ï¿½ï¿½
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%µ÷ÈëÍ¼±íÏà¹Øºê°ü
+%%ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½Øºï¿½ï¿½ï¿½
 \usepackage{graphicx}
 \usepackage{threeparttable}
 \usepackage{dcolumn}
@@ -149,42 +150,42 @@
 \usepackage{booktabs}
 \usepackage{listings}
 
-%ÉèÖÃ²åÍ¼Â·¾¶£¬Ç¿ÁÒ½¨Òé°Ñ²åÍ¼·ÅÔÚ×ÓÄ¿Â¼ÀïÃæ£¡[mhb]
+%ï¿½ï¿½ï¿½Ã²ï¿½Í¼Â·ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½Ò½ï¿½ï¿½ï¿½ï¿½Ñ²ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½ï¿½æ£¡[mhb]
 \graphicspath{{figures/}{./}}
 
-%%ÉèÖÃÍ¼±íÓë±êÌâµÄÉÏÏÂ¾àÀë
+%%ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¾ï¿½ï¿½ï¿½
 \setlength{\abovecaptionskip}{10pt}
 \setlength{\belowcaptionskip}{-6pt}
 
-%±í¸ñ¡¢¹«Ê½ÐÐ¼ä¾à
+%ï¿½ï¿½ï¿½ñ¡¢¹ï¿½Ê½ï¿½Ð¼ï¿½ï¿½ï¿½
 \renewcommand\arraystretch{1.0}
 
-%%ÉèÖÃÍ¼±í±êÌâ¸ñÊ½
+%%ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½
 \usepackage[justification=centering]{caption}
 \DeclareCaptionLabelSeparator{space}{~~}
 \captionsetup{labelsep=space,labelfont={small},textfont={small}}
-%\renewcommand{\captionfont}{\small\small}   %ÓÃ´ËÃüÁî£¬labelÓëtextÖ®¼äÓÐ£º
+%\renewcommand{\captionfont}{\small\small}   %ï¿½Ã´ï¿½ï¿½ï¿½ï¿½î£¬labelï¿½ï¿½textÖ®ï¿½ï¿½ï¿½Ð£ï¿½
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                                       ÆäËûÉèÖÃ
+%                                       ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%¶¨Àí»·¾³ÉèÖÃ
-\newtheorem{theorem}{\hspace{\parindent}¶¨Àí}[chapter]
-\newtheorem{corollary}{\hspace{\parindent}ÍÆÂÛ}[chapter]
-\newtheorem{property}{\hspace{\parindent}ÐÔÖÊ}[chapter]
-\newtheorem{lemma}{\hspace{\parindent}ÒýÀí}[chapter]
-\newtheorem{example}{\hspace{\parindent}Àý}[chapter]
-\newtheorem{assumption}{\hspace{\parindent}¼ÙÉè}[chapter]
-\newtheorem{problem}{\hspace{\parindent}ÎÊÌâ}[chapter]
-\newtheorem{definition}{\hspace{\parindent}¶¨Òå}[chapter]
+%%ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+\newtheorem{theorem}{\hspace{\parindent}ï¿½ï¿½ï¿½ï¿½}[chapter]
+\newtheorem{corollary}{\hspace{\parindent}ï¿½ï¿½ï¿½ï¿½}[chapter]
+\newtheorem{property}{\hspace{\parindent}ï¿½ï¿½ï¿½ï¿½}[chapter]
+\newtheorem{lemma}{\hspace{\parindent}ï¿½ï¿½ï¿½ï¿½}[chapter]
+\newtheorem{example}{\hspace{\parindent}ï¿½ï¿½}[chapter]
+\newtheorem{assumption}{\hspace{\parindent}ï¿½ï¿½ï¿½ï¿½}[chapter]
+\newtheorem{problem}{\hspace{\parindent}ï¿½ï¿½ï¿½ï¿½}[chapter]
+\newtheorem{definition}{\hspace{\parindent}ï¿½ï¿½ï¿½ï¿½}[chapter]
 \newtheorem{remark}{\hspace{\parindent}×¢}[chapter]
-\newtheorem{notation}{\hspace{\parindent}·ûºÅ}[chapter]
+\newtheorem{notation}{\hspace{\parindent}ï¿½ï¿½ï¿½ï¿½}[chapter]
 % \newtheorem{proof}{}[chapter]
-\newenvironment{proof}{\hspace{\parindent}\textbf{Ö¤Ã÷:}}{\hfill$\Box$}
+\newenvironment{proof}{\hspace{\parindent}\textbf{Ö¤ï¿½ï¿½:}}{\hfill$\Box$}
 
-%%×Ô¼º¶¨ÖÆÃüÁî
+%%ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 \newcommand{\bn}{\begin{eqnarray}}
 \newcommand{\ed}{\end{eqnarray}}
 \newcommand{\bnn}{\begin{eqnarray*}}
@@ -199,7 +200,7 @@
 \def\hi{H_\infty}
 \newcommand\old[1]{}
 
-%%×Ô¶¨ÒåÁÐ±í»·¾³
+%%ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½Ð±ï¿½ï¿½ï¿½ï¿½ï¿½
 \newcommand{\namelistlabel}[1]{\mbox{#1}\hfill}
 \newenvironment{namelist}[1]%
 {\begin{list}{}
@@ -213,7 +214,7 @@
 }
 }{\end{list}}
 
-%%ÖØ¶¨Òå×ÖºÅÃüÁî
+%%ï¿½Ø¶ï¿½ï¿½ï¿½ï¿½Öºï¿½ï¿½ï¿½ï¿½ï¿½
 \usepackage{calc}
 \newlength{\tmpfontsizelength}
 \newcommand{\selfontsize}[2][1]
@@ -222,33 +223,33 @@
     \fontsize{#2}{\tmpfontsizelength}
     \selectfont
 }
-\newcommand{\chuhaozi}{\selfontsize{42pt}}    % ³õºÅ, 1.5±¶ÐÐ¾à
-\newcommand{\xiaochuzi}{\selfontsize{36pt}}    % Ð¡³õ, 1.5±¶ÐÐ¾à
-\newcommand{\yihaozi}{\selfontsize{26pt}}    % Ò»ºÅ, 1.4±¶ÐÐ¾à
-\newcommand{\erhaozi}{\selfontsize{22pt}}    % ¶þºÅ, 1.25±¶ÐÐ¾à
-\newcommand{\xiaoerzi}{\selfontsize{18pt}}    % Ð¡¶þ, µ¥±¶ÐÐ¾à
-\newcommand{\sanhaozi}{\selfontsize{16pt}}    % ÈýºÅ, 1.5±¶ÐÐ¾à
-\newcommand{\xiaosanzi}{\selfontsize{15pt}}    % Ð¡Èý, 1.5±¶ÐÐ¾à
-\newcommand{\sihaozi}{\selfontsize{14pt}}    % ËÄºÅ, 1.5±¶ÐÐ¾à
-\newcommand{\banxiaosizi}{\selfontsize{13pt}}    % °ëÐ¡ËÄ, 1.5±¶ÐÐ¾à
-\newcommand{\xiaosizi}{\selfontsize{12pt}}    % Ð¡ËÄ, 1.5±¶ÐÐ¾à
-\newcommand{\dawuzi}{\selfontsize{11pt}}    % ´óÎåºÅ, µ¥±¶ÐÐ¾à
-\newcommand{\wuhaozi}{\selfontsize{10.5pt}}    % ÎåºÅ, µ¥±¶ÐÐ¾à
-\newcommand{\xiaowuzi}{\selfontsize{9pt}}    % Ð¡Îå, µ¥±¶ÐÐ¾à
-\newcommand{\liuhaozi}{\selfontsize{7.875pt}}    % ÁùºÅ, µ¥±¶ÐÐ¾à
-\newcommand{\qihaozi}{\selfontsize{5.25pt}}    % ÆßºÅ, µ¥±¶ÐÐ¾à
+\newcommand{\chuhaozi}{\selfontsize{42pt}}    % ï¿½ï¿½ï¿½ï¿½, 1.5ï¿½ï¿½ï¿½Ð¾ï¿½
+\newcommand{\xiaochuzi}{\selfontsize{36pt}}    % Ð¡ï¿½ï¿½, 1.5ï¿½ï¿½ï¿½Ð¾ï¿½
+\newcommand{\yihaozi}{\selfontsize{26pt}}    % Ò»ï¿½ï¿½, 1.4ï¿½ï¿½ï¿½Ð¾ï¿½
+\newcommand{\erhaozi}{\selfontsize{22pt}}    % ï¿½ï¿½ï¿½ï¿½, 1.25ï¿½ï¿½ï¿½Ð¾ï¿½
+\newcommand{\xiaoerzi}{\selfontsize{18pt}}    % Ð¡ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½Ð¾ï¿½
+\newcommand{\sanhaozi}{\selfontsize{16pt}}    % ï¿½ï¿½ï¿½ï¿½, 1.5ï¿½ï¿½ï¿½Ð¾ï¿½
+\newcommand{\xiaosanzi}{\selfontsize{15pt}}    % Ð¡ï¿½ï¿½, 1.5ï¿½ï¿½ï¿½Ð¾ï¿½
+\newcommand{\sihaozi}{\selfontsize{14pt}}    % ï¿½Äºï¿½, 1.5ï¿½ï¿½ï¿½Ð¾ï¿½
+\newcommand{\banxiaosizi}{\selfontsize{13pt}}    % ï¿½ï¿½Ð¡ï¿½ï¿½, 1.5ï¿½ï¿½ï¿½Ð¾ï¿½
+\newcommand{\xiaosizi}{\selfontsize{12pt}}    % Ð¡ï¿½ï¿½, 1.5ï¿½ï¿½ï¿½Ð¾ï¿½
+\newcommand{\dawuzi}{\selfontsize{11pt}}    % ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½Ð¾ï¿½
+\newcommand{\wuhaozi}{\selfontsize{10.5pt}}    % ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½Ð¾ï¿½
+\newcommand{\xiaowuzi}{\selfontsize{9pt}}    % Ð¡ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½Ð¾ï¿½
+\newcommand{\liuhaozi}{\selfontsize{7.875pt}}    % ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½Ð¾ï¿½
+\newcommand{\qihaozi}{\selfontsize{5.25pt}}    % ï¿½ßºï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½Ð¾ï¿½
 
-%%½Å×¢
+%%ï¿½ï¿½×¢
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
 
-%%ÆäËüÉèÖÃ
+%%ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 %\setlength{\baselineskip}{22pt plus2pt minus1pt}
 \setlength{\parindent}{12pt}
 \setlength{\parskip}{1pt plus1pt minus2pt}
-\renewcommand{\baselinestretch}{1.50}     %ÕýÎÄÐÐ¼ä¾à
+\renewcommand{\baselinestretch}{1.50}     %ï¿½ï¿½ï¿½ï¿½ï¿½Ð¼ï¿½ï¿½ï¿½
 
 
-%%¸øpdfÎÄ¼þ¼ÓÈë³¬Á´½Ó
+%%ï¿½ï¿½pdfï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ë³¬ï¿½ï¿½ï¿½ï¿½
 \usepackage{hyperref}
 \hypersetup{
 	CJKbookmarks=true,
