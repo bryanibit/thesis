@@ -3,56 +3,59 @@
 \contentsline {section}{\numberline {1.2}国内外研究现状}{\selfontsize {9pt}3}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}地图构建方法研究}{\selfontsize {9pt}3}{subsection.1.2.1}
 \contentsline {subsection}{\numberline {1.2.2}道路提取方法研究}{\selfontsize {9pt}6}{subsection.1.2.2}
-\contentsline {section}{\numberline {1.3}主要研究内容}{\selfontsize {9pt}6}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}二维与三维地图构建}{\selfontsize {9pt}6}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}二维图像中的道路提取}{\selfontsize {9pt}6}{subsection.1.3.2}
-\contentsline {section}{\numberline {1.4}本章小结}{\selfontsize {9pt}6}{section.1.4}
-\contentsline {chapter}{\numberline {第\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces 2\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces \ignorespaces 章\hspace {0.3em}}基于全景图像的高精度地图构建}{\selfontsize {9pt}7}{chapter.2}
-\contentsline {section}{\numberline {2.1}引言}{\selfontsize {9pt}7}{section.2.1}
-\contentsline {section}{\numberline {2.2}全景图像与定位信息采集}{\selfontsize {9pt}7}{section.2.2}
-\contentsline {section}{\numberline {2.3}全景图像处理}{\selfontsize {9pt}7}{section.2.3}
-\contentsline {section}{\numberline {2.4}地图的构建与使用}{\selfontsize {9pt}11}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}图像拼接}{\selfontsize {9pt}11}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}基于GIS数据库生成无人车行驶地图}{\selfontsize {9pt}12}{subsection.2.4.2}
-\contentsline {section}{\numberline {2.5}本章小结}{\selfontsize {9pt}13}{section.2.5}
-\contentsline {chapter}{\numberline {第\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces 3\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces \ignorespaces 章\hspace {0.3em}}基于无人机航拍图像的三维构建}{\selfontsize {9pt}14}{chapter.3}
-\contentsline {section}{\numberline {3.1}引言}{\selfontsize {9pt}14}{section.3.1}
-\contentsline {section}{\numberline {3.2}相机模型}{\selfontsize {9pt}14}{section.3.2}
-\contentsline {section}{\numberline {3.3}相关坐标系}{\selfontsize {9pt}16}{section.3.3}
-\contentsline {section}{\numberline {3.4}特征点提取}{\selfontsize {9pt}20}{section.3.4}
-\contentsline {section}{\numberline {3.5}特征点匹配}{\selfontsize {9pt}24}{section.3.5}
-\contentsline {section}{\numberline {3.6}多视图重建}{\selfontsize {9pt}29}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}两视图重建}{\selfontsize {9pt}29}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}三角定位法}{\selfontsize {9pt}34}{subsection.3.6.2}
-\contentsline {subsection}{\numberline {3.6.3}2D-3D位姿求解}{\selfontsize {9pt}35}{subsection.3.6.3}
-\contentsline {section}{\numberline {3.7}三维重建中的优化}{\selfontsize {9pt}37}{section.3.7}
-\contentsline {subsection}{\numberline {3.7.1}光束平差法}{\selfontsize {9pt}38}{subsection.3.7.1}
-\contentsline {subsection}{\numberline {3.7.2}最小化相机中心位置误差}{\selfontsize {9pt}41}{subsection.3.7.2}
-\contentsline {section}{\numberline {3.8}稀疏点云的渲染}{\selfontsize {9pt}43}{section.3.8}
-\contentsline {subsection}{\numberline {3.8.1}点云稠密化}{\selfontsize {9pt}43}{subsection.3.8.1}
-\contentsline {subsection}{\numberline {3.8.2}点云网格渲染（三角剖分）}{\selfontsize {9pt}43}{subsection.3.8.2}
-\contentsline {section}{\numberline {3.9}本章小结}{\selfontsize {9pt}43}{section.3.9}
-\contentsline {chapter}{\numberline {第\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces 4\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces \ignorespaces 章\hspace {0.3em}}二维图像中的道路提取}{\selfontsize {9pt}44}{chapter.4}
-\contentsline {section}{\numberline {4.1}引言}{\selfontsize {9pt}44}{section.4.1}
-\contentsline {section}{\numberline {4.2}图像二值化}{\selfontsize {9pt}44}{section.4.2}
-\contentsline {section}{\numberline {4.3}非道路区域移除}{\selfontsize {9pt}44}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}开闭运算}{\selfontsize {9pt}46}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}轮廓提取}{\selfontsize {9pt}47}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}拓扑处理}{\selfontsize {9pt}48}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}拓扑细化}{\selfontsize {9pt}48}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}去除小枝丫}{\selfontsize {9pt}49}{subsection.4.4.2}
-\contentsline {section}{\numberline {4.5}本章小结}{\selfontsize {9pt}50}{section.4.5}
-\contentsline {chapter}{\numberline {第\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces 5\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces \ignorespaces 章\hspace {0.3em}}实验结果分析}{\selfontsize {9pt}51}{chapter.5}
-\contentsline {section}{\numberline {5.1}引言}{\selfontsize {9pt}51}{section.5.1}
-\contentsline {section}{\numberline {5.2}全景图像构建地图实验结果}{\selfontsize {9pt}51}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}全景图像地图实验平台搭建}{\selfontsize {9pt}51}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}全景图像地图构建效果及精度分析}{\selfontsize {9pt}51}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}地理空间三维重建实验结果}{\selfontsize {9pt}51}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}地理空间三维重建实验平台搭建}{\selfontsize {9pt}51}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}三维重建效果及精度分析}{\selfontsize {9pt}51}{subsection.5.3.2}
-\contentsline {section}{\numberline {5.4}道路提取精度分析}{\selfontsize {9pt}51}{section.5.4}
-\contentsline {section}{\numberline {5.5}本章小结}{\selfontsize {9pt}51}{section.5.5}
-\contentsline {chapter}{总结与展望}{\selfontsize {9pt}54}{section*.43}
-\contentsline {chapter}{参考文献}{\selfontsize {9pt}55}{chapter*.44}
-\contentsline {chapter}{攻读硕士学位期间发表论文与研究成果清单}{\selfontsize {9pt}58}{chapter*.45}
+\contentsline {section}{\numberline {1.3}主要研究内容}{\selfontsize {9pt}7}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}二维与三维地图构建}{\selfontsize {9pt}8}{subsection.1.3.1}
+\contentsline {subsubsection}{传感器选取}{\selfontsize {9pt}8}{subsubsection*.8}
+\contentsline {subsubsection}{二维地图构建}{\selfontsize {9pt}9}{subsubsection*.10}
+\contentsline {subsubsection}{三维地图构建}{\selfontsize {9pt}9}{subsubsection*.11}
+\contentsline {subsection}{\numberline {1.3.2}二维图像中的道路提取}{\selfontsize {9pt}9}{subsection.1.3.2}
+\contentsline {section}{\numberline {1.4}本章小结}{\selfontsize {9pt}9}{section.1.4}
+\contentsline {chapter}{\numberline {第\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces 2\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces \ignorespaces 章\hspace {0.3em}}基于全景图像的高精度地图构建}{\selfontsize {9pt}10}{chapter.2}
+\contentsline {section}{\numberline {2.1}引言}{\selfontsize {9pt}10}{section.2.1}
+\contentsline {section}{\numberline {2.2}全景图像与定位信息采集}{\selfontsize {9pt}10}{section.2.2}
+\contentsline {section}{\numberline {2.3}全景图像处理}{\selfontsize {9pt}10}{section.2.3}
+\contentsline {section}{\numberline {2.4}地图的构建与使用}{\selfontsize {9pt}14}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}图像拼接}{\selfontsize {9pt}14}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}基于GIS数据库生成无人车行驶地图}{\selfontsize {9pt}15}{subsection.2.4.2}
+\contentsline {section}{\numberline {2.5}本章小结}{\selfontsize {9pt}16}{section.2.5}
+\contentsline {chapter}{\numberline {第\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces 3\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces \ignorespaces 章\hspace {0.3em}}基于无人机航拍图像的三维构建}{\selfontsize {9pt}17}{chapter.3}
+\contentsline {section}{\numberline {3.1}引言}{\selfontsize {9pt}17}{section.3.1}
+\contentsline {section}{\numberline {3.2}相机模型}{\selfontsize {9pt}17}{section.3.2}
+\contentsline {section}{\numberline {3.3}相关坐标系}{\selfontsize {9pt}19}{section.3.3}
+\contentsline {section}{\numberline {3.4}特征点提取}{\selfontsize {9pt}23}{section.3.4}
+\contentsline {section}{\numberline {3.5}特征点匹配}{\selfontsize {9pt}27}{section.3.5}
+\contentsline {section}{\numberline {3.6}多视图重建}{\selfontsize {9pt}32}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}两视图重建}{\selfontsize {9pt}32}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}三角定位法}{\selfontsize {9pt}37}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}2D-3D位姿求解}{\selfontsize {9pt}38}{subsection.3.6.3}
+\contentsline {section}{\numberline {3.7}三维重建中的优化}{\selfontsize {9pt}40}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}光束平差法}{\selfontsize {9pt}41}{subsection.3.7.1}
+\contentsline {subsection}{\numberline {3.7.2}最小化相机中心位置误差}{\selfontsize {9pt}44}{subsection.3.7.2}
+\contentsline {section}{\numberline {3.8}稀疏点云的渲染}{\selfontsize {9pt}46}{section.3.8}
+\contentsline {subsection}{\numberline {3.8.1}点云稠密化}{\selfontsize {9pt}46}{subsection.3.8.1}
+\contentsline {subsection}{\numberline {3.8.2}点云网格渲染（三角剖分）}{\selfontsize {9pt}46}{subsection.3.8.2}
+\contentsline {section}{\numberline {3.9}本章小结}{\selfontsize {9pt}46}{section.3.9}
+\contentsline {chapter}{\numberline {第\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces 4\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces \ignorespaces 章\hspace {0.3em}}二维图像中的道路提取}{\selfontsize {9pt}47}{chapter.4}
+\contentsline {section}{\numberline {4.1}引言}{\selfontsize {9pt}47}{section.4.1}
+\contentsline {section}{\numberline {4.2}图像二值化}{\selfontsize {9pt}47}{section.4.2}
+\contentsline {section}{\numberline {4.3}非道路区域移除}{\selfontsize {9pt}47}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}开闭运算}{\selfontsize {9pt}49}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}轮廓提取}{\selfontsize {9pt}50}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}拓扑处理}{\selfontsize {9pt}51}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}拓扑细化}{\selfontsize {9pt}51}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}去除小枝丫}{\selfontsize {9pt}52}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}本章小结}{\selfontsize {9pt}53}{section.4.5}
+\contentsline {chapter}{\numberline {第\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces 5\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces \ignorespaces 章\hspace {0.3em}}实验结果分析}{\selfontsize {9pt}54}{chapter.5}
+\contentsline {section}{\numberline {5.1}引言}{\selfontsize {9pt}54}{section.5.1}
+\contentsline {section}{\numberline {5.2}全景图像构建地图实验结果}{\selfontsize {9pt}54}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}全景图像地图实验平台搭建}{\selfontsize {9pt}54}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}全景图像地图构建效果及精度分析}{\selfontsize {9pt}54}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}地理空间三维重建实验结果}{\selfontsize {9pt}54}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}地理空间三维重建实验平台搭建}{\selfontsize {9pt}54}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}三维重建效果及精度分析}{\selfontsize {9pt}54}{subsection.5.3.2}
+\contentsline {section}{\numberline {5.4}道路提取精度分析}{\selfontsize {9pt}54}{section.5.4}
+\contentsline {section}{\numberline {5.5}本章小结}{\selfontsize {9pt}54}{section.5.5}
+\contentsline {chapter}{总结与展望}{\selfontsize {9pt}57}{section*.48}
+\contentsline {chapter}{参考文献}{\selfontsize {9pt}58}{chapter*.49}
+\contentsline {chapter}{攻读硕士学位期间发表论文与研究成果清单}{\selfontsize {9pt}61}{chapter*.50}
 \contentsfinish 
