@@ -28,9 +28,9 @@
 \BOOKMARK [1][]{section.3.7}{3.7 三维重建中的优化}{chapter.3}% 28
 \BOOKMARK [2][]{subsection.3.7.1}{3.7.1 光束平差法}{section.3.7}% 29
 \BOOKMARK [2][]{subsection.3.7.2}{3.7.2 最小化相机中心位置误差}{section.3.7}% 30
-\BOOKMARK [1][]{section.3.8}{3.8 稀疏点云的渲染}{chapter.3}% 31
-\BOOKMARK [2][]{subsection.3.8.1}{3.8.1 点云稠密化}{section.3.8}% 32
-\BOOKMARK [2][]{subsection.3.8.2}{3.8.2 点云网格渲染（三角剖分）}{section.3.8}% 33
+\BOOKMARK [1][]{section.3.8}{3.8 稀疏点云的稠密化}{chapter.3}% 31
+\BOOKMARK [2][]{subsection.3.8.1}{3.8.1 深度图计算}{section.3.8}% 32
+\BOOKMARK [2][]{subsection.3.8.2}{3.8.2 深度图融合}{section.3.8}% 33
 \BOOKMARK [1][]{section.3.9}{3.9 本章小结}{chapter.3}% 34
 \BOOKMARK [0][]{chapter.4}{第 4 章 \040二维图像中的道路提取}{}% 35
 \BOOKMARK [1][]{section.4.1}{4.1 引言}{chapter.4}% 36

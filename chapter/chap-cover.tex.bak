@@ -19,7 +19,7 @@
 
 %$$\text{\zihao{0} \bf 硕士学位论文}$$\\\\
 \begin{center}
-\heiti \xiaoerzi {立体视觉测量系统研究与分布式实现}
+\heiti \xiaoerzi {适用于无人驾驶车辆的地图构建与道路提取算法研究}
 \end{center}
 
 
@@ -29,10 +29,10 @@
 {\begin{spacing}{2}
 \xiaosanzi \heiti
 \begin{tabular}{p{8em}l@{\extracolsep{0.5em}}l}
-作~~者~~姓~~名&\underline{\hspace{30pt}李\quad浩\hspace{30pt}}\\
+作~~者~~姓~~名&\underline{\hspace{30pt}于华超\hspace{30pt}}\\
 学~~院~~名~~称&\underline{\hspace{15pt}自动化学院\hspace{15pt}}\\
-指~~导~~教~~师&\underline{\hspace{30pt}杨\quad毅\hspace{30pt}}\\
-答辩委员会主席&\underline{\hspace{15pt}孙长海教授\hspace{15pt}}\\
+指~~导~~教~~师&\underline{\hspace{30pt}王美玲\hspace{30pt}}\\
+答辩委员会主席&\underline{\hspace{15pt}孙长胜教授\hspace{15pt}}\\
 申请学位级别&\underline{\hspace{2pt}工学硕士\hspace{2pt}}\\
 学~~科~~专~~业&\underline{\hspace{23pt}控制科学与工程\hspace{23pt}}\\
 学位授予单位&\underline{\hspace{8pt}北京理工大学\hspace{8pt}}\\
@@ -52,8 +52,7 @@
 
 
 \begin{center}
-  \xiaoerzi {\textbf{Research on Stereo Vision Measurement System
-  \\ and Distributed Implementation}}
+  \xiaoerzi {\textbf{Research on map building and road extraction algorithm for intelligent vehicles}}
 \end{center}
 
 \vspace{5cm}
@@ -61,14 +60,14 @@
 {\begin{spacing}{2}
 \xiaosanzi
 \begin{tabular}{p{12em}p{12em}}
-Candidate Name:&\underline{\hspace{87pt}Jie Li\hspace{86pt}}\\
+Candidate Name:&\underline{\hspace{87pt}Hao Li\hspace{86pt}}\\
 School or Department:&\underline{\hspace{37pt}School of Automation\hspace{37pt}}\\
-Faculty Mentor:&\underline{\hspace{80pt}Yuan Li\hspace{79pt}}\\
-Chair, Thesis Committee:&\underline{\hspace{49pt}Prof. Xuemei Ren\hspace{49pt}}\\
-Degree Applied:&\underline{\hspace{36.5pt}Master of Engineering\hspace{36.5pt}}\\
-Major:&\underline{\hspace{42pt}Control Engineering\hspace{43pt}}\\
+Faculty Mentor:&\underline{\hspace{80pt}Yi Yang\hspace{79pt}}\\
+Chair, Thesis Committee:&\underline{\hspace{49pt}Prof. Changhai Sun\hspace{49pt}}\\
+Degree Applied:&\underline{\hspace{36.5pt}        \hspace{36.5pt}}\\
+Major:&\underline{\hspace{42pt}Control Science and Engineering\hspace{43pt}}\\
 Degree by:&\underline{\hspace{10.5pt}Beijing Institute of Technology\hspace{10.5pt}}\\
-The Date of Defence:&\underline{\hspace{72pt}June, 2017\hspace{72pt}}
+The Date of Defence:&\underline{\hspace{72pt}March, 2018\hspace{72pt}}
 \end{tabular}
 \end{spacing}
 }
