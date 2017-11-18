@@ -17,6 +17,12 @@
 \baselineskip=22pt
 
 % chapter 1
+\bibitem{Mattyus-Fine-Grained}
+Mattyus G, Wang S, Fidler S, et al. HD Maps: Fine-Grained Road Segmentation by Parsing Ground and Aerial Images[C]// Computer Vision and Pattern Recognition. IEEE, 2016:3611-3619.
+\bibitem{Wegner-Higher-Order}
+Wegner J D, Montoya-Zegarra J A, Schindler K. A Higher-Order CRF Model for Road Network Extraction[C]// Computer Vision and Pattern Recognition. IEEE, 2013:1698-1705.
+\bibitem{Lin-Road-detection}
+Lin Y, Saripalli S. Road detection from aerial imagery[C]// IEEE International Conference on Robotics and Automation. IEEE, 2012:3588-3593.
 \bibitem{wei-gaofen}
 魏宇峰. 高分辨率遥感影像道路信息提取关键技术研究与实现[D]. 北京理工大学, 2010.
 \bibitem{wang-yaogan}
@@ -24,9 +30,9 @@
 \bibitem{Xia-Road}
 Xia W, Hongmei T, Yang Y等. Study on Road Extraction Method in Remote Sensing Image[A]. 2012 International Conference on Industrial Control and Electronics Engineering (ICICEE)[C]. 2012: 1578–1580.
 \bibitem{wuchangchagn-multicore}
-Wu C, Agarwal S, Curless B, et al. Multicore bundle adjustment[C]//Computer Vision and Pattern Recognition (CVPR), 2011 IEEE Conference on. IEEE, 2011: 3057-3064.
+Wu C, Agarwal S, Curless B, et al. Multicore bundle adjustment[C] Computer Vision and Pattern Recognition (CVPR), 2011 IEEE Conference on. IEEE, 2011: 3057-3064.
 \bibitem{wuchangchang-linear-time}
-Wu C. Towards linear-time incremental structure from motion[C]//3DTV-Conference, 2013 International Conference on. IEEE, 2013: 127-134.
+Wu C. Towards linear-time incremental structure from motion[C] 3DTV-Conference, 2013 International Conference on. IEEE, 2013: 127-134.
 \bibitem{Snavely-Building}
 Agarwal S, Furukawa Y, Snavely N, et al. Building rome in a day[J]. Communications of the ACM, 2011, 54(10): 105-112.
 \bibitem{Snavely-Photo}
@@ -38,7 +44,7 @@ Diosi A, Taylor G, Kleeman L. Interactive SLAM using laser and advanced sonar[C]
 Cole D M, Newman P M. Using laser range data for 3D SLAM in outdoor environments[C]//Robotics and Automation, 2006. ICRA 2006. Proceedings 2006 IEEE International Conference on. IEEE, 2006: 1556-1563.
 
 \bibitem{Leonard-concurrent}
-Leonard J J. Large-scale concurrent mapping and localization[C]//Proceedings of SPIE. 2000, 4196: 370-376.
+Leonard J J. Large-scale concurrent mapping and localization[C] Proceedings of SPIE. 2000, 4196: 370-376.
 \bibitem{yangxianghong-wurenji}
 杨祥红, 王希彬. 无人机主动 SLAM 技术研究[J]. 系统仿真技术, 2016 (2016 年 04): 283-287.
 \bibitem{mayuelong-danmu}
@@ -127,5 +133,14 @@ algorithms,” 1997.
 \bibitem{Choi-Topological}
 C.-H. Choi, J.-B. Song, W. Chung, and M. Kim, “Topological map building based on thinning and its application to localization,” in Intelligent
 Robots and Systems, 2002. IEEE/RSJ International Conference on, vol. 1. IEEE, 2002, pp. 552–557.
+
+\bibitem{Shen-Accurate}
+Shen S. Accurate multiple view 3D reconstruction using patch-based stereo for large-scale scenes.[J]. IEEE Transactions on Image Processing A Publication of the IEEE Signal Processing Society, 2013, 22(5):1901.
+
+\bibitem{Furukawa-Accurate}
+Furukawa Y, Ponce J. Accurate, Dense, and Robust Multiview Stereopsis[J]. IEEE Transactions on Pattern Analysis \& Machine Intelligence, 2010, 32(8):1362-1376.
+
+\bibitem{Bleyer-PatchMatch}
+Bleyer M, Rhemann C, Rother C. PatchMatch Stereo - Stereo Matching with Slanted Support Windows[C]// British Machine Vision Conference. 2011:14.1-14.11.
 
 \end{thebibliography}

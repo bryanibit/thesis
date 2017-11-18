@@ -930,7 +930,60 @@ E_{position}=arg\mathop{{min}}\limits_{R,t} \sum_{i=1}\left \|f_j(x) - x_j \righ
 \end{figure}
 
 \section{稀疏点云的稠密化}
+通过SfM方法，不仅可以得到相机位姿，也可以恢复特征点的三维坐标得到稀疏点云，但是由于点云过于稀疏难以用于无人车导航与规划，所以本文使用Multiple View Stereo(MVS)技术将点云稠密化，MVS可以分为基于体素（voxel），基于表面演化（surface evolution）、基于特征点生长（feature point growing）和基于深度图融合（depth-map merging）四种类型\cite{Shen-Accurate}。本文采用深度图融合的方法\cite{Furukawa-Accurate} 得到稠密点云，该方法包括深度图计算与深度图融合两部分。
+
 \subsection{深度图计算}
+基于SfM方法，我们可以得到图像数据集下所有图片对应相机的位姿关系与特征点的3D坐标，利用这些位姿关系，可以完成接下来的深度图计算过程。对于单张图片无法计算深度图，深度图的计算首先需要为每张图片选取其参考图（Reference Images），而后根据参考图与自身的旋转平移关系（通过SfM得到），计算每张图片的深度图。对于双目相机，通过双目图片得到深度图，双目成像互为参考图；然而对于无序的图片集，参考图的选取至关重要。本文参考Shen\cite{shen-Accurate}的方法设置参考图阈值，假设有$n$张图片，$\theta_{ij}, j=1,...,n$表示第$i$张图片与其他图片$1,..,n$的相机主轴夹角，$\theta_{ij}$用$i$ 与$j$图片匹配的特征点之间夹角的平均值表示。同时每张图片与其参考图对应相机的距离称为基线，记为$d_{ij}$，基线的距离太长则两张图片重叠区域太小，太短则使重建精度降低，据此满足$5^{\circ}<\theta_{ij}<60^\circ$，$d_{ij}<0.05\bar{d}$或$d_{ij}>2\bar{d}$的图片作为参考图，按照$\theta_{ij}\dot d_{ij}$降序排序参考图，取前10张（如果有）作为参考图。
+
+根据Bleyer\cite{Bleyer-PatchMatch}的方法使用上文刷选的参考图计算深度图，主要思想是遍历图片的每个像素，为其找到一个支持面，使该支持面在参考图中有最小汇总匹配代价，整个过程如图~\ref{patch}所示。其中支持面$f$由法线$n_i$与3D点$X_i$决定，两视图几何中，以一个相机的相机坐标系作为世界坐标系，则有$P=[I_{3\times3} | 0_3]$，$P^\prime=[R|t]$，空间平面的齐次表达式为$\pi^T X=0$，其中$\pi=(V^T,1)^T,V^T=(V_1,V_2,V_3)$，由于$X_i$在面$\pi$上，所以有$\left|V^T\right|=\left|\frac{1}{X_i}\right|$，而方向与$n_i$相反，故$V^T=-\frac{n_i^T}{n_i^TX_i}$。
+
+相机$i$由${K_i,R_i,C_i}$表示，参考图对应的相机用${K_j,R_j,C_j}$表示，现在设世界坐标系中心为相机$i$，则相机坐标系间的旋转平移关系变为$P_i=K_i[I_{3\times3} | 0_3]$，$P_j=K_j[R_jR_i^{-1}|R_j(C_i-C_j)]$
+根据吴福朝\cite{wu-jisuanji} 有两视图间的单应性可以用式~\ref{homodouble-equation} 表示。
+\begin{equation}
+H=K_j(R-tV^T)K_i^{-1}=K_j(R_jR_i^{-1}+R_j\frac{(C_i-C_j)n_i^T)}{n_i^TX_i}K_i^{-1}
+\label{homodouble-equation}
+\end{equation}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=4.0in]{chapter3/mvs/patch.png}
+\caption{最小汇总匹配代价计算过程}
+\label{patch}
+\end{figure}
+
+图~\ref{patch}中支持面$f$（patch）以$p$为中心，大小为$7\times 7$像素的正方形块，对于patch中的每个像素通过式~\ref{homodouble-equation}转换到参考图中，记为$H_{ij}$，此时可以求出$7\times7$所有像素$q$的代价和$m(p,f_p)$，称为去均值的归一化互相关（NCC, Normalized Cross Correlation），如式~\ref{matchingCost-equation}所示，其中上划线表示所有像素点的平均值。
+
+\begin{equation}
+m(p,f_p)=1-\frac{\sum\limits_{q\in patch}(q-\bar{q})(H_{ij}(q)-\overline{H_{ij}(q)})}{\sqrt{\sum\limits_{q\in patch}(q-\bar{q})^2\sum\limits_{q\in patch}(H_{ij}(q)-\overline{H_{ij}(q)})^2}}
+\label{matchingCost-equation}
+\end{equation}
+
+据此可计算数据集中每张图片的深度图与图片中每个像素对应的NCC值，如图~\ref{depth}所示，图中使用冷暖色表示像素值的大小，颜色越暖像素值越大。NCC值图较冷的区域表示用来计算深度图的图片与参考图对应的patch误差较大，大于一定阈值时，证明该区域的深度也是不准确的，所以在深度图中为最浅色（蓝色）显示。对于深度图颜色越暖证明深度越大，图~\ref{depth-5}很好反映了一面竖直墙导致图片深度的变化。
+
+\begin{figure}[!htbp]
+\centering
+    \subfigure[]{
+    \includegraphics[width=1.8in]{chapter3/mvs/DJI_0056.JPG}
+    }
+    \subfigure[]{
+    \includegraphics[width=1.8in]{chapter3/mvs/DJI_0056_depth.jpg}
+    }
+\subfigure[]{
+    \includegraphics[width=1.8in]{chapter3/mvs/DJI_0056_score.jpg}
+}
+\subfigure[]{
+    \includegraphics[width=1.8in]{chapter3/mvs/DJI_0100.JPG}
+    }
+    \subfigure[]{
+    \label{depth-5}
+    \includegraphics[width=1.8in]{chapter3/mvs/DJI_0100_depth.jpg}
+    }
+\subfigure[]{
+    \includegraphics[width=1.8in]{chapter3/mvs/DJI_0100_score.jpg}
+}
+\caption{深度图与NCC值}
+\label{depth}
+\end{figure}
 
 \subsection{深度图融合}
 

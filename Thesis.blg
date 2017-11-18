@@ -6,6 +6,11 @@ White space in argument---line 41 of file chapter/chapter3.aux
  : \citation{Lindeberg-Feature
  :                             detection}
 I'm skipping whatever remains of this command
+Case mismatch error between cite keys shen-Accurate and Shen-Accurate
+---line 124 of file chapter/chapter3.aux
+ : \citation{shen-Accurate
+ :                        }
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: chapter/chapter4.aux
 A level-1 auxiliary file: chapter/chapter5.aux
 A level-1 auxiliary file: chapter/chapter6.aux
@@ -20,4 +25,4 @@ A level-1 auxiliary file: chapter/chap-pubs.aux
 A level-1 auxiliary file: chapter/chap-ack.aux
 I found no \bibdata command---while reading file Thesis.aux
 I found no style file---while reading file Thesis.aux
-(There were 4 error messages)
+(There were 5 error messages)
