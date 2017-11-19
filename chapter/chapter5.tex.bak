@@ -1,10 +1,65 @@
-\chapter{概率模型推断与决策}
+\chapter{实验结果分析}
 
-\section{概率模型定义}
+\section{引言}
+本文简述基于全景图像的二维地图构建与基于航拍图像的三维地图构建方法，构建适用于无人驾驶的地图，并对地图中的道路进行提取，构建拓扑路网。本章将从实验结果分析算法的有效性，实验分为三部分，二维、三维地图构建，道路提取，由于实验平台不同，将在各节文章中单独介绍。实验将分析构图或道路提取的精度，并简单介绍实验结果如何应用于无人驾驶中。
+\section{全景图像构建地图实验结果}
+\subsection{全景图像地图实验平台搭建}
+\subsection{全景图像地图构建效果及精度分析}
 
-\section{参数学习}
+\section{地理空间三维重建实验结果}
+\subsection{地理空间三维重建实验平台搭建}
+\subsection{三维重建效果及精度分析}
 
-\section{路口概率估计策略}
+\section{道路提取精度分析}
+
+\begin{figure*}[!htbp]
+	\centering
+	\subfigure[RGB拟合]{
+		\label{fig:subfig:RGB} %% label for first subfigure
+		\includegraphics[width=1.14in]{chapter5/extraction/RGBOriginal.jpg}}
+	\subfigure[开闭运算]{
+		\label{fig:subfig:open} %% label for first subfigure
+		\includegraphics[width=1.14in]{chapter5/extraction/openoperation.jpg}}
+	%%\hspace{1in}
+	\subfigure[非道路区域移除]{
+		\label{fig:subfig:RemoveHouse} %% label for second subfigure
+		\includegraphics[width=1.14in]{chapter5/extraction/removehouse.jpg}}
+	\subfigure[拓扑细化]{
+		\label{fig:subfig:first} %% label for first subfigure
+		\includegraphics[width=1.14in]{chapter5/extraction/firstmiddlecenter.jpg}}
+	\subfigure[实验拓扑]{
+		\label{fig:subfig:finalroad} %% label for first subfigure
+		\includegraphics[width=1.14in]{chapter5/extraction/finalmiddlecenter.jpg}}
+	\caption{道路提取过程}
+	\label{fig:subfig_results} %% label for entire figure
+\end{figure*}
+
+根据第四章道路提取的原理，本节设计实验验证道路提取方法的精度。图~\ref{resultSift}是用来提取道路的二维地图，由于单张航拍二维图片表示的道路区域无法形成拓扑网络，所以从单张航拍图片中提取道路，而后根据航拍原图间的单应性关系拼接得到如图~\ref{resultSift}（原图拼接结果）和~\ref{fig:subfig:RGB}（单张图片RGB拟合结果），而后应用本文提出的道路提取方法精细道路区域，拓扑细化得到最后的实验结果。整个过程如图~\ref{fig:subfig_result}所示，其中图~\ref{fig:subfig:open}表示开闭运算平滑后的结果，图~\ref{fig:subfig:RemoveHouse}为移除矩形非道路区域后的结果，从中可以看出图左下方的房屋边沿被移除，图~\ref{fig:subfig:first}为采用RDP算法进行拓扑细化后的结果，可以看出初始拓扑有很多小枝丫，使用逐渐递减的阈值去除小枝丫后如图~\ref{fig:subfig:finalroad}所示。
+
+\begin{figure*}[!htbp]
+    \centering
+    \subfigure[二维地图]{
+    \includegraphics[width=1.9in]{chapter5/extraction/result_SIFT.jpg}}
+    \subfigure[实验拓扑]{
+		\label{fig:subfig:finalroad} %% label for first subfigure
+		\includegraphics[width=1.75in]{chapter5/extraction/finalmiddlecenter.jpg}}
+    \subfigure[真值拓扑]{
+		\label{fig:subfig:real} %% label for first subfigure
+		\includegraphics[width=1.75in]{chapter5/extraction/manual_real_road.jpg}}
+%    \subfigure{
+%    \includegraphics[width=2.8in]{chapter5/extraction/result_chart.png}}
+    \label{resultSift}
+    \caption{道路提取对比}
+\end{figure*}
+
+使用道路提取的方法得到道路拓扑网络后，图~\ref{resultSift}分别展示了原图，提取道路（图~\ref{fig:subfig:finalroad}）与真实道路（图~\ref{fig:subfig:real}），两幅图中道路拓扑是由单像素构成，通过膨胀真实道路，计算提取道路的像素不在膨胀后的真实道路区域的比例，绘制图~\ref{curve}，其中横轴代表膨胀时使用的核函数的大小，单位是像素，而且一个像素大约代表地理空间16$cm$，核函数越大，膨胀后的真实道路区域越大，不在其区域的提取道路的像素越少。从图中可以看出核函数
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=2.8in]{chapter5/extraction/result_chart.png}
+\caption{道路提取精度曲线}
+\label{curve}
+\end{figure}
 
 \section{本章小结}
 
