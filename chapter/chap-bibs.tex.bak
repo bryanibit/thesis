@@ -143,4 +143,7 @@ Furukawa Y, Ponce J. Accurate, Dense, and Robust Multiview Stereopsis[J]. IEEE T
 \bibitem{Bleyer-PatchMatch}
 Bleyer M, Rhemann C, Rother C. PatchMatch Stereo - Stereo Matching with Slanted Support Windows[C]// British Machine Vision Conference. 2011:14.1-14.11.
 
+\bibitem{wu-jisuanji}
+吴福朝. 计算机视觉中的数学方法[M]. 科学出版社, 2008.
+
 \end{thebibliography}

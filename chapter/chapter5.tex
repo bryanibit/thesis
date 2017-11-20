@@ -8,9 +8,99 @@
 
 \section{地理空间三维重建实验结果}
 \subsection{地理空间三维重建实验平台搭建}
-\subsubseciton{计算平台}
-本文是用算法由C++/Python实现，SfM实现是基于Opencv、CeresSolver库函数，MVS实现基于
-\subsubseciton{三维重建精度}
+\subsubsection{计算平台}
+\begin{figure}[!htbp]
+	\centering
+    \includegraphics[width=4.0in]{chapter5/reconstruction/experiment.png}
+    \label{m100}
+    \caption{DJI M100}
+\end{figure}
+
+本文是用算法由C++/Python实现，SfM与MVS实现是基于Opencv、CeresSolver开源库，本研究使用运行Ubuntu 14.04 LTS操作系统的台式机，台式机CPU型号为intel酷睿i5-4570，CPU主频为3.2GHz，并配置8GB单通道内存，没有配置独立显卡。航拍图像采集工具为大疆（DJI）M100无人机，如图~\ref{m100}所示，图像分辨率为$4000\times 2240$，直接存储于无人机相机的16GB SD卡中，用于本文实验后处理。
+\subsubsection{三维重建精度}
+\begin{figure}[!htbp]
+	\centering
+	\subfigure[稀疏点云]{
+		\label{fig:sparse} %% label for first subfigure
+		\includegraphics[width=2.5in]{chapter5/reconstruction/sparse_perspect.png}}
+	\subfigure[稠密点云]{
+		\label{fig:dense} %% label for first subfigure
+		\includegraphics[width=2.5in]{chapter5/reconstruction/dense_perspect.png}}
+	\caption{实验结果-雾岚}
+	\label{fig:wulan} %% label for entire figure
+\end{figure}
+
+如图~\ref{fig:wulan}所示，使用$54$张DJI航拍图像得到的稀疏点云（图~\ref{fig:sparse}）与稠密点云（图~\ref{fig:dense}），稀疏点云显示在RVIZ软件中，其中每个点都是提取的SIFT2D特征点还原的3D点，稠密点云是使用基于深度图融合的方法得到并显示在Meshlab中。为了更好的衡量构图的精度，本文根据Turner\cite{Turner-Automated}测量构图精度的方法，同样采用设置地面控制点的方式，如图~\ref{example-gcp-image}所示，其中红色圆圈标记的白色纸张为设置的标记点。设置地面控制点的操作就是在构图区域使用高精度卫星定位系统测试真实场景某点（白色纸张的中心）的经纬度坐标，而后标记该场景所成二维图像中对应点的像素坐标（白纸中心成像对应的像素坐标），如表~\ref{table:gcp} 所示。从而在构建三维地图的同时，根据已知标注点的绝对地理位置坐标与其像素坐标得到整个三维模型的地理空间尺度，可以直接作为GIS 数据库的输入数据，形成可以使用的地图信息。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=4.0in]{chapter5/reconstruction/DJI_0104.JPG}
+\label{example-gcp-image}
+\end{figure}
+
+\begin{table}[!htbp]
+	\caption{地面控制点坐标}
+	\centering
+	\begin{tabular}{c|cccc}
+		\hline
+		\diagbox[dir=SE]{\bfseries 图片名称}{\bfseries 坐标名称} & \bfseries 东向 & \bfseries 北向 & \bfseries 图像X方向 & \bfseries 图像Y方向\\
+		\hline
+
+		\bfseries DJI\_0050.JPG &  $415462.60$ &  $4401226.15$ & $2706$ & $1615$\\
+
+		\bfseries DJI\_0054.JPG & $415462.60$ & $4401226.15$ & $1312$ & $438$\\
+
+        \bfseries DJI\_0052.JPG & $415462.60$ & $4401226.15$ & $2355$ & $440$\\
+
+        \bfseries DJI\_0077.JPG & $415489.00$ & $4401201.80$ & $1011$ & $1033$\\
+
+        \bfseries $\cdots\cdots$ & $\cdots\cdots$ & $\cdots\cdots$ & $\cdots\cdots$\\
+		\hline
+	\end{tabular}
+	\label{table:gcp}
+\end{table}
+
+本文在图~\ref{fig:wulan}场景中设置了9个地面控制点，最后根据成像模型测得这9个点的坐标与实际使用RTK GPS接收机的结果对比如表~\ref{table:gcp_error}所示，每个测试点的精度分为东向与北向，二者的平方根表示在表最后一列为绝对误差，最后计算9个控制点的平均绝对误差为$1.586m$，由于地面控制点分布较均匀，地图某些局部变形较大，导致平均误差较大。
+
+\begin{table}[!htbp]
+	\caption{地面控制点误差测量}
+	\centering
+	\begin{tabular}{cccc}
+		\hline
+		\bfseries 控制点序号 & \bfseries 东向误差 & \bfseries 北向误差 & \bfseries 绝对误差\\
+		\hline
+%		\hline
+		\bfseries 0 &  $0.093$ &  $0.095$ & $0.132$ \\
+		\bfseries 1 & $0.267$ & $0.012$ & $0.268$ \\
+        \bfseries 2 & $1.353$ & $2.165$ & $2.553$\\
+        \bfseries 3 & $0.879$ & $1.888$ & $2.081$ \\
+         \bfseries 4 & $0.260$ & $0.013$ & $0.261$ \\
+        \bfseries 5 & $0.195$ & $1.542$ & $1.554$ \\
+        \bfseries 6 & $2.148$ & $3.73$ & $4.311$ \\
+        \bfseries 7 & $0.184$ & $0.207$ & $0.276$ \\
+         \bfseries 8 & $1.298$ & $2.521$ & $2.8355$ \\
+		\hline
+	\end{tabular}
+	\label{table:gcp_error}
+\end{table}
+
+
+
+
+
+\begin{figure}[!htbp]
+	\centering
+	\subfigure[稀疏点云]{
+		\label{fig:sparse1} %% label for first subfigure
+		\includegraphics[width=2.5in]{chapter5/reconstruction/dense_perspect1.png}}
+	\subfigure[稠密点云]{
+		\label{fig:dense1} %% label for first subfigure
+		\includegraphics[width=2.5in]{chapter5/reconstruction/dense_perspect1.png}}
+	\caption{实验结果-自动化学院}
+	\label{fig:6building} %% label for entire figure
+\end{figure}
+
+
 \subsection{三维重建效果及精度分析}
 
 \section{道路提取精度分析}
@@ -52,7 +142,7 @@
 		\includegraphics[width=1.75in]{chapter5/extraction/manual_real_road.jpg}}
 %    \subfigure{
 %    \includegraphics[width=2.8in]{chapter5/extraction/result_chart.png}}
-    
+
     \caption{道路提取对比}
 \end{figure*}
 
