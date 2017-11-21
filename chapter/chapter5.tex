@@ -4,7 +4,20 @@
 本文简述基于全景图像的二维地图构建与基于航拍图像的三维地图构建方法，构建适用于无人驾驶的地图，并对地图中的道路进行提取，构建拓扑路网。本章将从实验结果分析算法的有效性，实验分为三部分，二维、三维地图构建，道路提取，由于实验平台不同，将在各节文章中单独介绍。实验将分析构图或道路提取的精度，并简单介绍实验结果如何应用于无人驾驶中。
 \section{全景图像构建地图实验结果}
 \subsection{全景图像地图实验平台搭建}
+本文提出的使用全景相机构建地图的方法使用的工具包括Ladybug全景相机（图~\ref{ladybug}）与高精度组合定位系统，通过标定全景相机与车体后轴中点的相对位置关系，得到全景相机球面坐标与车体坐标的关系，最后将全景图像（图~\ref{raw-para}）变换为逆透视图像（图~\ref{IPM}），投影在地面中，依据定位信息将图像拼接为地图。图~\ref{jiugong-ex}是使用本文提出的方法构建的二维地图，该地图在2016年于江苏常熟举办的无人车“未来挑战赛”中被采用，在无人车辆出发前，通过给定的任务点，依据地图信息进行全局路径规划，与GIS软件结合，在行驶过程中，为无人车提供道路信息等。
+\begin{figure}[!htbp]
+\centering
+\subfigure{
+\includegraphics[width=2.8in]{chapter5/panorama/jiugong_whole.jpg}}
+\subfigure{
+\includegraphics[width=2.2in]{chapter5/panorama/detail_jiugong.jpg}}
+\label{jiugong-ex}
+\caption{常熟无人车试验场}
+\end{figure}
+
+
 \subsection{全景图像地图构建效果及精度分析}
+图~\ref{jiugong-ex}右图显示左转变道与U形转弯的过程，
 
 \section{地理空间三维重建实验结果}
 \subsection{地理空间三维重建实验平台搭建}
@@ -12,11 +25,11 @@
 \begin{figure}[!htbp]
 	\centering
     \includegraphics[width=4.0in]{chapter5/reconstruction/experiment.png}
-    \label{m100}
+    \label{djim}
     \caption{DJI M100}
 \end{figure}
 
-本文是用算法由C++/Python实现，SfM与MVS实现是基于Opencv、CeresSolver开源库，本研究使用运行Ubuntu 14.04 LTS操作系统的台式机，台式机CPU型号为intel酷睿i5-4570，CPU主频为3.2GHz，并配置8GB单通道内存，没有配置独立显卡。航拍图像采集工具为大疆（DJI）M100无人机，如图~\ref{m100}所示，图像分辨率为$4000\times 2240$，直接存储于无人机相机的16GB SD卡中，用于本文实验后处理。
+本文是用算法由C++/Python实现，SfM与MVS实现是基于Opencv、CeresSolver开源库，本研究使用运行Ubuntu 14.04 LTS操作系统的台式机，台式机CPU型号为intel 酷睿i5-4570，CPU主频为3.2GHz，并配置8GB单通道内存，没有配置独立显卡。航拍图像采集工具为大疆（DJI）M100无人机，如图~\ref{djim}所示，图像分辨率为$4000\times 2240$，直接存储于无人机相机的16GB SD卡中，用于本文实验后处理。
 \subsubsection{三维重建精度}
 \begin{figure}[!htbp]
 	\centering
@@ -32,7 +45,7 @@
 
 如图~\ref{fig:wulan}所示，使用$54$张DJI航拍图像得到的稀疏点云（图~\ref{fig:sparse}）与稠密点云（图~\ref{fig:dense}），稀疏点云显示在RVIZ软件中，其中每个点都是提取的SIFT2D特征点还原的3D点，稠密点云是使用基于深度图融合的方法得到并显示在Meshlab中。为了更好的衡量构图的精度，本文根据Turner\cite{Turner-Automated}测量构图精度的方法，同样采用设置地面控制点的方式，如图~\ref{example-gcp-image}所示，其中红色圆圈标记的白色纸张为设置的标记点。设置地面控制点的操作就是在构图区域使用高精度卫星定位系统测试真实场景某点（白色纸张的中心）的经纬度坐标，而后标记该场景所成二维图像中对应点的像素坐标（白纸中心成像对应的像素坐标），如表~\ref{table:gcp} 所示。从而在构建三维地图的同时，根据已知标注点的绝对地理位置坐标与其像素坐标得到整个三维模型的地理空间尺度，可以直接作为GIS 数据库的输入数据，形成可以使用的地图信息。
 
-\begin{figure}[htbp]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=4.0in]{chapter5/reconstruction/DJI_0104.JPG}
 \label{example-gcp-image}
