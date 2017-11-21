@@ -4,20 +4,37 @@
 本文简述基于全景图像的二维地图构建与基于航拍图像的三维地图构建方法，构建适用于无人驾驶的地图，并对地图中的道路进行提取，构建拓扑路网。本章将从实验结果分析算法的有效性，实验分为三部分，二维、三维地图构建，道路提取，由于实验平台不同，将在各节文章中单独介绍。实验将分析构图或道路提取的精度，并简单介绍实验结果如何应用于无人驾驶中。
 \section{全景图像构建地图实验结果}
 \subsection{全景图像地图实验平台搭建}
-本文提出的使用全景相机构建地图的方法使用的工具包括Ladybug全景相机（图~\ref{ladybug}）与高精度组合定位系统，通过标定全景相机与车体后轴中点的相对位置关系，得到全景相机球面坐标与车体坐标的关系，最后将全景图像（图~\ref{raw-para}）变换为逆透视图像（图~\ref{IPM}），投影在地面中，依据定位信息将图像拼接为地图。图~\ref{jiugong-ex}是使用本文提出的方法构建的二维地图，该地图在2016年于江苏常熟举办的无人车“未来挑战赛”中被采用，在无人车辆出发前，通过给定的任务点，依据地图信息进行全局路径规划，与GIS软件结合，在行驶过程中，为无人车提供道路信息等。
-\begin{figure}[!htbp]
-\centering
-\subfigure{
-\includegraphics[width=2.8in]{chapter5/panorama/jiugong_whole.jpg}}
-\subfigure{
-\includegraphics[width=2.2in]{chapter5/panorama/detail_jiugong.jpg}}
-\label{jiugong-ex}
-\caption{常熟无人车试验场}
-\end{figure}
+本文提出的使用全景相机构建地图的方法使用的工具包括Ladybug全景相机（图~\ref{ladybug}）与高精度组合定位系统，通过标定全景相机与车体后轴中点的相对位置关系，得到全景相机球面坐标与车体坐标的关系，最后将全景图像（图~\ref{raw-para}）变换为逆透视图像（图~\ref{IPM}），投影在地面中，依据定位信息将图像拼接为地图。除了传感器外，本节实验使用的计算机为运行Windows 7的台式机，CPU型号为英特尔酷睿I7-5930K，主频为3.5GHz，内存为4通道32GB。所有算法由C++语言实现，使用OpenCV开源库。由于本节构建地图的范围较大，而拼接的图像需要导入GIS软件（Supermap）生成金字塔图以便加快地图的缩放等操作，该过程是逐行逐像素操作的，所以需要较大的计算量与较大的内存。
 
 
 \subsection{全景图像地图构建效果及精度分析}
-图~\ref{jiugong-ex}右图显示左转变道与U形转弯的过程，
+
+图~\ref{jiugong-ex}是使用本文提出的方法构建的二维地图，该地图在2016年于江苏常熟举办的无人车“未来挑战赛”中被采用，在无人车辆出发前，通过给定的任务点，依据地图信息进行全局路径规划，同时与GIS软件结合，在无人车行驶过程中，为无人车提供道路信息等。
+\begin{figure}[!htbp]
+\centering
+\subfigure[]{
+\includegraphics[width=2.8in]{chapter5/panorama/jiugong_whole.jpg}}
+\subfigure[]{
+\includegraphics[width=2.2in]{chapter5/panorama/detail_jiugong.jpg}}
+\caption{常熟无人车试验场}
+\label{jiugong-ex}
+\end{figure}
+
+图~\ref{jiugong-ex}(b)为图~\ref{jiugong-ex}(a)的细节展示，其中(b)绿色方框内的点为无人车比赛时，车辆出发前路径规划得到的轨迹图，(b)上为左转变道过程，(b)下为U型转弯过程。图~\ref{sanhuan-ex}(a)为使用本节提出的方法构建的常熟三环路网地图，地图面积大约为$12000\times 8000m$的区域，三环道路的细节部分展示在图~\ref{sanhuan-ex}(b)(c)中，可以看出道路拼接良好，车道线存在轻微没有对齐的现象。
+
+\begin{figure}[!htbp]
+\centering
+\subfigure[]{
+\includegraphics[width=2.05in]{chapter5/panorama/sanhuan_whole.jpg}}
+\subfigure[]{
+\includegraphics[width=1.55in]{chapter5/panorama/detail3.jpg}}
+\subfigure[]{
+\includegraphics[width=1.6in]{chapter5/panorama/detail4.jpg}}
+\caption{常熟三环路}
+\label{sanhuan-ex}
+\end{figure}
+
+本节提出的构建适用于无人车行驶的二维地图，地图的精度很大程度取决于高精度定位系统的精度，因为每帧图片是按照位置与航向拼接的；其次需要考虑定位系统与全景相机的硬件同步，由于两个传感器采集频率不同，当采集到一帧图像时，对应该帧图像的车体位置（严格讲是全景相机位置）需要严格同步才可能做到高精度地图，最后就是全景相机成像逆透视变换时产生的形变也影响到构图的精度，尤其是本节算法默认除车外的其他区域高度与地面相同，所以路边花坛、树木等变形严重，无法作为后期制作地图的依据，这三方面误差是导致本节提出构建地图误差的主要来源。这些误差受制于传感器算法、地形等因素，所以很难量化，故在此不做详细讨论。本节提出的构建地图的方法分别应用于2016常熟“未来挑战赛”与军方总装的“跨越险阻”比赛中，在“未来挑战赛”中大部分地图区域拥有接近车道级别的构图精度，但是在“跨越险阻”比赛中，由于山地崎岖、颠簸严重，所以构图精度没有城市环境的“未来挑战赛”出色。
 
 \section{地理空间三维重建实验结果}
 \subsection{地理空间三维重建实验平台搭建}
@@ -25,11 +42,11 @@
 \begin{figure}[!htbp]
 	\centering
     \includegraphics[width=4.0in]{chapter5/reconstruction/experiment.png}
-    \label{djim}
+    \label{djim100}
     \caption{DJI M100}
 \end{figure}
 
-本文是用算法由C++/Python实现，SfM与MVS实现是基于Opencv、CeresSolver开源库，本研究使用运行Ubuntu 14.04 LTS操作系统的台式机，台式机CPU型号为intel 酷睿i5-4570，CPU主频为3.2GHz，并配置8GB单通道内存，没有配置独立显卡。航拍图像采集工具为大疆（DJI）M100无人机，如图~\ref{djim}所示，图像分辨率为$4000\times 2240$，直接存储于无人机相机的16GB SD卡中，用于本文实验后处理。
+本文是用算法由C++/Python实现，SfM与MVS实现是基于Opencv、CeresSolver开源库，本研究使用运行Ubuntu 14.04 LTS操作系统的台式机，台式机CPU型号为intel 酷睿i5-4570，CPU主频为3.2GHz，并配置8GB单通道内存，没有配置独立显卡。航拍图像采集工具为大疆（DJI）M100无人机，如图~\ref{djim100}所示。图像分辨率为$4000\times 2240$，直接存储于无人机相机的16GB SD卡中，用于本文实验后处理。
 \subsubsection{三维重建精度}
 \begin{figure}[!htbp]
 	\centering
