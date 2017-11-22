@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2017.11.13)  22 NOV 2017 22:14
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2017.11.13)  22 NOV 2017 22:55
 entering extended mode
 **E:/大论文/BIT_Thesis/李浩模板/Thesis.tex
 (E:/大论文/BIT_Thesis/李浩模板/Thesis.tex
@@ -2738,18 +2738,20 @@ e_perspect.png> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter5/reconstr
 uction/dense_perspect.png> <E:/大论文/BIT_Thesis/李浩模板/figures/chapte
 r5/reconstruction/DJI_0104.JPG> <E:/大论文/BIT_Thesis/李浩模板/figures/c
 hapter5/reconstruction/sixbuild.PNG>]
-<figures/chapter5/reconstruction/dense_perspect1.png, id=1216, 992.70876pt x 51
+<figures/chapter5/reconstruction/sparse_perspect1.png, id=1216, 991.705pt x 510
+.90875pt>
+File: figures/chapter5/reconstruction/sparse_perspect1.png Graphic file (type p
+ng)
+ <use figures/chapter5/reconstruction/sparse_perspect1.png>
+Package pdftex.def Info: figures/chapter5/reconstruction/sparse_perspect1.png u
+sed on input line 125.
+(pdftex.def)             Requested size: 180.67499pt x 93.0744pt.
+
+<figures/chapter5/reconstruction/dense_perspect1.png, id=1217, 992.70876pt x 51
 0.90875pt>
 File: figures/chapter5/reconstruction/dense_perspect1.png Graphic file (type pn
 g)
  <use figures/chapter5/reconstruction/dense_perspect1.png>
-Package pdftex.def Info: figures/chapter5/reconstruction/dense_perspect1.png us
-ed on input line 125.
-(pdftex.def)             Requested size: 180.67499pt x 92.98085pt.
-File: figures/chapter5/reconstruction/dense_perspect1.png Graphic file (type pn
-g)
-
-<use figures/chapter5/reconstruction/dense_perspect1.png>
 Package pdftex.def Info: figures/chapter5/reconstruction/dense_perspect1.png us
 ed on input line 128.
 (pdftex.def)             Requested size: 180.67499pt x 92.98085pt.
@@ -2762,9 +2764,10 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 151.
 
-[62 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter5/reconstruction/dense
-_perspect1.png>]
-<figures/chapter5/extraction/RGBOriginal.jpg, id=1229, 1541.76pt x 2192.19pt>
+[62 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter5/reconstruction/spars
+e_perspect1.png> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter5/reconst
+ruction/dense_perspect1.png>]
+<figures/chapter5/extraction/RGBOriginal.jpg, id=1230, 1541.76pt x 2192.19pt>
 File: figures/chapter5/extraction/RGBOriginal.jpg Graphic file (type jpg)
 
 <use figures/chapter5/extraction/RGBOriginal.jpg>
@@ -2772,14 +2775,14 @@ Package pdftex.def Info: figures/chapter5/extraction/RGBOriginal.jpg used on in
 put line 160.
 (pdftex.def)             Requested size: 82.38774pt x 117.14218pt.
 
-<figures/chapter5/extraction/openoperation.jpg, id=1230, 1541.76pt x 2192.19pt>
+<figures/chapter5/extraction/openoperation.jpg, id=1231, 1541.76pt x 2192.19pt>
 File: figures/chapter5/extraction/openoperation.jpg Graphic file (type jpg)
 <use figures/chapter5/extraction/openoperation.jpg>
 Package pdftex.def Info: figures/chapter5/extraction/openoperation.jpg used on 
 input line 163.
 (pdftex.def)             Requested size: 82.38774pt x 117.14218pt.
 
-<figures/chapter5/extraction/removehouse.jpg, id=1231, 1541.76pt x 2192.19pt>
+<figures/chapter5/extraction/removehouse.jpg, id=1232, 1541.76pt x 2192.19pt>
 File: figures/chapter5/extraction/removehouse.jpg Graphic file (type jpg)
 
 <use figures/chapter5/extraction/removehouse.jpg>
@@ -2787,7 +2790,7 @@ Package pdftex.def Info: figures/chapter5/extraction/removehouse.jpg used on in
 put line 167.
 (pdftex.def)             Requested size: 82.38774pt x 117.14218pt.
 
-<figures/chapter5/extraction/firstmiddlecenter.jpg, id=1232, 1541.76pt x 2192.1
+<figures/chapter5/extraction/firstmiddlecenter.jpg, id=1233, 1541.76pt x 2192.1
 9pt>
 File: figures/chapter5/extraction/firstmiddlecenter.jpg Graphic file (type jpg)
 
@@ -2796,7 +2799,7 @@ Package pdftex.def Info: figures/chapter5/extraction/firstmiddlecenter.jpg used
  on input line 170.
 (pdftex.def)             Requested size: 82.38774pt x 117.14218pt.
 
-<figures/chapter5/extraction/finalmiddlecenter.jpg, id=1233, 1541.76pt x 2192.1
+<figures/chapter5/extraction/finalmiddlecenter.jpg, id=1234, 1541.76pt x 2192.1
 9pt>
 File: figures/chapter5/extraction/finalmiddlecenter.jpg Graphic file (type jpg)
 
@@ -2805,7 +2808,7 @@ Package pdftex.def Info: figures/chapter5/extraction/finalmiddlecenter.jpg used
  on input line 173.
 (pdftex.def)             Requested size: 82.38774pt x 117.14218pt.
 
-<figures/chapter5/extraction/result_SIFT.jpg, id=1242, 2601.72pt x 3300.33pt>
+<figures/chapter5/extraction/result_SIFT.jpg, id=1243, 2601.72pt x 3300.33pt>
 File: figures/chapter5/extraction/result_SIFT.jpg Graphic file (type jpg)
 
 <use figures/chapter5/extraction/result_SIFT.jpg>
@@ -2820,7 +2823,7 @@ Package pdftex.def Info: figures/chapter5/extraction/finalmiddlecenter.jpg used
  on input line 187.
 (pdftex.def)             Requested size: 126.47249pt x 179.82764pt.
 
-<figures/chapter5/extraction/manual_real_road.jpg, id=1243, 1541.76pt x 2192.19
+<figures/chapter5/extraction/manual_real_road.jpg, id=1244, 1541.76pt x 2192.19
 pt>
 File: figures/chapter5/extraction/manual_real_road.jpg Graphic file (type jpg)
  <use figures/chapter5/extraction/manual_real_road.jpg>
@@ -2842,7 +2845,7 @@ peration.jpg> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter5/extraction
 /removehouse.jpg> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter5/extrac
 tion/firstmiddlecenter.jpg> <E:/大论文/BIT_Thesis/李浩模板/figures/chapt
 er5/extraction/finalmiddlecenter.jpg>]
-<figures/chapter5/extraction/result_chart.png, id=1263, 422.32782pt x 261.22594
+<figures/chapter5/extraction/result_chart.png, id=1264, 422.32782pt x 261.22594
 pt>
 File: figures/chapter5/extraction/result_chart.png Graphic file (type png)
  <use figures/chapter5/extraction/result_chart.png>
@@ -3006,10 +3009,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 22062 strings out of 495354
- 356481 string characters out of 3183858
- 432134 words of memory out of 3000000
- 24107 multiletter control sequences out of 15000+200000
+ 22067 strings out of 495354
+ 356728 string characters out of 3183858
+ 432190 words of memory out of 3000000
+ 24111 multiletter control sequences out of 15000+200000
  167896 words of font info for 486 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  42i,22n,58p,2019b,1493s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3045,9 +3048,9 @@ pe1/public/amsfonts/cm/cmr10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm
 ts/type1/urw/symbol/usyr.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><
 D:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw
 /times/utmri8a.pfb>
-Output written on Thesis.pdf (83 pages, 39257544 bytes).
+Output written on Thesis.pdf (83 pages, 39624555 bytes).
 PDF statistics:
- 1624 PDF objects out of 1728 (max. 8388607)
+ 1625 PDF objects out of 1728 (max. 8388607)
  380 named destinations out of 1000 (max. 500000)
- 907 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 912 words of extra memory for PDF output out of 10000 (max. 10000000)
 
