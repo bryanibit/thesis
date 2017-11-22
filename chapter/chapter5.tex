@@ -64,8 +64,11 @@
 
 \begin{figure}[!htbp]
 \centering
-\includegraphics[width=4.0in]{chapter5/reconstruction/DJI_0104.JPG}
-\label{example-gcp-image}
+\subfigure[]{
+\includegraphics[width=2.6in]{chapter5/reconstruction/DJI_0104.JPG}
+\label{example-gcp-image}}
+\subfigure[]{\includegraphics[width=2.6in]{chapter5/reconstruction/sixbuild.PNG}
+\label{example-gcp-sixbuild}}
 \end{figure}
 
 \begin{table}[!htbp]
@@ -90,7 +93,7 @@
 	\label{table:gcp}
 \end{table}
 
-本文在图~\ref{fig:wulan}场景中设置了9个地面控制点，最后根据成像模型测得这9个点的坐标与实际使用RTK GPS接收机的结果对比如表~\ref{table:gcp_error}所示，每个测试点的精度分为东向与北向，二者的平方根表示在表最后一列为绝对误差，最后计算9个控制点的平均绝对误差为$1.586m$，由于地面控制点分布较均匀，地图某些局部变形较大，导致平均误差较大。
+本文在图~\ref{fig:wulan}场景中设置了9个地面控制点，最后根据成像模型测得这9个点的坐标与实际使用RTK GPS接收机测量的真实结果对比，如表~\ref{table:gcp_error}所示，每个测试点的精度分为东向与北向，二者的平方根表示在表最后一列为绝对误差，最后计算9个控制点的平均绝对误差为$1.586m$，由于地面控制点分布较均匀，而地图中某些区域，一般是边缘区域变形较大，导致平均误差较大。
 
 \begin{table}[!htbp]
 	\caption{地面控制点误差测量}
@@ -115,9 +118,6 @@
 \end{table}
 
 
-
-
-
 \begin{figure}[!htbp]
 	\centering
 	\subfigure[稀疏点云]{
@@ -130,6 +130,24 @@
 	\label{fig:6building} %% label for entire figure
 \end{figure}
 
+
+\begin{table}[!htbp]
+	\caption{地面控制点误差测量}
+	\centering
+	\begin{tabular}{cccc}
+		\hline
+		\bfseries 控制点序号 & \bfseries 东向误差 & \bfseries 北向误差 & \bfseries 绝对误差\\
+		\hline
+%		\hline
+		\bfseries 0 & $0.184$ & $0.378$ & $0.421$ \\
+        \bfseries 1 & $0.856$ & $1.676$ & $1.883$\\
+        \bfseries 2 & $0.141$ & $0.262$ & $0.298$ \\
+		\hline
+	\end{tabular}
+	\label{table:gcp_error_six}
+\end{table}
+
+与上文雾岚山庄数据集处理方法相似，通过79张图片可以得到自动化学院的三维地图结构，图~\ref{fig:sparse1}为稀疏点云在RVIZ中的显示效果，图~\ref{fig:dense1}为稠密点云在Meshlab中的显示效果图。该数据集同样设置地面控制点以衡量构图精度，共有三个地面控制点，分布如图\ref{example-gcp-sixbuild}所示，该图是展示在Google Earth中的效果，可以看出没有设置落在构图边缘的控制点，控制点整体分布均匀。最后通过实验可以得到井队对比结果，如表~\ref{table:gcp_error_six} 所示，各列数据分别表示地面控制点的真实测量值与实验三维重建得到的模型对应点的东向、北向以及绝对误差值。由于三个点没有收到构图边缘变形的影响，所以结果稍好于好于雾岚山庄，得到平均控制点误差为$0.867m$。实际上由于本实验使用图片以及图片EXIF 信息中的经纬高数据，但是实际上EXIF 中的经纬高数据不是很准确，大约误差在$5m$ 左右，如果想要得到结果更高的地图，需要在构图时引入RTK，改善构图的精度。
 
 \subsection{三维重建效果及精度分析}
 
@@ -157,7 +175,7 @@
 	\label{fig:subfig_results} %% label for entire figure
 \end{figure*}
 
-根据第四章道路提取的原理，本节设计实验验证道路提取方法的精度。图~\ref{resultSift}是用来提取道路的二维地图，由于单张航拍二维图片表示的道路区域无法形成拓扑网络，所以从单张航拍图片中提取道路，而后根据航拍原图间的单应性关系拼接得到如图~\ref{resultSift}（原图拼接结果）和~\ref{fig:subfig:RGB}（单张图片RGB拟合结果），而后应用本文提出的道路提取方法精细道路区域，拓扑细化得到最后的实验结果。整个过程如图~\ref{fig:subfig_result}所示，其中图~\ref{fig:subfig:open}表示开闭运算平滑后的结果，图~\ref{fig:subfig:RemoveHouse}为移除矩形非道路区域后的结果，从中可以看出图左下方的房屋边沿被移除，图~\ref{fig:subfig:first}为采用RDP算法进行拓扑细化后的结果，可以看出初始拓扑有很多小枝丫，使用逐渐递减的阈值去除小枝丫后如图~\ref{fig:subfig:finalroad}所示。
+根据第四章道路提取的原理，本节设计实验验证道路提取方法的精度。图~\ref{resultSift}是用来提取道路的二维地图，由于单张航拍二维图片表示的道路区域无法形成拓扑网络，所以从单张航拍图片中提取道路，而后根据航拍原图间的单应性关系拼接得到如图~\ref{resultSift}（原图拼接结果）和~\ref{fig:subfig:RGB}（单张图片RGB拟合结果），而后应用本文提出的道路提取方法精细道路区域，拓扑细化得到最后的实验结果。整个过程如图~\ref{fig:subfig_results}所示，其中图~\ref{fig:subfig:open}表示开闭运算平滑后的结果，图~\ref{fig:subfig:RemoveHouse}为移除矩形非道路区域后的结果，从中可以看出图左下方的房屋边沿被移除，图~\ref{fig:subfig:first}为采用RDP算法进行拓扑细化后的结果，可以看出初始拓扑有很多小枝丫，使用逐渐递减的阈值去除小枝丫后如图~\ref{fig:subfig:finalroad}所示。
 
 \begin{figure*}[!htbp]
     \centering

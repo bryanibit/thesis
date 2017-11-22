@@ -12,15 +12,29 @@
 图~\ref{jiugong-ex}是使用本文提出的方法构建的二维地图，该地图在2016年于江苏常熟举办的无人车“未来挑战赛”中被采用，在无人车辆出发前，通过给定的任务点，依据地图信息进行全局路径规划，同时与GIS软件结合，在无人车行驶过程中，为无人车提供道路信息等。
 \begin{figure}[!htbp]
 \centering
-\subfigure{
+\subfigure[]{
 \includegraphics[width=2.8in]{chapter5/panorama/jiugong_whole.jpg}}
-\subfigure{
+\subfigure[]{
 \includegraphics[width=2.2in]{chapter5/panorama/detail_jiugong.jpg}}
-\label{jiugong-ex}
 \caption{常熟无人车试验场}
+\label{jiugong-ex}
 \end{figure}
 
-图~\ref{jiugong-ex}为图~\ref{jiugong-ex}的细节展示，其中右图绿色方框内的点为无人车比赛时，车辆出发前路径规划得到的轨迹图，上为左转变道，下为U型转弯过程
+图~\ref{jiugong-ex}(b)为图~\ref{jiugong-ex}(a)的细节展示，其中(b)绿色方框内的点为无人车比赛时，车辆出发前路径规划得到的轨迹图，(b)上为左转变道过程，(b)下为U型转弯过程。图~\ref{sanhuan-ex}(a)为使用本节提出的方法构建的常熟三环路网地图，地图面积大约为$12000\times 8000m$的区域，三环道路的细节部分展示在图~\ref{sanhuan-ex}(b)(c)中，可以看出道路拼接良好，车道线存在轻微没有对齐的现象。
+
+\begin{figure}[!htbp]
+\centering
+\subfigure[]{
+\includegraphics[width=2.05in]{chapter5/panorama/sanhuan_whole.jpg}}
+\subfigure[]{
+\includegraphics[width=1.55in]{chapter5/panorama/detail3.jpg}}
+\subfigure[]{
+\includegraphics[width=1.6in]{chapter5/panorama/detail4.jpg}}
+\caption{常熟三环路}
+\label{sanhuan-ex}
+\end{figure}
+
+本节提出的构建适用于无人车行驶的二维地图，地图的精度很大程度取决于高精度定位系统的精度，因为每帧图片是按照位置与航向拼接的；其次需要考虑定位系统与全景相机的硬件同步，由于两个传感器采集频率不同，当采集到一帧图像时，对应该帧图像的车体位置（严格讲是全景相机位置）需要严格同步才可能做到高精度地图，最后就是全景相机成像逆透视变换时产生的形变也影响到构图的精度，尤其是本节算法默认除车外的其他区域高度与地面相同，所以路边花坛、树木等变形严重，无法作为后期制作地图的依据，这三方面误差是导致本节提出构建地图误差的主要来源。这些误差受制于传感器算法、地形等因素，所以很难量化，故在此不做详细讨论。本节提出的构建地图的方法分别应用于2016常熟“未来挑战赛”与军方总装的“跨越险阻”比赛中，在“未来挑战赛”中大部分地图区域拥有接近车道级别的构图精度，但是在“跨越险阻”比赛中，由于山地崎岖、颠簸严重，所以构图精度没有城市环境的“未来挑战赛”出色。
 
 \section{地理空间三维重建实验结果}
 \subsection{地理空间三维重建实验平台搭建}
@@ -28,11 +42,11 @@
 \begin{figure}[!htbp]
 	\centering
     \includegraphics[width=4.0in]{chapter5/reconstruction/experiment.png}
-    \label{djim}
+    \label{djim100}
     \caption{DJI M100}
 \end{figure}
 
-本文是用算法由C++/Python实现，SfM与MVS实现是基于Opencv、CeresSolver开源库，本研究使用运行Ubuntu 14.04 LTS操作系统的台式机，台式机CPU型号为intel 酷睿i5-4570，CPU主频为3.2GHz，并配置8GB单通道内存，没有配置独立显卡。航拍图像采集工具为大疆（DJI）M100无人机，如图~\ref{djim}所示，图像分辨率为$4000\times 2240$，直接存储于无人机相机的16GB SD卡中，用于本文实验后处理。
+本文是用算法由C++/Python实现，SfM与MVS实现是基于Opencv、CeresSolver开源库，本研究使用运行Ubuntu 14.04 LTS操作系统的台式机，台式机CPU型号为intel 酷睿i5-4570，CPU主频为3.2GHz，并配置8GB单通道内存，没有配置独立显卡。航拍图像采集工具为大疆（DJI）M100无人机，如图~\ref{djim100}所示。图像分辨率为$4000\times 2240$，直接存储于无人机相机的16GB SD卡中，用于本文实验后处理。
 \subsubsection{三维重建精度}
 \begin{figure}[!htbp]
 	\centering
@@ -115,6 +129,24 @@
 	\caption{实验结果-自动化学院}
 	\label{fig:6building} %% label for entire figure
 \end{figure}
+
+
+\begin{table}[!htbp]
+	\caption{地面控制点误差测量}
+	\centering
+	\begin{tabular}{cccc}
+		\hline
+		\bfseries 控制点序号 & \bfseries 东向误差 & \bfseries 北向误差 & \bfseries 绝对误差\\
+		\hline
+%		\hline
+		\bfseries 0 &  $1.452$ &  $5.275$ & $5.471$ \\
+		\bfseries 1 & $0.184$ & $0.378$ & $0.421$ \\
+        \bfseries 2 & $0.647$ & $0.310$ & $0.718$\\
+        \bfseries 3 & $0.141$ & $0.262$ & $0.298$ \\
+		\hline
+	\end{tabular}
+	\label{table:gcp_error}
+\end{table}
 
 
 \subsection{三维重建效果及精度分析}
