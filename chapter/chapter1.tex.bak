@@ -1,8 +1,8 @@
 \chapter{Ð÷ÂÛ}
 \section{ÑÐ¾¿±³¾°ÓëÒâÒå}
-½üÄêÀ´ÖÇÄÜÒÆ¶¯»úÆ÷ÈË±äµÃÔ½À´Ô½ÆÕ¼°£¬ÕâÐ©ÖÇÄÜÒÆ¶¯»úÆ÷ÈË¿ÉÒÔ¶ÀÁ¢»ò¸¨ÖúÈËÀàÍê³ÉºÜ¶àÈÎÎñ£¬ÕâÒÀÀµÆä¶Ô»·¾³µÄ¸ÐÖª¡¢µ¼º½ºÍÔË¶¯¹æ»®µÈ¹ý³Ì¡£×÷ÎªÂÖÊ½ÒÆ¶¯»úÆ÷ÈË£¬µØÃæÎÞÈË³µÁ¾ÔÚÎ´ÖªÇøÓòµ¼º½Ê±£¬¶Ô¸ÐÖª¡¢¹æ»®µÈµÄÒªÇóÒ²ºÜ¸ß£¬¶øÒ»°ãµÄÎÞÈË³µÁ¾¶¼ÒÀÀµÏêÏ¸µÄµØÍ¼½øÐÐµ¼º½¹æ»®\cite{Mattyus-Enhancing-road-maps}£¬Íê³É¼È¶¨ÈÎÎñ¡£È»¶øÒ×ÓÚ»ñÈ¡µÄÎÀÐÇÍ¼Ïñ£¬ÓÉÓÚ¸üÐÂ²»¼°Ê±£¬ÊÒÄÚÎÞ·¨Ê¹ÓÃ£¬¾«¶ÈÄÑÒÔÂú×ã³µµÀÏß¼¶±ðµÄ¾«¶ÈÒªÇóµÈÔ­Òò²»±»¸ß¾«¶Èµ¼º½µÄÎÞÈËµØÃæ³µÁ¾²ÉÓÃ¡£Ä¿Ç°ÒÆ¶¯»úÆ÷ÈËÁìÓòµÄ¹¹½¨¸ß¾«¶ÈµØÍ¼·½·¨½Ï¶à£¬Ò»°ã²ÉÓÃÆä×ÔÉí³µÔØ´«¸ÐÆ÷µÈÉè±¸£¬×ÜÌåÉÏ¿ÉÒÔ·ÖÎª»ùÓÚÉãÏñÍ·ºÍ»ùÓÚ¼¤¹âÀ×´ïÁ½ÖÖ·½°¸¡£
+½üÄêÀ´ÖÇÄÜÒÆ¶¯»úÆ÷ÈË±äµÃÔ½À´Ô½ÆÕ¼°£¬ÕâÐ©ÖÇÄÜÒÆ¶¯»úÆ÷ÈË¿ÉÒÔ¶ÀÁ¢»ò¸¨ÖúÈËÀàÍê³ÉºÜ¶àÈÎÎñ£¬ÕâÒÀÀµÆä¶Ô»·¾³µÄ¸ÐÖª¡¢µ¼º½ºÍÔË¶¯¹æ»®µÈ¹ý³Ì¡£×÷ÎªÂÖÊ½ÒÆ¶¯»úÆ÷ÈË£¬µØÃæÎÞÈË³µÁ¾ÔÚÎ´ÖªÇøÓòµ¼º½Ê±£¬¶Ô¸ÐÖª¡¢¹æ»®µÈµÄÒªÇóÒ²ºÜ¸ß£¬ËùÒÔÒ»°ãµÄÎÞÈË³µÁ¾¶¼ÒÀÀµÏêÏ¸µÄµØÍ¼½øÐÐµ¼º½¹æ»®\cite{Mattyus-Enhancing-road-maps}£¬Íê³É¼È¶¨ÈÎÎñ¡£¶øÒ×ÓÚ»ñÈ¡µÄÎÀÐÇÍ¼Ïñ£¬ÓÉÓÚ¸üÐÂ²»¼°Ê±£¬ÊÒÄÚÎÞ·¨Ê¹ÓÃ£¬¾«¶ÈÄÑÒÔÂú×ã³µµÀÏß¼¶±ðµÄ¾«¶ÈÒªÇóµÈÔ­Òò²»±»¸ß¾«¶Èµ¼º½µÄÎÞÈËµØÃæ³µÁ¾²ÉÓÃ¡£Ä¿Ç°ÒÆ¶¯»úÆ÷ÈËÁìÓò¹¹½¨¸ß¾«¶ÈµØÍ¼µÄ·½·¨½Ï¶à£¬Ò»°ã²ÉÓÃÆä³µÔØ»ò»úÔØ´«¸ÐÆ÷µÈÉè±¸£¬×ÜÌåÉÏ¿ÉÒÔ·ÖÎª»ùÓÚÉãÏñÍ·ºÍ»ùÓÚ¼¤¹âÀ×´ïÁ½ÖÖ·½°¸¡£
 
-ÊµÊ±¶¨Î»ÓëµØÍ¼¹¹½¨(SLAM,Simultaneous Localization and Mapping)×÷ÎªÒÆ¶¯»úÆ÷ÈË¹¹½¨µØÍ¼µÄ·½·¨½ñÄêÀ´»ñµÃ³¤×ã·¢Õ¹£¬½ÏÎªÖøÃûµÄÓÐORB-SLAM\cite{Mur-Artal-ORB-SLAM}£¬LSD-SLAM\cite{Engel-LSD-SLAM}£¬LOAM\cite{Zhang-LOAM}µÈ£¬Í¼~\ref{compare}ÊÇÔËÓÃ³µÔØ´«¸ÐÆ÷µÃµ½SLAMµØÍ¼£¬ÆäÖÐ×óÍ¼Ê¹ÓÃ¼¤¹âÀ×´ï£¬ÓÒÍ¼Ê¹ÓÃÉãÏñÍ·µÃµ½µÄÈýÎ¬µØÍ¼¡£ÕâÖÖ²ÉÓÃ³µÔØ´«¸ÐÆ÷µÄ¹¹Í¼·½·¨ÒÑ¾­·¢Õ¹µØ½ÏÎª³ÉÊì£¬µ«ÊÇÔËÓÃ³µÔØ´«¸ÐÆ÷µÃµ½´ó·¶Î§µØÍ¼ÈÔÓÐÀ§ÄÑ£¬ÀýÈç³µÔØ´«¸ÐÆ÷ÊÓÒ°ÊÜÏÞ£¬Ò×ÊÜÕÚµ²£¬ÔÚÔÖÇø·¢ÉúµÀÂ·×èÈûÊ±£¬³µÁ¾ÎÞ·¨ÐÐÊ»¶øÎÞ·¨²É¼¯µÀÂ·ÐÅÏ¢£¬ÉõÖÁÊ¹ÓÃ³µÁ¾¶ÔËùÓÐµÀÂ·±éÀúµÄ·½·¨Ð§ÂÊµÍÏÂ¡£È»¶øÎÞÈË»ú·ÉÐÐÁé»î£¬ÊÓÒ°¿íÀ«£¬¿ÉÒÔ¸ßÐ§µØ¶ÔµØÃæÅÄÉã²¢½¨Á¢µØÀí¿Õ¼äµØÍ¼£¬ÎªÎÞÈËµØÃæ³µÁ¾ÐÐÊ»Ìá¹©ÏÈÑéÐÅÏ¢¡£
+½üÄêÀ´ÊµÊ±¶¨Î»ÓëµØÍ¼¹¹½¨(SLAM,Simultaneous Localization and Mapping)×÷ÎªÒÆ¶¯»úÆ÷ÈË¹¹½¨µØÍ¼µÄ·½·¨»ñµÃ³¤×ã·¢Õ¹£¬½ÏÎªÖøÃûµÄÓÐORB-SLAM\cite{Mur-Artal-ORB-SLAM}£¬LSD-SLAM\cite{Engel-LSD-SLAM}£¬LOAM\cite{Zhang-LOAM}µÈ£¬Í¼~\ref{compare}ÊÇÔËÓÃ³µÔØ´«¸ÐÆ÷µÃµ½µÄÈýÎ¬µØÍ¼£¬ÆäÖÐ×óÍ¼Ê¹ÓÃµÄ´«¸ÐÆ÷ÊÇ¼¤¹âÀ×´ï£¬ÓÒÍ¼Ê¹ÓÃµÄ´«¸ÐÆ÷ÊÇµ¥Ä¿ÉãÏñÍ·¡£ÕâÖÖ²ÉÓÃ³µÔØ´«¸ÐÆ÷µÄ¹¹Í¼·½·¨ÒÑ¾­·¢Õ¹µØ½ÏÎª³ÉÊì£¬µ«ÊÇÔËÓÃ³µÔØ´«¸ÐÆ÷µÃµ½´ó·¶Î§µØÍ¼ÈÔÓÐÀ§ÄÑ£¬ÀýÈç³µÔØ´«¸ÐÆ÷ÊÓÒ°ÊÜÏÞ£¬Ò×ÊÜÕÚµ²£¬ÔÚÔÖÇø·¢ÉúµÀÂ·×èÈûÊ±£¬³µÁ¾ÓÉÓÚÎÞ·¨Í¨ÐÐ¶øÎÞ·¨²É¼¯µÀÂ·ÐÅÏ¢£¬¶øÇÒÊ¹ÓÃ³µÁ¾¶ÔËùÓÐµÀÂ·±éÀúµÄ·½·¨Ð§ÂÊµÍÏÂ¡£È»¶øÎÞÈË»ú·ÉÐÐÁé»î£¬ÊÓÒ°¿íÀ«£¬¿ÉÒÔ¸ßÐ§µØ¶ÔµØÃæÅÄÉã²¢½¨Á¢µØÀí¿Õ¼äµØÍ¼£¬ÎªÎÞÈËµØÃæ³µÁ¾ÐÐÊ»Ìá¹©ÏÈÑéÐÅÏ¢¡£
 
 \begin{figure*}[!htbp]
 	\centering
@@ -14,7 +14,7 @@
 	\label{compare}
 \end{figure*}
 
-ÓëÊÓ¾õSLAMÀàËÆ£¬SfM(Structure from Motion)Ò²ÊÇÒ»ÖÖ¹¹½¨ÈýÎ¬µØÐÎµÄ¼¼Êõ£¬SfMÄÜÍ¨¹ý2DÍ¼ÏñµÃµ½³íÃÜ3D µãÔÆ£¬È»¶øSfM¸ü¶àÊ¹ÓÃ´óÁ¿ÎÞÐòÍ¼Æ¬£¬ÔËÐÐ¹ý³Ì²»ÊÜÊ±¼äÏÞÖÆ£¬´Ó¶ø¹¹½¨±ÈSLAM¸ü¾«È·µÄ3DµØÍ¼¡£Óë´«Í³µÄº½¿Õ¼¤¹âÉ¨Ãè(ALS,Airborne Laser Scanning)»òÕßLiDAR(airbone light detectiona and ranging)»æÖÆµØÍ¼Ïà±È£¬SfM¿ÉÒÔµÃµ½¸ü¸ß·Ö±æÂÊµÄ°üº¬¿Õ¼äÎÆÀíµÄ3DÄ£ÐÍ£¬¸üÖØÒªµÄÊÇSfMµÃµ½Èç´Ë·á¸»µÄÊý¾Ý½á¹û£¬Ê¹ÓÃµÄÉè±¸¸üÁ®¼Û¡£ÕâÊÇÓÉÓÚSfMÊ¹ÓÃËã·¨Æ¥ÅäÍ¼ÏñÌØÕ÷µã£¬¼ÆËãÏà»úÎ»×Ë£¬´Ó¶øÖØ½¨ÅÄÉã³¡¾°µÄ¡°Ï¡Êè¡±3DµãÔÆ£¬Í¨¹ýMVS(Multi-View Stereo)½«µãÔÆ³íÃÜ»¯¶øºóäÖÈ¾£¬µÃµ½±ÆÕæµÄÈýÎ¬µØÀí¿Õ¼äÄ£ÐÍ\cite{Carrivick-Structure-from-Motion}£¬»ùÓÚ´ËSfM ×÷ÎªÒ»ÖÖµØÐÎ²â»æ¼¼Êõ±»¹ã·ºÓ¦ÓÃÓÚµØÀí¿ÆÑ§ÖÐ¡£ÎÒÃÇ¿ÉÒÔÍ¨¹ýÑ§ÊõÎÄÏ×Êý¾Ý¿âWeb of Knowledge¹Û²ìSfMµÄÑ§ÊõÑÐ¾¿Çé¿ö£¬´Ó20ÊÀ¼Í80Äê´úÖÁ2015Äê¹²ÓÐ1000 Ìõ¹ØÓÚStructure from MotionÖ÷ÌâµÄ¼ÇÂ¼£¬ÆäÖÐÊôÓÚ¼ÆËã»ú¿ÆÑ§·¶³ëµÄ×î¶à£¬µØÀí¿ÆÑ§Î»ÓÚµÚ9Ãû\cite{Carrivick-Structure-from-Motion}£¬ÈçÍ¼~\ref{count-year}ËùÊ¾¡£
+ÓëÊÓ¾õSLAMÀàËÆ£¬SfM(Structure from Motion)Ò²ÊÇÒ»ÖÖ¹¹½¨ÈýÎ¬³¡¾°µÄ¼¼Êõ£¬SfMÄÜÍ¨¹ý2DÍ¼ÏñµÃµ½³¡¾°3D ½á¹¹£¬È»¶øSfM¸ü¶àÊ¹ÓÃÎÞÐòÍ¼Æ¬£¬ÔËÐÐ¹ý³Ì²»ÊÜÊ±¼äÏÞÖÆ£¬´Ó¶ø¹¹½¨±ÈSLAM¸ü¾«È·µÄ3DµØÍ¼¡£Óë´«Í³µÄº½¿Õ¼¤¹âÉ¨Ãè(ALS, Airborne Laser Scanning)»òLiDAR(Light Detectiona And Ranging)»æÖÆµØÍ¼Ïà±È£¬SfM¿ÉÒÔµÃµ½¸ü¸ß·Ö±æÂÊµÄ°üº¬¿Õ¼äÎÆÀíµÄ3DÄ£ÐÍ£¬¸üÖØÒªµÄÊÇ£¬SfMµÃµ½Èç´Ë·á¸»µÄÊý¾Ý½á¹ûÊ¹ÓÃµÄÉè±¸¸üÁ®¼Û¡£ÕâÊÇÓÉÓÚSfMÊ¹ÓÃËã·¨Æ¥ÅäÍ¼ÏñÌØÕ÷µã£¬¼ÆËãÏà»úÎ»×Ë£¬´Ó¶øÖØ½¨ÅÄÉã³¡¾°µÄ¡°Ï¡Êè¡±3DµãÔÆ£¬Í¨¹ýMVS(Multi-View Stereo)½«µãÔÆ³íÃÜ»¯¶øºóäÖÈ¾£¬µÃµ½±ÆÕæµÄÈýÎ¬µØÀí¿Õ¼äÄ£ÐÍ\cite{Carrivick-Structure-from-Motion}£¬»ùÓÚ´ËSfM×÷ÎªÒ»ÖÖµØÐÎ²â»æ¼¼Êõ±»¹ã·ºÓ¦ÓÃÓÚµØÀí¿ÆÑ§ÖÐ¡£ÎÒÃÇ¿ÉÒÔÍ¨¹ýÑ§ÊõÎÄÏ×Êý¾Ý¿âWeb of Knowledge¹Û²ìSfMµÄÑ§ÊõÑÐ¾¿Çé¿ö£¬´Ó20ÊÀ¼Í80Äê´úÖÁ2015Äê¹²ÓÐ1000 Ìõ¹ØÓÚStructure from MotionÖ÷ÌâµÄ¼ÇÂ¼£¬ÆäÖÐÊôÓÚ¼ÆËã»ú¿ÆÑ§·¶³ëµÄ×î¶à£¬µØÀí¿ÆÑ§Î»ÓÚµÚ9Ãû\cite{Carrivick-Structure-from-Motion}£¬ÈçÍ¼~\ref{count-year}ËùÊ¾¡£
 
 \begin{figure}[!htbp]
 	\centering
@@ -114,4 +114,11 @@ $\bullet$ ÌáÈ¡¶þÎ¬µØÍ¼ÖÐµÄµÀÂ·ÇøÓò£¬¹¹½¨µÀÂ·ÍØÆËÍøÂç£¬ÒÀÍÐGISÈí¼þÎªÎÞÈË³µµ¼º½¹æ»
 \subsection{¶þÎ¬Í¼ÏñÖÐµÄµÀÂ·ÌáÈ¡}
 µÀÂ·¼ì²â¶ÔÎÞÈË¼ÝÊ»ÖÁ¹ØÖØÒª£¬±¾ÎÄ²ÉÓÃ×îÐ¡¶þ³Ë·¨ÄâºÏ²âÊÔ¼¯µÄµÀÂ·ÇøÓò£¬´Ó¶øµÃµ½³õÊ¼µÄµÀÂ·ÇøÓòÓÃ¶þÖµ»¯µÄÍ¼Æ¬±íÊ¾£¬µ«ÊÇ¶þÖµÍ¼´æÔÚ·ÇµÀÂ·ÇøÓòµÄ´íÎó¼ì²â£¬±¾ÎÄ²ÉÓÃ¿ª±ÕÔËËãÆ½»¬¶þÖµÍ¼£¬²¢²ÉÓÃ¾ØÐÎ¼ì²âµÈ·½·¨ÒÆ³ý¿ª±ÕÔËËãÎÞ·¨Ïû³ýµÄ´óÃæ»ýµÄ·ÇµÀÂ·ÇøÓò£¬ÖÁ´Ë¿ÉÒÔµÃµ½½ÏÎªÀíÏëµÄµÀÂ·¶þÖµÍ¼£¬ÔÚ´Ë»ù´¡ÉÏ£¬Í¨¹ýÍØÆËÏ¸»¯¼°¶ÌÖ¦Ñ¾ÌÞ³ýµÄ·½·¨µÃµ½µ¥ÏñËØ¹¹³ÉµÄµÀÂ·ÍØÆËÍ¼Æ¬£¬Ê¹ÓÃGISÈí¼þ¿ÉÒÔÖ±½ÓÉú³ÉÍØÆËÂ·Íø£¬ÓÃÓÚÎÞÈË³µµ¼º½¹æ»®¡£
 \section{±¾ÕÂÐ¡½á}
-±¾ÕÂ¸ÅÊöÁË¿ÎÌâÑÐ¾¿±³¾°ÓëÒâÒå£¬Õë¶ÔÎÞÈË¼ÝÊ»µ¼º½Óë¹æ»®¸ß¶ÈÒÀÀµµØÍ¼ÐÅÏ¢µÄÌØµã£¬¹¹½¨ÊÊºÏÎÞÈË¼ÝÊ»µÄµØÍ¼±äµÃÊ®·Ö¹Ø¼ü¡£Õë¶ÔÕâÒ»ÎÊÌâ£¬±¾ÎÄÍ¨¹ý²éÔÄµ±Ç°µØÍ¼¹¹½¨µÄÑÐ¾¿ÏÖ×´£¬Éè¼ÆÁËÐÂµÄÊÊºÏÎÞÈË¼ÝÊ»Ê¹ÓÃµÄ¶þÎ¬µØÍ¼ÓëÈýÎ¬µØÍ¼¹¹½¨·½·¨¡£Í¬Ê±ÓÉÓÚµÀÂ·ÐÅÏ¢ÔÚÎÞÈË¼ÝÊ»µ¼º½¹æ»®ÖÐÓÐ×ÅÖØÒªÒâÒåÕâÒ»ÏÖ×´£¬Ìá³öÔÚ¶þÎ¬µØÍ¼ÖÐÌáÈ¡µÀÂ·ÍøÂç£¬¹¹½¨ÍØÆËÂ·Íø£¬ÎªÎÞÈË³µÈ«¾ÖÂ·¾¶¹æ»®Ìá¹©ÏÈÑéÐÅÏ¢¡£
+±¾ÕÂ¸ÅÊöÁË¿ÎÌâÑÐ¾¿±³¾°ÓëÒâÒå£¬Õë¶ÔÎÞÈË¼ÝÊ»µ¼º½Óë¹æ»®¸ß¶ÈÒÀÀµµØÍ¼ÐÅÏ¢µÄÌØµã£¬¹¹½¨ÊÊºÏÎÞÈË¼ÝÊ»µÄµØÍ¼±äµÃÊ®·Ö¹Ø¼ü¡£Õë¶ÔÕâÒ»ÎÊÌâ£¬±¾ÎÄÍ¨¹ý²éÔÄµ±Ç°µØÍ¼¹¹½¨µÄÑÐ¾¿ÏÖ×´£¬Éè¼ÆÁËÐÂµÄÊÊºÏÎÞÈË¼ÝÊ»Ê¹ÓÃµÄ¶þÎ¬µØÍ¼ÓëÈýÎ¬µØÍ¼¹¹½¨·½·¨¡£Í¬Ê±ÓÉÓÚµÀÂ·ÐÅÏ¢ÔÚÎÞÈË¼ÝÊ»µ¼º½¹æ»®ÖÐÓÐ×ÅÖØÒªÒâÒåÕâÒ»ÏÖ×´£¬Ìá³öÔÚ¶þÎ¬µØÍ¼ÖÐÌáÈ¡µÀÂ·ÍøÂç£¬¹¹½¨ÍØÆËÂ·Íø£¬ÎªÎÞÈË³µÈ«¾ÖÂ·¾¶¹æ»®Ìá¹©ÏÈÑéÐÅÏ¢¡£±¾ÎÄÑÐ¾¿×ÜÌåÄÚÈÝ¿ÉÒÔÓÃÁ÷³ÌÍ¼~\ref{flow-whole}±íÊ¾¡£
+
+\begin{figure}
+\centering
+\includegraphics[width=5.0in]{chapter1/flow-whole.png}
+\label{flow-whole}
+\caption{±¾ÎÄÑÐ¾¿ÄÚÈÝ}
+\end{figure}

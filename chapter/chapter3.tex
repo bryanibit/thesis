@@ -206,7 +206,15 @@ where \quad & r^2 = u^2 + v^2
 \end{align}
 \end{subequations}
 
-综上所述，本节详细介绍了相机模型与相机相关坐标系转换关系，以及相机成像的校正等相关内容，这部分属于图像处理的基础，熟悉该部分内容将为下面几节多视图几何相关内容作铺垫。
+综上所述，本节详细介绍了相机模型与相机相关坐标系转换关系，以及相机成像的校正等相关内容，这部分属于图像处理的基础，熟悉该部分内容将为下面几节多视图几何相关内容作铺垫。以下3.4-3.7节的内容概况了本文SfM的主要流程，如图~\ref{flow-sparse}所示，输入为无序单目航拍图像，输出为稀疏点云与相机位姿，以下将分步介绍各个环节。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=5.4in]{chapter3/flow-sparse.png}
+\caption{SfM流程图}
+\label{flow-sparse}
+\end{figure}
+
 \section{特征点提取}
 SfM首先需要找到图片集中俩俩图片间的几何关系，这样才能估算相机间的运动与成像的三维点坐标。为了找到图片之间的几何关系，现今有许多方法，例如光流法，特征点法等，光流法适用于匀速运送的视频流中，要求帧间运动比较小，从而找出帧间运动关系；特征点法指对图像特征的提取与存储，是图像中比较有代表性的特征。由于本文使用的数据集为无序的航拍图像，特征点法较为适宜使用。特征点提取更通俗的理解为将二维矩阵描述的图像降维为一维特征点描述的图像，突出图像的重点，去除冗余信息的过程。
 
@@ -637,6 +645,13 @@ Y
 \subsection{三角定位法}
 在得到相机的位姿后，需要恢复匹配点的三维坐标信息，该方法称为三角测量（triangulation），三角测量时指不同视角观察同一个点的夹角，确定该点的位置。三角测量最早由高斯提出并应用于天文学中。在SfM中，我们使用三角测量估计匹配点的像素深度。
 
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=5.2in]{chapter3/triangulation.png}
+\caption{三角测量示意图}
+\label{triangulation}
+\end{figure}
+
 小孔相机成像模型简化为$\lambda \left[\begin{array}{c}
 x_1\\
 1
@@ -652,12 +667,6 @@ X_1\\
 \end{array}\right]=0$，由于一个视图可以提供两个方程，所以只需要两个视图即可计算得到3D点坐标，但是由于噪声的影响，空间中的两视图射线不一定交于一点，所以使用两视图恢复出来的三维点坐标存在不准确的问题，所以一般情况下使用多视图进行三角测量恢复多视图匹配的3D点坐标，如图~\ref{triangulation}所示，多个视图匹配的同一个3D点在不同视图成像平面的投影为$x_1,x_2,...x_n$，这些投影点具有相同的track序号（第三章第二节末提到的定义），当从多视图中恢复3D位置坐标，该问题又归为对式~\ref{triangulation-equation}进行奇异值分解求最小二乘解的问题。由于$rank([\quad]_{3n\times 4})=2$所以对$[\quad]$进行SVD分解，$V$的最后一列就是$[\quad]$的右零空间，也就是3D点的位置坐标。
 
 三角测量的多视图必须存在平移关系，否则单纯的旋转无法使用三角测量，因为此时对极约束永远满足。在平移存在的情况下，三角测量存在不确定性，当平移很小时，射线夹角很小，计算得到的像素深度不确定性很大；但是平移太大后，图像变换会较大，导致匹配失效。所以三角测量时，需要考虑多视图夹角，也就是多视图平移大小的影响。
-\begin{figure}[!htbp]
-\centering
-\includegraphics[width=5.2in]{chapter3/triangulation.png}
-\caption{三角测量示意图}
-\label{triangulation}
-\end{figure}
 
 \begin{equation}
 \centering
@@ -918,19 +927,27 @@ E_{position}=arg\mathop{{min}}\limits_{R,t} \sum_{i=1}\left \|f_j(x) - x_j \righ
 
 在此不详细介绍如何解算上式，相对于最小化重投影误差的过程，该过程只调整相机相关参数，没有涉及3D点相关的调整，所以只能作为BA的辅助步骤，也可以认为这属于光束平差法的一部分，下文不再过多强调。
 
-本节介绍了基本的稀疏点云生成的过程，包括多视图几何知识从匹配点恢复结构，而后增量式的重建其他图片；在每加入一张图片时，使用BA优化相机位姿与3D点的位置，在此我加上最小化相机中心位置误差，作为BA的辅助步骤。图~\ref{BA}(b)是使用CeresSolver库迭代三次优化重投影误差的结果，初始代价函数结果为$3.483778e+01$，BA优化后的代价为$1.732320e+01$。从~\ref{BA}两张图对比可以看出BA最小化重投影误差的作用:(a) 仅使用多视图几何计算相机位姿并使用三角测量恢复3D点位置，而(b)在(a)的基础上增加BA环节，图中红色点是提取的2D特征点坐标，绿色点是3D根据相机$R,t$关系投影回成像平面的点，从中可以明显看出BA对重投影误差有改善作用，可以将误差平摊到所有点上。
 \begin{figure}[!htbp]
 \centering
 \subfigure[]{
-\includegraphics[width=5.4in]{chapter3/BA/before_small.jpg}}
-\subfigure[]{\includegraphics[width=5.4in]{chapter3/BA/after_small.jpg}
+\includegraphics[width=3.0in]{chapter3/BA/before_small.jpg}}
+\subfigure[]{\includegraphics[width=3.0in]{chapter3/BA/after_small.jpg}
 }
 \caption{BA对比结果图}
 \label{BA}
 \end{figure}
 
+本节介绍了基本的稀疏点云生成的过程，包括多视图几何知识从匹配点恢复结构，而后增量式的重建其他图片；在每加入一张图片时，使用BA优化相机位姿与3D点的位置，在此我加上最小化相机中心位置误差，作为BA的辅助步骤。图~\ref{BA}(b)是使用CeresSolver库迭代三次优化重投影误差的结果，初始代价函数结果为$3.483778e+01$，BA优化后的代价为$1.732320e+01$。从~\ref{BA}两张图对比可以看出BA最小化重投影误差的作用:(a) 仅使用多视图几何计算相机位姿并使用三角测量恢复3D点位置，而(b)在(a)的基础上增加BA环节，图中红色点是提取的2D特征点坐标，绿色点是3D根据相机$R,t$关系投影回成像平面的点，从中可以明显看出BA对重投影误差有改善作用，可以将误差平摊到所有点上。
+
 \section{稀疏点云的稠密化}
-通过SfM方法，不仅可以得到相机位姿，也可以恢复特征点的三维坐标得到稀疏点云，但是由于点云过于稀疏难以用于无人车导航与规划，所以本文使用Multiple View Stereo(MVS)技术将点云稠密化，MVS可以分为基于体素（voxel），基于表面演化（surface evolution）、基于特征点生长（feature point growing）和基于深度图融合（depth-map merging）四种类型\cite{Shen-Accurate}。本文采用深度图融合的方法\cite{Furukawa-Accurate} 得到稠密点云，该方法包括深度图计算与深度图融合两部分。
+通过SfM方法，不仅可以得到相机位姿，也可以恢复特征点的三维坐标得到稀疏点云，但是由于点云过于稀疏难以用于无人车导航与规划，所以本文使用Multiple View Stereo(MVS)技术将点云稠密化，MVS可以分为基于体素（voxel），基于表面演化（surface evolution）、基于特征点生长（feature point growing）和基于深度图融合（depth-map merging）四种类型\cite{Shen-Accurate}。本文采用深度图融合的方法\cite{Furukawa-Accurate} 得到稠密点云，该方法包括深度图计算与深度图融合两部分，可以用图~\ref{flow-dense}表示整个过程。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=4.9in]{chapter3/flow-dense.png}
+\label{flow-dense}
+\caption{点云稠密化流程图}
+\end{figure}
 
 \subsection{深度图计算}
 基于SfM方法，我们可以得到图像数据集下所有图片对应相机的位姿关系与特征点的3D坐标，利用这些位姿关系，可以完成接下来的深度图计算过程。对于单张图片无法计算深度图，深度图的计算首先需要为每张图片选取其参考图（Reference Images），而后根据参考图与自身的旋转平移关系（通过SfM得到），计算每张图片的深度图。对于双目相机，通过双目图片得到深度图，双目成像互为参考图；然而对于无序的图片集，参考图的选取至关重要。本文参考Shen\cite{shen-Accurate}的方法设置参考图阈值，假设有$n$张图片，$\theta_{ij}, j=1,...,n$表示第$i$张图片与其他图片$1,..,n$的相机主轴夹角，$\theta_{ij}$用$i$ 与$j$图片匹配的特征点之间夹角的平均值表示。同时每张图片与其参考图对应相机的距离称为基线，记为$d_{ij}$，基线的距离太长则两张图片重叠区域太小，太短则使重建精度降低，据此满足$5^{\circ}<\theta_{ij}<60^\circ$，$d_{ij}<0.05\bar{d}$或$d_{ij}>2\bar{d}$的图片作为参考图，按照$\theta_{ij}\dot d_{ij}$降序排序参考图，取前10张（如果有）作为参考图。
