@@ -38,7 +38,7 @@
 
 \section{地理空间三维重建实验结果}
 \subsection{地理空间三维重建实验平台搭建}
-\subsubsection{计算平台}
+
 \begin{figure}[!htbp]
 	\centering
     \includegraphics[width=4.0in]{chapter5/reconstruction/experiment.png}
@@ -47,15 +47,33 @@
 \end{figure}
 
 本文是用算法由C++/Python实现，SfM与MVS实现是基于Opencv、CeresSolver开源库，本研究使用运行Ubuntu 14.04 LTS操作系统的台式机，台式机CPU型号为intel 酷睿i5-4570，CPU主频为3.2GHz，并配置8GB单通道内存，没有配置独立显卡。航拍图像采集工具为大疆（DJI）M100无人机，如图~\ref{djim100}所示。图像分辨率为$4000\times 2240$，直接存储于无人机相机的16GB SD卡中，用于本文实验后处理。
-\subsubsection{三维重建精度}
+
+\subsection{三维重建效果及精度分析}
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=5.8in]{chapter5/reconstruction/time-consume.png}
+	\caption{实验耗时测量}
+	\label{fig:time-consume}
+\end{figure}
+图~\ref{fig:time-consume}表示SfM过程两个数据集的耗时情况，其中数据集1表示雾岚山庄（56张图片），数据集2表示自动化学院（79张图片）数据集，图片分辨率为$2400\times 1350$。蓝色表示提取所有图片的SIFT特征点并存储的耗时，黄色的耗时包括使用FLANN匹配特征点，并使用对极约束去除错误匹配，而后将所有图片的匹配关系用track序号表示的过程，绿色表示接下来的重建过程，包括初始化、增量式重建过程，系统使用Python虚拟的多线程（4线程）实现。
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=5.8in]{chapter5/reconstruction/feature-filter.png}
+	\caption{匹配特征点数量变化}
+	\label{fig:feature-filter}
+\end{figure}
+重建的基础是正确的匹配数据集中所有图片的特征点，所以过滤错误的匹配特征点至关重要，图~\ref{fig:feature-filter}展示了不同方法过滤错误匹配特征点对的情况，使用的数据集与上文描述相同。绿色表示使用Lowe提出的最近邻与次近邻比例小于$0.8$得到的匹配特征点数目。经过对极约束后剩下的特征点数目为黄色表示，即图片特征点与其对应极线距离不大于9个像素的特征点数目。基于对极约束刷选结果，通过匹配关系为每个特征点设置一个track序号，如果同一个track序号对应特征点所在视图存在名称相同的现象，则说明该匹配关系存在错误，删除该track序号对应的所有匹配特征点，剩余的特征点。
+
 \begin{figure}[!htbp]
 	\centering
 	\subfigure[稀疏点云]{
 		\label{fig:sparse} %% label for first subfigure
-		\includegraphics[width=2.5in]{chapter5/reconstruction/sparse_perspect.png}}
+		\includegraphics[width=2.95in]{chapter5/reconstruction/sparse_perspect.png}}
 	\subfigure[稠密点云]{
 		\label{fig:dense} %% label for first subfigure
-		\includegraphics[width=2.5in]{chapter5/reconstruction/dense_perspect.png}}
+		\includegraphics[width=2.95in]{chapter5/reconstruction/dense_perspect.png}}
 	\caption{实验结果-雾岚}
 	\label{fig:wulan} %% label for entire figure
 \end{figure}
@@ -65,12 +83,14 @@
 \begin{figure}[!htbp]
 \centering
 \subfigure[]{
-\includegraphics[width=2.6in]{chapter5/reconstruction/DJI_0104.JPG}
+\includegraphics[width=2.95in]{chapter5/reconstruction/DJI_0104.JPG}
 \label{example-gcp-image}}
-\subfigure[]{\includegraphics[width=2.6in]{chapter5/reconstruction/sixbuild.PNG}
+\subfigure[]{\includegraphics[width=2.95in]{chapter5/reconstruction/sixbuild.PNG}
 \label{example-gcp-sixbuild}}
 \caption{地面控制点位置}
 \end{figure}
+
+本文在图~\ref{fig:wulan}场景中设置了9个地面控制点，最后根据成像模型测得这9个点的坐标与实际使用RTK GPS接收机测量的真实结果对比，如表~\ref{table:gcp_error}所示，每个测试点的精度分为东向与北向，二者的平方根表示在表最后一列为绝对误差，最后计算9个控制点的平均绝对误差为$1.586m$，由于地面控制点分布较均匀，而地图中某些区域，一般是边缘区域变形较大，导致平均误差较大。
 
 \begin{table}[!htbp]
 	\caption{地面控制点坐标}
@@ -94,7 +114,6 @@
 	\label{table:gcp}
 \end{table}
 
-本文在图~\ref{fig:wulan}场景中设置了9个地面控制点，最后根据成像模型测得这9个点的坐标与实际使用RTK GPS接收机测量的真实结果对比，如表~\ref{table:gcp_error}所示，每个测试点的精度分为东向与北向，二者的平方根表示在表最后一列为绝对误差，最后计算9个控制点的平均绝对误差为$1.586m$，由于地面控制点分布较均匀，而地图中某些区域，一般是边缘区域变形较大，导致平均误差较大。
 
 \begin{table}[!htbp]
 	\caption{地面控制点误差测量}
@@ -118,19 +137,18 @@
 	\label{table:gcp_error}
 \end{table}
 
-
+与上文雾岚山庄数据集处理方法相似，通过79张图片可以得到自动化学院的三维地图结构，图~\ref{fig:sparse1}为稀疏点云在RVIZ中的显示效果，图~\ref{fig:dense1}为稠密点云在Meshlab中的显示效果图。该数据集同样设置地面控制点以衡量构图精度，共有三个地面控制点，分布如图\ref{example-gcp-sixbuild}所示，该图是展示在Google Earth中的效果，可以看出没有设置落在构图边缘的控制点，控制点整体分布均匀。
 \begin{figure}[!htbp]
 	\centering
 	\subfigure[稀疏点云]{
 		\label{fig:sparse1} %% label for first subfigure
-		\includegraphics[width=2.5in]{chapter5/reconstruction/sparse_perspect1.png}}
+		\includegraphics[width=2.95in]{chapter5/reconstruction/sparse_perspect1.png}}
 	\subfigure[稠密点云]{
 		\label{fig:dense1} %% label for first subfigure
-		\includegraphics[width=2.5in]{chapter5/reconstruction/dense_perspect1.png}}
+		\includegraphics[width=2.95in]{chapter5/reconstruction/dense_perspect1.png}}
 	\caption{实验结果-自动化学院}
 	\label{fig:6building} %% label for entire figure
 \end{figure}
-
 
 \begin{table}[!htbp]
 	\caption{地面控制点误差测量}
@@ -148,9 +166,8 @@
 	\label{table:gcp_error_six}
 \end{table}
 
-与上文雾岚山庄数据集处理方法相似，通过79张图片可以得到自动化学院的三维地图结构，图~\ref{fig:sparse1}为稀疏点云在RVIZ中的显示效果，图~\ref{fig:dense1}为稠密点云在Meshlab中的显示效果图。该数据集同样设置地面控制点以衡量构图精度，共有三个地面控制点，分布如图\ref{example-gcp-sixbuild}所示，该图是展示在Google Earth中的效果，可以看出没有设置落在构图边缘的控制点，控制点整体分布均匀。最后通过实验可以得到井队对比结果，如表~\ref{table:gcp_error_six} 所示，各列数据分别表示地面控制点的真实测量值与实验三维重建得到的模型对应点的东向、北向以及绝对误差值。由于三个点没有收到构图边缘变形的影响，所以结果稍好于好于雾岚山庄，得到平均控制点误差为$0.867m$。实际上由于本实验使用图片以及图片EXIF 信息中的经纬高数据，但是实际上EXIF 中的经纬高数据不是很准确，大约误差在$5m$ 左右，如果想要得到结果更高的地图，需要在构图时引入RTK，改善构图的精度。
+最后通过实验得到真实值与测量值的对比结果，如表~\ref{table:gcp_error_six} 所示，各列数据分别表示地面控制点的真实测量值与实验三维重建得到的模型对应点的东向、北向以及绝对误差值。由于三个点没有收到构图边缘变形的影响，所以结果稍好于好于雾岚山庄，得到平均控制点误差为$0.867m$。实际上由于本实验使用图片以及图片EXIF 信息中的经纬高数据，但是实际上EXIF 中的经纬高数据不是很准确，大约误差在$5m$ 左右，如果想要得到结果更高的地图，需要在构图时引入RTK，改善构图的精度。
 
-\subsection{三维重建效果及精度分析}
 
 \section{道路提取精度分析}
 

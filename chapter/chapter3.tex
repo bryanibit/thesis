@@ -239,27 +239,28 @@ Laplacian of Gaussian (LoG)ÊÇ¶ş½×µ¼ÊıµÄÏßĞÔ×éºÏ£¬Ò²ÊÇ¼ì²â°ßµã(blob)µÄ¼ì²â×Ó£¬¸ø³
 
 \begin{equation}
 L(x,y,\sigma) = G(x,y,\sigma)*I(x,y)
-\label{laplacian}
+%\label{laplacian}
 \end{equation}
 ÆäÖĞ£¬
 \begin{equation}
 G(x,y,\sigma) = \frac{1}{2\pi \sigma ^2}e^{\frac{-(x^2 + y^2)}{2 {\sigma}^2}}
-\label{laplacian}
+%\label{laplacian}
 \end{equation}
 
 ¾İ´Ë¿É¼ÆËãLaplacianËã×ÓÎª
 \begin{equation}
 {\nabla}^2 L(x,y,\sigma)=L_{xx}(x,y,\sigma)+L_{yy}(x,y,\sigma)
-\label{laplacian}
+%\label{laplacian}
 \end{equation}
 
 Õâ¶ÔÓÚ´óĞ¡Îª$\sqrt{2\sigma}$µÄ°ßµãÓĞ×îÇ¿µÄÏìÓ¦£¬È»¶ø¸ÃËã×ÓÑÏÖØÒÀÀµÍ¼ÏñÖĞ°ßµã´óĞ¡ÓëÓÃÀ´Æ½»¬Í¼ÏñµÄ¸ßË¹ºË´óĞ¡£¬¼´´óĞ¡²»Í¬µÄ¸ßË¹ºËº¯Êı±»ÓÃÀ´Ñ°ÕÒ¶ÔÓ¦´óĞ¡µÄblob¡£ÎªÁËÔÚÒ»·ùÍ¼ÏñÖĞ×Ô¶¯¼ì²â²»Í¬´óĞ¡µÄ°ßµã£¬Ò»ÖÖ¶à³ß¶ÈµÄ·½·¨±»Ìá³öÀ´\cite{Lindeberg-Feature detection}£¬ÆäÍ¨¹ı³ß¶È²»Í¬µÄ¹éÒ»»¯µÄLaplacianËã×Ó¶ÔÍ¼Æ¬½øĞĞÆ½»¬´Ó¶øÔÚ²»Í¬³ß¶È¿Õ¼äÕÒµ½´óĞ¡²»Í¬µÄblob£¬³ß¶È¹éÒ»»¯µÄ¸ßË¹ºËº¯ÊıÎªÊ½~\ref{nor-lap-equation}¡£
 
 \begin{equation}
 {\nabla}^{2}_{norm} L(x,y,\sigma)={\sigma}^2 L_{xx}(x,y,\sigma)+L_{yy}(x,y,\sigma)
-\label{laplacian}
+\label{nor-lap-equation}
 \end{equation}
-´óµÄ$\sigma$¶ÔÓ¦Í¼Æ¬µÄ´ÖÂÔÌØÕ÷£¬Ğ¡$sigma$¶ÔÓ¦Í¼Æ¬µÄ¾«Ï¸ÌØÕ÷¡£Í¬Ê±LoGËã×ÓÊÇ¶Ô³ÆµÄ£¬ËùÒÔËü¾ßÓĞblobĞı×ª¶ÔÆäÃ»ÓĞÓ°Ïì£¬µ«ÊÇLoGËã×ÓºÄ·Ñ¼ÆËã×ÊÔ´£¬ÎªÁË¼ÓËÙ¼ÆËã²¢ÔÚ³ß¶È¿Õ¼ä¼ì²âµ½ÎÈ¶¨µÄĞËÈ¤µã£¬Lowe\cite{Lowe-DistinctiveImageFeatures}Ìá³öÁË¸ßË¹²î·Ö³ß¶È¿Õ¼ä£¬¼ò³ÆDoG scale-space¡£ÈçÊ½~\ref{gaussian}ËùÊ¾£¬ÀûÓÃ²»Í¬³ß¶ÈµÄ¸ãËÀ²î·ÖºËº¯ÊıÓëÍ¼Ïñ¾í»ıÉú³É¡£
+
+Öµ½Ï´óµÄ$\sigma$¶ÔÓ¦Í¼Æ¬µÄ´ÖÂÔÌØÕ÷£¬½ÏĞ¡$\sigma$¶ÔÓ¦Í¼Æ¬µÄ¾«Ï¸ÌØÕ÷¡£Í¬Ê±LoGËã×ÓÊÇ¶Ô³ÆµÄ£¬ËùÒÔËü¾ßÓĞblobĞı×ª¶ÔÆäÃ»ÓĞÓ°Ïì£¬µ«ÊÇLoGËã×ÓºÄ·Ñ¼ÆËã×ÊÔ´£¬ÎªÁË¼ÓËÙ¼ÆËã²¢ÔÚ³ß¶È¿Õ¼ä¼ì²âµ½ÎÈ¶¨µÄĞËÈ¤µã£¬Lowe\cite{Lowe-DistinctiveImageFeatures}Ìá³öÁË¸ßË¹²î·Ö³ß¶È¿Õ¼ä£¬¼ò³ÆDoG scale-space¡£ÈçÊ½~\ref{gaussian}ËùÊ¾£¬ÀûÓÃ²»Í¬³ß¶ÈµÄ¸ãËÀ²î·ÖºËº¯ÊıÓëÍ¼Ïñ¾í»ıÉú³É¡£
 \begin{equation}
 \begin{split}
 D(x,y,\sigma) &= (G(x,y,k\sigma)-G(x,y,\sigma)*I(x,y)) \\
@@ -319,12 +320,13 @@ D(x,y,\sigma) &= (G(x,y,k\sigma)-G(x,y,\sigma)*I(x,y)) \\
 
 ÔÚ´Ë¼òµ¥½éÉÜ½üËÆ×î½üÁÚµÄ¿ìËÙ¿â£¨Fast Library for Approximate Nearest Neighbors, FLANN£©£¬FLANN¾ßÓĞÒ»ÖÖÄÚ²¿»úÖÆ£¬¸Ã»úÖÆ¿ÉÒÔ¸ù¾İÊı¾İ±¾ÉíÑ¡ÔñºÏÊÊµÄËã·¨À´´¦ÀíÊı¾İ¼¯£¬»ùÓÚFLANNµÄÆ¥Åä·Ç³£×¼È·¡¢¿ìËÙ¡£FLANNÔÚÊ¹ÓÃµÄÊ±ºòĞèÒªÅäÖÃÁ½¸ö²ÎÊı£ºindexParamsºÍsearchParams¡£Ê¹ÓÃFLANNÊ±£¬indexParams¿ÉÒÔÑ¡ÔñÎªLinearIndex¡¢KTreeIndex¡¢KMeansIndex¡¢CompositeIndexºÍAutotuneIndex£¬ÆäÖĞKTreeIndexÁé»îÇÒ¿É±»²¢ĞĞ´¦Àí¡£¶ÔÓÚsearchParams£¬ÓÃÀ´Ö¸¶¨Ë÷ÒıÊ÷±»±éÀúµÄ´ÎÊı£¬¼´checkÖµ£¬¸ÃÖµÔ½´óÔòÆ¥ÅäµÄÊ±¼äÔ½³¤£¬µ±È»Ò²Ô½×¼È·¡£
 
-µ±È»¼´Ê¹ÓÃÉÏÃæµÄ·½·¨£¬Ò²ÎŞ·¨±£Ö¤ËùÓĞµÄÆ¥Åä¶¼ÊÇÕıÈ·µÄ£¬Lowe\cite{Lowe-ObjectRecognition}ÔÚ1999Ìá³öÒ»ÖÖ¼òµ¥µÄ·½·¨¿ÉÒÔÌŞ³ı´ó²¿·ÖµÄ´íÎóÆ¥Åä¡£¶ÔÓÚÄ³¸öÌØÕ÷µãÏòÁ¿£¬Èç¹û²éÑ¯Êı¾İ¼¯ÖĞÓëÆä¾àÀë×î½üµÄÌØÕ÷µãÏòÁ¿Óë´Î½üµÄÌØÕ÷µãÏòÁ¿µÄ¾àÀëÖ®±È´óÓÚ0.7£¬¿ÉÒÔ±ÜÃâ½Ó½ü90\%µÄ´íÎóÆ¥Åä£¬µ«ÊÇÕıÈ·µÄÆ¥ÅäÒ²Òò´Ë±äÉÙ¡£Ê¹ÓÃFLANN²¢²ÉÓÃLoweÌá³öµÄ·½·¨¿ÉÒÔÈ¥µô´ó²¿·ÖµÄ´íÎóÆ¥Åä£¬ÈçÍ¼~\ref{matches}ËùÊ¾¡£
-%\begin{figure}
-%\includegraphics[width=5.0in]{chapter3/matches.jpg}
-%\caption{FLANNÆ¥Åä}
-%\label{matches}
-%\end{figure}
+µ±È»¼´Ê¹ÓÃÉÏÃæµÄ·½·¨£¬Ò²ÎŞ·¨±£Ö¤ËùÓĞµÄÆ¥Åä¶¼ÊÇÕıÈ·µÄ£¬Lowe\cite{Lowe-ObjectRecognition}ÔÚ1999Ìá³öÒ»ÖÖ¼òµ¥µÄ·½·¨¿ÉÒÔÌŞ³ı´ó²¿·ÖµÄ´íÎóÆ¥Åä¡£¶ÔÓÚÄ³¸öÌØÕ÷µãÏòÁ¿£¬Èç¹û²éÑ¯Êı¾İ¼¯ÖĞÓëÆä¾àÀë×î½üµÄÌØÕ÷µãÏòÁ¿Óë´Î½üµÄÌØÕ÷µãÏòÁ¿µÄ¾àÀëÖ®±È´óÓÚ0.7£¬¿ÉÒÔ±ÜÃâ½Ó½ü90\%µÄ´íÎóÆ¥Åä£¬µ«ÊÇÕıÈ·µÄÆ¥ÅäÒ²Òò´Ë±äÉÙ¡£Ê¹ÓÃFLANN²¢²ÉÓÃLoweÌá³öµÄ·½·¨¿ÉÒÔÈ¥µô´ó²¿·ÖµÄ´íÎóÆ¥Åä£¬Í¼~\ref{matches-single}Õ¹Ê¾ÁËËæ»úÑ¡È¡10¸öÆ¥Åä¶ÔµÄ½á¹û¡£
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=4.5in]{chapter3/matches/matches.jpg}
+\caption{FLANNÆ¥Åä}
+\label{matches-single}
+\end{figure}
 
 ÒÔÉÏÌáµ½µÄ·½·¨£¬Æ¥ÅäºóÈÔÈ»´æÔÚ´íÎóµÄÆ¥Åäµã£¬ÓÉÓÚ¸Õ¸ÕµÄÆ¥ÅäÊÇµ¥´¿»ùÓÚÌØÕ÷ÃèÊö×ÓµÄÏòÁ¿Öµ£¬ÎŞ·¨±£Ö¤Æ¥ÅäµÄÁ½¸öÌØÕ÷µã¶ÔÓ¦ÏàÍ¬µÄ³¡¾°µã¡£Òò´ËSfMÊ¹ÓÃÍ¶Ó°¼¸ºÎµÄÖªÊ¶¹À¼ÆÁ½ÕÅÍ¼ÏñµÄÌØÕ÷µã±ä»»¡£ÒÀÀµÍ¼Ïñ¶ÔµÄ¿Õ¼äÅäÖÃ£¬²»Í¬Í¶Ó°ÃèÊöÍ¼Æ¬¼ä²»Í¬µÄ¼¸ºÎ¹ØÏµ¡£ÀıÈç£¬µ¥Ó¦ĞÔ±ä»»£¨ÓÖ³ÆÉäÓ°±ä»»\cite{Richard-MultipleView}£©ÃèÊöÏà»úÅÄÉãµÄ¶şÎ¬Í¼Æ¬Ö®¼ä´¿Ğı×ªºÍÆ½ÒÆ±ä»»¡£¶Ô¼«¼¸ºÎÍ¨¹ı»ù±¾¾ØÕó£¨Essential matrix£©$E$ºÍ»ù´¡¾ØÕó£¨Fundamental matrix£©$F$ ÃèÊöÒÆ¶¯Ïà»úµÄ¹ØÏµ£¬²¢¿ÉÒÔÍ¨¹ıÈı½¹ÕÅÁ¿À©Õ¹µ½ÈıÊÓÍ¼µÄ¹ØÏµ¡£ÎŞÂÛÄÄÖÖ±ä»»¹ØÏµ£¬ÓĞĞ§µÄ±ä»»¿ÉÒÔÂú×ã´ó²¿·ÖÆ¥ÅäµãµÄ¼¸ºÎ¹ØÏµ£¬ÄÇÃ´ÕâÖÖ±ä»»»òÕßÆ¥Åäµã±»ÈÏÎªÊÇÓĞĞ§µÄ¡£±¾ÎÄÔÚÉ¾³ı´íÎóÆ¥ÅäÊ±£¬Ê¹ÓÃµÄÊÇµ¥Ó¦ĞÔ±ä»»£¬Ò»ÏÂ¼òµ¥½éÉÜÒ»ÏÂµ¥Ó¦ĞÔ±ä»»µÄÏêÏ¸ÄÚÈİ¡£
 
@@ -445,22 +447,22 @@ SVDÓÖ³ÆÆæÒìÖµ·Ö½â£¬ÔÚ´Ë²»ÏêÏ¸½éÉÜ£¬SVD¿ÉÒÔ½«Ò»¸ö¾ØÕó£¬ÎŞÂÛÊÇ·ñÂúÖÈ£¬¾ù¿ÉÒÔ·Ö½âÎª
 \begin{figure}[!htbp]
 \centering
  \subfigure[]{
-	\includegraphics[width=2.8in]{chapter3/matches/000400_H_000415.png}
+	\includegraphics[width=2.95in]{chapter3/matches/000400_H_000415.png}
+    }
+\subfigure[]{
+	\includegraphics[width=2.95in]{chapter3/matches/000400_U_000415.png}
     }
  \subfigure[]{
-	\includegraphics[width=2.8in]{chapter3/matches/000400_H_000424.png}
+	\includegraphics[width=2.95in]{chapter3/matches/000400_H_000424.png}
+    }
+\subfigure[]{
+	\includegraphics[width=2.95in]{chapter3/matches/000400_U_000424.png}
     }
  \subfigure[]{
-	\includegraphics[width=2.8in]{chapter3/matches/000415_H_000424.png}
-    }
+	\includegraphics[width=2.95in]{chapter3/matches/000415_H_000424.png}
+    } 
  \subfigure[]{
-	\includegraphics[width=2.8in]{chapter3/matches/000400_U_000415.png}
-    }
- \subfigure[]{
-	\includegraphics[width=2.8in]{chapter3/matches/000400_U_000424.png}
-    }
- \subfigure[]{
-	\includegraphics[width=2.8in]{chapter3/matches/000415_U_000424.png}
+	\includegraphics[width=2.95in]{chapter3/matches/000415_U_000424.png}
     }
 %\includegraphics[width=5.0in]{chapter3/siftDescriptor.jpg}
 \caption{RANSACÉ¸Ñ¡µÄµ¥Ó¦ĞÔ±ä»»½á¹û}
@@ -472,14 +474,14 @@ SVDÓÖ³ÆÆæÒìÖµ·Ö½â£¬ÔÚ´Ë²»ÏêÏ¸½éÉÜ£¬SVD¿ÉÒÔ½«Ò»¸ö¾ØÕó£¬ÎŞÂÛÊÇ·ñÂúÖÈ£¬¾ù¿ÉÒÔ·Ö½âÎª
 	\centering
 	\begin{tabular}{|c|c|c|c|}
 		\hline
-		\diagbox[dir=SE]{\bfseries Í¼Æ¬Ãû}{\bfseries ÌØÕ÷µã}{\bfseries Í¼Æ¬Ãû} & \bfseries 400 & \bfseries 415 & \bfseries 424\\
+		\diagbox[dir=SE]{\bfseries Í¼Æ¬Ãû}{\bfseries ÌØÕ÷µã}{\bfseries Í¼Æ¬Ãû} & \bfseries KITTI-0400 & \bfseries KITTI-0415 & \bfseries KITTI-0424\\
 		\hline
 %		\hline
-		\bfseries 400&  $861$&  $55/32$ & $75/46$\\
+		\bfseries KITTI-0400&  $861$&  $55/32$ & $75/46$\\
 		\hline
-		\bfseries 415 & $ ¿Õ $ & $370$ & $19/10$ \\
+		\bfseries KITTI-0415 & $ ¿Õ $ & $370$ & $19/10$ \\
 		\hline
-        \bfseries 424 & $¿Õ$ & $¿Õ$ & $599$ \\
+        \bfseries KITTI-0424 & $¿Õ$ & $¿Õ$ & $599$ \\
 		\hline
 	\end{tabular}
 	\label{table:matches}
@@ -575,7 +577,7 @@ f_{33}
 ÔÚµÃµ½»ù±¾¾ØÕó$F$ºó£¬¸ù¾İÊ½~\ref{fundunmental-equation}ÒÔ¼°ÒÑÖªÏà»úÄÚ²Î¾ØÕó$K$µÄÇé¿öÏÂ£¬¿ÉÒÔµÃµ½±¾ÖÊ¾ØÕó$E$£¬´Ó±¾ÖÊ¾ØÕó¿ÉÒÔ»Ö¸´Ïà»úÖ®¼äµÄĞı×ªÆ½ÒÆ¹ØÏµ¡£
 \begin{figure}[!htbp]
 \centering
-\includegraphics[width=5.4in]{chapter3/essentialMatrix.png}
+\includegraphics[width=5.0in]{chapter3/essentialMatrix.png}
 \caption{±¾ÖÊ¾ØÕó»Ö¸´Ğı×ªÆ½ÒÆ¹ØÏµ}
 \label{essentialMatrix}
 \end{figure}
@@ -634,13 +636,15 @@ Y
 0 & 0 & 0 \\
 \end{matrix}\right]$ËùÒÔ$R$ÓĞÁ½ÖÖ¿ÉÄÜÖµ£¬ÕâÊÇÒòÎª$R=UYV^T$¡£
 
-×ÛÉÏÍ¨¹ı$E$»Ö¸´Ğı×ª¾ØÕó$R$ºÍÆ½ÒÆ¾ØÕó$t$ÓĞËÄÖÖ¿ÉÄÜµÄ½â£¬Í¼~\ref{essentialfromRT}ĞÎÏóµØÏÔÊ¾ÁË·Ö½â±¾ÖÊ¾ØÕóµÃµ½ËÄ¸ö½âµÄ¹ı³Ì¡£±£³Ö³ÉÏñÆ½ÃæµÄµã£¨ºìµã£©²»±äµÄÇé¿öÏÂ£¬¿ÉÒÔ»­³öËÄÖÖ¿ÉÄÜµÄÇé¿ö£¬µ«ÊÇÖ»ÓĞ(a)ÊÇÕıÈ·µÄ£¬ÒòÎªÆäÓĞÕıÉî¶È£¬ËùÒÔ»Ö¸´Ğı×ªÓëÆ½ÒÆºóĞèÒª½«3Dµã´øÈëÍ¼ÖĞËÄ¸ö½âÖĞ£¬¼ì²â¸ÃµãÔÚÁ½¸öÏà»úÖĞµÄÉî¶È£¬¼´¿ÉÈ·¶¨$R$ºÍ$t$¡£Êµ¼ÊÉÏÀûÓÃ$E$µÄÄÚÔÚĞÔÖÊ£¬ÆäÖ»ÓĞÎå¸ö×ÔÓÉ¶È£ºĞı×ª(3)£¬Æ½ÒÆ(1)£¬Ïà»úÖĞĞÄ(1)¡£µ«ÊÇÊ¹ÓÃÎåµã·¨ĞÎÊ½¸´ÔÓ£¬ËùÒÔ±¾ÎÄ»¹ÊÇ²ÉÓÃÉÏÎÄ½éÉÜµÄ°Ëµã·¨¼ÆËãĞı×ªÓëÆ½ÒÆ¹ØÏµ¡£
 \begin{figure}[!htbp]
 \centering
-\includegraphics[width=5.2in]{chapter3/essentialfromRT.png}
+\includegraphics[width=5.0in]{chapter3/essentialfromRT.png}
 \caption{·Ö½â±¾ÖÊ¾ØÕóµÃµ½µÄËÄ¸ö½â}
 \label{essentialfromRT}
 \end{figure}
+
+×ÛÉÏÍ¨¹ı$E$»Ö¸´Ğı×ª¾ØÕó$R$ºÍÆ½ÒÆ¾ØÕó$t$ÓĞËÄÖÖ¿ÉÄÜµÄ½â£¬Í¼~\ref{essentialfromRT}ĞÎÏóµØÏÔÊ¾ÁË·Ö½â±¾ÖÊ¾ØÕóµÃµ½ËÄ¸ö½âµÄ¹ı³Ì¡£±£³Ö³ÉÏñÆ½ÃæµÄµã£¨ºìµã£©²»±äµÄÇé¿öÏÂ£¬¿ÉÒÔ»­³öËÄÖÖ¿ÉÄÜµÄÇé¿ö£¬µ«ÊÇÖ»ÓĞ(a)ÊÇÕıÈ·µÄ£¬ÒòÎªÆäÓĞÕıÉî¶È£¬ËùÒÔ»Ö¸´Ğı×ªÓëÆ½ÒÆºóĞèÒª½«3Dµã´øÈëÍ¼ÖĞËÄ¸ö½âÖĞ£¬¼ì²â¸ÃµãÔÚÁ½¸öÏà»úÖĞµÄÉî¶È£¬¼´¿ÉÈ·¶¨$R$ºÍ$t$¡£Êµ¼ÊÉÏÀûÓÃ$E$µÄÄÚÔÚĞÔÖÊ£¬ÆäÖ»ÓĞÎå¸ö×ÔÓÉ¶È£ºĞı×ª(3)£¬Æ½ÒÆ(1)£¬Ïà»úÖĞĞÄ(1)¡£µ«ÊÇÊ¹ÓÃÎåµã·¨ĞÎÊ½¸´ÔÓ£¬ËùÒÔ±¾ÎÄ»¹ÊÇ²ÉÓÃÉÏÎÄ½éÉÜµÄ°Ëµã·¨¼ÆËãĞı×ªÓëÆ½ÒÆ¹ØÏµ¡£
+
 
 \subsection{Èı½Ç¶¨Î»·¨}
 ÔÚµÃµ½Ïà»úµÄÎ»×Ëºó£¬ĞèÒª»Ö¸´Æ¥ÅäµãµÄÈıÎ¬×ø±êĞÅÏ¢£¬¸Ã·½·¨³ÆÎªÈı½Ç²âÁ¿£¨triangulation£©£¬Èı½Ç²âÁ¿Ê±Ö¸²»Í¬ÊÓ½Ç¹Û²ìÍ¬Ò»¸öµãµÄ¼Ğ½Ç£¬È·¶¨¸ÃµãµÄÎ»ÖÃ¡£Èı½Ç²âÁ¿×îÔçÓÉ¸ßË¹Ìá³ö²¢Ó¦ÓÃÓÚÌìÎÄÑ§ÖĞ¡£ÔÚSfMÖĞ£¬ÎÒÃÇÊ¹ÓÃÈı½Ç²âÁ¿¹À¼ÆÆ¥ÅäµãµÄÏñËØÉî¶È¡£
