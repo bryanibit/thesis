@@ -70,10 +70,10 @@
 	\centering
 	\subfigure[稀疏点云]{
 		\label{fig:sparse} %% label for first subfigure
-		\includegraphics[width=2.5in]{chapter5/reconstruction/sparse_perspect.png}}
+		\includegraphics[width=2.95in]{chapter5/reconstruction/sparse_perspect.png}}
 	\subfigure[稠密点云]{
 		\label{fig:dense} %% label for first subfigure
-		\includegraphics[width=2.5in]{chapter5/reconstruction/dense_perspect.png}}
+		\includegraphics[width=2.95in]{chapter5/reconstruction/dense_perspect.png}}
 	\caption{实验结果-雾岚}
 	\label{fig:wulan} %% label for entire figure
 \end{figure}
@@ -83,9 +83,9 @@
 \begin{figure}[!htbp]
 \centering
 \subfigure[]{
-\includegraphics[width=2.6in]{chapter5/reconstruction/DJI_0104.JPG}
+\includegraphics[width=2.95in]{chapter5/reconstruction/DJI_0104.JPG}
 \label{example-gcp-image}}
-\subfigure[]{\includegraphics[width=2.6in]{chapter5/reconstruction/sixbuild.PNG}
+\subfigure[]{\includegraphics[width=2.95in]{chapter5/reconstruction/sixbuild.PNG}
 \label{example-gcp-sixbuild}}
 \caption{地面控制点位置}
 \end{figure}
@@ -114,7 +114,6 @@
 	\label{table:gcp}
 \end{table}
 
-与上文雾岚山庄数据集处理方法相似，通过79张图片可以得到自动化学院的三维地图结构，图~\ref{fig:sparse1}为稀疏点云在RVIZ中的显示效果，图~\ref{fig:dense1}为稠密点云在Meshlab中的显示效果图。该数据集同样设置地面控制点以衡量构图精度，共有三个地面控制点，分布如图\ref{example-gcp-sixbuild}所示，该图是展示在Google Earth中的效果，可以看出没有设置落在构图边缘的控制点，控制点整体分布均匀。最后通过实验可以得到井队对比结果，如表~\ref{table:gcp_error_six} 所示，各列数据分别表示地面控制点的真实测量值与实验三维重建得到的模型对应点的东向、北向以及绝对误差值。由于三个点没有收到构图边缘变形的影响，所以结果稍好于好于雾岚山庄，得到平均控制点误差为$0.867m$。实际上由于本实验使用图片以及图片EXIF 信息中的经纬高数据，但是实际上EXIF 中的经纬高数据不是很准确，大约误差在$5m$ 左右，如果想要得到结果更高的地图，需要在构图时引入RTK，改善构图的精度。
 
 \begin{table}[!htbp]
 	\caption{地面控制点误差测量}
@@ -138,19 +137,18 @@
 	\label{table:gcp_error}
 \end{table}
 
-
+与上文雾岚山庄数据集处理方法相似，通过79张图片可以得到自动化学院的三维地图结构，图~\ref{fig:sparse1}为稀疏点云在RVIZ中的显示效果，图~\ref{fig:dense1}为稠密点云在Meshlab中的显示效果图。该数据集同样设置地面控制点以衡量构图精度，共有三个地面控制点，分布如图\ref{example-gcp-sixbuild}所示，该图是展示在Google Earth中的效果，可以看出没有设置落在构图边缘的控制点，控制点整体分布均匀。
 \begin{figure}[!htbp]
 	\centering
 	\subfigure[稀疏点云]{
 		\label{fig:sparse1} %% label for first subfigure
-		\includegraphics[width=2.5in]{chapter5/reconstruction/sparse_perspect1.png}}
+		\includegraphics[width=2.95in]{chapter5/reconstruction/sparse_perspect1.png}}
 	\subfigure[稠密点云]{
 		\label{fig:dense1} %% label for first subfigure
-		\includegraphics[width=2.5in]{chapter5/reconstruction/dense_perspect1.png}}
+		\includegraphics[width=2.95in]{chapter5/reconstruction/dense_perspect1.png}}
 	\caption{实验结果-自动化学院}
 	\label{fig:6building} %% label for entire figure
 \end{figure}
-
 
 \begin{table}[!htbp]
 	\caption{地面控制点误差测量}
@@ -167,6 +165,8 @@
 	\end{tabular}
 	\label{table:gcp_error_six}
 \end{table}
+
+最后通过实验得到真实值与测量值的对比结果，如表~\ref{table:gcp_error_six} 所示，各列数据分别表示地面控制点的真实测量值与实验三维重建得到的模型对应点的东向、北向以及绝对误差值。由于三个点没有收到构图边缘变形的影响，所以结果稍好于好于雾岚山庄，得到平均控制点误差为$0.867m$。实际上由于本实验使用图片以及图片EXIF 信息中的经纬高数据，但是实际上EXIF 中的经纬高数据不是很准确，大约误差在$5m$ 左右，如果想要得到结果更高的地图，需要在构图时引入RTK，改善构图的精度。
 
 
 \section{道路提取精度分析}
@@ -212,14 +212,13 @@
     \caption{道路提取对比}
 \end{figure*}
 
-使用道路提取的方法得到道路拓扑网络后，图~\ref{resultSift}分别展示了原图，提取道路（图~\ref{fig:subfig:finalroad}）与真实道路（图~\ref{fig:subfig:real}），两幅图中道路拓扑是由单像素构成，通过膨胀真实道路，计算提取道路的像素不在膨胀后的真实道路区域的比例，绘制图~\ref{curve}，其中横轴代表膨胀时使用的核函数的大小，单位是像素，而且一个像素大约代表地理空间16$cm$，核函数越大，膨胀后的真实道路区域越大，不在其区域的提取道路的像素越少。从图中可以看出核函数大小为$10$个像素，即$1.6m$时，有接近$90\%$提取的道路在膨胀区域内，也就是$90\%$的道路误差小于$1.6m$，同时可以看出$80\%$ 的道路误差小于$1m$。
-
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width=2.8in]{chapter5/extraction/result_chart.png}
 \caption{道路提取精度曲线}
 \label{curve}
 \end{figure}
+使用道路提取的方法得到道路拓扑网络后，图~\ref{resultSift}分别展示了原图，提取道路（图~\ref{fig:subfig:finalroad}）与真实道路（图~\ref{fig:subfig:real}），两幅图中道路拓扑是由单像素构成，通过膨胀真实道路，计算提取道路的像素不在膨胀后的真实道路区域的比例，绘制图~\ref{curve}，其中横轴代表膨胀时使用的核函数的大小，单位是像素，而且一个像素大约代表地理空间16$cm$，核函数越大，膨胀后的真实道路区域越大，不在其区域的提取道路的像素越少。从图中可以看出核函数大小为$10$个像素，即$1.6m$时，有接近$90\%$提取的道路在膨胀区域内，也就是$90\%$的道路误差小于$1.6m$，同时可以看出$80\%$ 的道路误差小于$1m$。
 
 \section{本章小结}
 本章主要是本文提出的算法的实验结果与结论的总结说明，可以分为三部分。首先是二维地图构建使用的传感器以及应用于实际比赛的构图结果，并就影响构图精度的因素做了说明。其次是关于三维重建的实验平台与重建结果精度的说明，定量的计算了两个数据集重建精度。最后是道路提取的精度测量，展示了每个过程的实验结果，并就提取的道路精度进行评价。实验的结果验证了本文提出的方法的有效性与真实性。

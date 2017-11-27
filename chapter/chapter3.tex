@@ -1,11 +1,11 @@
 \chapter{基于无人机航拍图像的三维构建}
 
 \section{引言}
-大部分无人车辆行驶依赖环境地图导航与感知\cite{Mattyus-Enhancing-road-maps}，这限制了无人车在未知环境中的行驶。为了解决该问题，当前许多技术利用车载传感器可以构建很大范围的地图，例如SLAM(Simultaneous Localization and Mapping) 和第二章提到的用车载Ladybug构建地图的方法。然而车载传感器仅能获取车辆周边环境信息且易被阻挡，而且在野外或灾害地区等环境中，车辆可通行区域变少。然而无人机拥有比无人车更广阔的视野，不受地面障碍物的影响，可以灵活地从空中俯视地面环境。本章介绍了应用无人机构建三维环境地图，为无人车导航提供先验信息。
+大部分无人车辆行驶依赖环境地图导航与感知\cite{Mattyus-Enhancing-road-maps}，这限制了无人车在未知环境中的行驶。为了解决该问题，当前许多技术利用车载传感器构建大范围地图，例如SLAM(Simultaneous Localization and Mapping) 和第二章提到的用车载Ladybug构建地图的方法。然而车载传感器仅能获取车辆周边环境信息且易被阻挡，而且在野外或灾害地区等环境中，车辆可通行区域变少。然而无人机拥有比无人车更广阔的视野，不受地面障碍物的影响，可以灵活地从空中俯瞰地面。本章介绍了应用无人机构建三维环境地图的方法，为无人车导航提供先验信息。
 
-三维重建涉及到的内容可以分为三部分：稀疏点云的获取，点云稠密化与点云的网格渲染。其中稀疏点云的获取使用的是Structure from Motion(SfM)，在技术层面上与当前热门的Visual-SLAM(VSLAM)比较类似，只是SfM 侧重于三维重建，而SLAM侧重于实时定位，并需要预测下一时刻的位置。SfM可以分为视觉前端与优化后端，前端涉及到的是相机模型，坐标转换，特征提取与匹配以及多视图几何相关的内容，最后得到粗略的相机位姿与3D点坐标，后端涉及到的是优化前端得到的相机位姿与3D点坐标，去除错误的结果等。点云稠密使用的技术称为Multi-View Stereo(MVS)，MVS的方法很多，本文使用的是深度图融合的方法。网格渲染主要用的技术为三角剖分，网格渲染后的三维重建结果比稠密点云存储量小，更易于后续的仿真与处理。
+三维重建涉及到的内容可以分为两部分：稀疏点云的获取与点云稠密化。其中稀疏点云的获取使用的是Structure from Motion(SfM)，在技术层面上与当前热门的Visual-SLAM(VSLAM)比较类似，只是SfM 侧重于三维重建，而SLAM侧重于实时定位，并需要预测下一时刻的位置。SfM可以分为视觉前端与优化后端，前端涉及到的是相机模型，坐标转换，特征提取与匹配以及多视图几何相关的内容，最后得到粗略的相机位姿与3D点坐标，后端涉及到的是优化前端得到的相机位姿与3D点坐标，去除错误的结果等。点云稠密使用的技术称为Multi-View Stereo(MVS)，MVS的实现方式多种多样，本文采用深度图融合的方法，对每张图片寻找参考图，而后根据参考图与SfM恢复的相机位姿计算该张图片的深度图，最后融合所有图片的深度图形成稠密点云。
 \section{相机模型}
-数码相机拍摄的过程中，实际上是一个光学成像的过程，这涉及到摄像机最基本的原件——透镜——的成像原理，如图~\ref{len}所示，这是最基本的透镜成像原理：$Z$是物体距透镜光心的距离，简称物距；$f$是焦距；$b$是相距，即成像平面与透镜光心的距离。三者满足式~\ref{len-equation}
+数码相机拍摄实际是一个光学成像过程，这涉及到摄像机最基本的原件——透镜——的成像原理，如图~\ref{len}所示，这是最基本的透镜成像原理：$Z$是物体距透镜光心的距离，简称物距；$f$是焦距；$b$是相距，即成像平面与透镜光心的距离。三者满足式~\ref{len-equation}。
 \begin{equation}
 \frac{1}{f} = \frac{1}{Z} + \frac{1}{b}
 \label{len-equation}
@@ -17,7 +17,7 @@
 	\caption{透镜成像原理}
 	\label{len}
 \end{figure}
-在机器视觉中，利用摄像机可以将三维场景记录在二维图形上，不同的相机模型导致不同的成像效果，比如第二章中Ladybug使用的球面成像模型，使不同相机的拼接简化为绕光心的旋转。但是常见的相机使用的模型还是小孔成像模型，如图~\ref{pinhole}所示。数码相机的镜头相当于一个凸透镜，感光元件就处在这个凸透镜的焦点附近，将焦距近似为凸透镜中心到感光元件的距离时就成为小孔成像模型。
+在机器视觉中，利用摄像机可以将三维场景记录在二维平面上，不同的相机模型导致不同的成像效果，比如第二章中Ladybug使用的球面成像模型，使不同相机的拼接简化为绕光心的旋转。但是常见的相机模型还是小孔成像模型，如图~\ref{pinhole}所示。数码相机的镜头相当于一个凸透镜，感光元件就处在这个凸透镜的焦点附近，将焦距近似为凸透镜中心到感光元件的距离时就成为小孔成像模型。
 这可以类比为艺术家画一幅画的过程，将眼睛放在图~\ref{pinhole}光心$C$处，在物体与眼睛之间放置一个画布（图~\ref{pinhole}中虚像位置），按照光线直线传播的原则，则物体反射的光线与眼睛的连线交画布一点，如此物体可以在画布上成像。只是相机的成像在光心后面，所以说存在一个虚拟成像平面。
 
 \begin{figure}[!htbp]
@@ -32,7 +32,6 @@
 \frac{-x}{X} = \frac{f}{Z}
 \label{pinhole-equation}
 \end{equation}
-
 其中，$f$是小孔到成像平面的距离，即焦距；$Z$是物体距光心的距离，简称物距；$x$是物体在成像平面的投影长度；$X$是物体实际长度。为了简化以上模型，用图~\ref{firstperson}表示小孔成像的等价模型，其中$C$是相机中心，$P(X,Y,Z)$为空间中的3D点，$p(x,y,1)$表示3D点成像在感光元件上的点，小孔成像近似后，成像平面与相机中心的距离为焦距$f$。该图也表示了两个坐标系，分别为图像坐标系和像素坐标系，在下节中详细介绍。
 \begin{figure}[!htbp]
 	\centering
@@ -42,7 +41,7 @@
 \end{figure}
 
 \section{相关坐标系}
-从上一节知道，仅仅相机内部就存在多个坐标系，那么摄像机在空间中涉及到的坐标系转换问题将在这节详细探讨。相机成像的过程是一个3D物体显示在2D成像平面的过程，在此涉及物体，真实空间与相机三者的位置关。物体在真实空间的位置即是物体在世界坐标系中的位置坐标表达，在图~\ref{firstperson}中，$(X,Y,Z)$为3D点$P$在相机坐标系（$X_c,y_c,Z_c$）下的坐标表示，这里就存在两个三维坐标的转换，即同一个点在世界坐标系与相机坐标系下表达方式的转换关系，如式\ref{R-t-equation}，该变换可以看做三维坐标系的刚体变换。
+从上一节知道，仅仅相机内部就存在多个坐标系，那么摄像机在空间中涉及到的坐标系转换问题将在这节详细探讨。相机成像的过程是一个3D物体显示在2D成像平面的过程，在此涉及物体，真实空间与相机三者的位置关系。物体在真实空间的位置即是物体在世界坐标系中的位置坐标表达，在图~\ref{firstperson}中，$(X,Y,Z)$为3D点$P$在相机坐标系（$X_c,y_c,Z_c$）下的坐标表示，这里就存在两个三维坐标的转换，即同一个点在世界坐标系与相机坐标系下表达方式的转换关系，如式\ref{R-t-equation}，该变换可以看做三维坐标系的刚体变换。
 \begin{equation}
 %\sideset{^a_b}{^c_d}\prod^{n}_{k=1}
 ^{c}P = ^{c}R_w ^w P + ^c T_w
@@ -71,11 +70,11 @@ Z_w \\
 
 从图\ref{firstperson}中可以看到成像平面内的二维坐标系$x^\prime ,y^\prime$，该二维坐标系称为图像坐标系，可以推导相机坐标系与图像坐标系（3D到2D）变换的公式表示：
 \begin{equation}
-x\prime = f\frac{x}{z}
+x\prime = f\frac{x_c}{z_c}
 \label{camera2img-equation}
 \end{equation}
 \begin{equation}
-y\prime = f\frac{y}{z}
+y\prime = f\frac{y_c}{z_c}
 \label{camera2img-equation}
 \end{equation}
 改为矩阵表达形式为
@@ -172,8 +171,8 @@ Z_w \\
 \right]
 \label{transform-equation}
 \end{equation}
-至此我们知道了相机成像过程中某点如何在不同坐标系下转换，从而完成摄像过程。式~\ref{transform-equation}涉及到相机参数$f,p_x,p_y$以及空间变换相关的参数（外参$R,t$），实际上在相机成像过程中除了这些参数，我们还会遇到无法线性建模的参数：像Gopro等鱼眼镜头中，我们可以看到世界中的直线不再是直线，如图。。。。
-这些弯曲的线有一些特别的特性：他们都是被关于中心扭曲的 我们称这种畸变为径向畸变。这意味着像素点是沿着从中心放射的径向成比例扭曲的。为了去除相机的畸变，需要对畸变用多项式进行建模，如式~\ref{radial-equation}。
+至此我们知道了相机成像过程中某点如何在不同坐标系下转换，从而完成摄像过程。式~\ref{transform-equation}涉及到相机参数$f,p_x,p_y$以及空间变换相关的参数（外参$R,t$），实际上在相机成像过程中除了这些参数，我们还会遇到无法线性建模的参数：像Gopro等鱼眼镜头中，我们可以看到世界中的直线不再是直线，如图\label{distortion}所示，
+这些弯曲的线有一些特别的特性：他们都是被关于中心扭曲的，我们称这种畸变为径向畸变。这意味着像素点是沿着从中心放射的径向成比例扭曲的。为了去除相机的畸变，需要对畸变用多项式进行建模，如式~\ref{radial-equation}。
 
 \begin{subequations}
 \label{radial-equation}
@@ -216,9 +215,9 @@ where \quad & r^2 = u^2 + v^2
 \end{figure}
 
 \section{特征点提取}
-SfM首先需要找到图片集中俩俩图片间的几何关系，这样才能估算相机间的运动与成像的三维点坐标。为了找到图片之间的几何关系，现今有许多方法，例如光流法，特征点法等，光流法适用于匀速运送的视频流中，要求帧间运动比较小，从而找出帧间运动关系；特征点法指对图像特征的提取与存储，是图像中比较有代表性的特征。由于本文使用的数据集为无序的航拍图像，特征点法较为适宜使用。特征点提取更通俗的理解为将二维矩阵描述的图像降维为一维特征点描述的图像，突出图像的重点，去除冗余信息的过程。
+SfM首先需要找到图片集中俩俩图片间的几何关系，这样才能估算相机间的运动与成像的三维点坐标。为了找到图片之间的几何关系，现今有许多方法，例如光流法，特征点法等，光流法适用于匀速运动的视频流中，要求帧间运动比较小，从而找出帧间运动关系；特征点法指对图像特征的提取与存储，是图像中比较有代表性的特征。由于本文使用的数据集为无序的航拍图像，特征点法较为适宜使用。特征点提取更通俗的理解为将二维矩阵描述的图像降维为一维特征描述的图像，突出图像的重点，去除冗余信息的过程。
 
-最简单的图像特征为图像的角点，角点就是图像中线的交点，例如大厦最高处的顶点。两幅图像的角点不会随着图像移动而改变，但是角点会随着离相机的距离太近而变得无法识别，所以许多研究者设计了精巧而互有优劣的特征检测与描述方法，比较著名的有SIFT(Scale Invariant Feature Transform)\cite{Lowe-DistinctiveImageFeatures}，SURF\cite{Bay-Speeded-UpRobustFeatures}，ORG\cite{Rublee-ORB:Anefficient}等。相对于简单的角点，这些特征检测具有以下优点\cite{slam14}:
+最简单的图像特征为图像的角点，角点就是图像中线的交点，例如大厦最高处的顶点。两幅图像的角点不会随着图像移动而改变，但是角点会随着离相机的距离太近而变得无法识别，所以许多研究者设计了精巧而互有优劣的特征检测与描述方法，比较著名的有SIFT\cite{Lowe-DistinctiveImageFeatures}，SURF\cite{Bay-Speeded-UpRobustFeatures}，ORG\cite{Rublee-ORB:Anefficient}等。相对于简单的角点，这些特征检测具有以下优点\cite{slam14}:
 \begin{itemize}
 \item 可重复：相同的特征可以在不同的图片中找到
 \item 可区别：不同的特征有不同的表示
@@ -246,13 +245,11 @@ L(x,y,\sigma) = G(x,y,\sigma)*I(x,y)
 G(x,y,\sigma) = \frac{1}{2\pi \sigma ^2}e^{\frac{-(x^2 + y^2)}{2 {\sigma}^2}}
 %\label{laplacian}
 \end{equation}
-
 据此可计算Laplacian算子为
 \begin{equation}
 {\nabla}^2 L(x,y,\sigma)=L_{xx}(x,y,\sigma)+L_{yy}(x,y,\sigma)
 %\label{laplacian}
 \end{equation}
-
 这对于大小为$\sqrt{2\sigma}$的斑点有最强的响应，然而该算子严重依赖图像中斑点大小与用来平滑图像的高斯核大小，即大小不同的高斯核函数被用来寻找对应大小的blob。为了在一幅图像中自动检测不同大小的斑点，一种多尺度的方法被提出来\cite{Lindeberg-Feature detection}，其通过尺度不同的归一化的Laplacian算子对图片进行平滑从而在不同尺度空间找到大小不同的blob，尺度归一化的高斯核函数为式~\ref{nor-lap-equation}。
 
 \begin{equation}
@@ -260,7 +257,7 @@ G(x,y,\sigma) = \frac{1}{2\pi \sigma ^2}e^{\frac{-(x^2 + y^2)}{2 {\sigma}^2}}
 \label{nor-lap-equation}
 \end{equation}
 
-值较大的$\sigma$对应图片的粗略特征，较小$\sigma$对应图片的精细特征。同时LoG算子是对称的，所以它具有blob旋转对其没有影响，但是LoG算子耗费计算资源，为了加速计算并在尺度空间检测到稳定的兴趣点，Lowe\cite{Lowe-DistinctiveImageFeatures}提出了高斯差分尺度空间，简称DoG scale-space。如式~\ref{gaussian}所示，利用不同尺度的搞死差分核函数与图像卷积生成。
+值较大的$\sigma$对应图片的粗略特征，较小$\sigma$对应图片的精细特征。同时LoG算子是对称的，所以它具有blob旋转对其没有影响，但是LoG算子耗费计算资源，为了加速计算并在尺度空间检测到稳定的兴趣点，Lowe\cite{Lowe-DistinctiveImageFeatures}提出了高斯差分尺度空间，简称DoG scale-space。如式~\ref{gaussian}所示，利用不同尺度的高斯差分核函数与图像卷积生成。
 \begin{equation}
 \begin{split}
 D(x,y,\sigma) &= (G(x,y,k\sigma)-G(x,y,\sigma)*I(x,y)) \\
@@ -277,7 +274,7 @@ D(x,y,\sigma) &= (G(x,y,k\sigma)-G(x,y,\sigma)*I(x,y)) \\
 \label{octave}
 \end{figure}
 
-检测到特征点后，需要定量的表示各个特征点，以为特征点匹配做准备。Lowe在其论文中提出用一个128维度的向量表示每个特征点，具体做法为：如图~\ref{siftDescriptor}，首先对每个关键点周围的$16\times 16$ 邻域内所有像素计算其梯度的幅值与方向，用直方图统计邻域像素的梯度方向，梯度直方图将$0~360^{\circ}$分为8个区间，对得到的直方图进行高斯平滑，以减少突变带来的影响。选取直方图的峰值作为该关键点处邻域梯度的主方向。所以在每个$4\times 4$的象限内，将每个像素的主方向加权到直方图的8个方向区间中的一个，计算一个梯度方向直方图，这样对于每个特征点可以形成$4\times 4 \times 8 = 128$ 维的描述子。
+检测到特征点后，需要定量的表示各个特征点，以为特征点匹配做准备。Lowe在其论文中提出用一个128维度的向量表示每个特征点，具体做法为：如图~\ref{siftDescriptor}，首先对每个关键点周围的$16\times 16$ 邻域内所有像素计算其梯度的幅值与方向，用直方图统计邻域像素的梯度方向，梯度直方图将$0-360^{\circ}$分为8个区间，对得到的直方图进行高斯平滑，以减少突变带来的影响。选取直方图的峰值作为该关键点处邻域梯度的主方向。所以在每个$4\times 4$的象限内，将每个像素的主方向加权到直方图的8个方向区间中的一个，计算一个梯度方向直方图，这样对于每个特征点可以形成$4\times 4 \times 8 = 128$ 维的描述子。
 
 %%在此需要插入4张sift检测的图片，甚至是sift与surf特征点的比较框
 
@@ -293,16 +290,16 @@ D(x,y,\sigma) &= (G(x,y,k\sigma)-G(x,y,\sigma)*I(x,y)) \\
 \begin{figure}[!htbp]
 \centering
  \subfigure{
-	\includegraphics[width=2.6in]{chapter3/testPho/1_res.png}
+	\includegraphics[width=2.9in]{chapter3/testPho/1_res.png}
     }
  \subfigure{
-	\includegraphics[width=2.6in]{chapter3/testPho/2_res.png}
+	\includegraphics[width=2.9in]{chapter3/testPho/2_res.png}
     }
  \subfigure{
-	\includegraphics[width=2.6in]{chapter3/testPho/3_res.png}
+	\includegraphics[width=2.9in]{chapter3/testPho/3_res.png}
     }
  \subfigure{
-	\includegraphics[width=2.6in]{chapter3/testPho/4_res.png}
+	\includegraphics[width=2.9in]{chapter3/testPho/4_res.png}
     }
 %\includegraphics[width=5.0in]{chapter3/siftDescriptor.jpg}
 \caption{SIFT特征点检测结果}
@@ -460,7 +457,7 @@ SVD又称奇异值分解，在此不详细介绍，SVD可以将一个矩阵，无论是否满秩，均可以分解为
     }
  \subfigure[]{
 	\includegraphics[width=2.95in]{chapter3/matches/000415_H_000424.png}
-    } 
+    }
  \subfigure[]{
 	\includegraphics[width=2.95in]{chapter3/matches/000415_U_000424.png}
     }
@@ -774,6 +771,7 @@ A_2\\
 \cdots\\
 A_6
 \end{array}\right]b = 0
+\label{pnp-svd-equation}
 \end{equation}
 
 通过以上方法，我们可以得到矩阵$P$，由于$P=K[R|t]$，所以旋转矩阵$R=K^{-1}P_{[1:3]}$，$P_{[1:3]}$表示$P$的前三列，由于旋转阵$R$是正交矩阵，为了保证这一性质，所以旋转阵取式~\ref{main-orthogonal-equation}中$R_+$
@@ -944,13 +942,13 @@ E_{position}=arg\mathop{{min}}\limits_{R,t} \sum_{i=1}\left \|f_j(x) - x_j \righ
 本节介绍了基本的稀疏点云生成的过程，包括多视图几何知识从匹配点恢复结构，而后增量式的重建其他图片；在每加入一张图片时，使用BA优化相机位姿与3D点的位置，在此我加上最小化相机中心位置误差，作为BA的辅助步骤。图~\ref{BA}(b)是使用CeresSolver库迭代三次优化重投影误差的结果，初始代价函数结果为$3.483778e+01$，BA优化后的代价为$1.732320e+01$。从~\ref{BA}两张图对比可以看出BA最小化重投影误差的作用:(a) 仅使用多视图几何计算相机位姿并使用三角测量恢复3D点位置，而(b)在(a)的基础上增加BA环节，图中红色点是提取的2D特征点坐标，绿色点是3D根据相机$R,t$关系投影回成像平面的点，从中可以明显看出BA对重投影误差有改善作用，可以将误差平摊到所有点上。
 
 \section{稀疏点云的稠密化}
-通过SfM方法，不仅可以得到相机位姿，也可以恢复特征点的三维坐标得到稀疏点云，但是由于点云过于稀疏难以用于无人车导航与规划，所以本文使用Multiple View Stereo(MVS)技术将点云稠密化，MVS可以分为基于体素（voxel），基于表面演化（surface evolution）、基于特征点生长（feature point growing）和基于深度图融合（depth-map merging）四种类型\cite{Shen-Accurate}。本文采用深度图融合的方法\cite{Furukawa-Accurate} 得到稠密点云，该方法包括深度图计算与深度图融合两部分，可以用图~\ref{flow-dense}表示整个过程。
+通过SfM方法，不仅可以得到相机位姿，也可以恢复特征点的三维坐标得到稀疏点云，但是由于点云过于稀疏难以用于无人车导航与规划，所以本文使用Multiple View Stereo(MVS)技术将点云稠密化，MVS可以分为基于体素（voxel），基于表面演化（surface evolution）、基于特征点生长（feature point growing）和基于深度图融合（depth-map merging）四种类型\cite{Shen-Accurate}。本文采用深度图融合的方法\cite{Furukawa-Accurate}得到稠密点云，该方法包括深度图计算与深度图融合两部分，可以用图~\ref{flow-dense-whole}表示整个过程。
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=4.9in]{chapter3/flow-dense.png}
-\label{flow-dense}
 \caption{点云稠密化流程图}
+\label{flow-dense-whole}
 \end{figure}
 
 \subsection{深度图计算}

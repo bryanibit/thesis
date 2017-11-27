@@ -1,7 +1,7 @@
 \chapter{基于无人机航拍图像的三维构建}
 
 \section{引言}
-大部分无人车辆行驶依赖环境地图导航与感知\cite{Mattyus-Enhancing-road-maps}，这限制了无人车在未知环境中的行驶。为了解决该问题，当前许多技术利用车载传感器可以构建很大范围的地图，例如SLAM(Simultaneous Localization and Mapping) 和第二章提到的用车载Ladybug构建地图的方法。然而车载传感器仅能获取车辆周边环境信息且易被阻挡，而且在野外或灾害地区等环境中，车辆可通行区域变少。然而无人机拥有比无人车更广阔的视野，不受地面障碍物的影响，可以灵活地从空中俯视地面环境。本章介绍了应用无人机构建三维环境地图，为无人车导航提供先验信息。
+大部分无人车辆行驶依赖环境地图导航与感知\cite{Mattyus-Enhancing-road-maps}，这限制了无人车在未知环境中的行驶。为了解决该问题，当前许多技术利用车载传感器构建大范围地图，例如SLAM(Simultaneous Localization and Mapping) 和第二章提到的用车载Ladybug构建地图的方法。然而车载传感器仅能获取车辆周边环境信息且易被阻挡，而且在野外或灾害地区等环境中，车辆可通行区域变少。然而无人机拥有比无人车更广阔的视野，不受地面障碍物的影响，可以灵活地从空中俯瞰地面。本章介绍了应用无人机构建三维环境地图的方法，为无人车导航提供先验信息。
 
 三维重建涉及到的内容可以分为三部分：稀疏点云的获取，点云稠密化与点云的网格渲染。其中稀疏点云的获取使用的是Structure from Motion(SfM)，在技术层面上与当前热门的Visual-SLAM(VSLAM)比较类似，只是SfM 侧重于三维重建，而SLAM侧重于实时定位，并需要预测下一时刻的位置。SfM可以分为视觉前端与优化后端，前端涉及到的是相机模型，坐标转换，特征提取与匹配以及多视图几何相关的内容，最后得到粗略的相机位姿与3D点坐标，后端涉及到的是优化前端得到的相机位姿与3D点坐标，去除错误的结果等。点云稠密使用的技术称为Multi-View Stereo(MVS)，MVS的方法很多，本文使用的是深度图融合的方法。网格渲染主要用的技术为三角剖分，网格渲染后的三维重建结果比稠密点云存储量小，更易于后续的仿真与处理。
 \section{相机模型}
@@ -320,12 +320,13 @@ D(x,y,\sigma) &= (G(x,y,k\sigma)-G(x,y,\sigma)*I(x,y)) \\
 
 在此简单介绍近似最近邻的快速库（Fast Library for Approximate Nearest Neighbors, FLANN），FLANN具有一种内部机制，该机制可以根据数据本身选择合适的算法来处理数据集，基于FLANN的匹配非常准确、快速。FLANN在使用的时候需要配置两个参数：indexParams和searchParams。使用FLANN时，indexParams可以选择为LinearIndex、KTreeIndex、KMeansIndex、CompositeIndex和AutotuneIndex，其中KTreeIndex灵活且可被并行处理。对于searchParams，用来指定索引树被遍历的次数，即check值，该值越大则匹配的时间越长，当然也越准确。
 
-当然即使用上面的方法，也无法保证所有的匹配都是正确的，Lowe\cite{Lowe-ObjectRecognition}在1999提出一种简单的方法可以剔除大部分的错误匹配。对于某个特征点向量，如果查询数据集中与其距离最近的特征点向量与次近的特征点向量的距离之比大于0.7，可以避免接近90\%的错误匹配，但是正确的匹配也因此变少。使用FLANN并采用Lowe提出的方法可以去掉大部分的错误匹配，如图~\ref{matches}所示。
-%\begin{figure}
-%\includegraphics[width=5.0in]{chapter3/matches.jpg}
-%\caption{FLANN匹配}
-%\label{matches}
-%\end{figure}
+当然即使用上面的方法，也无法保证所有的匹配都是正确的，Lowe\cite{Lowe-ObjectRecognition}在1999提出一种简单的方法可以剔除大部分的错误匹配。对于某个特征点向量，如果查询数据集中与其距离最近的特征点向量与次近的特征点向量的距离之比大于0.7，可以避免接近90\%的错误匹配，但是正确的匹配也因此变少。使用FLANN并采用Lowe提出的方法可以去掉大部分的错误匹配，图~\ref{matches-single}展示了随机选取10个匹配对的结果。
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=4.5in]{chapter3/matches/matches.jpg}
+\caption{FLANN匹配}
+\label{matches-single}
+\end{figure}
 
 以上提到的方法，匹配后仍然存在错误的匹配点，由于刚刚的匹配是单纯基于特征描述子的向量值，无法保证匹配的两个特征点对应相同的场景点。因此SfM使用投影几何的知识估计两张图像的特征点变换。依赖图像对的空间配置，不同投影描述图片间不同的几何关系。例如，单应性变换（又称射影变换\cite{Richard-MultipleView}）描述相机拍摄的二维图片之间纯旋转和平移变换。对极几何通过基本矩阵（Essential matrix）$E$和基础矩阵（Fundamental matrix）$F$ 描述移动相机的关系，并可以通过三焦张量扩展到三视图的关系。无论哪种变换关系，有效的变换可以满足大部分匹配点的几何关系，那么这种变换或者匹配点被认为是有效的。本文在删除错误匹配时，使用的是单应性变换，一下简单介绍一下单应性变换的详细内容。
 
@@ -446,22 +447,22 @@ SVD又称奇异值分解，在此不详细介绍，SVD可以将一个矩阵，无论是否满秩，均可以分解为
 \begin{figure}[!htbp]
 \centering
  \subfigure[]{
-	\includegraphics[width=2.8in]{chapter3/matches/000400_H_000415.png}
+	\includegraphics[width=2.95in]{chapter3/matches/000400_H_000415.png}
+    }
+\subfigure[]{
+	\includegraphics[width=2.95in]{chapter3/matches/000400_U_000415.png}
     }
  \subfigure[]{
-	\includegraphics[width=2.8in]{chapter3/matches/000400_H_000424.png}
+	\includegraphics[width=2.95in]{chapter3/matches/000400_H_000424.png}
+    }
+\subfigure[]{
+	\includegraphics[width=2.95in]{chapter3/matches/000400_U_000424.png}
     }
  \subfigure[]{
-	\includegraphics[width=2.8in]{chapter3/matches/000415_H_000424.png}
+	\includegraphics[width=2.95in]{chapter3/matches/000415_H_000424.png}
     }
  \subfigure[]{
-	\includegraphics[width=2.8in]{chapter3/matches/000400_U_000415.png}
-    }
- \subfigure[]{
-	\includegraphics[width=2.8in]{chapter3/matches/000400_U_000424.png}
-    }
- \subfigure[]{
-	\includegraphics[width=2.8in]{chapter3/matches/000415_U_000424.png}
+	\includegraphics[width=2.95in]{chapter3/matches/000415_U_000424.png}
     }
 %\includegraphics[width=5.0in]{chapter3/siftDescriptor.jpg}
 \caption{RANSAC筛选的单应性变换结果}
@@ -473,14 +474,14 @@ SVD又称奇异值分解，在此不详细介绍，SVD可以将一个矩阵，无论是否满秩，均可以分解为
 	\centering
 	\begin{tabular}{|c|c|c|c|}
 		\hline
-		\diagbox[dir=SE]{\bfseries 图片名}{\bfseries 特征点}{\bfseries 图片名} & \bfseries 400 & \bfseries 415 & \bfseries 424\\
+		\diagbox[dir=SE]{\bfseries 图片名}{\bfseries 特征点}{\bfseries 图片名} & \bfseries KITTI-0400 & \bfseries KITTI-0415 & \bfseries KITTI-0424\\
 		\hline
 %		\hline
-		\bfseries 400&  $861$&  $55/32$ & $75/46$\\
+		\bfseries KITTI-0400&  $861$&  $55/32$ & $75/46$\\
 		\hline
-		\bfseries 415 & $ 空 $ & $370$ & $19/10$ \\
+		\bfseries KITTI-0415 & $ 空 $ & $370$ & $19/10$ \\
 		\hline
-        \bfseries 424 & $空$ & $空$ & $599$ \\
+        \bfseries KITTI-0424 & $空$ & $空$ & $599$ \\
 		\hline
 	\end{tabular}
 	\label{table:matches}
@@ -576,7 +577,7 @@ f_{33}
 在得到基本矩阵$F$后，根据式~\ref{fundunmental-equation}以及已知相机内参矩阵$K$的情况下，可以得到本质矩阵$E$，从本质矩阵可以恢复相机之间的旋转平移关系。
 \begin{figure}[!htbp]
 \centering
-\includegraphics[width=5.4in]{chapter3/essentialMatrix.png}
+\includegraphics[width=5.0in]{chapter3/essentialMatrix.png}
 \caption{本质矩阵恢复旋转平移关系}
 \label{essentialMatrix}
 \end{figure}
@@ -635,13 +636,15 @@ Y
 0 & 0 & 0 \\
 \end{matrix}\right]$所以$R$有两种可能值，这是因为$R=UYV^T$。
 
-综上通过$E$恢复旋转矩阵$R$和平移矩阵$t$有四种可能的解，图~\ref{essentialfromRT}形象地显示了分解本质矩阵得到四个解的过程。保持成像平面的点（红点）不变的情况下，可以画出四种可能的情况，但是只有(a)是正确的，因为其有正深度，所以恢复旋转与平移后需要将3D点带入图中四个解中，检测该点在两个相机中的深度，即可确定$R$和$t$。实际上利用$E$的内在性质，其只有五个自由度：旋转(3)，平移(1)，相机中心(1)。但是使用五点法形式复杂，所以本文还是采用上文介绍的八点法计算旋转与平移关系。
 \begin{figure}[!htbp]
 \centering
-\includegraphics[width=5.2in]{chapter3/essentialfromRT.png}
+\includegraphics[width=5.0in]{chapter3/essentialfromRT.png}
 \caption{分解本质矩阵得到的四个解}
 \label{essentialfromRT}
 \end{figure}
+
+综上通过$E$恢复旋转矩阵$R$和平移矩阵$t$有四种可能的解，图~\ref{essentialfromRT}形象地显示了分解本质矩阵得到四个解的过程。保持成像平面的点（红点）不变的情况下，可以画出四种可能的情况，但是只有(a)是正确的，因为其有正深度，所以恢复旋转与平移后需要将3D点带入图中四个解中，检测该点在两个相机中的深度，即可确定$R$和$t$。实际上利用$E$的内在性质，其只有五个自由度：旋转(3)，平移(1)，相机中心(1)。但是使用五点法形式复杂，所以本文还是采用上文介绍的八点法计算旋转与平移关系。
+
 
 \subsection{三角定位法}
 在得到相机的位姿后，需要恢复匹配点的三维坐标信息，该方法称为三角测量（triangulation），三角测量时指不同视角观察同一个点的夹角，确定该点的位置。三角测量最早由高斯提出并应用于天文学中。在SfM中，我们使用三角测量估计匹配点的像素深度。
