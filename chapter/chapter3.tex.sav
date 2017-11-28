@@ -1,11 +1,11 @@
 \chapter{»ùÓÚÎÞÈË»úº½ÅÄÍ¼ÏñµÄÈýÎ¬¹¹½¨}
 
 \section{ÒýÑÔ}
-´ó²¿·ÖÎÞÈË³µÁ¾ÐÐÊ»ÒÀÀµ»·¾³µØÍ¼µ¼º½Óë¸ÐÖª\cite{Mattyus-Enhancing-road-maps}£¬ÕâÏÞÖÆÁËÎÞÈË³µÔÚÎ´Öª»·¾³ÖÐµÄÐÐÊ»¡£ÎªÁË½â¾ö¸ÃÎÊÌâ£¬µ±Ç°Ðí¶à¼¼ÊõÀûÓÃ³µÔØ´«¸ÐÆ÷¿ÉÒÔ¹¹½¨ºÜ´ó·¶Î§µÄµØÍ¼£¬ÀýÈçSLAM(Simultaneous Localization and Mapping) ºÍµÚ¶þÕÂÌáµ½µÄÓÃ³µÔØLadybug¹¹½¨µØÍ¼µÄ·½·¨¡£È»¶ø³µÔØ´«¸ÐÆ÷½öÄÜ»ñÈ¡³µÁ¾ÖÜ±ß»·¾³ÐÅÏ¢ÇÒÒ×±»×èµ²£¬¶øÇÒÔÚÒ°Íâ»òÔÖº¦µØÇøµÈ»·¾³ÖÐ£¬³µÁ¾¿ÉÍ¨ÐÐÇøÓò±äÉÙ¡£È»¶øÎÞÈË»úÓµÓÐ±ÈÎÞÈË³µ¸ü¹ãÀ«µÄÊÓÒ°£¬²»ÊÜµØÃæÕÏ°­ÎïµÄÓ°Ïì£¬¿ÉÒÔÁé»îµØ´Ó¿ÕÖÐ¸©ÊÓµØÃæ»·¾³¡£±¾ÕÂ½éÉÜÁËÓ¦ÓÃÎÞÈË»ú¹¹½¨ÈýÎ¬»·¾³µØÍ¼£¬ÎªÎÞÈË³µµ¼º½Ìá¹©ÏÈÑéÐÅÏ¢¡£
+´ó²¿·ÖÎÞÈË³µÁ¾ÐÐÊ»ÒÀÀµ»·¾³µØÍ¼µ¼º½Óë¸ÐÖª\cite{Mattyus-Enhancing-road-maps}£¬ÕâÏÞÖÆÁËÎÞÈË³µÔÚÎ´Öª»·¾³ÖÐµÄÐÐÊ»¡£ÎªÁË½â¾ö¸ÃÎÊÌâ£¬µ±Ç°Ðí¶à¼¼ÊõÀûÓÃ³µÔØ´«¸ÐÆ÷¹¹½¨´ó·¶Î§µØÍ¼£¬ÀýÈçSLAM(Simultaneous Localization and Mapping)ºÍµÚ¶þÕÂÌáµ½µÄÓÃ³µÔØLadybug¹¹½¨µØÍ¼µÄ·½·¨¡£È»¶ø³µÔØ´«¸ÐÆ÷½öÄÜ»ñÈ¡³µÁ¾ÖÜ±ß»·¾³ÐÅÏ¢ÇÒÒ×±»×èµ²£¬¶øÇÒÔÚÒ°Íâ»òÔÖº¦µØÇøµÈ»·¾³ÖÐ£¬³µÁ¾¿ÉÍ¨ÐÐÇøÓò±äÉÙ¡£È»¶øÎÞÈË»úÓµÓÐ±ÈÎÞÈË³µ¸ü¹ãÀ«µÄÊÓÒ°£¬²»ÊÜµØÃæÕÏ°­ÎïµÄÓ°Ïì£¬¿ÉÒÔÁé»îµØ´Ó¿ÕÖÐ¸©î«µØÃæ¡£±¾ÕÂ½éÉÜÁËÓ¦ÓÃÎÞÈË»ú¹¹½¨ÈýÎ¬»·¾³µØÍ¼µÄ·½·¨£¬ÎªÎÞÈË³µµ¼º½Ìá¹©ÏÈÑéÐÅÏ¢¡£
 
-ÈýÎ¬ÖØ½¨Éæ¼°µ½µÄÄÚÈÝ¿ÉÒÔ·ÖÎªÈý²¿·Ö£ºÏ¡ÊèµãÔÆµÄ»ñÈ¡£¬µãÔÆ³íÃÜ»¯ÓëµãÔÆµÄÍø¸ñäÖÈ¾¡£ÆäÖÐÏ¡ÊèµãÔÆµÄ»ñÈ¡Ê¹ÓÃµÄÊÇStructure from Motion(SfM)£¬ÔÚ¼¼Êõ²ãÃæÉÏÓëµ±Ç°ÈÈÃÅµÄVisual-SLAM(VSLAM)±È½ÏÀàËÆ£¬Ö»ÊÇSfM ²àÖØÓÚÈýÎ¬ÖØ½¨£¬¶øSLAM²àÖØÓÚÊµÊ±¶¨Î»£¬²¢ÐèÒªÔ¤²âÏÂÒ»Ê±¿ÌµÄÎ»ÖÃ¡£SfM¿ÉÒÔ·ÖÎªÊÓ¾õÇ°¶ËÓëÓÅ»¯ºó¶Ë£¬Ç°¶ËÉæ¼°µ½µÄÊÇÏà»úÄ£ÐÍ£¬×ø±ê×ª»»£¬ÌØÕ÷ÌáÈ¡ÓëÆ¥ÅäÒÔ¼°¶àÊÓÍ¼¼¸ºÎÏà¹ØµÄÄÚÈÝ£¬×îºóµÃµ½´ÖÂÔµÄÏà»úÎ»×ËÓë3Dµã×ø±ê£¬ºó¶ËÉæ¼°µ½µÄÊÇÓÅ»¯Ç°¶ËµÃµ½µÄÏà»úÎ»×ËÓë3Dµã×ø±ê£¬È¥³ý´íÎóµÄ½á¹ûµÈ¡£µãÔÆ³íÃÜÊ¹ÓÃµÄ¼¼Êõ³ÆÎªMulti-View Stereo(MVS)£¬MVSµÄ·½·¨ºÜ¶à£¬±¾ÎÄÊ¹ÓÃµÄÊÇÉî¶ÈÍ¼ÈÚºÏµÄ·½·¨¡£Íø¸ñäÖÈ¾Ö÷ÒªÓÃµÄ¼¼ÊõÎªÈý½ÇÆÊ·Ö£¬Íø¸ñäÖÈ¾ºóµÄÈýÎ¬ÖØ½¨½á¹û±È³íÃÜµãÔÆ´æ´¢Á¿Ð¡£¬¸üÒ×ÓÚºóÐøµÄ·ÂÕæÓë´¦Àí¡£
+ÈýÎ¬ÖØ½¨Éæ¼°µ½µÄÄÚÈÝ¿ÉÒÔ·ÖÎªÁ½²¿·Ö£ºÏ¡ÊèµãÔÆµÄ»ñÈ¡ÓëµãÔÆ³íÃÜ»¯¡£ÆäÖÐÏ¡ÊèµãÔÆµÄ»ñÈ¡Ê¹ÓÃµÄÊÇStructure from Motion£¬ÔÚ¼¼ÊõÉÏÓëµ±Ç°ÈÈÃÅµÄVisual-SLAM(VSLAM)±È½ÏÀàËÆ£¬Ö»ÊÇSfM²àÖØÓÚÈýÎ¬ÖØ½¨£¬¶øSLAM²àÖØÓÚÊµÊ±¶¨Î»£¬²¢Ô¤²âÏÂÒ»Ê±¿ÌµÄÎ»ÖÃ¡£SfM¿ÉÒÔ·ÖÎªÊÓ¾õÇ°¶ËÓëÓÅ»¯ºó¶Ë£¬Ç°¶ËÉæ¼°Ïà»úÄ£ÐÍ£¬×ø±ê×ª»»£¬ÌØÕ÷ÌáÈ¡ÓëÆ¥ÅäÒÔ¼°¶àÊÓÍ¼¼¸ºÎµÈÏà¹ØÄÚÈÝ£¬×îºóµÃµ½´ÖÂÔµÄÏà»úÎ»×ËÓë3Dµã×ø±ê£¬ºó¶ËÉæ¼°ÓÅ»¯Ç°¶ËµÃµ½µÄÏà»úÎ»×ËÓë3Dµã×ø±ê£¬È¥³ýÎó²î´óµÄ3Dµã£¬¾«Á¶Ïà»úÎ»×ËµÈ¡£µãÔÆ³íÃÜÊ¹ÓÃµÄ¼¼ÊõÎªMulti-View Stereo(MVS)£¬MVSµÄÊµÏÖ·½Ê½¶àÖÖ¶àÑù£¬±¾ÎÄ²ÉÓÃ»ùÓÚÉî¶ÈÍ¼ÈÚºÏµÄ·½·¨£¬¶ÔÃ¿ÕÅÍ¼Æ¬Ñ°ÕÒ²Î¿¼Í¼£¬¶øºó¸ù¾Ý²Î¿¼Í¼ÓëSfM»Ö¸´µÄÏà»úÎ»×Ë¼ÆËã¸ÃÕÅÍ¼Æ¬µÄÉî¶ÈÍ¼£¬×îºóÈÚºÏËùÓÐÍ¼Æ¬µÄÉî¶ÈÍ¼ÐÎ³É³íÃÜµãÔÆ¡£
 \section{Ïà»úÄ£ÐÍ}
-ÊýÂëÏà»úÅÄÉãµÄ¹ý³ÌÖÐ£¬Êµ¼ÊÉÏÊÇÒ»¸ö¹âÑ§³ÉÏñµÄ¹ý³Ì£¬ÕâÉæ¼°µ½ÉãÏñ»ú×î»ù±¾µÄÔ­¼þ¡ª¡ªÍ¸¾µ¡ª¡ªµÄ³ÉÏñÔ­Àí£¬ÈçÍ¼~\ref{len}ËùÊ¾£¬ÕâÊÇ×î»ù±¾µÄÍ¸¾µ³ÉÏñÔ­Àí£º$Z$ÊÇÎïÌå¾àÍ¸¾µ¹âÐÄµÄ¾àÀë£¬¼ò³ÆÎï¾à£»$f$ÊÇ½¹¾à£»$b$ÊÇÏà¾à£¬¼´³ÉÏñÆ½ÃæÓëÍ¸¾µ¹âÐÄµÄ¾àÀë¡£ÈýÕßÂú×ãÊ½~\ref{len-equation}
+Ê¹ÓÃÏà»úÅÄÉãÎïÌåµÄ¹ý³ÌÊµ¼ÊÊÇÒ»¸ö¹âÑ§³ÉÏñ¹ý³Ì£¬ÕâÉæ¼°µ½ÉãÏñ»ú×î»ù±¾µÄÔ­¼þ¡ª¡ªÍ¸¾µ¡ª¡ªµÄ³ÉÏñÔ­Àí£¬ÈçÍ¼~\ref{len}ËùÊ¾£¬ÕâÊÇ×î»ù±¾µÄÍ¸¾µ³ÉÏñÔ­Àí£º$Z$ÊÇÎïÌå¾àÍ¸¾µ¹âÐÄµÄ¾àÀë£¬¼ò³ÆÎï¾à£¬$f$ÊÇ½¹¾à£¬$b$ ÊÇÏà¾à£¬¼´³ÉÏñÆ½ÃæÓëÍ¸¾µ¹âÐÄµÄ¾àÀë£¬ÈýÕßÂú×ãµÈÊ½~\ref{len-equation}¡£
 \begin{equation}
 \frac{1}{f} = \frac{1}{Z} + \frac{1}{b}
 \label{len-equation}
@@ -17,8 +17,8 @@
 	\caption{Í¸¾µ³ÉÏñÔ­Àí}
 	\label{len}
 \end{figure}
-ÔÚ»úÆ÷ÊÓ¾õÖÐ£¬ÀûÓÃÉãÏñ»ú¿ÉÒÔ½«ÈýÎ¬³¡¾°¼ÇÂ¼ÔÚ¶þÎ¬Í¼ÐÎÉÏ£¬²»Í¬µÄÏà»úÄ£ÐÍµ¼ÖÂ²»Í¬µÄ³ÉÏñÐ§¹û£¬±ÈÈçµÚ¶þÕÂÖÐLadybugÊ¹ÓÃµÄÇòÃæ³ÉÏñÄ£ÐÍ£¬Ê¹²»Í¬Ïà»úµÄÆ´½Ó¼ò»¯ÎªÈÆ¹âÐÄµÄÐý×ª¡£µ«ÊÇ³£¼ûµÄÏà»úÊ¹ÓÃµÄÄ£ÐÍ»¹ÊÇÐ¡¿×³ÉÏñÄ£ÐÍ£¬ÈçÍ¼~\ref{pinhole}ËùÊ¾¡£ÊýÂëÏà»úµÄ¾µÍ·Ïàµ±ÓÚÒ»¸öÍ¹Í¸¾µ£¬¸Ð¹âÔª¼þ¾Í´¦ÔÚÕâ¸öÍ¹Í¸¾µµÄ½¹µã¸½½ü£¬½«½¹¾à½üËÆÎªÍ¹Í¸¾µÖÐÐÄµ½¸Ð¹âÔª¼þµÄ¾àÀëÊ±¾Í³ÉÎªÐ¡¿×³ÉÏñÄ£ÐÍ¡£
-Õâ¿ÉÒÔÀà±ÈÎªÒÕÊõ¼Ò»­Ò»·ù»­µÄ¹ý³Ì£¬½«ÑÛ¾¦·ÅÔÚÍ¼~\ref{pinhole}¹âÐÄ$C$´¦£¬ÔÚÎïÌåÓëÑÛ¾¦Ö®¼ä·ÅÖÃÒ»¸ö»­²¼£¨Í¼~\ref{pinhole}ÖÐÐéÏñÎ»ÖÃ£©£¬°´ÕÕ¹âÏßÖ±Ïß´«²¥µÄÔ­Ôò£¬ÔòÎïÌå·´ÉäµÄ¹âÏßÓëÑÛ¾¦µÄÁ¬Ïß½»»­²¼Ò»µã£¬Èç´ËÎïÌå¿ÉÒÔÔÚ»­²¼ÉÏ³ÉÏñ¡£Ö»ÊÇÏà»úµÄ³ÉÏñÔÚ¹âÐÄºóÃæ£¬ËùÒÔËµ´æÔÚÒ»¸öÐéÄâ³ÉÏñÆ½Ãæ¡£
+ÔÚ»úÆ÷ÊÓ¾õÖÐ£¬ÀûÓÃÉãÏñ»ú¿ÉÒÔ½«ÈýÎ¬³¡¾°¼ÇÂ¼ÔÚ¶þÎ¬Æ½ÃæÉÏ£¬²»Í¬µÄÏà»úÄ£ÐÍ²úÉú²»Í¬µÄ³ÉÏñÐ§¹û£¬±ÈÈçµÚ¶þÕÂÖÐLadybugÊ¹ÓÃµÄÇòÃæ³ÉÏñÄ£ÐÍ£¬Ê¹¶à¸öÏà»úµÄÍ¼ÏñÆ´½Ó¼ò»¯ÎªÈÆÇòÃæ×ø±êµÄ¹âÐÄÐý×ª¡£µ«³£¼ûµÄÏà»úÄ£ÐÍ»¹ÊÇÐ¡¿×³ÉÏñÄ£ÐÍ£¬ÈçÍ¼~\ref{pinhole}ËùÊ¾¡£ÊýÂëÏà»úµÄ¾µÍ·Ïàµ±ÓÚÒ»¸öÍ¹Í¸¾µ£¬¸Ð¹âÔª¼þ¾Í´¦ÔÚÕâ¸öÍ¹Í¸¾µµÄ½¹µã¸½½ü£¬½«½¹¾à½üËÆÎªÍ¹Í¸¾µÖÐÐÄµ½¸Ð¹âÔª¼þµÄ¾àÀëÊ±¾Í³ÉÎªÐ¡¿×³ÉÏñÄ£ÐÍ¡£
+Õâ¿ÉÒÔÀà±ÈÎªÒÕÊõ¼Ò»­Ò»·ù»­µÄ¹ý³Ì£¬½«ÑÛ¾¦·ÅÔÚÍ¼~\ref{pinhole}Õë¿×$C$£¨¹âÐÄ£©´¦£¬ÔÚÎïÌåÓëÑÛ¾¦Ö®¼ä·ÅÖÃÒ»¸ö»­²¼£¨Í¼~\ref{pinhole}ÖÐÐéÏñÎ»ÖÃ£©£¬°´ÕÕ¹âÏßÖ±Ïß´«²¥µÄÔ­Ôò£¬ÔòÎïÌå·´ÉäµÄ¹âÏßÓëÑÛ¾¦µÄÁ¬Ïß½»»­²¼Ò»µã£¬Èç´ËÎïÌå¿ÉÒÔÔÚ»­²¼ÉÏ³ÉÏñ¡£Ö»ÊÇÏà»úµÄ³ÉÏñÔÚ¹âÐÄºóÃæ£¬ËùÒÔËµ´æÔÚÒ»¸öÐéÄâ³ÉÏñÆ½Ãæ¡£
 
 \begin{figure}[!htbp]
 	\centering
@@ -32,8 +32,7 @@
 \frac{-x}{X} = \frac{f}{Z}
 \label{pinhole-equation}
 \end{equation}
-
-ÆäÖÐ£¬$f$ÊÇÐ¡¿×µ½³ÉÏñÆ½ÃæµÄ¾àÀë£¬¼´½¹¾à£»$Z$ÊÇÎïÌå¾à¹âÐÄµÄ¾àÀë£¬¼ò³ÆÎï¾à£»$x$ÊÇÎïÌåÔÚ³ÉÏñÆ½ÃæµÄÍ¶Ó°³¤¶È£»$X$ÊÇÎïÌåÊµ¼Ê³¤¶È¡£ÎªÁË¼ò»¯ÒÔÉÏÄ£ÐÍ£¬ÓÃÍ¼~\ref{firstperson}±íÊ¾Ð¡¿×³ÉÏñµÄµÈ¼ÛÄ£ÐÍ£¬ÆäÖÐ$C$ÊÇÏà»úÖÐÐÄ£¬$P(X,Y,Z)$Îª¿Õ¼äÖÐµÄ3Dµã£¬$p(x,y,1)$±íÊ¾3Dµã³ÉÏñÔÚ¸Ð¹âÔª¼þÉÏµÄµã£¬Ð¡¿×³ÉÏñ½üËÆºó£¬³ÉÏñÆ½ÃæÓëÏà»úÖÐÐÄµÄ¾àÀëÎª½¹¾à$f$¡£¸ÃÍ¼Ò²±íÊ¾ÁËÁ½¸ö×ø±êÏµ£¬·Ö±ðÎªÍ¼Ïñ×ø±êÏµºÍÏñËØ×ø±êÏµ£¬ÔÚÏÂ½ÚÖÐÏêÏ¸½éÉÜ¡£
+ÆäÖÐ£¬$f$ÊÇÐ¡¿×µ½³ÉÏñÆ½ÃæµÄ¾àÀë£¬¼´½¹¾à£»$Z$ÊÇÎïÌå¾à¹âÐÄµÄ¾àÀë£¬¼ò³ÆÎï¾à£»$x$ÊÇÎïÌåÔÚ³ÉÏñÆ½ÃæµÄÍ¶Ó°³¤¶È£»$X$ÊÇÎïÌåÊµ¼Ê³¤¶È¡£ÎªÁË¼ò»¯ÒÔÉÏÄ£ÐÍ£¬ÓÃÍ¼~\ref{firstperson}±íÊ¾Ð¡¿×³ÉÏñµÄµÈ¼ÛÄ£ÐÍ£¬ÆäÖÐ$C$ÊÇÏà»úÖÐÐÄ£¬$P(X,Y,Z)$Îª¿Õ¼äÖÐµÄ3Dµã£¬$p(x,y,1)$±íÊ¾3Dµã³ÉÏñÔÚ¸Ð¹âÔª¼þÉÏµÄµã£¬Ð¡¿×³ÉÏñ½üËÆºó£¬³ÉÏñÆ½ÃæÓëÏà»úÖÐÐÄµÄ¾àÀëÎª½¹¾à$f$¡£¸ÃÍ¼Ò²Õ¹Ê¾ÁËÈý¸ö×ø±êÏµ£¬·Ö±ðÎªÏà»ú×ø±êÏµ¡¢Í¼Ïñ×ø±êÏµÓëÏñËØ×ø±êÏµ£¬ÔÚÏÂ½ÚÖÐÏêÏ¸½éÉÜ¡£
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=5.0in]{chapter3/firstperson.png}
@@ -42,10 +41,10 @@
 \end{figure}
 
 \section{Ïà¹Ø×ø±êÏµ}
-´ÓÉÏÒ»½ÚÖªµÀ£¬½ö½öÏà»úÄÚ²¿¾Í´æÔÚ¶à¸ö×ø±êÏµ£¬ÄÇÃ´ÉãÏñ»úÔÚ¿Õ¼äÖÐÉæ¼°µ½µÄ×ø±êÏµ×ª»»ÎÊÌâ½«ÔÚÕâ½ÚÏêÏ¸Ì½ÌÖ¡£Ïà»ú³ÉÏñµÄ¹ý³ÌÊÇÒ»¸ö3DÎïÌåÏÔÊ¾ÔÚ2D³ÉÏñÆ½ÃæµÄ¹ý³Ì£¬ÔÚ´ËÉæ¼°ÎïÌå£¬ÕæÊµ¿Õ¼äÓëÏà»úÈýÕßµÄÎ»ÖÃ¹Ø¡£ÎïÌåÔÚÕæÊµ¿Õ¼äµÄÎ»ÖÃ¼´ÊÇÎïÌåÔÚÊÀ½ç×ø±êÏµÖÐµÄÎ»ÖÃ×ø±ê±í´ï£¬ÔÚÍ¼~\ref{firstperson}ÖÐ£¬$(X,Y,Z)$Îª3Dµã$P$ÔÚÏà»ú×ø±êÏµ£¨$X_c,y_c,Z_c$£©ÏÂµÄ×ø±ê±íÊ¾£¬ÕâÀï¾Í´æÔÚÁ½¸öÈýÎ¬×ø±êµÄ×ª»»£¬¼´Í¬Ò»¸öµãÔÚÊÀ½ç×ø±êÏµÓëÏà»ú×ø±êÏµÏÂ±í´ï·½Ê½µÄ×ª»»¹ØÏµ£¬ÈçÊ½\ref{R-t-equation}£¬¸Ã±ä»»¿ÉÒÔ¿´×öÈýÎ¬×ø±êÏµµÄ¸ÕÌå±ä»»¡£
+´ÓÉÏÒ»½ÚÖªµÀ£¬½ö½öÏà»úÄÚ²¿¾Í´æÔÚ¶à¸ö×ø±êÏµ£¬ÄÇÃ´ÉãÏñ»úÔÚ¿Õ¼äÖÐÉæ¼°µÄ×ø±êÏµ×ª»»ÎÊÌâ½«ÔÚÕâ½ÚÏêÏ¸Ì½ÌÖ¡£Ïà»ú³ÉÏñµÄ¹ý³ÌÊÇÒ»¸ö3DÎïÌåÏÔÊ¾ÔÚ2D³ÉÏñÆ½ÃæµÄ¹ý³Ì£¬ÔÚ´ËÉæ¼°ÎïÌå£¬ÕæÊµ¿Õ¼äÓëÏà»úÈýÕßµÄÎ»ÖÃ¹ØÏµ¡£ÎïÌåÔÚÕæÊµ¿Õ¼äµÄÎ»ÖÃ×ø±ê¼´ÊÇÎïÌåÔÚÊÀ½ç×ø±êÏµÖÐµÄ×ø±ê±í´ï£¬ÔÚÍ¼~\ref{firstperson}ÖÐ£¬$(X,Y,Z)$Îª3Dµã$P$ÔÚÏà»ú×ø±êÏµ£¨$X_c,y_c,Z_c$£©ÏÂµÄ×ø±ê±íÊ¾£¬ÕâÀï¾Í´æÔÚÁ½¸öÈýÎ¬×ø±êµÄ×ª»»£¬¼´Í¬Ò»¸öµãÔÚÊÀ½ç×ø±êÏµÓëÏà»ú×ø±êÏµÏÂ±í´ï·½Ê½µÄ×ª»»¹ØÏµ£¬ÈçÊ½\ref{R-t-equation}£¬¸Ã±ä»»¿ÉÒÔ¿´×öÈýÎ¬×ø±êÏµµÄ¸ÕÌå±ä»»¡£
 \begin{equation}
 %\sideset{^a_b}{^c_d}\prod^{n}_{k=1}
-^{c}P = ^{c}R_w ^w P + ^c T_w
+^{c}P = ^{c}R_w \phantom{}^wP + ^c T_w
 \label{R-t-equation}
 \end{equation}
 ÆäÖÐ$c$±íÊ¾Ïà»ú×ø±êÏµ£¬$w$±íÊ¾ÊÀ½ç×ø±êÏµ£¬$^w P$±íÊ¾ÊÀ½ç×ø±êÏµÏÂ$P$µã3D×ø±ê£¬$^c P$ÊÇÏà»ú×ø±êÏµÏÂ$P$µã3D×ø±ê£¬$^{c}R_w$ºÍ$^c T_w$·Ö±ð±íÊ¾ÓÉÊÀ½ç×ø±êÏµµ½Ïà»ú×ø±êÏµµÄÐý×ª¾ØÕóºÍÆ½ÒÆ¾ØÕó¡£
@@ -69,21 +68,21 @@ Z_w \\
 \end{equation}
 ÆäÖÐ$^{c}R_w$ÊÇ$3\times 3$¾ØÕó£¬Èý¸öÁÐÏòÁ¿Á©Á©Õý½»£»$^c T_w$ÊÇ$3\times 1$¾ØÕó£¬´ú±íÁ½¸ö×ø±êÏµÔ­µãÁ¬ÏßµÄÏòÁ¿£¬$^{c}P$×ø±ê±íÊ¾Îª$(x_c,y_c,z_c)$¡£
 
-´ÓÍ¼\ref{firstperson}ÖÐ¿ÉÒÔ¿´µ½³ÉÏñÆ½ÃæÄÚµÄ¶þÎ¬×ø±êÏµ$x^\prime ,y^\prime$£¬¸Ã¶þÎ¬×ø±êÏµ³ÆÎªÍ¼Ïñ×ø±êÏµ£¬¿ÉÒÔÍÆµ¼Ïà»ú×ø±êÏµÓëÍ¼Ïñ×ø±êÏµ£¨3Dµ½2D£©±ä»»µÄ¹«Ê½±íÊ¾£º
+´ÓÍ¼\ref{firstperson}ÖÐ¿ÉÒÔ¿´µ½³ÉÏñÆ½ÃæÄÚµÄ¶þÎ¬×ø±êÏµ$x_i ,y_i$£¬¸Ã¶þÎ¬×ø±êÏµ³ÆÎªÍ¼Ïñ×ø±êÏµ£¬¿ÉÒÔÍÆµ¼Ïà»ú×ø±êÏµÓëÍ¼Ïñ×ø±êÏµ£¨3Dµ½2D£©±ä»»µÄ¹«Ê½±íÊ¾£º
 \begin{equation}
-x\prime = f\frac{x}{z}
+x_i = f\frac{x_c}{z_c}
 \label{camera2img-equation}
 \end{equation}
 \begin{equation}
-y\prime = f\frac{y}{z}
+y_i = f\frac{y_c}{z_c}
 \label{camera2img-equation}
 \end{equation}
 ¸ÄÎª¾ØÕó±í´ïÐÎÊ½Îª
 \begin{equation}
 %\sideset{^a_b}{^c_d}\prod^{n}_{k=1}
 z_c \left[\begin{array}{ccc}
-x\prime \\
-y\prime \\
+x_i \\
+y_i \\
 1 \\
 \end{array}
 \right]=\left[\begin{array}{cccc}
@@ -116,14 +115,14 @@ v \\
 \end{array}
 \right]
 \left[\begin{array}{ccc}
-x\prime \\
-y\prime \\
+x_i \\
+y_i \\
 1 \\
 \end{array}
 \right]
 \label{camera2pixel-equation}
 \end{equation}
-ÆäÖÐ£¬$dx$ÊÇuÖá·½Ïòµ¥ÏñËØµÄ¿í¶È£¬$dy$ÊÇvÖá·½Ïòµ¥ÏñËØµÄ¿í¶È£¬µ±Ç°´ó²¿·ÖccdµÄÏñËØ¿í¶È£¬$dx=dy$£¬Ö»ÓÐÒÔÇ°ÀÏÊ½µçÊÓ»úÊ¹ÓÃµÄÊÇ¾ØÐÎccd£¬µ¼ÖÂ$dx\neq dy$¡£$p_x,p_y$ÊÇÖ÷µã£¨Í¼~\ref{firstperson}£©ÓëÍ¼Ïñ×ó±ß½çµÄ¾àÀëÓë$p_y$ ÊÇÖ÷µãÓëÍ¼ÏñÉÏ±ß½çµÄ¾àÀë¡£$s$ÊÇºâÁ¿Ö÷¹âÖáÓë³ÉÏñÆ½ÃæµÄÇãÐ±³Ì¶È£¬Èç¹ûÖ÷¹âÖá´¹Ö±ÓÚ³ÉÏñÆ½Ãæ£¬Ôò$s = 0$¡£ÕâÐ©²ÎÊý±»³Æ×÷Ïà»úÄÚ²Î£¬Ò»°ã¿ÉÒÔÍ¨¹ý²éÑ¯Ïà»úÊÖ²áµÃµ½°üÀ¨½¹¾àÔÚÄÚµÄÏà»úÄÚ²Î¡£
+ÆäÖÐ£¬$s_x$ÊÇuÖá·½Ïòµ¥ÏñËØµÄ¿í¶È£¬$s_y$ÊÇvÖá·½Ïòµ¥ÏñËØµÄ¿í¶È£¬µ±Ç°´ó²¿·ÖccdµÄÏñËØ¿í¶È£¬$dx=dy$£¬Ö»ÓÐÒÔÇ°ÀÏÊ½µçÊÓ»úÊ¹ÓÃµÄÊÇ¾ØÐÎccd£¬µ¼ÖÂ$s_x\neq s_y$¡£$p_x$ÊÇÖ÷µã£¨Í¼~\ref{firstperson} Z ÖáÓë³ÉÏñÆ½ÃæµÄ½»µã£©ÓëÍ¼Ïñ×ó±ß½çµÄ¾àÀë£¬$p_y$ ÊÇÖ÷µãÓëÍ¼ÏñÉÏ±ß½çµÄ¾àÀë¡£$s$ÊÇºâÁ¿Ö÷¹âÖáÓë³ÉÏñÆ½ÃæµÄÇãÐ±³Ì¶È£¬Èç¹ûÖ÷¹âÖá´¹Ö±ÓÚ³ÉÏñÆ½Ãæ£¬Ôò$s = 0$¡£ÕâÐ©²ÎÊý±»³Æ×÷Ïà»úÄÚ²Î£¬Ò»°ã¿ÉÒÔÍ¨¹ý²éÑ¯Ïà»úÊÖ²áµÃµ½°üÀ¨½¹¾àÔÚÄÚµÄÏà»úÄÚ²Î¡£
 
 \begin{figure}[!htbp]
 	\centering
@@ -137,8 +136,8 @@ y\prime \\
 	\caption{×ø±ê×ª»»¹ØÏµÍ¼}
 	\label{transform-coordinate}
 \end{figure}
-ÖÁ´ËÎÒÃÇ¿ÉÒÔµÃµ½´ÓÊÀ½ç×ø±êÏµµ½ÏñËØ×ø±êÏµ±ä»¯¹ý³Ì£¬ÈçÍ¼~\ref{transform}ºÍ~\ref{transform-coordinate}¡£
-Í¼~\ref{transform}¹ý³ÌÓÃ¹«Ê½±í´ïÎª~\ref{transform-equation}
+ÖÁ´ËÎÒÃÇ¿ÉÒÔµÃµ½´ÓÊÀ½ç×ø±êÏµµ½ÏñËØ×ø±êÏµ×ª»»¹ý³Ì£¬ÈçÍ¼~\ref{transform}ºÍ~\ref{transform-coordinate}ËùÊ¾¡£
+Í¼~\ref{transform}¹ý³ÌÓÃ¹«Ê½±í´ïÎªÊ½~\ref{transform-equation}ËùÊ¾¡£
 \begin{equation}
 %\sideset{^a_b}{^c_d}\prod^{n}_{k=1}
 z_c \left[\begin{array}{ccc}
@@ -172,22 +171,13 @@ Z_w \\
 \right]
 \label{transform-equation}
 \end{equation}
-ÖÁ´ËÎÒÃÇÖªµÀÁËÏà»ú³ÉÏñ¹ý³ÌÖÐÄ³µãÈçºÎÔÚ²»Í¬×ø±êÏµÏÂ×ª»»£¬´Ó¶øÍê³ÉÉãÏñ¹ý³Ì¡£Ê½~\ref{transform-equation}Éæ¼°µ½Ïà»ú²ÎÊý$f,p_x,p_y$ÒÔ¼°¿Õ¼ä±ä»»Ïà¹ØµÄ²ÎÊý£¨Íâ²Î$R,t$£©£¬Êµ¼ÊÉÏÔÚÏà»ú³ÉÏñ¹ý³ÌÖÐ³ýÁËÕâÐ©²ÎÊý£¬ÎÒÃÇ»¹»áÓöµ½ÎÞ·¨ÏßÐÔ½¨Ä£µÄ²ÎÊý£ºÏñGoproµÈÓãÑÛ¾µÍ·ÖÐ£¬ÎÒÃÇ¿ÉÒÔ¿´µ½ÊÀ½çÖÐµÄÖ±Ïß²»ÔÙÊÇÖ±Ïß£¬ÈçÍ¼¡£¡£¡£¡£
-ÕâÐ©ÍäÇúµÄÏßÓÐÒ»Ð©ÌØ±ðµÄÌØÐÔ£ºËûÃÇ¶¼ÊÇ±»¹ØÓÚÖÐÐÄÅ¤ÇúµÄ ÎÒÃÇ³ÆÕâÖÖ»û±äÎª¾¶Ïò»û±ä¡£ÕâÒâÎ¶×ÅÏñËØµãÊÇÑØ×Å´ÓÖÐÐÄ·ÅÉäµÄ¾¶Ïò³É±ÈÀýÅ¤ÇúµÄ¡£ÎªÁËÈ¥³ýÏà»úµÄ»û±ä£¬ÐèÒª¶Ô»û±äÓÃ¶àÏîÊ½½øÐÐ½¨Ä££¬ÈçÊ½~\ref{radial-equation}¡£
 
-\begin{subequations}
-\label{radial-equation}
-\begin{align}
-u^{dist} &= u(1+k_1 r+k_2 r^2+ k_3 r^3 + ...)  \\
-v^{dist} &= v(1+k_1 r+k_2 r^2+ k_3 r^3 + ...)  \\
-where \quad & r^2 = u^2 + v^2
-\end{align}
-\end{subequations}
-ÆäÖÐ£¬$k_1,k_2,k_3$ÊÇÎ´Öª²ÎÊý£¬ÐèÒª±ê¶¨²Å¿ÉÒÔµÃµ½£¬¶øÊµ¼ÊÐ£Õý¾¶Ïò»û±äÊ±Ò»°ãÒ²Ö»ÓÃµ½2¸ö»ò3¸ö²ÎÊý£¬ÈçÍ¼~\ref{distortion}ËùÊ¾£¬×óÍ¼Îª´æÔÚ¾¶Ïò»û±äµÄÍ¼Æ¬£¬ÓÒÍ¼Îª¾­¹ýÐ£ÕýºóµÄÍ¼Æ¬¡£
+ÖÁ´ËÎÒÃÇµÃµ½Ïà»ú³ÉÏñ¹ý³ÌÄ³µãÔÚ²»Í¬×ø±êÏµÏÂ×ª»»¹ØÏµ£¬´Ó¶øÍê³ÉÉãÏñ¹ý³Ì¡£Ê½~\ref{transform-equation}Éæ¼°µ½Ïà»ú²ÎÊý$f,p_x,p_y$ÒÔ¼°¿Õ¼ä±ä»»Ïà¹ØµÄ²ÎÊý£¨Íâ²Î$R,t$£©£¬Êµ¼ÊÉÏÔÚÏà»ú³ÉÏñ¹ý³ÌÖÐ³ýÁËÕâÐ©²ÎÊý£¬ÎÒÃÇ»¹»áÓöµ½ÎÞ·¨ÏßÐÔ½¨Ä£µÄ²ÎÊý£ºÏñGoproµÈÓãÑÛ¾µÍ·ÖÐ£¬ÎÒÃÇ¿ÉÒÔ¿´µ½ÊÀ½çÖÐµÄÖ±Ïß²»ÔÙÊÇÖ±Ïß£¬ÈçÍ¼~\ref{distortion}×óÍ¼ËùÊ¾£¬
+ÕâÐ©ÍäÇúµÄÖ±ÏßÓÐÒ»Ð©¹²Í¬ÌØÐÔ£ºËüÃÇ¶¼ÊÇ¹ØÓÚÖÐÐÄÅ¤ÇúµÄ£¬ÎÒÃÇ³ÆÕâÖÖ»û±äÎª¾¶Ïò»û±ä£¬ÕâÒâÎ¶×ÅÏñËØµãÊÇÑØ×Å´ÓÖÐÐÄ·ÅÉäµÄ¾¶Ïò³É±ÈÀýÅ¤ÇúµÄ¡£ÎªÁËÈ¥³ýÏà»úµÄ»û±ä£¬ÐèÒª¶Ô»û±äÓÃ¶àÏîÊ½½øÐÐ½¨Ä££¬ÈçÊ½~\ref{radial-equation}ËùÊ¾¡£
 \begin{figure}[!htbp]
 	\centering
     \subfigure{
-	\includegraphics[width=2.5in]{chapter3/radial-distortion.PNG}
+	\includegraphics[width=2.4in]{chapter3/radial-distortion.PNG}
     }
     \subfigure{
 	\includegraphics[width=2.5in]{chapter3/non-radial-distortion.PNG}
@@ -196,28 +186,46 @@ where \quad & r^2 = u^2 + v^2
 	\label{distortion}
 \end{figure}
 
-ÔÚÏà»úÐ£ÕýµÄ¹ý³ÌÖÐ£¬Êµ¼ÊÉÏ»¹ÐèÒªÐ£ÕýÍ¼ÏñµÄÇÐÏòÊ§Õæ£¬ÕâÊÇÓÉÓÚÉãÏñ»ú°²×°Ê±³ÉÏñÆ½ÃæÓëÍ¸¾µÃ»ÓÐÆ½ÐÐµ¼ÖÂµÄ£¬Èç¹ûËµ¾¶Ïò»û±äÊÇ×ø±êµã¾àÀëÖÐÐÄµãµÄ³¤¶È·ÅÉúÁË±ä»¯£¬ÄÇÃ´ÇÐÏò»û±ä¾ÍÊÇ×ø±êµãÓëÖÐÐÄµãµÄË®Æ½¼Ð½Ç·¢ÉúÁË±ä»¯¡£¶ÔÇÐÏò»û±äµÄ½¨Ä£ÈçÊ½~\ref{tangential-equation}£¬Ò»°ãÊ¹ÓÃ$p_1,p_2$Á½¸ö²ÎÊý¡£
+\begin{subequations}
+\label{radial-equation}
+\begin{align}
+u^{rad-dist} &= u(1+k_1 r+k_2 r^2+ k_3 r^3 + ...)  \\
+v^{rad-dist} &= v(1+k_1 r+k_2 r^2+ k_3 r^3 + ...)  \\
+where \quad & r^2 = u^2 + v^2
+\end{align}
+\end{subequations}
+ÆäÖÐ£¬$k_1,k_2,k_3$ÊÇÎ´Öª²ÎÊý£¬ÐèÒª±ê¶¨²Å¿ÉÒÔµÃµ½£¬¶øÊµ¼ÊÐ£Õý¾¶Ïò»û±äÒ»°ãÒ²Ö»ÓÃµ½2¸ö»ò3¸ö²ÎÊý£¬ÈçÍ¼~\ref{distortion}ËùÊ¾£¬×óÍ¼Îª´æÔÚ¾¶Ïò»û±äµÄÍ¼Æ¬£¬ÓÒÍ¼Îª¾­¹ýÐ£ÕýºóµÄÍ¼Æ¬¡£
+
+ÔÚÏà»úÐ£ÕýµÄ¹ý³ÌÖÐ£¬Êµ¼ÊÉÏ»¹ÐèÒªÐ£ÕýÍ¼ÏñµÄÇÐÏòÊ§Õæ£¬ÕâÊÇÓÉÓÚÉãÏñ»ú°²×°Ê±³ÉÏñÆ½ÃæÓëÍ¸¾µÃ»ÓÐÆ½ÐÐµ¼ÖÂµÄ£¬Èç¹ûËµ¾¶Ïò»û±äÊÇ×ø±êµã¾àÀëÖÐÐÄµãµÄ³¤¶È·¢Éú±ä»¯£¬ÄÇÃ´ÇÐÏò»û±ä¾ÍÊÇ×ø±êµãÓëÖÐÐÄµãµÄË®Æ½¼Ð½Ç·¢Éú±ä»¯¡£¶ÔÇÐÏò»û±äµÄ½¨Ä£ÈçÊ½~\ref{tangential-equation}£¬Ò»°ãÊ¹ÓÃ$p_1,p_2$Á½¸ö²ÎÊý¡£
 \begin{subequations}
 \label{tangential-equation}
 \begin{align}
-u^{dist} &= u + 2p_1 uv + p_2(r^2 + 2u^2) \\
-u^{dist} &= u + 2p_2 uv + p_1(r^2 + 2v^2) \\
+u^{tag-dist} &= u + 2p_1 uv + p_2(r^2 + 2u^2) \\
+v^{tag-dist} &= v + 2p_2 uv + p_1(r^2 + 2v^2) \\
 where \quad & r^2 = u^2 + v^2
 \end{align}
 \end{subequations}
 
-×ÛÉÏËùÊö£¬±¾½ÚÏêÏ¸½éÉÜÁËÏà»úÄ£ÐÍÓëÏà»úÏà¹Ø×ø±êÏµ×ª»»¹ØÏµ£¬ÒÔ¼°Ïà»ú³ÉÏñµÄÐ£ÕýµÈÏà¹ØÄÚÈÝ£¬Õâ²¿·ÖÊôÓÚÍ¼Ïñ´¦ÀíµÄ»ù´¡£¬ÊìÏ¤¸Ã²¿·ÖÄÚÈÝ½«ÎªÏÂÃæ¼¸½Ú¶àÊÓÍ¼¼¸ºÎÏà¹ØÄÚÈÝ×÷ÆÌµæ¡£
-\section{ÌØÕ÷µãÌáÈ¡}
-SfMÊ×ÏÈÐèÒªÕÒµ½Í¼Æ¬¼¯ÖÐÁ©Á©Í¼Æ¬¼äµÄ¼¸ºÎ¹ØÏµ£¬ÕâÑù²ÅÄÜ¹ÀËãÏà»ú¼äµÄÔË¶¯Óë³ÉÏñµÄÈýÎ¬µã×ø±ê¡£ÎªÁËÕÒµ½Í¼Æ¬Ö®¼äµÄ¼¸ºÎ¹ØÏµ£¬ÏÖ½ñÓÐÐí¶à·½·¨£¬ÀýÈç¹âÁ÷·¨£¬ÌØÕ÷µã·¨µÈ£¬¹âÁ÷·¨ÊÊÓÃÓÚÔÈËÙÔËËÍµÄÊÓÆµÁ÷ÖÐ£¬ÒªÇóÖ¡¼äÔË¶¯±È½ÏÐ¡£¬´Ó¶øÕÒ³öÖ¡¼äÔË¶¯¹ØÏµ£»ÌØÕ÷µã·¨Ö¸¶ÔÍ¼ÏñÌØÕ÷µÄÌáÈ¡Óë´æ´¢£¬ÊÇÍ¼ÏñÖÐ±È½ÏÓÐ´ú±íÐÔµÄÌØÕ÷¡£ÓÉÓÚ±¾ÎÄÊ¹ÓÃµÄÊý¾Ý¼¯ÎªÎÞÐòµÄº½ÅÄÍ¼Ïñ£¬ÌØÕ÷µã·¨½ÏÎªÊÊÒËÊ¹ÓÃ¡£ÌØÕ÷µãÌáÈ¡¸üÍ¨Ë×µÄÀí½âÎª½«¶þÎ¬¾ØÕóÃèÊöµÄÍ¼Ïñ½µÎ¬ÎªÒ»Î¬ÌØÕ÷µãÃèÊöµÄÍ¼Ïñ£¬Í»³öÍ¼ÏñµÄÖØµã£¬È¥³ýÈßÓàÐÅÏ¢µÄ¹ý³Ì¡£
+×ÛÉÏËùÊö£¬±¾½ÚÏêÏ¸½éÉÜÁËÏà»úÄ£ÐÍÓëÏà»úÏà¹Ø×ø±êÏµ×ª»»¹ØÏµ£¬ÒÔ¼°Ïà»ú³ÉÏñµÄÐ£ÕýµÈÏà¹ØÄÚÈÝ£¬Õâ²¿·ÖÊôÓÚÍ¼Ïñ´¦ÀíµÄ»ù´¡£¬¸Ã²¿·ÖÄÚÈÝÊÇÎªÏÂÎÄ¶àÊÓÍ¼¼¸ºÎ×÷ÆÌµæ¡£ÒÔÏÂ3.4 - 3.7½ÚÊÇ±¾ÎÄSfMµÄÖ÷ÒªÄÚÈÝ£¬¿ÉÒÔ¸ÅÀ¨ÎªÁ÷³ÌÍ¼~\ref{flow-sparse}£¬ÊäÈëÎªÎÞÐòµ¥Ä¿º½ÅÄÍ¼Ïñ£¬Êä³öÎªÏ¡ÊèµãÔÆÓëÏà»úÎ»×Ë£¬ÒÔÏÂ½«·Ö²½½éÉÜ¸÷¸ö»·½Ú¡£
 
-×î¼òµ¥µÄÍ¼ÏñÌØÕ÷ÎªÍ¼ÏñµÄ½Çµã£¬½Çµã¾ÍÊÇÍ¼ÏñÖÐÏßµÄ½»µã£¬ÀýÈç´óÏÃ×î¸ß´¦µÄ¶¥µã¡£Á½·ùÍ¼ÏñµÄ½Çµã²»»áËæ×ÅÍ¼ÏñÒÆ¶¯¶ø¸Ä±ä£¬µ«ÊÇ½Çµã»áËæ×ÅÀëÏà»úµÄ¾àÀëÌ«½ü¶ø±äµÃÎÞ·¨Ê¶±ð£¬ËùÒÔÐí¶àÑÐ¾¿ÕßÉè¼ÆÁË¾«ÇÉ¶ø»¥ÓÐÓÅÁÓµÄÌØÕ÷¼ì²âÓëÃèÊö·½·¨£¬±È½ÏÖøÃûµÄÓÐSIFT(Scale Invariant Feature Transform)\cite{Lowe-DistinctiveImageFeatures}£¬SURF\cite{Bay-Speeded-UpRobustFeatures}£¬ORG\cite{Rublee-ORB:Anefficient}µÈ¡£Ïà¶ÔÓÚ¼òµ¥µÄ½Çµã£¬ÕâÐ©ÌØÕ÷¼ì²â¾ßÓÐÒÔÏÂÓÅµã\cite{slam14}:
+\begin{figure}[H]
+\centering
+\includegraphics[width=5.4in]{chapter3/flow-sparse.png}
+\caption{SfMÁ÷³ÌÍ¼}
+\label{flow-sparse}
+\end{figure}
+
+\section{ÌØÕ÷µãÌáÈ¡}
+SfMÊ×ÏÈÐèÒªÕÒµ½Í¼Æ¬¼¯ÖÐÃ¿Á½ÕÅÍ¼Æ¬¼äµÄ¼¸ºÎ¹ØÏµ£¬ÕâÑù²ÅÄÜÊ¹ÎÞÐòÍ¼Æ¬¼¯¡°ÓÐÐò»¯¡±£¬´Ó¶ø¹ÀËãÏà»ú¼äµÄÔË¶¯Óë³ÉÏñµÄÈýÎ¬µã×ø±ê¡£ÎªÁËÕÒµ½Í¼Æ¬Ö®¼äµÄ¼¸ºÎ¹ØÏµ£¬ÏÖ½ñÓÐÐí¶à·½·¨£¬ÀýÈç¹âÁ÷·¨£¬ÌØÕ÷µã·¨µÈ£¬¹âÁ÷·¨ÊÊÓÃÓÚÔÈËÙÔË¶¯µÄÊÓÆµÁ÷ÖÐ£¬ÒªÇóÖ¡¼äÔË¶¯±È½ÏÐ¡£¬´Ó¶øÕÒ³öÖ¡¼äÔË¶¯¹ØÏµ£»ÌØÕ÷µã·¨Ö¸¶ÔÍ¼ÏñÌØÕ÷µÄÌáÈ¡Óë´æ´¢£¬ÊÇÍ¼ÏñÖÐ±È½ÏÓÐ´ú±íÐÔµÄÌØÕ÷¡£ÓÉÓÚ±¾ÎÄÊ¹ÓÃµÄÊý¾Ý¼¯ÎªÎÞÐòµÄº½ÅÄÍ¼Ïñ£¬ÌØÕ÷µã·¨½ÏÎªÊÊÒËÊ¹ÓÃ¡£ÌØÕ÷µãÌáÈ¡¸üÍ¨Ë×µÄÀí½âÎª½«¶þÎ¬¾ØÕóÃèÊöµÄÍ¼Ïñ½µÎ¬ÎªÒ»Î¬ÌØÕ÷ÃèÊöµÄÍ¼Ïñ£¬Í»³öÍ¼ÏñµÄÖØµã£¬È¥³ýÈßÓàÐÅÏ¢µÄ¹ý³Ì¡£
+
+×î¼òµ¥µÄÍ¼ÏñÌØÕ÷ÎªÍ¼ÏñµÄ½Çµã£¬½Çµã¾ÍÊÇÍ¼ÏñÖÐÏßµÄ½»µã£¬ÀýÈç´óÏÃ×î¸ß´¦µÄ¶¥µã¡£Á½·ùÍ¼ÏñµÄ½Çµã²»»áËæ×ÅÍ¼ÏñÒÆ¶¯¶ø¸Ä±ä£¬µ«ÊÇ½Çµã»áËæ×ÅÀëÏà»úµÄ¾àÀëÌ«½ü¶ø±äµÃÎÞ·¨Ê¶±ð£¬ËùÒÔÐí¶àÑÐ¾¿ÕßÉè¼ÆÁË¾«ÇÉ¶ø»¥ÓÐÓÅÁÓµÄÌØÕ÷¼ì²âÓëÃèÊö·½·¨£¬±È½ÏÖøÃûµÄÓÐSIFT\cite{Lowe-DistinctiveImageFeatures}£¬SURF\cite{Bay-Speeded-UpRobustFeatures}£¬ORG\cite{Rublee-ORB:Anefficient}µÈ¡£Ïà¶ÔÓÚ¼òµ¥µÄ½Çµã£¬ÕâÐ©ÌØÕ÷¼ì²â¾ßÓÐÒÔÏÂÓÅµã\cite{slam14}:
 \begin{itemize}
 \item ¿ÉÖØ¸´£ºÏàÍ¬µÄÌØÕ÷¿ÉÒÔÔÚ²»Í¬µÄÍ¼Æ¬ÖÐÕÒµ½
 \item ¿ÉÇø±ð£º²»Í¬µÄÌØÕ÷ÓÐ²»Í¬µÄ±íÊ¾
 \item ¸ßÐ§ÂÊ£ºÌØÕ÷µãÊýÔ¶Ô¶Ð¡ÓÚÏñËØÊý
 \end{itemize}
 
-Êµ¼ÊÉÏ£¬ÌØÕ÷µã¿ÉÒÔ·ÖÎª¾Ö²¿ÌØÕ÷µãºÍÈ«¾ÖÌØÕ÷µã£¬ÏñÉÏÃæ¾ÙÀýµÄÈý¸öÌØÕ÷µãÊµ¼ÊÉÏÊÇ¾Ö²¿ÌØÕ÷µã£¬¾Ö²¿ÌØÕ÷µã¹ËÃûË¼Òå¾ÍÊÇ»ùÓÚÍ¼ÏñµÄÍ»³öÇøÓòÃ÷ÏÔµÄÇø·ÖÍ¼ÏñµÄÌØÕ÷£¬Ò»°ã¶øÑÔ£¬¾Ö²¿ÌØÕ÷ÐèÒª¾ßÓÐÐý×ª²»±äÐÔ£¬¹âÏßÃ÷°µµÄÂ³°ôÐÔµÈ¡£Òò´ËÍ¼Ïñ¿ÉÒÔ±»ÌáÈ¡µ½µÄÒ»ÏµÁÐ³ÆÎª¸ÐÐËÈ¤ÇøÓòµÄÌØÕ÷ÃèÊö¡£Ïà·´È«¾ÖÌØÕ÷ÊÇ½«Í¼Ïñ±íÊ¾ÎªÒ»¸öÏòÁ¿£¬ÏòÁ¿µÄÖµÎªÍ¼ÏñµÄ¸÷¸ö·½Ãæ£¬ÈçÑÕÉ«£¬ÎÆÀí»òÐÎ×´¡£ÀýÈçÏñÇø·ÖÍ¼Ïñ£¬Ò»Ð©ÊÇº£Ñó£¬Ò»Ð©ÊÇÉ­ÁÖ£¬Ò»¸öÈ«¾ÖÑÕÉ«ÃèÊö×Ó¿ÉÒÔºÜºÃµÄ¶ÔÆä¹éÀà¡£ÔÚÕâÖÖÇé¿öÏÂ£¬È«¾ÖÃèÊö×ÓÉæ¼°Í¼ÏñËùÓÐÏñËØµÄÌØ¶¨ÊôÐÔ£¬Õâ¸öÊôÐÔ¿ÉÒÔÊÇÑÕÉ«Ö±·½Í¼£¬ÎÆÀí£¬±ßÔµµÈ¡£ÈçÍ¼~\ref{global-local}ËùÊ¾£¬Ê¹ÓÃÄÄÖÖÌØÕ÷ÃèÊö×ÓÈ¡¾öÓÚÍ¼Ïñ´¦ÀíµÄÇé¾°¡£ÓÉÓÚµØÀí¿Õ¼äµÄº½ÅÄÍ¼ÏñÔÚÑÕÉ«»òÕßÎÆÀíµÈÈ«¾ÖÌØÕ÷ÉÏ£¬Í¼Æ¬µÄÏàËÆ¶È¼«¸ß£¬²»Ò×±æÊ¶£¬ÄÑÒÔÕÒµ½Í¼Æ¬Ö®¼äµÄÆ¥Åä¹ØÏµ£¬ËùÒÔ´ËÎÄÑ¡ÓÃ¾Ö²¿ÌØÕ÷ÃèÊö×Ó£ºSIFT¡£
+Êµ¼ÊÉÏ£¬ÌØÕ÷µã¿ÉÒÔ·ÖÎª¾Ö²¿ÌØÕ÷µãºÍÈ«¾ÖÌØÕ÷µã£¬ÏñÉÏÃæ¾ÙÀýµÄÈý¸öÌØÕ÷µãÊµ¼ÊÉÏÊÇ¾Ö²¿ÌØÕ÷µã£¬¾Ö²¿ÌØÕ÷µã¹ËÃûË¼Òå¾ÍÊÇ»ùÓÚÍ¼ÏñµÄÍ»³öÇøÓòÃ÷ÏÔµÄÇø·ÖÍ¼ÏñµÄÌØÕ÷£¬Ò»°ã¶øÑÔ£¬¾Ö²¿ÌØÕ÷ÐèÒª¾ßÓÐÐý×ª²»±äÐÔ£¬¶Ô¹âÏßÇ¿¶È±ä»¯µÄÂ³°ôÐÔµÈ£¬Ê¹ÓÃ¾Ö²¿ÌØÕ÷¼ì²âËã·¨¿ÉÒÔ´ÓÍ¼ÏñÖÐÌáÈ¡Ò»ÏµÁÐ³ÆÎª¸ÐÐËÈ¤ÇøÓòµÄÌØÕ÷£¬ÓÉÒ»ÏµÁÐÏòÁ¿×é³É¡£Ïà·´È«¾ÖÌØÕ÷ÊÇ½«Í¼Ïñ±íÊ¾ÎªÒ»¸öÏòÁ¿£¬ÏòÁ¿µÄÖµ·´Ó³Í¼ÏñÕûÌåÌØÐÔ£¬¿ÉÒÔÊÇÑÕÉ«£¬ÎÆÀí»òÐÎ×´µÈ²»Í¬ÌØÕ÷¡£ÀýÈçÇø·ÖÍ¼Ïñ£¬Ò»Ð©ÊÇº£Ñó£¬Ò»Ð©ÊÇÉ­ÁÖ£¬Ê¹ÓÃÈ«¾ÖÑÕÉ«ÃèÊö×Ó¿ÉÒÔºÜºÃµÄ¶ÔÆä¹éÀà¡£ÔÚÕâÖÖÇé¿öÏÂ£¬È«¾ÖÃèÊö×ÓÉæ¼°Í¼ÏñËùÓÐÏñËØµÄÌØ¶¨ÊôÐÔ£¬Õâ¸öÊôÐÔ¿ÉÒÔÊÇÑÕÉ«Ö±·½Í¼£¬ÎÆÀí£¬±ßÔµµÈ¡£ÈçÍ¼~\ref{global-local}ËùÊ¾£¬Ê¹ÓÃÄÄÖÖÌØÕ÷ÃèÊö×ÓÈ¡¾öÓÚÍ¼Ïñ´¦ÀíµÄÇé¾°¡£ÓÉÓÚµØÀí¿Õ¼äµÄº½ÅÄÍ¼ÏñÔÚÑÕÉ«»òÕßÎÆÀíµÈÈ«¾ÖÌØÕ÷·½ÃæÏàËÆ¶È¼«¸ß£¬²»Ò×±æÊ¶£¬ÄÑÒÔÕÒµ½Í¼Æ¬Ö®¼äµÄÆ¥Åä¹ØÏµ£¬ËùÒÔ´ËÎÄÑ¡ÓÃ¾Ö²¿ÌØÕ÷ÃèÊö×Ó£ºSIFT¡£
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width=5.0in]{chapter3/global-local.jpg}
@@ -225,33 +233,32 @@ SfMÊ×ÏÈÐèÒªÕÒµ½Í¼Æ¬¼¯ÖÐÁ©Á©Í¼Æ¬¼äµÄ¼¸ºÎ¹ØÏµ£¬ÕâÑù²ÅÄÜ¹ÀËãÏà»ú¼äµÄÔË¶¯Óë³ÉÏñµÄÈýÎ
 \label{global-local}
 \end{figure}
 
-ÌØÕ÷µãÌáÈ¡°üÀ¨ÌØÕ÷µã¼ì²âÓëÌØÕ÷µãÃèÊöÁ½²¿·Ö£¬ÔÚ´ËÒÔSIFTÌØÕ÷µãÎªÀý£¬¼òµ¥½éÉÜÒ»ÏÂ¼ì²â×ÓÓëÃèÊö×ÓµÄÊ¹ÓÃ·½·¨¡£¼ì²â×ÓÓÐºÜ¶à£¬Ê¹ÓÃ½Ï¶àµÄÓÐHarris Detector\cite{Harris-corner}£¬FAST Detector\cite{Rosten-FAST}¡£Harris¼ì²â×Ó½áºÏ±ßÔµÓë½Çµã¼ì²â·½·¨µÃµ½Í¼Ïñ²»Í¬·½ÏòµÄ×ÔÏà¹ØÏµÊý±ä»¯ÂÊ£¬ÀýÈçÇ¿¶È±ä»¯ÂÊµÈ£¬¸Ã·½·¨½«¾Ö²¿ÌØÕ÷ÃèÊöÎª¶Ô³ÆµÄ×ÔÏà¹ØÏµÊý¾ØÕó¡£Fast¼ì²â×Ó¿¼ÂÇÄ³ÏñËØÖÜÎ§Ò»¶¨´óÐ¡µÄÔ²£¬ÔºÉÏÏñËØÇ¿¶ÈÓë¸ÃÏñËØ±È½Ï£¬Èç¹û´óÓÚ»òÐ¡ÓÚÄ³Ò»ãÐÖµÔò¶¨Òå¸ÃÏñËØÎª½Çµã£¬ÕâÁ½ÖÖ¼ì²â×Ó¶Ô³ß¶È±ä»¯¶¼²»¾ßÓÐ²»±äÐÔ£¬²»ÊÊºÏÖ±½ÓÓ¦ÓÃÔÚÅÄÉã¸ß¶È²»Í¬µÄº½ÅÄÍ¼ÐÎµÄÌØÕ÷¼ì²âÖÐ¡£¶øSIFT×÷ÎªÒ»ÖÖ¾ßÓÐ³ß¶È¡¢·ÅËõ²»±ä£¬¶Ô²»Í¬¹âÏßÂ³°ôµÄÌØ¶¨£¬ºÜÊÊºÏÓ¦ÓÃÓÚ»·¾³¸´ÔÓµÄº½ÅÄÍ¼ÐÎµÄÌØÕ÷ÌØÈ¡ÓëÃèÊöÖÐ¡£SIFTËã·¨ÓÉËÄ¸ö²½Öè×é³É£º³ß¶È¿Õ¼ä¼«Öµ¼ì²â£¬ÐËÈ¤µã£¨¹Ø¼üµã£©¶¨Î»£¬·½Ïò¼ÆËãÒÔ¼°ÐËÈ¤µãÃèÊö¡£µÚÒ»¸ö½×¶ÎÊÇÊ¹ÓÃDifference of Gaussian(DoG)È·ÈÏÇ±ÔÚµÄÐËÈ¤µã£¬ÕâÀïÊ¹ÓÃDoG´úÌæLaplacian of Gaussian (LoG)Ëã×ÓÒÔÌá¸ß¼ÆËãËÙ¶È¡£
+ÌØÕ÷µãÌáÈ¡°üÀ¨ÌØÕ÷µã¼ì²âÓëÌØÕ÷µãÃèÊöÁ½²¿·Ö£¬ÔÚ´ËÒÔ±¾ÎÄÊ¹ÓÃµÄSIFTÌØÕ÷µãÎªÀý£¬¼òµ¥½éÉÜÒ»ÏÂ¼ì²â×ÓÓëÃèÊö×ÓµÄÊ¹ÓÃ·½·¨¡£¼ì²â×ÓÓÐºÜ¶à£¬Ê¹ÓÃ½Ï¶àµÄÓÐHarris Detector\cite{Harris-corner}£¬FAST Detector\cite{Rosten-FAST}¡£Harris¼ì²â×Ó½áºÏ±ßÔµÓë½Çµã¼ì²â·½·¨µÃµ½Í¼Ïñ²»Í¬·½ÏòµÄ×ÔÏà¹ØÏµÊý±ä»¯ÂÊ£¬ÀýÈçÇ¿¶È±ä»¯ÂÊ£¬¸Ã·½·¨½«¾Ö²¿ÌØÕ÷ÃèÊöÎª¶Ô³ÆµÄ×ÔÏà¹ØÏµÊý¾ØÕó¡£Fast¼ì²â×Ó¿¼ÂÇÄ³ÏñËØÖÜÎ§Ò»¶¨´óÐ¡µÄÔ²£¬Ô²ÉÏÏñËØÇ¿¶ÈÓë¸ÃÏñËØ±È½Ï£¬Èç¹û´óÓÚ»òÐ¡ÓÚÄ³Ò»ãÐÖµÔò¶¨Òå¸ÃÏñËØÎª½Çµã£¬ÕâÁ½ÖÖ¼ì²â×Ó¶Ô³ß¶È±ä»¯²»¾ßÓÐ²»±äÐÔ£¬²»ÊÊºÏÓ¦ÓÃÓÚÅÄÉã¸ß¶È²»Í¬µÄº½ÅÄÍ¼ÐÎµÄÌØÕ÷¼ì²âÖÐ¡£¶øSIFT×÷ÎªÒ»ÖÖ¾ßÓÐ³ß¶È¡¢·ÅËõ²»±ä£¬¶Ô¹âÏßÃ÷°µÂ³°ôµÄÌØ¶¨£¬ºÜÊÊºÏÓ¦ÓÃÓÚ»·¾³¸´ÔÓµÄº½ÅÄÍ¼ÐÎµÄÌØÕ÷ÌØÈ¡ÓëÃèÊöÖÐ¡£SIFTËã·¨ÓÉËÄ¸ö²½Öè×é³É£º³ß¶È¿Õ¼ä¼«Öµ¼ì²â£¬ÐËÈ¤µã£¨¹Ø¼üµã£©¶¨Î»£¬·½Ïò¼ÆËãÒÔ¼°ÐËÈ¤µãÃèÊö¡£µÚÒ»¸ö½×¶ÎÊÇÊ¹ÓÃDoG(Difference of Gaussian)È·ÈÏÇ±ÔÚµÄÐËÈ¤µã£¬ÕâÀïÊ¹ÓÃDoG´úÌæLoG(Laplacian of Gaussian)Ëã×ÓÒÔÌá¸ß¼ÆËãËÙ¶È¡£
 
-Laplacian of Gaussian (LoG)ÊÇ¶þ½×µ¼ÊýµÄÏßÐÔ×éºÏ£¬Ò²ÊÇ¼ì²â°ßµã(blob)µÄ¼ì²â×Ó£¬¸ø³öÒ»¸öÍ¼Æ¬$I(x,y)$,³ß¶È¿Õ¼ä$L(x,y,\sigma)$ÊÇÓÉÍ¼Æ¬$I(x,y)$Óë²»Í¬´óÐ¡µÄ¸ßË¹ºË$G(x,y,\sigma)$¾í»ýµÃµ½µÄ£¬±íÊ¾Îª
+LoGÊÇ¶þ½×µ¼ÊýµÄÏßÐÔ×éºÏ£¬Ò²ÊÇÓÃÀ´¼ì²â°ßµã(Blob)µÄ¼ì²â×Ó£¬¸ø³öÒ»ÕÅÍ¼Æ¬$I(x,y)$£¬Ôò³ß¶È¿Õ¼ä$L(x,y,\sigma)$ÊÇÓÉÍ¼Æ¬$I(x,y)$Óë²»Í¬´óÐ¡µÄ¸ßË¹ºË$G(x,y,\sigma)$¾í»ýµÃµ½µÄ£¬±íÊ¾Îª
 
 \begin{equation}
 L(x,y,\sigma) = G(x,y,\sigma)*I(x,y)
-\label{laplacian}
+%\label{laplacian}
 \end{equation}
 ÆäÖÐ£¬
 \begin{equation}
 G(x,y,\sigma) = \frac{1}{2\pi \sigma ^2}e^{\frac{-(x^2 + y^2)}{2 {\sigma}^2}}
-\label{laplacian}
+%\label{laplacian}
 \end{equation}
-
 ¾Ý´Ë¿É¼ÆËãLaplacianËã×ÓÎª
 \begin{equation}
 {\nabla}^2 L(x,y,\sigma)=L_{xx}(x,y,\sigma)+L_{yy}(x,y,\sigma)
-\label{laplacian}
+%\label{laplacian}
 \end{equation}
-
-Õâ¶ÔÓÚ´óÐ¡Îª$\sqrt{2\sigma}$µÄ°ßµãÓÐ×îÇ¿µÄÏìÓ¦£¬È»¶ø¸ÃËã×ÓÑÏÖØÒÀÀµÍ¼ÏñÖÐ°ßµã´óÐ¡ÓëÓÃÀ´Æ½»¬Í¼ÏñµÄ¸ßË¹ºË´óÐ¡£¬¼´´óÐ¡²»Í¬µÄ¸ßË¹ºËº¯Êý±»ÓÃÀ´Ñ°ÕÒ¶ÔÓ¦´óÐ¡µÄblob¡£ÎªÁËÔÚÒ»·ùÍ¼ÏñÖÐ×Ô¶¯¼ì²â²»Í¬´óÐ¡µÄ°ßµã£¬Ò»ÖÖ¶à³ß¶ÈµÄ·½·¨±»Ìá³öÀ´\cite{Lindeberg-Feature detection}£¬ÆäÍ¨¹ý³ß¶È²»Í¬µÄ¹éÒ»»¯µÄLaplacianËã×Ó¶ÔÍ¼Æ¬½øÐÐÆ½»¬´Ó¶øÔÚ²»Í¬³ß¶È¿Õ¼äÕÒµ½´óÐ¡²»Í¬µÄblob£¬³ß¶È¹éÒ»»¯µÄ¸ßË¹ºËº¯ÊýÎªÊ½~\ref{nor-lap-equation}¡£
+ÉÏÊ½¶Ô´óÐ¡Îª$\sqrt{2\sigma}$µÄ°ßµãÓÐ×îÇ¿µÄÏìÓ¦£¬È»¶ø¸ÃËã×ÓÑÏÖØÒÀÀµÍ¼ÏñÖÐ°ßµã´óÐ¡ÓëÓÃÀ´Æ½»¬Í¼ÏñµÄ¸ßË¹ºË´óÐ¡£¬¼´´óÐ¡²»Í¬µÄ¸ßË¹ºËº¯ÊýÓë´óÐ¡Ïà½üµÄ°ßµã¾í»ýÓÐ×îÇ¿µÄÏìÓ¦¡£ÎªÁËÔÚÒ»·ùÍ¼ÏñÖÐ×Ô¶¯¼ì²â²»Í¬´óÐ¡µÄ°ßµã£¬¶à³ß¶ÈµÄ·½·¨Ó¦ÓÃ¶øÉú\cite{Lindeberg-Feature detection}£¬Í¨¹ý³ß¶È²»Í¬µÄ¹éÒ»»¯LaplacianËã×Ó¶ÔÍ¼Æ¬½øÐÐÆ½»¬´Ó¶øÔÚ²»Í¬³ß¶È¿Õ¼äÕÒµ½´óÐ¡²»Í¬µÄ°ßµã£¬³ß¶È¹éÒ»»¯µÄ¸ßË¹ºËº¯ÊýÎªÊ½~\ref{nor-lap-equation}¡£
 
 \begin{equation}
-{\nabla}^{2}_{norm} L(x,y,\sigma)={\sigma}^2 L_{xx}(x,y,\sigma)+L_{yy}(x,y,\sigma)
-\label{laplacian}
+{\nabla}^{2}_{norm} L(x,y,\sigma)={\sigma}^2 (L_{xx}(x,y,\sigma)+L_{yy}(x,y,\sigma))
+\label{nor-lap-equation}
 \end{equation}
-´óµÄ$\sigma$¶ÔÓ¦Í¼Æ¬µÄ´ÖÂÔÌØÕ÷£¬Ð¡$sigma$¶ÔÓ¦Í¼Æ¬µÄ¾«Ï¸ÌØÕ÷¡£Í¬Ê±LoGËã×ÓÊÇ¶Ô³ÆµÄ£¬ËùÒÔËü¾ßÓÐblobÐý×ª¶ÔÆäÃ»ÓÐÓ°Ïì£¬µ«ÊÇLoGËã×ÓºÄ·Ñ¼ÆËã×ÊÔ´£¬ÎªÁË¼ÓËÙ¼ÆËã²¢ÔÚ³ß¶È¿Õ¼ä¼ì²âµ½ÎÈ¶¨µÄÐËÈ¤µã£¬Lowe\cite{Lowe-DistinctiveImageFeatures}Ìá³öÁË¸ßË¹²î·Ö³ß¶È¿Õ¼ä£¬¼ò³ÆDoG scale-space¡£ÈçÊ½~\ref{gaussian}ËùÊ¾£¬ÀûÓÃ²»Í¬³ß¶ÈµÄ¸ãËÀ²î·ÖºËº¯ÊýÓëÍ¼Ïñ¾í»ýÉú³É¡£
+
+$\sigma$½Ï´óÊ±¶ÔÓ¦Í¼Æ¬µÄ´ÖÂÔÌØÕ÷£¬½ÏÐ¡Ê±¶ÔÓ¦Í¼Æ¬µÄ¾«Ï¸ÌØÕ÷¡£Í¬Ê±LoGËã×ÓÊÇ¶Ô³ÆµÄ£¬ËùÒÔ°ßµãÐý×ª¶Ô¼ì²âÃ»ÓÐÓ°Ïì£¬µ«ÊÇLoGËã×ÓºÄ·Ñ¼ÆËã×ÊÔ´£¬ÎªÁË¼ÓËÙ¼ÆËã²¢ÔÚ³ß¶È¿Õ¼ä¼ì²âµ½ÎÈ¶¨µÄÐËÈ¤µã£¬Lowe\cite{Lowe-DistinctiveImageFeatures}Ìá³öÁË¸ßË¹²î·Ö³ß¶È¿Õ¼ä£¬¼ò³ÆDoG Scale-Space¡£ÈçÊ½~\ref{gaussian}ËùÊ¾£¬ÀûÓÃ²»Í¬³ß¶ÈµÄ¸ßË¹²î·ÖºËº¯ÊýÓëÍ¼Ïñ¾í»ýÉú³É¡£
 \begin{equation}
 \begin{split}
 D(x,y,\sigma) &= (G(x,y,k\sigma)-G(x,y,\sigma)*I(x,y)) \\
@@ -260,7 +267,6 @@ D(x,y,\sigma) &= (G(x,y,k\sigma)-G(x,y,\sigma)*I(x,y)) \\
 \end{split}
 \end{equation}
 
-¼ÆËãDoGµÄ¹Ø¼ü²½ÖèÊÇ¹¹½¨Í¼Ïñ½ð×ÖËþ£º¶ÔÓÚÄ³¸öÍ¼Ïñ£¬Ê¹ÓÃ´óÐ¡²»Í¬µÄ¸ßË¹ºËÓë¸ÃÍ¼Ïñ¾í»ý£¬¿ÉÒÔµÃµ½Ä£ºý³Ì¶È²»Í¬µÄµ«ÊÇÍ¼Ïñ³¤¿íÒ»ÖÂµÄÍ¼Ïñ£¬ÕâÐ©Í¼Ïñ¹¹³ÉÁËÒ»¸ö°Ë¶È(octave)£¬¶øºó¶ÔÕâÒ»ÏµÁÐÍ¼Ïñ½øÐÐ½µ²ÉÑù£¬½µ²ÉÑù¾ÍÊÇ¶ÔoctaveÖÐµÄÍ¼Ïñ¸ôÐÐ¸ôÁÐ²É¼¯ÏñËØ£¬×îºóÍ¼Ïñ³ß¶È(scale)±äÎªÔ­À´´óÐ¡µÄ$\frac{1}{4}$£¬¹¹³ÉÏÂÒ»¸öoctave¡£ÕâÑù¾Í±ÜÃâÁË¶Ô²»Í¬³ß¶È¿Õ¼äÏÂµÄÍ¼Ïñ½øÐÐ¾í»ý£¬¼õÉÙÁË¼ÆËã¡£ÎªÁËÑ°ÕÒ³ß¶È¿Õ¼äµÄ¼«Öµµã£¬ÔÚDoG³ß¶È¿Õ¼äÖÐ£¬Ã¿¸ö²ÉÑùµãÒªºÍÆäÖÜÎ§ËùÓÐÏàÁÚµã£¨8ÁÚÓòÖÐ£¬Ò»¸öÏñËØµãÖÜÎ§¹²ÓÐ26¸öÏñËØµã£©±È½Ï£¬Èô¸ÃµãÊÇ¼«´óÖµ»òÕß¼«Ð¡ÖµÔò¶¨Î»ÎªÐËÈ¤µã¡£Õû¸ö¹ý³Ì¿ÉÒÔÓÃÍ¼~\ref{octave}ÃèÊö¡£
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width=5.4in]{chapter3/octave.jpg}
@@ -268,11 +274,7 @@ D(x,y,\sigma) &= (G(x,y,k\sigma)-G(x,y,\sigma)*I(x,y)) \\
 \label{octave}
 \end{figure}
 
-¼ì²âµ½ÌØÕ÷µãºó£¬ÐèÒª¶¨Á¿µÄ±íÊ¾¸÷¸öÌØÕ÷µã£¬ÒÔÎªÌØÕ÷µãÆ¥Åä×ö×¼±¸¡£LoweÔÚÆäÂÛÎÄÖÐÌá³öÓÃÒ»¸ö128Î¬¶ÈµÄÏòÁ¿±íÊ¾Ã¿¸öÌØÕ÷µã£¬¾ßÌå×ö·¨Îª£ºÈçÍ¼~\ref{siftDescriptor}£¬Ê×ÏÈ¶ÔÃ¿¸ö¹Ø¼üµãÖÜÎ§µÄ$16\times 16$ ÁÚÓòÄÚËùÓÐÏñËØ¼ÆËãÆäÌÝ¶ÈµÄ·ùÖµÓë·½Ïò£¬ÓÃÖ±·½Í¼Í³¼ÆÁÚÓòÏñËØµÄÌÝ¶È·½Ïò£¬ÌÝ¶ÈÖ±·½Í¼½«$0~360^{\circ}$·ÖÎª8¸öÇø¼ä£¬¶ÔµÃµ½µÄÖ±·½Í¼½øÐÐ¸ßË¹Æ½»¬£¬ÒÔ¼õÉÙÍ»±ä´øÀ´µÄÓ°Ïì¡£Ñ¡È¡Ö±·½Í¼µÄ·åÖµ×÷Îª¸Ã¹Ø¼üµã´¦ÁÚÓòÌÝ¶ÈµÄÖ÷·½Ïò¡£ËùÒÔÔÚÃ¿¸ö$4\times 4$µÄÏóÏÞÄÚ£¬½«Ã¿¸öÏñËØµÄÖ÷·½Ïò¼ÓÈ¨µ½Ö±·½Í¼µÄ8¸ö·½ÏòÇø¼äÖÐµÄÒ»¸ö£¬¼ÆËãÒ»¸öÌÝ¶È·½ÏòÖ±·½Í¼£¬ÕâÑù¶ÔÓÚÃ¿¸öÌØÕ÷µã¿ÉÒÔÐÎ³É$4\times 4 \times 8 = 128$ Î¬µÄÃèÊö×Ó¡£
-
-%%ÔÚ´ËÐèÒª²åÈë4ÕÅsift¼ì²âµÄÍ¼Æ¬£¬ÉõÖÁÊÇsiftÓësurfÌØÕ÷µãµÄ±È½Ï¿ò
-
-ÖÁ´Ë»ù±¾½éÉÜÁË±¾ÎÄÊ¹ÓÃµÄSIFTÌØÕ÷µãÌáÈ¡µÄ·½·¨£¬ÏêÏ¸½éÉÜÁËÌØÕ÷µÄÌáÈ¡ÓëÃèÊö·½·¨£¬ÒÔÉÏÊÇÊ¹ÓÃSIFTÌØÕ÷µã¼ì²â¶àÕÅÍ¼ÏñµÄ½á¹û£¬ÆäÖÐÌØÕ÷µãÖ÷·½ÏòÒÔ¼°ÌØÕ÷µãµÄÇ¿¶È·Ö±ð±íÊ¾ÔÚÍ¼ÖÐµÄ¡£¡£¡£
+¼ÆËãDoGµÄ¹Ø¼ü²½ÖèÊÇ¹¹½¨Í¼Ïñ½ð×ÖËþ£º¶ÔÓÚÄ³¸öÍ¼Ïñ£¬Ê¹ÓÃ´óÐ¡²»Í¬µÄ¸ßË¹ºËÓë¸ÃÍ¼Ïñ¾í»ý£¬¿ÉÒÔµÃµ½Í¼ÏñÄ£ºý³Ì¶È²»Í¬µ«´óÐ¡Ò»ÖÂµÄÍ¼Ïñ£¬ÕâÐ©Í¼Ïñ¹¹³ÉÁËÒ»¸ö°Ë¶È(octave)£¬¶øºó¶ÔÕâÒ»ÏµÁÐÍ¼Ïñ½øÐÐ½µ²ÉÑù£¬½µ²ÉÑù¾ÍÊÇ¶ÔoctaveÖÐµÄÍ¼Ïñ¸ôÐÐ¸ôÁÐ²É¼¯ÏñËØ£¬×îºóÍ¼Ïñ³ß¶È(Scale)±äÎªÔ­À´´óÐ¡µÄ$\frac{1}{4}$£¬¹¹³ÉÏÂÒ»¸öoctave¡£ÕâÑù¾Í±ÜÃâÁË¶Ô²»Í¬³ß¶È¿Õ¼äÏÂµÄÍ¼Ïñ½øÐÐ¾í»ý£¬¼õÉÙ¼ÆËãÔö¼ÓÐ§ÂÊ¡£ÎªÁËÑ°ÕÒ³ß¶È¿Õ¼äµÄ¼«Öµµã£¬ÔÚDoG³ß¶È¿Õ¼äÖÐ£¬Ã¿¸ö²ÉÑùµãÒªÓëÆäÖÜÎ§ËùÓÐÏàÁÚµã£¨8ÁÚÓòÖÐ£¬Ò»¸öÏñËØµãÖÜÎ§¹²ÓÐ26¸öÏñËØµã£©±È½Ï£¬Èô¸ÃµãÊÇ¼«´óÖµ»òÕß¼«Ð¡ÖµÔò¶¨Î»ÎªÐËÈ¤µã¡£Õû¸ö¹ý³Ì¿ÉÒÔÓÃÍ¼~\ref{octave}ÃèÊö¡£
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width=5.0in]{chapter3/siftDescriptor.jpg}
@@ -280,45 +282,50 @@ D(x,y,\sigma) &= (G(x,y,k\sigma)-G(x,y,\sigma)*I(x,y)) \\
 \label{siftDescriptor}
 \end{figure}
 
+¼ì²âµ½ÌØÕ÷µãºó£¬ÐèÒª¶¨Á¿µÄ±íÊ¾¸÷¸öÌØÕ÷µãµÄÇ¿¶È¡¢·½ÏòµÈÌØÕ÷£¬ÎªÌØÕ÷µãÆ¥Åä×ö×¼±¸¡£LoweÌá³öÓÃÒ»¸ö128Î¬¶ÈµÄÏòÁ¿±íÊ¾Ã¿¸öÌØÕ÷µã£¬¾ßÌå×ö·¨ÈçÍ¼~\ref{siftDescriptor}£¬Ê×ÏÈ¶ÔÃ¿¸ö¹Ø¼üµãÖÜÎ§µÄ$16\times 16$ ÁÚÓòÄÚËùÓÐÏñËØ¼ÆËãÆäÌÝ¶ÈµÄ·ùÖµÓë·½Ïò£¬ÓÃÖ±·½Í¼Í³¼ÆÁÚÓòÏñËØµÄÌÝ¶È·½Ïò£¬ÌÝ¶ÈÖ±·½Í¼½«$0-360^{\circ}$·ÖÎª8¸öÇø¼ä£¬¶ÔµÃµ½µÄÖ±·½Í¼½øÐÐ¸ßË¹Æ½»¬£¬ÒÔ¼õÉÙÍ»±ä´øÀ´µÄÓ°Ïì¡£Ñ¡È¡Ö±·½Í¼µÄ·åÖµ×÷Îª¸Ã¹Ø¼üµã´¦ÁÚÓòÌÝ¶ÈµÄÖ÷·½Ïò¡£ËùÒÔÔÚÃ¿¸ö$4\times 4$µÄÏóÏÞÄÚ£¬½«Ã¿¸öÏñËØµÄÖ÷·½Ïò¼ÓÈ¨µ½Ö±·½Í¼µÄ8¸ö·½ÏòÇø¼äÖÐµÄÒ»¸ö£¬¼ÆËãÒ»¸öÌÝ¶È·½ÏòÖ±·½Í¼£¬ÕâÑù¶ÔÓÚÃ¿¸öÌØÕ÷µã¿ÉÒÔÐÎ³É$4\times 4 \times 8 = 128$ Î¬µÄÃèÊö×Ó¡£
 
+%%ÔÚ´ËÐèÒª²åÈë4ÕÅsift¼ì²âµÄÍ¼Æ¬£¬ÉõÖÁÊÇsiftÓësurfÌØÕ÷µãµÄ±È½Ï¿ò
 \begin{figure}[!htbp]
 \centering
  \subfigure{
-	\includegraphics[width=2.6in]{chapter3/testPho/1_res.png}
+	\includegraphics[width=2.9in]{chapter3/testPho/1_res.png}
     }
  \subfigure{
-	\includegraphics[width=2.6in]{chapter3/testPho/2_res.png}
+	\includegraphics[width=2.9in]{chapter3/testPho/2_res.png}
     }
  \subfigure{
-	\includegraphics[width=2.6in]{chapter3/testPho/3_res.png}
+	\includegraphics[width=2.9in]{chapter3/testPho/3_res.png}
     }
  \subfigure{
-	\includegraphics[width=2.6in]{chapter3/testPho/4_res.png}
+	\includegraphics[width=2.9in]{chapter3/testPho/4_res.png}
     }
 %\includegraphics[width=5.0in]{chapter3/siftDescriptor.jpg}
 \caption{SIFTÌØÕ÷µã¼ì²â½á¹û}
 \label{sift-result}
 \end{figure}
+ÖÁ´Ë±¾½ÚÏêÏ¸½éÉÜÁËSIFTÌØÕ÷µÄÌáÈ¡ÓëÃèÊö·½·¨£¬Í¼~\ref{sift-result}ÊÇÊ¹ÓÃSIFTÌØÕ÷µã¼ì²â¶àÕÅÍ¼ÏñµÄ½á¹û£¬Í¼ÖÐÔ²È¦µÄ´óÐ¡´ú±íÐËÈ¤µã£¨°ßµã£©µÄ´óÐ¡£¨size£©£¬Ô²È¦°ë¾¶Ô½´ó£¬´ú±íÌØÕ÷µãµÄÇ¿¶È£¨response£©Ô½Ð¡£¬Ô²È¦ÖÐµÄÏß¶Î´ú±íSIFTÌØÕ÷µãµÄÖ÷·½Ïò¡£
 
 \section{ÌØÕ÷µãÆ¥Åä}
-ÉÏÃæÌáµ½±¾ÎÄÊ¹ÓÃSIFTÌØÕ÷µã×÷Îª¹Ø¼üµã¼ì²âµÄ·½·¨£¬ÌØÕ÷µãÌáÈ¡²¢ÃèÊöºó£¬¾ÍÓ¦¸ÃÕÒ³ö¸÷¸öÍ¼ÏñÖÐÒÔÌØÕ÷µãÎªÒÀ¾ÝµÄ¹ØÏµ£¬¼´Ã¿ÕÅÍ¼ÏñÖÐµÄÌØÕ÷µãÈçºÎÓëÆäËûÍ¼ÏñµÄÌØÕ÷µã½øÐÐÆ¥Åä£¬ÕÒµ½Ïà½üµÄÌØÕ÷µã²¢È¥³ý´íÎóµÄÆ¥ÅäµÄÌØÕ÷µã¡£ÌØÕ÷µãÆ¥Åä½â¾öº½ÅÄÍ¼ÏñÖ®¼äµÄÊý¾Ý¹ØÁªÎÊÌâ£¬½«ÎÞÐòµÄÍ¼Æ¬Êý¾Ý¼¯½¨Á¢¹ØÁª¹ØÏµ£¬ÎªÏÂÎÄÍ¨¹ýÍ¼ÏñÖ®¼äµÄ¹ØÏµ£¬¼ÆËãÏà»úÎ»×ËÓë»¹Ô­ÌØÕ÷µãµÄÈýÎ¬×ø±êÌá¹©»ù´¡¡£ºÜºÃÀí½â£¬Ò»¶ÔÆ¥Åäµã¾ÍÊÇÊµ¼Ê¿Õ¼äµÄÒ»¸öµã£¬Èç¹û½«ËùÓÐÍ¼Æ¬¶ÔÓ¦Í¬Ò»¸öÕæÊµµãµÄÌØÕ÷µãÁ¬ÔÚÒ»Æð£¬½«Ê¹Êý¾Ý¼¯ÖÐËùÓÐÎÞÐòÍ¼Æ¬¡°ÓÐÐò»¯¡±¡£ÏàÍ¬µÄ£¬Èç¹ûÆ¥ÅäµãÖÐÓÐ´óÁ¿µÄ´íÎóÆ¥Åä£¬ÄÇ¶ÔºóÐøµÄÎ»×Ë¹À¼ÆÓë»¹Ô­ÈýÎ¬×ø±ê¶¼²úÉú²»ÀûÓ°Ïì£¬ËùÒÔÈç¹ûÈ¥³ý´íÎóÆ¥Åä¸üÊÇÖÁ¹ØÖØÒªµÄÎÊÌâ¡£ÏÂÃæ¾ÍÕâÁ½·½ÃæÕ¹¿ªÌÖÂÛ¡£
+ÉÏÃæÌáµ½±¾ÎÄÊ¹ÓÃSIFT×÷ÎªÌØÕ÷µã¼ì²âÓëÃèÊöµÄ·½·¨£¬ÌØÕ÷µãÌáÈ¡²¢ÃèÊöºó£¬¾ÍÐèÒªÕÒ³öÍ¼Ïñ¼äÍ¨¹ýÌØÕ÷µãÁªÏµÆðÀ´µÄ¹ØÏµ£¬¼´Ã¿ÕÅÍ¼ÏñÖÐµÄÌØÕ÷µãÈçºÎÓëÆäËûÍ¼ÏñµÄÌØÕ÷µã½øÐÐÆ¥Åä£¬ÕÒµ½Ïà½üµÄÌØÕ÷µã²¢È¥³ý´íÎóÆ¥ÅäµÄÌØÕ÷µã¡£ÌØÕ÷µãÆ¥Åä½â¾öº½ÅÄÍ¼ÏñÖ®¼äµÄÊý¾Ý¹ØÁªÎÊÌâ£¬½«ÎÞÐòµÄÍ¼Æ¬Êý¾Ý¼¯½¨Á¢¹ØÁª¹ØÏµ£¬ÎªÏÂÎÄÍ¨¹ýÍ¼ÏñÆ¥ÅäµÄÌØÕ÷µã¼ÆËãÏà»úÎ»×Ë²¢»¹Ô­ÌØÕ÷µãµÄÈýÎ¬×ø±êÌá¹©»ù´¡¡£Ò»¶ÔÆ¥ÅäµãÊÇÕæÊµ¿Õ¼äÀïÍ¬Ò»¸öµã£¬Èç¹û½«ËùÓÐÍ¼Æ¬¶ÔÓ¦Í¬Ò»¸öÕæÊµµãµÄÌØÕ÷µãÁ¬ÔÚÒ»Æð£¬½«Ê¹Êý¾Ý¼¯ÖÐËùÓÐÎÞÐòÍ¼Æ¬¡°ÓÐÐò»¯¡±¡£Í¬ÑùÈç¹ûÆ¥ÅäµãÖÐÓÐ´óÁ¿µÄ´íÎóÆ¥Åä£¬½«¶ÔºóÐøµÄÎ»×Ë¹À¼ÆÓë»¹Ô­ÈýÎ¬½á¹¹²úÉú²»ÀûÓ°Ïì£¬ËùÒÔÈçºÎÈ¥³ý´íÎóÆ¥ÅäÍ¬ÑùÖÁ¹ØÖØÒª¡£ÏÂÃæ¾ÍÕâÁ½·½ÃæÕ¹¿ªÌÖÂÛ¡£
 
-¼ÙÉèÔÚÍ¼Æ¬¼¯$I = \{I_i | i=1...N_I\}$ÖÐÕÒµ½µÄ¾Ö²¿ÌØÕ÷µãÎª$F_i=\{(x_j,f_j) | j=1...N_{F_i}\}$£¬ÆäÖÐ$x_j$±íÊ¾ÌØÕ÷µãÎ»ÖÃ×ø±ê£¬$f_j$±íÊ¾ÌØÕ÷µãÃèÊö×Ó£¬Èç¹ûÊÇSIFTÌØÕ÷µã£¬Ôò$f_j$ÊÇ128Î¬ÏòÁ¿¡£¶ÔÓÚ$F_i$Óë$F_j$µÄÌØÕ÷µãÆ¥ÅäµÄ·½·¨£¬×î¼òµ¥µÄÊÇÊ¹ÓÃ±©Á¦Æ¥Åä£¬¼´Ã¿¸ö$(x_j,f_j) | j=1...N_{F_i}$Óë$(x_j,f_j) | j=1...N_{F_j}$ÖÐÌØÕ÷µã²âÁ¿Á½¸öÏòÁ¿Ö®¼äµÄ¾àÀë£¬ÐèÒª½øÐÐ$N_{F_i} \times N_{F_j}$´Î¾àÀë±È½Ï¡£¶ÔÓÚÏñSIFTÕâÑùµÄ¸¡µãÃèÊö×Ó£¬Ò»°ã²ÉÓÃÅ·À­¾àÀë×÷ÎªºâÁ¿ÒÀ¾Ý£¬¶ø¶ÔÓÚÏñBRIEF£¨ORBÌØÕ÷Ê¹ÓÃµÄÃèÊö×Ó£©¶þ½øÖÆÃèÊö×Ó£¬ÔòÒ»°ãÊ¹ÓÃººÃ÷¾àÀë×÷Îª¶ÈÁ¿ÒÀ¾Ý¡£
+¼ÙÉèÔÚÍ¼Æ¬¼¯$I = \{I_i | i=1...N_I\}$ÖÐ¼ì²âµ½µÄ¾Ö²¿ÌØÕ÷µãÎª$F_i=\{(x_j,f_j) | j=1...N_{F_i}\}$£¬ÆäÖÐ$x_j$±íÊ¾ÌØÕ÷µãÎ»ÖÃ×ø±ê£¬$f_j$±íÊ¾ÌØÕ÷µãÃèÊö×Ó£¬Èç¹ûÊÇSIFTÌØÕ÷µã£¬Ôò$f_j$ÊÇÒ»¸ö128Î¬ÏòÁ¿¡£¶ÔÓÚ$F_i$Óë$F_j$µÄÌØÕ÷µãÆ¥ÅäµÄ·½·¨£¬×î¼òµ¥µÄÊÇÊ¹ÓÃ±©Á¦Æ¥Åä£¬¼´Ã¿¸ö$(x_j,f_j) | j=1...N_{F_i}$Óë$(x_j,f_j) | j=1...N_{F_j}$ÖÐÌØÕ÷µã²âÁ¿Á½¸öÏòÁ¿Ö®¼äµÄ¾àÀë£¬ÐèÒª½øÐÐ$N_{F_i} \times N_{F_j}$´Î¾àÀë±È½Ï¡£¶ÔÓÚÏñSIFTÕâÑùµÄ¸¡µãÃèÊö×Ó£¬Ò»°ã²ÉÓÃÅ·À­¾àÀë×÷ÎªºâÁ¿ÒÀ¾Ý£¬¶ø¶ÔÓÚÏñBRIEF£¨ORBÌØÕ÷Ê¹ÓÃµÄÃèÊö×Ó£©¶þ½øÖÆÃèÊö×Ó£¬ÔòÒ»°ãÊ¹ÓÃººÃ÷¾àÀë×÷Îª¶ÈÁ¿ÒÀ¾Ý¡£
 
 %²åÈëÒ»×éSIFTÆ¥ÅäµÄÍ¼Æ¬£¬¶ÔÓ¦Å·À­¾àÀëÄÇ¾ä»°
 
-µ«ÊÇµ±Í¼Æ¬³¤¿í½Ï´ó£¬·Ö±æÂÊ½Ï¸ßÊ±£¬Í¼Æ¬ÌØÕ÷µã»áºÜ¶à£¬ÕâÊ±²ÉÓÃ±©Á¦Æ¥Åä»áµ¼ÖÂÐ§ÂÊºÜµÍ£¬Ò»°ãÊµ¼ÊÊ¹ÓÃÖÐ²ÉÓÃ½üËÆ×î½üÁÚ(Approximate Nearest Neighbor, ANN)Æ¥Åä·½·¨¡£ÊÂÊµÉÏ£¬ÎÞÂÛSIFTÌØÕ÷Æ¥Åä»¹ÊÇÊý¾Ý¿â¼ìË÷±¾ÖÊÉÏÊÇÏàÍ¬µÄ£¬¶¼ÊÇÊ¹ÓÃ¾àÀëº¯ÊýÔÚ¸ßÎ¬Ê¸Á¿¿Õ¼äÖÐÑ°ÕÒÏà½ü¶ÔÏóµÄ¹ý³Ì¡£³£ÓÃµÄ·½·¨ÊÔK½üÁÚ²éÑ¯£¬ÉèÖÃ²éÑ¯µãÓëÕýÕûÊýK£¬´ÓÁíÒ»¸öÊý¾Ý¼¯ÖÐ¸ù¾Ý¾àÀë¹«Ê½ÕÒµ½¾àÀë×î½üµÄK¸öÊý¾Ý£¬Èç¹ûK=1£¬¸Ä·½·¨±äÎª×î½üÁÚ²éÑ¯Ëã·¨¡£K½üÁÚ²éÑ¯Ëã·¨ÊÇÍ¨¹ý¹¹½¨KD-Tree»òÕßR-TreeµÈÊµÏÖµÄ¡£ÔÚ´Ë²»×öÏêÏ¸½éÉÜ¡£
+µ«ÊÇµ±Í¼Æ¬³¤¿í½Ï´ó£¬·Ö±æÂÊ½Ï¸ßÊ±£¬Í¼Æ¬ÌØÕ÷µã»áºÜ¶à£¬ÕâÊ±²ÉÓÃ±©Á¦Æ¥Åä»áµ¼ÖÂÐ§ÂÊºÜµÍ£¬Ò»°ãÊµ¼ÊÊ¹ÓÃÖÐ²ÉÓÃ½üËÆ×î½üÁÚ(Approximate Nearest Neighbor, ANN)Æ¥Åä·½·¨¡£ÊÂÊµÉÏ£¬ÎÞÂÛSIFTÌØÕ÷Æ¥Åä»¹ÊÇÊý¾Ý¿â¼ìË÷±¾ÖÊÉÏÊÇÏàÍ¬µÄ£¬¶¼ÊÇÊ¹ÓÃ¾àÀëº¯ÊýÔÚ¸ßÎ¬Ê¸Á¿¿Õ¼äÖÐÑ°ÕÒÏà½ü¶ÔÏóµÄ¹ý³Ì¡£³£ÓÃµÄ·½·¨ÊÇK½üÁÚ²éÑ¯£¬ÉèÖÃ²éÑ¯µãÓëÕýÕûÊýK£¬´ÓÁíÒ»¸öÊý¾Ý¼¯ÖÐ¸ù¾Ý¾àÀë¹«Ê½ÕÒµ½¾àÀë×î½üµÄK¸öÊý¾Ý£¬Èç¹ûK=1£¬¸Ã·½·¨±äÎª×î½üÁÚ²éÑ¯Ëã·¨¡£K½üÁÚ²éÑ¯Ëã·¨ÊÇÍ¨¹ý¹¹½¨KD-Tree»òÕßR-TreeµÈÊµÏÖµÄ¡£
 
-ÔÚ´Ë¼òµ¥½éÉÜ½üËÆ×î½üÁÚµÄ¿ìËÙ¿â£¨Fast Library for Approximate Nearest Neighbors, FLANN£©£¬FLANN¾ßÓÐÒ»ÖÖÄÚ²¿»úÖÆ£¬¸Ã»úÖÆ¿ÉÒÔ¸ù¾ÝÊý¾Ý±¾ÉíÑ¡ÔñºÏÊÊµÄËã·¨À´´¦ÀíÊý¾Ý¼¯£¬»ùÓÚFLANNµÄÆ¥Åä·Ç³£×¼È·¡¢¿ìËÙ¡£FLANNÔÚÊ¹ÓÃµÄÊ±ºòÐèÒªÅäÖÃÁ½¸ö²ÎÊý£ºindexParamsºÍsearchParams¡£Ê¹ÓÃFLANNÊ±£¬indexParams¿ÉÒÔÑ¡ÔñÎªLinearIndex¡¢KTreeIndex¡¢KMeansIndex¡¢CompositeIndexºÍAutotuneIndex£¬ÆäÖÐKTreeIndexÁé»îÇÒ¿É±»²¢ÐÐ´¦Àí¡£¶ÔÓÚsearchParams£¬ÓÃÀ´Ö¸¶¨Ë÷ÒýÊ÷±»±éÀúµÄ´ÎÊý£¬¼´checkÖµ£¬¸ÃÖµÔ½´óÔòÆ¥ÅäµÄÊ±¼äÔ½³¤£¬µ±È»Ò²Ô½×¼È·¡£
+ÔÚ´Ë¼òµ¥½éÉÜ×î³£ÓÃµÄ×î½üÁÚÆ¥Åä¿âFLANN(Fast Library for Approximate Nearest Neighbors)£¬FLANN¾ßÓÐÒ»ÖÖÄÚ²¿»úÖÆ£¬¸Ã»úÖÆ¿ÉÒÔ¸ù¾ÝÊý¾Ý±¾ÉíÑ¡ÔñºÏÊÊµÄËã·¨À´´¦ÀíÊý¾Ý¼¯£¬»ùÓÚFLANNµÄÆ¥Åä·Ç³£×¼È·¡¢¿ìËÙ¡£FLANNÔÚÊ¹ÓÃµÄÊ±ºòÐèÒªÅäÖÃÁ½¸ö²ÎÊý£ºindexParamsºÍsearchParams¡£Ê¹ÓÃFLANNÊ±£¬indexParams¿ÉÒÔÑ¡ÔñÎªLinearIndex¡¢KTreeIndex¡¢KMeansIndex¡¢CompositeIndexºÍAutotuneIndex£¬ÆäÖÐKTreeIndexÁé»îÇÒ¿É±»²¢ÐÐ´¦Àí¡£¶ÔÓÚsearchParams£¬ÓÃÀ´Ö¸¶¨Ë÷ÒýÊ÷±»±éÀúµÄ´ÎÊý£¬¼´checkÖµ£¬¸ÃÖµÔ½´óÔòÆ¥ÅäµÄÊ±¼äÔ½³¤£¬µ±È»Ò²Ô½×¼È·¡£
 
-µ±È»¼´Ê¹ÓÃÉÏÃæµÄ·½·¨£¬Ò²ÎÞ·¨±£Ö¤ËùÓÐµÄÆ¥Åä¶¼ÊÇÕýÈ·µÄ£¬Lowe\cite{Lowe-ObjectRecognition}ÔÚ1999Ìá³öÒ»ÖÖ¼òµ¥µÄ·½·¨¿ÉÒÔÌÞ³ý´ó²¿·ÖµÄ´íÎóÆ¥Åä¡£¶ÔÓÚÄ³¸öÌØÕ÷µãÏòÁ¿£¬Èç¹û²éÑ¯Êý¾Ý¼¯ÖÐÓëÆä¾àÀë×î½üµÄÌØÕ÷µãÏòÁ¿Óë´Î½üµÄÌØÕ÷µãÏòÁ¿µÄ¾àÀëÖ®±È´óÓÚ0.7£¬¿ÉÒÔ±ÜÃâ½Ó½ü90\%µÄ´íÎóÆ¥Åä£¬µ«ÊÇÕýÈ·µÄÆ¥ÅäÒ²Òò´Ë±äÉÙ¡£Ê¹ÓÃFLANN²¢²ÉÓÃLoweÌá³öµÄ·½·¨¿ÉÒÔÈ¥µô´ó²¿·ÖµÄ´íÎóÆ¥Åä£¬ÈçÍ¼~\ref{matches}ËùÊ¾¡£
-%\begin{figure}
-%\includegraphics[width=5.0in]{chapter3/matches.jpg}
-%\caption{FLANNÆ¥Åä}
-%\label{matches}
-%\end{figure}
-
-ÒÔÉÏÌáµ½µÄ·½·¨£¬Æ¥ÅäºóÈÔÈ»´æÔÚ´íÎóµÄÆ¥Åäµã£¬ÓÉÓÚ¸Õ¸ÕµÄÆ¥ÅäÊÇµ¥´¿»ùÓÚÌØÕ÷ÃèÊö×ÓµÄÏòÁ¿Öµ£¬ÎÞ·¨±£Ö¤Æ¥ÅäµÄÁ½¸öÌØÕ÷µã¶ÔÓ¦ÏàÍ¬µÄ³¡¾°µã¡£Òò´ËSfMÊ¹ÓÃÍ¶Ó°¼¸ºÎµÄÖªÊ¶¹À¼ÆÁ½ÕÅÍ¼ÏñµÄÌØÕ÷µã±ä»»¡£ÒÀÀµÍ¼Ïñ¶ÔµÄ¿Õ¼äÅäÖÃ£¬²»Í¬Í¶Ó°ÃèÊöÍ¼Æ¬¼ä²»Í¬µÄ¼¸ºÎ¹ØÏµ¡£ÀýÈç£¬µ¥Ó¦ÐÔ±ä»»£¨ÓÖ³ÆÉäÓ°±ä»»\cite{Richard-MultipleView}£©ÃèÊöÏà»úÅÄÉãµÄ¶þÎ¬Í¼Æ¬Ö®¼ä´¿Ðý×ªºÍÆ½ÒÆ±ä»»¡£¶Ô¼«¼¸ºÎÍ¨¹ý»ù±¾¾ØÕó£¨Essential matrix£©$E$ºÍ»ù´¡¾ØÕó£¨Fundamental matrix£©$F$ ÃèÊöÒÆ¶¯Ïà»úµÄ¹ØÏµ£¬²¢¿ÉÒÔÍ¨¹ýÈý½¹ÕÅÁ¿À©Õ¹µ½ÈýÊÓÍ¼µÄ¹ØÏµ¡£ÎÞÂÛÄÄÖÖ±ä»»¹ØÏµ£¬ÓÐÐ§µÄ±ä»»¿ÉÒÔÂú×ã´ó²¿·ÖÆ¥ÅäµãµÄ¼¸ºÎ¹ØÏµ£¬ÄÇÃ´ÕâÖÖ±ä»»»òÕßÆ¥Åäµã±»ÈÏÎªÊÇÓÐÐ§µÄ¡£±¾ÎÄÔÚÉ¾³ý´íÎóÆ¥ÅäÊ±£¬Ê¹ÓÃµÄÊÇµ¥Ó¦ÐÔ±ä»»£¬Ò»ÏÂ¼òµ¥½éÉÜÒ»ÏÂµ¥Ó¦ÐÔ±ä»»µÄÏêÏ¸ÄÚÈÝ¡£
+¼´Ê¹Ê¹ÓÃ×î½üÁÚÆ¥Åä£¬Ò²ÎÞ·¨±£Ö¤ËùÓÐÆ¥ÅäµÄÌØÕ÷µã¶¼ÊÇÕýÈ·µÄ£¬Lowe\cite{Lowe-ObjectRecognition}ÔÚ1999Ìá³öÒ»ÖÖ¼òµ¥µÄ·½·¨¿ÉÒÔÌÞ³ý´ó²¿·ÖµÄ´íÎóÆ¥Åä¡£¶ÔÓÚÄ³¸öÌØÕ÷µãÏòÁ¿£¬Èç¹û²éÑ¯Êý¾Ý¼¯ÖÐÓëÆä¾àÀë×î½üµÄÌØÕ÷µãÏòÁ¿Óë´Î½üµÄÌØÕ÷µãÏòÁ¿µÄ¾àÀëÖ®±È´óÓÚ0.7£¬¿ÉÒÔ±ÜÃâ½Ó½ü90\%µÄ´íÎóÆ¥Åä£¬µ«ÊÇÕýÈ·µÄÆ¥ÅäÒ²Òò´Ë±äÉÙ¡£Ê¹ÓÃFLANN²¢²ÉÓÃLoweÌá³öµÄ·½·¨¿ÉÒÔÈ¥µô´ó²¿·ÖµÄ´íÎóÆ¥Åä£¬Í¼~\ref{matches-single}Õ¹Ê¾ÁËËæ»úÑ¡È¡10¶ÔÆ¥ÅäµÄÌØÕ÷µã¡£
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=4.5in]{chapter3/matches/matches.jpg}
+\caption{FLANNÆ¥Åä}
+\label{matches-single}
+\end{figure}
+´ÓÍ¼ÖÐ¿ÉÒÔ¿´³öÈÔÈ»´æÔÚ´íÎóµÄÆ¥Åäµã£¬ÕâÊÇÒòÎª¸Õ¸ÕµÄÆ¥Åä·½·¨½ö»ùÓÚÌØÕ÷ÃèÊö×ÓµÄÏòÁ¿Öµ£¬Ã»ÓÐ¿¼ÂÇÍ¼Æ¬µÄ¼¸ºÎ¹ØÏµ£¬Ò²¾ÍÎÞ·¨±£Ö¤Æ¥ÅäÌØÕ÷µã¶ÔÓ¦ÏàÍ¬µÄ³¡¾°£¬Òò´Ë±¾ÎÄÀûÓÃÍ¶Ó°¼¸ºÎÏà¹ØÖªÊ¶ÔÙ´ÎË¢Ñ¡´íÎóµÄÆ¥Åäµã¡£
+%ÒÀÀµÍ¼Ïñ¶ÔµÄ¿Õ¼äÅäÖÃ£¬
+²»Í¬Í¶Ó°ÃèÊöÍ¼Æ¬¼ä²»Í¬µÄ¼¸ºÎ¹ØÏµ£¬ÀýÈç£¬µ¥Ó¦ÐÔ±ä»»£¨ÓÖ³ÆÉäÓ°±ä»»\cite{Richard-MultipleView}£©ÃèÊöÏà»úÅÄÉãµÄ¶þÎ¬Í¼Æ¬Ö®¼ä´¿Ðý×ªºÍÆ½ÒÆ±ä»»¡£¶Ô¼«¼¸ºÎÍ¨¹ý»ù±¾¾ØÕó£¨Essential matrix£©$E$ºÍ»ù´¡¾ØÕó£¨Fundamental matrix£©$F$ ÃèÊöÒÆ¶¯Ïà»úµÄ¹ØÏµ£¬²¢¿ÉÍ¨¹ýÈý½¹ÕÅÁ¿À©Õ¹µ½ÈýÊÓÍ¼¼äµÄ¹ØÏµ¡£ÎÞÂÛÄÄÖÖ±ä»»¹ØÏµ£¬ÓÐÐ§µÄ±ä»»¿ÉÒÔÂú×ã´ó²¿·ÖÆ¥ÅäµãµÄ¼¸ºÎ¹ØÏµ£¬ÄÇÃ´ÕâÖÖ±ä»»»òÕßÆ¥Åäµã±»ÈÏÎªÊÇÓÐÐ§µÄ¡£±¾ÎÄÔÚÉ¾³ý´íÎóÆ¥ÅäÊ±£¬Ê¹ÓÃµÄÊÇ¶Ô¼«Ô¼Êø£¬Ò»ÏÂ¼òµ¥½éÉÜÒ»ÏÂµ¥Ó¦ÐÔ±ä»»µÄÏêÏ¸ÄÚÈÝ¡£
 
 µ¥Ó¦ÐÔÓÖ³ÆÉäÓ°±ä»»¡¢±£Ïß±ä»»£¬Óë×ø±êÏµÎÞ¹Ø¡£Ó³Éä$h$ÊÇÉäÓ°±ä»»µÄ³äÒªÌõ¼þÊÇ£º´æÔÚÒ»¸ö$3\times 3$·ÇÆæÒì¾ØÕó$H$£¬Ê¹µÃÈÎÒâÒ»¸öÊ¸Á¿$X$±íÊ¾µÄ×ø±êµã¶¼Âú×ã$h(x)=HX$¡£¼´
 \begin{equation}
@@ -437,22 +444,22 @@ SVDÓÖ³ÆÆæÒìÖµ·Ö½â£¬ÔÚ´Ë²»ÏêÏ¸½éÉÜ£¬SVD¿ÉÒÔ½«Ò»¸ö¾ØÕó£¬ÎÞÂÛÊÇ·ñÂúÖÈ£¬¾ù¿ÉÒÔ·Ö½âÎª
 \begin{figure}[!htbp]
 \centering
  \subfigure[]{
-	\includegraphics[width=2.8in]{chapter3/matches/000400_H_000415.png}
+	\includegraphics[width=2.95in]{chapter3/matches/000400_H_000415.png}
+    }
+\subfigure[]{
+	\includegraphics[width=2.95in]{chapter3/matches/000400_U_000415.png}
     }
  \subfigure[]{
-	\includegraphics[width=2.8in]{chapter3/matches/000400_H_000424.png}
+	\includegraphics[width=2.95in]{chapter3/matches/000400_H_000424.png}
+    }
+\subfigure[]{
+	\includegraphics[width=2.95in]{chapter3/matches/000400_U_000424.png}
     }
  \subfigure[]{
-	\includegraphics[width=2.8in]{chapter3/matches/000415_H_000424.png}
+	\includegraphics[width=2.95in]{chapter3/matches/000415_H_000424.png}
     }
  \subfigure[]{
-	\includegraphics[width=2.8in]{chapter3/matches/000400_U_000415.png}
-    }
- \subfigure[]{
-	\includegraphics[width=2.8in]{chapter3/matches/000400_U_000424.png}
-    }
- \subfigure[]{
-	\includegraphics[width=2.8in]{chapter3/matches/000415_U_000424.png}
+	\includegraphics[width=2.95in]{chapter3/matches/000415_U_000424.png}
     }
 %\includegraphics[width=5.0in]{chapter3/siftDescriptor.jpg}
 \caption{RANSACÉ¸Ñ¡µÄµ¥Ó¦ÐÔ±ä»»½á¹û}
@@ -464,14 +471,14 @@ SVDÓÖ³ÆÆæÒìÖµ·Ö½â£¬ÔÚ´Ë²»ÏêÏ¸½éÉÜ£¬SVD¿ÉÒÔ½«Ò»¸ö¾ØÕó£¬ÎÞÂÛÊÇ·ñÂúÖÈ£¬¾ù¿ÉÒÔ·Ö½âÎª
 	\centering
 	\begin{tabular}{|c|c|c|c|}
 		\hline
-		\diagbox[dir=SE]{\bfseries Í¼Æ¬Ãû}{\bfseries ÌØÕ÷µã}{\bfseries Í¼Æ¬Ãû} & \bfseries 400 & \bfseries 415 & \bfseries 424\\
+		\diagbox[dir=SE]{\bfseries Í¼Æ¬Ãû}{\bfseries ÌØÕ÷µã}{\bfseries Í¼Æ¬Ãû} & \bfseries KITTI-0400 & \bfseries KITTI-0415 & \bfseries KITTI-0424\\
 		\hline
 %		\hline
-		\bfseries 400&  $861$&  $55/32$ & $75/46$\\
+		\bfseries KITTI-0400&  $861$&  $55/32$ & $75/46$\\
 		\hline
-		\bfseries 415 & $ ¿Õ $ & $370$ & $19/10$ \\
+		\bfseries KITTI-0415 & $ ¿Õ $ & $370$ & $19/10$ \\
 		\hline
-        \bfseries 424 & $¿Õ$ & $¿Õ$ & $599$ \\
+        \bfseries KITTI-0424 & $¿Õ$ & $¿Õ$ & $599$ \\
 		\hline
 	\end{tabular}
 	\label{table:matches}
@@ -567,7 +574,7 @@ f_{33}
 ÔÚµÃµ½»ù±¾¾ØÕó$F$ºó£¬¸ù¾ÝÊ½~\ref{fundunmental-equation}ÒÔ¼°ÒÑÖªÏà»úÄÚ²Î¾ØÕó$K$µÄÇé¿öÏÂ£¬¿ÉÒÔµÃµ½±¾ÖÊ¾ØÕó$E$£¬´Ó±¾ÖÊ¾ØÕó¿ÉÒÔ»Ö¸´Ïà»úÖ®¼äµÄÐý×ªÆ½ÒÆ¹ØÏµ¡£
 \begin{figure}[!htbp]
 \centering
-\includegraphics[width=5.4in]{chapter3/essentialMatrix.png}
+\includegraphics[width=5.0in]{chapter3/essentialMatrix.png}
 \caption{±¾ÖÊ¾ØÕó»Ö¸´Ðý×ªÆ½ÒÆ¹ØÏµ}
 \label{essentialMatrix}
 \end{figure}
@@ -626,16 +633,25 @@ Y
 0 & 0 & 0 \\
 \end{matrix}\right]$ËùÒÔ$R$ÓÐÁ½ÖÖ¿ÉÄÜÖµ£¬ÕâÊÇÒòÎª$R=UYV^T$¡£
 
-×ÛÉÏÍ¨¹ý$E$»Ö¸´Ðý×ª¾ØÕó$R$ºÍÆ½ÒÆ¾ØÕó$t$ÓÐËÄÖÖ¿ÉÄÜµÄ½â£¬Í¼~\ref{essentialfromRT}ÐÎÏóµØÏÔÊ¾ÁË·Ö½â±¾ÖÊ¾ØÕóµÃµ½ËÄ¸ö½âµÄ¹ý³Ì¡£±£³Ö³ÉÏñÆ½ÃæµÄµã£¨ºìµã£©²»±äµÄÇé¿öÏÂ£¬¿ÉÒÔ»­³öËÄÖÖ¿ÉÄÜµÄÇé¿ö£¬µ«ÊÇÖ»ÓÐ(a)ÊÇÕýÈ·µÄ£¬ÒòÎªÆäÓÐÕýÉî¶È£¬ËùÒÔ»Ö¸´Ðý×ªÓëÆ½ÒÆºóÐèÒª½«3Dµã´øÈëÍ¼ÖÐËÄ¸ö½âÖÐ£¬¼ì²â¸ÃµãÔÚÁ½¸öÏà»úÖÐµÄÉî¶È£¬¼´¿ÉÈ·¶¨$R$ºÍ$t$¡£Êµ¼ÊÉÏÀûÓÃ$E$µÄÄÚÔÚÐÔÖÊ£¬ÆäÖ»ÓÐÎå¸ö×ÔÓÉ¶È£ºÐý×ª(3)£¬Æ½ÒÆ(1)£¬Ïà»úÖÐÐÄ(1)¡£µ«ÊÇÊ¹ÓÃÎåµã·¨ÐÎÊ½¸´ÔÓ£¬ËùÒÔ±¾ÎÄ»¹ÊÇ²ÉÓÃÉÏÎÄ½éÉÜµÄ°Ëµã·¨¼ÆËãÐý×ªÓëÆ½ÒÆ¹ØÏµ¡£
 \begin{figure}[!htbp]
 \centering
-\includegraphics[width=5.2in]{chapter3/essentialfromRT.png}
+\includegraphics[width=5.0in]{chapter3/essentialfromRT.png}
 \caption{·Ö½â±¾ÖÊ¾ØÕóµÃµ½µÄËÄ¸ö½â}
 \label{essentialfromRT}
 \end{figure}
 
+×ÛÉÏÍ¨¹ý$E$»Ö¸´Ðý×ª¾ØÕó$R$ºÍÆ½ÒÆ¾ØÕó$t$ÓÐËÄÖÖ¿ÉÄÜµÄ½â£¬Í¼~\ref{essentialfromRT}ÐÎÏóµØÏÔÊ¾ÁË·Ö½â±¾ÖÊ¾ØÕóµÃµ½ËÄ¸ö½âµÄ¹ý³Ì¡£±£³Ö³ÉÏñÆ½ÃæµÄµã£¨ºìµã£©²»±äµÄÇé¿öÏÂ£¬¿ÉÒÔ»­³öËÄÖÖ¿ÉÄÜµÄÇé¿ö£¬µ«ÊÇÖ»ÓÐ(a)ÊÇÕýÈ·µÄ£¬ÒòÎªÆäÓÐÕýÉî¶È£¬ËùÒÔ»Ö¸´Ðý×ªÓëÆ½ÒÆºóÐèÒª½«3Dµã´øÈëÍ¼ÖÐËÄ¸ö½âÖÐ£¬¼ì²â¸ÃµãÔÚÁ½¸öÏà»úÖÐµÄÉî¶È£¬¼´¿ÉÈ·¶¨$R$ºÍ$t$¡£Êµ¼ÊÉÏÀûÓÃ$E$µÄÄÚÔÚÐÔÖÊ£¬ÆäÖ»ÓÐÎå¸ö×ÔÓÉ¶È£ºÐý×ª(3)£¬Æ½ÒÆ(1)£¬Ïà»úÖÐÐÄ(1)¡£µ«ÊÇÊ¹ÓÃÎåµã·¨ÐÎÊ½¸´ÔÓ£¬ËùÒÔ±¾ÎÄ»¹ÊÇ²ÉÓÃÉÏÎÄ½éÉÜµÄ°Ëµã·¨¼ÆËãÐý×ªÓëÆ½ÒÆ¹ØÏµ¡£
+
+
 \subsection{Èý½Ç¶¨Î»·¨}
 ÔÚµÃµ½Ïà»úµÄÎ»×Ëºó£¬ÐèÒª»Ö¸´Æ¥ÅäµãµÄÈýÎ¬×ø±êÐÅÏ¢£¬¸Ã·½·¨³ÆÎªÈý½Ç²âÁ¿£¨triangulation£©£¬Èý½Ç²âÁ¿Ê±Ö¸²»Í¬ÊÓ½Ç¹Û²ìÍ¬Ò»¸öµãµÄ¼Ð½Ç£¬È·¶¨¸ÃµãµÄÎ»ÖÃ¡£Èý½Ç²âÁ¿×îÔçÓÉ¸ßË¹Ìá³ö²¢Ó¦ÓÃÓÚÌìÎÄÑ§ÖÐ¡£ÔÚSfMÖÐ£¬ÎÒÃÇÊ¹ÓÃÈý½Ç²âÁ¿¹À¼ÆÆ¥ÅäµãµÄÏñËØÉî¶È¡£
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=5.2in]{chapter3/triangulation.png}
+\caption{Èý½Ç²âÁ¿Ê¾ÒâÍ¼}
+\label{triangulation}
+\end{figure}
 
 Ð¡¿×Ïà»ú³ÉÏñÄ£ÐÍ¼ò»¯Îª$\lambda \left[\begin{array}{c}
 x_1\\
@@ -652,12 +668,6 @@ X_1\\
 \end{array}\right]=0$£¬ÓÉÓÚÒ»¸öÊÓÍ¼¿ÉÒÔÌá¹©Á½¸ö·½³Ì£¬ËùÒÔÖ»ÐèÒªÁ½¸öÊÓÍ¼¼´¿É¼ÆËãµÃµ½3Dµã×ø±ê£¬µ«ÊÇÓÉÓÚÔëÉùµÄÓ°Ïì£¬¿Õ¼äÖÐµÄÁ½ÊÓÍ¼ÉäÏß²»Ò»¶¨½»ÓÚÒ»µã£¬ËùÒÔÊ¹ÓÃÁ½ÊÓÍ¼»Ö¸´³öÀ´µÄÈýÎ¬µã×ø±ê´æÔÚ²»×¼È·µÄÎÊÌâ£¬ËùÒÔÒ»°ãÇé¿öÏÂÊ¹ÓÃ¶àÊÓÍ¼½øÐÐÈý½Ç²âÁ¿»Ö¸´¶àÊÓÍ¼Æ¥ÅäµÄ3Dµã×ø±ê£¬ÈçÍ¼~\ref{triangulation}ËùÊ¾£¬¶à¸öÊÓÍ¼Æ¥ÅäµÄÍ¬Ò»¸ö3DµãÔÚ²»Í¬ÊÓÍ¼³ÉÏñÆ½ÃæµÄÍ¶Ó°Îª$x_1,x_2,...x_n$£¬ÕâÐ©Í¶Ó°µã¾ßÓÐÏàÍ¬µÄtrackÐòºÅ£¨µÚÈýÕÂµÚ¶þ½ÚÄ©Ìáµ½µÄ¶¨Òå£©£¬µ±´Ó¶àÊÓÍ¼ÖÐ»Ö¸´3DÎ»ÖÃ×ø±ê£¬¸ÃÎÊÌâÓÖ¹éÎª¶ÔÊ½~\ref{triangulation-equation}½øÐÐÆæÒìÖµ·Ö½âÇó×îÐ¡¶þ³Ë½âµÄÎÊÌâ¡£ÓÉÓÚ$rank([\quad]_{3n\times 4})=2$ËùÒÔ¶Ô$[\quad]$½øÐÐSVD·Ö½â£¬$V$µÄ×îºóÒ»ÁÐ¾ÍÊÇ$[\quad]$µÄÓÒÁã¿Õ¼ä£¬Ò²¾ÍÊÇ3DµãµÄÎ»ÖÃ×ø±ê¡£
 
 Èý½Ç²âÁ¿µÄ¶àÊÓÍ¼±ØÐë´æÔÚÆ½ÒÆ¹ØÏµ£¬·ñÔòµ¥´¿µÄÐý×ªÎÞ·¨Ê¹ÓÃÈý½Ç²âÁ¿£¬ÒòÎª´ËÊ±¶Ô¼«Ô¼ÊøÓÀÔ¶Âú×ã¡£ÔÚÆ½ÒÆ´æÔÚµÄÇé¿öÏÂ£¬Èý½Ç²âÁ¿´æÔÚ²»È·¶¨ÐÔ£¬µ±Æ½ÒÆºÜÐ¡Ê±£¬ÉäÏß¼Ð½ÇºÜÐ¡£¬¼ÆËãµÃµ½µÄÏñËØÉî¶È²»È·¶¨ÐÔºÜ´ó£»µ«ÊÇÆ½ÒÆÌ«´óºó£¬Í¼Ïñ±ä»»»á½Ï´ó£¬µ¼ÖÂÆ¥ÅäÊ§Ð§¡£ËùÒÔÈý½Ç²âÁ¿Ê±£¬ÐèÒª¿¼ÂÇ¶àÊÓÍ¼¼Ð½Ç£¬Ò²¾ÍÊÇ¶àÊÓÍ¼Æ½ÒÆ´óÐ¡µÄÓ°Ïì¡£
-\begin{figure}[!htbp]
-\centering
-\includegraphics[width=5.2in]{chapter3/triangulation.png}
-\caption{Èý½Ç²âÁ¿Ê¾ÒâÍ¼}
-\label{triangulation}
-\end{figure}
 
 \begin{equation}
 \centering
@@ -761,6 +771,7 @@ A_2\\
 \cdots\\
 A_6
 \end{array}\right]b = 0
+\label{pnp-svd-equation}
 \end{equation}
 
 Í¨¹ýÒÔÉÏ·½·¨£¬ÎÒÃÇ¿ÉÒÔµÃµ½¾ØÕó$P$£¬ÓÉÓÚ$P=K[R|t]$£¬ËùÒÔÐý×ª¾ØÕó$R=K^{-1}P_{[1:3]}$£¬$P_{[1:3]}$±íÊ¾$P$µÄÇ°ÈýÁÐ£¬ÓÉÓÚÐý×ªÕó$R$ÊÇÕý½»¾ØÕó£¬ÎªÁË±£Ö¤ÕâÒ»ÐÔÖÊ£¬ËùÒÔÐý×ªÕóÈ¡Ê½~\ref{main-orthogonal-equation}ÖÐ$R_+$
@@ -918,19 +929,27 @@ E_{position}=arg\mathop{{min}}\limits_{R,t} \sum_{i=1}\left \|f_j(x) - x_j \righ
 
 ÔÚ´Ë²»ÏêÏ¸½éÉÜÈçºÎ½âËãÉÏÊ½£¬Ïà¶ÔÓÚ×îÐ¡»¯ÖØÍ¶Ó°Îó²îµÄ¹ý³Ì£¬¸Ã¹ý³ÌÖ»µ÷ÕûÏà»úÏà¹Ø²ÎÊý£¬Ã»ÓÐÉæ¼°3DµãÏà¹ØµÄµ÷Õû£¬ËùÒÔÖ»ÄÜ×÷ÎªBAµÄ¸¨Öú²½Öè£¬Ò²¿ÉÒÔÈÏÎªÕâÊôÓÚ¹âÊøÆ½²î·¨µÄÒ»²¿·Ö£¬ÏÂÎÄ²»ÔÙ¹ý¶àÇ¿µ÷¡£
 
-±¾½Ú½éÉÜÁË»ù±¾µÄÏ¡ÊèµãÔÆÉú³ÉµÄ¹ý³Ì£¬°üÀ¨¶àÊÓÍ¼¼¸ºÎÖªÊ¶´ÓÆ¥Åäµã»Ö¸´½á¹¹£¬¶øºóÔöÁ¿Ê½µÄÖØ½¨ÆäËûÍ¼Æ¬£»ÔÚÃ¿¼ÓÈëÒ»ÕÅÍ¼Æ¬Ê±£¬Ê¹ÓÃBAÓÅ»¯Ïà»úÎ»×ËÓë3DµãµÄÎ»ÖÃ£¬ÔÚ´ËÎÒ¼ÓÉÏ×îÐ¡»¯Ïà»úÖÐÐÄÎ»ÖÃÎó²î£¬×÷ÎªBAµÄ¸¨Öú²½Öè¡£Í¼~\ref{BA}(b)ÊÇÊ¹ÓÃCeresSolver¿âµü´úÈý´ÎÓÅ»¯ÖØÍ¶Ó°Îó²îµÄ½á¹û£¬³õÊ¼´ú¼Ûº¯Êý½á¹ûÎª$3.483778e+01$£¬BAÓÅ»¯ºóµÄ´ú¼ÛÎª$1.732320e+01$¡£´Ó~\ref{BA}Á½ÕÅÍ¼¶Ô±È¿ÉÒÔ¿´³öBA×îÐ¡»¯ÖØÍ¶Ó°Îó²îµÄ×÷ÓÃ:(a) ½öÊ¹ÓÃ¶àÊÓÍ¼¼¸ºÎ¼ÆËãÏà»úÎ»×Ë²¢Ê¹ÓÃÈý½Ç²âÁ¿»Ö¸´3DµãÎ»ÖÃ£¬¶ø(b)ÔÚ(a)µÄ»ù´¡ÉÏÔö¼ÓBA»·½Ú£¬Í¼ÖÐºìÉ«µãÊÇÌáÈ¡µÄ2DÌØÕ÷µã×ø±ê£¬ÂÌÉ«µãÊÇ3D¸ù¾ÝÏà»ú$R,t$¹ØÏµÍ¶Ó°»Ø³ÉÏñÆ½ÃæµÄµã£¬´ÓÖÐ¿ÉÒÔÃ÷ÏÔ¿´³öBA¶ÔÖØÍ¶Ó°Îó²îÓÐ¸ÄÉÆ×÷ÓÃ£¬¿ÉÒÔ½«Îó²îÆ½Ì¯µ½ËùÓÐµãÉÏ¡£
 \begin{figure}[!htbp]
 \centering
 \subfigure[]{
-\includegraphics[width=5.4in]{chapter3/BA/before_small.jpg}}
-\subfigure[]{\includegraphics[width=5.4in]{chapter3/BA/after_small.jpg}
+\includegraphics[width=3.0in]{chapter3/BA/before_small.jpg}}
+\subfigure[]{\includegraphics[width=3.0in]{chapter3/BA/after_small.jpg}
 }
 \caption{BA¶Ô±È½á¹ûÍ¼}
 \label{BA}
 \end{figure}
 
+±¾½Ú½éÉÜÁË»ù±¾µÄÏ¡ÊèµãÔÆÉú³ÉµÄ¹ý³Ì£¬°üÀ¨¶àÊÓÍ¼¼¸ºÎÖªÊ¶´ÓÆ¥Åäµã»Ö¸´½á¹¹£¬¶øºóÔöÁ¿Ê½µÄÖØ½¨ÆäËûÍ¼Æ¬£»ÔÚÃ¿¼ÓÈëÒ»ÕÅÍ¼Æ¬Ê±£¬Ê¹ÓÃBAÓÅ»¯Ïà»úÎ»×ËÓë3DµãµÄÎ»ÖÃ£¬ÔÚ´ËÎÒ¼ÓÉÏ×îÐ¡»¯Ïà»úÖÐÐÄÎ»ÖÃÎó²î£¬×÷ÎªBAµÄ¸¨Öú²½Öè¡£Í¼~\ref{BA}(b)ÊÇÊ¹ÓÃCeresSolver¿âµü´úÈý´ÎÓÅ»¯ÖØÍ¶Ó°Îó²îµÄ½á¹û£¬³õÊ¼´ú¼Ûº¯Êý½á¹ûÎª$3.483778e+01$£¬BAÓÅ»¯ºóµÄ´ú¼ÛÎª$1.732320e+01$¡£´Ó~\ref{BA}Á½ÕÅÍ¼¶Ô±È¿ÉÒÔ¿´³öBA×îÐ¡»¯ÖØÍ¶Ó°Îó²îµÄ×÷ÓÃ:(a) ½öÊ¹ÓÃ¶àÊÓÍ¼¼¸ºÎ¼ÆËãÏà»úÎ»×Ë²¢Ê¹ÓÃÈý½Ç²âÁ¿»Ö¸´3DµãÎ»ÖÃ£¬¶ø(b)ÔÚ(a)µÄ»ù´¡ÉÏÔö¼ÓBA»·½Ú£¬Í¼ÖÐºìÉ«µãÊÇÌáÈ¡µÄ2DÌØÕ÷µã×ø±ê£¬ÂÌÉ«µãÊÇ3D¸ù¾ÝÏà»ú$R,t$¹ØÏµÍ¶Ó°»Ø³ÉÏñÆ½ÃæµÄµã£¬´ÓÖÐ¿ÉÒÔÃ÷ÏÔ¿´³öBA¶ÔÖØÍ¶Ó°Îó²îÓÐ¸ÄÉÆ×÷ÓÃ£¬¿ÉÒÔ½«Îó²îÆ½Ì¯µ½ËùÓÐµãÉÏ¡£
+
 \section{Ï¡ÊèµãÔÆµÄ³íÃÜ»¯}
-Í¨¹ýSfM·½·¨£¬²»½ö¿ÉÒÔµÃµ½Ïà»úÎ»×Ë£¬Ò²¿ÉÒÔ»Ö¸´ÌØÕ÷µãµÄÈýÎ¬×ø±êµÃµ½Ï¡ÊèµãÔÆ£¬µ«ÊÇÓÉÓÚµãÔÆ¹ýÓÚÏ¡ÊèÄÑÒÔÓÃÓÚÎÞÈË³µµ¼º½Óë¹æ»®£¬ËùÒÔ±¾ÎÄÊ¹ÓÃMultiple View Stereo(MVS)¼¼Êõ½«µãÔÆ³íÃÜ»¯£¬MVS¿ÉÒÔ·ÖÎª»ùÓÚÌåËØ£¨voxel£©£¬»ùÓÚ±íÃæÑÝ»¯£¨surface evolution£©¡¢»ùÓÚÌØÕ÷µãÉú³¤£¨feature point growing£©ºÍ»ùÓÚÉî¶ÈÍ¼ÈÚºÏ£¨depth-map merging£©ËÄÖÖÀàÐÍ\cite{Shen-Accurate}¡£±¾ÎÄ²ÉÓÃÉî¶ÈÍ¼ÈÚºÏµÄ·½·¨\cite{Furukawa-Accurate} µÃµ½³íÃÜµãÔÆ£¬¸Ã·½·¨°üÀ¨Éî¶ÈÍ¼¼ÆËãÓëÉî¶ÈÍ¼ÈÚºÏÁ½²¿·Ö¡£
+Í¨¹ýSfM·½·¨£¬²»½ö¿ÉÒÔµÃµ½Ïà»úÎ»×Ë£¬Ò²¿ÉÒÔ»Ö¸´ÌØÕ÷µãµÄÈýÎ¬×ø±êµÃµ½Ï¡ÊèµãÔÆ£¬µ«ÊÇÓÉÓÚµãÔÆ¹ýÓÚÏ¡ÊèÄÑÒÔÓÃÓÚÎÞÈË³µµ¼º½Óë¹æ»®£¬ËùÒÔ±¾ÎÄÊ¹ÓÃMultiple View Stereo(MVS)¼¼Êõ½«µãÔÆ³íÃÜ»¯£¬MVS¿ÉÒÔ·ÖÎª»ùÓÚÌåËØ£¨voxel£©£¬»ùÓÚ±íÃæÑÝ»¯£¨surface evolution£©¡¢»ùÓÚÌØÕ÷µãÉú³¤£¨feature point growing£©ºÍ»ùÓÚÉî¶ÈÍ¼ÈÚºÏ£¨depth-map merging£©ËÄÖÖÀàÐÍ\cite{Shen-Accurate}¡£±¾ÎÄ²ÉÓÃÉî¶ÈÍ¼ÈÚºÏµÄ·½·¨\cite{Furukawa-Accurate}µÃµ½³íÃÜµãÔÆ£¬¸Ã·½·¨°üÀ¨Éî¶ÈÍ¼¼ÆËãÓëÉî¶ÈÍ¼ÈÚºÏÁ½²¿·Ö£¬¿ÉÒÔÓÃÍ¼~\ref{flow-dense-whole}±íÊ¾Õû¸ö¹ý³Ì¡£
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=4.9in]{chapter3/flow-dense.png}
+\caption{µãÔÆ³íÃÜ»¯Á÷³ÌÍ¼}
+\label{flow-dense-whole}
+\end{figure}
 
 \subsection{Éî¶ÈÍ¼¼ÆËã}
 »ùÓÚSfM·½·¨£¬ÎÒÃÇ¿ÉÒÔµÃµ½Í¼ÏñÊý¾Ý¼¯ÏÂËùÓÐÍ¼Æ¬¶ÔÓ¦Ïà»úµÄÎ»×Ë¹ØÏµÓëÌØÕ÷µãµÄ3D×ø±ê£¬ÀûÓÃÕâÐ©Î»×Ë¹ØÏµ£¬¿ÉÒÔÍê³É½ÓÏÂÀ´µÄÉî¶ÈÍ¼¼ÆËã¹ý³Ì¡£¶ÔÓÚµ¥ÕÅÍ¼Æ¬ÎÞ·¨¼ÆËãÉî¶ÈÍ¼£¬Éî¶ÈÍ¼µÄ¼ÆËãÊ×ÏÈÐèÒªÎªÃ¿ÕÅÍ¼Æ¬Ñ¡È¡Æä²Î¿¼Í¼£¨Reference Images£©£¬¶øºó¸ù¾Ý²Î¿¼Í¼Óë×ÔÉíµÄÐý×ªÆ½ÒÆ¹ØÏµ£¨Í¨¹ýSfMµÃµ½£©£¬¼ÆËãÃ¿ÕÅÍ¼Æ¬µÄÉî¶ÈÍ¼¡£¶ÔÓÚË«Ä¿Ïà»ú£¬Í¨¹ýË«Ä¿Í¼Æ¬µÃµ½Éî¶ÈÍ¼£¬Ë«Ä¿³ÉÏñ»¥Îª²Î¿¼Í¼£»È»¶ø¶ÔÓÚÎÞÐòµÄÍ¼Æ¬¼¯£¬²Î¿¼Í¼µÄÑ¡È¡ÖÁ¹ØÖØÒª¡£±¾ÎÄ²Î¿¼Shen\cite{shen-Accurate}µÄ·½·¨ÉèÖÃ²Î¿¼Í¼ãÐÖµ£¬¼ÙÉèÓÐ$n$ÕÅÍ¼Æ¬£¬$\theta_{ij}, j=1,...,n$±íÊ¾µÚ$i$ÕÅÍ¼Æ¬ÓëÆäËûÍ¼Æ¬$1,..,n$µÄÏà»úÖ÷Öá¼Ð½Ç£¬$\theta_{ij}$ÓÃ$i$ Óë$j$Í¼Æ¬Æ¥ÅäµÄÌØÕ÷µãÖ®¼ä¼Ð½ÇµÄÆ½¾ùÖµ±íÊ¾¡£Í¬Ê±Ã¿ÕÅÍ¼Æ¬ÓëÆä²Î¿¼Í¼¶ÔÓ¦Ïà»úµÄ¾àÀë³ÆÎª»ùÏß£¬¼ÇÎª$d_{ij}$£¬»ùÏßµÄ¾àÀëÌ«³¤ÔòÁ½ÕÅÍ¼Æ¬ÖØµþÇøÓòÌ«Ð¡£¬Ì«¶ÌÔòÊ¹ÖØ½¨¾«¶È½µµÍ£¬¾Ý´ËÂú×ã$5^{\circ}<\theta_{ij}<60^\circ$£¬$d_{ij}<0.05\bar{d}$»ò$d_{ij}>2\bar{d}$µÄÍ¼Æ¬×÷Îª²Î¿¼Í¼£¬°´ÕÕ$\theta_{ij}\dot d_{ij}$½µÐòÅÅÐò²Î¿¼Í¼£¬È¡Ç°10ÕÅ£¨Èç¹ûÓÐ£©×÷Îª²Î¿¼Í¼¡£
@@ -958,8 +977,39 @@ m(p,f_p)=1-\frac{\sum\limits_{q\in patch}(q-\bar{q})(H_{ij}(q)-\overline{H_{ij}(
 \label{matchingCost-equation}
 \end{equation}
 
-¾Ý´Ë¿É¼ÆËãÊý¾Ý¼¯ÖÐÃ¿ÕÅÍ¼Æ¬µÄÉî¶ÈÍ¼ÓëÉî¶ÈÖµµÄÖÃÐÅ¶È
+¾Ý´Ë¿É¼ÆËãÊý¾Ý¼¯ÖÐÃ¿ÕÅÍ¼Æ¬µÄÉî¶ÈÍ¼ÓëÍ¼Æ¬ÖÐÃ¿¸öÏñËØ¶ÔÓ¦µÄNCCÖµ£¬ÈçÍ¼~\ref{depth}ËùÊ¾£¬Í¼$(b),(e)$ÎªÉî¶ÈÍ¼£¬Í¼$(c),(f)$ÎªNCCÖµÍ¼£¬Í¼ÖÐÊ¹ÓÃÀäÅ¯É«±íÊ¾ÏñËØÖµµÄ´óÐ¡£¬ÑÕÉ«Ô½Å¯±íÊ¾ÏñËØÖµÔ½´ó¡£Í¼~\ref{depth-3} ½ÏÀä£¨À¶É«£©µÄÇøÓò±íÊ¾ÓÃÀ´¼ÆËãÉî¶ÈÍ¼µÄÍ¼Æ¬Óë²Î¿¼Í¼¶ÔÓ¦patchÇøÓòÏñËØÎó²î½Ï´ó£¬µ±´óÓÚÒ»¶¨ãÐÖµÊ±£¬Ö¤Ã÷¸ÃÇøÓòµÄÉî¶È¼ÆËãÊÇ²»×¼È·µÄ£¬¹Ê¶ÔÓ¦Í¼~\ref{depth-5}µÄÉî¶ÈÉèÎªÁã£¬Îª×îÇ³É«£¨À¶É«£©²¿·Ö¡£¶ÔÓÚÉî¶ÈÍ¼¶øÑÔÑÕÉ«Ô½Å¯Ö¤Ã÷Éî¶ÈÔ½´ó£¬Í¼~\ref{depth-5}ºÜºÃ·´Ó³ÁËÒ»ÃæÊúÖ±Ç½µ¼ÖÂÍ¼Æ¬Éî¶ÈµÄ±ä»¯Çé¿ö¡£
+
+\begin{figure}[!htbp]
+\centering
+    \subfigure[]{
+    \label{depth-1}
+    \includegraphics[width=1.8in]{chapter3/mvs/DJI_0056.JPG}
+    }
+    \subfigure[]{
+    \label{depth-2}
+    \includegraphics[width=1.8in]{chapter3/mvs/DJI_0056_depth.jpg}
+    }
+\subfigure[]{
+\label{depth-3}
+    \includegraphics[width=1.8in]{chapter3/mvs/DJI_0056_score.jpg}
+}
+\subfigure[]{
+\label{depth-4}
+    \includegraphics[width=1.8in]{chapter3/mvs/DJI_0100.JPG}
+    }
+    \subfigure[]{
+    \label{depth-5}
+    \includegraphics[width=1.8in]{chapter3/mvs/DJI_0100_depth.jpg}
+    }
+\subfigure[]{
+\label{depth-6}
+    \includegraphics[width=1.8in]{chapter3/mvs/DJI_0100_score.jpg}
+}
+\caption{Éî¶ÈÍ¼ÓëNCCÖµ}
+\label{depth}
+\end{figure}
 
 \subsection{Éî¶ÈÍ¼ÈÚºÏ}
-
+ÔÚµÃµ½Ã¿ÕÅÍ¼Æ¬µÄÉî¶ÈÍ¼Ö®ºó£¬ÐèÒª½«¸÷¸öÉî¶ÈÍ¼ÈÚºÏµÃµ½Íê³ÉµÄ³¡¾°Í¼£¬ÓÉÓÚÍ¼Æ¬´æÔÚÖØµþÇøÓò£¬ËùÒÔÖ±½ÓÈÚºÏÉî¶ÈÍ¼»áÔÚÖØµþÇøÓò²úÉúÉî¶ÈÈßÓà£¬ËùÒÔÉî¶ÈÍ¼µÄÈÚºÏ¾ÍÊÇÈ¥³ýÈßÓàÉî¶ÈµÄ¹ý³Ì¡£½«Í¼$i$Ã¿¸öÏñËØµã$x$Í¨¹ýÉÏÎÄ¼ÆËãµÃµ½µÄÉî¶ÈÖØÐÂÍ¶Ó°µ½3D¿Õ¼äÎª$X=\lambda R_i^TK_i^{-1}x + C_i$£¬¶ø$i$µÄ²Î¿¼Í¼$j=1,..h$Ò²¿ÉÒÔµÃµ½¶ÔÓ¦Í¼$i$ÖÐÃ¿¸öÏñËØµÄÉî¶È£¬Õâ¸öÉî¶È¿ÉÒÔÍ¨¹ý²Î¿¼Í¼µÄÉî¶ÈÍ¼¼ÆËãµÃµ½£¬¼ÇÎª$\lambda(X,j)$£¬¶ÔÓÚÒÀÀµÍ¼$i$µÄÉî¶ÈÍ¼µÃµ½µÄ×ø±ê$X$¿ÉÒÔ×ª»»µ½²Î¿¼Í¼µÄÏà»ú×ø±êÏµÖÐµÃµ½$X$¶ÔÓ¦µÄÏñËØÉî¶È$d(X,i)$£¬Èç¹û$d(X,i)<\lambda(X,j)$»ò$\frac{\left|d(X,i)-\lambda(X,j)\right|}{\lambda(X,j)}$£¬ÔòÒÆ³ý²Î¿¼Í¼ÖÐ¸ÃÏñËØµÄÉî¶È¡£
 \section{±¾ÕÂÐ¡½á}
+±¾ÕÂ½éÉÜÁËÈçºÎ½«µãÔÆ³íÃÜ»¯µÄ¹ý³Ì£¬Ê×ÏÈ²ÉÓÃ»ùÓÚ¿éµÄ¶àÊÓÍ¼ÀíÂÛ£¬ÒÔÈ¥¾ùÖµµÄNCC×÷Îª¿éÆ¥Åä´ú¼Ûº¯ÊýµÃµ½Êý¾Ý¼¯ÖÐÃ¿ÕÅÍ¼Æ¬µÄÃ¿¸öÏñËØµÄÉî¶È£¬ÓÉÓÚÍ¼Æ¬´æÔÚÖØµþÇøÓò£¬ËùÒÔÉî¶ÈÍ¼µÄÈÚºÏÒ²´æÔÚÈßÓàÉî¶ÈµÄÎÊÌâ£¬ËùÒÔ¾«Á¶Éî¶ÈÍ¼£¬Éî¶ÈÉèÎªÁã£¨Í¼~\ref{depth-2}À¶É«ÇøÓò£©£¬´Ó¶øÈ¥³ýÈßÓàÉî¶È£¬´Ó¶øÍê³ÉÉî¶ÈÍ¼µÄÈÚºÏ£¬µÃµ½³íÃÜµãÔÆ¡£
