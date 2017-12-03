@@ -9,23 +9,26 @@ QR code×÷ÎªÒ»ÖÖ·Ç³£Á÷ÐÐµÄ¾ØÕóÊ½¶þÎ¬Âë£¬¾ßÓÐ¿Õ¼äÀûÓÃÂÊ¸ß£¬´æ´¢Êý¾ÝÁ¿´ó£¬½âÂëËÙ¶È¿
 
 \begin{figure}[!htbp]
 	\centering
-	\subfigure[QR codeÊ¾ÒâÍ¼]{\includegraphics[width=4.0in]{chapter2/qrcode.png}}
-    \subfigure[LadybugÈ«¾°Ïà»ú]{\includegraphics[width=2.0in]{chapter2/ladybug.jpg}}
+	\subfigure[QR codeÊ¾ÒâÍ¼]{\includegraphics[width=4.0in]{chapter2/qrcode.png}
+    \label{qrcode}}
+    \subfigure[LadybugÈ«¾°Ïà»ú]{\includegraphics[width=1.8in]{chapter2/ladybug.jpg}
+    \label{ladybug}}
 	%\caption{QR codeÊ¾ÒâÍ¼}
-	\label{qrcode}
 \end{figure}
-
-
 
 \section{È«¾°Í¼Ïñ´¦Àí}
 LadybugÈ«¾°Ïà»ú¾ßÓÐ6¸ö¶ÀÁ¢µÄÉãÏñÍ·£¬ÈçÍ¼~\ref{ladybug}ËùÊ¾£¬¿ÉÒÔÔÚÇòÐÎ×ø±êÏµÏÂ½«6¸öÏà»úÍ¼ÏñÊµÊ±ºÏ²¢ÎªÒ»ÕÅÈ«¾°Í¼£¬³ÊÏÖÔÚ¶þÎ¬Æ½Ãæ¿Õ¼äÖÐ¡£ladybugÏà»úÌá¹©$360^\text{o}$ÊÓÆµ´®Á÷¹¦ÄÜ£¬¿ÉÒÔ¸²¸Ç90\% µÄ¿ÉÊÓÇòÃæ£¬¾ßÓÐÍ¼Ïñ²É¼¯¡¢´¦ÀíºÍÐ£Õý¹¦ÄÜ¡£ÔÚµÃµ½LadybugÏà»úµÄÈ«¾°Í¼ºó£¬Ê¹ÓÃÄæÍ¸ÊÓÍ¶Ó°£¨IPM£©½«È«¾°Í¼ÏñÍ¶Ó°³É¸©ÊÓÍ¼¡£¶øºó½«³µÁ¾µÄ¸ß¾«¶È¶¨Î»ÐÅÏ¢±àÂëÎª¶þÎ¬Âë£¬·ÅÖÃÓÚ¶ÔÓ¦µÄÄæÍ¸ÊÓÍ¶Ó°µÃµ½µÄÍ¼Æ¬µÄ×óÏÂ½Ç£¬´Ó¶øÍê³ÉÍ¼ÏñÓë¶ÔÓ¦³µÌåÎ»ÖÃµÄ²É¼¯Óë´¦Àí£¬·½±ãºóÐø¹¹½¨´ó·¶Î§µØÍ¼¡£
+%\begin{figure}[!htbp]
+%	\centering
+%	\caption{LadybugÈ«¾°Ïà»ú}
+%	\label{ladybug}
+%\end{figure}
 \begin{figure}[!htbp]
 	\centering
-	
-	\caption{LadybugÈ«¾°Ïà»ú}
-	\label{ladybug}
+	\includegraphics[width=5.0in]{chapter2/para.png}
+	\caption{ÄæÍ¸ÊÓ×ø±ê±ä»»¹ØÏµ}
+	\label{para}
 \end{figure}
-
 ÓÉÓÚLadyBug³ÉÏñÃèÊöÔÚÇòÃæ×ø±êÏµÖÐ£¬IPMÍ¶Ó°ÐèÒª±íÊ¾ÔÚ³µÌå×ø±êÏµÖÐ£¬µØÍ¼Æ´½ÓÐèÒªÔÚÊÀ½ç×ø±êÏµÖÐÍê³É£¬ÔÚ´Ë¼òµ¥½éÉÜÈ«¾°Í¼Ïñ´¦Àí¹ý³ÌÉæ¼°µÄÏà¹Ø×ø±êÏµµÄ±ä»»¹ØÏµ¡£ÈçÍ¼~\ref{para}ËùÊ¾£¬´ú±íÈ«¾°Ïà»úµÄÇòÃæ×ø±êÏµÓë³µÌå×ø±êÏµµÄ¹ØÏµ£¬ÆäÖÐÔÚ³µÌå×ø±êÏµÖÐ£¬ÈÆ×ÔÉíx£¬yºÍzÐý×ª£¬·Ö±ð´ú±í¸©Ñö½Ç£¬ºá¹ö½ÇºÍ·½Î»½Ç£¬Ê¹ÓÃµÀÂ··½ÏòÐÎÏóµØ´ú±í³µÁ¾µÄÐÐÊ»·½Ïò£»ÔÚÈ«¾°×ø±êÏµÖÐ£¬ÇòÃæÏÁ·ìÓëÈ«¾°Í¼·Ö¿é³É¶ÔÓ¦¹ØÏµ£¬ÈçÍ¼ÖÐÐéÏß¼ýÍ·ËùÊ¾£¬µÃµ½µÄÈ«¾°Í¼µÄ³¤¿í£¬ÈçÍ¼~\ref{raw-para}ËùÊ¾£¬Í¼Æ¬³¤¿í·Ö±ð´ú±íÏà¶ÔÓÚ³µÌåµÄ·½Î»½Ç$\mu$Óë¸©Ñö½Ç$\nu$¡£
 ÎªÁËµÃµ½È«¾°Í¼ÏñµÄIPM¸©ÊÓÍ¼£¬ÐèÒª±ê¶¨È«¾°Ïà»úÏà¶ÔÓÚ³µÁ¾µÄÍâ²Î£º¸©Ñö½Ç$\theta$£¬ºá¹ö½Ç$\phi$ºÍ·½Î»½Ç$\varphi$£¬ÒÔ¼°LadybugÏà»ú¹âÐÄÓëµØÃæµÄ¸ß¶È$h$£¬Í¬Ê±¼Ù¶¨³µÁ¾ÖÜÎ§µÄ»·¾³ÓëµØÃæ¸ß¶ÈÒ»ÖÂ¡£ÏÖ¶¨Òå³µÌå×ø±êÏµÎª$\{F_\omega\}=\{X_\omega,Y_\omega,Z_\omega\}$£¬×ø±êÔ­µãÎ»ÓÚ³µÁ¾ºóÖáÖÐµã£»¶¨ÒåÈ«¾°Ïà»ú×ø±êÏµÎª$\{F_c\}=\{X_c,Y_c,Z_c\}$£»¶¨ÒåÈ«¾°Í¼Ïñ×ø±êÎª$\{F_i\}=\{\mu,\nu\}$¡£ÈçÍ¼~\ref{para}ËùÊ¾£¬³µÌå×ø±êÏµÖÐÈÎÒ»µãÓëÈ«¾°Ïà»ú×ø±êÏµÖÐµÄµãµÄ¶ÔÓ¦¹ØÏµÎª£º
 \begin{equation}
@@ -82,13 +85,6 @@ arctan \frac{y_c}{x_c} \\ arccos \frac{z_c}{||P_c||} \\
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=5.0in]{chapter2/para.png}
-	\caption{ÄæÍ¸ÊÓ×ø±ê±ä»»¹ØÏµ}
-	\label{para}
-\end{figure}
-
-\begin{figure}[!htbp]
-	\centering
     \subfigure{
 	\includegraphics[width=2.8in]{chapter2/RAW927090958.png}
     }
@@ -119,15 +115,12 @@ arctan \frac{y_c}{x_c} \\ arccos \frac{z_c}{||P_c||} \\
 \section{µØÍ¼µÄ¹¹½¨ÓëÊ¹ÓÃ}
 Ê¹ÓÃÒÔÉÏµÄ·½·¨¿ÉÒÔµÃµ½È«¾°Í¼ÏñµÄÄæÍ¸ÊÓÍ¶Ó°Í¼£¬ÒÔ¼°Ã¿ÕÅÍ¶Ó°Í¼¶ÔÓ¦µÄ´ËÊ±³µÁ¾Î»ÖÃÓë·½Î»µÈÐÅÏ¢¡£½ø¶øÎÒÃÇ¿ÉÒÔµÃµ½´ó·¶Î§µØÍ¼ÐÅÏ¢£¬ÖÆ×÷´ó·¶Î§ÐÐÊ»µØÍ¼£¬ÎªÎÞÈË³µ¹æ»®Óë¸ÐÖªÌá¹©ÏÈÑéÐÅÏ¢¡£
 \subsection{Í¼ÏñÆ´½Ó}
-Í¼ÏñÆ´½ÓµÄÀúÊ·¿ÉÒÔ×·ËÝµ½ÉÏ¸öÊÀ¼Í£¬Ê¹ÓÃµÄ·½·¨Ò²²»¾¡ÏàÍ¬£¬×ÜÌåÉÏ¿ÉÒÔ·ÖÎªÁ½Àà£¬Ò»ÀàÊÇ»ùÓÚÌØÕ÷Æ¥ÅäµÄÍ¼ÏñÆ´½Ó·½·¨£¬ÁíÒ»ÀàÊÇ»ùÓÚÍ¼Æ¬Ïà»¥¼äÎ»ÖÃ¹ØÏµµÄÆ´½Ó·½·¨¡£ÓÉÓÚ±¾ÎÄ²ÉÓÃµÄ¹ßÐÔ×éºÏµ¼º½ÏµÍ³£¬ÔÚÎÞÕÚµ²£¬¶àÂ·¾¶Ð§Ó¦½ÏÈõµÄ¿Õ¿õ³¡µØ£¬ÊµÑé¾«¶È´ïµ½$5cm$ ÒÔÄÚ£¬ËùÒÔÔÚ´Ë±¾ÎÄ²ÉÓÃ»ùÓÚÍ¼Æ¬Ö®¼äÏà»¥Î»ÖÃ¹ØÏµµÄ·½·¨¡£¾ßÌå¾ÍÊÇ½«ÊÓÆµÁ÷ÖÐÃ¿Ö¡ÄæÍ¸ÊÓÍ¶Ó°Í¼Æ¬°´ÕÕ¶þÎ¬Âë½âËãµÄº½ÏòÐý×ªÒ»¶¨½Ç¶È£¬È»ºó°´ÕÕ½âËãµÄÎ»ÖÃÆ½ÒÆÒ»¶Î¾àÀë£¬¶ÔËùÓÐÊÓÆµ°´ÕÕÉÏÊö·½·¨´¦Àí£¬×îÖÕµÃµ½ÍêÕûµÄ³ÇÇøµØÍ¼¡£
+Í¼ÏñÆ´½ÓµÄÀúÊ·¿ÉÒÔ×·ËÝµ½ÉÏ¸öÊÀ¼Í£¬Ê¹ÓÃµÄ·½·¨Ò²²»¾¡ÏàÍ¬£¬×ÜÌåÉÏ¿ÉÒÔ·ÖÎªÁ½Àà£¬Ò»ÀàÊÇ»ùÓÚÍ¼ÏñÌØÕ÷Æ¥ÅäµÄÆ´½Ó·½·¨£¬ÁíÒ»ÀàÊÇ»ùÓÚÍ¼Æ¬¼äÏà¶ÔÎ»ÖÃ¹ØÏµµÄÆ´½Ó·½·¨¡£ÓÉÓÚ±¾ÎÄ²ÉÓÃµÄ¹ßÐÔ×éºÏµ¼º½ÏµÍ³£¬ÔÚÎÞÕÚµ²£¬¶àÂ·¾¶Ð§Ó¦½ÏÈõµÄ¿Õ¿õ³¡µØ£¬ÊµÑé¾«¶È´ïµ½$5cm$ ÒÔÄÚ£¬ËùÒÔ±¾ÎÄ²ÉÓÃ»ùÓÚÍ¼Æ¬¼äÏà¶ÔÎ»ÖÃ¹ØÏµµÄ·½·¨¡£¾ßÌå¾ÍÊÇ½«ÊÓÆµÁ÷ÖÐÃ¿Ö¡ÄæÍ¸ÊÓÍ¶Ó°Í¼Æ¬°´ÕÕ¶þÎ¬Âë½âËãµÄº½ÏòÐý×ªÒ»¶¨½Ç¶È£¬È»ºó°´ÕÕ½âËãµÄÎ»ÖÃÆ½ÒÆÒ»¶Î¾àÀë£¬¶ÔËùÓÐÊÓÆµ°´ÕÕÉÏÊö·½·¨´¦Àí£¬×îÖÕµÃµ½ÍêÕûµÄ³ÇÇøµØÍ¼¡£
 
-¶ÔÓÚÃ¿Ö¡IPM¸©ÊÓÍ¼£¬³µÉíÎªÎÞÐ§ÐÅÏ¢ÇÒÕ¼¾ÝÍ¼Ïñ´óÁ¿Î»ÖÃ£¬¶ÔµØÍ¼Æ´½ÓÔì³É¸ÉÈÅ£¬ËùÒÔÔÚÆ´½ÓµØÍ¼Ç°£¬ÐèÒª½«³µÉíÒÆ³ý¡£ÓÉÓÚÈ«¾°Í¼±ä»»ÎªIPMÍ¶Ó°Í¼Ê±£¬½«IPM¸©ÊÓÍ¼±ä»»µ½³µÌå×ø±êÏµÖÐ£¬ËùÒÔÈÎºÎÒ»ÕÅIPM¸©ÊÓÍ¼µÄ³µÁ¾Î»ÖÃÓë·½Î»ÊÇ¹Ì¶¨µÄ£º³µÁ¾ºóÖáÖÐÐÄÎ»ÓÚÍ¼Æ¬ºáÖáµÄÖÐÐÄ£¬×ÝÖá¿¿ÏÂµÄ$\frac{1}{3}$Î»ÖÃ´¦£¬º½Ïò³¯ÉÏ¡£ÈçÍ¼~\ref{carmask}ËùÊ¾¡£¾Ý´ËÉè¼ÆÒ»¸ömask£¬ÔÚÆ´½Ó¹ý³ÌÖÐ½«³µÁ¾È¥µô£¬Ö»Æ´½ÓÊ£ÏÂµÄÏñËØ²»ÎªÁãµÄ²¿·Ö¡£
-
-ÔÚÆ´½Ó¹ý³ÌÖÐ£¬ÒòÎªËùÐèÆ´½ÓµÄµØÀí¿Õ¼ä¹ý´ó£¬Í¼Æ¬¹ý¶à£¬¶øÄÚ´æÏÞÖÆÁËµ¥ÕÅÍ¼Æ¬µÄ´óÐ¡£¬ËùÒÔ±¾ÎÄÉè¼ÆÁËÇøºÅ±ê¼ÇµÄ·½·¨¡£¾ßÌå×ö·¨Îª£º½«ÊÓÆµÁ÷ÖÐÍ¼Æ¬°´ÕÕÎ»ÖÃºÍº½ÏòÆ´½ÓÎª¶àÕÅ$28000\times7000$ÏñËØµÄÍ¼Æ¬£¬ÈçÍ¼~\ref{carmask}ÖÐ³ÈÉ«·½¿òËùÊ¾£¬ÓÉÓÚÃ¿¸öÏñËØ´ú±íÊµ¼ÊµØÀí¿Õ¼äµÄ´óÐ¡Îª$0.06m$£¬¼´Ã¿ÕÅÆ´½ÓºóµÄÍ¼Æ¬´ú±íµÄÎïÀí¿Õ¼ä´óÐ¡Îª$1680m\times420m$¡£ÉèÖÃÕû¸öµØÍ¼µÄ×ø±êÔ­µã£¨Í¼~\ref{carmask}ºìÉ«Ô²µãËùÊ¾£©ÎªÄ³Ò»¹Ì¶¨¾­Î³¶È×ø±ê£¬IPMÍ¼¶ÔÓ¦µÄ¾­Î³¶ÈÓë¸Ãµã¶Ô±Èºó£¬¼ÆËã³ö¸ÃÖ¡IPMÍ¼Ó¦¸Ã·ÅÖÃÓÚÄÄ¸öÇø£¬¶øºó¿ÉÒÔÆ´½Ó³É¶àÕÅ³ÈÉ«´óÐ¡µÄÍ¼Æ¬¡£Ò»¸ö³ÈÉ«·½¿ò´ú±íÒ»¸öÇøÓò£¬¶ÔÓ¦Ò»¸öÇøºÅ£¬ÕâÖÖ´æÔÚÖØµþÇøÓòµÄÇøºÅ·¨ÔòÓÐÐ§µÄ½â¾öÁËÍ¼ÏñÆ´½Ó¹ý³ÌÖÐ³öÏÖµÄ±ßÔµÈ±Ê§µÄÎÊÌâ£¬ËùÒÔ¼´Ê¹³ÈÉ«·½¿ò´ú±íµÄÇøÓò³öÏÖ±ßÔµÈ±Ê§ÏÖÏó£¬ÓÉÓÚÖØµþÇøÓòµÄ´æÔÚ¿ÉÒÔÓÐÐ§½â¾ö¸ÃÎÊÌâ¡£×îºóÖ»ÐèÒª±£ÁôÍ¼~\ref{carmask}µÄÂÌÉ«¿ò±íÊ¾µÄÇøÓòºÍ¸Ã¸ÃÇøÓòµÄÇøºÅ£¬ÕâÑù¾Í¿ÉÒÔ°´ÕÕÇøºÅºÍÍ¼~\ref{carmask}µÄÑùÊ½½«Æ´½ÓµÄÍ¼Æ¬ÔÚPhotoshopÖÐÆ´½ÓÎª¸ü´óµÄÍ¼Æ¬£¬ÎªºóÐøGISÊý¾Ý¿âÖÐ¹¹½¨ÎÞÈË³µµ×Í¼·þÎñ¡£
+¶ÔÓÚÃ¿Ö¡IPM¸©ÊÓÍ¼£¬³µÉíÎªÎÞÐ§ÐÅÏ¢ÇÒÕ¼¾ÝÍ¼Ïñ´óÁ¿Î»ÖÃ£¬¶ÔµØÍ¼Æ´½ÓÔì³É¸ÉÈÅ£¬ËùÒÔÔÚÆ´½ÓµØÍ¼Ç°£¬ÐèÒª½«³µÉíÒÆ³ý¡£ÓÉÓÚÈ«¾°Í¼±ä»»ÎªIPMÍ¶Ó°Í¼Ê±£¬½«IPM¸©ÊÓÍ¼±ä»»µ½³µÌå×ø±êÏµÖÐ£¬ËùÒÔÈÎºÎÒ»ÕÅIPM¸©ÊÓÍ¼µÄ³µÁ¾Î»ÖÃÓë·½Î»ÊÇ¹Ì¶¨µÄ£º³µÁ¾ºóÖáÖÐÐÄÎ»ÓÚÍ¼Æ¬ºáÖáµÄÖÐÐÄ£¬×ÝÖá¿¿ÏÂµÄ$\frac{1}{3}$Î»ÖÃ´¦£¬º½Ïò³¯ÉÏ¡£ÈçÍ¼~\ref{carmask}ËùÊ¾¡£¾Ý´ËÉè¼ÆÒ»¸öÑÚÂë£¨Mask£©£¬ÔÚÆ´½Ó¹ý³ÌÖÐ½«³µÁ¾È¥µô£¬Ö»Æ´½ÓÊ£ÏÂµÄÏñËØ²»ÎªÁãµÄ²¿·Ö¡£
 
 \begin{figure}[!htbp]
 	\centering
-
     \subfigure{
 	\includegraphics[width=2.0in]{chapter2/IPM927090958.png}
     }
@@ -143,6 +136,8 @@ arctan \frac{y_c}{x_c} \\ arccos \frac{z_c}{||P_c||} \\
 	\caption{È¥µô³µÁ¾}
 	\label{carmask}
 \end{figure}
+
+ÔÚÆ´½Ó¹ý³ÌÖÐ£¬ÒòÎªËùÐèÆ´½ÓµÄµØÀí¿Õ¼ä¹ý´ó£¬Í¼Æ¬¹ý¶à£¬¶øÄÚ´æÏÞÖÆÁËµ¥ÕÅÍ¼Æ¬µÄ´óÐ¡£¬ËùÒÔ±¾ÎÄÉè¼ÆÁËÇøºÅ±ê¼ÇµÄ·½·¨¡£¾ßÌå×ö·¨Îª£º½«ÊÓÆµÁ÷ÖÐÍ¼Æ¬°´ÕÕÎ»ÖÃºÍº½ÏòÆ´½ÓÎª¶àÕÅ$28000\times7000$ÏñËØµÄÍ¼Æ¬£¬ÈçÍ¼~\ref{carmask}ÖÐ³ÈÉ«·½¿òËùÊ¾£¬ÓÉÓÚÃ¿¸öÏñËØ´ú±íÊµ¼ÊµØÀí¿Õ¼äµÄ´óÐ¡Îª$0.06m$£¬¼´Ã¿ÕÅÆ´½ÓºóµÄÍ¼Æ¬´ú±íµÄÎïÀí¿Õ¼ä´óÐ¡Îª$1680m\times420m$¡£ÉèÖÃÕû¸öµØÍ¼µÄ×ø±êÔ­µã£¨Í¼~\ref{carmask}ºìÉ«Ô²µãËùÊ¾£©ÎªÄ³Ò»¹Ì¶¨¾­Î³¶È×ø±ê£¬IPMÍ¼¶ÔÓ¦µÄ¾­Î³¶ÈÓë¸Ãµã¶Ô±Èºó£¬¼ÆËã³ö¸ÃÖ¡IPMÍ¼Ó¦¸Ã·ÅÖÃÓÚÄÄ¸öÇø£¬¶øºó¿ÉÒÔÆ´½Ó³É¶àÕÅ³ÈÉ«´óÐ¡µÄÍ¼Æ¬¡£Ò»¸ö³ÈÉ«·½¿ò´ú±íÒ»¸öÇøÓò£¬¶ÔÓ¦Ò»¸öÇøºÅ£¬ÕâÖÖ´æÔÚÖØµþÇøÓòµÄÇøºÅ·¨ÔòÓÐÐ§µÄ½â¾öÁËÍ¼ÏñÆ´½Ó¹ý³ÌÖÐ±ßÔµÈ±Ê§µÄÎÊÌâ¡£±ßÔµÈ±Ê§ÊÇÖ¸ÏµÍ³Æ´½ÓµÃµ½µÄ³ÈÉ«Í¼µÄ±ßÔµÃ»ÓÐµÀÂ·ÏñËØ£¬ÕâÊÇÓÉÓÚÃ¿Ö¡IPMÍ¼µÄÐý×ªÖÐµãÎÞ·¨Í¨¹ýÆ½ÒÆ·ÅÖÃÓÚ½Ó½ü³ÈÉ«Í¼µÄ±ßÔµÎ»ÖÃ£¬ÒòÎªÕâÑùIPMÍ¼µÄÆäËûÏñËØ¾ÍÂäÔÚ³ÈÉ«Í¼ÇøÓòÖ®Íâ£¬ÖØµþÇøÓòµÄ´æÔÚ¿ÉÒÔÓÐÐ§½â¾ö¸ÃÎÊÌâ¡£×îºóÖ»ÐèÒª±£ÁôÍ¼~\ref{carmask}µÄÂÌÉ«¿ò±íÊ¾µÄÇøÓòºÍ¸Ã¸ÃÇøÓòµÄÇøºÅ£¬ÕâÑù¾Í¿ÉÒÔ°´ÕÕÇøºÅºÍÍ¼~\ref{carmask} µÄÑùÊ½½«Æ´½ÓµÄÍ¼Æ¬ÔÚPhotoshopÖÐÆ´½ÓÎª¸ü´óµÄÍ¼Æ¬£¬ÎªºóÐøGISÊý¾Ý¿âÖÐ¹¹½¨ÎÞÈË³µµ×Í¼×ö×¼±¸¡£
 
 \subsection{»ùÓÚGISÊý¾Ý¿âÉú³ÉÎÞÈË³µÐÐÊ»µØÍ¼}
 
@@ -161,4 +156,4 @@ arctan \frac{y_c}{x_c} \\ arccos \frac{z_c}{||P_c||} \\
 \end{figure}
 
 \section{±¾ÕÂÐ¡½á}
-±¾ÕÂ½éÉÜÁËÈçºÎÍ¨¹ýLadybugÈ«¾°Ïà»úÉú³ÉµÄÇòÃæÈ«¾°Í¼Óë¸ß¾«¶È¶¨Î»µ¼º½×éºÏ£¬¹¹½¨³µµÀ¼¶±ðµØÍ¼µÄ¹ý³Ì¡£¸ù¾ÝLadybugÓë³µÌåµÄ¹Ì¶¨Î»ÖÃ¹ØÏµ£¬½«È«¾°Í¼ÏñÐý×ªÓëÆ½ÒÆ×ª»»µ½³µÌå×ø±êÏµÖÐ£¬²¢Íê³ÉÄæÍ¸ÊÓÍ¶Ó°µÄ¹ý³Ì£¬²¢½«Ã¿¸öIPM Í¶Ó°µÄÍ¼ÏñÍ¨¹ý³µÁ¾µÄ¸ß¾«¶È¶¨Î»µ¼º½ÐÅÏ¢£¬Ðý×ªÆ½ÒÆÆ´½ÓÎªÍêÕûµÄµÀÂ·µØÍ¼£¬×îºó½«µØÍ¼Éú³ÉGISÊý¾Ý¿âµÄÍ¼²ã£¬Íê³ÉµÀÂ·ÍØÆË¹¹½¨ÓëµÀÂ·ÊôÐÔÌí¼ÓµÄÈÎÎñ£¬¼´¿É½«¸ÃµØÍ¼ÓÃÓÚÎÞÈË¼ÝÊ»µ¼º½Óë¹æ»®µÈÈÎÎñÖÐ¡£
+±¾ÕÂ½éÉÜÁËÈçºÎÍ¨¹ýLadybugÈ«¾°Ïà»úÉú³ÉµÄÇòÃæÈ«¾°Í¼Óë¸ß¾«¶È¶¨Î»µ¼º½×éºÏ£¬¹¹½¨³µµÀ¼¶±ðµØÍ¼µÄ¹ý³Ì¡£¸ù¾ÝLadybugÓë³µÌåµÄ¹Ì¶¨Î»ÖÃ¹ØÏµ£¬½«È«¾°Í¼Ïñ×ª»»µ½³µÌå×ø±êÏµÖÐ£¬Íê³ÉÄæÍ¸ÊÓÍ¶Ó°µÄ¹ý³Ì£¬²¢½«Ã¿¸öIPMÍ¶Ó°µÄÍ¼ÏñÍ¨¹ý³µÁ¾µÄ¸ß¾«¶È¶¨Î»ÐÅÏ¢£¬Ðý×ª¡¢Æ½ÒÆÆ´½ÓÎªÍêÕûµÄµÀÂ·µØÍ¼£¬×îºó½«µØÍ¼Éú³ÉGISÊý¾Ý¿âµÄÍ¼²ã£¬Íê³ÉµÀÂ·ÍØÆË¹¹½¨ÓëµÀÂ·ÊôÐÔÌí¼ÓµÄÈÎÎñ£¬µÃµ½µÄµØÍ¼¿ÉÓÃÓÚÎÞÈË¼ÝÊ»µ¼º½Óë¹æ»®µÈÈÎÎñ¡£

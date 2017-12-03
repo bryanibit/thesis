@@ -122,7 +122,7 @@ y_i \\
 \right]
 \label{camera2pixel-equation}
 \end{equation}
-其中，$s_x$是u轴方向单像素的宽度，$s_y$是v轴方向单像素的宽度，当前大部分ccd的像素宽度，$dx=dy$，只有以前老式电视机使用的是矩形ccd，导致$s_x\neq s_y$。$p_x$是主点（图~\ref{firstperson} Z 轴与成像平面的交点）与图像左边界的距离，$p_y$ 是主点与图像上边界的距离。$s$是衡量主光轴与成像平面的倾斜程度，如果主光轴垂直于成像平面，则$s = 0$。这些参数被称作相机内参，一般可以通过查询相机手册得到包括焦距在内的相机内参。
+其中，$s_x$是u轴方向单像素的宽度，$s_y$是v轴方向单像素的宽度，当前大部分ccd的像素宽度，$dx=dy$，但老式电视机使用的是矩形ccd，导致$s_x\neq s_y$。$p_x$是主点（图~\ref{firstperson} Z 轴与成像平面的交点）与图像左边界的距离，$p_y$ 是主点与图像上边界的距离。$s$是衡量主光轴与成像平面的倾斜程度，如果主光轴垂直于成像平面，则$s = 0$。这些参数被称作相机内参，一般可以通过查询相机手册得到包括焦距在内的相机内参。
 
 \begin{figure}[!htbp]
 	\centering
@@ -316,7 +316,7 @@ D(x,y,\sigma) &= (G(x,y,k\sigma)-G(x,y,\sigma)*I(x,y)) \\
 
 在此简单介绍最常用的最近邻匹配库FLANN(Fast Library for Approximate Nearest Neighbors)，FLANN具有一种内部机制，该机制可以根据数据本身选择合适的算法来处理数据集，基于FLANN的匹配非常准确、快速。FLANN在使用的时候需要配置两个参数：indexParams和searchParams。使用FLANN时，indexParams可以选择为LinearIndex、KTreeIndex、KMeansIndex、CompositeIndex和AutotuneIndex，其中KTreeIndex灵活且可被并行处理。对于searchParams，用来指定索引树被遍历的次数，即check值，该值越大则匹配的时间越长，当然也越准确。
 
-即使使用最近邻匹配，也无法保证所有匹配的特征点都是正确的，Lowe\cite{Lowe-ObjectRecognition}在1999提出一种简单的方法可以剔除大部分的错误匹配。对于某个特征点向量，如果查询数据集中与其距离最近的特征点向量与次近的特征点向量的距离之比大于0.7，可以避免接近90\%的错误匹配，但是正确的匹配也因此变少。使用FLANN并采用Lowe提出的方法可以去掉大部分的错误匹配，图~\ref{matches-single}展示了随机选取10对匹配的特征点。
+即使使用最近邻匹配，也无法保证所有匹配的特征点都是正确的，Lowe\cite{Lowe-ObjectRecognition}在1999提出一种简单的方法可以剔除大部分的错误匹配。对于某个特征点向量，如果查询数据集中与其距离最近的特征点向量与次近的特征点向量的距离之比大于0.7，可以避免接近90\%的错误匹配，但是正确的匹配也因此变少。使用FLANN并采用Lowe提出的方法可以去掉大部分的错误匹配，图~\ref{matches-single}显示760对匹配特征点以及红色未匹配的特征点。
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width=4.5in]{chapter3/matches/matches.jpg}
@@ -507,7 +507,7 @@ SVD又称奇异值分解，在此不详细介绍，SVD可以将一个矩阵，无论是否满秩，均可以分解为
 \label{epipolor-equation}
 \end{equation}
 
-这里还有几个概念需要介绍一下，所有由3D点，相机中心$C_1,C_2$组成的平面与成像平面相交于两条直线，如图~\ref{epipolor}中蓝色直线，$C_1$成像平面中一点$\lambda X_1$对应的极线为红色平面与$C_2$ 成像平面的交线，即蓝色线$Fx_1$。如果改变3D点的位置形成另外一个红色平面，其与成像平面的交线为另外一条极线，所有形成的极线交于一点，该点称为极点，如图中$e_1,e_2$，所示。从极线约束的关系看$0 = -X_2^TEX_1$，结合齐次坐标的性质，点$x$在直线上的充要条件是$x^T L=0$，所以$EX_1$是过$X_2$的直线，也就是与$C_2$成像平面的极线平行的直线，由于所有的极线$Ex_1$都通过同一个点（极点$e_2$），所以$e_2^T E = 0, E e_1=0$。极点与极线的关系在图~\ref{epipolor-line}中展示出来，图(a)中粉色点表示选取的四个特征点，而图(b)中对应的图(a)四点的四条极线标注为红色，这四条线的交点为极点。
+这里还有几个概念需要介绍一下，所有由3D点，相机中心$C_1,C_2$组成的平面与成像平面相交于两条直线，如图~\ref{epipolor}中蓝色直线，$C_1$成像平面中一点$\lambda X_1$对应的极线为红色平面与$C_2$ 成像平面的交线，即蓝色线$Fx_1$。如果改变3D点的位置形成另外一个红色平面，其与成像平面的交线为另外一条极线，所有形成的极线交于一点，该点称为极点，如图中$e_1,e_2$，所示。从极线约束的关系看$0 = -X_2^TEX_1$，结合齐次坐标的性质，点$x$在直线上的充要条件是$x^T L=0$，所以$EX_1$是过$X_2$的直线，也就是与$C_2$成像平面的极线平行的直线，由于所有的极线$Ex_1$都通过同一个点（极点$e_2$），所以$e_2^T E = 0, E e_1=0$。极点与极线的关系由图~\ref{epipolor-line}可以证明，图(a)中的点匹配图(b)中同颜色的点，对应的极线为图(b)中同颜色的直线，可以看出图(b)中每条直线经过图(a)匹配的特征点，而这些极线交于一点，即极点。
 
 针对极点与极线的关系，本文使用对极约束过滤错误匹配点。在两视图A、B中，A视图的特征点对应在B视图中的极线与其在B视图匹配的特征点的欧拉距离小于9个像素，则认为该对特征点的匹配是有效的。按照这一原则，在使用上文提到的最近邻方法去除错误匹配后，又可以去除一部分错误匹配。通过极点与极线距离过滤匹配点同时考虑了两视图的几何关系，而上文提到的最近邻匹配方法仅考虑特征描述子的数值关系。
 
@@ -989,12 +989,12 @@ m(p,f_p)=1-\frac{\sum\limits_{q\in patch}(q-\bar{q})(H_{ij}(q)-\overline{H_{ij}(
     \label{depth-2}
     \includegraphics[width=1.8in]{chapter3/mvs/DJI_0056_depth.jpg}
     }
-\subfigure[]{
-\label{depth-3}
+    \subfigure[]{
+    \label{depth-3}
     \includegraphics[width=1.8in]{chapter3/mvs/DJI_0056_score.jpg}
-}
-\subfigure[]{
-\label{depth-4}
+    }
+    \subfigure[]{
+    \label{depth-4}
     \includegraphics[width=1.8in]{chapter3/mvs/DJI_0100.JPG}
     }
     \subfigure[]{

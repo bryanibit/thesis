@@ -62,7 +62,7 @@
 	\label{buildRome}
 \end{figure*}
 
-针对SfM耗时效率低的缺点，Wu Changchang\cite{wuchangchang-linear-time}提出线性时间的增量式SfM算法，针对增量式SfM时间复杂度$O(n^4)$，其中$n$为照片数量，提出了一种新的光束平差（BA, Bundle Adjustment）优化方法，使时间复杂度降为$O(n)$，，同时兼顾构图准确性。同时Wu Changchang\cite{wuchangchagn-multicore}为加速SfM使用GPU优化BA过程，通过PCG(Preconditioned Conjugate gradients)改进BA，最大化利用CPU进行并行计算等。
+针对SfM耗时效率低的缺点，Wu Changchang\cite{wuchangchang-linear-time}提出线性时间的增量式SfM算法，针对增量式SfM时间复杂度$O(n^4)$，其中$n$为照片数量，提出了一种新的光束平差（BA, Bundle Adjustment）优化方法，使时间复杂度降为$O(n)$，同时兼顾构图准确性。同时Wu Changchang\cite{wuchangchagn-multicore}为加速SfM使用GPU优化BA过程，通过PCG(Preconditioned Conjugate gradients)改进BA，最大化利用CPU进行并行计算等。
 
 从以上研究现状可以看出构建地图的方法多种多样，没有统一的标准格式，甚至为满足特定需要而构建的地图在其他机器人上无法使用，但是总体而言可以分为两类，一种是使用激光雷达，一种是使用双目视觉或单目视觉构建场景地图。3D激光雷达具有测距准确，精度高等特点，同时对点云分类算法的改进使实时激光构图，并对点云分类成为可能，但是激光雷达价格昂贵，制约了其大范围商业化应用。使用视觉传感器，无论双目单目甚至三目基本原理相似，可以用于实时导航构图，但要获得稠密而精确的点云，类似图~\ref{buildRome}所示，一般需要离线处理，因为其中涉及到匹配优化问题很难在现有计算条件下完成。
 
