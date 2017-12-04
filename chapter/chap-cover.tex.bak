@@ -31,12 +31,12 @@
 \begin{tabular}{p{8em}l@{\extracolsep{0.5em}}l}
 作~~者~~姓~~名&\underline{\hspace{30pt}于华超\hspace{30pt}}\\
 学~~院~~名~~称&\underline{\hspace{15pt}自动化学院\hspace{15pt}}\\
-指~~导~~教~~师&\underline{\hspace{30pt}王美玲\hspace{30pt}}\\
-答辩委员会主席&\underline{\hspace{15pt}孙长胜教授\hspace{15pt}}\\
-申请学位级别&\underline{\hspace{2pt}工学硕士\hspace{2pt}}\\
-学~~科~~专~~业&\underline{\hspace{23pt}控制科学与工程\hspace{23pt}}\\
+指~~导~~教~~师&\underline{\hspace{15pt}王美玲教授\hspace{15pt}}\\
+答辩委员会主席&\underline{\hspace{15pt}孙常胜教授\hspace{15pt}}\\
+申请学位级别&\underline{\hspace{20pt}工学硕士\hspace{20pt}}\\
+学~~科~~专~~业&\underline{\hspace{10pt}控制科学与工程\hspace{10pt}}\\
 学位授予单位&\underline{\hspace{8pt}北京理工大学\hspace{8pt}}\\
-论文答辩时间&\underline{\hspace{14pt}2018 年\ 3 月\hspace{14pt}}
+论文答辩时间&\underline{\hspace{14pt}2017 年\ 12 月\hspace{14pt}}
 \end{tabular}
 \end{spacing}
 }
@@ -64,10 +64,10 @@ Candidate Name:&\underline{\hspace{87pt}Huachao Yu\hspace{86pt}}\\
 School or Department:&\underline{\hspace{37pt}School of Automation\hspace{37pt}}\\
 Faculty Mentor:&\underline{\hspace{80pt}Meiling Wang\hspace{79pt}}\\
 Chair, Thesis Committee:&\underline{\hspace{49pt}Prof. Changsheng Sun\hspace{49pt}}\\
-Degree Applied:&\underline{\hspace{36.5pt}        \hspace{36.5pt}}\\
+Degree Applied:&\underline{\hspace{36.5pt} Master of Engineering science\hspace{36.5pt}}\\
 Major:&\underline{\hspace{42pt}Control Science and Engineering\hspace{43pt}}\\
 Degree by:&\underline{\hspace{10.5pt}Beijing Institute of Technology\hspace{10.5pt}}\\
-The Date of Defence:&\underline{\hspace{72pt}March, 2018\hspace{72pt}}
+The Date of Defence:&\underline{\hspace{72pt}December, 2017\hspace{72pt}}
 \end{tabular}
 \end{spacing}
 }
