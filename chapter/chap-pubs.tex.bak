@@ -6,23 +6,23 @@
 \begin{enumerate}
 
 \item[{[1]}]
-第一作者. UAV-aided Large-scale Map Building and Road Extraction for UGV[C]. Cyber Technology in Automation, Control and Intelligent Systems (CYBER), 2017 IEEE 7rd Annual International Conference on. IEEE, 2017.
+UAV-aided Large-scale Map Building and Road Extraction for UGV[C]. Cyber Technology in Automation, Control and Intelligent Systems (CYBER), 2017 IEEE 7rd Annual International Conference on. IEEE, 2017.
 \item[{[2]}]
-第三作者. 无人地面车辆车道级别引导方法[J].西安电子科技大学学报，2017.（EI收录）
+A loosely coupled MEMS-SINS/GNSS integrated system for land vehicle navigation in urban areas[C] Vehicular Electronics and Safety (ICVES), 2017 IEEE International Conference on. IEEE, 2017: 103-108.
 \item[{[3]}]
-第三作者. 一种车辆模型辅助的MEMS-SINS导航方法[J]. 中国惯性技术学报，2017.（EI收录）
+无人地面车辆车道级别引导方法[J].西安电子科技大学学报，2017.
 \item[{[4]}]
-第三作者. A loosely coupled MEMS-SINS/GNSS integrated system for land vehicle navigation in urban areas[C]//Vehicular Electronics and Safety (ICVES), 2017 IEEE International Conference on. IEEE, 2017: 103-108.
+一种车辆模型辅助的MEMS-SINS导航方法[J]. 中国惯性技术学报, 2017, 25(2):209-215.
 \end{enumerate}
 
 \section*{发明专利}
 \begin{enumerate}
 \item[{[1]}]
-一种适用无人驾驶车辆的双天线差分GNSS与里程计组合导航方法[P]. 2017
+一种适用无人驾驶车辆的双天线差分GNSS与里程计组合导航方法[P]. 201710556025.3
 \item[{[2]}]
-一种无人车多源传感器信息仿真平台.2017
+一种无人车多源传感器信息仿真平台[P]. 201710739673.2
 \item[{[3]}]
-一种基于MEMS的车辆模型辅助和约束的GNSS-INS组合导航方法.2016
+一种基于MEMS的车辆模型辅助和约束的GNSS-INS组合导航方法[P]. 201610803759.2
 \end{enumerate}
 
 \section*{项目经历}
@@ -30,8 +30,14 @@
 \item[{[1]}]
 国家自然基金委2016“未来挑战赛”，代表北京理工大学“特立笃行”无人车队，获得第7名，担任地图组负责人
 \item[{[2]}]
-陆军装备部“跨越险阻2016”地面无人系统挑战赛，代表北京理工大学“特立笃行”无人车队，获得初赛第3名、决赛第5名的成绩，担任地图组负责人
-
-基于行驶空间的地面无人平台越野自主导航研究（国家自然科学基金面上项目（基于多传感器数据融合的地面无人平台感知与规划 （北京高等学校青年英才计划项目 ）****平台路径规划技术 （总装十二五扩展项目）
+陆军装备部“跨越险阻2016”地面无人系统挑战赛，代表北京理工大学“特立笃行”无人车队，获得初赛第3 名、决赛第5名的成绩，担任地图组负责人
+\item[{[3]}]
+国家自然科学基金面上项目：基于行驶空间的地面无人平台越野自主导航研究（项目批准号：61473042）
+\item[{[4]}]
+国家自然科学基金面上项目：无人地面车辆行驶空间构建方法研究（项目批准号：61173076）
+\item[{[5]}]
+北京高等学校青年英才计划：基于多传感器数据融合的地面无人平台感知与规划 （项目批准号：YETP1215）
+\item[{[6]}]
+****平台路径规划技术 （总装十二五扩展项目）
 
 \end{enumerate}
