@@ -7,12 +7,12 @@
 
 \begin{figure}[!htbp]
 \centering
-\includegraphics[width=4.5in]{chapter4/trainimage.png}
+\includegraphics[width=5.0in]{chapter4/trainExtract.png}
 \caption{训练集}
 \label{trainimage}
 \end{figure}
 
-首先从UAV图片中找到一部分道路区域作为训练的样本集，如图~\ref{trainimage}中非黑色部分，将训练集中的图片分为RGB三个通道展示在三维空间坐标系中，如图~\ref{regression}中蓝色点所示，而后使用最小二乘法拟合这些观测值（蓝色点）为一条直线$\frac{x+x_1}{a}=\frac{y+y_1}{b}=\frac{z}{1}$，如图~\ref{regression}中红色直线所示，最后可以计算所有观测点与拟合直线之间的平均欧式距离$D$。 对于需要处理的图片，也就是测试集数据，遍历图片的每个像素，如果测试集像素与拟合直线的欧氏距离大于$3D$，则将该像素赋值为零，否则赋值为一，进而得到和原图大小相同的二值图，按照这种方法每张UAV图片都可以转化为二值图。
+首先从航拍图片中找到一部分道路区域作为训练的样本集，如图~\ref{trainimage}中红色方框内部的道路区域，将训练集中的图片分为RGB三个通道展示在三维空间坐标系中，如图~\ref{regression}中蓝色点所示，而后使用最小二乘法拟合这些观测值（蓝色点）为一条直线$\frac{x+x_1}{a}=\frac{y+y_1}{b}=\frac{z}{1}$，如图~\ref{regression}中红色直线所示，最后可以计算所有观测点与拟合直线之间的平均欧式距离$D$。 对于需要处理的图片，也就是测试集数据，遍历图片的每个像素，如果测试集像素与拟合直线的欧氏距离大于$3D$，则将该像素赋值为零，否则赋值为一，进而得到和原图大小相同的二值图，按照这种方法每张UAV图片都可以转化为二值图。
 
 \begin{figure}[!htbp]
 \centering
@@ -36,7 +36,7 @@ Close(I,K)=erode(dilate(I,k),K)
 
 \begin{figure}[!htbp]
 \centering
-\includegraphics[width=5.4in]{chapter4/erosionDilation.png}
+\includegraphics[width=4.0in]{chapter4/erosionDilation.png}
 \caption{腐蚀膨胀示意图}
 \label{erosionDilation}
 \end{figure}
@@ -59,7 +59,7 @@ Ramer Douglas Peucker算法（简称RDP）是由Ramer、David Douglas和Thomas Peucker提出
 其中，$C$ 、 $C^{\prime}$代表原始轮廓与近似轮廓的周长，$\theta$代表$C^{\prime}$中每两个相邻顶点连线所成的角度。$L$和$L^{\prime}$代表$C^{\prime}$的相邻两边。按照以上判据可以检测到两个非道路区域，如~\ref{rectangles}中红色矩形所示。
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=5.2in]{chapter4/rectangle_fix.jpg}
+	\includegraphics[width=4.5in]{chapter4/rectangle_fix.jpg}
 	\caption{轮廓检测}
 	\label{rectangles} %% label for first subfigure
 \end{figure}
@@ -67,14 +67,15 @@ Ramer Douglas Peucker算法（简称RDP）是由Ramer、David Douglas和Thomas Peucker提出
 
 \section{拓扑处理}
 \subsection{拓扑细化}
-栅格地图可以被简化为无人车路径规划中广泛使用的拓扑地图，这种地图有基本几何元素组成，例如节点和弧线、直线等。Choi\cite{Choi-Topological}使用拓扑细化的方法提取道路骨架，道路的宽度不会影响算法的有效性，图~\ref{topo}显示了拓扑细化算法的过程，图中左边类似形态学处理后宽度不等的道路区域，右边类似拓扑细化处理后的道路骨架，可以看出线段宽度不影响最后得到的道路骨架结果。
+栅格地图可以被简化为无人车路径规划中广泛使用的拓扑地图，这种地图有基本几何元素组成，例如节点和弧线、直线等。Choi\cite{Choi-Topological}使用拓扑细化的方法提取道路骨架，道路的宽度不会影响算法的有效性，图~\ref{topo}显示了拓扑细化算法的过程。
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=5.0in]{chapter4/TopoloThin.png}
+	\includegraphics[width=4.0in]{chapter4/TopoloThin.png}
 	\caption{拓扑细化}
 	\label{topo}
 \end{figure}
-拓扑细化的目的就是剥离像素，直到无法剥离为止，从而得到单像素构成的拓扑骨架。对于构成道路的像素是否可以剥离取决于像素的连通数，连通数的概念由式~\ref{connectivitynum-equation}和图~\ref{fig:topoN}定义。
+
+图中左边类似形态学处理后宽度不等的道路区域，右边类似拓扑细化处理后的道路骨架，可以看出线段宽度不影响最后得到的道路骨架结果。拓扑细化的目的就是剥离像素，直到无法剥离为止，从而得到单像素构成的拓扑骨架。对于构成道路的像素是否可以剥离取决于像素的连通数，连通数的概念由式~\ref{connectivitynum-equation}和图~\ref{fig:topoN}定义。
 \begin{equation}
 \label{connectivitynum-equation}
 C=\sum(N_{k}-N_{k}N_{k+1}N_{k+2}),k=1,3,5,7,N_{9}=N_{1}
@@ -101,13 +102,13 @@ C=\sum(N_{k}-N_{k}N_{k+1}N_{k+2}),k=1,3,5,7,N_{9}=N_{1}
 
 拓扑细化的规则虽然能够得到保持道路的连通、完整，但是同时产生冗余的小枝丫，如图~\ref{topo}所示，本文提出了一种拓扑精炼方法，即从道路骨架中移除小枝丫的方法。该方法涉及连通度的概念，不同于拓扑细化中涉及的连通数概念，连通度的定义如下：
 
-$(1)$ 一个像素的连通度：在8邻域中，一个像素直接与之相邻的像素个数，图~\ref{fig:subfig:topo2}中心像素的连通度是5。
+$\bullet$ 一个像素的连通度：在8邻域中，一个像素直接与之相邻的像素个数，图~\ref{fig:subfig:topo2}中心像素的连通度是5。
 
-$(2)$ 道路骨架的端点：在8邻域中，一个像素与之相邻的像素仅一个，即连通度为1。
+$\bullet$ 道路骨架的端点：在8邻域中，一个像素与之相邻的像素仅一个，即连通度为1。
 
-$(3)$ 道路骨架的节点：一个像素与之相邻的像素个数大于2，例如图~\ref{fig:subfig:topo2}中心像素即为拓扑的节点，换句话说像素连通度大于2。
+$\bullet$ 道路骨架的节点：一个像素与之相邻的像素个数大于2，例如图~\ref{fig:subfig:topo2}中心像素即为拓扑的节点，换句话说像素连通度大于2。
 
-$(4)$ 枝丫的长度：从端点到最近节点的像素个数。
+$\bullet$ 枝丫的长度：从端点到最近节点的像素个数。
 \begin{figure}[!htbp]
 	\centering
 	\subfigure[Threshold=33]{

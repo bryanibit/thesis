@@ -43,8 +43,8 @@
 \contentsline {subsection}{\numberline {4.3.2}轮廓提取}{\selfontsize {9pt}53}{subsection.4.3.2}
 \contentsline {section}{\numberline {4.4}拓扑处理}{\selfontsize {9pt}54}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}拓扑细化}{\selfontsize {9pt}54}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}拓扑精炼}{\selfontsize {9pt}56}{subsection.4.4.2}
-\contentsline {section}{\numberline {4.5}本章小结}{\selfontsize {9pt}57}{section.4.5}
+\contentsline {subsection}{\numberline {4.4.2}拓扑精炼}{\selfontsize {9pt}55}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}本章小结}{\selfontsize {9pt}56}{section.4.5}
 \contentsline {chapter}{\numberline {第\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces 5\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces \ignorespaces 章\hspace {0.3em}}实验结果分析}{\selfontsize {9pt}58}{chapter.5}
 \contentsline {section}{\numberline {5.1}引言}{\selfontsize {9pt}58}{section.5.1}
 \contentsline {section}{\numberline {5.2}全景图像构建地图实验结果}{\selfontsize {9pt}58}{section.5.2}

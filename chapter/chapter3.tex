@@ -617,7 +617,7 @@ f_{33}
 \label{essentialMatrix}
 \end{figure}
 
-由于$P_2[0,0,0,1]^T=[R |\ t][0,0,0,1]^T = t$，且$e_2^T E=0$，故有$t^TE=0$，由SVD知$t$是$E$的左零空间，所以$t=U[:,-1]$，即$E$奇异值分解后$U$的最后一列，因此$t=-u_3,u_3$，故有式~\ref{Rt-fromE-equation}，其中$U = \left[\begin{array}{ccc} u_1 & u_2 & t\end{array}\right]$。
+由于$P_2[0,0,0,1]^T=[R |\ t][0,0,0,1]^T = t$，且$e_2^T E=0$，故有$t^TE=0$，由SVD知$t$是$E$的左零空间，所以$t=U[:\ ,-1]$，即$E$奇异值分解后$U$的最后一列，因此$t=-u_3,u_3$，故有式~\ref{Rt-fromE-equation}，其中$U = \left[\begin{array}{ccc} u_1 & u_2 & t\end{array}\right]$。
 
 \begin{equation}
 E = U \left[\begin{matrix}
