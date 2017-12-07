@@ -341,9 +341,9 @@ D(x,y,\sigma) &= (G(x,y,k\sigma)-G(x,y,\sigma)*I(x,y)) \\
 
 %插入一组SIFT匹配的图片，对应欧拉距离那句话
 
-但是当图片长宽较大，分辨率较高时，图片特征点会很多，这时采用暴力匹配会导致效率很低，一般实际使用中采用近似最近邻(Approximate Nearest Neighbor, ANN)匹配方法。事实上，无论SIFT特征匹配还是数据库检索本质上是相同的，都是使用距离函数在高维矢量空间中寻找相近对象的过程。常用的方法是K近邻查询，设置查询点与正整数K，从另一个数据集中根据距离公式找到距离最近的K个数据，如果K=1，该方法变为最近邻查询算法。K近邻查询算法是通过构建KD-Tree或者R-Tree等实现的。
+但是当图片长宽较大，分辨率较高时，图片特征点会很多，这时采用暴力匹配会导致效率很低，一般实际使用中采用近似最近邻（Approximate Nearest Neighbor, ANN）匹配方法。事实上，无论SIFT特征匹配还是数据库检索本质上是相同的，都是使用距离函数在高维矢量空间中寻找相近对象的过程。常用的方法是K近邻查询，设置查询点与正整数K，从另一个数据集中根据距离公式找到距离最近的K个数据，如果K=1，该方法变为最近邻查询算法。K近邻查询算法是通过构建KD-Tree或者R-Tree等实现的。
 
-在此简单介绍最常用的最近邻匹配库FLANN(Fast Library for Approximate Nearest Neighbors)，FLANN具有一种内部机制，该机制可以根据数据本身选择合适的算法来处理数据集，基于FLANN的匹配非常准确、快速。FLANN在使用的时候需要配置两个参数：indexParams和searchParams。使用FLANN时，indexParams可以选择为LinearIndex、KTreeIndex、KMeansIndex、CompositeIndex和AutotuneIndex，其中KTreeIndex灵活且可被并行处理。对于searchParams，用来指定索引树被遍历的次数，即check值，该值越大则匹配的时间越长，当然也越准确。
+在此简单介绍最常用的最近邻匹配库FLANN（Fast Library for Approximate Nearest Neighbors），FLANN具有一种内部机制，该机制可以根据数据本身选择合适的算法来处理数据集，基于FLANN的匹配非常准确、快速。FLANN在使用的时候需要配置两个参数：indexParams和searchParams。使用FLANN时，indexParams可以选择为LinearIndex、KTreeIndex、KMeansIndex、CompositeIndex和AutotuneIndex，其中KTreeIndex灵活且可被并行处理。对于searchParams，用来指定索引树被遍历的次数，即check值，该值越大则匹配的时间越长，当然也越准确。
 
 即使最近邻匹配也无法保证所有匹配的特征点都正确，Lowe\cite{Lowe-ObjectRecognition}在1999提出一种简单的方法可以剔除大部分的错误匹配。对于某个特征点向量，如果查询数据集中与其距离最近的特征点向量与次近的特征点向量距离之比小于0.8，可以避免约90\%的错误匹配，但正确匹配也因此变少。使用FLANN并采用Lowe提出的方法可以去掉大部分的错误匹配，图~\ref{matches-single}显示760对匹配特征点（最近邻筛选，系数取0.8）以及红点表示的未匹配特征点。
 \begin{figure}[!htbp]
@@ -467,8 +467,6 @@ h_3^T \\
 
 奇异值分解（Singular Value Decomposition, SVD）可以将一个矩阵，无论是否满秩，均可以分解为$A=UDV^T$形式，其中$UU_T=I$和$V V_T=I$，即$U$和$V$是正交矩阵，$D$是对角阵，对角元素非负。实际上SVD可以看做特征值分解的推广，SVD在主成分分析，求解方程的最小二乘解中广泛应用。回到求解单应性变换的问题，根据SVD 求解最小二乘解的原理，可以得到：最小二乘解是$A^T A$的最小特征值的特征向量。具体而言，假设有n 个匹配点，则$A$为$2n\times 9$的矩阵，且$A=UDV^T$，且$D$对角阵元素按降序排列，那么$b$是$V$的最后一列。因为$Ab=0$的解是$A$的零空间，而且$rank(A)=n-1$，所以$A$的零空间只有一个基向量，即SVD 中最小特征值对应的特征向量$V$的最后一列。
 
-奇异值分解是广泛用于图像处理中的一种算法，不仅在求单应性矩阵时使用，下文亦有涉及。但是在这里介绍一种本文使用到的另一种方法——随机抽样一致性（Random Sample Consensus, RANSAC），该方法在图像领域中也广泛应用，其根本理论是统计原理，可以通过多次迭代的方法估计含有噪声数据模型的参数。RANSAC一般过程为从一组含有外点（噪声）的数据中随机选取数个数据，估计模型参数，然后将估计得到的模型应用于剩余的其他数据，从而得到该模型的误差，重复以上过程，直到误差达到某设定阈值或迭代次数达到设定最大次数，停止迭代，选取最优的一组模型作为最终结果。根据最终结果与事先设定的阈值可以过滤一部分外点并得到较为精确的模型。由此可知，估计单应性变换需要4对匹配点即可计算一个单应性变换，所以RANSAC 每次选取4 对匹配点迭代计算得到单应性矩阵，而后将单应性矩阵应用于剩余的匹配点，计算误差，过滤外点。如图~\ref{Homography+RANSAC1}与~\ref{Homography+RANSAC2}所示，其中$a$ 是仅根据SIFT 描述子通过最近邻匹配过滤的结果。$b$是使用RANSAC方法通过单应性变换过滤的结果，从图中可以直观看出使用RANSAC 可以过滤掉一部分错误的匹配。
-
 \begin{figure}[!htbp]
 \centering
  \subfigure[最近邻匹配点]{
@@ -480,6 +478,7 @@ h_3^T \\
     \caption{KITTI-0400与KITTI-0415单应性刷选结果}
     \label{Homography+RANSAC1}
 \end{figure}
+奇异值分解是广泛用于图像处理中的一种算法，不仅在求单应性矩阵时使用，下文亦有涉及。但是在这里介绍一种本文使用到的另一种方法——随机抽样一致性（Random Sample Consensus, RANSAC），该方法在图像领域中也广泛应用，其根本理论是统计原理，可以通过多次迭代的方法估计含有噪声数据模型的参数。RANSAC一般过程为从一组含有外点（噪声）的数据中随机选取数个数据，估计模型参数，然后将估计得到的模型应用于剩余的其他数据，从而得到该模型的误差，重复以上过程，直到误差达到某设定阈值或迭代次数达到设定最大次数，停止迭代，选取最优的一组模型作为最终结果。根据最终结果与事先设定的阈值可以过滤一部分外点并得到较为精确的模型。由此可知，估计单应性变换需要4对匹配点即可计算一个单应性变换，所以RANSAC 每次选取4 对匹配点迭代计算得到单应性矩阵，而后将单应性矩阵应用于剩余的匹配点，计算误差，过滤外点。如上图~\ref{Homography+RANSAC1}与下图~\ref{Homography+RANSAC2}所示，其中$a$ 是仅根据SIFT 描述子通过最近邻匹配过滤的结果。$b$是使用RANSAC方法通过单应性变换过滤的结果，从图中可以直观看出使用RANSAC 可以过滤掉一部分错误的匹配。
 \begin{figure}[!htbp]
  \subfigure[最近邻匹配点]{
 	\includegraphics[width=6.0in]{chapter3/matches/000400_H_000424.png}
@@ -618,17 +617,10 @@ f_{33}
 \label{essentialMatrix}
 \end{figure}
 
-由于$P_2 \left[\begin{matrix}
-0 \\
-1
-\end{matrix}\right]=[R | t]\left[\begin{matrix}
-0 \\
-1
-\end{matrix}\right] = t$，且$e_2^T E=0$，故有$t^TE=0$，由SVD知$t$是$E$的左零空间，所以$t=U[:,-1]$，即$E$奇异值分解后$U$的最后一列，因此$t=-u_3,u_3$，故有式~\ref{Rt-fromE-equation}。
+由于$P_2[0,0,0,1]^T=[R |\ t][0,0,0,1]^T = t$，且$e_2^T E=0$，故有$t^TE=0$，由SVD知$t$是$E$的左零空间，所以$t=U[:\ ,-1]$，即$E$奇异值分解后$U$的最后一列，因此$t=-u_3,u_3$，故有式~\ref{Rt-fromE-equation}，其中$U = \left[\begin{array}{ccc} u_1 & u_2 & t\end{array}\right]$。
 
 \begin{equation}
-\begin{split}
-E &= U \left[\begin{matrix}
+E = U \left[\begin{matrix}
 1 & 0 & 0 \\
 0 & 1 & 0 \\
 0 & 0 & 0
@@ -639,12 +631,8 @@ V^T=[t]_\times |R=U
 -1 & 0 & 0 \\
 0 & 0 & 0 \\
 \end{matrix}\right]
-U^T | UYV^T \\
-U &= \left[\begin{array}{ccc}
-u_1 & u_2 & t \\
-\end{array}\right]
+U^T | UYV^T
 \label{Rt-fromE-equation}
-\end{split}
 \end{equation}
 
 据式~\ref{Rt-fromE-equation}可以得到下式~\ref{result-y-equation}:
@@ -664,7 +652,7 @@ Y
 \label{result-y-equation}
 \end{equation}
 
-所以可以得到矩阵$Y$的值，$Y\,$ or $\, Y^T=\left[\begin{matrix}
+因此可以得到矩阵$Y$的值，$Y\,$ or $\, Y^T=\left[\begin{matrix}
 0 & 1 & 0 \\
 -1 & 0 & 0 \\
 0 & 0 & 0 \\

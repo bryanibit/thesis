@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2017.11.13)  7 DEC 2017 00:21
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2017.11.13)  7 DEC 2017 10:43
 entering extended mode
 **E:/大论文/BIT_Thesis/李浩模板/Thesis.tex
 (E:/大论文/BIT_Thesis/李浩模板/Thesis.tex
@@ -1447,7 +1447,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 74.
 
 [6]
-<figures/chapter1/road/EnhancingRoadMaps-9.jpg, id=617, 1204.5pt x 734.745pt>
+<figures/chapter1/road/EnhancingRoadMaps-9.jpg, id=618, 1204.5pt x 734.745pt>
 File: figures/chapter1/road/EnhancingRoadMaps-9.jpg Graphic file (type jpg)
 
 <use figures/chapter1/road/EnhancingRoadMaps-9.jpg>
@@ -1455,7 +1455,7 @@ Package pdftex.def Info: figures/chapter1/road/EnhancingRoadMaps-9.jpg used on
 input line 78.
 (pdftex.def)             Requested size: 195.12877pt x 119.01906pt.
 
-<figures/chapter1/road/EnhancingRoadMaps-1.jpg, id=618, 1204.5pt x 734.745pt>
+<figures/chapter1/road/EnhancingRoadMaps-1.jpg, id=619, 1204.5pt x 734.745pt>
 File: figures/chapter1/road/EnhancingRoadMaps-1.jpg Graphic file (type jpg)
 
 <use figures/chapter1/road/EnhancingRoadMaps-1.jpg>
@@ -1474,7 +1474,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 [7 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter1/road/EnhancingRoadMap
 s-9.jpg> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter1/road/EnhancingR
 oadMaps-1.jpg>]
-<figures/chapter1/sensors.png, id=630, 606.01407pt x 472.76625pt>
+<figures/chapter1/sensors.png, id=631, 606.01407pt x 472.76625pt>
 File: figures/chapter1/sensors.png Graphic file (type png)
 
 <use figures/chapter1/sensors.png>
@@ -1499,11 +1499,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 117.
 
 [9 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter1/sensors.png>]
-<figures/chapter1/flow-whole.png, id=647, 816.04875pt x 328.8285pt>
+<figures/chapter1/flow-whole.png, id=648, 816.04875pt x 328.8285pt>
 File: figures/chapter1/flow-whole.png Graphic file (type png)
 
 <use figures/chapter1/flow-whole.png>
-Package pdftex.def Info: figures/chapter1/flow-whole.png used on input line 124
+Package pdftex.def Info: figures/chapter1/flow-whole.png used on input line 123
 .
 (pdftex.def)             Requested size: 361.34999pt x 145.6082pt.
 )
@@ -1519,21 +1519,21 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (E:\大论文\BIT_Thesis\李浩模板\chapter/chapter2.tex
 ��\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces 2\hspace {0.25em plus
  0.125em minus 0.08em}\ignorespaces \ignorespaces ��
-<figures/chapter2/qrcode.png, id=654, 819.06pt x 484.81125pt>
+<figures/chapter2/qrcode.png, id=655, 819.06pt x 484.81125pt>
 File: figures/chapter2/qrcode.png Graphic file (type png)
 
 <use figures/chapter2/qrcode.png>
 Package pdftex.def Info: figures/chapter2/qrcode.png used on input line 13.
 (pdftex.def)             Requested size: 289.07999pt x 171.11421pt.
 
-<figures/chapter2/ladybug.jpg, id=655, 195.73125pt x 259.97125pt>
+<figures/chapter2/ladybug.jpg, id=656, 195.73125pt x 259.97125pt>
 File: figures/chapter2/ladybug.jpg Graphic file (type jpg)
 
 <use figures/chapter2/ladybug.jpg>
 Package pdftex.def Info: figures/chapter2/ladybug.jpg used on input line 15.
 (pdftex.def)             Requested size: 130.08621pt x 172.79143pt.
 
-<figures/chapter2/para.png, id=657, 742.57425pt x 502.2765pt>
+<figures/chapter2/para.png, id=658, 742.57425pt x 502.2765pt>
 File: figures/chapter2/para.png Graphic file (type png)
 
 <use figures/chapter2/para.png>
@@ -2133,18 +2133,18 @@ File: figures/chapter3/triangulation.png Graphic file (type png)
 <use figures/chapter3/triangulation.png>
 Package pdftex.def Info: figures/chapter3/triangulation.png used on input line 
 675.
-(pdftex.def)             Requested size: 325.215pt x 235.20349pt.
+(pdftex.def)             Requested size: 289.07999pt x 209.06978pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 683.
+(hyperref)                removing `\selfontsize' on input line 681.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 683.
+(hyperref)                removing `\selfontsize' on input line 681.
 
 [39 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/essentialfromRT.png>
-]
+ <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/triangulation.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 712.
@@ -2153,7 +2153,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 712.
 
-[40 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/triangulation.png>]
+[40]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3043,11 +3043,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 22734 strings out of 495354
- 367980 string characters out of 3183858
- 443697 words of memory out of 3000000
- 24229 multiletter control sequences out of 15000+200000
- 168279 words of font info for 490 fonts, out of 3000000 for 9000
+ 22736 strings out of 495354
+ 367996 string characters out of 3183858
+ 443708 words of memory out of 3000000
+ 24230 multiletter control sequences out of 15000+200000
+ 168577 words of font info for 491 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  42i,21n,58p,2249b,1484s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/s
@@ -3082,7 +3082,7 @@ pe1/public/amsfonts/cm/cmr10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm
 ts/type1/urw/symbol/usyr.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><
 D:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw
 /times/utmri8a.pfb>
-Output written on Thesis.pdf (87 pages, 52329003 bytes).
+Output written on Thesis.pdf (87 pages, 52322949 bytes).
 PDF statistics:
  1714 PDF objects out of 1728 (max. 8388607)
  384 named destinations out of 1000 (max. 500000)
