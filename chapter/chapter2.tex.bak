@@ -17,7 +17,7 @@ QR code×÷ÎªÒ»ÖÖ·Ç³£Á÷ÐÐµÄ¾ØÕóÊ½¶þÎ¬Âë£¬¾ßÓÐ¿Õ¼äÀûÓÃÂÊ¸ß£¬´æ´¢Êý¾ÝÁ¿´ó£¬½âÂëËÙ¶È¿
 \end{figure}
 
 \section{È«¾°Í¼Ïñ´¦Àí}
-LadybugÈ«¾°Ïà»ú¾ßÓÐ6¸ö¶ÀÁ¢µÄÉãÏñÍ·£¬ÈçÍ¼~\ref{ladybug}ËùÊ¾£¬¿ÉÒÔÔÚÇòÐÎ×ø±êÏµÏÂ½«6¸öÏà»úÍ¼ÏñÊµÊ±ºÏ²¢ÎªÒ»ÕÅÈ«¾°Í¼£¬³ÊÏÖÔÚ¶þÎ¬Æ½Ãæ¿Õ¼äÖÐ¡£ladybugÏà»úÌá¹©$360^\text{o}$ÊÓÆµ´®Á÷¹¦ÄÜ£¬¿ÉÒÔ¸²¸Ç90\% µÄ¿ÉÊÓÇòÃæ£¬¾ßÓÐÍ¼Ïñ²É¼¯¡¢´¦ÀíºÍÐ£Õý¹¦ÄÜ¡£ÔÚµÃµ½LadybugÏà»úµÄÈ«¾°Í¼ºó£¬Ê¹ÓÃÄæÍ¸ÊÓÍ¶Ó°£¨Inverse Perspective Mapping, IPM£©½«È«¾°Í¼ÏñÍ¶Ó°³É¸©ÊÓÍ¼¡£¶øºó½«³µÁ¾µÄ¸ß¾«¶È¶¨Î»ÐÅÏ¢±àÂëÎª¶þÎ¬Âë£¬·ÅÖÃÓÚ¶ÔÓ¦µÄÄæÍ¸ÊÓÍ¶Ó°µÃµ½µÄÍ¼Æ¬µÄ×óÏÂ½Ç£¬´Ó¶øÍê³ÉÍ¼ÏñÓë¶ÔÓ¦³µÌåÎ»ÖÃµÄ²É¼¯Óë´¦Àí£¬·½±ãºóÐø¹¹½¨´ó·¶Î§µØÍ¼¡£
+LadybugÈ«¾°Ïà»ú¾ßÓÐ6¸ö¶ÀÁ¢µÄÉãÏñÍ·£¬ÈçÍ¼~\ref{ladybug}ËùÊ¾£¬¿ÉÒÔÔÚÇòÐÎ×ø±êÏµÏÂ½«6¸öÏà»úÍ¼ÏñÊµÊ±ºÏ²¢ÎªÒ»ÕÅÈ«¾°Í¼£¬³ÊÏÖÔÚ¶þÎ¬Æ½Ãæ¿Õ¼äÖÐ¡£LadybugÏà»úÌá¹©$360^\text{o}$ÊÓÆµ´®Á÷¹¦ÄÜ£¬¿ÉÒÔ¸²¸Ç90\% µÄ¿ÉÊÓÇòÃæ£¬¾ßÓÐÍ¼Ïñ²É¼¯¡¢´¦ÀíºÍÐ£Õý¹¦ÄÜ¡£ÔÚµÃµ½LadybugÏà»úµÄÈ«¾°Í¼ºó£¬Ê¹ÓÃÄæÍ¸ÊÓÍ¶Ó°£¨Inverse Perspective Mapping, IPM£©½«È«¾°Í¼ÏñÍ¶Ó°³É¸©ÊÓÍ¼¡£¶øºó½«³µÁ¾µÄ¸ß¾«¶È¶¨Î»ÐÅÏ¢±àÂëÎª¶þÎ¬Âë£¬·ÅÖÃÓÚ¶ÔÓ¦µÄÄæÍ¸ÊÓÍ¶Ó°µÃµ½µÄÍ¼Æ¬µÄ×óÏÂ½Ç£¬´Ó¶øÍê³ÉÍ¼ÏñÓë¶ÔÓ¦³µÌåÎ»ÖÃµÄ²É¼¯Óë´¦Àí£¬·½±ãºóÐø¹¹½¨´ó·¶Î§µØÍ¼¡£
 %\begin{figure}[!htbp]
 %	\centering
 %	\caption{LadybugÈ«¾°Ïà»ú}
@@ -113,7 +113,7 @@ arctan \frac{y_c}{x_c} \\ arccos \frac{z_c}{||P_c||} \\
 
 
 \section{µØÍ¼µÄ¹¹½¨ÓëÊ¹ÓÃ}
-Ê¹ÓÃÒÔÉÏµÄ·½·¨¿ÉÒÔµÃµ½È«¾°Í¼ÏñµÄÄæÍ¸ÊÓÍ¶Ó°Í¼£¬ÒÔ¼°Ã¿ÕÅÍ¶Ó°Í¼¶ÔÓ¦µÄ´ËÊ±³µÁ¾Î»ÖÃÓë·½Î»µÈÐÅÏ¢¡£½ø¶øÎÒÃÇ¿ÉÒÔµÃµ½´ó·¶Î§µØÍ¼ÐÅÏ¢£¬ÖÆ×÷´ó·¶Î§ÐÐÊ»µØÍ¼£¬ÎªÎÞÈË³µ¹æ»®Óë¸ÐÖªÌá¹©ÏÈÑéÐÅÏ¢¡£
+Ê¹ÓÃÒÔÉÏµÄ·½·¨¿ÉÒÔµÃµ½È«¾°Í¼ÏñµÄÄæÍ¸ÊÓÍ¶Ó°Í¼£¬ÒÔ¼°Ã¿ÕÅÍ¶Ó°Í¼¶ÔÓ¦µÄ´ËÊ±³µÁ¾Î»ÖÃÓë·½Î»µÈÐÅÏ¢¡£½ø¶øÎÒÃÇ¿ÉÒÔµÃµ½´ó·¶Î§µØÍ¼ÐÅÏ¢£¬ÖÆ×÷´ó·¶Î§ÐÐÊ»µØÍ¼£¬ÎªUGV¹æ»®Óë¸ÐÖªÌá¹©ÏÈÑéÐÅÏ¢¡£
 \subsection{Í¼ÏñÆ´½Ó}
 Í¼ÏñÆ´½ÓµÄÀúÊ·¿ÉÒÔ×·ËÝµ½ÉÏ¸öÊÀ¼Í£¬Ê¹ÓÃµÄ·½·¨Ò²²»¾¡ÏàÍ¬£¬×ÜÌåÉÏ¿ÉÒÔ·ÖÎªÁ½Àà£¬Ò»ÀàÊÇ»ùÓÚÍ¼ÏñÌØÕ÷Æ¥ÅäµÄÆ´½Ó·½·¨£¬ÁíÒ»ÀàÊÇ»ùÓÚÍ¼Æ¬¼äÏà¶ÔÎ»ÖÃ¹ØÏµµÄÆ´½Ó·½·¨¡£ÓÉÓÚ±¾ÎÄ²ÉÓÃµÄ¹ßÐÔ×éºÏµ¼º½ÏµÍ³£¬ÔÚÎÞÕÚµ²£¬¶àÂ·¾¶Ð§Ó¦½ÏÈõµÄ¿Õ¿õ³¡µØ£¬ÊµÑé¾«¶È´ïµ½$5cm$ ÒÔÄÚ£¬ËùÒÔ±¾ÎÄ²ÉÓÃ»ùÓÚÍ¼Æ¬¼äÏà¶ÔÎ»ÖÃ¹ØÏµµÄ·½·¨¡£¾ßÌå¾ÍÊÇ½«ÊÓÆµÁ÷ÖÐÃ¿Ö¡ÄæÍ¸ÊÓÍ¶Ó°Í¼Æ¬°´ÕÕ¶þÎ¬Âë½âËãµÄº½ÏòÐý×ªÒ»¶¨½Ç¶È£¬È»ºó°´ÕÕ½âËãµÄÎ»ÖÃÆ½ÒÆÒ»¶Î¾àÀë£¬¶ÔËùÓÐÊÓÆµ°´ÕÕÉÏÊö·½·¨´¦Àí£¬×îÖÕµÃµ½ÍêÕûµÄ³ÇÇøµØÍ¼¡£
 

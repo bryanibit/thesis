@@ -18,11 +18,11 @@
 
 % chapter 1
 \bibitem{Mattyus-Fine-Grained}
-Mattyus G, Wang S, Fidler S, et al. HD Maps: Fine-Grained Road Segmentation by Parsing Ground and Aerial Images[C]// Computer Vision and Pattern Recognition. IEEE, 2016:3611-3619.
+Mattyus G, Wang S, Fidler S, et al. HD Maps: Fine-Grained Road Segmentation by Parsing Ground and Aerial Images[C] Computer Vision and Pattern Recognition. IEEE, 2016:3611-3619.
 \bibitem{Wegner-Higher-Order}
-Wegner J D, Montoya-Zegarra J A, Schindler K. A Higher-Order CRF Model for Road Network Extraction[C]// Computer Vision and Pattern Recognition. IEEE, 2013:1698-1705.
+Wegner J D, Montoya-Zegarra J A, Schindler K. A Higher-Order CRF Model for Road Network Extraction[C] Computer Vision and Pattern Recognition. IEEE, 2013:1698-1705.
 \bibitem{Lin-Road-detection}
-Lin Y, Saripalli S. Road detection from aerial imagery[C]// IEEE International Conference on Robotics and Automation. IEEE, 2012:3588-3593.
+Lin Y, Saripalli S. Road detection from aerial imagery[C] IEEE International Conference on Robotics and Automation. IEEE, 2012:3588-3593.
 \bibitem{wei-gaofen}
 魏宇峰. 高分辨率遥感影像道路信息提取关键技术研究与实现[D]. 北京理工大学, 2010.
 \bibitem{wang-yaogan}
@@ -36,12 +36,12 @@ Wu C. Towards linear-time incremental structure from motion[C] 3DTV-Conference, 
 \bibitem{Snavely-Building}
 Agarwal S, Furukawa Y, Snavely N, et al. Building rome in a day[J]. Communications of the ACM, 2011, 54(10): 105-112.
 \bibitem{Snavely-Photo}
-Snavely N, Seitz S M, Szeliski R. Photo tourism: exploring photo collections in 3D[C]//ACM transactions on graphics (TOG). ACM, 2006, 25(3): 835-846.
+Snavely N, Seitz S M, Szeliski R. Photo tourism: exploring photo collections in 3D[C] ACM transactions on graphics (TOG). ACM, 2006, 25(3): 835-846.
 \bibitem{Diosi-Interactive}
-Diosi A, Taylor G, Kleeman L. Interactive SLAM using laser and advanced sonar[C]//Robotics and Automation, 2005. ICRA 2005. Proceedings of the 2005 IEEE International Conference on. IEEE, 2005: 1103-1108.
+Diosi A, Taylor G, Kleeman L. Interactive SLAM using laser and advanced sonar[C] Robotics and Automation, 2005. ICRA 2005. Proceedings of the 2005 IEEE International Conference on. IEEE, 2005: 1103-1108.
 
 \bibitem{Cole-laser}
-Cole D M, Newman P M. Using laser range data for 3D SLAM in outdoor environments[C]//Robotics and Automation, 2006. ICRA 2006. Proceedings 2006 IEEE International Conference on. IEEE, 2006: 1556-1563.
+Cole D M, Newman P M. Using laser range data for 3D SLAM in outdoor environments[C] Robotics and Automation, 2006. ICRA 2006. Proceedings 2006 IEEE International Conference on. IEEE, 2006: 1556-1563.
 
 \bibitem{Leonard-concurrent}
 Leonard J J. Large-scale concurrent mapping and localization[C] Proceedings of SPIE. 2000, 4196: 370-376.
@@ -66,7 +66,7 @@ Leonard J J. Large-scale concurrent mapping and localization[C] Proceedings of S
 \bibitem{duanfeixu-wuren}
 段华旭, 闫飞, 庄严, 等. 无人车基于双目视觉的同时定位与地图构建[J]. 华中科技大学学报: 自然科学版, 2015 (S1): 319-323.
 \bibitem{qiufan-semantic}
-Fan Q, Yi Y, Hao L, et al. Semantic motion segmentation for urban dynamic scene understanding[C]//Automation Science and Engineering (CASE), 2016 IEEE International Conference on. IEEE, 2016: 497-502.
+Fan Q, Yi Y, Hao L, et al. Semantic motion segmentation for urban dynamic scene understanding[C] Automation Science and Engineering (CASE), 2016 IEEE International Conference on. IEEE, 2016: 497-502.
 \bibitem{liyu-jiguagn}
 李玉. 基于3D激光点云的无人车城市环境SLAM问题研究[D]. 北京理工大学, 2016.
 
@@ -83,7 +83,7 @@ Mur-Artal R, Montiel J M M, Tardos J D. ORB-SLAM: a versatile and accurate monoc
 Engel J, Schops T, Cremers D. LSD-SLAM: Large-scale direct monocular SLAM[C] European Conference on Computer Vision. Springer, Cham, 2014: 834-849.
 
 \bibitem{Zhang-LOAM}
-Zhang J, Singh S. LOAM: Lidar Odometry and Mapping in Real-time[C]//Robotics: Science and Systems. 2014, 2.
+Zhang J, Singh S. LOAM: Lidar Odometry and Mapping in Real-time[C] Robotics: Science and Systems. 2014, 2.
 
 \bibitem{Carrivick-Structure-from-Motion}
 Carrivick J L, Smith M W, Quincey D J. Structure from Motion in the Geosciences[M]. John Wiley \& Sons, 2016.
