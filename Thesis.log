@@ -1,21 +1,21 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2017.11.13)  7 DEC 2017 22:06
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2017.12.8)  8 DEC 2017 17:53
 entering extended mode
-**E:/大论文/BIT_Thesis/李浩模板/Thesis.tex
-(E:/大论文/BIT_Thesis/李浩模板/Thesis.tex
+**thesis.tex
+(F:\大论文\李浩模板\thesis.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
-(D:\CTEX\MiKTeX\tex\latex\ctex\ctexbook.cls
+(C:\CTEX\MiKTeX\tex\latex\ctex\ctexbook.cls
 Document Class: ctexbook 2011/03/11 v1.02c ctexbook document class
-(D:\CTEX\MiKTeX\tex\latex\ctex\opt\ctex-common-opts.def)
-(D:\CTEX\MiKTeX\tex\latex\ctex\opt\ctex-caption-opts.def
+(C:\CTEX\MiKTeX\tex\latex\ctex\opt\ctex-common-opts.def)
+(C:\CTEX\MiKTeX\tex\latex\ctex\opt\ctex-caption-opts.def
 \c@CTEX@sectiondepth=\count79
 )
-(D:\CTEX\MiKTeX\tex\latex\ctex\opt\ctex-class-opts.def)
-(D:\CTEX\CTeX\tex\latex\ctex\cfg\ctexopts.cfg)
-(D:\CTEX\MiKTeX\tex\latex\ctex\def\ctex-loadclass.def
-(D:\CTEX\MiKTeX\tex\latex\base\book.cls
+(C:\CTEX\MiKTeX\tex\latex\ctex\opt\ctex-class-opts.def)
+(C:\CTEX\CTeX\tex\latex\ctex\cfg\ctexopts.cfg)
+(C:\CTEX\MiKTeX\tex\latex\ctex\def\ctex-loadclass.def
+(C:\CTEX\MiKTeX\tex\latex\base\book.cls
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
-(D:\CTEX\MiKTeX\tex\latex\base\bk12.clo
+(C:\CTEX\MiKTeX\tex\latex\base\bk12.clo
 File: bk12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count80
@@ -31,63 +31,63 @@ File: bk12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 ))
-(D:\CTEX\MiKTeX\tex\latex\ctex\def\ctex-common.def
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\expl3.sty
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3names.sty
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3bootstrap.sty
+(C:\CTEX\MiKTeX\tex\latex\ctex\def\ctex-common.def
+(C:\CTEX\MiKTeX\tex\latex\l3kernel\expl3.sty
+(C:\CTEX\MiKTeX\tex\latex\l3kernel\l3names.sty
+(C:\CTEX\MiKTeX\tex\latex\l3kernel\l3bootstrap.sty
 Package: l3bootstrap 2011/12/29 v3110 L3 Experimental bootstrap code
 )
 Package: l3names 2011/12/30 v3113 L3 Experimental namespace for primitives
 )
-(D:\CTEX\MiKTeX\tex\latex\misc\etex.sty
+(C:\CTEX\MiKTeX\tex\latex\misc\etex.sty
 Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
 \et@xins=\count89
 )
 Package: expl3 2012/02/26 v3471 L3 Experimental code bundle wrapper
 
-(D:\CTEX\MiKTeX\tex\latex\graphics\color.sty
+(C:\CTEX\MiKTeX\tex\latex\graphics\color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-(D:\CTEX\MiKTeX\tex\latex\00miktex\color.cfg
+(C:\CTEX\MiKTeX\tex\latex\00miktex\color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 
-(D:\CTEX\MiKTeX\tex\latex\pdftex-def\pdftex.def
+(C:\CTEX\MiKTeX\tex\latex\pdftex-def\pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(D:\CTEX\MiKTeX\tex\generic\oberdiek\infwarerr.sty
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
 )
-(D:\CTEX\MiKTeX\tex\generic\oberdiek\ltxcmds.sty
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\ltxcmds.sty
 Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count90
 ))
-(D:\CTEX\MiKTeX\tex\latex\graphics\graphics.sty
+(C:\CTEX\MiKTeX\tex\latex\graphics\graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(D:\CTEX\MiKTeX\tex\latex\graphics\trig.sty
+(C:\CTEX\MiKTeX\tex\latex\graphics\trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(D:\CTEX\MiKTeX\tex\latex\00miktex\graphics.cfg
+(C:\CTEX\MiKTeX\tex\latex\00miktex\graphics.cfg
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 )
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3basics.sty
+(C:\CTEX\MiKTeX\tex\latex\l3kernel\l3basics.sty
 Package: l3basics 2012/02/26 v3460 L3 Experimental basic definitions
 )
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3expan.sty
+(C:\CTEX\MiKTeX\tex\latex\l3kernel\l3expan.sty
 Package: l3expan 2012/02/26 v3460 L3 Experimental argument expansion
 )
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3tl.sty
+(C:\CTEX\MiKTeX\tex\latex\l3kernel\l3tl.sty
 Package: l3tl 2012/02/26 v3460 L3 Experimental token lists
 )
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3seq.sty
+(C:\CTEX\MiKTeX\tex\latex\l3kernel\l3seq.sty
 Package: l3seq 2012/01/09 v3158 L3 Experimental sequences and stacks
 )
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3int.sty
+(C:\CTEX\MiKTeX\tex\latex\l3kernel\l3int.sty
 Package: l3int 2012/02/26 v3460 L3 Experimental integers
 \c_max_int=\count91
 \l_tmpa_int=\count92
@@ -96,26 +96,26 @@ Package: l3int 2012/02/26 v3460 L3 Experimental integers
 \g_tmpa_int=\count95
 \g_tmpb_int=\count96
 )
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3quark.sty
+(C:\CTEX\MiKTeX\tex\latex\l3kernel\l3quark.sty
 Package: l3quark 2012/02/12 v3384 L3 Experimental quarks
 )
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3prg.sty
+(C:\CTEX\MiKTeX\tex\latex\l3kernel\l3prg.sty
 Package: l3prg 2012/02/26 v3464 L3 Experimental control structures
 \g_prg_map_int=\count97
 )
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3clist.sty
+(C:\CTEX\MiKTeX\tex\latex\l3kernel\l3clist.sty
 Package: l3clist 2012/02/26 v3460 L3 Experimental comma separated lists
 )
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3token.sty
+(C:\CTEX\MiKTeX\tex\latex\l3kernel\l3token.sty
 Package: l3token 2012/02/26 v3460 L3 Experimental token manipulation
 )
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3prop.sty
+(C:\CTEX\MiKTeX\tex\latex\l3kernel\l3prop.sty
 Package: l3prop 2012/02/26 v3460 L3 Experimental property lists
 )
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3msg.sty
+(C:\CTEX\MiKTeX\tex\latex\l3kernel\l3msg.sty
 Package: l3msg 2012/02/26 v3470 L3 Experimental messages
 )
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3file.sty
+(C:\CTEX\MiKTeX\tex\latex\l3kernel\l3file.sty
 Package: l3file 2012/02/26 v3464 L3 Experimental file and I/O operations
 \l_iow_stream_int=\count98
 \l_iow_line_length_int=\count99
@@ -124,7 +124,7 @@ Package: l3file 2012/02/26 v3464 L3 Experimental file and I/O operations
 \l_iow_current_word_int=\count102
 \l_iow_current_indentation_int=\count103
 )
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3skip.sty
+(C:\CTEX\MiKTeX\tex\latex\l3kernel\l3skip.sty
 Package: l3skip 2012/02/26 v3460 L3 Experimental dimensions and skips
 \l_tmpa_dim=\dimen103
 \l_tmpb_dim=\dimen104
@@ -137,12 +137,12 @@ Package: l3skip 2012/02/26 v3460 L3 Experimental dimensions and skips
 \g_tmpa_skip=\skip46
 \g_tmpb_skip=\skip47
 )
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3keys.sty
+(C:\CTEX\MiKTeX\tex\latex\l3kernel\l3keys.sty
 Package: l3keys 2011/12/22 v3086 L3 Experimental key-value interfaces
 \g_keyval_level_int=\count104
 \l_keys_choice_int=\count105
 )
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3fp.sty
+(C:\CTEX\MiKTeX\tex\latex\l3kernel\l3fp.sty
 Package: l3fp 2012/02/06 v3315 L3 Experimental floating-point operations
 \c_one_million=\count106
 \c_one_hundred_million=\count107
@@ -199,7 +199,7 @@ Package: l3fp 2012/02/06 v3315 L3 Experimental floating-point operations
 \l_fp_internal_dim=\dimen108
 \l_fp_internal_skip=\skip48
 )
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3box.sty
+(C:\CTEX\MiKTeX\tex\latex\l3kernel\l3box.sty
 Package: l3box 2012/02/18 v3432 L3 Experimental boxes
 \l_tmpb_box=\box26
 \l_box_top_dim=\dimen109
@@ -212,7 +212,7 @@ Package: l3box 2012/02/18 v3432 L3 Experimental boxes
 \l_box_right_new_dim=\dimen116
 \l_box_internal_box=\box27
 )
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3coffins.sty
+(C:\CTEX\MiKTeX\tex\latex\l3kernel\l3coffins.sty
 Package: l3coffins 2012/02/26 v3460 L3 Experimental coffin code layer
 \l_coffin_internal_box=\box28
 \l_coffin_internal_dim=\dimen117
@@ -243,39 +243,39 @@ Package: l3coffins 2012/02/26 v3460 L3 Experimental coffin code layer
 \l_coffin_display_x_dim=\dimen136
 \l_coffin_display_y_dim=\dimen137
 )
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3color.sty
+(C:\CTEX\MiKTeX\tex\latex\l3kernel\l3color.sty
 Package: l3color 2011/09/07 v2776 L3 Experimental colour support
 )
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3luatex.sty
+(C:\CTEX\MiKTeX\tex\latex\l3kernel\l3luatex.sty
 Package: l3luatex 2012/02/09 v3355 L3 Experimental LuaTeX-specific functions
 \g_cctab_allocate_int=\count158
 \g_cctab_stack_int=\count159
 ))
-(D:\CTEX\MiKTeX\tex\latex\etoolbox\etoolbox.sty
+(C:\CTEX\MiKTeX\tex\latex\etoolbox\etoolbox.sty
 Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
 \etb@tempcnta=\count160
 )
-(D:\CTEX\MiKTeX\tex\generic\oberdiek\ifpdf.sty
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-(D:\CTEX\MiKTeX\tex\generic\ifxetex\ifxetex.sty
+(C:\CTEX\MiKTeX\tex\generic\ifxetex\ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-(D:\CTEX\MiKTeX\tex\latex\graphics\keyval.sty
+(C:\CTEX\MiKTeX\tex\latex\graphics\keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(D:\CTEX\MiKTeX\tex\latex\tools\indentfirst.sty
+(C:\CTEX\MiKTeX\tex\latex\tools\indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
-(D:\CTEX\MiKTeX\tex\latex\base\fix-cm.sty
+(C:\CTEX\MiKTeX\tex\latex\base\fix-cm.sty
 Package: fix-cm 2006/09/13 v1.1m fixes to LaTeX
 
-(D:\CTEX\MiKTeX\tex\latex\base\ts1enc.def
+(C:\CTEX\MiKTeX\tex\latex\base\ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 ))
-(D:\CTEX\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+(C:\CTEX\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
 \fancy@headwidth=\skip49
 \f@ncyO@elh=\skip50
 \f@ncyO@erh=\skip51
@@ -286,20 +286,20 @@ File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 \f@ncyO@olf=\skip56
 \f@ncyO@orf=\skip57
 )
-(D:\CTEX\MiKTeX\tex\latex\ctex\engine\ctex-cjk-engine.def
-(D:\CTEX\MiKTeX\tex\latex\cjk\CJK.sty
+(C:\CTEX\MiKTeX\tex\latex\ctex\engine\ctex-cjk-engine.def
+(C:\CTEX\MiKTeX\tex\latex\cjk\CJK.sty
 Package: CJK 2008/12/29 4.8.2
 
-(D:\CTEX\MiKTeX\tex\latex\cjk\mule\MULEenc.sty
+(C:\CTEX\MiKTeX\tex\latex\cjk\mule\MULEenc.sty
 Package: MULEenc 2008/12/29 4.8.2
 )
-(D:\CTEX\MiKTeX\tex\latex\cjk\CJK.enc
+(C:\CTEX\MiKTeX\tex\latex\cjk\CJK.enc
 File: CJK.enc 2008/12/29 4.8.2
 )
 LaTeX Info: Redefining \selectfont on input line 756.
 \CJK@indent=\box35
 )
-(D:\CTEX\CTeX\tex\latex\CJKpunct\CJKpunct.sty
+(C:\CTEX\CTeX\tex\latex\CJKpunct\CJKpunct.sty
 Package: CJKpunct 2010/02/21 4.8.2-2
 \CJKpunct@cnta=\count161
 \CJKpunct@cntb=\count162
@@ -307,15 +307,15 @@ Package: CJKpunct 2010/02/21 4.8.2-2
 \CJKpunct@cntd=\count164
 \CJKpunct@cnte=\count165
 
-(D:\CTEX\CTeX\tex\latex\CJKpunct\CJKpunct.spa))
-(D:\CTEX\MiKTeX\tex\latex\ctex\engine\ctex-cjk-common.def
-(D:\CTEX\CTeX\tex\latex\CJK\CJKfntef.sty
+(C:\CTEX\CTeX\tex\latex\CJKpunct\CJKpunct.spa))
+(C:\CTEX\MiKTeX\tex\latex\ctex\engine\ctex-cjk-common.def
+(C:\CTEX\CTeX\tex\latex\CJK\CJKfntef.sty
 Package: CJKfntef 2008/12/29 4.8.2
 
-(D:\CTEX\MiKTeX\tex\latex\cjk\CJKulem.sty
+(C:\CTEX\MiKTeX\tex\latex\cjk\CJKulem.sty
 Package: CJKulem 2008/12/29 4.8.2
 
-(D:\CTEX\MiKTeX\tex\latex\ulem\ulem.sty
+(C:\CTEX\MiKTeX\tex\latex\ulem\ulem.sty
 \UL@box=\box36
 \UL@hyphenbox=\box37
 \UL@skip=\skip58
@@ -339,35 +339,35 @@ Package: ulem 2011/03/18
 )
 \ccwd=\dimen144
 )
-(D:\CTEX\MiKTeX\tex\latex\ctex\fontset\ctex-cjk-winfonts.def
-(D:\CTEX\MiKTeX\tex\generic\zhmetrics\zhwinfonts.tex
-(D:\CTEX\MiKTeX\tex\generic\oberdiek\ifpdf.sty
+(C:\CTEX\MiKTeX\tex\latex\ctex\fontset\ctex-cjk-winfonts.def
+(C:\CTEX\MiKTeX\tex\generic\zhmetrics\zhwinfonts.tex
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\ifpdf.sty
 Package ifpdf Info: The package is already loaded, stopped on input line 64.
-){D:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}})))
+){C:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}})))
 \CTEX@q=\count168
 \CTEX@r=\count169
 )
-(D:\CTEX\MiKTeX\tex\latex\ctex\def\ctex-caption.def)
-(D:\CTEX\MiKTeX\tex\latex\ctex\def\ctex-class.def)
-(D:\CTEX\MiKTeX\tex\latex\ctex\def\ctex-book.def))
-(D:\CTEX\MiKTeX\tex\latex\ctex\def\ctex-gbk.def)
-(D:\CTEX\MiKTeX\tex\latex\ctex\cfg\ctexcap.cfg
-(D:\CTEX\MiKTeX\tex\latex\ctex\cfg\ctexcap-gbk.cfg))
-(D:\CTEX\MiKTeX\tex\latex\ctex\cfg\ctex.cfg)
-(E:\大论文\BIT_Thesis\李浩模板\setup.tex
-(D:\CTEX\MiKTeX\tex\latex\diagbox\diagbox.sty
+(C:\CTEX\MiKTeX\tex\latex\ctex\def\ctex-caption.def)
+(C:\CTEX\MiKTeX\tex\latex\ctex\def\ctex-class.def)
+(C:\CTEX\MiKTeX\tex\latex\ctex\def\ctex-book.def))
+(C:\CTEX\MiKTeX\tex\latex\ctex\def\ctex-gbk.def)
+(C:\CTEX\MiKTeX\tex\latex\ctex\cfg\ctexcap.cfg
+(C:\CTEX\MiKTeX\tex\latex\ctex\cfg\ctexcap-gbk.cfg))
+(C:\CTEX\MiKTeX\tex\latex\ctex\cfg\ctex.cfg)
+(F:\大论文\李浩模板\setup.tex
+(C:\CTEX\MiKTeX\tex\latex\diagbox\diagbox.sty
 Package: diagbox 2011/11/23 v2.0 Making table heads with diagonal lines
 
-(D:\CTEX\MiKTeX\tex\latex\pict2e\pict2e.sty
+(C:\CTEX\MiKTeX\tex\latex\pict2e\pict2e.sty
 Package: pict2e 2011/04/05 v0.2y Improved picture commands (HjG,RN,JT)
 
-(D:\CTEX\MiKTeX\tex\latex\00miktex\pict2e.cfg
+(C:\CTEX\MiKTeX\tex\latex\00miktex\pict2e.cfg
 File: pict2e.cfg 2005/12/29 v1.0 MiKTeX 'pict2e' configuration
 )
 Package pict2e Info: Driver file: pdftex.def on input line 119.
 Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 121.
 
-(D:\CTEX\MiKTeX\tex\latex\pict2e\p2e-pdftex.def
+(C:\CTEX\MiKTeX\tex\latex\pict2e\p2e-pdftex.def
 File: p2e-pdftex.def 2011/04/05 v0.1t Driver-dependant file (RN,HjG,JT)
 )
 \pIIe@GRAPH=\toks16
@@ -375,15 +375,15 @@ File: p2e-pdftex.def 2011/04/05 v0.1t Driver-dependant file (RN,HjG,JT)
 \@arcrad=\dimen146
 \@tempdimd=\dimen147
 )
-(D:\CTEX\MiKTeX\tex\latex\fp\fp.sty
+(C:\CTEX\MiKTeX\tex\latex\fp\fp.sty
 Package: fp 1995/04/02
 
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
-(D:\CTEX\MiKTeX\tex\latex\fp\defpattern.sty
+(C:\CTEX\MiKTeX\tex\latex\fp\defpattern.sty
 Package: defpattern 1994/10/12
 \actioncount=\count170
 )
-(D:\CTEX\MiKTeX\tex\latex\fp\fp-basic.sty
+(C:\CTEX\MiKTeX\tex\latex\fp\fp-basic.sty
 Package: fp-basic 1996/05/13
 \FP@xs=\count171
 \FP@xia=\count172
@@ -395,32 +395,32 @@ Package: fp-basic 1996/05/13
 \FP@regs=\count178
 \FP@times=\count179
 )
-(D:\CTEX\MiKTeX\tex\latex\fp\fp-addons.sty
+(C:\CTEX\MiKTeX\tex\latex\fp\fp-addons.sty
 Package: fp-addons 1995/03/15
 )
-(D:\CTEX\MiKTeX\tex\latex\fp\fp-snap.sty
+(C:\CTEX\MiKTeX\tex\latex\fp\fp-snap.sty
 Package: fp-snap 1995/04/05
 )
-(D:\CTEX\MiKTeX\tex\latex\fp\fp-exp.sty
+(C:\CTEX\MiKTeX\tex\latex\fp\fp-exp.sty
 Package: fp-exp 1995/04/03
 )
-(D:\CTEX\MiKTeX\tex\latex\fp\fp-trigo.sty
+(C:\CTEX\MiKTeX\tex\latex\fp\fp-trigo.sty
 Package: fp-trigo 1995/04/14
 )
-(D:\CTEX\MiKTeX\tex\latex\fp\fp-pas.sty
+(C:\CTEX\MiKTeX\tex\latex\fp\fp-pas.sty
 Package: fp-pas 1994/08/29
 )
-(D:\CTEX\MiKTeX\tex\latex\fp\fp-random.sty
+(C:\CTEX\MiKTeX\tex\latex\fp\fp-random.sty
 Package: fp-random 1995/02/23
 \FPseed=\count180
 )
-(D:\CTEX\MiKTeX\tex\latex\fp\fp-eqn.sty
+(C:\CTEX\MiKTeX\tex\latex\fp\fp-eqn.sty
 Package: fp-eqn 1995/04/03
 )
-(D:\CTEX\MiKTeX\tex\latex\fp\fp-upn.sty
+(C:\CTEX\MiKTeX\tex\latex\fp\fp-upn.sty
 Package: fp-upn 1996/10/21
 )
-(D:\CTEX\MiKTeX\tex\latex\fp\fp-eval.sty
+(C:\CTEX\MiKTeX\tex\latex\fp\fp-eval.sty
 Package: fp-eval 1995/04/03
 ))
 \diagbox@boxa=\box41
@@ -431,10 +431,10 @@ Package: fp-eval 1995/04/03
 \diagbox@sepl=\dimen150
 \diagbox@sepr=\dimen151
 )
-(D:\CTEX\MiKTeX\tex\latex\amsfonts\amssymb.sty
+(C:\CTEX\MiKTeX\tex\latex\amsfonts\amssymb.sty
 Package: amssymb 2009/06/22 v3.00
 
-(D:\CTEX\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+(C:\CTEX\MiKTeX\tex\latex\amsfonts\amsfonts.sty
 Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 \@emptytoks=\toks17
 \symAMSa=\mathgroup4
@@ -442,24 +442,24 @@ Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
 ))
-(D:\CTEX\MiKTeX\tex\latex\ams\math\amsmath.sty
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amsmath.sty
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip61
 
 For additional information on amsmath, use the `?' option.
-(D:\CTEX\MiKTeX\tex\latex\ams\math\amstext.sty
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(D:\CTEX\MiKTeX\tex\latex\ams\math\amsgen.sty
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks18
 \ex@=\dimen152
 ))
-(D:\CTEX\MiKTeX\tex\latex\ams\math\amsbsy.sty
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen153
 )
-(D:\CTEX\MiKTeX\tex\latex\ams\math\amsopn.sty
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count181
@@ -500,18 +500,18 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
-(D:\CTEX\MiKTeX\tex\latex\fancyref\fancyref.sty
+(C:\CTEX\MiKTeX\tex\latex\fancyref\fancyref.sty
 Package: fancyref 1999/02/03 v0.9c Fancy cross-referencing
 
-(D:\CTEX\MiKTeX\tex\latex\tools\varioref.sty
+(C:\CTEX\MiKTeX\tex\latex\tools\varioref.sty
 Package: varioref 2011/10/02 v1.4z package for extended references (FMi)
 \c@vrcnt=\count193
 ))
-(D:\CTEX\MiKTeX\tex\latex\jknappen\mathrsfs.sty
+(C:\CTEX\MiKTeX\tex\latex\jknappen\mathrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup6
 )
-(D:\CTEX\MiKTeX\tex\latex\subfigure\subfigure.sty
+(C:\CTEX\MiKTeX\tex\latex\subfigure\subfigure.sty
 Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigtopskip=\skip64
 \subfigcapskip=\skip65
@@ -527,11 +527,11 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-(D:\CTEX\MiKTeX\tex\latex\subfigure\subfigure.cfg)
+(C:\CTEX\MiKTeX\tex\latex\subfigure\subfigure.cfg)
 \subfig@top=\skip68
 \subfig@bottom=\skip69
 )
-(D:\CTEX\MiKTeX\tex\latex\listings\listings.sty
+(C:\CTEX\MiKTeX\tex\latex\listings\listings.sty
 \lst@mode=\count198
 \lst@gtempboxa=\box46
 \lst@token=\toks23
@@ -546,37 +546,37 @@ Normal \count register pool exhausted, switching to extended pool.
 \lst@lineno=\count278
 \lst@maxwidth=\dimen166
 
-(D:\CTEX\MiKTeX\tex\latex\listings\lstmisc.sty
+(C:\CTEX\MiKTeX\tex\latex\listings\lstmisc.sty
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 \c@lstnumber=\count279
 \lst@skipnumbers=\count280
 \lst@framebox=\box47
 )
-(D:\CTEX\MiKTeX\tex\latex\listings\listings.cfg
+(C:\CTEX\MiKTeX\tex\latex\listings\listings.cfg
 File: listings.cfg 2007/02/22 1.4 listings configuration
 ))
 Package: listings 2007/02/22 1.4 (Carsten Heinz)
 
-(D:\CTEX\MiKTeX\tex\latex\tools\enumerate.sty
+(C:\CTEX\MiKTeX\tex\latex\tools\enumerate.sty
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \@enLab=\toks24
 )
-(D:\CTEX\MiKTeX\tex\latex\psnfss\pifont.sty
+(C:\CTEX\MiKTeX\tex\latex\psnfss\pifont.sty
 Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
 LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
 
-(D:\CTEX\MiKTeX\tex\latex\psnfss\upzd.fd
+(C:\CTEX\MiKTeX\tex\latex\psnfss\upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
 LaTeX Font Info:    Try loading font information for U+psy on input line 64.
 
-(D:\CTEX\MiKTeX\tex\latex\psnfss\upsy.fd
+(C:\CTEX\MiKTeX\tex\latex\psnfss\upsy.fd
 File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
-(D:\CTEX\MiKTeX\tex\latex\psnfss\times.sty
+(C:\CTEX\MiKTeX\tex\latex\psnfss\times.sty
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
-(D:\CTEX\MiKTeX\tex\latex\psnfss\mathptmx.sty
+(C:\CTEX\MiKTeX\tex\latex\psnfss\mathptmx.sty
 Package: mathptmx 2005/04/12 PSNFSS-v9.2a Times w/ Math, improved (SPQR, WaS) 
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -612,13 +612,13 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
 LaTeX Info: Redefining \hbar on input line 50.
 )
-(D:\CTEX\MiKTeX\tex\latex\setspace\setspace.sty
+(C:\CTEX\MiKTeX\tex\latex\setspace\setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-(D:\CTEX\MiKTeX\tex\latex\geometry\geometry.sty
+(C:\CTEX\MiKTeX\tex\latex\geometry\geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(D:\CTEX\MiKTeX\tex\generic\oberdiek\ifvtex.sty
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\ifvtex.sty
 Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
 Package ifvtex Info: VTeX not detected.
 )
@@ -635,19 +635,19 @@ Package ifvtex Info: VTeX not detected.
 \Gm@layoutvoffset=\dimen174
 \Gm@dimlist=\toks25
 
-(D:\CTEX\MiKTeX\tex\latex\geometry\geometry.cfg))
-(D:\CTEX\MiKTeX\tex\latex\titlesec\titletoc.sty
+(C:\CTEX\MiKTeX\tex\latex\geometry\geometry.cfg))
+(C:\CTEX\MiKTeX\tex\latex\titlesec\titletoc.sty
 Package: titletoc 2011/12/15 v1.6 TOC entries
 \ttl@leftsep=\dimen175
 )
-(D:\CTEX\MiKTeX\tex\latex\tocbibind\tocbibind.sty
+(C:\CTEX\MiKTeX\tex\latex\tocbibind\tocbibind.sty
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
 Package tocbibind Info: The document has chapter divisions on input line 50.
 
 
 Package tocbibind Note: Using chapter style headings, unless overridden.
 
-) (D:\CTEX\MiKTeX\tex\latex\titlesec\titlesec.sty
+) (C:\CTEX\MiKTeX\tex\latex\titlesec\titlesec.sty
 Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \ttl@box=\box48
 \beforetitleunit=\skip70
@@ -659,7 +659,7 @@ Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \titlewidthlast=\dimen179
 \titlewidthfirst=\dimen180
 )
-(D:\CTEX\MiKTeX\tex\latex\float\float.sty
+(C:\CTEX\MiKTeX\tex\latex\float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count284
 \float@exts=\toks27
@@ -667,19 +667,19 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks28
 \@floatcapt=\box50
 )
-(D:\CTEX\CTeX\tex\latex\ccmap\ccmap.sty
+(C:\CTEX\CTeX\tex\latex\ccmap\ccmap.sty
 Package: ccmap 2006/11/18
 \CCT@hooka@@=\toks29
 )
-(D:\CTEX\MiKTeX\tex\latex\oberdiek\pdflscape.sty
+(C:\CTEX\MiKTeX\tex\latex\oberdiek\pdflscape.sty
 Package: pdflscape 2008/08/11 v0.10 Landscape pages in PDF (HO)
 
-(D:\CTEX\MiKTeX\tex\latex\graphics\lscape.sty
+(C:\CTEX\MiKTeX\tex\latex\graphics\lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 )
-(D:\CTEX\MiKTeX\tex\latex\tools\array.sty
+(C:\CTEX\MiKTeX\tex\latex\tools\array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen181
 \extrarowheight=\dimen182
@@ -687,30 +687,30 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \extratabsurround=\skip72
 \backup@length=\skip73
 )
-(D:\CTEX\MiKTeX\tex\latex\natbib\natbib.sty
+(C:\CTEX\MiKTeX\tex\latex\natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip74
 \bibsep=\skip75
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count285
 )
-(E:\大论文\BIT_Thesis\李浩模板\hypernat.sty)
-(D:\CTEX\MiKTeX\tex\latex\graphics\graphicx.sty
+(F:\大论文\李浩模板\hypernat.sty)
+(C:\CTEX\MiKTeX\tex\latex\graphics\graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 \Gin@req@height=\dimen183
 \Gin@req@width=\dimen184
 )
-(D:\CTEX\MiKTeX\tex\latex\threeparttable\threeparttable.sty
+(C:\CTEX\MiKTeX\tex\latex\threeparttable\threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
 \@tempboxb=\box51
 )
-(D:\CTEX\MiKTeX\tex\latex\tools\dcolumn.sty
+(C:\CTEX\MiKTeX\tex\latex\tools\dcolumn.sty
 Package: dcolumn 2001/05/28 v1.06 decimal alignment package (DPC)
 )
-(D:\CTEX\MiKTeX\tex\latex\multirow\multirow.sty
+(C:\CTEX\MiKTeX\tex\latex\multirow\multirow.sty
 \bigstrutjot=\dimen185
 )
-(D:\CTEX\MiKTeX\tex\latex\booktabs\booktabs.sty
+(C:\CTEX\MiKTeX\tex\latex\booktabs\booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen186
 \lightrulewidth=\dimen187
@@ -730,10 +730,10 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count289
 \@thisrulewidth=\dimen198
 )
-(D:\CTEX\MiKTeX\tex\latex\caption\caption.sty
+(C:\CTEX\MiKTeX\tex\latex\caption\caption.sty
 Package: caption 2011/11/10 v3.2e Customizing captions (AR)
 
-(D:\CTEX\MiKTeX\tex\latex\caption\caption3.sty
+(C:\CTEX\MiKTeX\tex\latex\caption\caption3.sty
 Package: caption3 2011/11/01 v1.4a caption3 kernel (AR)
 \captionmargin=\dimen199
 \captionmargin@=\dimen200
@@ -770,7 +770,7 @@ Package caption Info: threeparttable package is loaded.
 \c@definition=\count298
 \c@remark=\count299
 \c@notation=\count300
- (D:\CTEX\MiKTeX\tex\latex\tools\calc.sty
+ (C:\CTEX\MiKTeX\tex\latex\tools\calc.sty
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count301
 \calc@Bcount=\count302
@@ -785,13 +785,13 @@ LaTeX Info: Redefining \addtolength on input line 77.
 )
 \tmpfontsizelength=\skip79
 
-(D:\CTEX\MiKTeX\tex\latex\hyperref\hyperref.sty
+(C:\CTEX\MiKTeX\tex\latex\hyperref\hyperref.sty
 Package: hyperref 2012/02/06 v6.82o Hypertext links for LaTeX
 
-(D:\CTEX\MiKTeX\tex\generic\oberdiek\hobsub-hyperref.sty
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\hobsub-hyperref.sty
 Package: hobsub-hyperref 2011/04/23 v1.4 Bundle oberdiek, subset hyperref (HO)
 
-(D:\CTEX\MiKTeX\tex\generic\oberdiek\hobsub-generic.sty
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\hobsub-generic.sty
 Package: hobsub-generic 2011/04/23 v1.4 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2011/04/23 v1.4 Subsetting bundle oberdiek (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -827,19 +827,19 @@ Package: atbegshi 2011/01/30 v1.15 At begin shipout hook (HO)
 Package: refcount 2010/12/01 v3.2 Data extraction from references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options of hyperref/bookmark (HO)
 )
-(D:\CTEX\MiKTeX\tex\latex\oberdiek\kvoptions.sty
+(C:\CTEX\MiKTeX\tex\latex\oberdiek\kvoptions.sty
 Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
 )
 \@linkdim=\dimen261
 \Hy@linkcounter=\count304
 \Hy@pagecounter=\count305
 
-(D:\CTEX\MiKTeX\tex\latex\hyperref\pd1enc.def
+(C:\CTEX\MiKTeX\tex\latex\hyperref\pd1enc.def
 File: pd1enc.def 2012/02/06 v6.82o Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count306
 
-(D:\CTEX\MiKTeX\tex\latex\00miktex\hyperref.cfg
+(C:\CTEX\MiKTeX\tex\latex\00miktex\hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Option `CJKbookmarks' set `true' on input line 3925.
@@ -853,7 +853,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4284.
 \c@Hy@tempcnt=\count307
 
-(D:\CTEX\MiKTeX\tex\latex\ltxmisc\url.sty
+(C:\CTEX\MiKTeX\tex\latex\ltxmisc\url.sty
 \Urlmuskip=\muskip11
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
@@ -877,12 +877,12 @@ LaTeX Info: Redefining \pageref on input line 5831.
 
 Package hyperref Message: Driver: hpdftex.
 
-(D:\CTEX\MiKTeX\tex\latex\hyperref\hpdftex.def
+(C:\CTEX\MiKTeX\tex\latex\hyperref\hpdftex.def
 File: hpdftex.def 2012/02/06 v6.82o Hyperref driver for pdfTeX
 \Fld@listcount=\count312
 \c@bookmark@seq@number=\count313
 
-(D:\CTEX\MiKTeX\tex\latex\oberdiek\rerunfilecheck.sty
+(C:\CTEX\MiKTeX\tex\latex\oberdiek\rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
@@ -899,26 +899,26 @@ Package hyperref Warning: Option `bookmarks' has already been used,
 (hyperref)                setting the option has no effect on input line 266.
 
 Package hyperref Info: Option `colorlinks' set `true' on input line 266.
-) (E:\大论文\BIT_Thesis\李浩模板\Thesis.aux
-(E:\大论文\BIT_Thesis\李浩模板\chapter/chapter1.aux)
-(E:\大论文\BIT_Thesis\李浩模板\chapter/chapter2.aux)
-(E:\大论文\BIT_Thesis\李浩模板\chapter/chapter3.aux
+) (F:\大论文\李浩模板\thesis.aux
+(F:\大论文\李浩模板\chapter/chapter1.aux)
+(F:\大论文\李浩模板\chapter/chapter2.aux)
+(F:\大论文\李浩模板\chapter/chapter3.aux
 
 LaTeX Warning: Label `repro-tuidao3-equation' multiply defined.
 
-) (E:\大论文\BIT_Thesis\李浩模板\chapter/chapter4.aux)
-(E:\大论文\BIT_Thesis\李浩模板\chapter/chapter5.aux
+) (F:\大论文\李浩模板\chapter/chapter4.aux)
+(F:\大论文\李浩模板\chapter/chapter5.aux
 
 LaTeX Warning: Label `fig:subfig:finalroad' multiply defined.
 
 
 LaTeX Warning: Label `sub@fig:subfig:finalroad' multiply defined.
 
-) (E:\大论文\BIT_Thesis\李浩模板\chapter/chapter6.aux)
-(E:\大论文\BIT_Thesis\李浩模板\chapter/chap-sum.aux)
-(E:\大论文\BIT_Thesis\李浩模板\chapter/chap-bibs.aux)
-(E:\大论文\BIT_Thesis\李浩模板\chapter/chap-pubs.aux)
-(E:\大论文\BIT_Thesis\李浩模板\chapter/chap-ack.aux))
+) (F:\大论文\李浩模板\chapter/chapter6.aux)
+(F:\大论文\李浩模板\chapter/chap-sum.aux)
+(F:\大论文\李浩模板\chapter/chap-bibs.aux)
+(F:\大论文\李浩模板\chapter/chap-pubs.aux)
+(F:\大论文\李浩模板\chapter/chap-ack.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
@@ -1001,10 +1001,10 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 8.
 
-(D:\CTEX\MiKTeX\tex\latex\psnfss\ot1ptm.fd
+(C:\CTEX\MiKTeX\tex\latex\psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )<<ot1.cmap>>
-(D:\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
+(C:\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count314
 \scratchdimen=\dimen264
@@ -1059,10 +1059,10 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box53
 Package hyperref Info: Link coloring ON on input line 8.
-(D:\CTEX\MiKTeX\tex\latex\hyperref\nameref.sty
+(C:\CTEX\MiKTeX\tex\latex\hyperref\nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 
-(D:\CTEX\MiKTeX\tex\generic\oberdiek\gettitlestring.sty
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count321
@@ -1072,21 +1072,20 @@ LaTeX Info: Redefining \ref on input line 8.
 LaTeX Info: Redefining \pageref on input line 8.
 LaTeX Info: Redefining \nameref on input line 8.
 
-(E:\大论文\BIT_Thesis\李浩模板\Thesis.out)
-(E:\大论文\BIT_Thesis\李浩模板\Thesis.out)
+(F:\大论文\李浩模板\thesis.out) (F:\大论文\李浩模板\thesis.out)
 \@outlinefile=\write3
 LaTeX Info: Redefining \Ref on input line 8.
 
-(D:\CTEX\MiKTeX\tex\latex\cjk\standard.bdg
+(C:\CTEX\MiKTeX\tex\latex\cjk\standard.bdg
 File: standard.bdg 2008/12/29 4.8.2
 )
-(D:\CTEX\MiKTeX\tex\latex\cjk\extended.enc
+(C:\CTEX\MiKTeX\tex\latex\cjk\extended.enc
 File: extended.enc 2008/12/29 4.8.2
 )
-(D:\CTEX\MiKTeX\tex\latex\cjk\extended.chr
+(C:\CTEX\MiKTeX\tex\latex\cjk\extended.chr
 File: extended.chr 2008/12/29 4.8.2
 )
-(E:\大论文\BIT_Thesis\李浩模板\chapter/chap-firstpage.tex
+(F:\大论文\李浩模板\chapter/chap-firstpage.tex
 Underfull \hbox (badness 10000) in paragraph at lines 7--18
 
  []
@@ -1143,22 +1142,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--18
 
 LaTeX Font Info:    Try loading font information for C19+zhhei on input line 21
 .
-(D:\CTEX\MiKTeX\tex\latex\zhmetrics\c19zhhei.fd
+(C:\CTEX\MiKTeX\tex\latex\zhmetrics\c19zhhei.fd
 File: c19zhhei.fd 2009/09/23 4.8.2
 )<<c1955.cmap>><<c1962.cmap>><<c1958.cmap>><<c1954.cmap>><<c1945.cmap>><<c1938.
 cmap>><<c1948.cmap>><<c1940.cmap>><<c1957.cmap>><<c1943.cmap>><<c1949.cmap>><<c
-1956.cmap>><<c1941.cmap>><<c1960.cmap>><<c1946.cmap>><<c1944.cmap>>
+1956.cmap>><<c1941.cmap>><<c1960.cmap>><<c1946.cmap>>
 LaTeX Font Info:    Try loading font information for C19+zhsong on input line 3
 0.
-
-(D:\CTEX\MiKTeX\tex\latex\zhmetrics\c19zhsong.fd
+ (C:\CTEX\MiKTeX\tex\latex\zhmetrics\c19zhsong.fd
 File: c19zhsong.fd 2009/09/23 4.8.2
-)<<c1951.cmap>><<c1963.cmap>>
-[1
+)<<c1951.cmap>><<c1963.cmap>> [1
 
 
 
-]) (E:\大论文\BIT_Thesis\李浩模板\chapter/chap-cover.tex [2
+]) (F:\大论文\李浩模板\chapter/chap-cover.tex
+[2
 
 ]<<c1964.cmap>>
 Underfull \hbox (badness 10000) in paragraph at lines 15--18
@@ -1178,32 +1176,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--18
 LaTeX Font Info:    Calculating math sizes for size <15> on input line 31.
 LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 31
 .
-(D:\CTEX\MiKTeX\tex\latex\psnfss\ot1ztmcm.fd
+(C:\CTEX\MiKTeX\tex\latex\psnfss\ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 31
 .
 
-(D:\CTEX\MiKTeX\tex\latex\psnfss\omlztmcm.fd
+(C:\CTEX\MiKTeX\tex\latex\psnfss\omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )<<oml.cmap>>
 LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 31
 .
 
-(D:\CTEX\MiKTeX\tex\latex\psnfss\omsztmcm.fd
+(C:\CTEX\MiKTeX\tex\latex\psnfss\omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )<<oms.cmap>>
 LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 31
 .
 
-(D:\CTEX\MiKTeX\tex\latex\psnfss\omxztmcm.fd
+(C:\CTEX\MiKTeX\tex\latex\psnfss\omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )<<omx.cmap>>
 
 LaTeX Warning: File u.cmap not found on input line 31.
 
 LaTeX Font Info:    Try loading font information for U+rsfs on input line 31.
-(D:\CTEX\MiKTeX\tex\latex\jknappen\ursfs.fd
+(C:\CTEX\MiKTeX\tex\latex\jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 
@@ -1216,8 +1214,8 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11.10008> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9.00009> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
-<<c1965.cmap>><<c1950.cmap>><<c1939.cmap>><<c1937.cmap>><<c1959.cmap>><<c1953.c
-map>><<c1942.cmap>><<c1947.cmap>><<c1961.cmap>> [3]
+<<c1965.cmap>><<c1950.cmap>><<c1939.cmap>><<c1937.cmap>><<c1944.cmap>><<c1959.c
+map>><<c1953.cmap>><<c1942.cmap>><<c1947.cmap>><<c1961.cmap>> [3]
 Underfull \hbox (badness 10000) in paragraph at lines 48--52
 
  []
@@ -1240,21 +1238,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--52
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <18> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 55.
 
-Overfull \hbox (2.86302pt too wide) in paragraph at lines 67--68
-[]|$[]$| 
- []
-
-
-Overfull \hbox (18.71825pt too wide) in paragraph at lines 68--69
-[]|$[]$| 
- []
-
-
 Overfull \hbox (7.69307pt too wide) in paragraph at lines 69--70
 []|$[]$| 
  []
 
-) (E:\大论文\BIT_Thesis\李浩模板\chapter/chap-name.tex [4]
+) (F:\大论文\李浩模板\chapter/chap-name.tex [4]
 LaTeX Font Info:    Calculating math sizes for size <16> on input line 11.
 
 
@@ -1267,12 +1255,12 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11.84009> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 11.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9.6001> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 11.
-) (E:\大论文\BIT_Thesis\李浩模板\chapter/chap-shengming.tex [5]
+) (F:\大论文\李浩模板\chapter/chap-shengming.tex [5]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
 LaTeX Font Info:    Try loading font information for C19+rm on input line 12.
 
-(D:\CTEX\MiKTeX\tex\latex\ctex\fd\c19rm.fd
+(C:\CTEX\MiKTeX\tex\latex\ctex\fd\c19rm.fd
 File: c19rm.fd 2007/05/06 v0.8a ctex font definition file
 )<<c1926.cmap>>
 Package CJKpunct Info: punctuation spaces for family 'zhsong' do not exist. Use
@@ -1282,8 +1270,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <42> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
-)
-(E:\大论文\BIT_Thesis\李浩模板\chapter/chap-abstract.tex
+) (F:\大论文\李浩模板\chapter/chap-abstract.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 1.
@@ -1296,7 +1283,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 ] [2] [3
 
-]) [4] (E:\大论文\BIT_Thesis\李浩模板\Thesis.toc
+]) [4] (F:\大论文\李浩模板\thesis.toc
 LaTeX Font Info:    Calculating math sizes for size <14> on input line 1.
 
 
@@ -1315,7 +1302,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 
 ])
 \tf@toc=\write4
- [6] (E:\大论文\BIT_Thesis\李浩模板\chapter/chapter1.tex
+ [6] (F:\大论文\李浩模板\chapter/chapter1.tex
 ��\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces 1\hspace {0.25em plus
  0.125em minus 0.08em}\ignorespaces \ignorespaces ��
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
@@ -1347,8 +1334,8 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 
- <E:/大论文/BIT_Thesis/李浩模板/figures/chapter1/laser.png> <E:/大论�
-�/BIT_Thesis/李浩模板/figures/chapter1/camera.PNG>]
+ <F:/大论文/李浩模板/figures/chapter1/laser.png> <F:/大论文/李浩模
+板/figures/chapter1/camera.PNG>]
 <figures/chapter1/count-year.png, id=522, 542.77782pt x 539.76656pt>
 File: figures/chapter1/count-year.png Graphic file (type png)
 
@@ -1365,7 +1352,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 27.
 
-[2 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter1/count-year.png>]
+[2 <F:/大论文/李浩模板/figures/chapter1/count-year.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 45.
@@ -1427,11 +1414,10 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 67.
 
-[5 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter1/rome/rome_paper-09.pn
-g> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter1/rome/rome_paper-10.pn
-g> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter1/rome/rome_paper-23.pn
-g> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter1/rome/rome_paper-24.pn
-g>]
+[5 <F:/大论文/李浩模板/figures/chapter1/rome/rome_paper-09.png> <F:/大�
+��文/李浩模板/figures/chapter1/rome/rome_paper-10.png> <F:/大论文/李�
+�模板/figures/chapter1/rome/rome_paper-23.png> <F:/大论文/李浩模板/fig
+ures/chapter1/rome/rome_paper-24.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 74.
@@ -1465,9 +1451,8 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 90.
 
-[7 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter1/road/EnhancingRoadMap
-s-9.jpg> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter1/road/EnhancingR
-oadMaps-1.jpg>]
+[7 <F:/大论文/李浩模板/figures/chapter1/road/EnhancingRoadMaps-9.jpg> <F
+:/大论文/李浩模板/figures/chapter1/road/EnhancingRoadMaps-1.jpg>]
 <figures/chapter1/sensors.png, id=631, 606.01407pt x 472.76625pt>
 File: figures/chapter1/sensors.png Graphic file (type png)
 
@@ -1492,7 +1477,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 117.
 
-[9 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter1/sensors.png>]
+[9 <F:/大论文/李浩模板/figures/chapter1/sensors.png>]
 <figures/chapter1/flow-whole.png, id=648, 816.04875pt x 328.8285pt>
 File: figures/chapter1/flow-whole.png Graphic file (type png)
 
@@ -1509,8 +1494,8 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 41.
 
-[10 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter1/flow-whole.png>]
-(E:\大论文\BIT_Thesis\李浩模板\chapter/chapter2.tex
+[10 <F:/大论文/李浩模板/figures/chapter1/flow-whole.png>]
+(F:\大论文\李浩模板\chapter/chapter2.tex
 ��\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces 2\hspace {0.25em plus
  0.125em minus 0.08em}\ignorespaces \ignorespaces ��
 <figures/chapter2/qrcode.png, id=655, 819.06pt x 484.81125pt>
@@ -1555,9 +1540,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 34.
 
-[12 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter2/qrcode.png> <E:/大�
-��文/BIT_Thesis/李浩模板/figures/chapter2/ladybug.jpg> <E:/大论文/BIT_T
-hesis/李浩模板/figures/chapter2/para.png>]
+[12 <F:/大论文/李浩模板/figures/chapter2/qrcode.png> <F:/大论文/李�
+�模板/figures/chapter2/ladybug.jpg> <F:/大论文/李浩模板/figures/chapte
+r2/para.png>]
 Underfull \vbox (badness 1231) has occurred while \output is active []
 
 
@@ -1609,13 +1594,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 119.
 
-[14 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter2/RAW927090958.png (PN
-G copy)> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter2/RAW1001103021.p
-ng (PNG copy)> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter2/IPM927090
-958.png (PNG copy)> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter2/IPM1
-001103021.png (PNG copy)>]
+[14 <F:/大论文/李浩模板/figures/chapter2/RAW927090958.png (PNG copy)> <F
+:/大论文/李浩模板/figures/chapter2/RAW1001103021.png (PNG copy)> <F:/大
+论文/李浩模板/figures/chapter2/IPM927090958.png (PNG copy)> <F:/大论文
+/李浩模板/figures/chapter2/IPM1001103021.png (PNG copy)>]
 File: figures/chapter2/IPM927090958.png Graphic file (type png)
- <use figures/chapter2/IPM927090958.png>
+
+<use figures/chapter2/IPM927090958.png>
 Package pdftex.def Info: figures/chapter2/IPM927090958.png used on input line 1
 26.
 (pdftex.def)             Requested size: 144.54pt x 144.54294pt.
@@ -1649,9 +1634,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 141.
 
-[15 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter2/res.png> <E:/大论�
-��/BIT_Thesis/李浩模板/figures/chapter2/car_mask.png> <E:/大论文/BIT_The
-sis/李浩模板/figures/chapter2/area_num.png>]
+[15 <F:/大论文/李浩模板/figures/chapter2/res.png> <F:/大论文/李浩�
+�板/figures/chapter2/car_mask.png> <F:/大论文/李浩模板/figures/chapter2
+/area_num.png>]
 <figures/chapter2/road_cross.png, id=719, 600.74437pt x 403.5075pt>
 File: figures/chapter2/road_cross.png Graphic file (type png)
 
@@ -1675,8 +1660,8 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 42.
 
-[16 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter2/road_cross.png> <E:/
-大论文/BIT_Thesis/李浩模板/figures/chapter2/road_net.png>]
+[16 <F:/大论文/李浩模板/figures/chapter2/road_cross.png> <F:/大论文/�
+��浩模板/figures/chapter2/road_net.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 42.
@@ -1685,7 +1670,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 42.
 
-[17] (E:\大论文\BIT_Thesis\李浩模板\chapter/chapter3.tex
+[17] (F:\大论文\李浩模板\chapter/chapter3.tex
 ��\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces 3\hspace {0.25em plus
  0.125em minus 0.08em}\ignorespaces \ignorespaces ��
 <<c1982.cmap>> <figures/chapter3/focal.png, id=738, 666.0885pt x 367.3725pt>
@@ -1730,8 +1715,8 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 42.
 
-[19 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/focal.png> <E:/大�
-�文/BIT_Thesis/李浩模板/figures/chapter3/pinhole.png>]
+[19 <F:/大论文/李浩模板/figures/chapter3/focal.png> <F:/大论文/李浩
+模板/figures/chapter3/pinhole.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 53.
@@ -1740,7 +1725,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 53.
 
-[20 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/firstperson.png>]
+[20 <F:/大论文/李浩模板/figures/chapter3/firstperson.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1791,7 +1776,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 190.
 
-[22 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/transform.png>]
+[22 <F:/大论文/李浩模板/figures/chapter3/transform.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 201.
@@ -1800,10 +1785,10 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 201.
 
-[23 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/transform-coordinate
-.png> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/radial-distortion.
-PNG> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/non-radial-distorti
-on.PNG>] <figures/chapter3/flow-sparse.png, id=817, 881.694pt x 225.0006pt>
+[23 <F:/大论文/李浩模板/figures/chapter3/transform-coordinate.png> <F:/�
+��论文/李浩模板/figures/chapter3/radial-distortion.PNG> <F:/大论文/李
+浩模板/figures/chapter3/non-radial-distortion.PNG>]
+<figures/chapter3/flow-sparse.png, id=817, 881.694pt x 225.0006pt>
 File: figures/chapter3/flow-sparse.png Graphic file (type png)
 
 <use figures/chapter3/flow-sparse.png>
@@ -1819,7 +1804,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 243.
 
-[24 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/flow-sparse.png>]
+[24 <F:/大论文/李浩模板/figures/chapter3/flow-sparse.png>]
 <figures/chapter3/global-local.jpg, id=831, 682.55pt x 202.7575pt>
 File: figures/chapter3/global-local.jpg Graphic file (type jpg)
 
@@ -1836,7 +1821,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 265.
 
-[25 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/global-local.jpg>]
+[25 <F:/大论文/李浩模板/figures/chapter3/global-local.jpg>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 290.
@@ -1860,7 +1845,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 308.
 
-[27 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/octave.jpg>]
+[27 <F:/大论文/李浩模板/figures/chapter3/octave.jpg>]
 <figures/chapter3/siftDescriptor.jpg, id=869, 592.2125pt x 285.065pt>
 File: figures/chapter3/siftDescriptor.jpg Graphic file (type jpg)
 
@@ -1909,12 +1894,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 339.
 
-[28 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/siftDescriptor.jpg> 
-<E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/testPho/1_res.png (PNG c
-opy)> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/testPho/2_res.png 
-(PNG copy)> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/testPho/3_re
-s.png (PNG copy)> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/testPh
-o/4_res.png (PNG copy)>]
+[28 <F:/大论文/李浩模板/figures/chapter3/siftDescriptor.jpg> <F:/大论�
+��/李浩模板/figures/chapter3/testPho/1_res.png (PNG copy)> <F:/大论文/�
+�浩模板/figures/chapter3/testPho/2_res.png (PNG copy)> <F:/大论文/李浩�
+��板/figures/chapter3/testPho/3_res.png (PNG copy)> <F:/大论文/李浩模板
+/figures/chapter3/testPho/4_res.png (PNG copy)>]
 <figures/chapter3/matches/matches.jpg, id=887, 8030.0pt x 2258.4375pt>
 File: figures/chapter3/matches/matches.jpg Graphic file (type jpg)
 
@@ -1947,8 +1931,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 391.
 
-[30 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/matches/matches.jpg>
-]
+[30 <F:/大论文/李浩模板/figures/chapter3/matches/matches.jpg>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 467.
@@ -1957,7 +1940,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 467.
 
-[31 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/homography.png>]
+[31 <F:/大论文/李浩模板/figures/chapter3/homography.png>]
 <figures/chapter3/matches/000400_H_000415.png, id=913, 2461.195pt x 371.3875pt>
 File: figures/chapter3/matches/000400_H_000415.png Graphic file (type png)
 <use figures/chapter3/matches/000400_H_000415.png>
@@ -1998,9 +1981,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 499.
 
-[32 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/matches/000400_H_000
-415.png (PNG copy)> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/matc
-hes/000400_U_000415.png (PNG copy)>]
+[32 <F:/大论文/李浩模板/figures/chapter3/matches/000400_H_000415.png (PN
+G copy)> <F:/大论文/李浩模板/figures/chapter3/matches/000400_U_000415.pn
+g (PNG copy)>]
 Missing character: There is no � in font zptmcm7t!
 Missing character: There is no � in font zptmcm7t!
 Missing character: There is no � in font zptmcm7t!
@@ -2013,9 +1996,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 520.
 
-[33 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/matches/000400_H_000
-424.png (PNG copy)> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/matc
-hes/000400_U_000424.png (PNG copy)>]
+[33 <F:/大论文/李浩模板/figures/chapter3/matches/000400_H_000424.png (PN
+G copy)> <F:/大论文/李浩模板/figures/chapter3/matches/000400_U_000424.pn
+g (PNG copy)>]
 <figures/chapter3/epipolor.png, id=939, 688.37175pt x 474.573pt>
 File: figures/chapter3/epipolor.png Graphic file (type png)
 
@@ -2040,7 +2023,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 546.
 
-[35 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/epipolor.png>]
+[35 <F:/大论文/李浩模板/figures/chapter3/epipolor.png>]
 <figures/chapter3/epipolorLine/points.png, id=957, 922.94812pt x 278.54062pt>
 File: figures/chapter3/epipolorLine/points.png Graphic file (type png)
 
@@ -2068,9 +2051,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 569.
 
-[36 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/epipolorLine/points.
-png> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/epipolorLine/lines.
-png>] <figures/chapter3/essentialMatrix.png, id=973, 438.438pt x 283.0575pt>
+[36 <F:/大论文/李浩模板/figures/chapter3/epipolorLine/points.png> <F:/�
+�论文/李浩模板/figures/chapter3/epipolorLine/lines.png>]
+<figures/chapter3/essentialMatrix.png, id=973, 438.438pt x 283.0575pt>
 File: figures/chapter3/essentialMatrix.png Graphic file (type png)
 
 <use figures/chapter3/essentialMatrix.png>
@@ -2120,8 +2103,8 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 669.
 
-[38 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/essentialMatrix.png>
-] <figures/chapter3/triangulation.png, id=994, 365.56575pt x 264.38776pt>
+[38 <F:/大论文/李浩模板/figures/chapter3/essentialMatrix.png>]
+<figures/chapter3/triangulation.png, id=994, 365.56575pt x 264.38776pt>
 File: figures/chapter3/triangulation.png Graphic file (type png)
 
 <use figures/chapter3/triangulation.png>
@@ -2137,8 +2120,8 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 681.
 
-[39 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/essentialfromRT.png>
- <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/triangulation.png>]
+[39 <F:/大论文/李浩模板/figures/chapter3/essentialfromRT.png> <F:/大论
+文/李浩模板/figures/chapter3/triangulation.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 712.
@@ -2208,7 +2191,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 876.
 
-[44 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/ba.png>]
+[44 <F:/大论文/李浩模板/figures/chapter3/ba.png>]
 Underfull \vbox (badness 4846) has occurred while \output is active []
 
 
@@ -2220,7 +2203,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 925.
 
-[45 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/baall.png>]
+[45 <F:/大论文/李浩模板/figures/chapter3/baall.png>]
 <figures/chapter3/BA/before_small.jpg, id=1070, 1026.83624pt x 577.15625pt>
 File: figures/chapter3/BA/before_small.jpg Graphic file (type jpg)
 
@@ -2261,9 +2244,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 958.
 
-[47 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/BA/before_small.jpg>
- <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/BA/after_small.jpg> <E:
-/大论文/BIT_Thesis/李浩模板/figures/chapter3/flow-dense.png>]
+[47 <F:/大论文/李浩模板/figures/chapter3/BA/before_small.jpg> <F:/大论
+文/李浩模板/figures/chapter3/BA/after_small.jpg> <F:/大论文/李浩模�
+�/figures/chapter3/flow-dense.png>]
 Overfull \hbox (5.98619pt too wide) in paragraph at lines 961--963
 \C19/zhsong/m/n/12/60 % \C19/zhsong/m/n/12/58 � \C19/zhsong/m/n/12/59 � \C19/zh
 song/m/n/12/44 �$\OML/ztmcm/m/it/12 i$|\C19/rm/m/n/12/26 �| \C19/zhsong/m/n/12/
@@ -2276,7 +2259,7 @@ mcm/m/n/12 = \OML/ztmcm/m/it/12 K[]\OT1/ztmcm/m/n/12 [\OML/ztmcm/m/it/12 I[]\OM
 S/ztmcm/m/n/12 j\OT1/ztmcm/m/n/12 0[]]$|\C19/rm/m/n/12/26 �| $\OML/ztmcm/m/it/1
 2 P[] \OT1/ztmcm/m/n/12 = \OML/ztmcm/m/it/12 K[]\OT1/ztmcm/m/n/12 [\OML/ztmcm/m
 /it/12 R[]R[]\OMS/ztmcm/m/n/12 j\OML/ztmcm/m/it/12 R[]\OT1/ztmcm/m/n/12 (\OML/z
-tmcm/m/it/12 C[] \OMS/ztmcm/m/n/12  $
+tmcm/m/it/12 C[] \OMS/ztmcm/m/n/12  
  []
 
 <figures/chapter3/mvs/patch.png, id=1096, 425.33907pt x 504.38437pt>
@@ -2352,13 +2335,12 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 1013.
 
-[49 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter3/mvs/patch.png> <E:/�
-��论文/BIT_Thesis/李浩模板/figures/chapter3/mvs/DJI_0056.JPG> <E:/大论�
-��/BIT_Thesis/李浩模板/figures/chapter3/mvs/DJI_0056_depth.jpg> <E:/大论�
-��/BIT_Thesis/李浩模板/figures/chapter3/mvs/DJI_0056_score.jpg> <E:/大论�
-��/BIT_Thesis/李浩模板/figures/chapter3/mvs/DJI_0100.JPG> <E:/大论文/BIT
-_Thesis/李浩模板/figures/chapter3/mvs/DJI_0100_depth.jpg> <E:/大论文/BIT
-_Thesis/李浩模板/figures/chapter3/mvs/DJI_0100_score.jpg>])
+[49 <F:/大论文/李浩模板/figures/chapter3/mvs/patch.png> <F:/大论文/�
+�浩模板/figures/chapter3/mvs/DJI_0056.JPG> <F:/大论文/李浩模板/figure
+s/chapter3/mvs/DJI_0056_depth.jpg> <F:/大论文/李浩模板/figures/chapter3/
+mvs/DJI_0056_score.jpg> <F:/大论文/李浩模板/figures/chapter3/mvs/DJI_010
+0.JPG> <F:/大论文/李浩模板/figures/chapter3/mvs/DJI_0100_depth.jpg> <F:/
+大论文/李浩模板/figures/chapter3/mvs/DJI_0100_score.jpg>])
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 43.
@@ -2367,7 +2349,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 43.
 
-[50] (E:\大论文\BIT_Thesis\李浩模板\chapter/chapter4.tex
+[50] (F:\大论文\李浩模板\chapter/chapter4.tex
 ��\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces 4\hspace {0.25em plus
  0.125em minus 0.08em}\ignorespaces \ignorespaces ��
 <figures/chapter4/trainExtract.png, id=1135, 696.201pt x 380.01974pt>
@@ -2390,7 +2372,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 
- <E:/大论文/BIT_Thesis/李浩模板/figures/chapter4/trainExtract.png>]
+ <F:/大论文/李浩模板/figures/chapter4/trainExtract.png>]
 <figures/chapter4/regression.png, id=1144, 389.95688pt x 246.9225pt>
 File: figures/chapter4/regression.png Graphic file (type png)
 
@@ -2407,7 +2389,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 28.
 
-[52 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter4/regression.png>]
+[52 <F:/大论文/李浩模板/figures/chapter4/regression.png>]
 <figures/chapter4/erosionDilation.png, id=1153, 145.5036pt x 67.6929pt>
 File: figures/chapter4/erosionDilation.png Graphic file (type png)
 
@@ -2424,8 +2406,8 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 58.
 
-[53 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter4/erosionDilation.png>
-] <figures/chapter4/rectangle_fix.jpg, id=1170, 696.80325pt x 466.1415pt>
+[53 <F:/大论文/李浩模板/figures/chapter4/erosionDilation.png>]
+<figures/chapter4/rectangle_fix.jpg, id=1170, 696.80325pt x 466.1415pt>
 File: figures/chapter4/rectangle_fix.jpg Graphic file (type jpg)
 
 <use figures/chapter4/rectangle_fix.jpg>
@@ -2470,7 +2452,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 97.
 
-[54 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter4/rectangle_fix.jpg>]
+[54 <F:/大论文/李浩模板/figures/chapter4/rectangle_fix.jpg>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 105.
@@ -2479,10 +2461,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 105.
 
-[55 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter4/TopoloThin.png> <E:/
-大论文/BIT_Thesis/李浩模板/figures/chapter4/topoN.png> <E:/大论文/BIT
-_Thesis/李浩模板/figures/chapter4/topocir.png> <E:/大论文/BIT_Thesis/李
-浩模板/figures/chapter4/node.png>]
+[55 <F:/大论文/李浩模板/figures/chapter4/TopoloThin.png> <F:/大论文/�
+��浩模板/figures/chapter4/topoN.png> <F:/大论文/李浩模板/figures/chap
+ter4/topocir.png> <F:/大论文/李浩模板/figures/chapter4/node.png>]
 <figures/chapter4/process/process33.jpg, id=1203, 1541.76pt x 2192.19pt>
 File: figures/chapter4/process/process33.jpg Graphic file (type jpg)
 
@@ -2508,19 +2489,19 @@ ine 123.
 (pdftex.def)             Requested size: 115.63243pt x 164.40715pt.
 
 Overfull \hbox (21.58247pt too wide) in paragraph at lines 128--129
-$\OML/ztmcm/m/it/12 P\OT1/ztmcm/m/n/12 (3\OML/ztmcm/m/it/12 ; \OT1/ztmcm/m/n/12
- 4)\OML/ztmcm/m/it/12 ; P\OT1/ztmcm/m/n/12 (5\OML/ztmcm/m/it/12 ; \OT1/ztmcm/m/
-n/12 4)$\C19/zhsong/m/n/12/55 � \C19/zhsong/m/n/12/40  \C19/zhsong/m/n/12/49 �
- \C19/zhsong/m/n/12/46 ! \C19/zhsong/m/n/12/40 :|\C19/rm/m/n/12/26 �| \C19/zhso
-ng/m/n/12/64 { \C19/zhsong/m/n/12/60 � \C19/zhsong/m/n/12/38  \C19/zhsong/m/n/
-12/40 � � \C19/zhsong/m/n/12/62 u \C19/zhsong/m/n/12/40 � :$\OML/ztmcm/m/it/12 
-P\OT1/ztmcm/m/n/12 (1\OML/ztmcm/m/it/12 ; \OT1/ztmcm/m/n/12 2)\OML/ztmcm/m/it/1
-2 ; P\OT1/ztmcm/m/n/12 (2\OML/ztmcm/m/it/12 ; \OT1/ztmcm/m/n/12 5)\OML/ztmcm/m/
-it/12 ; P\OT1/ztmcm/m/n/12 (5\OML/ztmcm/m/it/12 ; \OT1/ztmcm/m/n/12 6)\OML/ztmc
-m/m/it/12 ; P\OT1/ztmcm/m/n/12 (8\OML/ztmcm/m/it/12 ; \OT1/ztmcm/m/n/12 4)$\C19
-/zhsong/m/n/12/41 � \C19/zhsong/m/n/12/37 O \C19/zhsong/m/n/12/58 �$\OT1/ztmcm/
-m/n/12 3\OML/ztmcm/m/it/12 ; \OT1/ztmcm/m/n/12 1\OML/ztmcm/m/it/12 ; \OT1/ztmcm
-/m/n/12 3\OML/ztmcm/m/it/12 ; \OT1/ztmcm/m/n/12 4$|\C19/rm/m/n/12/25 "|
+\OML/ztmcm/m/it/12 P\OT1/ztmcm/m/n/12 (3\OML/ztmcm/m/it/12 ; \OT1/ztmcm/m/n/12 
+4)\OML/ztmcm/m/it/12 ; P\OT1/ztmcm/m/n/12 (5\OML/ztmcm/m/it/12 ; \OT1/ztmcm/m/n
+/12 4)$\C19/zhsong/m/n/12/55 � \C19/zhsong/m/n/12/40  \C19/zhsong/m/n/12/49 � 
+\C19/zhsong/m/n/12/46 ! \C19/zhsong/m/n/12/40 :|\C19/rm/m/n/12/26 �| \C19/zhson
+g/m/n/12/64 { \C19/zhsong/m/n/12/60 � \C19/zhsong/m/n/12/38  \C19/zhsong/m/n/1
+2/40 � � \C19/zhsong/m/n/12/62 u \C19/zhsong/m/n/12/40 � :$\OML/ztmcm/m/it/12 P
+\OT1/ztmcm/m/n/12 (1\OML/ztmcm/m/it/12 ; \OT1/ztmcm/m/n/12 2)\OML/ztmcm/m/it/12
+ ; P\OT1/ztmcm/m/n/12 (2\OML/ztmcm/m/it/12 ; \OT1/ztmcm/m/n/12 5)\OML/ztmcm/m/i
+t/12 ; P\OT1/ztmcm/m/n/12 (5\OML/ztmcm/m/it/12 ; \OT1/ztmcm/m/n/12 6)\OML/ztmcm
+/m/it/12 ; P\OT1/ztmcm/m/n/12 (8\OML/ztmcm/m/it/12 ; \OT1/ztmcm/m/n/12 4)$\C19/
+zhsong/m/n/12/41 � \C19/zhsong/m/n/12/37 O \C19/zhsong/m/n/12/58 �$\OT1/ztmcm/m
+/n/12 3\OML/ztmcm/m/it/12 ; \OT1/ztmcm/m/n/12 1\OML/ztmcm/m/it/12 ; \OT1/ztmcm/
+m/n/12 3\OML/ztmcm/m/it/12 ; \OT1/ztmcm/m/n/12 4$|\C19/rm/m/n/12/25 "|
  []
 
 )
@@ -2532,10 +2513,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 44.
 
-[56 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter4/process/process33.jp
-g> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter4/process/process55.jpg
-> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter4/process/process80.jpg>
-]
+[56 <F:/大论文/李浩模板/figures/chapter4/process/process33.jpg> <F:/大�
+��文/李浩模板/figures/chapter4/process/process55.jpg> <F:/大论文/李浩
+模板/figures/chapter4/process/process80.jpg>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 44.
@@ -2544,7 +2524,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 44.
 
-[57] (E:\大论文\BIT_Thesis\李浩模板\chapter/chapter5.tex
+[57] (F:\大论文\李浩模板\chapter/chapter5.tex
 ��\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces 5\hspace {0.25em plus
  0.125em minus 0.08em}\ignorespaces \ignorespaces ��
 
@@ -2608,12 +2588,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 37.
 
-[59 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter5/panorama/jiugong_who
-le.jpg> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter5/panorama/detail_
-jiugong.jpg> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter5/panorama/sa
-nhuan_whole.jpg> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter5/panoram
-a/detail3.jpg> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter5/panorama/
-detail4.jpg>]
+[59 <F:/大论文/李浩模板/figures/chapter5/panorama/jiugong_whole.jpg> <F:
+/大论文/李浩模板/figures/chapter5/panorama/detail_jiugong.jpg> <F:/大�
+�文/李浩模板/figures/chapter5/panorama/sanhuan_whole.jpg> <F:/大论文/�
+�浩模板/figures/chapter5/panorama/detail3.jpg> <F:/大论文/李浩模板/fi
+gures/chapter5/panorama/detail4.jpg>]
 <figures/chapter5/reconstruction/experiment.png, id=1252, 1045.9075pt x 714.67p
 t>
 File: figures/chapter5/reconstruction/experiment.png Graphic file (type png)
@@ -2638,9 +2617,8 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 59.
 
-[60 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter5/reconstruction/exper
-iment.png> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter5/reconstructio
-n/time-consume.png>]
+[60 <F:/大论文/李浩模板/figures/chapter5/reconstruction/experiment.png> 
+<F:/大论文/李浩模板/figures/chapter5/reconstruction/time-consume.png>]
 <figures/chapter5/reconstruction/feature-filter1.png, id=1264, 427.5975pt x 328
 .97906pt>
 File: figures/chapter5/reconstruction/feature-filter1.png Graphic file (type pn
@@ -2700,9 +2678,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 93.
 
-[61 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter5/reconstruction/featu
-re-filter1.png> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter5/reconstr
-uction/feature-filter2.png>]
+[61 <F:/大论文/李浩模板/figures/chapter5/reconstruction/feature-filter1.
+png> <F:/大论文/李浩模板/figures/chapter5/reconstruction/feature-filter2
+.png>]
 <figures/chapter5/reconstruction/sparse_perspect1.png, id=1296, 991.705pt x 510
 .90875pt>
 File: figures/chapter5/reconstruction/sparse_perspect1.png Graphic file (type p
@@ -2729,11 +2707,10 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 154.
 
-[62 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter5/reconstruction/spars
-e_perspect.png> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter5/reconstr
-uction/dense_perspect.png> <E:/大论文/BIT_Thesis/李浩模板/figures/chapte
-r5/reconstruction/DJI_0104.JPG> <E:/大论文/BIT_Thesis/李浩模板/figures/c
-hapter5/reconstruction/sixbuild.PNG>]
+[62 <F:/大论文/李浩模板/figures/chapter5/reconstruction/sparse_perspect.
+png> <F:/大论文/李浩模板/figures/chapter5/reconstruction/dense_perspect.
+png> <F:/大论文/李浩模板/figures/chapter5/reconstruction/DJI_0104.JPG> <
+F:/大论文/李浩模板/figures/chapter5/reconstruction/sixbuild.PNG>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 172.
@@ -2742,9 +2719,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 172.
 
-[63 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter5/reconstruction/spars
-e_perspect1.png> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter5/reconst
-ruction/dense_perspect1.png>]
+[63 <F:/大论文/李浩模板/figures/chapter5/reconstruction/sparse_perspect1
+.png> <F:/大论文/李浩模板/figures/chapter5/reconstruction/dense_perspect
+1.png>]
 <figures/chapter5/extraction/RGBOriginal.jpg, id=1315, 1541.76pt x 2192.19pt>
 File: figures/chapter5/extraction/RGBOriginal.jpg Graphic file (type jpg)
 
@@ -2817,14 +2794,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 213.
 
-[64 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter5/extraction/RGBOrigin
-al.jpg> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter5/extraction/openo
-peration.jpg> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter5/extraction
-/removehouse.jpg> <E:/大论文/BIT_Thesis/李浩模板/figures/chapter5/extrac
-tion/firstmiddlecenter.jpg> <E:/大论文/BIT_Thesis/李浩模板/figures/chapt
-er5/extraction/finalmiddlecenter.jpg> <E:/大论文/BIT_Thesis/李浩模板/fig
-ures/chapter5/extraction/result_SIFT.jpg> <E:/大论文/BIT_Thesis/李浩模板
-/figures/chapter5/extraction/manual_real_road.jpg>]
+[64 <F:/大论文/李浩模板/figures/chapter5/extraction/RGBOriginal.jpg> <F:
+/大论文/李浩模板/figures/chapter5/extraction/openoperation.jpg> <F:/大�
+��文/李浩模板/figures/chapter5/extraction/removehouse.jpg> <F:/大论文/�
+��浩模板/figures/chapter5/extraction/firstmiddlecenter.jpg> <F:/大论文/�
+�浩模板/figures/chapter5/extraction/finalmiddlecenter.jpg> <F:/大论文/李
+浩模板/figures/chapter5/extraction/result_SIFT.jpg> <F:/大论文/李浩模�
+��/figures/chapter5/extraction/manual_real_road.jpg>]
 <figures/chapter5/extraction/result_chart.png, id=1348, 422.32782pt x 261.22594
 pt>
 File: figures/chapter5/extraction/result_chart.png Graphic file (type png)
@@ -2841,8 +2817,8 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 223.
 
-[65 <E:/大论文/BIT_Thesis/李浩模板/figures/chapter5/extraction/result_ch
-art.png (PNG copy)>]
+[65 <F:/大论文/李浩模板/figures/chapter5/extraction/result_chart.png (PN
+G copy)>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 225.
@@ -2853,7 +2829,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 [66])
 No file chapter/chapter6.tex.
-(E:\大论文\BIT_Thesis\李浩模板\chapter/chap-sum.tex
+(F:\大论文\李浩模板\chapter/chap-sum.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 26.
@@ -2877,7 +2853,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 47.
 
-[68] (E:\大论文\BIT_Thesis\李浩模板\chapter/chap-bibs.tex<<c1929.cmap>>
+[68] (F:\大论文\李浩模板\chapter/chap-bibs.tex<<c1929.cmap>>
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 50.
@@ -2923,7 +2899,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 48.
 
-[72] (E:\大论文\BIT_Thesis\李浩模板\chapter/chap-pubs.tex
+[72] (F:\大论文\李浩模板\chapter/chap-pubs.tex
 Overfull \hbox (6.9625pt too wide) in paragraph at lines 14--15
 []\C19/zhsong/m/n/12/61 � \C19/zhsong/m/n/12/64 � \C19/zhsong/m/n/12/38 � \C19/
 zhsong/m/n/12/48 � \C19/zhsong/m/n/12/51  \C19/zhsong/m/n/12/60 . \C19/rm/m/n/
@@ -2980,7 +2956,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 49.
 
-[74] (E:\大论文\BIT_Thesis\李浩模板\chapter/chap-ack.tex)
+[74] (F:\大论文\李浩模板\chapter/chap-ack.tex)
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 50.
@@ -2996,22 +2972,28 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 53.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 53.
- (E:\大论文\BIT_Thesis\李浩模板\Thesis.aux
-(E:\大论文\BIT_Thesis\李浩模板\chapter/chapter1.aux)
-(E:\大论文\BIT_Thesis\李浩模板\chapter/chapter2.aux)
-(E:\大论文\BIT_Thesis\李浩模板\chapter/chapter3.aux)
-(E:\大论文\BIT_Thesis\李浩模板\chapter/chapter4.aux)
-(E:\大论文\BIT_Thesis\李浩模板\chapter/chapter5.aux)
-(E:\大论文\BIT_Thesis\李浩模板\chapter/chapter6.aux)
-(E:\大论文\BIT_Thesis\李浩模板\chapter/chap-sum.aux)
-(E:\大论文\BIT_Thesis\李浩模板\chapter/chap-bibs.aux)
-(E:\大论文\BIT_Thesis\李浩模板\chapter/chap-pubs.aux)
-(E:\大论文\BIT_Thesis\李浩模板\chapter/chap-ack.aux))
+ (F:\大论文\李浩模板\thesis.aux
+(F:\大论文\李浩模板\chapter/chapter1.aux)
+(F:\大论文\李浩模板\chapter/chapter2.aux)
+(F:\大论文\李浩模板\chapter/chapter3.aux)
+(F:\大论文\李浩模板\chapter/chapter4.aux)
+(F:\大论文\李浩模板\chapter/chapter5.aux)
+(F:\大论文\李浩模板\chapter/chapter6.aux)
+(F:\大论文\李浩模板\chapter/chap-sum.aux)
+(F:\大论文\李浩模板\chapter/chap-bibs.aux)
+(F:\大论文\李浩模板\chapter/chap-pubs.aux)
+(F:\大论文\李浩模板\chapter/chap-ack.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 53.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 53.
-Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 9003E46D4DC697F5FF97B6B516A53ED9;3843.
 
+
+Package rerunfilecheck Warning: File `thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `thesis.out':
+(rerunfilecheck)             Before: 83B5A311C57B6287DDD74CDDB8F2D93C;8647
+(rerunfilecheck)             After:  9003E46D4DC697F5FF97B6B516A53ED9;3843.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.28pt have occurred.
@@ -3021,15 +3003,15 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 22740 strings out of 495354
- 368107 string characters out of 3183858
- 443713 words of memory out of 3000000
- 24234 multiletter control sequences out of 15000+200000
- 168875 words of font info for 492 fonts, out of 3000000 for 9000
+ 22728 strings out of 495354
+ 366880 string characters out of 3183859
+ 443694 words of memory out of 3000000
+ 24222 multiletter control sequences out of 15000+200000
+ 169655 words of font info for 492 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 42i,21n,58p,1300b,1484s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,21n,58p,1263b,1484s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/s
-imsun.ttc><C:/WINDOWS/Fonts/simsun.ttc>{D:/CTEX/MiKTeX/fonts/enc/dvips/fontname
+imsun.ttc><C:/WINDOWS/Fonts/simsun.ttc>{C:/CTEX/MiKTeX/fonts/enc/dvips/fontname
 /8r.enc}<C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/F
 onts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/W
 INDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.t
@@ -3046,21 +3028,21 @@ Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/
 WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.
 ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts
 /simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDO
-WS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><
-C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simh
+WS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><
+C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simh
 ei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fo
 nts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WI
 NDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.tt
 f><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/s
 imhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS
-/Fonts/simhei.ttf><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:
-/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/CTEX/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmr10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><D:/CTEX/MiKTeX/fon
-ts/type1/urw/symbol/usyr.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><
-D:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw
+/Fonts/simhei.ttf><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:
+/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/CTEX/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmr10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmsy10.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/CTEX/MiKTeX/fon
+ts/type1/urw/symbol/usyr.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><
+C:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw
 /times/utmri8a.pfb>
-Output written on Thesis.pdf (87 pages, 52334194 bytes).
+Output written on thesis.pdf (87 pages, 52322450 bytes).
 PDF statistics:
  1715 PDF objects out of 1728 (max. 8388607)
  384 named destinations out of 1000 (max. 500000)

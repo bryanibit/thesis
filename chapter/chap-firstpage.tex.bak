@@ -18,16 +18,16 @@
 		\begin{center}
 			
 				%\bf  \LARGE{靶标提取}
-				\heiti \xiaoerzi {立体视觉测量系统研究与分布式实现}
+				\heiti \xiaoerzi {适用于无人驾驶车辆的地图构建与道路提取算法研究}
 							
 				\quad\\
 				\quad\\
 			    \quad\\
                 \quad\\
-			\heiti \xiaoerzi {李洁}
+			\heiti \xiaoerzi {于华超}
 			\quad\\
 			\quad\\
-			\songti \sihaozi{2017 年\ 6 月}
+			\songti \sihaozi{2017 年\ 12 月}
 		\end{center}
 	}
 

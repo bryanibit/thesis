@@ -34,7 +34,7 @@
 指~~导~~教~~师&\underline{\hspace{15pt}王美玲教授\hspace{15pt}}\\
 答辩委员会主席&\underline{\hspace{15pt}孙常胜教授\hspace{15pt}}\\
 申请学位级别&\underline{\hspace{20pt}工学硕士\hspace{20pt}}\\
-学~~科~~专~~业&\underline{\hspace{10pt}控制科学与工程\hspace{10pt}}\\
+学~~科~~专~~业&\underline{\hspace{2pt}控制科学与工程\hspace{2pt}}\\
 学位授予单位&\underline{\hspace{8pt}北京理工大学\hspace{8pt}}\\
 论文答辩时间&\underline{\hspace{14pt}2017 年\ 12 月\hspace{14pt}}
 \end{tabular}
@@ -60,14 +60,14 @@
 {\begin{spacing}{2}
 \xiaosanzi
 \begin{tabular}{p{12em}p{12em}}
-Candidate Name:&\underline{\hspace{87pt}Huachao Yu\hspace{86pt}}\\
-School or Department:&\underline{\hspace{37pt}School of Automation\hspace{37pt}}\\
-Faculty Mentor:&\underline{\hspace{80pt}Meiling Wang\hspace{79pt}}\\
-Chair, Thesis Committee:&\underline{\hspace{49pt}Prof. Changsheng Sun\hspace{49pt}}\\
-Degree Applied:&\underline{\hspace{36.5pt} Master of Engineering science\hspace{36.5pt}}\\
-Major:&\underline{\hspace{42pt}Control Science and Engineering\hspace{43pt}}\\
-Degree by:&\underline{\hspace{10.5pt}Beijing Institute of Technology\hspace{10.5pt}}\\
-The Date of Defence:&\underline{\hspace{72pt}December, 2017\hspace{72pt}}
+Candidate Name:&\underline{\hspace{0pt}Huachao Yu\hspace{0pt}}\\
+School or Department:&\underline{\hspace{0pt}School of Automation\hspace{0pt}}\\
+Faculty Mentor:&\underline{\hspace{0pt}Prof. Meiling Wang\hspace{0pt}}\\
+Chair, Thesis Committee:&\underline{\hspace{0pt}Prof. Changsheng Sun\hspace{0pt}}\\
+Degree Applied:&\underline{\hspace{0pt}Master of science\hspace{0pt}}\\
+Major:&\underline{\hspace{0pt}Control Science and Engineering\hspace{0pt}}\\
+Degree by:&\underline{\hspace{0pt}Beijing Institute of Technology\hspace{0pt}}\\
+The Date of Defence:&\underline{\hspace{0pt}December, 2017\hspace{0pt}}
 \end{tabular}
 \end{spacing}
 }

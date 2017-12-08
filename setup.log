@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2017.3.31)  5 JUN 2017 16:58
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2017.12.8)  8 DEC 2017 16:54
 entering extended mode
-**C:/Users/LJ/Desktop/李洁-latex论文/setup.tex
-(C:/Users/LJ/Desktop/李洁-latex论文/setup.tex
+**F:/大论文/李浩模板/setup.tex
+(F:/大论文/李浩模板/setup.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
 
@@ -12,23 +12,23 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.6 \usepackage{
-                amssymb, amsmath,color}
+                diagbox}
 ? 
 ! Emergency stop.
  ...                                              
                                                   
 l.6 \usepackage{
-                amssymb, amsmath,color}
+                diagbox}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
  
 Here is how much of TeX's memory you used:
  7 strings out of 495354
- 331 string characters out of 3183859
+ 292 string characters out of 3183859
  44842 words of memory out of 3000000
  3276 multiletter control sequences out of 15000+200000
  3640 words of font info for 14 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 5i,0n,5p,93b,14s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 5i,0n,5p,80b,14s stack positions out of 5000i,500n,10000p,200000b,50000s
 !  ==> Fatal error occurred, no output PDF file produced!
