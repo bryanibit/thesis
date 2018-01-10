@@ -15,14 +15,13 @@
 而后将全景图像由球面坐标系转换到车体坐标系中，得到以UGV为中心俯视效果的逆透视投影（IPM）图；之后依据车辆定位信息将
 一系列IPM图拼接为大范围二维场景地图。基于此，在GIS数据库中构建包含道路拓扑网络的电子地图，并添加道路的各种属性信息，为UGV全局路径规划与自主导航提供道路及先验信息。
 
-2. 本文介绍基于多视图几何算法对航拍图像进行地理空间三维重建的方法，首先提取航拍数据集中的图像特征点，而后基于近似最近邻算法计算特征点的匹配关系，并采用对极约束过滤错误的匹配点，完成无序图片的“有序化”。其后从匹配特征点数目最多的两张图像开始重建，并增量式的加入每一张图像，最终完成整个地理空间的三维重建。在相机位姿与3D点坐标的优化过程中，相对于传统的最小化重投影误差，本文增加了最小化相机中心距离，优化相机的旋转与平移矩阵。针对航拍图像分辨较高的特点，采用基于块的点云稠密方法计算图像的深度图，最后通过深度图融合得到稠密点云地图。
+2. 本文介绍基于多视图几何算法对航拍图像进行地理空间三维重建的方法，首先提取航拍数据集中的图像特征点，而后基于近似最近邻算法计算特征点的匹配关系，并采用对极约束过滤错误的匹配点，完成无序图片的“有序化”。其后使用多视图几何算法，从匹配特征点数目最多的两张图像开始重建，并增量式地加入其余图像，最终完成整个地理空间的三维重建过程。在相机位姿与3D点坐标的优化过程中，相对于传统的最小化重投影误差，本文增加了最小化相机中心距离，优化相机的旋转与平移矩阵。针对航拍图像分辨较高的特点，采用基于块的点云稠密方法计算图像的深度图，最后通过深度图融合得到稠密点云地图。
 
-3. 本文提出一种从二维图像中提取道路的方法，首先选取一部分图像的道路区域作为训练样本，根据道路的光谱特征，使用最小二乘法拟合训练样本得到道路二值图像。其次，采用开闭运算等算法平滑二值图，并设计多边形检测的方法去除房屋边缘等非道路区域的干扰。由于拓扑道路网络更易于UGV全局路径规划使用，所以采用拓扑细化的方法将道路二值图像转化为由单像素构成的道路网络，最后跟据拓扑长度去除单像素道路中的短枝丫，得到最终的拓扑路网。
+3. 基于上述工作，提出一种从二维图像中提取道路的方法，首先选取一部分图像的道路区域作为训练样本，根据道路的光谱特征，使用最小二乘法拟合训练样本得到道路二值图像。其次，采用开闭运算等多种算法平滑二值图，设计多边形检测的方法以去除房屋边缘等非道路区域的干扰。由于拓扑道路网络更易于UGV 进行全局路径规划，所以采用拓扑细化的方法将道路二值图像转化为由单像素构成的道路网络，最后跟据道路枝丫长度去除单像素道路中的短枝丫，得到最终的拓扑路网。
 
-4. 本文介绍了地图构建、道路提取方法的实验平台搭建，首先展示构建的大范围二维地图以及应用于UGV全局路径规划的效果，而后通过两个图像数据集
-得到三维地理空间地图并分析该方法构建地图的精度，最后计算得到道路拓扑的提取精度，通过实验验证本文提出的方法在不同场景的有效性。
+4. 为验证本文算法的有效性，搭建地图构建、道路提取的实验平台，并采用多个数据集验证算法的效率和精度。首先本文展示构建的大范围二维地图以及应用于UGV全局路径规划的效果，而后通过两个图像数据集得到三维地理空间地图并分析该方法构建地图的精度，最后计算得到道路拓扑的提取精度，通过实验验证本文提出的方法在不同场景的有效性。
 
-\vskip 0.3cm \textbf{关键词}：Structure from Motion（SfM），三维重建，无人驾驶车辆，地图构建，道路提取
+\vskip 0.3cm \textbf{关键词}：运动推断结构 三维重建 无人驾驶车辆 地图构建 道路提取
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -35,47 +34,43 @@
 
 The digital maps provide road information for Unmanned Ground Vehicles (UGV) positioning, layout estimation and holistic scene
 understanding. It is an important part of UGV's self-decision and global path planning. Most current digital maps are still inadequate for
-advanced applications in unstructured environments. Lack of up-to-date information and detailed road networks are among the most important
-shortcomings. That is unable to meet the need of UGV's autonomous navigation. Therefore, we need to design an efficient map-building
-method for UGV. Most UGV's rely on road networks of the detailed maps of the environment to facilitate navigation and perception.
-However, the roads in the map can not applied to UGV's navigation directly, while the methods of manual intervention limits the
-of applicability of current approaches. It is urgent to extract road topological networks from the building map for improving the capabilities
-of UGV's autonomous navigation and planning.
+advanced applications in unstructured environments. Lack of up-to-date information and detailed road networks is among the most important
+shortcomings. This can not meet the need of UGV's autonomous navigation. Therefore, we need to design an efficient map-building
+method for UGV. Most UGVs rely on road networks of the detailed maps of the environment to facilitate navigation and perception.
+However, the roads in the map can not applied to UGV's navigation directly, while the method of manual intervention limits the
+of applicability of current approaches. It is urgent to extract road topological networks from the building map for improving the capabilities of UGV's autonomous navigation and planning.
 
 In order to solve the problem, this paper aims to generate a two-dimensional or three-dimensional map from a serial of images and to
 extract the road area, so that UGV can accomplish the task of planning based on prior information.
-In this paper, the construction of the 2D and 3D map and the extraction of the road from a 2D image are described.
+In this paper, the construction of the 2D and 3D map and the extraction of the roads from a 2D image are described.
 
 1. The paper presents a method of building a 2D map using panoramic images. The panoramic camera and the high-precision positioning system
 are fixed on the unmanned vehicle, which can acquire the panoramic images and the corresponding vehicle positioning information.
 The panoramic image is converted from the spherical coordinate system to the vehicle-based coordinate system to obtains
 an overhead view centered on the unmanned vehicle, which is called inverse perspective mapping (IPM).
-And then a series of IPM images are spliced into a large-scale 2D map according to the position from
+And then a series of IPM images are spliced into a large-scale 2D map according to the positions from
 high-precision positioning system. Based on the map, topology network of 2D map is created after adding a
-variety of attributes of roads. The map is regarded as the basis on unmanned navigation and decisions.
+variety of attributes of roads in the GIS database. The map is regarded as the basis for unmanned navigation and decisions, offering the road and other prior information.
 
-2. A method to reconstruct the 3D structure of geospatial space from aerial images using multi-view geometric is presented.
+2. A method is presented to reconstruct the 3D structure of geospatial space from aerial images using multi-view geometric.
 It includes feature extraction from the aerial image datasets, and feature matching of different images according to the feature points.
-Epipolar constraint is adopted to remove false matches so that the unordered datasets become "orderly". Then we initialize 3D points
-and camera poses with two images. The rest of the images are incrementally added to produce more 3D points.
+Epipolar constraint is adopted to remove false matches so that the unordered datasets become "orderly". Afterwards, the multi-view geometry algorithm was used to reconstruct two images with the largest number of matching feature points. And then the rest of the images are added incrementally, completing the 3D reconstruction of the entire geospatial space finally.
 In the process of optimization for 3D points and camera poses, the paper not only minimizes the re-projection error of 3D points,
 but also minimizes the distances between the camera centers and the GPS positions.
-The optimization operations refine the camera poses and sparse point cloud composed of 3D points to decrease the error of models.
+The optimization operations refine the camera poses and sparse point clouds composed of 3D points to decrease the error of models.
 The dense point clouds are obtained by calculating the depth-maps and merging them, which can be applied to UGV's navigation and planning.
 
-3. In the paper, a method of extracting roads from 2D images is proposed. Firstly, a part of road image is chosen as the training sample
-the least square method is applied to. And then spectral features of the training sample are fitted and applied to the other sample to obtain
-the road binary image. Secondly, open and close algorithms are adopted to smooth binary image. And the method of polygon detection is
+3. Based on the above work, a method of extracting roads from 2D images is proposed. Firstly, parts of a road image are chosen as the training sample that the least square method is applied to. And then spectral features of the training sample are fitted and applied to the other sample to obtain the road binary image. Secondly, open and close algorithms are adopted to smooth the binary image. And the method of polygon detection is
 designed to remove the interference of non-road areas, such as house edges. Then the road binary image is converted into a road network
 composed of single pixels by topological thinning. Finally, the final topology of the road network is gained by removing the short branches
 in the road network.
 
-4. In this paper, we introduce the construction of the experimental platform of map building and road extraction.
-And then the effect of the 2D constructed map on the UGV's global path planning is demonstrated through experiments.
+4. In order to validate the effectiveness of the proposed algorithm, the experimental platforms for map construction and road extraction are set up. The efficiency and accuracy of the algorithm are verified by using multiple datasets.
+Firstly, the effect of the 2D constructed map on the UGV's global path planning is demonstrated through experiments.
 By using two image datasets, we can reconstruct them to 3D geospatial maps and analyze the results of experiments to get
 the accuracy of the map-building method. Finally, the precision of the road topology is calculated. The validity of the
 proposed method in different scenarios is verified by experiments.
 
 \textbf{Keywords}:\
-Structure from Motion（SfM）, 3D reconstruction, UGV, Map building, Road extraction
+Structure from Motion, 3D reconstruction, UGV, Map building, Road extraction
 }
