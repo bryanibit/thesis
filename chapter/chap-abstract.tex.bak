@@ -35,10 +35,9 @@
 The digital maps provide road information for Unmanned Ground Vehicles (UGV) positioning, layout estimation and holistic scene
 understanding. It is an important part of UGV's self-decision and global path planning. Most current digital maps are still inadequate for
 advanced applications in unstructured environments. Lack of up-to-date information and detailed road networks is among the most important
-shortcomings. This can not meet the need of UGV's autonomous navigation. Therefore, we need to design an efficient map-building
+shortcomings. This cannot meet the need of UGV's autonomous navigation. Therefore, we need to design an efficient map-building
 method for UGV. Most UGVs rely on road networks of the detailed maps of the environment to facilitate navigation and perception.
-However, the roads in the map can not applied to UGV's navigation directly, while the method of manual intervention limits the
-of applicability of current approaches. It is urgent to extract road topological networks from the building map for improving the capabilities of UGV's autonomous navigation and planning.
+However, the roads in the map can not applied to UGV's navigation directly, while the method of manual intervention limits the applicability of current approaches. It is urgent to extract road topological networks from the built map to improve the capabilities of UGV's autonomous navigation and planning.
 
 In order to solve the problem, this paper aims to generate a two-dimensional or three-dimensional map from a serial of images and to
 extract the road area, so that UGV can accomplish the task of planning based on prior information.
@@ -46,7 +45,7 @@ In this paper, the construction of the 2D and 3D map and the extraction of the r
 
 1. The paper presents a method of building a 2D map using panoramic images. The panoramic camera and the high-precision positioning system
 are fixed on the unmanned vehicle, which can acquire the panoramic images and the corresponding vehicle positioning information.
-The panoramic image is converted from the spherical coordinate system to the vehicle-based coordinate system to obtains
+The panoramic image is converted from the spherical coordinate system to the vehicle-based coordinate system to obtain
 an overhead view centered on the unmanned vehicle, which is called inverse perspective mapping (IPM).
 And then a series of IPM images are spliced into a large-scale 2D map according to the positions from
 high-precision positioning system. Based on the map, topology network of 2D map is created after adding a
@@ -60,9 +59,9 @@ but also minimizes the distances between the camera centers and the GPS position
 The optimization operations refine the camera poses and sparse point clouds composed of 3D points to decrease the error of models.
 The dense point clouds are obtained by calculating the depth-maps and merging them, which can be applied to UGV's navigation and planning.
 
-3. Based on the above work, a method of extracting roads from 2D images is proposed. Firstly, parts of a road image are chosen as the training sample that the least square method is applied to. And then spectral features of the training sample are fitted and applied to the other sample to obtain the road binary image. Secondly, open and close algorithms are adopted to smooth the binary image. And the method of polygon detection is
+3. Based on the above work, a method of extracting roads from 2D images is proposed. Firstly, a serial of road areas in the image are chosen as the training sample which the least square method is applied to. And then spectral features of the training sample are fitted and applied to the other sample to obtain the road binary image. Secondly, open and close algorithms are adopted to smooth the binary image. And the method of polygon detection is
 designed to remove the interference of non-road areas, such as house edges. Then the road binary image is converted into a road network
-composed of single pixels by topological thinning. Finally, the final topology of the road network is gained by removing the short branches
+composed of single pixels through topological thinning. Finally, the final topology of the road network is gained by removing the short branches
 in the road network.
 
 4. In order to validate the effectiveness of the proposed algorithm, the experimental platforms for map construction and road extraction are set up. The efficiency and accuracy of the algorithm are verified by using multiple datasets.
