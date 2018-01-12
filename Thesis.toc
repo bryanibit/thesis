@@ -36,7 +36,7 @@
 \contentsline {subsection}{\numberline {3.8.1}深度图计算}{\selfontsize {9pt}50}{subsection.3.8.1}
 \contentsline {subsection}{\numberline {3.8.2}深度图融合}{\selfontsize {9pt}53}{subsection.3.8.2}
 \contentsline {section}{\numberline {3.9}本章小结}{\selfontsize {9pt}53}{section.3.9}
-\contentsline {chapter}{\numberline {第\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces 4\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces \ignorespaces 章\hspace {0.3em}}二维图像中的道路提取}{\selfontsize {9pt}54}{chapter.4}
+\contentsline {chapter}{\numberline {第\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces 4\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces \ignorespaces 章\hspace {0.3em}}二维地图中的道路提取}{\selfontsize {9pt}54}{chapter.4}
 \contentsline {section}{\numberline {4.1}引言}{\selfontsize {9pt}54}{section.4.1}
 \contentsline {section}{\numberline {4.2}图像二值化}{\selfontsize {9pt}54}{section.4.2}
 \contentsline {section}{\numberline {4.3}非道路区域移除}{\selfontsize {9pt}55}{section.4.3}

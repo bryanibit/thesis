@@ -80,7 +80,7 @@
 	\label{fig:wulan} %% label for entire figure
 \end{figure}
 
-如图~\ref{fig:wulan}所示，使用$54$张DJI M100无人机航拍图像得到的稀疏点云（图~\ref{fig:sparse}）与稠密点云（图~\ref{fig:dense}），稀疏点云显示在RVIZ 中，其中每个点都是提取的SIFT$\;$2D特征点还原的3D点，稠密点云是使用基于深度图融合的方法得到并显示在Meshlab中。为了更好的衡量构图的精度，本文根据Turner\cite{Turner-Automated}测量构图精度的方法，采用设置地面控制点的方式，如图~\ref{example-gcp-image}所示，其中红色圆圈标记的白色纸张为设置的控制点。设置地面控制点的操作就是在构图区域使用高精度卫星定位系统测试真实场景某点（白色纸张的中心）的经纬度坐标，而后标记该场景在二维图像中对应点的像素坐标（白纸中心成像后对应的像素坐标），如表~\ref{table:gcp} 所示。从而在构建三维地图的同时，根据已知控制点的绝对地理位置坐标与其像素坐标得到整个三维模型的地理空间尺度，可以直接作为GIS 数据库的输入数据，形成可以使用的地图信息。
+如图~\ref{fig:wulan}所示，使用$54$张DJI M100无人机航拍图像得到的稀疏点云（图~\ref{fig:sparse}）与稠密点云（图~\ref{fig:dense}），稀疏点云显示在RVIZ 中，其中每个点都是提取的SIFT$\;$2D特征点还原的3D点，稠密点云是使用基于深度图融合的方法得到并显示在Meshlab中。为了更好地衡量构图的精度，本文根据Turner\cite{Turner-Automated}测量构图精度的方法，采用设置地面控制点的方式，如图~\ref{example-gcp-image}所示，其中红色圆圈标记的白色纸张为设置的控制点。设置地面控制点的操作就是在构图区域使用高精度卫星定位系统测试真实场景某点（白色纸张的中心）的经纬度坐标，而后标记该场景在二维图像中对应点的像素坐标（白纸中心成像后对应的像素坐标），如表~\ref{table:gcp} 所示。从而在构建三维地图的同时，根据已知控制点的绝对地理位置坐标与其像素坐标得到整个三维模型的地理空间尺度，可以直接作为GIS 数据库的输入数据，形成可以使用的地图信息。
 
 \begin{figure}[!htbp]
 \centering
@@ -99,18 +99,18 @@
 	\centering
 	\begin{tabular}{c|cccc}
 		\hline
-		\diagbox[dir=SE]{\bfseries 图片名称}{\bfseries 坐标名称} & \bfseries 东向 & \bfseries 北向 & \bfseries 图像X方向 & \bfseries 图像Y方向\\
+		\diagbox[dir=SE]{图片名称}{坐标名称} &  东向\m &  北向\m &  图像X方向\px &  图像Y方向\px \\
 		\hline
 
-		\bfseries DJI\_0050.JPG &  $415462.60$ &  $4401226.15$ & $2706$ & $1615$\\
+		 DJI\_0050.JPG &  $415462.60$ &  $4401226.15$ & $2706$ & $1615$\\
 
-		\bfseries DJI\_0054.JPG & $415462.60$ & $4401226.15$ & $1312$ & $438$\\
+		 DJI\_0054.JPG & $415462.60$ & $4401226.15$ & $1312$ & $438$\\
 
-        \bfseries DJI\_0052.JPG & $415462.60$ & $4401226.15$ & $2355$ & $440$\\
+         DJI\_0052.JPG & $415462.60$ & $4401226.15$ & $2355$ & $440$\\
 
-        \bfseries DJI\_0077.JPG & $415489.00$ & $4401201.80$ & $1011$ & $1033$\\
+         DJI\_0077.JPG & $415489.00$ & $4401201.80$ & $1011$ & $1033$\\
 
-        \bfseries $\cdots\cdots$ & $\cdots\cdots$ & $\cdots\cdots$ & $\cdots\cdots$\\
+         $\cdots\cdots$ & $\cdots\cdots$ & $\cdots\cdots$ & $\cdots\cdots$\\
 		\hline
 	\end{tabular}
 	\label{table:gcp}
@@ -122,7 +122,7 @@
 	\centering
 	\begin{tabular}{cccc}
 		\hline
-		\bfseries 控制点序号 & \bfseries 东向误差 & \bfseries 北向误差 & \bfseries 绝对误差\\
+		\bfseries 控制点序号 & \bfseries 东向误差/m & \bfseries 北向误差/m & \bfseries 绝对误差/m\\
 		\hline
 %		\hline
 		\bfseries 0 &  $0.093$ &  $0.095$ & $0.132$ \\
@@ -157,7 +157,7 @@
 	\centering
 	\begin{tabular}{cccc}
 		\hline
-		\bfseries 控制点序号 & \bfseries 东向误差 & \bfseries 北向误差 & \bfseries 绝对误差\\
+		\bfseries 控制点序号 & \bfseries 东向误差/m & \bfseries 北向误差/m & \bfseries 绝对误差/m\\
 		\hline
 %		\hline
 		\bfseries 0 & $0.184$ & $0.378$ & $0.421$ \\
