@@ -18,14 +18,13 @@
 
 \bibitem{Mattyus-Enhancing-road-maps}
 Mattyus G, Wang S, Fidler S, et al. Enhancing Road Maps by Parsing Aerial Images Around the World[C]. IEEE International Conference on Computer Vision. IEEE, 2015:1689-1697.
+
 \bibitem{Mur-Artal-ORB-SLAM}
 Mur-Artal R, Montiel J M M, Tardos J D. ORB-SLAM: a versatile and accurate monocular SLAM system[J]. IEEE Transactions on Robotics, 2015, 31(5): 1147-1163.
 
 \bibitem{Engel-LSD-SLAM}
 Engel J, Schops T, Cremers D. LSD-SLAM: Large-scale direct monocular SLAM[C]. European Conference on Computer Vision. Springer, Cham, 2014: 834-849.
 
-\bibitem{Leonard-concurrent}
-Leonard J J. Large-scale concurrent mapping and localization[C]. Proceedings of SPIE. 2000, 4196: 370-376.
 \bibitem{Zhang-LOAM}
 Zhang J, Singh S. LOAM: Lidar Odometry and Mapping in Real-time[C]. Robotics: Science and Systems. 2014, 2.
 \bibitem{Carrivick-Structure-from-Motion}
@@ -39,8 +38,8 @@ Jianhua Wang, Qiming Qin, Xiucheng Yang, Jun Wang, Xin Ye, Xuebin Qin. Automated
 宋晓虎, 朱纪洪. 基于OpenStreetMap和90 m SRTM的地面站导航电子地图实现[J]. 地球信息科学学报, 2017, 19(7):901-908.
 \bibitem{liyu-jiguagn}
 李玉. 基于3D激光点云的无人车城市环境SLAM问题研究[D]. 北京理工大学, 2016.
-\bibitem{qiufan-semantic}
-Fan Q, Yi Y, Hao L, et al. Semantic motion segmentation for urban dynamic scene understanding[C]. Automation Science and Engineering (CASE), 2016 IEEE International Conference on. IEEE, 2016: 497-502.
+%\bibitem{qiufan-semantic}
+%Fan Q, Yi Y, Hao L, et al. Semantic motion segmentation for urban dynamic scene understanding[C]. Automation Science and Engineering (CASE), 2016 IEEE International Conference on. IEEE, 2016: 497-502.
 \bibitem{duanfeixu-wuren}
 段华旭, 闫飞, 庄严, 等. 无人车基于双目视觉的同时定位与地图构建[J]. 华中科技大学学报: 自然科学版, 2015 (S1): 319-323.
 \bibitem{zhangyi-wuren}
@@ -59,6 +58,8 @@ Fan Q, Yi Y, Hao L, et al. Semantic motion segmentation for urban dynamic scene 
 马跃龙, 赵勇, 曹雪峰. 一种基于单目 SLAM 的无人机序列图像拼接方法[J]. 系统仿真学报, 2016 (2016 年 10): 2349-2355.
 \bibitem{yangxianghong-wurenji}
 杨祥红, 王希彬. 无人机主动 SLAM 技术研究[J]. 系统仿真技术, 2016 (2016 年 04): 283-287.
+\bibitem{Leonard-concurrent}
+Leonard J J. Large-scale concurrent mapping and localization[C]. Proceedings of SPIE. 2000, 4196: 370-376.
 
 \bibitem{Cole-laser}
 Cole D M, Newman P M. Using laser range data for 3D SLAM in outdoor environments[C]. Robotics and Automation, 2006. ICRA 2006. Proceedings 2006 IEEE International Conference on. IEEE, 2006: 1556-1563.
@@ -90,8 +91,6 @@ Wegner J D, Montoya-Zegarra J A, Schindler K. A Higher-Order CRF Model for Road 
 \bibitem{Mattyus-Fine-Grained}
 Mattyus G, Wang S, Fidler S, et al. HD Maps: Fine-Grained Road Segmentation by Parsing Ground and Aerial Images[C]. Computer Vision and Pattern Recognition. IEEE, 2016:3611-3619.
 
-
-
 \bibitem{Lowe-DistinctiveImageFeatures}
 Lowe D G, Lowe D G. Distinctive Image Features from Scale-Invariant Keypoints[J]. International Journal of Computer Vision, 2004, 60(2):91-110.
 
@@ -102,27 +101,29 @@ Bay H, Ess A, Tuytelaars T, et al. Speeded-Up Robust Features (SURF)[J]. Compute
 Rublee E, Rabaud V, Konolige K, et al. ORB: An efficient alternative to SIFT or SURF[C]. IEEE International Conference on Computer Vision. IEEE, 2012:2564-2571.
 
 \bibitem{slam14}
-高翔, 张涛等, 视觉SLAM十四讲：从理论到实践[B]. 电子工业出版社, 2017-3:138
-
-\bibitem{Rosten-FAST}
-Rosten E, Drummond T. Machine learning for high-speed corner detection[J]. Computer Vision–ECCV 2006, 2006: 430-443.
+高翔, 张涛等, 视觉SLAM十四讲：从理论到实践[B]. 电子工业出版社, 2017-3:138.
 
 \bibitem{Harris-corner}
 Harris C, Stephens M. A combined corner and edge detector[C]. Alvey vision conference. 1988, 15(50): 10.5244.
 
+\bibitem{Rosten-FAST}
+Rosten E, Drummond T. Machine learning for high-speed corner detection[J]. Computer Vision–ECCV 2006, 2006: 430-443.
+
 \bibitem{Lindeberg-Feature detection}
 Lindeberg, T.: Feature detection with automatic scale selection. Int. J. Comput. Vis. 30(2),
-79–116 (1998)
+79–116 (1998).
 
 \bibitem{Lowe-ObjectRecognition}
 Lowe D G. Object Recognition from Local Scale-Invariant Features[C].  iccv. IEEE Computer Society, 1999:1150.
 
 \bibitem{Richard-MultipleView}
-Multiple View Geometry in Computer Vision Second Edition, Richard Hartley and Andrew Zisserman, Cambridge University Press, March 2004:105
+Multiple View Geometry in Computer Vision Second Edition, Richard Hartley and Andrew Zisserman, Cambridge University Press, March 2004:105.
+
+\bibitem{Kneip-OpenGV}
+Kneip L, Furgale P. OpenGV: A unified and generalized approach to real-time calibrated geometric vision[C]. IEEE International Conference on Robotics and Automation. IEEE, 2014:1-8.
 
 \bibitem{Hartley-MultipleView}
 Hartley R, Zisserman A. Multiple view geometry in computer vision[J]. Kybernetes, 2003, 30(9/10):1865 - 1872.
-}
 
 \bibitem{Heckbert-polygonal}
 P. S. Heckbert and M. Garl, “Survey of polygonal surface simplification algorithms,” 1997.
@@ -146,7 +147,6 @@ Bleyer M, Rhemann C, Rother C. PatchMatch Stereo - Stereo Matching with Slanted 
 \bibitem{Turner-Automated}
 Turner D, Lucieer A, Watson C. An Automated Technique for Generating Georectified Mosaics from Ultra-High Resolution Unmanned Aerial Vehicle (UAV) Imagery, Based on Structure from Motion (SfM) Point Clouds[J]. Remote Sensing, 2012, 4(5):1392-1410.
 
-\bibitem{Kneip-OpenGV}
-Kneip L, Furgale P. OpenGV: A unified and generalized approach to real-time calibrated geometric vision[C]. IEEE International Conference on Robotics and Automation. IEEE, 2014:1-8.
 
+}
 \end{thebibliography}

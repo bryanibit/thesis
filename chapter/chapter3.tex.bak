@@ -233,7 +233,7 @@ Z_w \\
 
 综上所述，本节详细介绍了相机模型与相机相关坐标系转换关系，以及相机成像去畸变等相关内容，这部分属于图像处理的基础，为下文介绍多视图几何作铺垫。以下3.4 - 3.7节是本文SfM的主要内容，可以概括为流程图~\ref{flow-sparse}，输入为无序单目航拍图像，输出为稀疏点云与相机位姿，以下将分步介绍各个环节。
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=5.4in]{chapter3/flow-sparse.png}
 \caption{SfM流程图}
@@ -504,16 +504,16 @@ h_3^T \\
 \begin{table}[!htbp]
 	\caption{匹配点过滤}
 	\centering
-	\begin{tabular}{|c|c|c|c|}
+	\begin{tabular}{c|ccc}
 		\hline
-		\diagbox[dir=SE]{\bfseries 图片名}{\bfseries 特征点}{\bfseries 图片名} & \bfseries KITTI-0400 & \bfseries KITTI-0415 & \bfseries KITTI-0424\\
+		\diagbox[dir=SE]{\bfseries 图片名}{\bfseries 特征点}{\bfseries 图片名} &  KITTI-0400 &  KITTI-0415 &  KITTI-0424\\
 		\hline
 %		\hline
-		\bfseries KITTI-0400&  $861$&  $55/32$ & $75/46$\\
+		 KITTI-0400&  $861$&  $55/32$ & $75/46$\\
 		%\hline
-		\bfseries KITTI-0415 & $ 空 $ & $370$ & $19/10$ \\
+		 KITTI-0415 & $ \cdots $ & $370$ & $19/10$ \\
 		%\hline
-        \bfseries KITTI-0424 & $空$ & $空$ & $599$ \\
+         KITTI-0424 & $ \cdots $ & $ \cdots $ & $599$ \\
 		\hline
 	\end{tabular}
 	\label{table:matches}
