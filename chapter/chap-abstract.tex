@@ -53,7 +53,7 @@ variety of attributes of roads in the GIS database. The map is the basis for unm
 
 2. A method is presented to reconstruct the 3D structure of geospatial space from aerial images using multi-view geometric.
 It includes feature extraction from the aerial image datasets, and feature matching of different images according to the feature points.
-Epipolar constraint is adopted to remove false matches so that the unordered datasets become "orderly". Afterwards, the multi-view geometry algorithm was used to reconstruct two images with the largest number of matching feature points. And then the rest of the images are added incrementally, completing the 3D reconstruction of the entire geospatial space finally.
+Epipolar constraint is adopted to remove false matches so that the unordered datasets become "orderly". Afterwards, the two images with the largest number of matching feature points are reconstructed to obtain the initial point clouds with the multi-view geometry algorithms. And the rest of the images are incrementally added to obtain the camera pose of all the images and the sparse point cloud of the entire geographic space.
 In the process of optimization for 3D points and camera poses, the paper not only minimizes the re-projection error of 3D points,
 but also minimizes the distances between the camera centers and the GPS positions.
 The optimization operations refine the camera poses and sparse point clouds composed of 3D points to decrease the error of models.
