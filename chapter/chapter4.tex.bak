@@ -67,6 +67,7 @@ Ramer Douglas Peucker算法（简称RDP）是由Ramer、David Douglas和Thomas Peucker提出
 	\caption{轮廓检测}
 	\label{rectangles} %% label for first subfigure
 \end{figure}
+
 至此，我们完成了形态学滤波得到较为理想的道路区域，然而这样的道路并不适合直接用于UGV路径规划与导航，因为UGV路径规划需要拓扑路网，下面将介绍如何从栅格道路提取道路骨架，得到拓扑路网的过程。
 
 \section{拓扑处理}
@@ -87,16 +88,16 @@ C=\sum(N_{k}-N_{k}N_{k+1}N_{k+2}),k=1,3,5,7,N_{9}=N_{1}
 
 \begin{figure}[!htbp]
 	\centering
-	\subfigure[8-region connectivity]{
+	\subfigure[8邻域连通数]{
 		\label{fig:subfig:topo1} %% label for first subfigure
 		\includegraphics[width=1.8in]{chapter4/topoN.png}}
-	\subfigure[Connectivity Example]{
+	\subfigure[连通数示例]{
 		\label{fig:subfig:topo2} %% label for first subfigure
 		\includegraphics[width=1.8in]{chapter4/topocir.png}}
-	\subfigure[Branch Example]{
+	\subfigure[枝丫长度测量]{
 		\label{fig:pixelExample} %% label for first subfigure
 		\includegraphics[width=1.9in]{chapter4/node.png}}
-	\caption{Connectivity}
+	\caption{连通数与枝丫长度}
 	\label{fig:topoN}
 \end{figure}
 %$N_k$是目标像素8个邻域中的一个邻域的像素值，对于二值化图像，像素值非0即1，图~\ref{fig:subfig:topo1}表示了8邻域$N_k$的基本含义，$N_i$代表像素值，二值图像中该值非零即一，图~\ref{fig:subfig:topo2}中黑色圆形对应的像素值为1，白色为0，
@@ -115,17 +116,17 @@ $\bullet$ 道路骨架的节点：一个像素与之相邻的像素个数大于2，例如图~\ref{fig:subfi
 $\bullet$ 枝丫的长度：从端点到最近节点的像素个数。
 \begin{figure}[!htbp]
 	\centering
-	\subfigure[Threshold=33]{
+	\subfigure[阈值设为33]{
 		\label{fig:subfig:process33} %% label for first subfigure
 		\includegraphics[width=1.6in]{chapter4/process/process33.jpg}}
-	\subfigure[Threshold=55]{
+	\subfigure[阈值设为55]{
 		\label{fig:subfig:process55} %% label for first subfigure
 		\includegraphics[width=1.6in]{chapter4/process/process55.jpg}}
 	%%\hspace{1in}
-	\subfigure[Threshold=80]{
+	\subfigure[阈值设为80]{
 		\label{fig:subfig:process80} %% label for second subfigure
 		\includegraphics[width=1.6in]{chapter4/process/process80.jpg}}
-	\setlength{\belowcaptionskip}{10pt}\centering\caption{Branches Elimination}
+	\setlength{\belowcaptionskip}{10pt}\centering\caption{短枝丫去除}
 	\label{fig:subfig_process} %% label for entire figure
 \end{figure}
 

@@ -15,9 +15,9 @@
 将全景图像由球面坐标系转换到车体坐标系中，得到以UGV为中心俯视效果的逆透视投影（IPM）图；之后依据车辆定位信息将
 一系列IPM图拼接为大范围二维场景地图。基于此，在GIS数据库中构建包含道路拓扑网络的电子地图，并添加道路的各种属性信息，为UGV全局路径规划与自主导航提供道路及先验信息。
 
-2. 研究基于多视图几何算法对航拍图像进行地理空间三维重建的方法。首先提取航拍数据集中的图像特征点，基于近似最近邻算法计算特征点的匹配关系，并采用对极约束过滤错误的匹配点，完成无序图片的“有序化”。然后使用多视图几何算法，从匹配特征点数目最多的两张图像开始重建，得到初始点云，并增量式地加入其余图像得到所有图像的相机位姿与整个地理空间的稀疏点云。在相机位姿与3D点坐标的优化过程中，相对于传统的最小化重投影误差，本文增加了最小化相机中心距离，优化相机的旋转与平移矩阵。针对航拍图像分辨较高的特点，采用基于块的点云稠密方法计算图像的深度图，最后通过深度图融合得到稠密点云地图。
+2. 研究基于多视图几何算法对航拍图像进行地理空间三维重建的方法。首先提取航拍数据集中的图像特征点，基于近似最近邻算法计算特征点的匹配关系，并采用对极约束过滤错误的匹配点，完成无序图片的“有序化”。然后使用多视图几何算法，从匹配特征点数目最多的两张图像开始重建，得到初始点云，并增量式地加入其余图像得到所有图像的相机位姿与整个地理空间的稀疏点云。在相机位姿与3D点坐标的优化过程中，相对于传统的最小化重投影误差，本文增加了最小化相机中心距离，优化相机的旋转与平移矩阵。针对航拍图像分辨率较高的特点，采用基于块的点云稠密方法计算图像的深度图，最后通过深度图融合得到稠密点云地图。
 
-3. 基于上述工作，提出一种从二维图像中提取道路的方法，首先选取一部分图像的道路区域作为训练样本，根据道路的光谱特征，使用最小二乘法拟合训练样本得到道路二值图像。其次，采用开闭运算等算法平滑二值图，设计多边形检测的方法以去除房屋边缘等非道路区域的干扰。由于拓扑道路网络更易于UGV 进行全局路径规划，所以采用拓扑细化的方法将道路二值图像转化为由单像素构成的道路网络，最后跟据道路枝丫长度去除单像素道路中的短枝丫，得到最终的拓扑路网。
+3. 基于上述工作，提出一种从二维图像中提取道路的方法，首先选取一部分图像的道路区域作为训练样本，根据道路的光谱特征，使用最小二乘法拟合训练样本得到道路二值图像。其次，采用开闭运算等算法平滑二值图，设计多边形检测的方法以去除房屋边缘等非道路区域的干扰。由于拓扑道路网络更易于UGV进行全局路径规划，所以采用拓扑细化的方法将道路二值图像转化为由单像素构成的道路网络，最后跟据道路枝丫长度去除单像素道路中的短枝丫，得到最终的拓扑路网。
 
 4. 为验证本文算法的有效性，搭建地图构建、道路提取的实验平台，并采用多个数据集验证算法的效率和精度。首先展示构建的大范围二维地图以及应用于UGV全局路径规划的效果，而后通过两个图像数据集得到三维地理空间地图并分析该方法构建地图的精度，最后计算得到道路拓扑的提取精度，通过实验验证本文提出的方法在不同场景的有效性。
 
@@ -53,7 +53,7 @@ variety of attributes of roads in the GIS database. The map is the basis for unm
 
 2. A method is presented to reconstruct the 3D structure of geospatial space from aerial images using multi-view geometric.
 It includes feature extraction from the aerial image datasets, and feature matching of different images according to the feature points.
-Epipolar constraint is adopted to remove false matches so that the unordered datasets become "orderly". Afterwards, the two images with the largest number of matching feature points are reconstructed to obtain the initial point clouds with the multi-view geometry algorithms. And the rest of the images are incrementally added to obtain the camera pose of all the images and the sparse point cloud of the entire geographic space.
+Epipolar constraint is adopted to remove false matches so that the unordered datasets become "orderly". Afterwards, the two images with the largest number of matching feature points are reconstructed to obtain the initial point clouds with the multi-view geometry algorithms. And the rest of the images are incrementally added to obtain the camera poses of all the images and the sparse point clouds of the entire geographic space.
 In the process of optimization for 3D points and camera poses, the paper not only minimizes the re-projection error of 3D points,
 but also minimizes the distances between the camera centers and the GPS positions.
 The optimization operations refine the camera poses and sparse point clouds composed of 3D points to decrease the error of models.
