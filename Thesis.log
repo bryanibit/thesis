@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2017.12.8)  6 FEB 2018 00:29
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2017.12.8)  6 FEB 2018 15:06
 entering extended mode
-**H:/大论文-1-23/李浩模板1-12/Thesis.tex
-(H:/大论文-1-23/李浩模板1-12/Thesis.tex
+**H:/大论文-1-23/李浩模板2-6/Thesis.tex
+(H:/大论文-1-23/李浩模板2-6/Thesis.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
 (C:\CTEX\MiKTeX\tex\latex\ctex\ctexbook.cls
@@ -354,7 +354,7 @@ Package ifpdf Info: The package is already loaded, stopped on input line 64.
 (C:\CTEX\MiKTeX\tex\latex\ctex\cfg\ctexcap.cfg
 (C:\CTEX\MiKTeX\tex\latex\ctex\cfg\ctexcap-gbk.cfg))
 (C:\CTEX\MiKTeX\tex\latex\ctex\cfg\ctex.cfg)
-(H:\大论文-1-23\李浩模板1-12\setup.tex
+(H:\大论文-1-23\李浩模板2-6\setup.tex
 (C:\CTEX\MiKTeX\tex\latex\diagbox\diagbox.sty
 Package: diagbox 2011/11/23 v2.0 Making table heads with diagonal lines
 
@@ -694,7 +694,7 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count285
 )
-(H:\大论文-1-23\李浩模板1-12\hypernat.sty)
+(H:\大论文-1-23\李浩模板2-6\hypernat.sty)
 (C:\CTEX\MiKTeX\tex\latex\graphics\graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 \Gin@req@height=\dimen183
@@ -899,26 +899,26 @@ Package hyperref Warning: Option `bookmarks' has already been used,
 (hyperref)                setting the option has no effect on input line 266.
 
 Package hyperref Info: Option `colorlinks' set `true' on input line 266.
-) (H:\大论文-1-23\李浩模板1-12\Thesis.aux
-(H:\大论文-1-23\李浩模板1-12\chapter/chapter1.aux)
-(H:\大论文-1-23\李浩模板1-12\chapter/chapter2.aux)
-(H:\大论文-1-23\李浩模板1-12\chapter/chapter3.aux
+) (H:\大论文-1-23\李浩模板2-6\Thesis.aux
+(H:\大论文-1-23\李浩模板2-6\chapter/chapter1.aux)
+(H:\大论文-1-23\李浩模板2-6\chapter/chapter2.aux)
+(H:\大论文-1-23\李浩模板2-6\chapter/chapter3.aux
 
 LaTeX Warning: Label `repro-tuidao3-equation' multiply defined.
 
-) (H:\大论文-1-23\李浩模板1-12\chapter/chapter4.aux)
-(H:\大论文-1-23\李浩模板1-12\chapter/chapter5.aux
+) (H:\大论文-1-23\李浩模板2-6\chapter/chapter4.aux)
+(H:\大论文-1-23\李浩模板2-6\chapter/chapter5.aux
 
 LaTeX Warning: Label `fig:subfig:finalroad' multiply defined.
 
 
 LaTeX Warning: Label `sub@fig:subfig:finalroad' multiply defined.
 
-) (H:\大论文-1-23\李浩模板1-12\chapter/chapter6.aux)
-(H:\大论文-1-23\李浩模板1-12\chapter/chap-sum.aux)
-(H:\大论文-1-23\李浩模板1-12\chapter/chap-bibs.aux)
-(H:\大论文-1-23\李浩模板1-12\chapter/chap-pubs.aux)
-(H:\大论文-1-23\李浩模板1-12\chapter/chap-ack.aux))
+) (H:\大论文-1-23\李浩模板2-6\chapter/chapter6.aux)
+(H:\大论文-1-23\李浩模板2-6\chapter/chap-sum.aux)
+(H:\大论文-1-23\李浩模板2-6\chapter/chap-bibs.aux)
+(H:\大论文-1-23\李浩模板2-6\chapter/chap-pubs.aux)
+(H:\大论文-1-23\李浩模板2-6\chapter/chap-ack.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
@@ -1072,8 +1072,8 @@ LaTeX Info: Redefining \ref on input line 8.
 LaTeX Info: Redefining \pageref on input line 8.
 LaTeX Info: Redefining \nameref on input line 8.
 
-(H:\大论文-1-23\李浩模板1-12\Thesis.out)
-(H:\大论文-1-23\李浩模板1-12\Thesis.out)
+(H:\大论文-1-23\李浩模板2-6\Thesis.out)
+(H:\大论文-1-23\李浩模板2-6\Thesis.out)
 \@outlinefile=\write3
 LaTeX Info: Redefining \Ref on input line 8.
 
@@ -1086,7 +1086,7 @@ File: extended.enc 2008/12/29 4.8.2
 (C:\CTEX\MiKTeX\tex\latex\cjk\extended.chr
 File: extended.chr 2008/12/29 4.8.2
 )
-(H:\大论文-1-23\李浩模板1-12\chapter/chap-firstpage.tex
+(H:\大论文-1-23\李浩模板2-6\chapter/chap-firstpage.tex
 Underfull \hbox (badness 10000) in paragraph at lines 7--18
 
  []
@@ -1158,7 +1158,7 @@ File: c19zhsong.fd 2009/09/23 4.8.2
 
 
 
-]) (H:\大论文-1-23\李浩模板1-12\chapter/chap-cover.tex [2
+]) (H:\大论文-1-23\李浩模板2-6\chapter/chap-cover.tex [2
 
 ]<<c1964.cmap>>
 Underfull \hbox (badness 10000) in paragraph at lines 15--18
@@ -1279,7 +1279,7 @@ Overfull \hbox (49.17476pt too wide) in paragraph at lines 70--71
 []|$[]$| 
  []
 
-) (H:\大论文-1-23\李浩模板1-12\chapter/chap-name.tex [4]
+) (H:\大论文-1-23\李浩模板2-6\chapter/chap-name.tex [4]
 LaTeX Font Info:    Calculating math sizes for size <16> on input line 11.
 
 
@@ -1292,7 +1292,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11.84009> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 11.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9.6001> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 11.
-) (H:\大论文-1-23\李浩模板1-12\chapter/chap-shengming.tex [5]
+) (H:\大论文-1-23\李浩模板2-6\chapter/chap-shengming.tex [5]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
 LaTeX Font Info:    Try loading font information for C19+rm on input line 12.
@@ -1308,7 +1308,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <42> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
 )
-(H:\大论文-1-23\李浩模板1-12\chapter/chap-abstract.tex
+(H:\大论文-1-23\李浩模板2-6\chapter/chap-abstract.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 1.
@@ -1321,7 +1321,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 ] [2] [3
 
-]) [4] (H:\大论文-1-23\李浩模板1-12\Thesis.toc
+]) [4] (H:\大论文-1-23\李浩模板2-6\Thesis.toc
 LaTeX Font Info:    Calculating math sizes for size <14> on input line 1.
 
 
@@ -1340,7 +1340,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 
 ])
 \tf@toc=\write4
- [6] (H:\大论文-1-23\李浩模板1-12\chapter/chapter1.tex
+ [6] (H:\大论文-1-23\李浩模板2-6\chapter/chapter1.tex
 ��\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces 1\hspace {0.25em plus
  0.125em minus 0.08em}\ignorespaces \ignorespaces ��
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
@@ -1372,8 +1372,8 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 
- <H:/大论文-1-23/李浩模板1-12/figures/chapter1/laser.png> <H:/大论文-
-1-23/李浩模板1-12/figures/chapter1/camera.PNG>]
+ <H:/大论文-1-23/李浩模板2-6/figures/chapter1/laser.png> <H:/大论文-1
+-23/李浩模板2-6/figures/chapter1/camera.PNG>]
 <figures/chapter1/count-year.png, id=534, 542.77782pt x 539.76656pt>
 File: figures/chapter1/count-year.png Graphic file (type png)
 
@@ -1390,7 +1390,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 27.
 
-[2 <H:/大论文-1-23/李浩模板1-12/figures/chapter1/count-year.png>]
+[2 <H:/大论文-1-23/李浩模板2-6/figures/chapter1/count-year.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1464,10 +1464,10 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 73.
 
-[6 <H:/大论文-1-23/李浩模板1-12/figures/chapter1/rome/rome_paper-09.png>
- <H:/大论文-1-23/李浩模板1-12/figures/chapter1/rome/rome_paper-10.png> <
-H:/大论文-1-23/李浩模板1-12/figures/chapter1/rome/rome_paper-23.png> <H:
-/大论文-1-23/李浩模板1-12/figures/chapter1/rome/rome_paper-24.png>]
+[6 <H:/大论文-1-23/李浩模板2-6/figures/chapter1/rome/rome_paper-09.png> 
+<H:/大论文-1-23/李浩模板2-6/figures/chapter1/rome/rome_paper-10.png> <H:
+/大论文-1-23/李浩模板2-6/figures/chapter1/rome/rome_paper-23.png> <H:/�
+�论文-1-23/李浩模板2-6/figures/chapter1/rome/rome_paper-24.png>]
 <figures/chapter1/road/EnhancingRoadMaps-9.jpg, id=628, 1204.5pt x 734.745pt>
 File: figures/chapter1/road/EnhancingRoadMaps-9.jpg Graphic file (type jpg)
 
@@ -1492,9 +1492,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 85.
 
-[7 <H:/大论文-1-23/李浩模板1-12/figures/chapter1/road/EnhancingRoadMaps-
-9.jpg> <H:/大论文-1-23/李浩模板1-12/figures/chapter1/road/EnhancingRoadM
-aps-1.jpg>]
+[7 <H:/大论文-1-23/李浩模板2-6/figures/chapter1/road/EnhancingRoadMaps-9
+.jpg> <H:/大论文-1-23/李浩模板2-6/figures/chapter1/road/EnhancingRoadMap
+s-1.jpg>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 106.
@@ -1519,7 +1519,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 118.
 
-[9 <H:/大论文-1-23/李浩模板1-12/figures/chapter1/flow-whole.png>])
+[9 <H:/大论文-1-23/李浩模板2-6/figures/chapter1/flow-whole.png>])
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 41.
@@ -1528,7 +1528,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 41.
 
-[10] (H:\大论文-1-23\李浩模板1-12\chapter/chapter2.tex
+[10] (H:\大论文-1-23\李浩模板2-6\chapter/chapter2.tex
 ��\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces 2\hspace {0.25em plus
  0.125em minus 0.08em}\ignorespaces \ignorespaces ��
 <figures/chapter1/sensors.png, id=660, 606.01407pt x 472.76625pt>
@@ -1565,7 +1565,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 33.
 
-[12 <H:/大论文-1-23/李浩模板1-12/figures/chapter1/sensors.png>]
+[12 <H:/大论文-1-23/李浩模板2-6/figures/chapter1/sensors.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 45.
@@ -1574,7 +1574,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 45.
 
-[13 <H:/大论文-1-23/李浩模板1-12/figures/chapter2/qrcode.png>]
+[13 <H:/大论文-1-23/李浩模板2-6/figures/chapter2/qrcode.png>]
 <figures/chapter2/para.png, id=685, 742.57425pt x 502.2765pt>
 File: figures/chapter2/para.png Graphic file (type png)
 
@@ -1590,7 +1590,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 87.
 
-[14 <H:/大论文-1-23/李浩模板1-12/figures/chapter2/para.png>]
+[14 <H:/大论文-1-23/李浩模板2-6/figures/chapter2/para.png>]
 <figures/chapter2/RAW927090958.png, id=696, 3513.125pt x 1756.5625pt>
 File: figures/chapter2/RAW927090958.png Graphic file (type png)
 
@@ -1631,11 +1631,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 136.
 
-[15 <H:/大论文-1-23/李浩模板1-12/figures/chapter2/RAW927090958.png (PNG 
-copy)> <H:/大论文-1-23/李浩模板1-12/figures/chapter2/RAW1001103021.png (
-PNG copy)> <H:/大论文-1-23/李浩模板1-12/figures/chapter2/IPM927090958.pn
-g (PNG copy)> <H:/大论文-1-23/李浩模板1-12/figures/chapter2/IPM100110302
-1.png (PNG copy)>]
+[15 <H:/大论文-1-23/李浩模板2-6/figures/chapter2/RAW927090958.png (PNG c
+opy)> <H:/大论文-1-23/李浩模板2-6/figures/chapter2/RAW1001103021.png (PN
+G copy)> <H:/大论文-1-23/李浩模板2-6/figures/chapter2/IPM927090958.png (
+PNG copy)> <H:/大论文-1-23/李浩模板2-6/figures/chapter2/IPM1001103021.pn
+g (PNG copy)>]
 File: figures/chapter2/IPM927090958.png Graphic file (type png)
  <use figures/chapter2/IPM927090958.png>
 Package pdftex.def Info: figures/chapter2/IPM927090958.png used on input line 1
@@ -1657,7 +1657,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 151.
 
-[16 <H:/大论文-1-23/李浩模板1-12/figures/chapter2/res.png>]
+[16 <H:/大论文-1-23/李浩模板2-6/figures/chapter2/res.png>]
 <figures/chapter2/overlap.png, id=728, 392.06474pt x 537.80925pt>
 File: figures/chapter2/overlap.png Graphic file (type png)
 
@@ -1680,8 +1680,8 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 166.
 
-[17 <H:/大论文-1-23/李浩模板1-12/figures/chapter2/overlap.png> <H:/大�
-�文-1-23/李浩模板1-12/figures/chapter2/area_num.png>]
+[17 <H:/大论文-1-23/李浩模板2-6/figures/chapter2/overlap.png> <H:/大论
+文-1-23/李浩模板2-6/figures/chapter2/area_num.png>]
 <figures/chapter2/GIS_illustrate/1_.png, id=739, 722.7pt x 903.375pt>
 File: figures/chapter2/GIS_illustrate/1_.png Graphic file (type png)
 
@@ -1740,10 +1740,10 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 42.
 
-[18 <H:/大论文-1-23/李浩模板1-12/figures/chapter2/GIS_illustrate/1_.png>
- <H:/大论文-1-23/李浩模板1-12/figures/chapter2/GIS_illustrate/2_.png> <H
-:/大论文-1-23/李浩模板1-12/figures/chapter2/GIS_illustrate/3_.png> <H:/�
-��论文-1-23/李浩模板1-12/figures/chapter2/GIS_illustrate/4_.png>]
+[18 <H:/大论文-1-23/李浩模板2-6/figures/chapter2/GIS_illustrate/1_.png> 
+<H:/大论文-1-23/李浩模板2-6/figures/chapter2/GIS_illustrate/2_.png> <H:/
+大论文-1-23/李浩模板2-6/figures/chapter2/GIS_illustrate/3_.png> <H:/大�
+��文-1-23/李浩模板2-6/figures/chapter2/GIS_illustrate/4_.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 42.
@@ -1752,9 +1752,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 42.
 
-[19 <H:/大论文-1-23/李浩模板1-12/figures/chapter2/road_cross.png> <H:/�
-�论文-1-23/李浩模板1-12/figures/chapter2/road_net.png>]
-(H:\大论文-1-23\李浩模板1-12\chapter/chapter3.tex
+[19 <H:/大论文-1-23/李浩模板2-6/figures/chapter2/road_cross.png> <H:/大
+论文-1-23/李浩模板2-6/figures/chapter2/road_net.png>]
+(H:\大论文-1-23\李浩模板2-6\chapter/chapter3.tex
 ��\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces 3\hspace {0.25em plus
  0.125em minus 0.08em}\ignorespaces \ignorespaces ��
 <<c1982.cmap>>
@@ -1792,8 +1792,8 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 33.
 
-[21 <H:/大论文-1-23/李浩模板1-12/figures/chapter3/focal.png> <H:/大论�
-��-1-23/李浩模板1-12/figures/chapter3/pinhole.png>]
+[21 <H:/大论文-1-23/李浩模板2-6/figures/chapter3/focal.png> <H:/大论�
+�-1-23/李浩模板2-6/figures/chapter3/pinhole.png>]
 <figures/chapter3/firstperson.png, id=791, 619.113pt x 434.22224pt>
 File: figures/chapter3/firstperson.png Graphic file (type png)
 
@@ -1810,7 +1810,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 53.
 
-[22 <H:/大论文-1-23/李浩模板1-12/figures/chapter3/firstperson.png>]
+[22 <H:/大论文-1-23/李浩模板2-6/figures/chapter3/firstperson.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 128.
@@ -1843,7 +1843,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 145.
 
-[24 <H:/大论文-1-23/李浩模板1-12/figures/chapter3/transform.png>]
+[24 <H:/大论文-1-23/李浩模板2-6/figures/chapter3/transform.png>]
 <figures/chapter3/radial-distortion.PNG, id=831, 441.90094pt x 307.1475pt>
 File: figures/chapter3/radial-distortion.PNG Graphic file (type png)
 
@@ -1870,8 +1870,8 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 194.
 
-[25 <H:/大论文-1-23/李浩模板1-12/figures/chapter3/transform-coordinate.p
-ng>] <figures/chapter3/flow-sparse.png, id=846, 881.694pt x 225.0006pt>
+[25 <H:/大论文-1-23/李浩模板2-6/figures/chapter3/transform-coordinate.pn
+g>] <figures/chapter3/flow-sparse.png, id=846, 881.694pt x 225.0006pt>
 File: figures/chapter3/flow-sparse.png Graphic file (type png)
 
 <use figures/chapter3/flow-sparse.png>
@@ -1890,9 +1890,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 245.
 
-[26 <H:/大论文-1-23/李浩模板1-12/figures/chapter3/radial-distortion.PNG>
- <H:/大论文-1-23/李浩模板1-12/figures/chapter3/non-radial-distortion.PNG
->] <figures/chapter3/global-local.jpg, id=863, 682.55pt x 202.7575pt>
+[26 <H:/大论文-1-23/李浩模板2-6/figures/chapter3/radial-distortion.PNG> 
+<H:/大论文-1-23/李浩模板2-6/figures/chapter3/non-radial-distortion.PNG>]
+<figures/chapter3/global-local.jpg, id=863, 682.55pt x 202.7575pt>
 File: figures/chapter3/global-local.jpg Graphic file (type jpg)
 
 <use figures/chapter3/global-local.jpg>
@@ -1908,7 +1908,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 265.
 
-[27 <H:/大论文-1-23/李浩模板1-12/figures/chapter3/flow-sparse.png>]
+[27 <H:/大论文-1-23/李浩模板2-6/figures/chapter3/flow-sparse.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 283.
@@ -1917,28 +1917,28 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 283.
 
-[28 <H:/大论文-1-23/李浩模板1-12/figures/chapter3/global-local.jpg>]
-<figures/chapter3/octave.jpg, id=889, 652.4375pt x 244.915pt>
+[28 <H:/大论文-1-23/李浩模板2-6/figures/chapter3/global-local.jpg>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\selfontsize' on input line 303.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\selfontsize' on input line 303.
+
+[29] <figures/chapter3/octave.jpg, id=900, 652.4375pt x 244.915pt>
 File: figures/chapter3/octave.jpg Graphic file (type jpg)
 
 <use figures/chapter3/octave.jpg>
-Package pdftex.def Info: figures/chapter3/octave.jpg used on input line 303.
+Package pdftex.def Info: figures/chapter3/octave.jpg used on input line 306.
 (pdftex.def)             Requested size: 390.25755pt x 146.50166pt.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 309.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 309.
-
-[29] <figures/chapter3/siftDescriptor.jpg, id=901, 592.2125pt x 285.065pt>
+<figures/chapter3/siftDescriptor.jpg, id=901, 592.2125pt x 285.065pt>
 File: figures/chapter3/siftDescriptor.jpg Graphic file (type jpg)
 
 <use figures/chapter3/siftDescriptor.jpg>
 Package pdftex.def Info: figures/chapter3/siftDescriptor.jpg used on input line
- 312.
+ 313.
 (pdftex.def)             Requested size: 361.34999pt x 173.94159pt.
 
 <figures/chapter3/testPho/1_res.png, id=904, 602.25pt x 181.67876pt>
@@ -1946,7 +1946,7 @@ File: figures/chapter3/testPho/1_res.png Graphic file (type png)
 
 <use figures/chapter3/testPho/1_res.png>
 Package pdftex.def Info: figures/chapter3/testPho/1_res.png used on input line 
-324.
+325.
 (pdftex.def)             Requested size: 209.58255pt x 63.22534pt.
 
 <figures/chapter3/testPho/2_res.png, id=905, 602.25pt x 181.67876pt>
@@ -1954,7 +1954,7 @@ File: figures/chapter3/testPho/2_res.png Graphic file (type png)
 
 <use figures/chapter3/testPho/2_res.png>
 Package pdftex.def Info: figures/chapter3/testPho/2_res.png used on input line 
-327.
+328.
 (pdftex.def)             Requested size: 209.58255pt x 63.22534pt.
 
 <figures/chapter3/testPho/3_res.png, id=906, 602.25pt x 181.67876pt>
@@ -1962,7 +1962,7 @@ File: figures/chapter3/testPho/3_res.png Graphic file (type png)
 
 <use figures/chapter3/testPho/3_res.png>
 Package pdftex.def Info: figures/chapter3/testPho/3_res.png used on input line 
-330.
+331.
 (pdftex.def)             Requested size: 209.58255pt x 63.22534pt.
 
 <figures/chapter3/testPho/4_res.png, id=907, 602.25pt x 181.67876pt>
@@ -1970,135 +1970,135 @@ File: figures/chapter3/testPho/4_res.png Graphic file (type png)
 
 <use figures/chapter3/testPho/4_res.png>
 Package pdftex.def Info: figures/chapter3/testPho/4_res.png used on input line 
-333.
+334.
 (pdftex.def)             Requested size: 209.58255pt x 63.22534pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 341.
+(hyperref)                removing `\selfontsize' on input line 342.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 341.
+(hyperref)                removing `\selfontsize' on input line 342.
 
-[30 <H:/大论文-1-23/李浩模板1-12/figures/chapter3/octave.jpg> <H:/大论
-文-1-23/李浩模板1-12/figures/chapter3/siftDescriptor.jpg>]
+[30 <H:/大论文-1-23/李浩模板2-6/figures/chapter3/octave.jpg> <H:/大论�
+��-1-23/李浩模板2-6/figures/chapter3/siftDescriptor.jpg>]
 
-LaTeX Warning: File ot163.cmap not found on input line 349.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 349.
+LaTeX Warning: File ot163.cmap not found on input line 350.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 349.
+(hyperref)                removing `\selfontsize' on input line 350.
 
-[31 <H:/大论文-1-23/李浩模板1-12/figures/chapter3/testPho/1_res.png (PNG
- copy)> <H:/大论文-1-23/李浩模板1-12/figures/chapter3/testPho/2_res.png 
-(PNG copy)> <H:/大论文-1-23/李浩模板1-12/figures/chapter3/testPho/3_res.
-png (PNG copy)> <H:/大论文-1-23/李浩模板1-12/figures/chapter3/testPho/4_
-res.png (PNG copy)>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\selfontsize' on input line 350.
+
+[31 <H:/大论文-1-23/李浩模板2-6/figures/chapter3/testPho/1_res.png (PNG 
+copy)> <H:/大论文-1-23/李浩模板2-6/figures/chapter3/testPho/2_res.png (P
+NG copy)> <H:/大论文-1-23/李浩模板2-6/figures/chapter3/testPho/3_res.png
+ (PNG copy)> <H:/大论文-1-23/李浩模板2-6/figures/chapter3/testPho/4_res.
+png (PNG copy)>]
 <figures/chapter3/matches/matches.jpg, id=925, 8030.0pt x 2258.4375pt>
 File: figures/chapter3/matches/matches.jpg Graphic file (type jpg)
 
 <use figures/chapter3/matches/matches.jpg>
 Package pdftex.def Info: figures/chapter3/matches/matches.jpg used on input lin
-e 354.
+e 355.
 (pdftex.def)             Requested size: 361.34999pt x 101.62529pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 362.
+(hyperref)                removing `\selfontsize' on input line 363.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 362.
+(hyperref)                removing `\selfontsize' on input line 363.
 
-[32 <H:/大论文-1-23/李浩模板1-12/figures/chapter3/matches/matches.jpg>]
+[32 <H:/大论文-1-23/李浩模板2-6/figures/chapter3/matches/matches.jpg>]
 <figures/chapter3/homography.png, id=934, 586.5915pt x 230.66174pt>
 File: figures/chapter3/homography.png Graphic file (type png)
 
 <use figures/chapter3/homography.png>
-Package pdftex.def Info: figures/chapter3/homography.png used on input line 387
+Package pdftex.def Info: figures/chapter3/homography.png used on input line 388
 .
 (pdftex.def)             Requested size: 361.34999pt x 142.09721pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 467.
+(hyperref)                removing `\selfontsize' on input line 468.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 467.
+(hyperref)                removing `\selfontsize' on input line 468.
 
-[33 <H:/大论文-1-23/李浩模板1-12/figures/chapter3/homography.png>]
+[33 <H:/大论文-1-23/李浩模板2-6/figures/chapter3/homography.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 475.
+(hyperref)                removing `\selfontsize' on input line 476.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 475.
+(hyperref)                removing `\selfontsize' on input line 476.
 
 [34]
 <figures/chapter3/matches/000400_H_000415.png, id=951, 2461.195pt x 371.3875pt>
 File: figures/chapter3/matches/000400_H_000415.png Graphic file (type png)
 <use figures/chapter3/matches/000400_H_000415.png>
 Package pdftex.def Info: figures/chapter3/matches/000400_H_000415.png used on i
-nput line 480.
+nput line 481.
 (pdftex.def)             Requested size: 433.62pt x 65.43013pt.
 
 <figures/chapter3/matches/000400_U_000415.png, id=952, 2461.195pt x 371.3875pt>
 File: figures/chapter3/matches/000400_U_000415.png Graphic file (type png)
 <use figures/chapter3/matches/000400_U_000415.png>
 Package pdftex.def Info: figures/chapter3/matches/000400_U_000415.png used on i
-nput line 483.
+nput line 484.
 (pdftex.def)             Requested size: 433.62pt x 65.43013pt.
 
 <figures/chapter3/matches/000400_H_000424.png, id=953, 2461.195pt x 371.3875pt>
 File: figures/chapter3/matches/000400_H_000424.png Graphic file (type png)
 <use figures/chapter3/matches/000400_H_000424.png>
 Package pdftex.def Info: figures/chapter3/matches/000400_H_000424.png used on i
-nput line 486.
+nput line 487.
 (pdftex.def)             Requested size: 433.62pt x 65.43013pt.
 
 <figures/chapter3/matches/000400_U_000424.png, id=954, 2461.195pt x 371.3875pt>
 File: figures/chapter3/matches/000400_U_000424.png Graphic file (type png)
 <use figures/chapter3/matches/000400_U_000424.png>
 Package pdftex.def Info: figures/chapter3/matches/000400_U_000424.png used on i
-nput line 489.
+nput line 490.
 (pdftex.def)             Requested size: 433.62pt x 65.43013pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 513.
+(hyperref)                removing `\selfontsize' on input line 514.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 513.
+(hyperref)                removing `\selfontsize' on input line 514.
 
-[35 <H:/大论文-1-23/李浩模板1-12/figures/chapter3/matches/000400_H_00041
-5.png (PNG copy)> <H:/大论文-1-23/李浩模板1-12/figures/chapter3/matches/
-000400_U_000415.png (PNG copy)> <H:/大论文-1-23/李浩模板1-12/figures/cha
-pter3/matches/000400_H_000424.png (PNG copy)> <H:/大论文-1-23/李浩模板1-
-12/figures/chapter3/matches/000400_U_000424.png (PNG copy)>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 539.
-
+[35 <H:/大论文-1-23/李浩模板2-6/figures/chapter3/matches/000400_H_000415
+.png (PNG copy)> <H:/大论文-1-23/李浩模板2-6/figures/chapter3/matches/00
+0400_U_000415.png (PNG copy)> <H:/大论文-1-23/李浩模板2-6/figures/chapte
+r3/matches/000400_H_000424.png (PNG copy)> <H:/大论文-1-23/李浩模板2-6/f
+igures/chapter3/matches/000400_U_000424.png (PNG copy)>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 539.
+(hyperref)                removing `\selfontsize' on input line 540.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\selfontsize' on input line 540.
 
 [36] <figures/chapter3/epipolor.png, id=973, 634.7715pt x 425.79076pt>
 File: figures/chapter3/epipolor.png Graphic file (type png)
 
 <use figures/chapter3/epipolor.png>
-Package pdftex.def Info: figures/chapter3/epipolor.png used on input line 543.
+Package pdftex.def Info: figures/chapter3/epipolor.png used on input line 544.
 (pdftex.def)             Requested size: 361.34999pt x 242.39139pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2106,19 +2106,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 556.
+(hyperref)                removing `\selfontsize' on input line 557.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 556.
+(hyperref)                removing `\selfontsize' on input line 557.
 
-[37 <H:/大论文-1-23/李浩模板1-12/figures/chapter3/epipolor.png>]
+[37 <H:/大论文-1-23/李浩模板2-6/figures/chapter3/epipolor.png>]
 <figures/chapter3/epipolorLine/points.png, id=987, 922.94812pt x 278.54062pt>
 File: figures/chapter3/epipolorLine/points.png Graphic file (type png)
 
 <use figures/chapter3/epipolorLine/points.png>
 Package pdftex.def Info: figures/chapter3/epipolorLine/points.png used on input
- line 566.
+ line 567.
 (pdftex.def)             Requested size: 390.25755pt x 117.7768pt.
 
 <figures/chapter3/epipolorLine/lines.png, id=988, 922.94812pt x 278.54062pt>
@@ -2126,7 +2126,7 @@ File: figures/chapter3/epipolorLine/lines.png Graphic file (type png)
 
 <use figures/chapter3/epipolorLine/lines.png>
 Package pdftex.def Info: figures/chapter3/epipolorLine/lines.png used on input 
-line 569.
+line 570.
 (pdftex.def)             Requested size: 390.25755pt x 117.7768pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2134,32 +2134,32 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 585.
+(hyperref)                removing `\selfontsize' on input line 586.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 585.
+(hyperref)                removing `\selfontsize' on input line 586.
 
 [38]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 607.
+(hyperref)                removing `\selfontsize' on input line 608.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 607.
+(hyperref)                removing `\selfontsize' on input line 608.
 
-[39 <H:/大论文-1-23/李浩模板1-12/figures/chapter3/epipolorLine/points.pn
-g> <H:/大论文-1-23/李浩模板1-12/figures/chapter3/epipolorLine/lines.png>
-] <figures/chapter3/essentialMatrix.png, id=1010, 430.60875pt x 234.8775pt>
+[39 <H:/大论文-1-23/李浩模板2-6/figures/chapter3/epipolorLine/points.png
+> <H:/大论文-1-23/李浩模板2-6/figures/chapter3/epipolorLine/lines.png>]
+<figures/chapter3/essentialMatrix.png, id=1010, 430.60875pt x 234.8775pt>
 File: figures/chapter3/essentialMatrix.png Graphic file (type png)
 
 <use figures/chapter3/essentialMatrix.png>
 Package pdftex.def Info: figures/chapter3/essentialMatrix.png used on input lin
-e 634.
+e 635.
 (pdftex.def)             Requested size: 289.07999pt x 157.68248pt.
 
-Overfull \hbox (1.43266pt too wide) in paragraph at lines 639--640
+Overfull \hbox (1.43266pt too wide) in paragraph at lines 640--641
 []\C19/zhsong/m/n/12/62 d u$\OML/ztmcm/m/it/12 P[]\OT1/ztmcm/m/n/12 [0\OML/ztmc
 m/m/it/12 ; \OT1/ztmcm/m/n/12 0\OML/ztmcm/m/it/12 ; \OT1/ztmcm/m/n/12 0\OML/ztm
 cm/m/it/12 ; \OT1/ztmcm/m/n/12 1][] = [\OML/ztmcm/m/it/12 R\OMS/ztmcm/m/n/12 j 
@@ -2175,36 +2175,36 @@ n/12/64 $\OML/ztmcm/m/it/12 t$\C19/zhsong/m/n/12/55 �$\OML/ztmcm/m/it/12 E$\C1
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 640.
+(hyperref)                removing `\selfontsize' on input line 641.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 640.
+(hyperref)                removing `\selfontsize' on input line 641.
 
-[40 <H:/大论文-1-23/李浩模板1-12/figures/chapter3/essentialMatrix.png>]
+[40 <H:/大论文-1-23/李浩模板2-6/figures/chapter3/essentialMatrix.png>]
 <figures/chapter3/essentialfromRT.png, id=1021, 594.72188pt x 200.24812pt>
 File: figures/chapter3/essentialfromRT.png Graphic file (type png)
 
 <use figures/chapter3/essentialfromRT.png>
 Package pdftex.def Info: figures/chapter3/essentialfromRT.png used on input lin
-e 684.
+e 685.
 (pdftex.def)             Requested size: 361.34999pt x 121.6684pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 691.
+(hyperref)                removing `\selfontsize' on input line 692.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 691.
+(hyperref)                removing `\selfontsize' on input line 692.
 
-[41 <H:/大论文-1-23/李浩模板1-12/figures/chapter3/essentialfromRT.png>]
+[41 <H:/大论文-1-23/李浩模板2-6/figures/chapter3/essentialfromRT.png>]
 <figures/chapter3/triangulation.png, id=1030, 365.56575pt x 261.97874pt>
 File: figures/chapter3/triangulation.png Graphic file (type png)
 
 <use figures/chapter3/triangulation.png>
 Package pdftex.def Info: figures/chapter3/triangulation.png used on input line 
-695.
+696.
 (pdftex.def)             Requested size: 289.07999pt x 207.16481pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2212,20 +2212,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 723.
+(hyperref)                removing `\selfontsize' on input line 724.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 723.
+(hyperref)                removing `\selfontsize' on input line 724.
 
-[42 <H:/大论文-1-23/李浩模板1-12/figures/chapter3/triangulation.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 731.
-
+[42 <H:/大论文-1-23/李浩模板2-6/figures/chapter3/triangulation.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 731.
+(hyperref)                removing `\selfontsize' on input line 732.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\selfontsize' on input line 732.
 
 [43]
 Underfull \vbox (badness 6268) has occurred while \output is active []
@@ -2233,41 +2233,41 @@ Underfull \vbox (badness 6268) has occurred while \output is active []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 806.
+(hyperref)                removing `\selfontsize' on input line 807.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 806.
+(hyperref)                removing `\selfontsize' on input line 807.
 
 [44]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 830.
+(hyperref)                removing `\selfontsize' on input line 831.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 830.
+(hyperref)                removing `\selfontsize' on input line 831.
 
 [45] <figures/chapter3/ba.png, id=1069, 512.66531pt x 120.45pt>
 File: figures/chapter3/ba.png Graphic file (type png)
 
 <use figures/chapter3/ba.png>
-Package pdftex.def Info: figures/chapter3/ba.png used on input line 866.
+Package pdftex.def Info: figures/chapter3/ba.png used on input line 867.
 (pdftex.def)             Requested size: 361.34999pt x 84.89886pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 870.
+(hyperref)                removing `\selfontsize' on input line 871.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\selfontsize' on input line 870.
+(hyperref)                removing `\selfontsize' on input line 871.
 
-[46] <figures/chapter3/baall.png, id=1080, 512.66531pt x 220.57407pt>
+[46] <figures/chapter3/baall.png, id=1081, 512.66531pt x 220.57407pt>
 File: figures/chapter3/baall.png Graphic file (type png)
 
 <use figures/chapter3/baall.png>
-Package pdftex.def Info: figures/chapter3/baall.png used on input line 874.
+Package pdftex.def Info: figures/chapter3/baall.png used on input line 875.
 (pdftex.def)             Requested size: 361.34999pt x 155.47107pt.
 
 
@@ -2278,8 +2278,8 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 895.
 
-[47 <H:/大论文-1-23/李浩模板1-12/figures/chapter3/ba.png> <H:/大论文-
-1-23/李浩模板1-12/figures/chapter3/baall.png>]
+[47 <H:/大论文-1-23/李浩模板2-6/figures/chapter3/ba.png> <H:/大论文-1
+-23/李浩模板2-6/figures/chapter3/baall.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 946.
@@ -2289,7 +2289,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 946.
 
 [48]
-<figures/chapter3/BA/before_small.jpg, id=1103, 1026.83624pt x 577.15625pt>
+<figures/chapter3/BA/before_small.jpg, id=1104, 1026.83624pt x 577.15625pt>
 File: figures/chapter3/BA/before_small.jpg Graphic file (type jpg)
 
 <use figures/chapter3/BA/before_small.jpg>
@@ -2297,7 +2297,7 @@ Package pdftex.def Info: figures/chapter3/BA/before_small.jpg used on input lin
 e 956.
 (pdftex.def)             Requested size: 216.81pt x 121.85808pt.
 
-<figures/chapter3/BA/after_small.jpg, id=1104, 1027.84pt x 578.16pt>
+<figures/chapter3/BA/after_small.jpg, id=1105, 1027.84pt x 578.16pt>
 File: figures/chapter3/BA/after_small.jpg Graphic file (type jpg)
 
 <use figures/chapter3/BA/after_small.jpg>
@@ -2313,9 +2313,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 964.
 
-[49 <H:/大论文-1-23/李浩模板1-12/figures/chapter3/BA/before_small.jpg> <
-H:/大论文-1-23/李浩模板1-12/figures/chapter3/BA/after_small.jpg>]
-<figures/chapter3/flow-dense.png, id=1119, 585.98924pt x 200.54926pt>
+[49 <H:/大论文-1-23/李浩模板2-6/figures/chapter3/BA/before_small.jpg> <H
+:/大论文-1-23/李浩模板2-6/figures/chapter3/BA/after_small.jpg>]
+<figures/chapter3/flow-dense.png, id=1120, 585.98924pt x 200.54926pt>
 File: figures/chapter3/flow-dense.png Graphic file (type png)
 
 <use figures/chapter3/flow-dense.png>
@@ -2331,7 +2331,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 977.
 
-[50 <H:/大论文-1-23/李浩模板1-12/figures/chapter3/flow-dense.png>]
+[50 <H:/大论文-1-23/李浩模板2-6/figures/chapter3/flow-dense.png>]
 Overfull \hbox (5.98619pt too wide) in paragraph at lines 980--982
 \C19/zhsong/m/n/12/60 % \C19/zhsong/m/n/12/58 � \C19/zhsong/m/n/12/59 � \C19/zh
 song/m/n/12/44 �$\OML/ztmcm/m/it/12 i$|\C19/rm/m/n/12/26 �| \C19/zhsong/m/n/12/
@@ -2347,7 +2347,7 @@ S/ztmcm/m/n/12 j\OT1/ztmcm/m/n/12 0[]]$|\C19/rm/m/n/12/26 �| $\OML/ztmcm/m/it/1
 tmcm/m/it/12 C[] \OMS/ztmcm/m/n/12  $
  []
 
-<figures/chapter3/mvs/patch.png, id=1132, 425.33907pt x 504.38437pt>
+<figures/chapter3/mvs/patch.png, id=1133, 425.33907pt x 504.38437pt>
 File: figures/chapter3/mvs/patch.png Graphic file (type png)
 
 <use figures/chapter3/mvs/patch.png>
@@ -2355,53 +2355,53 @@ Package pdftex.def Info: figures/chapter3/mvs/patch.png used on input line 989.
 
 (pdftex.def)             Requested size: 289.07999pt x 342.8229pt.
 
-<figures/chapter3/mvs/DJI_0056.JPG, id=1133, 4015.0pt x 2258.4375pt>
+<figures/chapter3/mvs/DJI_0056.JPG, id=1134, 4015.0pt x 2258.4375pt>
 File: figures/chapter3/mvs/DJI_0056.JPG Graphic file (type jpg)
 
 <use figures/chapter3/mvs/DJI_0056.JPG>
 Package pdftex.def Info: figures/chapter3/mvs/DJI_0056.JPG used on input line 9
 99.
-(pdftex.def)             Requested size: 130.08621pt x 73.16057pt.
+(pdftex.def)             Requested size: 137.31255pt x 77.22696pt.
 
-<figures/chapter3/mvs/DJI_0056_depth.jpg, id=1134, 642.4pt x 361.35pt>
+<figures/chapter3/mvs/DJI_0056_depth.jpg, id=1135, 642.4pt x 361.35pt>
 File: figures/chapter3/mvs/DJI_0056_depth.jpg Graphic file (type jpg)
 
 <use figures/chapter3/mvs/DJI_0056_depth.jpg>
 Package pdftex.def Info: figures/chapter3/mvs/DJI_0056_depth.jpg used on input 
 line 1003.
-(pdftex.def)             Requested size: 130.08621pt x 73.17297pt.
+(pdftex.def)             Requested size: 137.31255pt x 77.2366pt.
 
-<figures/chapter3/mvs/DJI_0056_score.jpg, id=1135, 642.4pt x 361.35pt>
+<figures/chapter3/mvs/DJI_0056_score.jpg, id=1136, 642.4pt x 361.35pt>
 File: figures/chapter3/mvs/DJI_0056_score.jpg Graphic file (type jpg)
 
 <use figures/chapter3/mvs/DJI_0056_score.jpg>
 Package pdftex.def Info: figures/chapter3/mvs/DJI_0056_score.jpg used on input 
 line 1007.
-(pdftex.def)             Requested size: 130.08621pt x 73.17297pt.
+(pdftex.def)             Requested size: 137.31255pt x 77.2366pt.
 
-<figures/chapter3/mvs/DJI_0100.JPG, id=1136, 4015.0pt x 2258.4375pt>
+<figures/chapter3/mvs/DJI_0100.JPG, id=1137, 4015.0pt x 2258.4375pt>
 File: figures/chapter3/mvs/DJI_0100.JPG Graphic file (type jpg)
 
 <use figures/chapter3/mvs/DJI_0100.JPG>
 Package pdftex.def Info: figures/chapter3/mvs/DJI_0100.JPG used on input line 1
 011.
-(pdftex.def)             Requested size: 130.08621pt x 73.16057pt.
+(pdftex.def)             Requested size: 137.31255pt x 77.22696pt.
 
-<figures/chapter3/mvs/DJI_0100_depth.jpg, id=1137, 642.4pt x 361.35pt>
+<figures/chapter3/mvs/DJI_0100_depth.jpg, id=1138, 642.4pt x 361.35pt>
 File: figures/chapter3/mvs/DJI_0100_depth.jpg Graphic file (type jpg)
 
 <use figures/chapter3/mvs/DJI_0100_depth.jpg>
 Package pdftex.def Info: figures/chapter3/mvs/DJI_0100_depth.jpg used on input 
 line 1015.
-(pdftex.def)             Requested size: 130.08621pt x 73.17297pt.
+(pdftex.def)             Requested size: 137.31255pt x 77.2366pt.
 
-<figures/chapter3/mvs/DJI_0100_score.jpg, id=1138, 642.4pt x 361.35pt>
+<figures/chapter3/mvs/DJI_0100_score.jpg, id=1139, 642.4pt x 361.35pt>
 File: figures/chapter3/mvs/DJI_0100_score.jpg Graphic file (type jpg)
 
 <use figures/chapter3/mvs/DJI_0100_score.jpg>
 Package pdftex.def Info: figures/chapter3/mvs/DJI_0100_score.jpg used on input 
 line 1019.
-(pdftex.def)             Requested size: 130.08621pt x 73.17297pt.
+(pdftex.def)             Requested size: 137.31255pt x 77.2366pt.
 
 Underfull \vbox (badness 5548) has occurred while \output is active []
 
@@ -2423,13 +2423,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 1035.
 
-[52 <H:/大论文-1-23/李浩模板1-12/figures/chapter3/mvs/patch.png> <H:/大
-论文-1-23/李浩模板1-12/figures/chapter3/mvs/DJI_0056.JPG> <H:/大论文-1
--23/李浩模板1-12/figures/chapter3/mvs/DJI_0056_depth.jpg> <H:/大论文-1-2
-3/李浩模板1-12/figures/chapter3/mvs/DJI_0056_score.jpg> <H:/大论文-1-23/
-李浩模板1-12/figures/chapter3/mvs/DJI_0100.JPG> <H:/大论文-1-23/李浩�
-�板1-12/figures/chapter3/mvs/DJI_0100_depth.jpg> <H:/大论文-1-23/李浩模�
-��1-12/figures/chapter3/mvs/DJI_0100_score.jpg>])
+[52 <H:/大论文-1-23/李浩模板2-6/figures/chapter3/mvs/patch.png> <H:/大�
+��文-1-23/李浩模板2-6/figures/chapter3/mvs/DJI_0056.JPG> <H:/大论文-1-2
+3/李浩模板2-6/figures/chapter3/mvs/DJI_0056_depth.jpg> <H:/大论文-1-23/�
+��浩模板2-6/figures/chapter3/mvs/DJI_0056_score.jpg> <H:/大论文-1-23/李�
+��模板2-6/figures/chapter3/mvs/DJI_0100.JPG> <H:/大论文-1-23/李浩模板2
+-6/figures/chapter3/mvs/DJI_0100_depth.jpg> <H:/大论文-1-23/李浩模板2-6/
+figures/chapter3/mvs/DJI_0100_score.jpg>])
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 43.
@@ -2438,10 +2438,10 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 43.
 
-[53] (H:\大论文-1-23\李浩模板1-12\chapter/chapter4.tex
+[53] (H:\大论文-1-23\李浩模板2-6\chapter/chapter4.tex
 ��\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces 4\hspace {0.25em plus
  0.125em minus 0.08em}\ignorespaces \ignorespaces ��
-<figures/chapter4/trainExtract.png, id=1170, 696.201pt x 380.01974pt>
+<figures/chapter4/trainExtract.png, id=1171, 696.201pt x 380.01974pt>
 File: figures/chapter4/trainExtract.png Graphic file (type png)
 
 <use figures/chapter4/trainExtract.png>
@@ -2461,8 +2461,8 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 
- <H:/大论文-1-23/李浩模板1-12/figures/chapter4/trainExtract.png>]
-<figures/chapter4/regression.png, id=1179, 389.95688pt x 246.9225pt>
+ <H:/大论文-1-23/李浩模板2-6/figures/chapter4/trainExtract.png>]
+<figures/chapter4/regression.png, id=1180, 389.95688pt x 246.9225pt>
 File: figures/chapter4/regression.png Graphic file (type png)
 
 <use figures/chapter4/regression.png>
@@ -2478,8 +2478,8 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 32.
 
-[55 <H:/大论文-1-23/李浩模板1-12/figures/chapter4/regression.png>]
-<figures/chapter4/erosionDilation.png, id=1190, 145.5036pt x 67.6929pt>
+[55 <H:/大论文-1-23/李浩模板2-6/figures/chapter4/regression.png>]
+<figures/chapter4/erosionDilation.png, id=1191, 145.5036pt x 67.6929pt>
 File: figures/chapter4/erosionDilation.png Graphic file (type png)
 
 <use figures/chapter4/erosionDilation.png>
@@ -2495,8 +2495,8 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 54.
 
-[56 <H:/大论文-1-23/李浩模板1-12/figures/chapter4/erosionDilation.png>]
-<figures/chapter4/rectangle_fix.jpg, id=1207, 696.80325pt x 466.1415pt>
+[56 <H:/大论文-1-23/李浩模板2-6/figures/chapter4/erosionDilation.png>]
+<figures/chapter4/rectangle_fix.jpg, id=1208, 696.80325pt x 466.1415pt>
 File: figures/chapter4/rectangle_fix.jpg Graphic file (type jpg)
 
 <use figures/chapter4/rectangle_fix.jpg>
@@ -2504,7 +2504,7 @@ Package pdftex.def Info: figures/chapter4/rectangle_fix.jpg used on input line
 66.
 (pdftex.def)             Requested size: 325.215pt x 217.5644pt.
 
-<figures/chapter4/TopoloThin.png, id=1210, 1037.0745pt x 405.31425pt>
+<figures/chapter4/TopoloThin.png, id=1211, 1037.0745pt x 405.31425pt>
 File: figures/chapter4/TopoloThin.png Graphic file (type png)
 
 <use figures/chapter4/TopoloThin.png>
@@ -2520,22 +2520,22 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 84.
 
-[57 <H:/大论文-1-23/李浩模板1-12/figures/chapter4/rectangle_fix.jpg>]
-<figures/chapter4/topoN.png, id=1220, 454.69875pt x 454.69875pt>
+[57 <H:/大论文-1-23/李浩模板2-6/figures/chapter4/rectangle_fix.jpg>]
+<figures/chapter4/topoN.png, id=1221, 454.69875pt x 454.69875pt>
 File: figures/chapter4/topoN.png Graphic file (type png)
 
 <use figures/chapter4/topoN.png>
 Package pdftex.def Info: figures/chapter4/topoN.png used on input line 93.
 (pdftex.def)             Requested size: 130.08621pt x 130.08308pt.
 
-<figures/chapter4/topocir.png, id=1221, 454.69875pt x 454.69875pt>
+<figures/chapter4/topocir.png, id=1222, 454.69875pt x 454.69875pt>
 File: figures/chapter4/topocir.png Graphic file (type png)
 
 <use figures/chapter4/topocir.png>
 Package pdftex.def Info: figures/chapter4/topocir.png used on input line 96.
 (pdftex.def)             Requested size: 130.08621pt x 130.08308pt.
 
-<figures/chapter4/node.png, id=1222, 352.9185pt x 355.3275pt>
+<figures/chapter4/node.png, id=1223, 352.9185pt x 355.3275pt>
 File: figures/chapter4/node.png Graphic file (type png)
 
 <use figures/chapter4/node.png>
@@ -2550,11 +2550,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 105.
 
-[58 <H:/大论文-1-23/李浩模板1-12/figures/chapter4/TopoloThin.png> <H:/�
-�论文-1-23/李浩模板1-12/figures/chapter4/topoN.png> <H:/大论文-1-23/�
-�浩模板1-12/figures/chapter4/topocir.png> <H:/大论文-1-23/李浩模板1-1
-2/figures/chapter4/node.png>]
-<figures/chapter4/process/process33.jpg, id=1239, 1541.76pt x 2192.19pt>
+[58 <H:/大论文-1-23/李浩模板2-6/figures/chapter4/TopoloThin.png> <H:/大
+论文-1-23/李浩模板2-6/figures/chapter4/topoN.png> <H:/大论文-1-23/李�
+��模板2-6/figures/chapter4/topocir.png> <H:/大论文-1-23/李浩模板2-6/fi
+gures/chapter4/node.png>]
+<figures/chapter4/process/process33.jpg, id=1240, 1541.76pt x 2192.19pt>
 File: figures/chapter4/process/process33.jpg Graphic file (type jpg)
 
 <use figures/chapter4/process/process33.jpg>
@@ -2562,7 +2562,7 @@ Package pdftex.def Info: figures/chapter4/process/process33.jpg used on input l
 ine 121.
 (pdftex.def)             Requested size: 115.63243pt x 164.40715pt.
 
-<figures/chapter4/process/process55.jpg, id=1240, 1541.76pt x 2192.19pt>
+<figures/chapter4/process/process55.jpg, id=1241, 1541.76pt x 2192.19pt>
 File: figures/chapter4/process/process55.jpg Graphic file (type jpg)
 
 <use figures/chapter4/process/process55.jpg>
@@ -2570,7 +2570,7 @@ Package pdftex.def Info: figures/chapter4/process/process55.jpg used on input l
 ine 124.
 (pdftex.def)             Requested size: 115.63243pt x 164.40715pt.
 
-<figures/chapter4/process/process80.jpg, id=1241, 1541.76pt x 2192.19pt>
+<figures/chapter4/process/process80.jpg, id=1242, 1541.76pt x 2192.19pt>
 File: figures/chapter4/process/process80.jpg Graphic file (type jpg)
 
 <use figures/chapter4/process/process80.jpg>
@@ -2602,9 +2602,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 134.
 
-[59 <H:/大论文-1-23/李浩模板1-12/figures/chapter4/process/process33.jpg>
- <H:/大论文-1-23/李浩模板1-12/figures/chapter4/process/process55.jpg> <H
-:/大论文-1-23/李浩模板1-12/figures/chapter4/process/process80.jpg>])
+[59 <H:/大论文-1-23/李浩模板2-6/figures/chapter4/process/process33.jpg> 
+<H:/大论文-1-23/李浩模板2-6/figures/chapter4/process/process55.jpg> <H:/
+大论文-1-23/李浩模板2-6/figures/chapter4/process/process80.jpg>])
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 44.
@@ -2613,18 +2613,18 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 44.
 
-[60] (H:\大论文-1-23\李浩模板1-12\chapter/chapter5.tex
+[60] (H:\大论文-1-23\李浩模板2-6\chapter/chapter5.tex
 ��\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces 5\hspace {0.25em plus
  0.125em minus 0.08em}\ignorespaces \ignorespaces ��
 
-<figures/chapter5/panorama/jiugong_whole.jpg, id=1262, 312.2064pt x 253.9086pt>
+<figures/chapter5/panorama/jiugong_whole.jpg, id=1263, 312.2064pt x 253.9086pt>
 File: figures/chapter5/panorama/jiugong_whole.jpg Graphic file (type jpg)
 <use figures/chapter5/panorama/jiugong_whole.jpg>
 Package pdftex.def Info: figures/chapter5/panorama/jiugong_whole.jpg used on in
 put line 14.
 (pdftex.def)             Requested size: 202.35622pt x 164.56984pt.
 
-<figures/chapter5/panorama/detail_jiugong.jpg, id=1263, 947.54pt x 979.66pt>
+<figures/chapter5/panorama/detail_jiugong.jpg, id=1264, 947.54pt x 979.66pt>
 File: figures/chapter5/panorama/detail_jiugong.jpg Graphic file (type jpg)
 
 <use figures/chapter5/panorama/detail_jiugong.jpg>
@@ -2645,7 +2645,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 ]
-<figures/chapter5/panorama/sanhuan_whole.jpg, id=1274, 277.035pt x 200.4288pt>
+<figures/chapter5/panorama/sanhuan_whole.jpg, id=1275, 277.035pt x 200.4288pt>
 File: figures/chapter5/panorama/sanhuan_whole.jpg Graphic file (type jpg)
 
 <use figures/chapter5/panorama/sanhuan_whole.jpg>
@@ -2653,7 +2653,7 @@ Package pdftex.def Info: figures/chapter5/panorama/sanhuan_whole.jpg used on in
 put line 26.
 (pdftex.def)             Requested size: 148.15372pt x 107.18706pt.
 
-<figures/chapter5/panorama/detail3.jpg, id=1275, 335.53929pt x 315.46428pt>
+<figures/chapter5/panorama/detail3.jpg, id=1276, 335.53929pt x 315.46428pt>
 File: figures/chapter5/panorama/detail3.jpg Graphic file (type jpg)
 
 <use figures/chapter5/panorama/detail3.jpg>
@@ -2661,7 +2661,7 @@ Package pdftex.def Info: figures/chapter5/panorama/detail3.jpg used on input li
 ne 28.
 (pdftex.def)             Requested size: 112.0187pt x 105.31654pt.
 
-<figures/chapter5/panorama/detail4.jpg, id=1276, 341.5962pt x 315.579pt>
+<figures/chapter5/panorama/detail4.jpg, id=1277, 341.5962pt x 315.579pt>
 File: figures/chapter5/panorama/detail4.jpg Graphic file (type jpg)
 
 <use figures/chapter5/panorama/detail4.jpg>
@@ -2677,13 +2677,12 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 36.
 
-[62 <H:/大论文-1-23/李浩模板1-12/figures/chapter5/panorama/jiugong_whole
-.jpg> <H:/大论文-1-23/李浩模板1-12/figures/chapter5/panorama/detail_jiug
-ong.jpg> <H:/大论文-1-23/李浩模板1-12/figures/chapter5/panorama/sanhuan_
-whole.jpg> <H:/大论文-1-23/李浩模板1-12/figures/chapter5/panorama/detail
-3.jpg> <H:/大论文-1-23/李浩模板1-12/figures/chapter5/panorama/detail4.jp
-g>]
-<figures/chapter5/reconstruction/experiment.png, id=1289, 1045.9075pt x 714.67p
+[62 <H:/大论文-1-23/李浩模板2-6/figures/chapter5/panorama/jiugong_whole.
+jpg> <H:/大论文-1-23/李浩模板2-6/figures/chapter5/panorama/detail_jiugon
+g.jpg> <H:/大论文-1-23/李浩模板2-6/figures/chapter5/panorama/sanhuan_who
+le.jpg> <H:/大论文-1-23/李浩模板2-6/figures/chapter5/panorama/detail3.jp
+g> <H:/大论文-1-23/李浩模板2-6/figures/chapter5/panorama/detail4.jpg>]
+<figures/chapter5/reconstruction/experiment.png, id=1290, 1045.9075pt x 714.67p
 t>
 File: figures/chapter5/reconstruction/experiment.png Graphic file (type png)
  <use figures/chapter5/reconstruction/experiment.png>
@@ -2699,9 +2698,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 51.
 
-[63 <H:/大论文-1-23/李浩模板1-12/figures/chapter5/reconstruction/experim
-ent.png>]
-<figures/chapter5/reconstruction/time-consume.png, id=1300, 937.25156pt x 161.1
+[63 <H:/大论文-1-23/李浩模板2-6/figures/chapter5/reconstruction/experime
+nt.png>]
+<figures/chapter5/reconstruction/time-consume.png, id=1301, 937.25156pt x 161.1
 0187pt>
 File: figures/chapter5/reconstruction/time-consume.png Graphic file (type png)
  <use figures/chapter5/reconstruction/time-consume.png>
@@ -2709,7 +2708,7 @@ Package pdftex.def Info: figures/chapter5/reconstruction/time-consume.png used
 on input line 54.
 (pdftex.def)             Requested size: 419.16621pt x 72.05023pt.
 
-<figures/chapter5/reconstruction/feature-filter1.png, id=1302, 427.5975pt x 328
+<figures/chapter5/reconstruction/feature-filter1.png, id=1303, 427.5975pt x 328
 .97906pt>
 File: figures/chapter5/reconstruction/feature-filter1.png Graphic file (type pn
 g)
@@ -2718,7 +2717,7 @@ Package pdftex.def Info: figures/chapter5/reconstruction/feature-filter1.png us
 ed on input line 64.
 (pdftex.def)             Requested size: 213.19627pt x 164.02228pt.
 
-<figures/chapter5/reconstruction/feature-filter2.png, id=1303, 431.36156pt x 32
+<figures/chapter5/reconstruction/feature-filter2.png, id=1304, 431.36156pt x 32
 8.97906pt>
 File: figures/chapter5/reconstruction/feature-filter2.png Graphic file (type pn
 g)
@@ -2727,7 +2726,7 @@ Package pdftex.def Info: figures/chapter5/reconstruction/feature-filter2.png us
 ed on input line 66.
 (pdftex.def)             Requested size: 213.19627pt x 162.59163pt.
 
-<figures/chapter5/reconstruction/sparse_perspect.png, id=1304, 822.07124pt x 54
+<figures/chapter5/reconstruction/sparse_perspect.png, id=1305, 822.07124pt x 54
 8.0475pt>
 File: figures/chapter5/reconstruction/sparse_perspect.png Graphic file (type pn
 g)
@@ -2736,7 +2735,7 @@ Package pdftex.def Info: figures/chapter5/reconstruction/sparse_perspect.png us
 ed on input line 75.
 (pdftex.def)             Requested size: 213.19627pt x 142.1294pt.
 
-<figures/chapter5/reconstruction/dense_perspect.png, id=1305, 821.0675pt x 547.
+<figures/chapter5/reconstruction/dense_perspect.png, id=1306, 821.0675pt x 547.
 04375pt>
 File: figures/chapter5/reconstruction/dense_perspect.png Graphic file (type png
 )
@@ -2753,18 +2752,18 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 87.
 
-[64 <H:/大论文-1-23/李浩模板1-12/figures/chapter5/reconstruction/time-co
-nsume.png> <H:/大论文-1-23/李浩模板1-12/figures/chapter5/reconstruction/
-feature-filter1.png> <H:/大论文-1-23/李浩模板1-12/figures/chapter5/recon
-struction/feature-filter2.png>]
-<figures/chapter5/reconstruction/DJI_0104.JPG, id=1322, 4015.0pt x 2258.4375pt>
+[64 <H:/大论文-1-23/李浩模板2-6/figures/chapter5/reconstruction/time-con
+sume.png> <H:/大论文-1-23/李浩模板2-6/figures/chapter5/reconstruction/fe
+ature-filter1.png> <H:/大论文-1-23/李浩模板2-6/figures/chapter5/reconstr
+uction/feature-filter2.png>]
+<figures/chapter5/reconstruction/DJI_0104.JPG, id=1323, 4015.0pt x 2258.4375pt>
 File: figures/chapter5/reconstruction/DJI_0104.JPG Graphic file (type jpg)
 <use figures/chapter5/reconstruction/DJI_0104.JPG>
 Package pdftex.def Info: figures/chapter5/reconstruction/DJI_0104.JPG used on i
 nput line 92.
 (pdftex.def)             Requested size: 213.19627pt x 119.88959pt.
 
-<figures/chapter5/reconstruction/sixbuild.PNG, id=1323, 301.8778pt x 170.13562p
+<figures/chapter5/reconstruction/sixbuild.PNG, id=1324, 301.8778pt x 170.13562p
 t>
 File: figures/chapter5/reconstruction/sixbuild.PNG Graphic file (type png)
  <use figures/chapter5/reconstruction/sixbuild.PNG>
@@ -2780,12 +2779,12 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 121.
 
-[65 <H:/大论文-1-23/李浩模板1-12/figures/chapter5/reconstruction/sparse_
-perspect.png> <H:/大论文-1-23/李浩模板1-12/figures/chapter5/reconstructi
-on/dense_perspect.png> <H:/大论文-1-23/李浩模板1-12/figures/chapter5/rec
-onstruction/DJI_0104.JPG> <H:/大论文-1-23/李浩模板1-12/figures/chapter5/
-reconstruction/sixbuild.PNG>]
-<figures/chapter5/reconstruction/sparse_perspect1.png, id=1339, 991.705pt x 510
+[65 <H:/大论文-1-23/李浩模板2-6/figures/chapter5/reconstruction/sparse_p
+erspect.png> <H:/大论文-1-23/李浩模板2-6/figures/chapter5/reconstruction
+/dense_perspect.png> <H:/大论文-1-23/李浩模板2-6/figures/chapter5/recons
+truction/DJI_0104.JPG> <H:/大论文-1-23/李浩模板2-6/figures/chapter5/reco
+nstruction/sixbuild.PNG>]
+<figures/chapter5/reconstruction/sparse_perspect1.png, id=1340, 991.705pt x 510
 .90875pt>
 File: figures/chapter5/reconstruction/sparse_perspect1.png Graphic file (type p
 ng)
@@ -2794,7 +2793,7 @@ Package pdftex.def Info: figures/chapter5/reconstruction/sparse_perspect1.png u
 sed on input line 150.
 (pdftex.def)             Requested size: 213.19627pt x 109.83543pt.
 
-<figures/chapter5/reconstruction/dense_perspect1.png, id=1340, 992.70876pt x 51
+<figures/chapter5/reconstruction/dense_perspect1.png, id=1341, 992.70876pt x 51
 0.90875pt>
 File: figures/chapter5/reconstruction/dense_perspect1.png Graphic file (type pn
 g)
@@ -2811,10 +2810,10 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 159.
 
-[66 <H:/大论文-1-23/李浩模板1-12/figures/chapter5/reconstruction/sparse_
-perspect1.png> <H:/大论文-1-23/李浩模板1-12/figures/chapter5/reconstruct
-ion/dense_perspect1.png>]
-<figures/chapter5/extraction/RGBOriginal.jpg, id=1359, 1541.76pt x 2192.19pt>
+[66 <H:/大论文-1-23/李浩模板2-6/figures/chapter5/reconstruction/sparse_p
+erspect1.png> <H:/大论文-1-23/李浩模板2-6/figures/chapter5/reconstructio
+n/dense_perspect1.png>]
+<figures/chapter5/extraction/RGBOriginal.jpg, id=1360, 1541.76pt x 2192.19pt>
 File: figures/chapter5/extraction/RGBOriginal.jpg Graphic file (type jpg)
 
 <use figures/chapter5/extraction/RGBOriginal.jpg>
@@ -2822,14 +2821,14 @@ Package pdftex.def Info: figures/chapter5/extraction/RGBOriginal.jpg used on in
 put line 184.
 (pdftex.def)             Requested size: 82.38774pt x 117.14218pt.
 
-<figures/chapter5/extraction/openoperation.jpg, id=1360, 1541.76pt x 2192.19pt>
+<figures/chapter5/extraction/openoperation.jpg, id=1361, 1541.76pt x 2192.19pt>
 File: figures/chapter5/extraction/openoperation.jpg Graphic file (type jpg)
 <use figures/chapter5/extraction/openoperation.jpg>
 Package pdftex.def Info: figures/chapter5/extraction/openoperation.jpg used on 
 input line 187.
 (pdftex.def)             Requested size: 82.38774pt x 117.14218pt.
 
-<figures/chapter5/extraction/removehouse.jpg, id=1361, 1541.76pt x 2192.19pt>
+<figures/chapter5/extraction/removehouse.jpg, id=1362, 1541.76pt x 2192.19pt>
 File: figures/chapter5/extraction/removehouse.jpg Graphic file (type jpg)
 
 <use figures/chapter5/extraction/removehouse.jpg>
@@ -2837,7 +2836,7 @@ Package pdftex.def Info: figures/chapter5/extraction/removehouse.jpg used on in
 put line 191.
 (pdftex.def)             Requested size: 82.38774pt x 117.14218pt.
 
-<figures/chapter5/extraction/firstmiddlecenter.jpg, id=1362, 1541.76pt x 2192.1
+<figures/chapter5/extraction/firstmiddlecenter.jpg, id=1363, 1541.76pt x 2192.1
 9pt>
 File: figures/chapter5/extraction/firstmiddlecenter.jpg Graphic file (type jpg)
 
@@ -2846,7 +2845,7 @@ Package pdftex.def Info: figures/chapter5/extraction/firstmiddlecenter.jpg used
  on input line 194.
 (pdftex.def)             Requested size: 82.38774pt x 117.14218pt.
 
-<figures/chapter5/extraction/finalmiddlecenter.jpg, id=1363, 1541.76pt x 2192.1
+<figures/chapter5/extraction/finalmiddlecenter.jpg, id=1364, 1541.76pt x 2192.1
 9pt>
 File: figures/chapter5/extraction/finalmiddlecenter.jpg Graphic file (type jpg)
 
@@ -2863,13 +2862,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 203.
 
-[67 <H:/大论文-1-23/李浩模板1-12/figures/chapter5/extraction/RGBOriginal
-.jpg> <H:/大论文-1-23/李浩模板1-12/figures/chapter5/extraction/openopera
-tion.jpg> <H:/大论文-1-23/李浩模板1-12/figures/chapter5/extraction/remov
-ehouse.jpg> <H:/大论文-1-23/李浩模板1-12/figures/chapter5/extraction/fir
-stmiddlecenter.jpg> <H:/大论文-1-23/李浩模板1-12/figures/chapter5/extrac
-tion/finalmiddlecenter.jpg>]
-<figures/chapter5/extraction/result_SIFT.jpg, id=1382, 2601.72pt x 3300.33pt>
+[67 <H:/大论文-1-23/李浩模板2-6/figures/chapter5/extraction/RGBOriginal.
+jpg> <H:/大论文-1-23/李浩模板2-6/figures/chapter5/extraction/openoperati
+on.jpg> <H:/大论文-1-23/李浩模板2-6/figures/chapter5/extraction/removeho
+use.jpg> <H:/大论文-1-23/李浩模板2-6/figures/chapter5/extraction/firstmi
+ddlecenter.jpg> <H:/大论文-1-23/李浩模板2-6/figures/chapter5/extraction/
+finalmiddlecenter.jpg>]
+<figures/chapter5/extraction/result_SIFT.jpg, id=1383, 2601.72pt x 3300.33pt>
 File: figures/chapter5/extraction/result_SIFT.jpg Graphic file (type jpg)
 
 <use figures/chapter5/extraction/result_SIFT.jpg>
@@ -2884,7 +2883,7 @@ Package pdftex.def Info: figures/chapter5/extraction/finalmiddlecenter.jpg used
  on input line 211.
 (pdftex.def)             Requested size: 108.405pt x 154.13797pt.
 
-<figures/chapter5/extraction/manual_real_road.jpg, id=1383, 1541.76pt x 2192.19
+<figures/chapter5/extraction/manual_real_road.jpg, id=1384, 1541.76pt x 2192.19
 pt>
 File: figures/chapter5/extraction/manual_real_road.jpg Graphic file (type jpg)
  <use figures/chapter5/extraction/manual_real_road.jpg>
@@ -2892,7 +2891,7 @@ Package pdftex.def Info: figures/chapter5/extraction/manual_real_road.jpg used
 on input line 214.
 (pdftex.def)             Requested size: 108.405pt x 154.13797pt.
 
-<figures/chapter5/extraction/result_chart.png, id=1384, 748.59676pt x 463.13025
+<figures/chapter5/extraction/result_chart.png, id=1385, 748.59676pt x 463.13025
 pt>
 File: figures/chapter5/extraction/result_chart.png Graphic file (type png)
  <use figures/chapter5/extraction/result_chart.png>
@@ -2908,10 +2907,10 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 45.
 
-[68 <H:/大论文-1-23/李浩模板1-12/figures/chapter5/extraction/result_SIFT
-.jpg> <H:/大论文-1-23/李浩模板1-12/figures/chapter5/extraction/manual_re
-al_road.jpg> <H:/大论文-1-23/李浩模板1-12/figures/chapter5/extraction/re
-sult_chart.png>]
+[68 <H:/大论文-1-23/李浩模板2-6/figures/chapter5/extraction/result_SIFT.
+jpg> <H:/大论文-1-23/李浩模板2-6/figures/chapter5/extraction/manual_real
+_road.jpg> <H:/大论文-1-23/李浩模板2-6/figures/chapter5/extraction/resul
+t_chart.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 45.
@@ -2922,7 +2921,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 [69]
 No file chapter/chapter6.tex.
-(H:\大论文-1-23\李浩模板1-12\chapter/chap-sum.tex
+(H:\大论文-1-23\李浩模板2-6\chapter/chap-sum.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 21.
@@ -2946,7 +2945,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 47.
 
-[71] (H:\大论文-1-23\李浩模板1-12\chapter/chap-bibs.tex
+[71] (H:\大论文-1-23\李浩模板2-6\chapter/chap-bibs.tex
 Underfull \vbox (badness 1917) has occurred while \output is active []
 
 
@@ -2995,7 +2994,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 48.
 
-[75] (H:\大论文-1-23\李浩模板1-12\chapter/chap-pubs.tex
+[75] (H:\大论文-1-23\李浩模板2-6\chapter/chap-pubs.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 38.
@@ -3017,7 +3016,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 49.
 
-[77] (H:\大论文-1-23\李浩模板1-12\chapter/chap-ack.tex<<c1923.cmap>>)
+[77] (H:\大论文-1-23\李浩模板2-6\chapter/chap-ack.tex<<c1923.cmap>>)
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\selfontsize' on input line 50.
@@ -3033,17 +3032,17 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 53.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 53.
- (H:\大论文-1-23\李浩模板1-12\Thesis.aux
-(H:\大论文-1-23\李浩模板1-12\chapter/chapter1.aux)
-(H:\大论文-1-23\李浩模板1-12\chapter/chapter2.aux)
-(H:\大论文-1-23\李浩模板1-12\chapter/chapter3.aux)
-(H:\大论文-1-23\李浩模板1-12\chapter/chapter4.aux)
-(H:\大论文-1-23\李浩模板1-12\chapter/chapter5.aux)
-(H:\大论文-1-23\李浩模板1-12\chapter/chapter6.aux)
-(H:\大论文-1-23\李浩模板1-12\chapter/chap-sum.aux)
-(H:\大论文-1-23\李浩模板1-12\chapter/chap-bibs.aux)
-(H:\大论文-1-23\李浩模板1-12\chapter/chap-pubs.aux)
-(H:\大论文-1-23\李浩模板1-12\chapter/chap-ack.aux))
+ (H:\大论文-1-23\李浩模板2-6\Thesis.aux
+(H:\大论文-1-23\李浩模板2-6\chapter/chapter1.aux)
+(H:\大论文-1-23\李浩模板2-6\chapter/chapter2.aux)
+(H:\大论文-1-23\李浩模板2-6\chapter/chapter3.aux)
+(H:\大论文-1-23\李浩模板2-6\chapter/chapter4.aux)
+(H:\大论文-1-23\李浩模板2-6\chapter/chapter5.aux)
+(H:\大论文-1-23\李浩模板2-6\chapter/chapter6.aux)
+(H:\大论文-1-23\李浩模板2-6\chapter/chap-sum.aux)
+(H:\大论文-1-23\李浩模板2-6\chapter/chap-bibs.aux)
+(H:\大论文-1-23\李浩模板2-6\chapter/chap-pubs.aux)
+(H:\大论文-1-23\李浩模板2-6\chapter/chap-ack.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 53.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 53.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
@@ -3059,12 +3058,12 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  22827 strings out of 495354
- 369823 string characters out of 3183859
- 444406 words of memory out of 3000000
+ 369737 string characters out of 3183859
+ 444430 words of memory out of 3000000
  24303 multiletter control sequences out of 15000+200000
  170333 words of font info for 497 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 42i,21n,58p,1300b,1552s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,21n,58p,1299b,1552s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/s
 imsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc>{C:/CTEX/Mi
 KTeX/fonts/enc/dvips/fontname/8r.enc}<C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/F
@@ -3097,9 +3096,9 @@ onts/type1/public/amsfonts/cm/cmsy10.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/symbol
 /usyr.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/CTEX/MiKTeX/fonts
 /type1/urw/times/utmb8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C
 :/CTEX/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Thesis.pdf (90 pages, 53494374 bytes).
+Output written on Thesis.pdf (90 pages, 53494453 bytes).
 PDF statistics:
- 1757 PDF objects out of 2073 (max. 8388607)
+ 1758 PDF objects out of 2073 (max. 8388607)
  392 named destinations out of 1000 (max. 500000)
  1140 words of extra memory for PDF output out of 10000 (max. 10000000)
 
