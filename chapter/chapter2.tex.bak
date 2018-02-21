@@ -3,7 +3,7 @@
 È«¾°Í¼Ïñ£¨Panorama£©ÊÇÖ¸Ë®Æ½½Ç¶È°üº¬ÍêÕû$360^\text{o}$µÄÏà»úµÃµ½µÄ¶þÎ¬Æ½ÃæÍ¼Ïñ¡£Ïà¶ÔÓÚÆÕÍ¨µ¥Ä¿Ïà»ú£¬È«¾°Ïà»ú¿ÉÒÔ¸üÍêÕûµØ³ÊÏÖÎÞÈË³µÖÜÎ§»·¾³¡£
 ±¾ÕÂÍ¨¹ýÈ«¾°Ïà»úÓë¸ß¾«¶È¶¨Î»ÏµÍ³µÄÊý¾ÝÈÚºÏÌá³öÒ»ÖÖ³µµÀ¼¶±ðµç×ÓµØÍ¼µÄ¹¹½¨·½·¨£¬ÒÔ¸ÃµØÍ¼Îª»ù´¡£¬½áºÏÔË¶¯¹æ»®¼¼ÊõºÍ¸ú×Ù¿ØÖÆ¼¼Êõ¿ÉÒÔÎªUGVÔÚ½á¹¹»¯»ò·Ç½á¹¹»¯µÀÂ·»·¾³ÏÂ×ÔÖ÷ÐÐÊ»Ìá¹©±£ÕÏ¡£±¾ÕÂÖ÷Òª°üÀ¨Êý¾Ý²É¼¯ÏµÍ³Éè¼Æ¡¢È«¾°Í¼Ïñ´¦Àí¼°´ó·¶Î§µç×ÓµØÍ¼¹¹½¨¡£
 
-\section{´«¸ÐÆ÷Êý¾Ý²É¼¯}
+\section{Êý¾Ý²É¼¯ÓëÐÅÏ¢±àÂë}
 \subsection{´«¸ÐÆ÷Ñ¡È¡}
 ÔÚ¿ªÊ¼ÑÐ¾¿Ö®Ç°£¬ÏÈÌÖÂÛ±¾ÑÐ¾¿ËùÉæ¼°µ½µÄ´«¸ÐÆ÷Ñ¡ÐÍÎÊÌâ¡£ÈçÍ¼\ref{sensors}ËùÊ¾ÊÇUGVÍ¨³£Ê¹ÓÃµÄÊÓ¾õ´«¸ÐÆ÷¡¢3D¼¤¹âÀ×´ï¡£Í¼$(a)$ÊÇË«Ä¿Ïà»ú£¬Ë«Ä¿Ïà»ú¿ÉÒÔÍ¨¹ý×óÓÒÉãÏñÍ·¼ÆËãµÃµ½³¡¾°Éî¶ÈÍ¼£¬µ«Ë«Ä¿Ïà»úµÄ»ùÏß½Ï¶Ì£¬µ±ÎïÌå¾àÏà»ú½ÏÔ¶Ê±£¬¼ÆËãµÃµ½µÄÎïÌåÉî¶ÈÍ¼Îó²î½Ï´ó¡£Í¼$(b)$ÊÇÈ«¾°Ïà»ú£¬¿ÉÒÔ»ñÈ¡ÖÜÎ§$360^\text{o}$ ³¡¾°£¬ÊÓÒ°¿ªÀ«£¬µ«Ïà»úÄ£ÐÍ½Ï¸´ÔÓ¡£Í¼$(c)$¼¤¹âÀ×´ï¿ÉÒÔÖ±½ÓµÃµ½3DµãÔÆ£¬ÇÒ¾«¶È¸ß£¬µ«¼¤¹âÀ×´ï¼Û¸ñ°º¹óÏÞÖÆÁËÆä¹ã·ºÓ¦ÓÃ¡£Í¼$(d)$ ÊÇ×î³£¼ûµÄµ¥Ä¿Ïà»ú£¬Ïà»úµÄ³ÉÏñ¿ÉÒÔ½üËÆ³éÏóÎªÐ¡¿×³ÉÏñÄ£ÐÍ£¬´¦ÀíÆä³ÉÏñ½ÏÈ«¾°Ïà»ú¸ü·½±ã£¬ËäÈ»ÆäÎÞ·¨Ö±½ÓµÃµ½³¡¾°µÄÉî¶ÈÍ¼£¬µ«¿ÉÒÔÍ¨¹ýÕë¶ÔÍ¬Ò»³¡¾°µÄ¶àÕÅÍ¼Ïñ¼ÆËã¸Ã³¡¾°µÄÉî¶ÈÍ¼¡£
 \begin{figure}[!htbp]
@@ -17,10 +17,10 @@
 
 LadybugÈ«¾°Ïà»ú¾ßÓÐ6¸ö¶ÀÁ¢µÄÉãÏñÍ·£¬ÈçÍ¼\ref{sensors}ÖÐ$(b)$ËùÊ¾£¬¿ÉÒÔÔÚÇòÃæ×ø±êÏµÏÂ½«6¸öÏà»úÍ¼ÏñÊµÊ±ºÏ²¢ÎªÒ»ÕÅÈ«¾°Í¼£¬³ÊÏÖÔÚ¶þÎ¬Æ½Ãæ¿Õ¼äÖÐ¡£LadybugÏà»úÌá¹©$360^\text{o}$ÊÓÆµ´®Á÷¹¦ÄÜ£¬¿ÉÒÔ¸²¸Ç90\% µÄ¿ÉÊÓÇòÃæ£¬¾ßÓÐÍ¼Ïñ²É¼¯¡¢´¦ÀíºÍÐ£Õý¹¦ÄÜ¡£
 
-ÓÉÓÚ±¾ÕÂÌá³öµÄ·½·¨ÊÇ»ùÓÚ¶¨Î»ÐÅÏ¢½«±ä»»ºóµÄÈ«¾°Í¼ÏñÆ´½ÓÎª´ó·¶Î§µØÍ¼£¬ËùÒÔÔÚ´ËÑ¡ÓÃ¸ß¾«¶È×éºÏ¶¨Î»ÏµÍ³£¬ÆäÓÉ²î·ÖGNSS£¨Global Navigation Satellite System£©½ÓÊÕ»úÓë¸ß¾«¶È¹ßÐÔµ¼º½ÏµÍ³¹¹³É¡£ÔÚGNSS½ÓÊÕ»úËøÐÇ×´Ì¬Á¼ºÃÊ±£¬¸Ã×éºÏ¶¨Î»ÏµÍ³¿ÉÒÔ´ïµ½ÀåÃ×¼¶±ð¾«¶È¡£
+ÓÉÓÚ¹¹½¨¶þÎ¬µØÍ¼µÄ·½·¨ÊÇ»ùÓÚ¶¨Î»ÐÅÏ¢½«±ä»»ºóµÄÈ«¾°Í¼ÏñÆ´½ÓÎª´ó·¶Î§µØÍ¼£¬ËùÒÔÔÚ´ËÑ¡ÓÃ¸ß¾«¶È×éºÏ¶¨Î»ÏµÍ³£¬ÆäÓÉ²î·ÖGNSS£¨Global Navigation Satellite System£©½ÓÊÕ»úÓë¸ß¾«¶È¹ßÐÔµ¼º½ÏµÍ³¹¹³É¡£ÔÚGNSS½ÓÊÕ»úËøÐÇ×´Ì¬Á¼ºÃÊ±£¬¸Ã×éºÏ¶¨Î»ÏµÍ³¿ÉÒÔ´ïµ½ÀåÃ×¼¶±ð¾«¶È¡£
 
 \subsection{¶¨Î»ÐÅÏ¢±àÂë}
-ÎªÁËÍ¬Ê±²É¼¯LadybugÓë¸ß¾«¶È×éºÏ¶¨Î»ÏµÍ³µÄÊý¾ÝÐÅÏ¢£¬²ÉÓÃ½«³µÁ¾µÄ¶¨Î»ÐÅÏ¢±àÂëÎª´óÐ¡Ò»¶¨µÄQR Code£¨Quick-Response Code£©£¬·ÅÖÃÓÚÃ¿Ö¡È«¾°Í¼Ïñ×óÉÏ½ÇÎ»ÖÃ£¬Íê³ÉÏµÍ³µÄÐÅÏ¢²É¼¯ÈÎÎñ¡£
+ÎªÁËÍ¬Ê±²É¼¯LadybugÓë¸ß¾«¶È×éºÏ¶¨Î»ÏµÍ³µÄÊý¾ÝÐÅÏ¢£¬²ÉÓÃ½«³µÁ¾µÄ¶¨Î»ÐÅÏ¢±àÂëÎª´óÐ¡Ò»¶¨µÄQR Code£¨Quick-Response Code£©£¬·ÅÖÃÓÚÃ¿Ö¡È«¾°Í¼ÏñÖÐ£¬Íê³ÉÏµÍ³µÄÐÅÏ¢²É¼¯ÈÎÎñ¡£
 
 QR Code×÷ÎªÒ»ÖÖÄ¿Ç°Ê¹ÓÃ½Ï¶àµÄ¾ØÕóÊ½¶þÎ¬Âë£¬¾ßÓÐ¿Õ¼äÀûÓÃÂÊ¸ß£¬´æ´¢Êý¾ÝÁ¿´ó£¬½âÂëËÙ¶È¿ì£¬¿ÉÒÔ°üº¬×Ö·û¡¢Êý×ÖµÈ²»Í¬ÄÚÈÝµÈÓÅµã¡£ÈçÍ¼\ref{qrcodefig} ËùÊ¾£¬¶þÎ¬Âë¿É·ÖÎªÁ½²¿·Ö£º¹¦ÄÜÇøºÍ±àÂëÇø¡£¹¦ÄÜÇøµÄ¶þÎ¬ÂëÖ÷ÒªÊÇÓÃÀ´¶¨Î»¶þÎ¬ÂëµÄÎ»ÖÃ£¬Ð£Õý¶þÎ¬ÂëµÄÐÎ±ä£»±àÂëÇøµÄ¶þÎ¬Âë°üº¬¸Ã¶þÎ¬ÂëµÄÊý¾ÝÓëÐ£Ñé¾À´íµÈÐÅÏ¢¡£
 °´ÕÕQR CodeµÄ¹æÔò£¬¿ÉÒÔºÜ·½±ãµØ½«¶¨Î»ÐÅÏ¢±àÂëÎª¹Ì¶¨ÏñËØ´óÐ¡µÄ¶þÎ¬Âë£¬½ø¶ø½«Æä·ÅÖÃÔÚÃ¿Ö¡È«¾°Í¼ÏñÖÐ£¬Íê³ÉÐÅÏ¢µÄ²É¼¯¹ý³Ì¡£µ±»Ø·Å¸ÃÊÓÆµÊ±£¬¿ÉÒÔºÜÈÝÒ×µØ¶Ô´óÐ¡¹Ì¶¨µÄ±àÂëÇø½øÐÐ½âÂë£¬¶ÁÈ¡µ½Ã¿Ö¡È«¾°Í¼¶ÔÓ¦µÄ³µÁ¾µ±Ç°µÄÎ»ÖÃÓë×ËÌ¬ÐÅÏ¢µÈ£¬ÎªÍ¼ÏñÆ´½Ó×ö×¼±¸¡£
@@ -31,22 +31,24 @@ QR Code×÷ÎªÒ»ÖÖÄ¿Ç°Ê¹ÓÃ½Ï¶àµÄ¾ØÕóÊ½¶þÎ¬Âë£¬¾ßÓÐ¿Õ¼äÀûÓÃÂÊ¸ß£¬´æ´¢Êý¾ÝÁ¿´ó£¬½âÂëË
     \label{qrcodefig}
 \end{figure}
 
-ÔÚ´Ë½éÉÜÒ»ÏÂ¶þÎ¬ÂëµÄ±àÂëÓë½âÂë¹ý³Ì¡£ÓÉÓÚLadybugÍ¼ÏñµÄÖ¡ÂÊÎª7Hz£¬¸ß¾«¶È×éºÏ¶¨Î»ÏµÍ³µÄÖ¡ÂÊÎª20Hz£¬¿¼ÂÇÆ´½ÓÍ¼ÏñµÄ¾«¶È£¬ÔÚÃ»ÓÐÊ¹ÓÃÓ²¼þ´¥·¢µÄÌõ¼þÏÂ£¬±¾ÎÄ²ÉÓÃ×î½üÁÚÔ­Ôò£¬¼´µ±ÊÕµ½Ò»Ö¡LadybugÍ¼ÏñÊ±£¬²éÕÒ¾àµ±Ç°Ê±¿Ì×î½üµÄ¸ß¾«¶È×éºÏ¶¨Î»ÏµÍ³µÄÊä³öÐÅÏ¢£¬½«Æä±àÂëÎª¶þÎ¬Âë¡£ÓÉÓÚ±àÂëµÄÐÅÏ¢ÓÐÊ±¼ä¡¢¾­Î³¶È¡¢·½Î»½Ç¡¢Æ«º½½ÇÓë¸©Ñö½Ç6 ¸öÕûÊý£¬ËùÒÔÐèÒªµÄ±àÂëÐÅÏ¢Á¿ºÜÐ¡£¬±¾ÎÄ²ÉÓÃ$25\times25$ÏñËØµÄ¶þÎ¬Âë±àÂë¶¨Î»ÐÅÏ¢¡£
+ÔÚ´Ë½éÉÜÒ»ÏÂ¶þÎ¬ÂëµÄ±àÂëÓë½âÂë¹ý³Ì¡£ÓÉÓÚLadybugÍ¼ÏñµÄÖ¡ÂÊÎª7Hz£¬¸ß¾«¶È×éºÏ¶¨Î»ÏµÍ³µÄÖ¡ÂÊÎª20Hz£¬¿¼ÂÇÆ´½ÓÍ¼ÏñµÄ¾«¶È£¬ÔÚÃ»ÓÐÊ¹ÓÃÓ²¼þ´¥·¢µÄÌõ¼þÏÂ£¬±¾ÎÄ²ÉÓÃ×î½üÁÚÔ­Ôò£¬¼´µ±ÊÕµ½Ò»Ö¡LadybugÍ¼ÏñÊ±£¬²éÕÒ¾àµ±Ç°Ê±¿Ì×î½üµÄ¸ß¾«¶È×éºÏ¶¨Î»ÏµÍ³µÄÊä³öÐÅÏ¢£¬½«Æä±àÂëÎª¶þÎ¬Âë¡£ÓÉÓÚ±àÂëµÄÐÅÏ¢ÓÐÊ±¼ä¡¢¾­Î³¶È¡¢·½Î»½Ç¡¢Æ«º½½ÇÓë¸©Ñö½Ç6¸öÕûÊý£¬ËùÒÔÐèÒªµÄ±àÂëÐÅÏ¢Á¿ºÜÐ¡£¬±¾ÎÄ²ÉÓÃ$25\times25$ÏñËØµÄ¶þÎ¬Âë±àÂë¶¨Î»ÐÅÏ¢¡£
 
 \section{È«¾°Í¼Ïñ´¦Àí}
-ÔÚµÃµ½LadybugÏà»úµÄÈ«¾°Í¼ºó£¬Ê¹ÓÃÄæÍ¸ÊÓÍ¶Ó°£¨Inverse Perspective Mapping, IPM£©½«È«¾°Í¼ÏñÍ¶Ó°³É¸©ÊÓÍ¼¡£¶øºó½«³µÁ¾µÄ¸ß¾«¶È¶¨Î»ÐÅÏ¢±àÂëÎª¶þÎ¬Âë£¬·ÅÖÃÓÚ¶ÔÓ¦µÄÄæÍ¸ÊÓÍ¶Ó°µÃµ½µÄÍ¼Æ¬µÄ×óÏÂ½Ç£¬´Ó¶øÍê³ÉÍ¼ÏñÓëÆä¶ÔÓ¦µÄÎ»ÖÃ²É¼¯Óë´¦Àí£¬·½±ãºóÐø¹¹½¨´ó·¶Î§µØÍ¼¡£
+ÔÚµÃµ½LadybugÏà»úµÄÈ«¾°Í¼ºó£¬Ê¹ÓÃÄæÍ¸ÊÓÍ¶Ó°£¨Inverse Perspective Mapping, IPM£©½«È«¾°Í¼ÏñÍ¶Ó°³É¸©ÊÓÍ¼¡£¶øºó½«³µÁ¾µÄ¸ß¾«¶È¶¨Î»ÐÅÏ¢±àÂëÎª¶þÎ¬Âë£¬·ÅÖÃÓÚ¶ÔÓ¦µÄÄæÍ¸ÊÓÍ¶Ó°µÃµ½µÄÍ¼Æ¬µÄÓÒÏÂ½Ç£¬´Ó¶øÍê³ÉÍ¼ÏñÓëÆä¶ÔÓ¦µÄÎ»ÖÃ²É¼¯Óë´¦Àí£¬·½±ãºóÐø¹¹½¨´ó·¶Î§µØÍ¼¡£
 %\begin{figure}[!htbp]
 %	\centering
 %	\caption{LadybugÈ«¾°Ïà»ú}
 %	\label{ladybug}
 %\end{figure}
+
+ÓÉÓÚLadybug³ÉÏñÃèÊöÔÚÇòÃæ×ø±êÏµÖÐ£¬IPMÍ¶Ó°ÐèÒª±íÊ¾ÔÚ³µÌå×ø±êÏµÖÐ£¬µØÍ¼Æ´½ÓÐèÒªÔÚÊÀ½ç×ø±êÏµÖÐÍê³É£¬ÔÚ´Ë¼òµ¥½éÉÜÈ«¾°Í¼Ïñ´¦Àí¹ý³ÌÉæ¼°µÄÏà¹Ø×ø±êÏµµÄ±ä»»¹ØÏµ¡£ÈçÍ¼\ref{para}ËùÊ¾£¬´ú±íLadybugÈ«¾°Ïà»ú×ø±êÏµ£¨Í¼ÖÐ$c$±íÊ¾£©Óë³µÌå×ø±êÏµ£¨Í¼ÖÐ$w$±íÊ¾£©µÄ¹ØÏµ£¬ÆäÖÐÔÚ³µÌå×ø±êÏµÖÐ£¬ÈÆ×ÔÉí$x$£¬$y$ºÍ$z$Ðý×ªµÄ½Ç¶È·Ö±ðÎª¸©Ñö½Ç£¬ºá¹ö½ÇºÍ·½Î»½Ç£»²ÉÓÃÇòÃæÐÎÏóµØÕ¹Ê¾È«¾°Ïà»ú×ø±êÏµÓëÈ«¾°Í¼Ïñ×ø±êÏµµÄ±ä»»¹ØÏµ£¬ÇòÃæÏÁ·ìÓëÈ«¾°Í¼·Ö¿é³É¶ÔÓ¦¹ØÏµ£¨Í¼ÖÐÂÌÉ«ÇøÓòËùÊ¾£©£¬ÈçÍ¼ÖÐÐéÏß¼ýÍ·ËùÊ¾£¬½«ÇòÃæÕ¹¿ª³É¶þÎ¬Æ½ÃæµÃµ½È«¾°Í¼Ïñ£¬Æä³¤¿í·Ö±ð´ú±íÏà¶ÔÓÚ³µÌåµÄ·½Î»½Ç$\mu$Óë¸©Ñö½Ç$\nu$£»Èç¹ûÖªµÀ³µÌå×ø±êÏµÓëÈ«¾°Ïà»ú×ø±êÏµÖ®¼äµÄ±ä»»¹ØÏµ£¬¾Í¿ÉÒÔµÃµ½³µÌå×ø±êÏµÓëÈ«¾°Í¼ÏñÖ®¼äµÄ±ä»»¹ØÏµ£¬´Ó¶ø½«È«¾°Í¼Ïñ±äÎª³µÌå×ø±êÏµÖÐµÄÄæÍ¸ÊÓÍ¶Ó°Í¼¡£
+
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=5.0in]{chapter2/para.png}
 	\caption{ÄæÍ¸ÊÓ×ø±ê±ä»»¹ØÏµ}
 	\label{para}
 \end{figure}
-ÓÉÓÚLadybug³ÉÏñÃèÊöÔÚÇòÃæ×ø±êÏµÖÐ£¬IPMÍ¶Ó°ÐèÒª±íÊ¾ÔÚ³µÌå×ø±êÏµÖÐ£¬µØÍ¼Æ´½ÓÐèÒªÔÚÊÀ½ç×ø±êÏµÖÐÍê³É£¬ÔÚ´Ë¼òµ¥½éÉÜÈ«¾°Í¼Ïñ´¦Àí¹ý³ÌÉæ¼°µÄÏà¹Ø×ø±êÏµµÄ±ä»»¹ØÏµ¡£ÈçÍ¼\ref{para}ËùÊ¾£¬´ú±íLadybugÈ«¾°Ïà»úµÄÇòÃæ×ø±êÏµ£¨Í¼ÖÐ$c$±íÊ¾£©Óë³µÌå×ø±êÏµ£¨Í¼ÖÐ$w$±íÊ¾£©µÄ¹ØÏµ£¬ÆäÖÐÔÚ³µÌå×ø±êÏµÖÐ£¬ÈÆ×ÔÉí$x$£¬$y$ºÍ$z$Ðý×ªµÄ½Ç¶È·Ö±ðÎª¸©Ñö½Ç£¬ºá¹ö½ÇºÍ·½Î»½Ç£¬Í¼ÖÐµÀÂ·´ú±í³µÁ¾ÐÐÊ»·½Ïò£»ÔÚÈ«¾°ÇòÃæ×ø±êÏµÖÐ£¬ÇòÃæÏÁ·ìÓëÈ«¾°Í¼·Ö¿é³É¶ÔÓ¦¹ØÏµ£¨Í¼ÖÐÂÌÉ«ÇøÓòËùÊ¾£©£¬ÈçÍ¼ÖÐÐéÏß¼ýÍ·ËùÊ¾£¬½«ÇòÃæ×ø±êÕ¹¿ª³É¶þÎ¬Æ½ÃæµÃµ½È«¾°Í¼Ïñ£¬Æä³¤¿í·Ö±ð´ú±íÏà¶ÔÓÚ³µÌåµÄ·½Î»½Ç$\mu$Óë¸©Ñö½Ç$\nu$¡£
 
 ÎªÁËµÃµ½È«¾°Í¼ÏñµÄIPM¸©ÊÓÍ¼£¬ÐèÒª±ê¶¨È«¾°Ïà»úLadybugÏà¶ÔÓÚ³µÁ¾µÄÍâ²Î£º¸©Ñö½Ç$\theta$£¬ºá¹ö½Ç$\phi$ºÍ·½Î»½Ç$\varphi$£¬ÒÔ¼°LadybugÏà»ú¹âÐÄÓëµØÃæµÄ¸ß¶È$h$¡£ÏÖ¶¨Òå³µÌå×ø±êÏµÎª$\{F_\omega\}=\{X_\omega,Y_\omega,Z_\omega\}$£¬×ø±êÔ­µãÎ»ÓÚ³µÁ¾ºóÖáÖÐµã£»¶¨ÒåÈ«¾°Ïà»ú×ø±êÏµÎª$\{F_c\}=\{X_c,Y_c,Z_c\}$£»¶¨ÒåÈ«¾°Í¼Ïñ×ø±êÎª$\{F_i\}=\{\mu,\nu\}$£¬Ôò³µÌå×ø±êÏµÖÐÈÎÒ»µã$P_c$ÓëÈ«¾°Ïà»ú×ø±êÏµÖÐµã$P_w$µÄ¶ÔÓ¦¹ØÏµÎª£º
 \begin{equation}
@@ -99,7 +101,7 @@ arctan \frac{y_c}{x_c} \\ arccos \frac{z_c}{||P_c||} \\
 \end{array}
 \right]
 \end{equation}
-ÆäÖÐ$||P_c||=\sqrt{{x_{c}}^2 + {y_{c}}^2 + {z_{c}}^2}$£¬¼´$P_c$µÄ¶þ·¶Êý¡£Í¨¹ýÒÔÉÏËã·¨¿ÉÒÔ½«È«¾°Í¼Ïñ£¨Í¼\ref{raw-para}£©±ä»»µÃµ½³µÌå×ø±êÏµÏÂµÄIPMÍ¼£¬ÏÔÊ¾Ð§¹ûÈçÍ¼\ref{IPM}ËùÊ¾£¬Í¼ÖÐ³¤¿íÔÚÕæÊµµØÀí¿Õ¼äÖÐ¾ùÎª$30m$¡£
+ÆäÖÐ$||P_c||=\sqrt{{x_{c}}^2 + {y_{c}}^2 + {z_{c}}^2}$¡£Í¨¹ýÒÔÉÏËã·¨¿ÉÒÔ½«È«¾°Í¼Ïñ£¨Í¼\ref{raw-para}£©±ä»»Îª³µÌå×ø±êÏµÏÂµÄIPMÍ¼£¬ÏÔÊ¾Ð§¹ûÈçÍ¼\ref{IPM}ËùÊ¾£¬Í¼ÖÐ³¤¿íÔÚÕæÊµµØÀí¿Õ¼äÖÐ¾ùÎª$30m$¡£
 
 \begin{figure}[!htbp]
 	\centering
@@ -116,10 +118,10 @@ arctan \frac{y_c}{x_c} \\ arccos \frac{z_c}{||P_c||} \\
 \begin{figure}[!htbp]
 	\centering
     \subfigure{
-	\includegraphics[width=2.4in]{chapter2/IPM927090958.png}
+	\includegraphics[width=2.2in]{chapter2/IPM927090958.png}
     }
     \subfigure{
-    \includegraphics[width=2.4in]{chapter2/IPM1001103021.png}
+    \includegraphics[width=2.2in]{chapter2/IPM1001103021.png}
     }
 	\caption{ÄæÍ¸ÊÓ±ä»»½á¹û}
 	\label{IPM}
@@ -129,11 +131,10 @@ arctan \frac{y_c}{x_c} \\ arccos \frac{z_c}{||P_c||} \\
 %\subsubsection{³µÌå×ø±êÏµ}
 %\subsubsection{ÇòÌåÏà»ú×ø±êÏµ}
 
-
 \section{µØÍ¼µÄ¹¹½¨ÓëÊ¹ÓÃ}
 Ê¹ÓÃÒÔÉÏ·½·¨¿ÉÒÔµÃµ½È«¾°Í¼ÏñµÄÄæÍ¸ÊÓÍ¶Ó°Í¼£¬ÒÔ¼°Ã¿ÕÅÍ¶Ó°Í¼¶ÔÓ¦µÄ´ËÊ±³µÁ¾Î»ÖÃÓë·½Î»µÈÐÅÏ¢¡£»ùÓÚ´Ë¿ÉÒÔ½«¾Ö²¿Ð¡ÇøÓòµÄÄæÍ¸ÊÓÍ¶Ó°Í¼°´ÕÕÆä¶ÔÓ¦µÄÎ»ÖÃÆ´½ÓÎª´ó·¶Î§µØÍ¼£¬²¢Ìí¼Ó³µµÀ¡¢ÏÞËÙµÈÐÅÏ¢£¬Éú³ÉUGVÐÐÊ»µØÍ¼£¬ÎªUGV¹æ»®Óë¸ÐÖªÌá¹©ÏÈÑéÐÅÏ¢¡£
-\subsection{Í¼ÏñÆ´½Ó}
-Í¼ÏñÆ´½ÓµÄÀúÊ·¿ÉÒÔ×·ËÝµ½ÉÏ¸öÊÀ¼Í£¬Æ´½Ó·½·¨×ÜÌåÉÏ¿ÉÒÔ·ÖÎªÁ½Àà£¬Ò»ÀàÊÇ»ùÓÚÍ¼ÏñÌØÕ÷Æ¥ÅäµÄÆ´½Ó·½·¨£¬ÁíÒ»ÀàÊÇ»ùÓÚÍ¼Æ¬¼äÏà¶ÔÎ»ÖÃ¹ØÏµµÄÆ´½Ó·½·¨¡£ÓÉÓÚ²ÉÓÃ¸ß¾«¶È×éºÏ¶¨Î»ÏµÍ³£¬ÔÚÎÞÕÚµ²¡¢¶àÂ·¾¶Ð§Ó¦½ÏÈõµÄ¿Õ¿õ³¡µØ£¬ÊµÑé¾«¶È´ïµ½$5cm$ ÒÔÄÚ£¬ËùÒÔ±¾ÎÄ²ÉÓÃ»ùÓÚÍ¼Æ¬¼äÏà¶ÔÎ»ÖÃ¹ØÏµµÄ·½·¨¡£¾ßÌå¾ÍÊÇ½«ÊÓÆµÁ÷ÖÐÃ¿Ö¡ÄæÍ¸ÊÓÍ¶Ó°Í¼Æ¬°´ÕÕ¶þÎ¬Âë½âËãµÄº½ÏòÐý×ªÒ»¶¨½Ç¶È£¬ÔÙ°´ÕÕ½âËãµÄÎ»ÖÃ½øÐÐÆ½ÒÆ£¬¶ÔËùÓÐÊÓÆµ°´ÕÕÉÏÊö·½·¨´¦Àí£¬×îÖÕµÃµ½ÍêÕûµÄ³ÇÇøµØÍ¼¡£
+\subsection{Í¼ÏñÆ´½ÓÓëµØÍ¼¹¹½¨}
+Í¼ÏñÆ´½ÓµÄÀúÊ·¿ÉÒÔ×·ËÝµ½ÉÏ¸öÊÀ¼Í£¬Æ´½Ó·½·¨×ÜÌåÉÏ¿ÉÒÔ·ÖÎªÁ½Àà£¬Ò»ÀàÊÇ»ùÓÚÍ¼ÏñÌØÕ÷Æ¥ÅäµÄÆ´½Ó·½·¨£¬ÁíÒ»ÀàÊÇ»ùÓÚÍ¼Æ¬¼äÏà¶ÔÎ»ÖÃ¹ØÏµµÄÆ´½Ó·½·¨¡£ÓÉÓÚ²ÉÓÃ¸ß¾«¶È×éºÏ¶¨Î»ÏµÍ³£¬ÔÚÎÞÕÚµ²¡¢¶àÂ·¾¶Ð§Ó¦½ÏÈõµÄ¿Õ¿õ³¡µØ£¬ÊµÑé¾«¶È´ïµ½$5{\rm cm}$ ÒÔÄÚ£¬ËùÒÔ±¾ÎÄ²ÉÓÃ»ùÓÚÍ¼Æ¬¼äÏà¶ÔÎ»ÖÃ¹ØÏµµÄ·½·¨¡£¾ßÌå¾ÍÊÇ½«ÊÓÆµÁ÷ÖÐÃ¿Ö¡ÄæÍ¸ÊÓÍ¶Ó°Í¼Æ¬°´ÕÕ¶þÎ¬Âë½âËãµÄº½ÏòÐý×ªÒ»¶¨½Ç¶È£¬ÔÙ°´ÕÕ½âËãµÄÎ»ÖÃ½øÐÐÆ½ÒÆ£¬¶ÔËùÓÐÊÓÆµ°´ÕÕÉÏÊö·½·¨´¦Àí£¬×îÖÕµÃµ½ÍêÕûµÄ³ÇÇøµØÍ¼¡£
 
 ¶ÔÓÚÃ¿Ö¡IPM¸©ÊÓÍ¼£¬³µÉíÎªÎÞÐ§ÐÅÏ¢ÇÒÕ¼¾ÝÍ¼Ïñ´óÁ¿Î»ÖÃ£¬¶ÔµØÍ¼Æ´½ÓÔì³É¸ÉÈÅ£¬ËùÒÔÔÚÆ´½ÓµØÍ¼Ç°£¬ÐèÒª½«³µÉíÒÆ³ý¡£ÓÉÓÚÈ«¾°Í¼±ä»»ÎªIPMÍ¶Ó°Í¼Ê±£¬½«IPM¸©ÊÓÍ¼±ä»»µ½³µÌå×ø±êÏµÖÐ£¬ËùÒÔÈÎºÎÒ»ÕÅIPM¸©ÊÓÍ¼µÄ³µÁ¾Î»ÖÃÓë·½Î»ÊÇ¹Ì¶¨µÄ£º³µÁ¾ºóÖáÖÐÐÄÎ»ÓÚÍ¼Æ¬ºáÖáµÄÖÐÐÄ£¬×ÝÖá¿¿ÏÂµÄ$1/3$Î»ÖÃ´¦£¬º½Ïò³¯ÉÏ¡£ÈçÍ¼\ref{carmaskfig}(a)ËùÊ¾¡£¾Ý´ËÉè¼ÆÒ»¸öÑÚÂë£¨Mask£©£¬ÔÚÆ´½Ó¹ý³ÌÖÐ½«³µÁ¾È¥µô£¬ÈçÍ¼\ref{carmaskfig}(b)ËùÊ¾£¬½öÆ´½ÓÊ£ÏÂµÄÏñËØ²»ÎªÁãµÄ²¿·Ö¡£
 \begin{figure}[!htbp]
@@ -146,7 +147,7 @@ arctan \frac{y_c}{x_c} \\ arccos \frac{z_c}{||P_c||} \\
     \label{carmaskfig}
 \end{figure}
 
-ÔÚÆ´½Ó¹ý³ÌÖÐ£¬ÒòÎªËùÐèÆ´½ÓµÄµØÀí¿Õ¼ä¹ý´ó£¬Í¼Æ¬¹ý¶à£¬¶øÄÚ´æÏÞÖÆÁËµ¥ÕÅÍ¼Æ¬µÄ´óÐ¡£¬ËùÒÔ±¾ÎÄÉè¼ÆÁËÇøºÅ±ê¼ÇµÄ·½·¨¡£¾ßÌå×ö·¨Îª£º½«ÊÓÆµÁ÷ÖÐÍ¼Æ¬°´ÕÕÎ»ÖÃºÍº½ÏòÆ´½ÓÎª¶àÕÅ$28000\times7000$ÏñËØµÄÍ¼Æ¬£¨Í¼\ref{carmask}ÖÐ³ÈÉ«·½¿ò£©£¬ÓÉÓÚÃ¿¸öÏñËØ´ú±íÊµ¼ÊµØÀí¿Õ¼äµÄ´óÐ¡Îª$0.06m$£¬¼´Ã¿ÕÅÆ´½ÓºóµÄÍ¼Æ¬´ú±íµÄÎïÀí¿Õ¼ä´óÐ¡Îª$1680m\times420m$¡£ÉèÖÃÕû¸öµØÍ¼µÄ×ø±êÔ­µã£¨Í¼\ref{carmask}ºìÉ«Ô²µãËùÊ¾£©ÎªÄ³Ò»¹Ì¶¨¾­Î³¶È×ø±ê£¬IPMÍ¼¶ÔÓ¦µÄ¾­Î³¶ÈÓë¸Ãµã¶Ô±Èºó£¬¼ÆËã³ö¸ÃÖ¡IPMÍ¼Ó¦¸Ã·ÅÖÃÓÚÄÄ¸öÇø£¬¶øºó¿ÉÒÔÆ´½Ó³É¶àÕÅ³ÈÉ«´óÐ¡µÄÍ¼Æ¬¡£Ò»¸ö³ÈÉ«·½¿ò´ú±íÒ»¸öÇøÓò£¬¶ÔÓ¦Ò»¸öÇøºÅ£¬ÏàÁÚÇøºÅ´ú±íµÄÇøÓò´æÔÚ´óÐ¡Ò»¶¨µÄÖØµþÇøÓò¡£ÕâÊÇÒòÎªÃ¿Ö¡IPMÍ¼´óÐ¡Ò»¶¨£¬¶ø¶¨Î»ÐÅÏ¢±íÊ¾LadybugµÄ¹âÐÄÎ»ÖÃ£¬¼´Ã¿ÕÅIPMÍ¼µÄ×óÓÒ$1/2$£¬ÉÏÏÂ$1/3$Î»ÖÃ´¦£¬ÔÚÍ¼\ref{carmask}ÖÐÓÒÍ¼ºÚÉ«·½¿òÐéÏß½»µãÎ»ÖÃ£¬Èç¹ûÇøºÅ»®·ÖµÄÇøÓò£¨Í¼\ref{carmask}ÖÐÁ½×ÓÍ¼³ÈÉ«·½¿ò£©¼ä²»´æÔÚÖØµþÇøÓò£¬ÔòÄ³Ð©¶¨Î»ÐÅÏ¢ËäÈ»ÊôÓÚÄ³¸ö³ÈÉ«ÇøÓò£¬µ«Æä¶ÔÓ¦µÄIPMÍ¼µÄÄ³Ð©ÏñËØ¿ÉÄÜÂäÔÚ¸Ã³ÈÉ«ÇøÓòÖ®Íâ£¬µ¼ÖÂÎÞ·¨Æ´½Óµ½³ÈÉ«ÇøÓòÖÐ¡£ÕâÖÖ´æÔÚÖØµþÇøÓòµÄÇøÓò»®·Ö·½·¨ÓÐÐ§µØ½â¾öÁËÍ¼ÏñÆ´½Ó¹ý³ÌÖÐ±ßÔµÈ±Ê§µÄÎÊÌâ£¬ÖØµþÇøÓòµÄ´óÐ¡ÖÁÉÙÎªIPM±ß³¤µÄ$5/6$£¬ÈçÍ¼\ref{carmask}ÖÐ×óÍ¼ºÚÉ«·½¿òËùÊ¾¡£
+ÔÚÆ´½Ó¹ý³ÌÖÐ£¬ÒòÎªËùÐèÆ´½ÓµÄµØÀí¿Õ¼ä¹ý´ó£¬Í¼Æ¬¹ý¶à£¬¶øÄÚ´æÏÞÖÆÁËµ¥ÕÅÍ¼Æ¬µÄ´óÐ¡£¬ËùÒÔ±¾ÎÄÉè¼ÆÁËÇøºÅ±ê¼ÇµÄ·½·¨¡£¾ßÌå×ö·¨Îª£º½«ÊÓÆµÁ÷ÖÐÍ¼Æ¬°´ÕÕÎ»ÖÃºÍº½ÏòÆ´½ÓÎª¶àÕÅ$28000\times7000$ÏñËØµÄÍ¼Æ¬£¨Í¼\ref{carmask}ÖÐ³ÈÉ«·½¿ò£©£¬ÓÉÓÚÃ¿¸öÏñËØ´ú±íÊµ¼ÊµØÀí¿Õ¼äµÄ´óÐ¡Îª$0.06{\rm m}$£¬¼´Ã¿ÕÅÆ´½ÓºóµÄÍ¼Æ¬´ú±íµÄÎïÀí¿Õ¼ä´óÐ¡Îª$1680{\rm m}\times420{\rm m}$¡£ ÉèÖÃÕû¸öµØÍ¼µÄ×ø±êÔ­µã£¨Í¼\ref{carmask}ºìÉ«Ô²µãËùÊ¾£©ÎªÄ³Ò»¹Ì¶¨¾­Î³¶È×ø±ê£¬IPMÍ¼¶ÔÓ¦µÄ¾­Î³¶ÈÓë¸Ãµã¶Ô±Èºó£¬¼ÆËã³ö¸ÃÖ¡IPMÍ¼Ó¦¸Ã·ÅÖÃÓÚÄÄ¸öÇø£¬¶øºó¿ÉÒÔÆ´½Ó³É¶àÕÅ³ÈÉ«´óÐ¡µÄÍ¼Æ¬¡£Ò»¸ö³ÈÉ«·½¿ò´ú±íÒ»¸öÇøÓò£¬¶ÔÓ¦Ò»¸öÇøºÅ£¬ÏàÁÚÇøºÅ´ú±íµÄÇøÓò´æÔÚ´óÐ¡Ò»¶¨µÄÖØµþÇøÓò¡£ÕâÊÇÒòÎªÃ¿Ö¡IPMÍ¼´óÐ¡Ò»¶¨£¬¶ø¶¨Î»ÐÅÏ¢±íÊ¾LadybugµÄ¹âÐÄÎ»ÖÃ£¬¼´Ã¿ÕÅIPMÍ¼µÄ×óÓÒ$1/2$£¬ÉÏÏÂ$1/3$Î»ÖÃ´¦£¬ÔÚÍ¼\ref{carmask}ÖÐÓÒÍ¼ºÚÉ«·½¿òÐéÏß½»µãÎ»ÖÃ£¬Èç¹ûÇøºÅ»®·ÖµÄÇøÓò£¨Í¼\ref{carmask}ÖÐÁ½×ÓÍ¼³ÈÉ«·½¿ò£©¼ä²»´æÔÚÖØµþÇøÓò£¬ÔòÄ³Ð©¶¨Î»ÐÅÏ¢ËäÈ»ÊôÓÚÄ³¸ö³ÈÉ«ÇøÓò£¬µ«Æä¶ÔÓ¦µÄIPMÍ¼µÄÄ³Ð©ÏñËØ¿ÉÄÜÂäÔÚ¸Ã³ÈÉ«ÇøÓòÖ®Íâ£¬µ¼ÖÂÎÞ·¨Æ´½Óµ½³ÈÉ«ÇøÓòÖÐ¡£ÕâÖÖ´æÔÚÖØµþÇøÓòµÄÇøÓò»®·Ö·½·¨ÓÐÐ§µØ½â¾öÁËÍ¼ÏñÆ´½Ó¹ý³ÌÖÐ±ßÔµÈ±Ê§µÄÎÊÌâ£¬ÖØµþÇøÓòµÄ´óÐ¡ÖÁÉÙÎªIPM±ß³¤µÄ$5/6$£¬ÈçÍ¼\ref{carmask}ÖÐ×óÍ¼ºÚÉ«·½¿òËùÊ¾¡£
 
 \begin{figure}[!htbp]
 	\centering
@@ -161,7 +162,7 @@ arctan \frac{y_c}{x_c} \\ arccos \frac{z_c}{||P_c||} \\
 \end{figure}
 
 %±ßÔµÈ±Ê§ÊÇÖ¸ÏµÍ³Æ´½ÓµÃµ½µÄ³ÈÉ«Í¼µÄ±ßÔµÃ»ÓÐµÀÂ·ÏñËØ£¬ÕâÊÇÓÉÓÚÃ¿Ö¡IPMÍ¼µÄÐý×ªÖÐµãÎÞ·¨Í¨¹ýÆ½ÒÆ·ÅÖÃÓÚ½Ó½ü³ÈÉ«Í¼µÄ±ßÔµÎ»ÖÃ£¬ÒòÎªÕâÑùIPM Í¼µÄÆäËûÏñËØ¾ÍÂäÔÚ³ÈÉ«Í¼ÇøÓòÖ®Íâ£¬ÖØµþÇøÓòµÄ´æÔÚ¿ÉÒÔÓÐÐ§½â¾ö¸ÃÎÊÌâ¡£
-×îºóÖ»ÐèÒª±£ÁôÉÏÍ¼\ref{carmask}µÄÂÌÉ«¿ò±íÊ¾µÄÇøÓòºÍ¸ÃÇøÓòµÄÇøºÅ£¬ÕâÑù¾Í¿ÉÒÔ°´ÕÕÇøºÅ½«Æ´½ÓµÄÍ¼Æ¬ÔÚPhotoshopÖÐÆ´½ÓÎª¸ü´óµÄÍ¼Æ¬£¬µ«ÊÇPhotoshop Æ´½ÓÍ¼Æ¬ÊÜÏÞÓÚ¼ÆËã»úÄÚ´æ£¬ËùÒÔµ±µØÀí¿Õ¼ä¹ý´ó£¬Í¼Æ¬ÏñËØ¹ý¶àÊ±£¬ÈÔÈ»ÎÞ·¨½«Õû¸öµØÀí¿Õ¼äÆ´½ÓÎªÒ»ÕÅÍ¼Æ¬¡£Îª´Ë¿ÉÒÔ²ÉÓÃGISÊý¾Ý¿âÈí¼þ£¬½«PhotoshopµÃµ½µÄÃ¿ÕÅÍ¼Æ¬×÷ÎªGISÊý¾Ý¿âÖÐµÄÒ»¸öÍ¼²ã£¬¹¹½¨´ó·¶Î§µØÍ¼Êý¾Ý¿âµÄµ×Í¼£¬ÈçÍ¼\ref{gistuceng}ËùÊ¾£¬ÆäÖÐÃ¿ÕÅÍ¼Æ¬¾ùÎªGISÖÐµÄÒ»¸öÍ¼²ã¡£
+×îºóÖ»ÐèÒª±£ÁôÍ¼\ref{carmask}µÄÂÌÉ«¿ò±íÊ¾µÄÇøÓòºÍ¸ÃÇøÓòµÄÇøºÅ£¬ÕâÑù¾Í¿ÉÒÔ°´ÕÕÇøºÅ½«Æ´½ÓµÄÍ¼Æ¬ÔÚPhotoshopÖÐÆ´½ÓÎª¸ü´óµÄÍ¼Æ¬£¬µ«ÊÇPhotoshop Æ´½ÓÍ¼Æ¬ÊÜÏÞÓÚ¼ÆËã»úÄÚ´æ£¬ËùÒÔµ±µØÀí¿Õ¼ä¹ý´ó£¬Í¼Æ¬ÏñËØ¹ý¶àÊ±£¬ÈÔÈ»ÎÞ·¨½«Õû¸öµØÀí¿Õ¼äÆ´½ÓÎªÒ»ÕÅÍ¼Æ¬¡£Îª´Ë¿ÉÒÔ²ÉÓÃGISÊý¾Ý¿âÈí¼þ£¬½«PhotoshopµÃµ½µÄÃ¿ÕÅÍ¼Æ¬×÷ÎªGISÊý¾Ý¿âÖÐµÄÒ»¸öÍ¼²ã£¬¹¹½¨´ó·¶Î§µØÍ¼Êý¾Ý¿âµÄµ×Í¼£¬ÈçÍ¼\ref{gistuceng}ËùÊ¾£¬ÆäÖÐÃ¿ÕÅÍ¼Æ¬¾ùÎªGISÖÐµÄÒ»¸öÍ¼²ã¡£
 
 \begin{figure}[!htbp]
 	\centering
@@ -198,5 +199,5 @@ arctan \frac{y_c}{x_c} \\ arccos \frac{z_c}{||P_c||} \\
 \end{figure}
 
 \section{±¾ÕÂÐ¡½á}
-¼øÓÚ¸ß¾«¶ÈµØÍ¼ÔÚUGV×ÔÖ÷µ¼º½Óë¾ö²ß¹æ»®ÖÐµÄÖØÒª×÷ÓÃ£¬±¾ÕÂÌá³öÁËÒ»ÖÖÐÂµÄ¸ß¾«¶ÈµØÍ¼¹¹½¨·½·¨£¬²¢¸ø³öÁËµØÍ¼¹¹½¨µÄÊµÏÖÁ÷³Ì¡£ÔÚ¸Ã·½·¨ÖÐ£¬¸ß¾«¶È×éºÏµ¼º½ÏµÍ³µÄÎ»ÖÃº½ÏòÊä³ö±àÂëÎª¹Ì¶¨´óÐ¡µÄ¶þÎ¬Âë£¬Ç¶ÈëÈ«¾°Í¼ÏñÊÓÆµÖÐ£¬ÒÔ±£Ö¤È«¾°Í¼ÏñÓë¶¨Î»ÐÅÏ¢µÄÍ¬²½¡£¶øºóÔÚÀëÏßÆ´½ÓµØÍ¼¹ý³ÌÖÐ£¬½«È«¾°Í¼Ïñ×ª»»µ½³µÌå×ø±êÏµÖÐ£¬Íê³ÉIPM¹ý³Ì£¬²¢½«Ã¿¸öIPMÍ¼Ïñ¸ù¾Ý³µÁ¾µÄ¸ß¾«¶È¶¨Î»ÐÅÏ¢£¬Ðý×ª¡¢Æ½ÒÆÆ´½ÓÎª·¶Î§½Ï´óµÄµØÍ¼¡£µ«ÓÉÓÚµØÀí¿Õ¼ä¹ãÀ«£¬¼ÆËã»úÄÚ´æÏÞÖÆµÈÔ­Òò£¬±¾ÕÂ½«²É¼¯µÄÊÓÆµÁ÷Æ´½ÓÎª¶à¸ö´óÐ¡Ò»ÖÂµÄÍ¼Ïñ£¬²¢¸ù¾Ý¶¨Î»ÐÅÏ¢½«¸ÃÍ¼Ïñ±àºÅ£¬¾Ý´Ë¿ÉÒÔÆ´½Ó¸ü´ó·¶Î§µÄµØÍ¼£¬²¢µ¼ÈëGIS Êý¾Ý¿âÉú³É¶à¸öÍ¼²ã¹¹³ÉÍêÕûµÄµÀÂ·µØÍ¼¡£×îºóÔÚGISÊý¾Ý¿âÖÐÌí¼ÓµÀÂ·ÍØÆËÓëµÀÂ·ÊôÐÔµÈÐÅÏ¢¡£µÚ5ÕÂÊµÑé»·½ÚÕ¹Ê¾ÁË±¾ÕÂÌá³öµÄ·½·¨ÔÚÊµ¼ÊÎÞÈË¼ÝÊ»±ÈÈüµÄÐ§¹û£¬ÑéÖ¤ÁË´Ë·½·¨µÄÓÐÐ§ÐÔ¡£
+¼øÓÚ¸ß¾«¶ÈµØÍ¼ÔÚUGV×ÔÖ÷µ¼º½Óë¾ö²ß¹æ»®ÖÐµÄÖØÒª×÷ÓÃ£¬±¾ÕÂÌá³öÁËÒ»ÖÖÐÂµÄ¸ß¾«¶ÈµØÍ¼¹¹½¨·½·¨£¬²¢¸ø³öÁËµØÍ¼¹¹½¨µÄÊµÏÖÁ÷³Ì¡£ÔÚ¸Ã·½·¨ÖÐ£¬¸ß¾«¶È×éºÏµ¼º½ÏµÍ³µÄÎ»ÖÃº½ÏòÊä³ö±àÂëÎª¹Ì¶¨´óÐ¡µÄ¶þÎ¬Âë£¬Ç¶ÈëÈ«¾°Í¼ÏñÊÓÆµÖÐ£¬ÒÔ±£Ö¤È«¾°Í¼ÏñÓë¶¨Î»ÐÅÏ¢µÄÍ¬²½¡£¶øºóÔÚÀëÏßÆ´½ÓµØÍ¼¹ý³ÌÖÐ£¬½«È«¾°Í¼Ïñ×ª»»µ½³µÌå×ø±êÏµÖÐ£¬Íê³ÉIPM¹ý³Ì£¬²¢½«Ã¿¸öIPMÍ¼Ïñ¸ù¾Ý³µÁ¾µÄ¸ß¾«¶È¶¨Î»ÐÅÏ¢£¬Ðý×ª¡¢Æ½ÒÆÆ´½ÓÎª·¶Î§½Ï´óµÄµØÍ¼¡£µ«ÓÉÓÚµØÀí¿Õ¼ä¹ãÀ«¡¢¼ÆËã»úÄÚ´æÏÞÖÆµÈÔ­Òò£¬±¾ÕÂ½«²É¼¯µÄÊÓÆµÁ÷Æ´½ÓÎª¶à¸ö´óÐ¡Ò»ÖÂµÄÍ¼Ïñ£¬²¢¸ù¾Ý¶¨Î»ÐÅÏ¢½«¸ÃÍ¼Ïñ±àºÅ£¬¾Ý´Ë¿ÉÒÔÆ´½Ó¸ü´ó·¶Î§µÄµØÍ¼£¬²¢µ¼ÈëGIS Êý¾Ý¿âÉú³É¶à¸öÍ¼²ã¹¹³ÉÍêÕûµÄµÀÂ·µØÍ¼¡£×îºóÔÚGISÊý¾Ý¿âÖÐÌí¼ÓµÀÂ·ÍØÆËÓëµÀÂ·ÊôÐÔµÈÐÅÏ¢¡£µÚ5ÕÂÊµÑé»·½ÚÕ¹Ê¾ÁË±¾ÕÂÌá³öµÄ·½·¨ÔÚÊµ¼ÊÎÞÈË¼ÝÊ»±ÈÈüµÄÐ§¹û£¬ÑéÖ¤ÁË´Ë·½·¨µÄÓÐÐ§ÐÔ¡£
 µ«ÊÇ±¾ÕÂ»ñÈ¡µÄ¶þÎ¬µØÍ¼´æÔÚÈâÑÛ¿É¼û±äÐÎ¡¢°üº¬µØÃæÐÅÏ¢½ÏÉÙµÄÎÊÌâ£¬ËùÒÔÏÂÎÄ½«½éÉÜÁíÍâÒ»ÖÖ¹¹½¨µØÍ¼·½·¨£¬¿ÉÒÔÍ¨¹ý¶þÎ¬Í¼Æ¬»Ö¸´µØÀí¿Õ¼äµÄÈýÎ¬½á¹¹¡£
